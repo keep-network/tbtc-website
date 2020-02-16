@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react'
 
 import '../../css/news-item.scss'
 
@@ -22,7 +22,7 @@ const NewsItem = ({ title, date, body }) => {
                 <h2>
                     {title}
                 </h2>
-                
+
                 <div class='body'>
                     {paragraphs.map(copy => <p dangerouslySetInnerHTML={{ __html: copy }} />)}
                 </div>
