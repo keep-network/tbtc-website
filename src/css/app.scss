@@ -1,0 +1,353 @@
+$content-width: 768px;
+
+@import 'colors.scss';
+@import 'button.scss';
+@import 'z-index.scss';
+@import './fonts/apercu.scss';
+@import 'structure.scss';
+@import 'modal.scss';
+@import 'status-indicator.scss';
+@import 'home.scss';
+@import 'start.scss';
+@import 'pay.scss';
+@import 'prove.scss';
+@import 'congratulations.scss';
+@import 'confirming.scss';
+
+
+html, body, #root {
+    margin: 0;
+    font-family: 'apercu-mono-regular-pro';
+    overflow-x: hidden;
+}
+
+a {
+    color: #{$blue};
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.app {
+    flex: 1;
+    color: #{$black};
+    font-family: sans-serif;
+    font-size: 1.5em;
+    width: #{$content-width};
+    margin: 0 auto;
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 50px 0;
+
+        .hamburger {
+            flex-grow: 0;
+            cursor: pointer;
+            font-size: 1.5em;
+
+            &:hover {
+                color: #888;
+            }
+        }
+
+        .logo {
+            flex-grow: 0;
+            svg {
+                display: block;
+            }
+        }
+
+        .web3-status {
+            margin-left: 35px;
+            padding: 5px 10px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            background-color: #{$lighter-grey};
+            font-size: .6em;
+            font-family: 'apercu-mono-regular-pro';
+
+            &.loading {
+                border-color: #{$loading};
+                color: #{$loading};
+            }
+
+            &.alert {
+                border-color: #{$alert};
+                color: #{$alert};
+            }
+
+            &.notify {
+                border-color: #{$notify};
+                color: #{$notify};
+            }
+
+            &.success {
+                border-color: #{$success};
+                color: #{$success};
+            }
+
+            svg {
+                display: inline-block;
+                vertical-align: text-bottom;
+            }
+
+            a {
+                color: unset;
+            }
+        }
+    }
+
+    @media (max-width: #{$content-width}) {
+        padding: 40px;
+        width: 100%;
+        box-sizing: border-box;
+
+        .nav {
+            margin: 30px 0 80px 0;
+        }
+    }
+
+    .peanut {
+        &.loading {
+            svg {
+                path {
+                    animation: pulse 3s linear infinite;
+                }
+            }
+
+            @keyframes pulse {
+                0% { fill: transparent; }
+                50% { fill: #{$purple}; }
+                100% { fill: transparent; }
+            }
+        }
+
+        &.error {
+            svg {
+                path {
+                    fill: #{$alert};
+                }
+            }
+        }
+    }
+
+    .page-top {
+        margin-bottom: 25px;
+    }
+}
+
+footer {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    background-color: #{$black};
+    padding: 80px 0;
+    overflow: hidden;
+
+    .footer-content {
+        .white-paper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: #{$content-width};
+            margin: 0 auto;
+
+            .white-paper-label {
+                font-size: 2.25em;
+                color: #{$white};
+                max-width: 200px;
+                flex: 1;
+                font-family: 'apercu-bold-pro';
+            }
+
+            hr {
+                border-style: dashed;
+                border-width: 1px 0 0 0;
+                border-color: #{$white};
+                margin: 0 50px;
+                flex: 1;
+            }
+
+            .white-paper-link {
+                font-size: 1.2em;
+                flex: 0;
+
+                a {
+                    white-space: nowrap;
+                    color: #{$blue};
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .footer-bottom {
+            width: #{$content-width};
+            margin: 0 auto;
+
+            .footer-logo {
+                margin: 80px 0 20px 0;
+
+                path {
+                    fill: #{$white};
+                }
+            }
+
+            .footer-links {
+                a {
+                    display: block;
+                    color: #{$white};
+                    font-size: 1.2em;
+                    margin: 5px 0;
+                }
+            }
+        }
+    }
+
+    &.include-subscription {
+        background-image: url('../static/Flow.png');
+        background-color: #{$purple};
+        background-position: center top;
+        background-size: 100% auto;
+        padding: 50px 0 0 0;
+
+        .footer-content {
+            background-color: #{$black};
+            padding: 80px;
+
+            .footer-logo {
+                margin-top: 0;
+            }
+        }
+
+        .mailing-list {
+            margin: 75px auto;
+            width: #{$content-width};
+            position: relative;
+
+            form {
+                display: flex;
+                width: 100%;
+
+                input {
+                    border: 0;
+                    margin: 0;
+                    font-family: 'apercu-mono-regular-pro';
+                }
+
+                input[type="text"] {
+                    flex: 1 0;
+                    padding-left: 24px;
+                    color: #{$dark-grey};
+                    font-size: 1.3em;
+
+                    &:disabled {
+                        background-color: #888;
+                    }
+                }
+
+                input[type="submit"] {
+                    flex: 0 1;
+                    padding: 20px 30px;
+                    background-color: #{$black};
+                    color: #{$white};
+                    font-size: 1.2em;
+                    text-decoration: underline;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #{$success};
+                    }
+                }
+
+                input {
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    border-radius: 0;
+                }
+            }
+
+            .error {
+                margin-top: 20px;
+                padding: 10px;
+                background-color: #{$white};
+                color: #{$alert};
+            }
+
+            .success {
+                background-color: #{$success};
+                text-align: center;
+                padding: 14px 0 11px 0;
+                width: 190px;
+
+                svg {
+                    circle {
+                        fill: #{$white};
+                        stroke: #{$black};
+                    }
+
+                    path {
+                        stroke: #{$black};
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: #{$content-width}) {
+        &.include-subscription {
+            .footer-content {
+                padding: 80px 50px;
+
+                .white-paper {
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    .white-paper-link {
+                        margin-top: 40px;
+                    }
+                }
+            }
+
+            .mailing-list {
+                width: 100%;
+                padding: 0 40px;
+                box-sizing: border-box;
+
+                form {
+                    flex-direction: column;
+
+                    input[type="text"] {
+                        padding: 16px;
+                        font-size: .9em;
+                    }
+
+                    input[type="submit"] {
+                        padding: 15px;
+                        font-size: 1em;
+
+                        &:hover {
+                            background-color: #{$black};
+                        }
+                    }
+                }
+
+                .success {
+                    padding: 8px 0 5px 0;
+                    width: unset;
+                }
+            }
+        }
+    }
+}

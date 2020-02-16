@@ -1,0 +1,66 @@
+.pay {
+    .page-body {
+        .custodial-fee {
+            margin-top: 40px;
+
+            .custodial-fee-label {
+                font-family: 'apercu-bold-pro';
+            }
+        }
+
+        .copy-address {
+            .address {
+                color: $blue;
+                text-decoration: underline;
+                cursor: pointer;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                min-width: 1px;
+
+                &:hover {
+                    text-overflow: unset;
+                    white-space: unset;
+                    overflow: unset;
+                    word-wrap: break-word;
+                }
+            }
+
+            .copied {
+                color: red;
+            }
+        }
+    }
+
+    .hidden-copy-field {
+        position: absolute;
+        right: 999999px;
+    }
+
+    .confirming  {
+
+        // This is for the "Loading" svg, NOT the "Peanut" svg
+        // Leaving as a WIP
+        // svg {
+        //     stroke-dasharray: 500;
+        //     stroke-dashoffset: 500;
+        //     animation: dash 4s linear infinite;
+        //     transform: rotate(270deg);
+        //     stroke-linecap: round;
+
+        //     path {
+        //         stroke: $purple;
+        //         transform: translate(175px, 175px)
+        //     }
+        // }
+      
+        // @keyframes dash {
+        //     from {
+        //         stroke-dashoffset:1000;
+        //     }
+        //     to {
+        //         stroke-dashoffset: 0;
+        //     }
+        // }
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "hosting": {
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/news/2020-02-14-ropsten",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/news/2020-02-14-announcing-tbtc-js",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
