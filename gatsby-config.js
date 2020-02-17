@@ -8,6 +8,26 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: "./src/safari.svg",
+
+        // manifest config
+        appName: 'tBTC',
+        appDescription: 'tBTC - Bitcoin on Ethereum',
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          yandex: false,
+          windows: false
+        }
+      }
+    },
+    {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
       options: {
