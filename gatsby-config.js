@@ -1,8 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
-    description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+    title: 'tBTC — Bitcoin on Ethereum',
+    description: '1. Deposit BTC. 2. Mint TBTC. 3. Lend and earn interest on your BTC.'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -14,7 +13,7 @@ module.exports = {
 
         // manifest config
         appName: 'tBTC',
-        appDescription: 'tBTC - Bitcoin on Ethereum',
+        appDescription: 'tBTC — Bitcoin on Ethereum',
         icons: {
           android: true,
           appleIcon: true,
