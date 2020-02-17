@@ -1,26 +1,25 @@
 import React, { Component } from 'react'
 
-import history from '../history'
-
 class Home extends Component {
 
   handleClickDeposit = (evt) => {
     evt.preventDefault()
     evt.stopPropagation()
 
-    history.push('/deposit')
+    // TODO navigate
   }
 
   handleClickRedeem = (evt) => {
     evt.preventDefault()
     evt.stopPropagation()
 
-    history.push('/redeem')
+    // TODO navigate
   }
 
   render() {
     const { noEntry } = this.props
-    const isMobile = window.innerWidth < 768
+    // TODO  figure out a better way to handle this styling
+    const isMobile = true // OLD: window.innerWidth < 768
 
     return (
       <div className="home">
@@ -30,7 +29,7 @@ class Home extends Component {
           On
 		      <br />
           Ethereum
-		      <div className="subtitle">
+		  <div className="subtitle">
             <div className="vertical-aligned">
               { isMobile
                 ? <span>
@@ -40,7 +39,7 @@ class Home extends Component {
                   </span>
                 : <span>No games, just math.</span>
               }
-		        </div>
+		    </div>
           </div>
         </div>
         {
