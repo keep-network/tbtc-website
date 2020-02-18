@@ -9,7 +9,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: "./src/safari.svg",
+        logo: "./src/favicon.svg",
 
         // manifest config
         appName: 'tBTC',
