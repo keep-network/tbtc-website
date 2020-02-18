@@ -16,7 +16,7 @@ collections:
     folder: "src/pages/news"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    preview_path: "blog/{{slug}}"
+    preview_path: "news/{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "news-item"}
       - {label: "Title", name: "title", widget: "string"}
