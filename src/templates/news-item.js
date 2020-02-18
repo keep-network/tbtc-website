@@ -52,8 +52,8 @@ NewsItem.propTypes = {
 export default NewsItem
 
 export const pageQuery = graphql`
-  query NewsItemByID($slug: String!) {
-    markdownRemark(id: { eq: $slug }) {
+  query NewsItemByID($id: String!) {
+    markdownRemark(id: { eq: $id }) {
       id
       html
       frontmatter {
