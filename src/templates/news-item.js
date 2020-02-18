@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import '../../css/news-item.scss'
+import '../css/news-item.scss'
 
 export const NewsItemTemplate = ({ title, date, description, body }) => {
 
@@ -52,8 +52,8 @@ NewsItem.propTypes = {
 export default NewsItem
 
 export const pageQuery = graphql`
-  query NewItemByID($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+  query NewsItemByID($slug: String!) {
+    markdownRemark(id: { eq: $slug }) {
       id
       html
       frontmatter {

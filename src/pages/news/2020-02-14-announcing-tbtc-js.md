@@ -2,6 +2,8 @@
 title: Announcing tbtc.js
 date: 2020-02-14
 description: lol
+template: news-item
+path: news/2020-02-14-announcing-tbtc-js
 ---
 A new library, [`tbtc.js`](https://github.com/keep-network/tbtc.js), is live on
 GitHub, representing the easiest, safest way to integrate Bitcoin in your
