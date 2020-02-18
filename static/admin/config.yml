@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: keep-network/tbtc.network
+  repo: keep-network/tbtc-website
   site_domain: tbtc.network
 
 site_url: https://tbtc.network
