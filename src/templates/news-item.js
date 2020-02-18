@@ -5,8 +5,6 @@ import '../css/news-item.scss'
 
 export const NewsItemTemplate = ({ title, date, description, body }) => {
 
-    const paragraphs = body.split('\n\n').map(x => x.trim())
-
     return <div className="news">
         <div className="title">
             News
@@ -25,9 +23,7 @@ export const NewsItemTemplate = ({ title, date, description, body }) => {
                     {title}
                 </h2>
 
-                <div class='body'>
-                    {paragraphs.map(copy => <p dangerouslySetInnerHTML={{ __html: copy }} />)}
-                </div>
+                <div class='body' dangerouslySetInnerHTML={{ __html: body }} />
             </div>
         </div>
     </div>
