@@ -4,3 +4,4 @@ src/app.less/
 build/
 .DS_Store
 public/
+.cache/
