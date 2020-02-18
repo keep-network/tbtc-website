@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import { App } from '../components'
+
 import '../css/news-item.scss'
 
 export const NewsItemTemplate = ({ title, date, description, body }) => {
@@ -32,11 +34,13 @@ export const NewsItemTemplate = ({ title, date, description, body }) => {
 const NewsItem = ({ data }) => {
   const { markdownRemark: post } = data
 
-  return <NewsItemTemplate
+  return <App>
+    <NewsItemTemplate
            date={post.frontmatter.date}
            description={post.frontmatter.description}
            body={post.html}
            title={post.frontmatter.title} />
+  </App>
 }
 
 NewsItem.propTypes = {
