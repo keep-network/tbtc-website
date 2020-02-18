@@ -14,6 +14,10 @@ COPY package.json /app/package.json
 COPY package-lock.json /app/package-lock.json
 
 RUN npm install
+RUN npm install sharp
+
+# We don't want to send admin usage stats
+RUN gatsby telemetry --disable
 
 COPY . /app
 
@@ -22,7 +26,7 @@ RUN npm run build
 # Production environment
 FROM nginx:1.17-alpine
 
-COPY --from=build /app/build /usr/share/nginx/html
+COPY --from=build /app/public /usr/share/nginx/html
 
 RUN rm /etc/nginx/conf.d/default.conf
 COPY nginx.conf /etc/nginx/conf.d
