@@ -12,7 +12,7 @@ orbs:
   gcp-gcr: circleci/gcp-gcr@0.0.4
 
 jobs:
-  test_client:
+  test_site:
     executor: docker-node
     working_directory: ~/project/client
     steps:
@@ -37,32 +37,7 @@ jobs:
           name: Run NPM tests
           command: npm run test:setup && npm run test
 
-  test_tbtc_helpers:
-    executor: docker-node
-    working_directory: ~/project/lib/tbtc-helpers
-    steps:
-      - checkout:
-          path: ~/project
-
-      # Download and cache dependencies.
-      - restore_cache:
-          keys:
-            # When lock file changes, use increasingly general patterns to restore cache.
-            - v1-helpers-npm-deps-{{ .Branch }}-{{ checksum "package-lock.json" }}
-            - v1-helpers-npm-deps-{{ .Branch }}-
-            - v1-helpers-npm-deps-
-      - run: npm install
-      - save_cache:
-          key: v1-helpers-npm-deps-{{ checksum "package-lock.json" }}
-          paths:
-            - node_modules
-
-      # Run tests.
-      - run:
-          name: Run NPM tests
-          command: npm test
-
-  build_dapp:
+  build_site:
     executor: docker-thesis-buildpack
     steps:
       - setup_remote_docker:
@@ -74,33 +49,29 @@ jobs:
             echo $GCLOUD_SERVICE_KEY_GET_BUCKET_OBJECT > ~/gcloud-service-key.json
             gcloud auth activate-service-account --key-file ~/gcloud-service-key.json
       - run:
-          name: Fetch contract artifacts
-          command: |
-            ./scripts/fetch-contracts.sh
-      - run:
           name: Run Docker build
           command: |
             docker build -t build --target build .
-            docker build -t $GCR_REGISTRY_URL/$GOOGLE_PROJECT_ID/tbtc-dapp .
+            docker build -t $GCR_REGISTRY_URL/$GOOGLE_PROJECT_ID/tbtc-site .
       - run:
-          name: Save tbtc-dapp image
+          name: Save tbtc.network image
           command: |
-            mkdir -p /tmp/tbtc-dapp/docker-images/
-            docker save -o /tmp/tbtc-dapp/docker-images/tbtc-dapp.tar $GCR_REGISTRY_URL/$GOOGLE_PROJECT_ID/tbtc-dapp
+            mkdir -p /tmp/tbtc.network/docker-images/
+            docker save -o /tmp/tbtc-site/docker-images/tbtc-site.tar $GCR_REGISTRY_URL/$GOOGLE_PROJECT_ID/tbtc-site
       - persist_to_workspace:
-          root: /tmp/tbtc-dapp
+          root: /tmp/tbtc-site
           paths:
             - docker-images
 
-  publish_dapp:
+  publish_site:
     executor: gcp-gcr/default
     steps:
       - attach_workspace:
-          at: /tmp/tbtc-dapp
+          at: /tmp/tbtc-site
       - run:
-          name: Load tbtc-dapp image
+          name: Load tbtc-site image
           command: |
-            docker load -i /tmp/tbtc-dapp/docker-images/tbtc-dapp.tar
+            docker load -i /tmp/tbtc-site/docker-images/tbtc-site.tar
       - gcp-gcr/gcr-auth:
           google-project-id: GOOGLE_PROJECT_ID
           google-compute-zone: GOOGLE_COMPUTE_ZONE_A
@@ -109,7 +80,7 @@ jobs:
       - gcp-gcr/push-image:
           google-project-id: GOOGLE_PROJECT_ID
           registry-url: $GCR_REGISTRY_URL
-          image: tbtc-dapp
+          image: tbtc-site
           tag: latest
 
 workflows:
@@ -117,21 +88,18 @@ workflows:
   client:
     jobs:
       - test_client
-  tbtc_helpers:
+  site_keep_dev:
     jobs:
-      - test_tbtc_helpers
-  dapp_keep_dev:
-    jobs:
-      - build_dapp:
+      - build_site:
           context: keep-dev
-      - publish_dapp:
+      - publish_site:
           filters:
             branches:
               only: master
           context: keep-dev
           requires:
-            - build_dapp
-  dapp_keep_test:
+            - build_site
+  site_keep_test:
     jobs:
       - keep_test_approval:
           type: approval
@@ -140,7 +108,7 @@ workflows:
               only: /^v.*/
             branches:
               ignore: /.*/
-      - build_dapp:
+      - build_site:
           filters:
             tags:
               only: /^v.*/
@@ -149,7 +117,7 @@ workflows:
           context: keep-test
           requires:
             - keep_test_approval
-      - publish_dapp:
+      - publish_site:
           filters:
             tags:
               only: /^v.*/
@@ -157,4 +125,4 @@ workflows:
               ignore: /.*/
           context: keep-test
           requires:
-            - build_dapp
+            - build_site
