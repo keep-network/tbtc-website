@@ -35,7 +35,7 @@ jobs:
       # Run tests.
       - run:
           name: Run NPM tests
-          command: npm run test:setup && npm run test
+          command: npm run test
 
   build_site:
     executor: docker-thesis-buildpack
