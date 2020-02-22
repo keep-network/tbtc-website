@@ -1,5 +1,7 @@
 import React from 'react'
 
+import '../css/app.scss'
+
 import { Footer, Header } from './lib'
 
 export default (props) => {

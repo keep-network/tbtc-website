@@ -1,8 +1,5 @@
 import React from 'react'
 
-// Styles
-import '../css/app.scss'
-
 // Components
 import {
   App,
