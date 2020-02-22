@@ -29,7 +29,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    debugger;
     const templateName = node.frontmatter.template || `default`
     const template = path.resolve(path.join('src/templates/', `${templateName}.js`))
     createPage({

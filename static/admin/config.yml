@@ -18,7 +18,8 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     preview_path: "news/{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "news-item"}
+      - {label: "Template", name: "template", widget: "hidden", default: "news-item"}
+      - {label: "Template", name: "template", widget: "hidden", default: "news-item"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
