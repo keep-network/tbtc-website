@@ -17,7 +17,6 @@ class Home extends Component {
   }
 
   render() {
-    const { noEntry } = this.props
     // TODO  figure out a better way to handle this styling
     const isMobile = true // OLD: window.innerWidth < 768
 
@@ -42,24 +41,6 @@ class Home extends Component {
 		    </div>
           </div>
         </div>
-        {
-          noEntry
-          ? ''
-          : (
-            <div className="mint-or-redeem">
-              <a href="/deposit" onClick={this.handleClickDeposit}>
-                <button className="blue">
-                  Deposit
-                </button>
-              </a>
-              <a href="/redeem" onClick={this.handleClickRedeem}>
-                <button className="black">
-                  Redeem
-                </button>
-              </a>
-            </div>
-          )
-        }
         <div className="step-by-step">
           <ol>
             <li>
