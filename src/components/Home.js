@@ -17,9 +17,6 @@ class Home extends Component {
   }
 
   render() {
-    // TODO  figure out a better way to handle this styling
-    const isMobile = true // OLD: window.innerWidth < 768
-
     return (
       <div className="home">
         <div className="title">
@@ -28,17 +25,12 @@ class Home extends Component {
           On
 		      <br />
           Ethereum
-		  <div className="subtitle">
+          <div className="subtitle">
             <div className="vertical-aligned">
-              { isMobile
-                ? <span>
-                    No games,
-                    <br />
-                    just math.
-                  </span>
-                : <span>No games, just math.</span>
-              }
-		    </div>
+              No games,
+              <br />
+              just math.
+            </div>
           </div>
         </div>
         <div className="step-by-step">

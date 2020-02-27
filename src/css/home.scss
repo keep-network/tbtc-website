@@ -21,6 +21,10 @@
                 top: 50%;
                 transform: translateY(-50%);
             }
+
+            br {
+                display: none;
+            }
         }
     }
 
@@ -103,6 +107,10 @@
                 .vertical-aligned {
                     float: right;
                     text-align: left;
+                }
+
+                br {
+                    display: block;
                 }
             }
         }
