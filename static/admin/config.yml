@@ -2,6 +2,8 @@ backend:
   name: github
   repo: keep-network/tbtc-website
   site_domain: tbtc.network
+  base_url: https://backend.tbtc.network/
+  auth_endpoint: netlify/auth
 
 site_url: https://tbtc.network
 
