@@ -73,7 +73,7 @@ class Footer extends Component {
         </div>
         {
           includeSubscription && (
-            <div className="mailing-list">
+            <div id="mailing-list" className="mailing-list">
               <form onSubmit={this.handleSubmit}>
                 <input
                   type="text"

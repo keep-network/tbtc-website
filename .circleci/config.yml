@@ -52,14 +52,14 @@ jobs:
           name: Run Docker build
           command: |
             docker build -t build --target build .
-            docker build -t $GCR_REGISTRY_URL/$GOOGLE_PROJECT_ID/tbtc-site .
+            docker build -t $GCR_REGISTRY_URL/$GOOGLE_PROJECT_ID/tbtc-website .
       - run:
           name: Save tbtc.network image
           command: |
-            mkdir -p /tmp/tbtc.network/docker-images/
-            docker save -o /tmp/tbtc-site/docker-images/tbtc-site.tar $GCR_REGISTRY_URL/$GOOGLE_PROJECT_ID/tbtc-site
+            mkdir -p /tmp/tbtc-website/docker-images/
+            docker save -o /tmp/tbtc-website/docker-images/tbtc-website.tar $GCR_REGISTRY_URL/$GOOGLE_PROJECT_ID/tbtc-website
       - persist_to_workspace:
-          root: /tmp/tbtc-site
+          root: /tmp/tbtc-website
           paths:
             - docker-images
 
@@ -67,11 +67,11 @@ jobs:
     executor: gcp-gcr/default
     steps:
       - attach_workspace:
-          at: /tmp/tbtc-site
+          at: /tmp/tbtc-website
       - run:
-          name: Load tbtc-site image
+          name: Load tbtc-website image
           command: |
-            docker load -i /tmp/tbtc-site/docker-images/tbtc-site.tar
+            docker load -i /tmp/tbtc-website/docker-images/tbtc-website.tar
       - gcp-gcr/gcr-auth:
           google-project-id: GOOGLE_PROJECT_ID
           google-compute-zone: GOOGLE_COMPUTE_ZONE_A
@@ -80,7 +80,7 @@ jobs:
       - gcp-gcr/push-image:
           google-project-id: GOOGLE_PROJECT_ID
           registry-url: $GCR_REGISTRY_URL
-          image: tbtc-site
+          image: tbtc-website
           tag: latest
 
 workflows:
