@@ -10,5 +10,5 @@ import {
 } from '../components'
 
 export default () => <App>
-  <Home noEntry={true} />
+  <Home />
 </App>
