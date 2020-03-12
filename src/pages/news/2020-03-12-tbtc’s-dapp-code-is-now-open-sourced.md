@@ -1,19 +1,15 @@
 ---
 templateKey: news-item
-title: tBTC’s dApp Code is Now Open-Sourced
-description: tBTC’s dApp Code is Now Open-Sourced
+title: tBTC’s Reference dApp is Now Open-Source
+description: tBTC’s Reference dApp is Now Open-Source
 date: 2020-03-12T16:51:10.284Z
 ---
-The reference dApp for tBTC, which uses the tbtc.js library, is now open-sourced at <https://github.com/keep-network/tbtc-dapp>. This makes it better and easier for integration partners to use tBTC, as it allows them to customize the dApp to fit their specific needs.
+The reference dApp for tBTC [is now open-source](https://github.com/keep-network/tbtc-dapp)! Anyone interested in integrating tBTC is welcome to fork and customize the dApp fit their needs.
 
-Note that the current state of this repository does not necessarily reflect the state deployed on Ropsten; deploys to Ropsten currently happen on a periodic basis and correspond to tagged releases.
+Want to add Bitcoin to your dApp? Check out the [`tbtc-dapp`](https://github.com/keep-network/tbtc-dapp) repo  for a template that uses [`tbtc.js`](https://github.com/keep-network/tbtc.js).
 
-tBTC is committed to open-sourcing as the best standard for transparency and security in DeFi. In that vein, we are currently working on a bug bounty program. Additional information will be posted as it is available.
+tBTC is deployed periodically to Ropsten, corresponding to tagged releases. Today's release will be deployed to Ropsten shortly.
 
-Visit tBTC’s [GitHub](https://github.com/keep-network/tbtc) and[ join the tBTC mailing list](https://tbtc.network/#mailing-list) for updates, including information about tBTC’s upcoming launch on Ethereum mainnet. To learn more about tBTC’s technical design, read the [technical spec](http://docs.keep.network/tbtc/index.pdf). Join the [Keep #tbtc channel on Discord](https://discord.gg/wYezN7v) for technical questions about tBTC and [tbtc.js](https://tbtc.network/news/2020-02-14-announcing-tbtc-js), and follow these Twitter handles for news and opportunities to participate:
+Further details and source code are on the way!
 
-@Keep_project
-
-@mhluongo
-
-\#tBTC
+In the meantime, check out the [GitHub](https://github.com/keep-network/tbtc) or [join the  mailing list](#mailing-list) for updates on the upcoming launch. To learn more about the technical design, read the [spec](http://docs.keep.network/tbtc/index.pdf), or ask questions [on the #tbtc Discord channel](https://discord.gg/wYezN7v).
