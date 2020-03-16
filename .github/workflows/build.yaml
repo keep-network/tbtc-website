@@ -1,10 +1,11 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
-name: Node.js CI
+name: Build and Deploy
 
 on:
   pull_request:
+    branches: [ master ]
+  push:
     branches: [ master ]
 
 jobs:
@@ -23,10 +24,22 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
     - run: npm run build --if-present
-    - name: Deploy to GCP
+    # A push event is a master merge; deploy to primary bucket.
+    - if: github.event_name == 'push'
+      name: Deploy Master to GCP
       uses: thesis/gcp-storage-bucket-action@v2.0.1
       with:
         service-key: ${{ secrets.TBTC_NETWORK_UPLOADER_SERVICE_KEY_JSON }}
         project: tbtc-prod
         bucket-name: tbtc.network
+        build-folder: public
+    # A pull_request event is a PR; deploy to preview bucket.
+    - if: github.event_name == 'pull_request'
+      name: Deploy PR to GCP
+      uses: thesis/gcp-storage-bucket-action@bucket-paths
+      with:
+        service-key: ${{ secrets.TBTC_NETWORK_UPLOADER_SERVICE_KEY_JSON }}
+        project: tbtc-prod
+        bucket-name: preview.tbtc.network
+        bucket-path: ${{ github.head_ref }}
         build-folder: public
