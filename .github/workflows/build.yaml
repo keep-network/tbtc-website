@@ -23,11 +23,16 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
-    - run: npm run build --if-present
+    - if: github.event_name == 'push'
+      run: npm run build --if-present
+    - if: github.event_name == 'pull_request'
+      run: npm run build:prefixed
+      env:
+        BRANCH: ${{ github.head_ref }}
     # A push event is a master merge; deploy to primary bucket.
     - if: github.event_name == 'push'
       name: Deploy Master to GCP
-      uses: thesis/gcp-storage-bucket-action@v2.0.1
+      uses: thesis/gcp-storage-bucket-action@v2.1.0
       with:
         service-key: ${{ secrets.TBTC_NETWORK_UPLOADER_SERVICE_KEY_JSON }}
         project: tbtc-prod
@@ -36,7 +41,7 @@ jobs:
     # A pull_request event is a PR; deploy to preview bucket.
     - if: github.event_name == 'pull_request'
       name: Deploy PR to GCP
-      uses: thesis/gcp-storage-bucket-action@bucket-paths
+      uses: thesis/gcp-storage-bucket-action@v2.1.0
       with:
         service-key: ${{ secrets.TBTC_NETWORK_UPLOADER_SERVICE_KEY_JSON }}
         project: tbtc-prod
