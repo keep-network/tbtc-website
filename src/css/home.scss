@@ -131,7 +131,7 @@
         }
     }
 
-    @media (max-width: #{$content-width}) {
+    @media (max-width: #{$mobile-width}) {
         .title {
             font-size: 2.75em;
 

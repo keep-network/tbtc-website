@@ -1,0 +1,12 @@
+@import 'fonts/apercu.scss';
+
+html, body, #root {
+    font-family: 'apercu-mono-regular-pro', sans-serif;
+    font-size: 14px;
+}
+
+a {
+    color: #{$blue};
+    text-decoration: underline;
+    cursor: pointer;
+}
