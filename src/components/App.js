@@ -11,7 +11,7 @@ export default (props) => {
       <div className="app">
         { children }
       </div>
-      <Footer includeSubscription={true} />
+      <Footer />
     </div>
   )
 }

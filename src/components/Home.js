@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
 
+import SubscriptionForm from './lib/SubscriptionForm'
+
+
 class Home extends Component {
 
   handleClickDeposit = (evt) => {
@@ -57,6 +60,18 @@ class Home extends Component {
             Censorship resistant, seizure resistant, inflation resistant.
 		      </div>
         </div>
+        <div className="white-paper">
+          <div className="white-paper-label">
+            Learn how
+          </div>
+          <hr />
+          <div className="white-paper-link">
+            <a href="http://docs.keep.network/tbtc/index.pdf" target="_blank" rel="noopener noreferrer">
+              Read the Spec >>>>
+            </a>
+          </div>
+        </div>
+        <SubscriptionForm />
       </div>
     )
   }
