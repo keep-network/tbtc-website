@@ -38,9 +38,44 @@ a {
     .nav {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: space-between;
         align-items: center;
-        margin: 50px 0;
+        margin: 140px 0 100px;
+
+        .logo {
+            svg {
+                display: block;
+            }
+        }
+
+
+        > ul {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+
+            font-family: 'apercu-mono-regular-pro';
+            font-size: 12px;
+
+            > li {
+                display: block;
+                padding: 0 20px;
+
+                a {
+                    color: black;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                    &[href^=http]:after {
+                        content: ' ↗';
+                    }
+                }
+
+            }
+        }
 
         .hamburger {
             flex-grow: 0;
@@ -49,52 +84,6 @@ a {
 
             &:hover {
                 color: #888;
-            }
-        }
-
-        .logo {
-            flex-grow: 0;
-            svg {
-                display: block;
-            }
-        }
-
-        .web3-status {
-            margin-left: 35px;
-            padding: 5px 10px;
-            border: 1px solid transparent;
-            border-radius: 4px;
-            background-color: #{$lighter-grey};
-            font-size: .6em;
-            font-family: 'apercu-mono-regular-pro';
-
-            &.loading {
-                border-color: #{$loading};
-                color: #{$loading};
-            }
-
-            &.alert {
-                border-color: #{$alert};
-                color: #{$alert};
-            }
-
-            &.notify {
-                border-color: #{$notify};
-                color: #{$notify};
-            }
-
-            &.success {
-                border-color: #{$success};
-                color: #{$success};
-            }
-
-            svg {
-                display: inline-block;
-                vertical-align: text-bottom;
-            }
-
-            a {
-                color: unset;
             }
         }
     }
