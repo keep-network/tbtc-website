@@ -1,4 +1,5 @@
 $content-width: 768px;
+$gutter-width: 30px;
 
 // Breakpoints
 $mobile-width: 768px;
@@ -7,6 +8,7 @@ $mobile-width: 768px;
 html, body, #root {
     margin: 0;
     overflow-x: hidden;
+    background-color: $white;
 }
 
 .main {

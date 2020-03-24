@@ -7,8 +7,8 @@ export default (props) => {
 
   return (
     <div className="main">
+      <Header />
       <div className="app">
-        <Header />
         { children }
       </div>
       <Footer includeSubscription={true} />
