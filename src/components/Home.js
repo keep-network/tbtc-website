@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
 
-import SubscriptionForm from './lib/SubscriptionForm'
+import MailingListForm from './lib/MailingListForm'
 
 
 class Home extends Component {
@@ -71,7 +71,7 @@ class Home extends Component {
             </a>
           </div>
         </div>
-        <SubscriptionForm />
+        <MailingListForm />
       </div>
     )
   }
