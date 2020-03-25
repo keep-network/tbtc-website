@@ -1,8 +1,11 @@
+$max-page-width: 1440px;
 $content-width: 768px;
 $gutter-width: 30px;
 
 // Breakpoints
 $mobile-width: 768px;
+$bp-extra-large: 1200px;
+$bp-large: 992px;
 
 
 html, body, #root {
@@ -20,40 +23,11 @@ html, body, #root {
 .app {
     flex: 1;
     color: #{$black};
-    width: #{$content-width};
     margin: 0 auto;
+}
 
-    @media (max-width: #{$mobile-width}) {
-        padding: 40px;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .peanut {
-        &.loading {
-            svg {
-                path {
-                    animation: pulse 3s linear infinite;
-                }
-            }
-
-            @keyframes pulse {
-                0% { fill: transparent; }
-                50% { fill: #{$purple}; }
-                100% { fill: transparent; }
-            }
-        }
-
-        &.error {
-            svg {
-                path {
-                    fill: #{$alert};
-                }
-            }
-        }
-    }
-
-    .page-top {
-        margin-bottom: 25px;
+.container {
+    @media (min-width: #{$bp-extra-large}) {
+        max-width: $max-page-width;
     }
 }
