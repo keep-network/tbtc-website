@@ -1,26 +1,19 @@
-button, .button {
-    &.blue { --button-color: #{$blue}; }
-    &.black { --button-color: #{$black}; }
-
-    border: 3px solid var(--button-color);
-    padding: 20px 40px;
-    font-family: 'apercu-mono-regular-pro';
-    font-size: 1.25em;
-    color: var(--button-color);
-    background-color: #{$white};
+button, .button,
+input[type="submit"] {
+    border: 1px solid $black;
+    padding: 10px;
     white-space: nowrap;
-    transform: scale(1);
-    transition: transform 150ms ease-in-out;
     cursor: pointer;
+    background-color: $white;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: $body-font-family;
+    font-weight: 500;
+    letter-spacing: 1.5px;
 
     &:hover:enabled {
-        background-color: var(--button-color);
+        background-color: $black;
         color: #{$white};
-        transform: scale(1.05);
-    }
-
-    &:focus {
-        background-color: #{darken($blue, 10%)};
     }
 
     &:disabled {

@@ -3,9 +3,10 @@ $content-width: 768px;
 $gutter-width: 30px;
 
 // Breakpoints
-$mobile-width: 768px;
 $bp-extra-large: 1200px;
 $bp-large: 992px;
+$bp-medium: 768px;
+$bp-small: 576px;
 
 
 html, body, #root {

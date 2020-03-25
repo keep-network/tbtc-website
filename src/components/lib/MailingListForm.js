@@ -14,7 +14,7 @@ class MailingListForm extends Component {
   }
 
   handleInput = (evt) => {
-    this.setState({ email: evt.target.value })
+    this.setState({ email: evt.target.value, error: '' })
   }
 
   handleSubmit = async (evt) => {
@@ -63,20 +63,20 @@ class MailingListForm extends Component {
             disabled={loading || success}
             onChange={this.handleInput}
             value={email}
-            placeholder="enter your email to receive updates" />
+            placeholder="your@email.com" />
+          { error
+            ? <div className="error">
+                { error }
+              </div>
+            : ''
+          }
           { success
             ? <div className="success">
                 <Check width="30px" height="30px" />
               </div>
-            : <input type="submit" value={loading ? "(submitting...)" : "Submit >>>>"} />
+            : <input type="submit" value={loading ? "(submitting...)" : "Submit"} />
           }
         </form>
-        { error
-          ? <div className="error">
-              { error }
-            </div>
-          : ''
-        }
       </div>
     )
   }

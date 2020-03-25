@@ -1,8 +1,26 @@
 @import 'fonts/apercu.scss';
 
+$body-font-family: 'apercu-mono-regular-pro', sans-serif;
+$body-font-size: 14px;
+
+
 html, body, #root {
-    font-family: 'apercu-mono-regular-pro', sans-serif;
-    font-size: 14px;
+    font-family: $body-font-family;
+    font-size: $body-font-size;
+}
+
+h1, .h1,
+h2, .h2 {
+    font-family: 'apercu-bold-pro', sans-serif;
+}
+
+h2, .h2 {
+    line-height: 1.18;
+    margin: 1em 0;
+}
+
+p {
+    line-height: 1.5;
 }
 
 a {
