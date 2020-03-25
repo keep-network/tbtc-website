@@ -6,7 +6,7 @@ html, body, #root {
 }
 
 a {
-    color: #{$blue};
-    text-decoration: underline;
+    color: $black;
+    text-decoration: none;
     cursor: pointer;
 }
