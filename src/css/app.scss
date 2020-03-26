@@ -57,6 +57,10 @@ a {
             font-family: 'apercu-mono-regular-pro';
             font-size: 0.9rem;
 
+            > li.menu-label {
+                display: none;
+            }
+
             > li {
                 display: block;
                 padding: 0 20px;
@@ -94,7 +98,92 @@ a {
         box-sizing: border-box;
 
         .nav {
+            position: relative;
             margin: 30px 0 80px 0;
+
+            .logo {
+                svg {
+                    display: block;
+                }
+            }
+
+
+            > ul {
+                position: absolute;
+                z-index: 1;
+                top: -40px;
+                width: 100%;
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                > li.menu-label {
+                    display: block;
+                    position: relative;
+                    width: 75px;
+                    padding: 0;
+                    margin: 0 40px 0 0;
+                    height: 60px;
+
+                    background: white;
+                    color: black;
+
+                    cursor: pointer;
+
+                    > button {
+                        position: absolute;
+                        left: -100px;
+                        top: -100px;
+                        font-size: 0;
+                    }
+
+                    &:before, &:after {
+                        position: absolute;
+                        top: 25px;
+
+                        content: '';
+                        background: black;
+
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 10px;
+                    }
+
+                    &:before {
+                        left: 25px
+                    }
+                    &:after {
+                        right: 25px
+                    }
+                }
+
+                > li:not(.menu-label) {
+                    display: none;
+                    width: 100%;
+                    padding: 40px 40px 0;
+
+                    &:last-child {
+                        padding-bottom: 60px;
+                    }
+
+                    a {
+                        color: white;
+                    }
+                }
+
+                li.menu-label.open {
+                    &, & ~ li {
+                        display: block;
+                        background: black;
+                        color: white;
+                    }
+
+                    &:after, &:before {
+                        background: white;
+                    }
+                }
+            }
         }
     }
 }
