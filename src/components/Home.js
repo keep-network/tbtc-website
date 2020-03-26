@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 
 import Announcement from './lib/Announcement'
 import MailingListForm from './lib/MailingListForm'
+import SandDollar from './svgs/SandDollar'
 
 
 function Home() {
@@ -40,25 +41,32 @@ function Home() {
             </ol>
           </div>
           <div className="mission-statement col-sm-12 col-md-10">
-            <Announcement sideLabel="Mission">
-              <h1>
-                No middlemen. Period.
-              </h1>
-              <p>
-                Censorship resistant, seizure resistant, inflation resistant.
-              </p>
-            </Announcement>
+            <h1 className="section-title">Mission</h1>
+            <div className="row">
+              <div className="col-sm-12 col-md-5">
+                <SandDollar className="sand-dollar" />
+              </div>
+              <div className="col-sm-12 col-md-7">
+                <h2 className="h1">No Middlemen. Period.</h2>
+                <p>
+                  Censorship resistant, seizure resistant, inflation resistant.
+                </p>
+              </div>
+            </div>
           </div>
           <div className="white-paper col-sm-12 col-md-10">
-            <div className="white-paper-label">
-              Learn how
-            </div>
-            <hr />
-            <div className="white-paper-link">
-              <a href="http://docs.keep.network/tbtc/index.pdf" target="_blank" rel="noopener noreferrer">
-                Read the Spec >>>>
-              </a>
-            </div>
+            <Announcement sideLabel="Spec">
+              <div className="row">
+                <div className="col-sm-12 col-md-5 h1">
+                  Learn how
+                </div>
+                <div className="col-sm-12 col-md-7">
+                  <a href="http://docs.keep.network/tbtc/index.pdf" target="_blank" rel="noopener noreferrer">
+                    Read the Spec >>>>
+                  </a>
+                </div>
+              </div>
+            </Announcement>
           </div>
           <div className="newsletter col-sm-12 col-md-10">
             <div className="row">

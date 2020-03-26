@@ -115,7 +115,21 @@
     }
 
     .mission-statement {
-        padding: 60px 0;
+        padding: 60px 0 90px;
+
+        .sand-dollar {
+            max-width: 100%;
+        }
+
+        @media (min-width: #{$bp-small}) {
+            .col-md-7 {
+                padding-left: 8.3333333%;
+            }
+        }
+    }
+
+    .white-paper {
+        margin-bottom: 90px;
     }
 
     .newsletter {
@@ -161,19 +175,6 @@
                 li {
                     margin: 30px 0;
                 }
-            }
-        }
-
-        .mission-statement {
-            .hook {
-                line-height: 1em;
-                font-size: 1.5em;
-                margin: 30px 0;
-            }
-
-            .line-and-sinker {
-                line-height: 1em;
-                font-size: .75em;
             }
         }
     }
