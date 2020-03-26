@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
 
+import Announcement from './lib/Announcement'
 import MailingListForm from './lib/MailingListForm'
 
 
@@ -39,12 +40,14 @@ function Home() {
             </ol>
           </div>
           <div className="mission-statement col-sm-12 col-md-10">
-            <div className="hook">
-              No middlemen. Period.
-            </div>
-            <div className="line-and-sinker">
-              Censorship resistant, seizure resistant, inflation resistant.
-            </div>
+            <Announcement sideLabel="Mission">
+              <h1>
+                No middlemen. Period.
+              </h1>
+              <p>
+                Censorship resistant, seizure resistant, inflation resistant.
+              </p>
+            </Announcement>
           </div>
           <div className="white-paper col-sm-12 col-md-10">
             <div className="white-paper-label">
