@@ -28,9 +28,7 @@ class Home extends Component {
           Ethereum
           <div className="subtitle">
             <div className="vertical-aligned">
-              No games,
-              <br />
-              just math.
+              No games, just math.
             </div>
           </div>
         </div>
