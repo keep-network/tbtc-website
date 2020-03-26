@@ -34,6 +34,7 @@
 
         color: #4699FA;
         background: black;
+        text-transform: uppercase;
 
         // It's hacky, so sue me.
         margin: 80px -10000px;
@@ -42,6 +43,7 @@
         a {
             color: white;
             text-decoration: none;
+            text-transform: none;
 
             &:hover {
                 text-decoration: underline;
@@ -141,7 +143,11 @@
                     float: right;
                     text-align: left;
                 }
+            }
 
+            + .announcement {
+                font-size: 0.7rem;
+                text-align: center;
             }
         }
 
