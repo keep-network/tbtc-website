@@ -16,11 +16,18 @@ h2, .h2 {
 
 h1, .h1 {
     font-size: 3.57rem;
+    line-height: 1.2;
 }
 
 h2, .h2 {
     line-height: 1.18;
     margin: 1em 0;
+}
+
+h3, .h3 {
+    font-family: $body-font-family;
+    font-size: 1.28rem;
+    line-height: 1.5;
 }
 
 p {
