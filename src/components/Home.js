@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
 
-import Announcement from './lib/Announcement'
 import MailingListForm from './lib/MailingListForm'
 import SandDollar from './svgs/SandDollar'
+import Spotlight from './lib/Spotlight'
 
 
 function Home() {
@@ -56,7 +56,7 @@ function Home() {
             </div>
           </div>
           <div className="white-paper col-sm-12 col-md-12 col-lg-10">
-            <Announcement sideLabel="Spec">
+            <Spotlight sideLabel="Spec">
               <div className="row">
                 <div className="col-sm-12 col-md-5 h1">
                   Learn how
@@ -67,7 +67,7 @@ function Home() {
                   </a>
                 </div>
               </div>
-            </Announcement>
+            </Spotlight>
           </div>
           <div className="newsletter col-sm-12 col-md-12 col-lg-10">
             <div className="row">

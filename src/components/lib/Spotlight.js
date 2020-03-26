@@ -2,9 +2,9 @@ import React from 'react'
 import classNames from 'classnames'
 
 
-function Announcement({ children, className, sideLabel }) {
+function Spotlight({ children, className, sideLabel }) {
     return (
-        <div className={classNames('announcement', className)}>
+        <div className={classNames('spotlight', className)}>
             <div className="side-label-left">{sideLabel}</div>
             { children }
             <div className="side-label-right">{sideLabel}</div>
@@ -12,4 +12,4 @@ function Announcement({ children, className, sideLabel }) {
     )
 }
 
-export default Announcement
+export default Spotlight
