@@ -27,15 +27,15 @@ function Home() {
             <Link to="/news/2020-02-14-ropsten">tBTC is now live on Ropsten</Link>
           </p>
           <div className="step-by-step col-sm-12 col-md-10">
-            <ol>
-              <li>
-                Deposit BTC
+            <ol className="row">
+              <li className="col-4">
+                <div>Deposit BTC</div>
               </li>
-              <li>
-                Mint TBTC
+              <li className="col-4">
+                <div>Mint TBTC</div>
               </li>
-              <li>
-                Lend and earn interest on your BTC.
+              <li className="col-4">
+                <div>Lend and earn interest on your BTC.</div>
               </li>
             </ol>
           </div>
