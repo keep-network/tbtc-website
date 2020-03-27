@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
 
+import ButtonLink from './lib/ButtonLink'
 import MailingListForm from './lib/MailingListForm'
 import SandDollar from './svgs/SandDollar'
 import Spotlight from './lib/Spotlight'
@@ -22,6 +23,21 @@ function Home() {
                   No games, just math.
                 </h2>
               </div>
+              <nav className="col-sm-12 col-md-6 quick-links">
+                <ul>
+                  <li>
+                    <ButtonLink href="#mailing-list">
+                      Get launch updates
+                    </ButtonLink>
+                  </li>
+                  <li>
+                    <ButtonLink href="http://docs.keep.network/tbtc/index.pdf"
+                      target="_blank" rel="noopener noreferrer">
+                        Read the spec
+                    </ButtonLink>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
           <p className="announcement">

@@ -25,9 +25,9 @@ input[type="submit"] {
 
 .button-link {
     @extend .button;
-    display: inline-block;
-    min-width: 220px;
+    display: block;
     position: relative;
+    padding: 10px 20px 10px 10px;
 
     &:after {
         display: inline-block;
@@ -36,5 +36,10 @@ input[type="submit"] {
         top: 50%;
         right: 10px;
         transform: translateY(-50%);
+    }
+
+    @media (min-width: #{$bp-small}) {
+        display: inline-block;
+        min-width: 220px;
     }
 }
