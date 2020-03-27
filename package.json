@@ -46,6 +46,7 @@
     "build:prefixed": "npm run clean && gatsby build --prefix-paths",
     "develop": "npm run clean && gatsby develop",
     "build-quick": "gatsby build",
+    "lint:js": "npm run eslint",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
     "test": "echo \"No tests yet!\" && exit 0"
   },

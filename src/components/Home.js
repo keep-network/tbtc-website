@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'gatsby'
 
 class Home extends Component {
 
@@ -27,12 +28,14 @@ class Home extends Component {
           Ethereum
           <div className="subtitle">
             <div className="vertical-aligned">
-              No games,
-              <br />
-              just math.
+              No games, just math.
             </div>
           </div>
         </div>
+        <p className="announcement">
+          Update
+          <Link to="/news/2020-02-14-ropsten">tBTC is now live on Ropsten</Link>
+        </p>
         <div className="step-by-step">
           <ol>
             <li>
