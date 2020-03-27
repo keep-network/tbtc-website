@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'gatsby'
+import classNames from 'classnames'
 
 import TBTCLogo from '../svgs/TBTCLogo'
 
@@ -9,22 +9,28 @@ const Header = props => {
     setMenu(! showMenu)
   }
 
-  let menuClass = "menu-label"
-  if (showMenu) {
-    menuClass += " open"
-  }
+  return (
+    <header className="header">
+      <nav className="nav">
+        <a className="logo" href="/">
+          <TBTCLogo width="160" />
+        </a>
 
-  return <nav className="nav">
-    <a className="logo" href="/">
-      <TBTCLogo width="110" />
-    </a>
-
-    <ul>
-      <li className={menuClass} onClick={toggleMenu}><button>Navigation</button></li>
-      <li><a href="https://docs.keep.network/tbtc/" target="_blank">Read Spec</a></li>
-      <li><Link to="/#mailing-list">Get Updates</Link></li>
-    </ul>
-  </nav>
+        <div className={classNames('menu', { 'open': showMenu })}>
+          <button className={classNames('menu-label', { 'open': showMenu })}
+            onClick={toggleMenu}>
+              Navigation
+          </button>
+          <ul className="nav-left">
+            <li><a href="https://crosschain.group" target="_blank">About</a></li>
+          </ul>
+          <ul className="nav-right">
+            <li><a className="site-repo-link" href="https://github.com/keep-network/tbtc-website">Repository</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  )
 }
 
 export default Header

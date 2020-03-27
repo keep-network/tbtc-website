@@ -1,64 +1,11 @@
-.nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 45px 0;
-    margin: 0 $gutter-width 50px;
-    border-bottom: 1px solid $black;
-
-    .logo {
-        svg {
-            display: block;
-        }
-    }
-
-
-    > ul {
+.header {
+    .nav {
         display: flex;
         flex-direction: row;
-        align-items: flex-end;
-
-        font-family: 'apercu-mono-regular-pro';
-        font-size: 0.9rem;
-
-        > li.menu-label {
-            display: none;
-        }
-
-        > li {
-            display: block;
-            padding: 0 20px;
-
-            a {
-                color: black;
-                text-decoration: none;
-
-                &:hover {
-                    text-decoration: underline;
-                }
-
-                &[href^=http]:after {
-                    content: ' ↗';
-                }
-            }
-
-        }
-    }
-
-    .hamburger {
-        flex-grow: 0;
-        cursor: pointer;
-        font-size: 1.5em;
-
-        &:hover {
-            color: #888;
-        }
-    }
-
-    @media (max-width: #{$content-width}) {
-        position: relative;
-        margin: 30px 0 80px 0;
+        align-items: center;
+        padding: 45px 0;
+        margin: 0 $gutter-width 50px;
+        border-bottom: 1px solid $black;
 
         .logo {
             svg {
@@ -66,36 +13,108 @@
             }
         }
 
-
-        > ul {
-            position: absolute;
-            z-index: 1;
-            top: -40px;
-            width: 100%;
-
+       .menu {
             display: flex;
-            flex-direction: column;
-            align-items: flex-end;
+            flex: 1 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0 0 0 22px;
+        }
 
-            > li.menu-label {
+        .menu-label {
+            display: none;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            padding: 0;
+            margin: 0;
+
+            > li {
                 display: block;
-                position: relative;
+                padding: 22px;
+
+                a {
+                    color: $black;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    letter-spacing: 1.5px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                    &[href^=http]:after {
+                        content: ' ↗';
+                    }
+                }
+            }
+        }
+
+        @media (max-width: #{$bp-medium}) {
+            position: relative;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .logo {
+                svg {
+                    display: block;
+                }
+            }
+
+            .menu {
+                width: 100%;
+                margin: 0;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-end;
+
+                ul {
+                    display: none;
+                    width: 100%;
+
+                    li {
+                        width: 100%;
+                        padding: 0;
+
+                        a {
+                            display: block;
+                            padding: 22px 0;
+                        }
+                    }
+                }
+
+                &.open {
+                    margin: 45px 0 0;
+
+                    ul {
+                        display: flex;
+                    }
+                }
+            }
+
+            .menu-label {
+                display: block;
+                position: absolute;
+                top: 30px;
+                right: 0;
                 width: 75px;
                 padding: 0;
-                margin: 0 40px 0 0;
+                margin: 0;
                 height: 60px;
 
                 background: white;
                 color: black;
 
                 cursor: pointer;
-
-                > button {
-                    position: absolute;
-                    left: -100px;
-                    top: -100px;
-                    font-size: 0;
-                }
+                // hide the text
+                text-indent: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                border: 0;
 
                 &:before, &:after {
                     position: absolute;
@@ -115,34 +134,21 @@
                 &:after {
                     right: 25px
                 }
-            }
 
-            > li:not(.menu-label) {
-                display: none;
-                width: 100%;
-                padding: 40px 40px 0;
-
-                &:last-child {
-                    padding-bottom: 60px;
-                }
-
-                a {
-                    color: white;
-                }
-            }
-
-            li.menu-label.open {
-                &, & ~ li {
-                    display: block;
+                &.open {
                     background: black;
                     color: white;
-                }
 
-                &:after, &:before {
-                    background: white;
+                    &:after, &:before {
+                        background: white;
+                    }
                 }
             }
         }
-    }
 
+        @media (max-width: #{$bp-small}) {
+            margin: 0 15px 30px;
+        }
+
+    }
 }
