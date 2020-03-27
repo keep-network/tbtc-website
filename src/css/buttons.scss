@@ -22,3 +22,19 @@ input[type="submit"] {
         cursor: unset;
     }
 }
+
+.button-link {
+    @extend .button;
+    display: inline-block;
+    min-width: 220px;
+    position: relative;
+
+    &:after {
+        display: inline-block;
+        content: ' →';
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+    }
+}
