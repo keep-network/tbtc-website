@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'gatsby'
 
 import TBTCLogo from '../svgs/TBTCLogo'
 
@@ -21,7 +22,7 @@ const Header = props => {
     <ul>
       <li className={menuClass} onClick={toggleMenu}><button>Navigation</button></li>
       <li><a href="https://docs.keep.network/tbtc/" target="_blank">Read Spec</a></li>
-      <li><a href="/#mailing-list">Get Updates</a></li>
+      <li><Link to="/#mailing-list">Get Updates</Link></li>
     </ul>
   </nav>
 }
