@@ -151,6 +151,24 @@
 
     .white-paper {
         margin-bottom: 90px;
+
+        .spotlight {
+            .row {
+                align-items: center;
+                
+                .button-link {
+                    margin-top: 1em;
+                }
+
+                @media (min-width: #{$bp-medium}) {
+                    margin-top: 1em;
+
+                    .col-md-7 {
+                        text-align: center;
+                    }
+                }
+            }
+        }
     }
 
     .newsletter {

@@ -9,6 +9,7 @@ input[type="submit"] {
     text-align: left;
     font-family: $body-font-family;
     font-weight: 500;
+    font-size: $body-font-size;
     letter-spacing: 1.5px;
 
     &:hover:enabled {
@@ -40,6 +41,6 @@ input[type="submit"] {
 
     @media (min-width: #{$bp-small}) {
         display: inline-block;
-        min-width: 220px;
+        min-width: 240px;
     }
 }

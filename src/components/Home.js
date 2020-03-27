@@ -78,9 +78,9 @@ function Home() {
                   Learn how
                 </div>
                 <div className="col-sm-12 col-md-7">
-                  <a href="http://docs.keep.network/tbtc/index.pdf" target="_blank" rel="noopener noreferrer">
-                    Read the Spec >>>>
-                  </a>
+                  <ButtonLink href="http://docs.keep.network/tbtc/index.pdf" target="_blank" rel="noopener noreferrer">
+                    Read the Spec
+                  </ButtonLink>
                 </div>
               </div>
             </Spotlight>
