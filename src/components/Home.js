@@ -39,6 +39,11 @@ function Home() {
                 </ul>
               </nav>
             </div>
+            <div className="row justify-content-center no-gutter">
+              <div className="col-10">
+                <SandDollar className="sand-dollar-hero" />
+              </div>
+            </div>
           </div>
           <p className="announcement">
             Update
