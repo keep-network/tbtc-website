@@ -23,6 +23,10 @@
         .sand-dollar-hero {
             width: 100%;
             height: 100%;
+
+            @media (max-width: #{$bp-medium}) {
+                margin-top: 30px;
+            }
         }
     }
     .step-by-step {
@@ -57,6 +61,27 @@
                 }
             }
         }
+
+        @media (max-width: #{$bp-medium}) {
+            margin-top: 30px;
+            padding: 10px 20px;
+
+            ol {
+                flex-direction: column;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 0 30px;
+
+                li {
+                    margin: 30px 0;
+                    justify-content: left;
+
+                    div {
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
 
     .mission-statement {
@@ -70,6 +95,10 @@
             .col-md-7 {
                 padding-left: 8.3333333%;
             }
+        }
+
+        @media (max-width: #{$bp-medium}) {
+            padding: 20px 0 90px;
         }
     }
 
@@ -103,23 +132,6 @@
 
         .row {
             align-items: baseline;
-        }
-    }
-
-    @media (max-width: #{$bp-medium}) {
-        .step-by-step {
-            padding: 10px 20px;
-
-            ol {
-                flex-direction: column;
-                width: 100%;
-                box-sizing: border-box;
-                padding: 30px;
-
-                li {
-                    margin: 30px 0;
-                }
-            }
         }
     }
 }

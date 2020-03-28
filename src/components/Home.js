@@ -44,13 +44,13 @@ function Home() {
           </div>
           <div className="step-by-step col-sm-12 col-md-12 col-lg-10">
             <ol className="row">
-              <li className="col-4">
+              <li className="col-12 col-sm-12 col-md-4">
                 <div>Deposit BTC</div>
               </li>
-              <li className="col-4">
+              <li className="col-12 col-sm-12 col-md-4">
                 <div>Mint TBTC</div>
               </li>
-              <li className="col-4">
+              <li className="col-12 col-sm-12 col-md-4">
                 <div>Lend and earn interest on your BTC.</div>
               </li>
             </ol>
