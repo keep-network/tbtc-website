@@ -1,0 +1,50 @@
+.announcement {
+    .content {
+        position: relative;
+        padding: 21px 0 0;
+
+        &:before,
+        &::after {
+            content: '';
+            background-color: $black;
+            display: block;
+            position: absolute;
+            left: 0;
+        }
+
+        &:before {
+            width: 1px;
+            height: 45px;
+            top: 0;
+        }
+
+        &:after {
+            width: 15px;
+            height: 1px;
+            top: 45px;
+        }
+
+        p {
+            padding-left: 80px;
+            position: relative;
+
+            &:before {
+                content: ' .... ';
+                display: inline-block;
+                position: absolute;
+                top: -3px;
+                left: 30px;
+            }
+        }
+
+        a {
+            text-decoration: underline;
+        }
+    }
+
+    @media (max-width: #{$bp-small}) {
+        + .app {
+            margin: 0 auto;
+        }
+    }
+}

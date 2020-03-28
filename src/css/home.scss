@@ -1,85 +1,4 @@
 .home {
-    font-family: 'apercu-mono-regular-pro';
-
-    .title {
-        font-size: 4em;
-        position: relative;
-        font-family: 'apercu-bold-pro';
-
-        .subtitle {
-            font-size: .2em;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            text-align: right;
-            font-family: 'apercu-mono-regular-pro';
-
-            .vertical-aligned {
-                position: relative;
-                top: 50%;
-                transform: translateY(-50%);
-            }
-
-            br {
-                display: none;
-            }
-        }
-    }
-
-    .title + .announcement {
-        font-family: 'apercu-mono-regular-pro';
-        font-size: 1rem;
-
-        color: #4699FA;
-        background: black;
-        text-transform: uppercase;
-
-        // It's hacky, so sue me.
-        margin: 80px -10000px;
-        padding: 15px 10000px;
-
-        a {
-            color: white;
-            text-decoration: none;
-            text-transform: none;
-
-            &:hover {
-                text-decoration: underline;
-            }
-
-            @keyframes blip {
-                from {
-                    opacity: 1;
-                }
-
-                90% {
-                    opacity: 1;
-                }
-
-                to {
-                    opacity: 0;
-                }
-            }
-
-            &:before {
-                display: inline-block;
-                content: ' ';
-
-                border-radius: 50%;
-                background: #5AE680;
-
-                height: 0.5rem;
-                width: 0.5rem;
-
-                margin: 0 10px 0.1rem 20px;
-
-                animation: blip 3s infinite;
-            }
-        }
-    }
-
     .hero {
         .row {
             align-items: baseline;
@@ -188,25 +107,6 @@
     }
 
     @media (max-width: #{$bp-medium}) {
-        .title {
-            font-size: 2.75em;
-
-            .subtitle {
-                margin: 5px 0 0;
-                font-size: .2em;
-
-                .vertical-aligned {
-                    float: right;
-                    text-align: left;
-                }
-            }
-
-            + .announcement {
-                font-size: 0.7rem;
-                text-align: center;
-            }
-        }
-
         .step-by-step {
             padding: 10px 20px;
 

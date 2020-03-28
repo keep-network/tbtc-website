@@ -1,10 +1,7 @@
-import React, { Component } from 'react'
-import { Link } from 'gatsby'
+import React from 'react'
 
-import ButtonLink from './lib/ButtonLink'
-import MailingListForm from './lib/MailingListForm'
+import { ButtonLink, MailingListForm, Spotlight } from './lib'
 import SandDollar from './svgs/SandDollar'
-import Spotlight from './lib/Spotlight'
 
 
 function Home() {
@@ -45,10 +42,6 @@ function Home() {
               </div>
             </div>
           </div>
-          <p className="announcement">
-            Update
-            <Link to="/news/2020-02-14-ropsten">tBTC is now live on Ropsten</Link>
-          </p>
           <div className="step-by-step col-sm-12 col-md-12 col-lg-10">
             <ol className="row">
               <li className="col-4">
