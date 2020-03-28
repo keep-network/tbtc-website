@@ -3,7 +3,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 45px 0;
+        padding: 25px 0 10px;
         margin: 0 $gutter-width 50px;
         border-bottom: 1px solid $black;
 
@@ -17,6 +17,7 @@
             display: flex;
             flex: 1 100%;
             flex-direction: row;
+            align-items: center;
             justify-content: space-between;
             margin: 0 0 0 22px;
         }
@@ -52,12 +53,33 @@
                     }
                 }
             }
+
+            &.nav-right {
+                > li:last-of-type {
+                    margin-right: -22px;
+                }
+            }
+        }
+
+        .site-repo-link {
+            display: block;
+            width: 22px;
+            height: 26px;
+            padding: 10px;
+            background-image: url(../components/svgs/Repo.svg);
+            background-repeat: no-repeat;
+            @include hide-button-text;
+
+            &:after {
+                display: none;
+            }
         }
 
         @media (max-width: #{$bp-medium}) {
             position: relative;
             flex-direction: column;
             align-items: flex-start;
+            padding: 25px 0;
 
             .logo {
                 svg {
@@ -88,7 +110,7 @@
                 }
 
                 &.open {
-                    margin: 45px 0 0;
+                    margin: 30px 0 0;
 
                     ul {
                         display: flex;
@@ -99,7 +121,7 @@
             .menu-label {
                 display: block;
                 position: absolute;
-                top: 30px;
+                top: 10px;
                 right: 0;
                 width: 75px;
                 padding: 0;
@@ -110,11 +132,8 @@
                 color: black;
 
                 cursor: pointer;
-                // hide the text
-                text-indent: 100%;
-                white-space: nowrap;
-                overflow: hidden;
                 border: 0;
+                @include hide-button-text;
 
                 &:before, &:after {
                     position: absolute;

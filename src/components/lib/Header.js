@@ -25,7 +25,7 @@ const Header = props => {
             <li><a href="https://crosschain.group" target="_blank">About</a></li>
           </ul>
           <ul className="nav-right">
-            <li><a className="site-repo-link" href="https://github.com/keep-network/tbtc-website">Repository</a></li>
+            <li><a className="site-repo-link" href="https://github.com/keep-network/tbtc-website" target="_blank">Repository</a></li>
           </ul>
         </div>
       </nav>

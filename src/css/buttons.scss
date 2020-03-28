@@ -44,3 +44,9 @@ input[type="submit"] {
         min-width: 240px;
     }
 }
+
+@mixin hide-button-text {
+    text-indent: 1000%;
+    white-space: nowrap;
+    overflow: hidden;
+}
