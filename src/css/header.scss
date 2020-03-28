@@ -47,10 +47,6 @@
                     &:hover {
                         text-decoration: underline;
                     }
-
-                    &[href^=http]:after {
-                        content: ' ↗';
-                    }
                 }
             }
 

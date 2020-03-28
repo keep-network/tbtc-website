@@ -3,22 +3,59 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    padding: 45px 0;
+    padding: 45px 0 0;
     margin: 0 $gutter-width;
     overflow: hidden;
     border-top: 1px solid $black;
 
-    .footer-content {
-        .footer-bottom {
-            margin: 0 auto;
+    .footer-menu {
+        ul {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 40px 0;
 
-            .footer-links {
-                a {
-                    display: block;
-                    font-size: 1.2em;
-                    margin: 5px 0;
+            li {
+                list-style: none;
+                margin: 1rem 0;
+
+                &:first-of-type {
+                    a {
+                        text-transform: uppercase;
+                        letter-spacing: 1.5px;
+                        font-weight: 500;
+                    }
                 }
             }
+        }
+
+    }
+
+    @media (min-width: #{$bp-medium}) {
+        flex-direction: row;
+        min-height: 310px;
+
+        .footer-menu {
+            flex: 1 100%;
+            padding-left: 120px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            ul {
+                margin: 0;
+
+                li {
+                    &:first-of-type {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+
+        .copyright {
+            text-align: right;
         }
     }
 }

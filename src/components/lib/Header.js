@@ -13,7 +13,7 @@ const Header = props => {
     <header className="header">
       <nav className="nav">
         <a className="logo" href="/">
-          <TBTCLogo width="160" />
+          <TBTCLogo width="165" />
         </a>
 
         <div className={classNames('menu', { 'open': showMenu })}>

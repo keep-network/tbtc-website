@@ -39,10 +39,6 @@ input[type="submit"] {
         transform: translateY(-50%);
     }
 
-    &[href^=http]:after {
-        content: ' ↗';
-    }
-
     @media (min-width: #{$bp-small}) {
         display: inline-block;
         min-width: 240px;
