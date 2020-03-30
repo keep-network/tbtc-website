@@ -53,6 +53,26 @@ const Home = () => (
             </li>
           </ol>
         </div>
+        <div className="major-announcement col-sm-12 col-md-12 col-lg-10">
+          <Spotlight className="spotlight-launch" sideLabelText="Announcement">
+            <h1>
+              Mainnet launch of tBTC<br/>
+              announced for April 13th, 2020
+            </h1>
+            <div className="row">
+              <div className="col-sm-12 col-md-8">
+                <p>
+                  Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
+                </p>
+              </div>
+              <div className="col-sm-12 col-md-4">
+                <ButtonLink href="/#" target="_blank" rel="noopener noreferrer">
+                  Read more
+                </ButtonLink>
+              </div>
+            </div>
+          </Spotlight>
+        </div>
         <div className="mission-statement col-sm-12 col-md-12 col-lg-10">
           <h1 className="section-title">Mission</h1>
           <div className="row">
