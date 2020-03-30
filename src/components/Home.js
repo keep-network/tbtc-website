@@ -12,11 +12,10 @@ const Home = () => (
           <div className="row">
             <div className="col-sm-12 col-md-6">
               <h1>
-                Bitcoin,<br />
-                On Ethereum
+                The safe way to earn with your Bitcoin.
               </h1>
               <h2 className="h3">
-                No games, just math.
+                Convert TBTC to BTC any time with no intermediaries.
               </h2>
             </div>
             <nav className="col-sm-12 col-md-6 quick-links">
