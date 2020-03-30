@@ -1,7 +1,6 @@
 import React from 'react'
 
 // Styles
-import 'bootstrap-css-only/css/bootstrap-grid.min.css'
 import '../css/app.scss'
 
 // Components
