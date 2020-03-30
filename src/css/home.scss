@@ -147,7 +147,7 @@
 
     }
 
-    .white-paper {
+    .toolkit {
         margin-bottom: 90px;
 
         .spotlight {
@@ -161,7 +161,7 @@
                 @media (min-width: #{$bp-medium}) {
                     margin-top: 1em;
 
-                    .col-md-7 {
+                    .col-xl-7 {
                         text-align: center;
                     }
                 }
@@ -169,6 +169,7 @@
 
             a {
                 @extend %button-link;
+                margin-top: 2em;
             }
         }
     }

@@ -86,15 +86,15 @@ const Home = ({ newsItems }) => (
             ))}
           </div>
         </section>
-        <section className="white-paper col-sm-12 col-md-12 col-lg-10">
-          <Spotlight sideLabelText="Spec" doubleLabel>
+        <section className="toolkit col-sm-12 col-md-12 col-lg-10">
+          <Spotlight sideLabelText="Developers" doubleLabel>
             <div className="row">
-              <div className="col-sm-12 col-md-5 h1">
-                Learn how
+              <div className="col-sm-12 col-md-7 col-xl-5 h1">
+                Integrate TBTC to add Bitcoin to your dApp
               </div>
-              <div className="col-sm-12 col-md-7">
-                <a href="http://docs.keep.network/tbtc/index.pdf" target="_blank" rel="noopener noreferrer">
-                  Read the Spec
+              <div className="col-sm-12 col-md-5 col-xl-7">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Developer Toolkit
                 </a>
               </div>
             </div>
