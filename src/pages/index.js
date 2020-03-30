@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 
 // Styles
 import '../css/app.scss'
@@ -9,6 +10,29 @@ import {
   Home
 } from '../components'
 
-export default () => <App>
-  <Home />
-</App>
+export default ({ data }) => {
+  const { edges: newsItems } = data.allMarkdownRemark
+  return (
+    <App>
+      <Home newsItems={newsItems} />
+    </App>
+  )
+}
+
+// Query for latest news items, skip any entries that have a null path
+export const query = graphql`
+  query LatestNewsItems {
+    allMarkdownRemark(limit: 3, sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {path: {ne: null}}}) {
+      edges {
+        node {
+          id
+          excerpt
+          frontmatter {
+            title
+            path
+          }
+        }
+      }
+    }
+  }
+` 
