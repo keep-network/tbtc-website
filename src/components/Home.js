@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
-import { ButtonLink, MailingListForm, Spotlight } from './lib'
+import { MailingListForm, Spotlight } from './lib'
 import SandDollar from './svgs/SandDollar'
 
 
@@ -21,15 +22,15 @@ const Home = () => (
             <nav className="col-sm-12 col-md-6 quick-links">
               <ul>
                 <li>
-                  <ButtonLink href="#mailing-list">
+                  <Link to="/#mailing-list">
                     Get launch updates
-                  </ButtonLink>
+                  </Link>
                 </li>
                 <li>
-                  <ButtonLink href="http://docs.keep.network/tbtc/index.pdf"
+                  <a href="http://docs.keep.network/tbtc/index.pdf"
                     target="_blank" rel="noopener noreferrer">
                       Read the spec
-                  </ButtonLink>
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -66,9 +67,9 @@ const Home = () => (
                 </p>
               </div>
               <div className="col-sm-12 col-md-4">
-                <ButtonLink href="/#" target="_blank" rel="noopener noreferrer">
+                <Link to="/#" target="_blank" rel="noopener noreferrer">
                   Read more
-                </ButtonLink>
+                </Link>
               </div>
             </div>
           </Spotlight>
@@ -94,9 +95,9 @@ const Home = () => (
                 Learn how
               </div>
               <div className="col-sm-12 col-md-7">
-                <ButtonLink href="http://docs.keep.network/tbtc/index.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="http://docs.keep.network/tbtc/index.pdf" target="_blank" rel="noopener noreferrer">
                   Read the Spec
-                </ButtonLink>
+                </a>
               </div>
             </div>
           </Spotlight>

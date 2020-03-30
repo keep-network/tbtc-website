@@ -24,11 +24,12 @@ input[type="submit"] {
     }
 }
 
-.button-link {
+%button-link {
     @extend .button;
     display: block;
     position: relative;
     padding: 10px 20px 10px 10px;
+    margin-top: 1em;
 
     &:after {
         display: inline-block;
@@ -41,7 +42,11 @@ input[type="submit"] {
 
     @media (min-width: #{$bp-small}) {
         display: inline-block;
-        min-width: 240px;
+        width: 240px;
+    }
+
+    @media (min-width: #{$bp-medium}) {
+        margin-top: 0;
     }
 }
 
