@@ -5,7 +5,7 @@ import { MailingListForm, Spotlight } from './lib'
 import SandDollar from './svgs/SandDollar'
 
 
-const Home = () => (
+const Home = ({ newsItems }) => (
   <div className="home">
     <div className="container">
       <div className="row justify-content-center no-gutters">
@@ -74,18 +74,16 @@ const Home = () => (
             </div>
           </Spotlight>
         </section>
-        <section className="mission-statement col-sm-12 col-md-12 col-lg-10">
-          <h1 className="section-title">Mission</h1>
+        <section className="latest-news col-sm-12 col-md-12 col-lg-10">
+          <h1 className="section-title">Latest News</h1>
           <div className="row">
-            <div className="col-sm-12 col-md-5">
-              <SandDollar className="sand-dollar" />
-            </div>
-            <div className="col-sm-12 col-md-7">
-              <h2 className="h1">No Middlemen.<br />Period.</h2>
-              <p>
-                Censorship resistant, seizure resistant, inflation resistant.
-              </p>
-            </div>
+            { newsItems.map(({ node }) => (
+              <div className="latest-news-item col-sm-12 col-md-4" key={node.id}>
+                <h2>{node.frontmatter.title}</h2>
+                <p>{node.excerpt}</p>
+                <Link to={`/${node.frontmatter.path}`}>Read more</Link>
+              </div>
+            ))}
           </div>
         </section>
         <section className="white-paper col-sm-12 col-md-12 col-lg-10">
