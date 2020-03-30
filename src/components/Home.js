@@ -68,7 +68,7 @@ const Home = () => (
           </div>
         </div>
         <div className="white-paper col-sm-12 col-md-12 col-lg-10">
-          <Spotlight sideLabel="Spec">
+          <Spotlight sideLabelText="Spec" doubleLabel>
             <div className="row">
               <div className="col-sm-12 col-md-5 h1">
                 Learn how
