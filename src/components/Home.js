@@ -100,6 +100,13 @@ const Home = ({ newsItems }) => (
             </div>
           </Spotlight>
         </section>
+        <section className="integrations col-sm-12 col-md-12 col-lg-10">
+          <h1 className="section-title">Integrations</h1>
+          <ul>
+            <li><a className="compound" href="https://compound.finance/">Compound</a></li>
+            <li><a className="uniswap" href="https://uniswap.org/">Uniswap</a></li>
+          </ul>
+        </section>
         <section className="newsletter col-sm-12 col-md-12 col-lg-10">
           <div className="row">
             <div className="col-sm-12 col-md-4">
