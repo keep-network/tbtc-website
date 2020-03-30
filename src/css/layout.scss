@@ -1,0 +1,38 @@
+$max-page-width: 1440px;
+$content-width: 768px;
+$gutter-width: 30px;
+
+// Breakpoints
+$bp-extra-large: 1200px;
+$bp-large: 992px;
+$bp-medium: 768px;
+$bp-small: 576px;
+
+
+html, body, #root {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: $white;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.app {
+    flex: 1;
+    color: #{$black};
+    margin: 50px auto 0;
+
+    @media (max-width: #{$bp-small}) {
+        margin: 30px auto 0;
+    }
+}
+
+.container {
+    @media (min-width: #{$bp-extra-large}) {
+        max-width: $max-page-width;
+    }
+}

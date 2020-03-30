@@ -1,182 +1,137 @@
 .home {
-    font-family: 'apercu-mono-regular-pro';
+    .hero {
+        .row {
+            align-items: baseline;
+        }
 
-    .title {
-        font-size: 4em;
-        position: relative;
-        font-family: 'apercu-bold-pro';
-
-        .subtitle {
-            font-size: .2em;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            text-align: right;
-            font-family: 'apercu-mono-regular-pro';
-
-            .vertical-aligned {
-                position: relative;
-                top: 50%;
-                transform: translateY(-50%);
+        .quick-links {
+            ul {
+                padding: 0;
             }
 
-            br {
-                display: none;
+            li {
+                list-style: none;
+                margin: 30px 0;
+            }
+
+            @media (min-width: #{$bp-medium}) {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+
+        .sand-dollar-hero {
+            width: 100%;
+            height: 100%;
+
+            @media (max-width: #{$bp-medium}) {
+                margin-top: 30px;
             }
         }
     }
-
-    .title + .announcement {
-        font-family: 'apercu-mono-regular-pro';
-        font-size: 1rem;
-
-        color: #4699FA;
-        background: black;
-        text-transform: uppercase;
-
-        // It's hacky, so sue me.
-        margin: 80px -10000px;
-        padding: 15px 10000px;
-
-        a {
-            color: white;
-            text-decoration: none;
-            text-transform: none;
-
-            &:hover {
-                text-decoration: underline;
-            }
-
-            @keyframes blip {
-                from {
-                    opacity: 1;
-                }
-
-                90% {
-                    opacity: 1;
-                }
-
-                to {
-                    opacity: 0;
-                }
-            }
-
-            &:before {
-                display: inline-block;
-                content: ' ';
-
-                border-radius: 50%;
-                background: #5AE680;
-
-                height: 0.5rem;
-                width: 0.5rem;
-
-                margin: 0 10px 0.1rem 20px;
-
-                animation: blip 3s infinite;
-            }
-        }
-    }
-
     .step-by-step {
-        width: 100vw;
-        margin-left: calc((100vw - 100%) / -2);
         margin-top: 110px;
-        border-width: 1px 0;
-        border-style: solid;
-        border-color: #{$light-blue};
-        background-color: #{$lighter-grey};
-        font-size: .75em;
 
         ol {
             counter-reset: step-by-step;
             list-style: none;
 
-            width: #{$content-width};
             margin: 0 auto;
             padding: 75px 0;
-            display: flex;
 
             li {
                 counter-increment: step-by-step;
+                display: flex;
+                align-items: baseline;
+                justify-content: center;
 
-                flex: 1;
-                color: #{$dark-grey};
+                div {
+                    display: inline-block;
+                    text-align: left;
+                    max-width: 50%;
+                    @extend .h2;
+                }
 
                 &::before {
                     content: "0" #{counter(step-by-step)};
-                    display: block;
-                    color: #{$blue};
-                    font-weight: bold;
+                    display: inline-block;
+                    padding-right: 12.5%;
+                    font-size: 0.93rem;
                     line-height: 2em;
                 }
             }
         }
-    }
 
-    .mission-statement {
-        padding: 60px 0;
-
-        .hook {
-            font-size: 2em;
-            line-height: 2em;
-            font-family: 'apercu-bold-pro';
-        }
-
-        .line-and-sinker {
-            font-size: .8em;
-            line-height: 2em;
-        }
-    }
-
-    @media (max-width: #{$content-width}) {
-        .title {
-            font-size: 2.75em;
-
-            .subtitle {
-                margin: 5px 0 0;
-                font-size: .2em;
-
-                .vertical-aligned {
-                    float: right;
-                    text-align: left;
-                }
-            }
-
-            + .announcement {
-                font-size: 0.7rem;
-                text-align: center;
-            }
-        }
-
-        .step-by-step {
+        @media (max-width: #{$bp-medium}) {
+            margin-top: 30px;
             padding: 10px 20px;
 
             ol {
                 flex-direction: column;
                 width: 100%;
                 box-sizing: border-box;
-                padding: 30px;
+                padding: 0 30px;
 
                 li {
                     margin: 30px 0;
+                    justify-content: left;
+
+                    div {
+                        width: 100%;
+                    }
                 }
             }
         }
+    }
 
-        .mission-statement {
-            .hook {
-                line-height: 1em;
-                font-size: 1.5em;
-                margin: 30px 0;
-            }
+    .mission-statement {
+        padding: 60px 0 90px;
 
-            .line-and-sinker {
-                line-height: 1em;
-                font-size: .75em;
+        .sand-dollar {
+            max-width: 100%;
+        }
+
+        @media (min-width: #{$bp-small}) {
+            .col-md-7 {
+                padding-left: 8.3333333%;
             }
+        }
+
+        @media (max-width: #{$bp-medium}) {
+            padding: 20px 0 90px;
+        }
+    }
+
+    .white-paper {
+        margin-bottom: 90px;
+
+        .spotlight {
+            .row {
+                align-items: center;
+                
+                .button-link {
+                    margin-top: 1em;
+                }
+
+                @media (min-width: #{$bp-medium}) {
+                    margin-top: 1em;
+
+                    .col-md-7 {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .newsletter {
+        padding: 90px 0;
+        border-top: 1px solid $black;
+        border-bottom: 1px solid $black;
+        margin-bottom: 90px;
+
+        .row {
+            align-items: baseline;
         }
     }
 }

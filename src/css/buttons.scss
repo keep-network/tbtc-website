@@ -1,0 +1,52 @@
+button, .button,
+input[type="submit"] {
+    border: 1px solid $black;
+    padding: 10px;
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: $white;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: $body-font-family;
+    font-weight: 500;
+    font-size: $body-font-size;
+    letter-spacing: 1.5px;
+
+    &:hover:enabled {
+        background-color: $black;
+        color: #{$white};
+    }
+
+    &:disabled {
+        border-color: #{$light-grey};
+        color: #{$light-grey};
+        cursor: unset;
+    }
+}
+
+.button-link {
+    @extend .button;
+    display: block;
+    position: relative;
+    padding: 10px 20px 10px 10px;
+
+    &:after {
+        display: inline-block;
+        content: ' →';
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+    }
+
+    @media (min-width: #{$bp-small}) {
+        display: inline-block;
+        min-width: 240px;
+    }
+}
+
+@mixin hide-button-text {
+    text-indent: 1000%;
+    white-space: nowrap;
+    overflow: hidden;
+}
