@@ -1,12 +1,15 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql, StaticQuery } from 'gatsby'
+import PropTypes from 'prop-types'
 
 import { Spotlight } from './lib'
 import SandDollar from './svgs/SandDollar'
 
 
-const Home = ({ newsItems }) => (
-  <div className="home">
+const Home = ({ data }) => {
+  const { edges: newsItems } = data.allMarkdownRemark
+
+  return (<div className="home">
     <div className="container">
       <div className="row justify-content-center no-gutters">
         <section className="hero col-sm-12 col-md-12 col-lg-10">
@@ -77,7 +80,7 @@ const Home = ({ newsItems }) => (
         <section className="latest-news col-sm-12 col-md-12 col-lg-10">
           <h1 className="section-title">Latest News</h1>
           <div className="row">
-            { newsItems.map(({ node }) => (
+            { newsItems && newsItems.map(({ node }) => (
               <div className="latest-news-item col-sm-12 col-md-4" key={node.id}>
                 <h2>{node.frontmatter.title}</h2>
                 <p>{node.excerpt}</p>
@@ -109,7 +112,38 @@ const Home = ({ newsItems }) => (
         </section>
       </div>
     </div>
-  </div>
-)
+  </div>)
+}
 
-export default Home
+Home.propTypes = {
+  data: PropTypes.shape({
+    allMarkdownRemark: PropTypes.shape({
+      edges: PropTypes.array,
+    })
+  })
+}
+
+// Query for latest news items, skip any entries that have a null path
+export const query = graphql`
+  query LatestNewsItems {
+    allMarkdownRemark(limit: 3, sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {path: {ne: null}, template: {eq: "news-item"}}}) {
+      edges {
+        node {
+          id
+          excerpt
+          frontmatter {
+            title
+            path
+          }
+        }
+      }
+    }
+  }
+`
+
+export default () => (
+  <StaticQuery
+    query={query}
+    render={data => <Home data={data} />}
+  />
+)
