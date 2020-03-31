@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import { MailingListForm, Spotlight } from './lib'
+import { Spotlight } from './lib'
 import SandDollar from './svgs/SandDollar'
 
 
@@ -106,17 +106,6 @@ const Home = ({ newsItems }) => (
             <li><a className="compound" href="https://compound.finance/">Compound</a></li>
             <li><a className="uniswap" href="https://uniswap.org/">Uniswap</a></li>
           </ul>
-        </section>
-        <section className="newsletter col-sm-12 col-md-12 col-lg-10">
-          <div className="row">
-            <div className="col-sm-12 col-md-4">
-              <h2>Newsletter</h2>
-              <p>Enter your email to receive updates</p>
-            </div>
-            <div className="col-sm-12 col-md-4 offset-md-1">
-              <MailingListForm />
-            </div>
-          </div>
         </section>
       </div>
     </div>
