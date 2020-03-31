@@ -16,7 +16,7 @@ export const NewsItemTemplate = ({ title, date, description, body }) => (
           </header>
           <div className="content">
             <div className="date"><span>{date}</span></div>
-            <div class="body" dangerouslySetInnerHTML={{ __html: body }} />
+            <div className="body" dangerouslySetInnerHTML={{ __html: body }} />
           </div>
         </div>
       </div>
