@@ -1,4 +1,14 @@
 .news {
+    .page-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            @extend %button-link;
+        }
+    }
+
     .news-list-item {
         border: 1px solid $black;
         padding: 1rem 30px 1.5rem;

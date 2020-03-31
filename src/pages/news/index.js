@@ -13,6 +13,7 @@ const News = ({ data }) => {
           <div className="row justify-content-center no-gutters">
             <header className="page-header col-sm-12 col-md-12 col-lg-10">
               <h1>News</h1>
+              <Link to={`/news#mailing-list`}>Subscribe</Link>
             </header>
             <section className="col-sm-12 col-md-12 col-lg-10">
               { newsItems.map(({ node }) => (
