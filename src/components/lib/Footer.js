@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 import TBTCLogo from '../svgs/TBTCLogo'
 
@@ -15,6 +16,11 @@ const Footer = () => (
             <a href="https://crosschain.group" target="_blank" rel="noopener noreferrer">
               About
             </a>
+          </li>
+          <li>
+            <Link to="/news">
+              News
+            </Link>
           </li>
         </ul>
       </div>

@@ -46,7 +46,9 @@ a {
     &[href^=http]:after {
         content: ' ↗';
     }
+}
 
+%arrow-link {
     &[href^="/"]:after,
     &[href^="#"]:after {
         content: ' →';

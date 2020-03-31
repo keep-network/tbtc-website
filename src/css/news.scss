@@ -26,6 +26,7 @@
 
             a {
                 text-transform: uppercase;
+                @extend %arrow-link;
             }
         }
 

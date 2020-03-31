@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import classNames from 'classnames'
+import { Link } from 'gatsby'
 
 import TBTCLogo from '../svgs/TBTCLogo'
 
@@ -23,6 +24,7 @@ const Header = props => {
           </button>
           <ul className="nav-left">
             <li><a href="https://crosschain.group" target="_blank" rel="noopener noreferrer">About</a></li>
+            <li><Link to="/news">News</Link></li>
           </ul>
           <ul className="nav-right">
             <li><a className="site-repo-link" href="https://github.com/keep-network/tbtc-website" target="_blank" rel="noopener noreferrer">Repository</a></li>
