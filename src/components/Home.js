@@ -58,7 +58,7 @@ const Home = ({ newsItems }) => (
           <Spotlight className="spotlight-launch" sideLabelText="Announcement">
             <h1>
               Mainnet launch of tBTC<br/>
-              announced for April 13th, 2020
+              announced for April 27th, 2020
             </h1>
             <div className="row">
               <div className="col-sm-12 col-md-8">
