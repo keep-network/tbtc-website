@@ -43,12 +43,28 @@
 
     .content {
         .body {
+            h5 {
+                @extend .h2;
+                font-size: 1.5em;
+                margin: 2em auto;
+            }
+
+            h6 {
+                font-size: $body-font-size;
+                line-height: 1.5;
+            }
+
             a {
                 text-decoration: underline;
 
                 &:after {
                     content: '';
                 }
+            }
+
+            img {
+                max-width: 100%;
+                margin: 1rem 0 2rem;
             }
         }
 
