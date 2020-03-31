@@ -5,7 +5,6 @@ import { graphql } from 'gatsby'
 
 import { App } from '../components'
 
-import '../css/news-item.scss'
 
 export const NewsItemTemplate = ({ title, date, description, body }) => {
 

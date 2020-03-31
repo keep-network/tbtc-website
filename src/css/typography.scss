@@ -46,6 +46,11 @@ a {
     &[href^=http]:after {
         content: ' ↗';
     }
+
+    &[href^="/"]:after,
+    &[href^="#"]:after {
+        content: ' →';
+    }
 }
 
 .section-title {

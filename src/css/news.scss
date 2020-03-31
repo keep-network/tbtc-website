@@ -1,0 +1,27 @@
+.news {
+    .news-list-item {
+        border: 1px solid $black;
+        padding: 1rem 30px 1.5rem;
+        margin-bottom: 2.14rem;
+
+        .news-list-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 1rem 0 2rem;
+
+            h2 {
+                margin: 0;
+            }
+
+            a {
+                text-transform: uppercase;
+            }
+        }
+
+        &:last-of-type {
+            margin-bottom: 7rem;
+        }
+    }
+}
+
