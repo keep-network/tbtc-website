@@ -14,6 +14,11 @@
                 margin: 30px 0;
             }
 
+            a {
+                @extend %button-link;
+                margin-top: 0;
+            }
+
             @media (min-width: #{$bp-medium}) {
                 display: flex;
                 justify-content: flex-end;
@@ -84,31 +89,71 @@
         }
     }
 
-    .mission-statement {
-        padding: 60px 0 90px;
+    .spotlight-launch {
+        .row {
+            align-items: center;
+        }
 
-        .sand-dollar {
+        a {
+            @extend %button-link;
             max-width: 100%;
-        }
-
-        @media (min-width: #{$bp-small}) {
-            .col-md-7 {
-                padding-left: 8.3333333%;
-            }
-        }
-
-        @media (max-width: #{$bp-medium}) {
-            padding: 20px 0 90px;
+            min-width: 0;
         }
     }
 
-    .white-paper {
+    .latest-news {
+        padding: 60px 0 90px;
+
+        .row {
+            margin: 0;
+        }
+
+        .latest-news-item {
+            padding: 1em 0 2em;
+        }
+
+        a {
+            @extend %button-link;
+            max-width: 100%;
+            margin-top: 2em;
+        }
+
+        @media (min-width: #{$bp-medium}) {
+            .latest-news-item {
+                border-left: 1px solid $black;
+                padding: 0 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                &:last-of-type {
+                    border-right: 1px solid $black;
+                }
+
+                h2 {
+                    margin: 0 0 1em;
+                    min-height: 2em;
+                }
+
+                p {
+                    margin-top: 0;
+                }
+
+                a {
+                    margin-top: 5em;
+                }
+            }
+        }
+
+    }
+
+    .toolkit {
         margin-bottom: 90px;
 
         .spotlight {
             .row {
                 align-items: center;
-                
+
                 .button-link {
                     margin-top: 1em;
                 }
@@ -116,10 +161,56 @@
                 @media (min-width: #{$bp-medium}) {
                     margin-top: 1em;
 
-                    .col-md-7 {
+                    .col-xl-7 {
                         text-align: center;
                     }
                 }
+            }
+
+            a {
+                @extend %button-link;
+                margin-top: 2em;
+            }
+        }
+    }
+
+    .integrations {
+        padding-bottom: 4em;
+
+        ul {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+
+            li {
+                list-style: none;
+                margin: 1em 0;
+
+                a {
+                    display: inline-block;
+                    @include hide-button-text;
+
+                    &.compound {
+                        width: 181px;
+                        height: 41px;
+                        background-image: url(../components/svgs/compound-logo.svg);
+                    }
+
+                    &.uniswap {
+                        width: 184px;
+                        height: 52px;
+                        background-image: url(../components/svgs/uniswap-logo.svg);
+                    }
+                }
+            }
+        }
+
+        @media (min-width: #{$bp-small}) {
+            padding-bottom: 7em;
+
+            ul {
+                flex-direction: row;
+                justify-content: space-evenly;
             }
         }
     }

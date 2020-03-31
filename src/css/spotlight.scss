@@ -15,17 +15,28 @@
         width: 150px;
         text-align: center;
         position: absolute;
-        top: 50%;
     }
 
     .side-label-left {
+        top: 0;
         left: 0;
-        transform: translate(-39%, -50%) rotate(-90deg);
+        transform: translate(-39%, 170%) rotate(-90deg);
     }
 
-    .side-label-right {
-        right: 0;
-        transform: translate(39%, -50%) rotate(90deg);
+    &.double-label {
+        [class^='side-label'] {
+            top: 50%;
+        }
+
+        .side-label-left {
+            left: 0;
+            transform: translate(-39%, -50%) rotate(-90deg);
+        }
+
+        .side-label-right {
+            right: 0;
+            transform: translate(39%, -50%) rotate(90deg);
+        }
     }
 
     @media (min-width: #{$bp-small}) {
