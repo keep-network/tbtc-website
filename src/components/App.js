@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Announcement, Footer, Header } from './lib'
+import { Announcement, Footer, Header, Newsletter } from './lib'
 
 export default (props) => {
   const { children } = props
@@ -14,6 +14,7 @@ export default (props) => {
       <div className="app">
         { children }
       </div>
+      <Newsletter />
       <Footer />
     </div>
   )
