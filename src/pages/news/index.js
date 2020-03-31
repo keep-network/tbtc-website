@@ -18,12 +18,12 @@ const News = ({ data }) => {
             <section className="col-sm-12 col-md-12 col-lg-10">
               { newsItems.map(({ node }) => (
                 <div className="news-list-item" key={node.id}>
-                  <div className="news-list-item-header">
-                    <h2>{node.frontmatter.title}</h2>
-                    <Link to={`/${node.frontmatter.path}`}>Read</Link>
-                  </div>
                   <div className="row">
-                    <p className="col-sm-12 col-md-5 col-lg-4">{node.excerpt}</p>
+                    <div className className="col-sm-12 col-md-5 col-lg-4">
+                      <h2>{node.frontmatter.title}</h2>
+                      <p>{node.excerpt}</p>
+                    </div>
+                    <Link to={`/${node.frontmatter.path}`}>Read</Link>
                   </div>
                 </div>
               ))}
