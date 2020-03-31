@@ -38,3 +38,26 @@
     }
 }
 
+.news-item {
+    margin-bottom: 10rem;
+
+    .body {
+        a {
+            text-decoration: underline;
+
+            &:after {
+                content: '';
+            }
+        }
+    }
+
+    @media (min-width: #{$bp-medium}) {
+        .col-lg-10 {
+            > * {
+                margin-left: 10%;
+                max-width: 60%;
+            }
+        }
+    }
+}
+

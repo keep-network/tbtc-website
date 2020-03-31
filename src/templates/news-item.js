@@ -6,31 +6,23 @@ import { graphql } from 'gatsby'
 import { App } from '../components'
 
 
-export const NewsItemTemplate = ({ title, date, description, body }) => {
-
-    return <div className="news">
-        <div className="title">
-            News
+export const NewsItemTemplate = ({ title, date, description, body }) => (
+  <div className="news-item">
+    <div className="container">
+      <div className="row justify-content-center no-gutters">
+        <div className="col-sm-12 col-md-12 col-lg-10">
+          <header>
+            <h1>{title}</h1>
+          </header>
+          <div className="body">
+            <div class='body' dangerouslySetInnerHTML={{ __html: body }} />
+            <div>{date}</div>
+          </div>
         </div>
-
-        <div className='divider'></div>
-
-        <div class="container">
-            <div className='news-item'>
-                <header>
-                    <div>{date}</div>
-                    <div>tBTC ANNOUNCEMENT</div>
-                </header>
-
-                <h2>
-                    {title}
-                </h2>
-
-                <div class='body' dangerouslySetInnerHTML={{ __html: body }} />
-            </div>
-        </div>
+      </div>
     </div>
-}
+  </div>
+)
 
 const NewsItem = ({ data }) => {
   const { markdownRemark: post } = data
