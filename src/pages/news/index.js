@@ -41,7 +41,7 @@ export default News
 // Query for latest news items, skip any entries that have a null path
 export const query = graphql`
   query LatestNews {
-    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {path: {ne: null}}}) {
+    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {path: {ne: null}, template: {eq: "news-item"}}}) {
       edges {
         node {
           id
