@@ -25,6 +25,21 @@ collections:
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
+  
+  - name: "resource"
+    label: "Resources"
+    folder: "src/pages/developers"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "developers/{{slug}}"
+    fields:
+      - {label: "Template Key", name: "template", widget: "hidden", default: "resource"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Heading", name: "heading", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list"}
 
   - name: "pages"
     label: "Pages"
