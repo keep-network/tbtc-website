@@ -4,24 +4,15 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
 import { App } from '../components'
+import { Article } from '../components/lib'
 
 
-export const NewsItemTemplate = ({ title, date, description, body }) => (
-  <div className="news-item">
-    <div className="container">
-      <div className="row justify-content-center no-gutters">
-        <div className="col-sm-12 col-md-12 col-lg-10">
-          <header>
-            <h1>{title}</h1>
-          </header>
-          <div className="content">
-            <div className="date"><span>{date}</span></div>
-            <div className="body" dangerouslySetInnerHTML={{ __html: body }} />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+export const NewsItemTemplate = ({ title, date, body }) => (
+  <Article
+    className="news-item"
+    title={title}
+    date={date}
+    body={body} />
 )
 
 const NewsItem = ({ data }) => {
@@ -29,10 +20,10 @@ const NewsItem = ({ data }) => {
 
   return <App>
     <NewsItemTemplate
-           date={post.frontmatter.date}
-           description={post.frontmatter.description}
-           body={post.html}
-           title={post.frontmatter.title} />
+      date={post.frontmatter.date}
+      description={post.frontmatter.description}
+      body={post.html}
+      title={post.frontmatter.title} />
   </App>
 }
 
