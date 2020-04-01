@@ -50,6 +50,14 @@ a {
     &[href^=http]:after {
         content: ' ↗';
     }
+
+    .body & {
+        text-decoration: underline;
+
+        &:after {
+            content: '';
+        }
+    }
 }
 
 %arrow-link {

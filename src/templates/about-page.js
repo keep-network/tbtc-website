@@ -13,7 +13,8 @@ export const AboutPageTemplate = ({ title, body, supporters }) => (
         <div className="col-sm-12 col-md-12 col-lg-10">
           <header>
             <h1>{title}</h1>
-            <div className="introduction" dangerouslySetInnerHTML={{ __html: body }} />
+            <div className="body" dangerouslySetInnerHTML={{ __html: body }} />
+            <a href="http://dapp.test.tbtc.network/" target="_blank" rel="noopener noreferrer">Mint tBTC</a>
           </header>
           <div className="supporters">
             {supporters && supporters.map((supporter, i) => (
