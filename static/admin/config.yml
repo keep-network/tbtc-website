@@ -25,7 +25,7 @@ collections:
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
-  
+
   - name: "resource"
     label: "Resources"
     folder: "src/pages/developers"
@@ -62,6 +62,13 @@ collections:
                 {label: "Url", name: "url", widget: "string"}
               ]
             }
+      - file: "src/pages/developers/index.md"
+        label: "Developers"
+        name: "developers"
+        fields:
+          - {label: "Template Key", name: "template", widget: "hidden", default: "developers-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/faq/index.md"
         label: "FAQ"
         name: "faq"
