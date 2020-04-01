@@ -23,7 +23,7 @@ const Header = props => {
               Navigation
           </button>
           <ul className="nav-left">
-            <li><a href="https://crosschain.group" target="_blank" rel="noopener noreferrer">About</a></li>
+            <li><Link to="/about">About</Link></li>
             <li><Link to="/news">News</Link></li>
           </ul>
           <ul className="nav-right">

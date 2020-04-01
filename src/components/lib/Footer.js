@@ -13,9 +13,9 @@ const Footer = () => (
       <div className="top-menu">
         <ul>
           <li>
-            <a href="https://crosschain.group" target="_blank" rel="noopener noreferrer">
+            <Link to="/about">
               About
-            </a>
+            </Link>
           </li>
           <li>
             <Link to="/news">
