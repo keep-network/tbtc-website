@@ -1,9 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
+import classNames from 'classnames'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
 import { App } from '../components'
 
+
+const Question = ({ title, children }) => {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const handleClick = () => {
+    setIsOpen(!isOpen)
+  }
+
+  return (
+    <div className={classNames('question', { 'open': isOpen })}>
+        <h2 className="question-title" onClick={handleClick}>
+            <span>{title}</span>
+        </h2>
+        <div className="question-answer">
+            { children }
+        </div>
+    </div>
+  )
+}
 
 export const FaqPageTemplate = ({ title, questions }) => (
   <div className="faq">
@@ -15,10 +35,9 @@ export const FaqPageTemplate = ({ title, questions }) => (
           </header>
           <div className="questions">
             {questions && questions.map((q, i) => (
-              <div className="question" key={`question-${i}`}>
-                <h2>{q.question}</h2>
+              <Question title={q.question} key={`question-${i}`}>
                 <div className="body" dangerouslySetInnerHTML={{ __html: q.answer }} />
-              </div>
+              </Question>
             ))}
           </div>
         </div>
