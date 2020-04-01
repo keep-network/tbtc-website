@@ -64,6 +64,7 @@
             padding: 10px;
             background-image: url(../components/svgs/Repo.svg);
             background-repeat: no-repeat;
+            background-position: center;
             @include hide-button-text;
 
             &:after {
@@ -92,6 +93,7 @@
 
                 ul {
                     display: none;
+                    flex-direction: column;
                     width: 100%;
 
                     li {
@@ -101,6 +103,12 @@
                         a {
                             display: block;
                             padding: 22px 0;
+                        }
+                    }
+
+                    &.nav-right {
+                        > li:last-of-type {
+                            margin-right: 0;
                         }
                     }
                 }
