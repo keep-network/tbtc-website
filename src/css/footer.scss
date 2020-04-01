@@ -11,6 +11,7 @@ footer {
     .footer-menu {
         ul {
             display: flex;
+            flex-direction: column;
             padding: 0;
             margin: 40px 0;
 
@@ -45,6 +46,7 @@ footer {
             justify-content: space-between;
 
             ul {
+                flex-direction: row;
                 margin: 0;
 
                 li {
