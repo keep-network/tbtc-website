@@ -29,17 +29,15 @@ export const FaqPageTemplate = ({ title, questions }) => (
   <div className="faq">
     <div className="container">
       <div className="row justify-content-center no-gutters">
-        <div className="col-sm-12 col-md-12 col-lg-10">
-          <header>
-            <h1>{title}</h1>
-          </header>
-          <div className="questions">
-            {questions && questions.map((q, i) => (
-              <Question title={q.question} key={`question-${i}`}>
-                <div className="body" dangerouslySetInnerHTML={{ __html: q.answer }} />
-              </Question>
-            ))}
-          </div>
+        <header className="page-header col-sm-12 col-md-12 col-lg-10">
+          <h1>{title}</h1>
+        </header>
+        <div className="questions col-sm-12 col-md-12 col-lg-10">
+          {questions && questions.map((q, i) => (
+            <Question title={q.question} key={`question-${i}`}>
+              <div className="body" dangerouslySetInnerHTML={{ __html: q.answer }} />
+            </Question>
+          ))}
         </div>
       </div>
     </div>
