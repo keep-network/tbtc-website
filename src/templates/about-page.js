@@ -32,7 +32,6 @@ export const AboutPageTemplate = ({ title, body, supporters }) => (
 
 const AboutPage = ({ data }) => {
   const { markdownRemark: post } = data
-  console.log(data)
 
   return (
     <App>
