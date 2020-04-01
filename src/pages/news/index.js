@@ -19,7 +19,7 @@ const News = ({ data }) => {
               { newsItems.map(({ node }) => (
                 <div className="news-list-item" key={node.id}>
                   <div className="row">
-                    <div className className="col-sm-12 col-md-5 col-lg-4">
+                    <div className="col-sm-12 col-md-5 col-lg-4">
                       <h2>{node.frontmatter.title}</h2>
                       <p>{node.excerpt}</p>
                     </div>
