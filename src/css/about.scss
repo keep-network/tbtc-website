@@ -10,6 +10,20 @@
         }
     }
 
+    .supporters {
+        margin: 2rem 0 4rem;
+    }
+
+    .supporter {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0;
+
+        a {
+            @extend %button-link;
+        }
+    }
+
     @media (min-width: #{$bp-medium}) {
         header {
             padding: 0 0 4rem;
@@ -22,12 +36,52 @@
                 margin-bottom: 4.36rem;
             }
         }
+
+        .supporters {
+            margin: 4rem 0 6rem;
+        }
+
+        .supporter {
+            flex-direction: row;
+            align-items: flex-start;
+
+            h2 {
+                width: 25%;
+            }
+
+            p {
+                width: 55%;
+                margin: 1.5rem 0 1rem;
+
+                span {
+                    display: inline-block;
+                    width: 80%;
+                }
+            }
+
+            a {
+                width: 20%;
+                margin: 2rem 0;
+                align-self: center;
+            }
+        }
     }
 
     @media (min-width: #{$bp-large}) {
         header {
             > * {
                 max-width: 40%;
+            }
+        }
+
+        .supporter {
+            h2 {
+                width: 15%;
+                margin-right: 5%;
+            }
+
+            p {
+                width: 60%;
             }
         }
     }
