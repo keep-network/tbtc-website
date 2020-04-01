@@ -19,7 +19,7 @@ const News = ({ data }) => {
               { newsItems.map(({ node }) => (
                 <div className="news-list-item" key={node.id}>
                   <div className="row">
-                    <div className className="col-sm-12 col-md-5 col-lg-4">
+                    <div className="col-sm-12 col-md-5 col-lg-4">
                       <h2>{node.frontmatter.title}</h2>
                       <p>{node.excerpt}</p>
                     </div>
@@ -41,7 +41,7 @@ export default News
 // Query for latest news items, skip any entries that have a null path
 export const query = graphql`
   query LatestNews {
-    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {path: {ne: null}}}) {
+    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {path: {ne: null}, template: {eq: "news-item"}}}) {
       edges {
         node {
           id

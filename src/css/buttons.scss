@@ -1,6 +1,7 @@
 button, .button,
 input[type="submit"] {
     border: 1px solid $black;
+    border-radius: 0;
     padding: 10px;
     white-space: nowrap;
     cursor: pointer;
@@ -11,6 +12,7 @@ input[type="submit"] {
     font-weight: 500;
     font-size: $body-font-size;
     letter-spacing: 1.5px;
+    appearance: none;
 
     &:hover:enabled {
         background-color: $black;
@@ -38,6 +40,10 @@ input[type="submit"] {
         top: 50%;
         right: 10px;
         transform: translateY(-50%);
+    }
+
+    &[href^=http]:after {
+        content: ' ↗';
     }
 
     @media (min-width: #{$bp-small}) {
