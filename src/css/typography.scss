@@ -7,6 +7,9 @@ $body-font-size: 14px;
 html, body, #root {
     font-family: $body-font-family;
     font-size: $body-font-size;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smooth: always;
 }
 
 h1, .h1,
