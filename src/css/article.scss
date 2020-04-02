@@ -18,11 +18,19 @@
                 margin: 1rem 0 2rem;
             }
 
-            ul {
+            ol, ul {
                 margin: 2rem 0 3em;
 
                 li {
                     margin: 1rem 0;
+                    line-height: 1.5;
+                }
+            }
+
+            ul {
+                margin: 2rem 0 3em;
+
+                li {
                     list-style: none;
                     position: relative;
                     padding-left: 32px;
