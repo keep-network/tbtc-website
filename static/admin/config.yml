@@ -21,6 +21,7 @@ collections:
     preview_path: "news/{{slug}}"
     fields:
       - {label: "Template Key", name: "template", widget: "hidden", default: "news-item"}
+      - {label: "Path", name: "path", widget: "hidden"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
@@ -34,6 +35,7 @@ collections:
     preview_path: "developers/{{slug}}"
     fields:
       - {label: "Template Key", name: "template", widget: "hidden", default: "resource"}
+      - {label: "Path", name: "path", widget: "hidden"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Heading", name: "heading", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
@@ -49,6 +51,7 @@ collections:
         name: "home"
         fields:
           - {label: "Template Key", name: "template", widget: "hidden", default: "home-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/"}
           - {label: "Title", name: "title", widget: "string"}
           - label: "Hero"
             name: "hero"
@@ -105,6 +108,7 @@ collections:
         name: "about"
         fields:
           - {label: "Template Key", name: "template", widget: "hidden", default: "about-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/about"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
           - label: "Supporters"
@@ -120,6 +124,7 @@ collections:
         name: "developers"
         fields:
           - {label: "Template Key", name: "template", widget: "hidden", default: "developers-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/developers"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/faq/index.md"
@@ -127,6 +132,7 @@ collections:
         name: "faq"
         fields:
           - {label: "Template Key", name: "template", widget: "hidden", default: "faq-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/faq"}
           - {label: "Title", name: "title", widget: "string"}
           - label: "Questions"
             name: "questions"
