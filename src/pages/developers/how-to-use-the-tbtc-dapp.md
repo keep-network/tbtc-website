@@ -45,7 +45,7 @@ Next there are 5 steps:
 
 Once you have your TBTC, you are free to use it to act on the Ethereum chain. You also get a TDT, which can be used to redeem the deposit for BTC (see the next section). You can read more about TDTs in the [technical system overview](/developers/tbtc-technical-system-overview).
 
-\##How to Redeem TBTC for BTC
+## How to Redeem TBTC for BTC
 
 At the other end of the tBTC flow is redemption, where you exchange TBTC and receive BTC back in return.
 
