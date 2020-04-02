@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 
 import { App } from '../components'
-import { Spotlight } from '../components/lib'
+import { Resources, Spotlight } from '../components/lib'
 import SandDollar from '../components/svgs/SandDollar'
 
 
@@ -104,6 +104,7 @@ export const HomePageTemplate = (props) => {
             </div>
           </Spotlight>
         </section>
+        <Resources />
         <section className="integrations col-sm-12 col-md-12 col-lg-10">
           <h1 className="section-title">Integrations</h1>
           <ul>
