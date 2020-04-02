@@ -54,8 +54,8 @@ collections:
             name: "hero"
             widget: "object"
             fields:
-              - {label: "Heading", name: "heading", widget: "string"}
-              - {label: "Subheading", name: "subheading", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
               - label: "Buttons"
                 name: "buttons"
                 widget: "list"
@@ -64,6 +64,12 @@ collections:
                   {label: "Url", name: "url", widget: "string"}
                 ]
                 allow_add: false
+          - label: "Features"
+            name: "features"
+            widget: "list"
+            fields:
+              - {label: "title", name: "title", widget: "string"}
+              - {label: "description", name: "description", widget: "string"}
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"

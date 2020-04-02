@@ -7,7 +7,7 @@ import { Spotlight } from '../components/lib'
 import SandDollar from '../components/svgs/SandDollar'
 
 
-export const HomePageTemplate = ({ hero, newsItems, buttons }) => (
+export const HomePageTemplate = ({ hero, newsItems, features }) => (
   <div className="home">
     <div className="container">
       <div className="row justify-content-center no-gutters">
@@ -15,16 +15,16 @@ export const HomePageTemplate = ({ hero, newsItems, buttons }) => (
           <div className="row">
             <div className="col-sm-12 col-md-6">
               <h1>
-                { hero.heading }
+                { hero.title }
               </h1>
               <h2 className="h3">
-                { hero.subheading }
+                { hero.subtitle }
               </h2>
             </div>
             <nav className="col-sm-12 col-md-6 quick-links">
               <ul>
-                { hero.buttons.length && hero.buttons.map(button => (
-                  <li>
+                { hero.buttons && hero.buttons.map((button, i) => (
+                  <li key={`hero-button-${i}`}>
                     <Link to={button.url}>
                       { button.text }
                     </Link>
@@ -41,15 +41,13 @@ export const HomePageTemplate = ({ hero, newsItems, buttons }) => (
         </section>
         <section className="step-by-step col-sm-12 col-md-12 col-lg-10">
           <ol className="row">
-            <li className="col-12 col-sm-12 col-md-4">
-              <div>Deposit BTC</div>
-            </li>
-            <li className="col-12 col-sm-12 col-md-4">
-              <div>Mint TBTC</div>
-            </li>
-            <li className="col-12 col-sm-12 col-md-4">
-              <div>Lend and earn interest on your BTC.</div>
-            </li>
+            { features && features.map((feature, i) => (
+              <li key={`feature-${i}`}
+                className="col-12 col-sm-12 col-md-3">
+                <h2>{feature.title}</h2>
+                <p>{feature.description}</p>
+              </li>
+            )) }
           </ol>
         </section>
         <section className="major-announcement col-sm-12 col-md-12 col-lg-10">
@@ -118,6 +116,7 @@ const HomePage = ({ data }) => {
     <App>
       <HomePageTemplate
         hero={post.frontmatter.hero}
+        features={post.frontmatter.features}
         newsItems={newsItems} />
     </App>
   )
@@ -142,12 +141,16 @@ export const query = graphql`
       frontmatter {
         title
         hero {
-          heading
-          subheading
+          title
+          subtitle
           buttons {
             text
             url
           }
+        }
+        features {
+          title
+          description
         }
       }
     }
