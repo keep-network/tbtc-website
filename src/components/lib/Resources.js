@@ -10,11 +10,11 @@ const Resources = ({ data }) => {
     <h1 className="section-title">Build with tBTC</h1>
     <div className="row">
       { resources && resources.map(({ node }) => (
-        <div className="resource-item col-sm-12 col-md-4" key={node.id}>
-          <h2>{node.frontmatter.title}</h2>
-          <p>{node.description}</p>
-          <Link to={`/${node.frontmatter.path}`}>go</Link>
-        </div>
+          <div className="resource-item" key={node.id}>
+            <h2>{node.frontmatter.title}</h2>
+            <p>{node.frontmatter.description}</p>
+            <Link to={`/${node.frontmatter.path}`}>go</Link>
+          </div>
       ))}
     </div>
   </section>
