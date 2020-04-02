@@ -25,6 +25,7 @@ const Header = props => {
           <ul className="nav-left">
             <li><Link to="/about">About</Link></li>
             <li><Link to="/news">News</Link></li>
+            <li><Link to="/faq">FAQ</Link></li>
           </ul>
           <ul className="nav-right">
             <li><a className="site-repo-link" href="https://github.com/keep-network/tbtc-website" target="_blank" rel="noopener noreferrer">Repository</a></li>

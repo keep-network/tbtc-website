@@ -126,7 +126,11 @@ Home.propTypes = {
 // Query for latest news items, skip any entries that have a null path
 export const query = graphql`
   query LatestNewsItems {
-    allMarkdownRemark(limit: 3, sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {path: {ne: null}, template: {eq: "news-item"}}}) {
+    allMarkdownRemark(
+      limit: 3,
+      sort: {order: DESC, fields: [frontmatter___date]},
+      filter: {frontmatter: {path: {ne: null}, template: {eq: "news-item"}}}
+    ) {
       edges {
         node {
           id

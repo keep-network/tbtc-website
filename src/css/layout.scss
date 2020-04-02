@@ -24,7 +24,7 @@ html, body, #root {
 .app {
     flex: 1;
     color: #{$black};
-    margin: 50px auto 0;
+    margin: 50px 0 0;
 
     @media (max-width: #{$bp-small}) {
         margin: 30px auto 0;

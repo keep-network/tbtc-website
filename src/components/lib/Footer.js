@@ -22,6 +22,11 @@ const Footer = () => (
               News
             </Link>
           </li>
+          <li>
+            <Link to="/faq">
+              FAQ
+            </Link>
+          </li>
         </ul>
       </div>
       <div className="bottom-menu">
