@@ -7,7 +7,7 @@ import { Spotlight } from '../components/lib'
 import SandDollar from '../components/svgs/SandDollar'
 
 
-export const HomePageTemplate = ({ newsItems }) => (
+export const HomePageTemplate = ({ hero, newsItems, buttons }) => (
   <div className="home">
     <div className="container">
       <div className="row justify-content-center no-gutters">
@@ -15,25 +15,21 @@ export const HomePageTemplate = ({ newsItems }) => (
           <div className="row">
             <div className="col-sm-12 col-md-6">
               <h1>
-                The safe way to earn with your Bitcoin.
+                { hero.heading }
               </h1>
               <h2 className="h3">
-                Convert TBTC to BTC any time with no intermediaries.
+                { hero.subheading }
               </h2>
             </div>
             <nav className="col-sm-12 col-md-6 quick-links">
               <ul>
-                <li>
-                  <Link to="/#mailing-list">
-                    Get launch updates
-                  </Link>
-                </li>
-                <li>
-                  <a href="http://docs.keep.network/tbtc/index.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                      Read the spec
-                  </a>
-                </li>
+                { hero.buttons.length && hero.buttons.map(button => (
+                  <li>
+                    <Link to={button.url}>
+                      { button.text }
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </nav>
           </div>
@@ -115,12 +111,13 @@ export const HomePageTemplate = ({ newsItems }) => (
 )
 
 const HomePage = ({ data }) => {
-  // const { markdownRemark: post } = data
+  const { markdownRemark: post } = data
   const { edges: newsItems } = data.allMarkdownRemark
 
   return (
     <App>
       <HomePageTemplate
+        hero={post.frontmatter.hero}
         newsItems={newsItems} />
     </App>
   )
@@ -139,7 +136,21 @@ export default HomePage
 
 // Query for latest news items, skip any entries that have a null path
 export const query = graphql`
-  query HomePage {
+  query HomePage($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      id
+      frontmatter {
+        title
+        hero {
+          heading
+          subheading
+          buttons {
+            text
+            url
+          }
+        }
+      }
+    }
     allMarkdownRemark(
       limit: 3,
       sort: {order: DESC, fields: [frontmatter___date]},

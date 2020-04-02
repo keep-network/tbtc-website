@@ -50,6 +50,20 @@ collections:
         fields:
           - {label: "Template Key", name: "template", widget: "hidden", default: "home-page"}
           - {label: "Title", name: "title", widget: "string"}
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Subheading", name: "subheading", widget: "string"}
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                fields: [
+                  {label: "Text", name: "text", widget: "string"},
+                  {label: "Url", name: "url", widget: "string"}
+                ]
+                allow_add: false
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
@@ -57,16 +71,14 @@ collections:
           - {label: "Template Key", name: "template", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-          - {
-              label: "Supporters",
-              name: "supporters",
-              widget: "list",
-              fields: [
-                {label: "Name", name: "name", widget: "string"},
-                {label: "Description", name: "description", widget: "string"},
-                {label: "Url", name: "url", widget: "string"}
-              ]
-            }
+          - label: "Supporters"
+            name: "supporters"
+            widget: "list"
+            fields: [
+              {label: "Name", name: "name", widget: "string"},
+              {label: "Description", name: "description", widget: "string"},
+              {label: "Url", name: "url", widget: "string"}
+            ]
       - file: "src/pages/developers/index.md"
         label: "Developers"
         name: "developers"
@@ -80,12 +92,10 @@ collections:
         fields:
           - {label: "Template Key", name: "template", widget: "hidden", default: "faq-page"}
           - {label: "Title", name: "title", widget: "string"}
-          - {
-              label: "Questions",
-              name: "questions",
-              widget: "list",
-              fields: [
-                {label: "Question", name: "question", widget: "string"},
-                {label: "Answer", name: "answer", widget: "markdown"}
-              ]
-            }
+          - label: "Questions"
+            name: "questions"
+            widget: "list"
+            fields: [
+              {label: "Question", name: "question", widget: "string"},
+              {label: "Answer", name: "answer", widget: "markdown"}
+            ]
