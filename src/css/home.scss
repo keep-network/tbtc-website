@@ -104,10 +104,20 @@
             align-items: center;
         }
 
-        a {
+        .body {
+            @extend p;
+        }
+
+        .spotlight-button-link {
             @extend %button-link;
             max-width: 100%;
             min-width: 0;
+        }
+
+        @media (min-width: #{$bp-large}) {
+            h1 {
+                padding-right: 40%;
+            }
         }
     }
 

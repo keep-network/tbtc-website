@@ -70,6 +70,36 @@ collections:
             fields:
               - {label: "title", name: "title", widget: "string"}
               - {label: "description", name: "description", widget: "string"}
+          - label: "Spotlight 1"
+            name: "spotlight_1"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Side Label", name: "label", widget: "string"}
+              - {label: "Body", name: "body", widget: "markdown"}
+              - label: "Button Link"
+                name: "button"
+                widget: "object"
+                required: false
+                fields: [
+                  {label: "Text", name: "text", widget: "string"},
+                  {label: "Url", name: "url", widget: "string"}
+                ]
+          - label: "Spotlight 2"
+            name: "spotlight_2"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Side Label", name: "label", widget: "string"}
+              - {label: "Body", name: "body", widget: "markdown"}
+              - label: "Button Link"
+                name: "button"
+                widget: "object"
+                required: false
+                fields: [
+                  {label: "Text", name: "text", widget: "string"},
+                  {label: "Url", name: "url", widget: "string"}
+                ]
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"

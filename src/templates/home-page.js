@@ -7,8 +7,16 @@ import { Spotlight } from '../components/lib'
 import SandDollar from '../components/svgs/SandDollar'
 
 
-export const HomePageTemplate = ({ hero, newsItems, features }) => (
-  <div className="home">
+export const HomePageTemplate = (props) => {
+  const {
+    hero,
+    features,
+    spotlight1,
+    spotlight2,
+    newsItems
+  } = props
+
+  return <div className="home">
     <div className="container">
       <div className="row justify-content-center no-gutters">
         <section className="hero col-sm-12 col-md-12 col-lg-10">
@@ -51,21 +59,21 @@ export const HomePageTemplate = ({ hero, newsItems, features }) => (
           </ol>
         </section>
         <section className="major-announcement col-sm-12 col-md-12 col-lg-10">
-          <Spotlight className="spotlight-launch" sideLabelText="Announcement">
+          <Spotlight className="spotlight-launch" sideLabelText={spotlight1.label}>
             <h1>
-              Mainnet launch of tBTC<br/>
-              announced for April 27th, 2020
+              {spotlight1.title}
             </h1>
             <div className="row">
               <div className="col-sm-12 col-md-8">
-                <p>
-                  Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
-                </p>
+                <div className="body" dangerouslySetInnerHTML={{ __html: spotlight1.body }}/>
               </div>
               <div className="col-sm-12 col-md-4">
-                <Link to="/#" target="_blank" rel="noopener noreferrer">
-                  Read more
-                </Link>
+                {spotlight1.button ? (
+                  <a className="spotlight-button-link"
+                    href={spotlight1.button.url} target="_blank" rel="noopener noreferrer">
+                    {spotlight1.button.text}
+                  </a>
+                ) : ''}
               </div>
             </div>
           </Spotlight>
@@ -86,11 +94,11 @@ export const HomePageTemplate = ({ hero, newsItems, features }) => (
           <Spotlight sideLabelText="Developers" doubleLabel>
             <div className="row">
               <div className="col-sm-12 col-md-7 col-xl-5 h1">
-                Integrate TBTC to add Bitcoin to your dApp
+                {spotlight2.title}
               </div>
               <div className="col-sm-12 col-md-5 col-xl-7">
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  Developer Toolkit
+                <a href={spotlight2.button.url}>
+                  {spotlight1.button.text}
                 </a>
               </div>
             </div>
@@ -106,7 +114,7 @@ export const HomePageTemplate = ({ hero, newsItems, features }) => (
       </div>
     </div>
   </div>
-)
+}
 
 const HomePage = ({ data }) => {
   const { markdownRemark: post } = data
@@ -117,6 +125,8 @@ const HomePage = ({ data }) => {
       <HomePageTemplate
         hero={post.frontmatter.hero}
         features={post.frontmatter.features}
+        spotlight1={post.frontmatter.spotlight_1}
+        spotlight2={post.frontmatter.spotlight_2}
         newsItems={newsItems} />
     </App>
   )
@@ -151,6 +161,23 @@ export const query = graphql`
         features {
           title
           description
+        }
+        spotlight_1 {
+          title
+          label
+          body
+          button {
+            text
+            url
+          }
+        }
+        spotlight_2 {
+          title
+          label
+          button {
+            text
+            url
+          }
         }
       }
     }
