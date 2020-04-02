@@ -76,7 +76,7 @@ collections:
             fields:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Side Label", name: "label", widget: "string"}
-              - {label: "Body", name: "body", widget: "markdown"}
+              - {label: "Body", name: "body", widget: "markdown", required: "false"}
               - label: "Button Link"
                 name: "button"
                 widget: "object"
@@ -91,7 +91,7 @@ collections:
             fields:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Side Label", name: "label", widget: "string"}
-              - {label: "Body", name: "body", widget: "markdown"}
+              - {label: "Body", name: "body", widget: "markdown", required: "false"}
               - label: "Button Link"
                 name: "button"
                 widget: "object"
