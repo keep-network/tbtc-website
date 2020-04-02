@@ -1,40 +1,43 @@
 import React from 'react'
-import { Link, graphql, StaticQuery } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 
-import { Spotlight } from './lib'
-import SandDollar from './svgs/SandDollar'
+import { App } from '../components'
+import { Resources, Spotlight } from '../components/lib'
+import SandDollar from '../components/svgs/SandDollar'
 
 
-const Home = ({ data }) => {
-  const { edges: newsItems } = data.allMarkdownRemark
+export const HomePageTemplate = (props) => {
+  const {
+    hero,
+    features,
+    spotlight1,
+    spotlight2,
+    newsItems
+  } = props
 
-  return (<div className="home">
+  return <div className="home">
     <div className="container">
       <div className="row justify-content-center no-gutters">
         <section className="hero col-sm-12 col-md-12 col-lg-10">
           <div className="row">
             <div className="col-sm-12 col-md-6">
               <h1>
-                The safe way to earn with your Bitcoin.
+                { hero.title }
               </h1>
               <h2 className="h3">
-                Convert TBTC to BTC any time with no intermediaries.
+                { hero.subtitle }
               </h2>
             </div>
             <nav className="col-sm-12 col-md-6 quick-links">
               <ul>
-                <li>
-                  <Link to="/#mailing-list">
-                    Get launch updates
-                  </Link>
-                </li>
-                <li>
-                  <a href="http://docs.keep.network/tbtc/index.pdf"
-                    target="_blank" rel="noopener noreferrer">
-                      Read the spec
-                  </a>
-                </li>
+                { hero.buttons && hero.buttons.map((button, i) => (
+                  <li key={`hero-button-${i}`}>
+                    <Link to={button.url}>
+                      { button.text }
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </nav>
           </div>
@@ -44,35 +47,33 @@ const Home = ({ data }) => {
             </div>
           </div>
         </section>
-        <section className="step-by-step col-sm-12 col-md-12 col-lg-10">
+        <section className="features col-sm-12 col-md-12 col-lg-10">
           <ol className="row">
-            <li className="col-12 col-sm-12 col-md-4">
-              <div>Deposit BTC</div>
-            </li>
-            <li className="col-12 col-sm-12 col-md-4">
-              <div>Mint TBTC</div>
-            </li>
-            <li className="col-12 col-sm-12 col-md-4">
-              <div>Lend and earn interest on your BTC.</div>
-            </li>
+            { features && features.map((feature, i) => (
+              <li key={`feature-${i}`}
+                className="col-12 col-sm-12 col-md-6 col-lg-3">
+                <h2>{feature.title}</h2>
+                <p>{feature.description}</p>
+              </li>
+            )) }
           </ol>
         </section>
         <section className="major-announcement col-sm-12 col-md-12 col-lg-10">
-          <Spotlight className="spotlight-launch" sideLabelText="Announcement">
+          <Spotlight className="spotlight-launch" sideLabelText={spotlight1.label}>
             <h1>
-              Mainnet launch of tBTC<br/>
-              announced for April 27th, 2020
+              {spotlight1.title}
             </h1>
             <div className="row">
               <div className="col-sm-12 col-md-8">
-                <p>
-                  Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.
-                </p>
+                <div className="body" dangerouslySetInnerHTML={{ __html: spotlight1.body }}/>
               </div>
               <div className="col-sm-12 col-md-4">
-                <Link to="/#" target="_blank" rel="noopener noreferrer">
-                  Read more
-                </Link>
+                {spotlight1.button ? (
+                  <a className="spotlight-button-link"
+                    href={spotlight1.button.url} target="_blank" rel="noopener noreferrer">
+                    {spotlight1.button.text}
+                  </a>
+                ) : ''}
               </div>
             </div>
           </Spotlight>
@@ -93,16 +94,17 @@ const Home = ({ data }) => {
           <Spotlight sideLabelText="Developers" doubleLabel>
             <div className="row">
               <div className="col-sm-12 col-md-7 col-xl-5 h1">
-                Integrate TBTC to add Bitcoin to your dApp
+                {spotlight2.title}
               </div>
               <div className="col-sm-12 col-md-5 col-xl-7">
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  Developer Toolkit
+                <a href={spotlight2.button.url}>
+                  {spotlight1.button.text}
                 </a>
               </div>
             </div>
           </Spotlight>
         </section>
+        <Resources />
         <section className="integrations col-sm-12 col-md-12 col-lg-10">
           <h1 className="section-title">Integrations</h1>
           <ul>
@@ -112,20 +114,74 @@ const Home = ({ data }) => {
         </section>
       </div>
     </div>
-  </div>)
+  </div>
 }
 
-Home.propTypes = {
+const HomePage = ({ data }) => {
+  const { markdownRemark: post } = data
+  const { edges: newsItems } = data.allMarkdownRemark
+
+  return (
+    <App>
+      <HomePageTemplate
+        hero={post.frontmatter.hero}
+        features={post.frontmatter.features}
+        spotlight1={post.frontmatter.spotlight_1}
+        spotlight2={post.frontmatter.spotlight_2}
+        newsItems={newsItems} />
+    </App>
+  )
+}
+
+HomePage.propTypes = {
   data: PropTypes.shape({
+    markdownRemark: PropTypes.object,
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
     })
   })
 }
 
+export default HomePage
+
 // Query for latest news items, skip any entries that have a null path
 export const query = graphql`
-  query LatestNewsItems {
+  query HomePage($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      id
+      frontmatter {
+        title
+        hero {
+          title
+          subtitle
+          buttons {
+            text
+            url
+          }
+        }
+        features {
+          title
+          description
+        }
+        spotlight_1 {
+          title
+          label
+          body
+          button {
+            text
+            url
+          }
+        }
+        spotlight_2 {
+          title
+          label
+          button {
+            text
+            url
+          }
+        }
+      }
+    }
     allMarkdownRemark(
       limit: 3,
       sort: {order: DESC, fields: [frontmatter___date]},
@@ -144,10 +200,3 @@ export const query = graphql`
     }
   }
 `
-
-export default () => (
-  <StaticQuery
-    query={query}
-    render={data => <Home data={data} />}
-  />
-)

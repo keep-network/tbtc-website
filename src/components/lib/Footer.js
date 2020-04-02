@@ -32,6 +32,11 @@ const Footer = () => (
               FAQ
             </Link>
           </li>
+          <li>
+            <a href="http://dapp.test.tbtc.network/" target="_blank" rel="noopener noreferrer">
+              dAPP
+            </a>
+          </li>
         </ul>
       </div>
       <div className="bottom-menu">

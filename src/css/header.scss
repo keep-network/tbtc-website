@@ -57,6 +57,14 @@
             }
         }
 
+        .mint-button {
+            background-color: $black;
+            color: $white;
+            padding: 0.5rem;
+            position: relative;
+            top: -4px;
+        }
+
         .site-repo-link {
             display: block;
             width: 22px;
@@ -103,6 +111,13 @@
                         a {
                             display: block;
                             padding: 22px 0;
+                        }
+
+                        .mint-button {
+                            display: inline-block;
+                            padding: 0.5rem;
+                            top: 0;
+                            margin-bottom: 1rem;
                         }
                     }
 

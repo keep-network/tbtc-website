@@ -1,0 +1,44 @@
+.resources {
+    .row {
+        align-items: stretch;
+        margin: 0;
+    }
+
+    .resource-item {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid $black;
+        padding: 2.14rem;
+        width: 100%;
+        margin: 2rem 0;
+
+        h2 {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: auto;
+        }
+
+        a {
+            @extend %arrow-link;
+            align-self: flex-end;
+            margin-top: auto;
+            padding: 1rem 0 0;
+        }
+    }
+
+
+    @media (min-width: #{$bp-large}) {
+        .row {
+            justify-content: space-between;
+            margin-bottom: 3.57rem;
+        }
+
+        .resource-item {
+            flex: 0 0 30%;
+            max-width: 30%;
+            margin: 0;
+        }
+    }
+}
