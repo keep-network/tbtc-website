@@ -64,7 +64,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(filter: {frontmatter: {template: {eq: "resource"}}}) {
+    allMarkdownRemark(
+      sort: {order: ASC, fields: [frontmatter___date]},
+      filter: {frontmatter: {template: {eq: "resource"}}}
+    ) {
       edges {
         node {
           id

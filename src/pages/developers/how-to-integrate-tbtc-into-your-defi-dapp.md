@@ -1,6 +1,6 @@
 ---
 title: "Developers: How to Integrate TBTC into your Defi Dapp"
-date: 2020-04-01
+date: 2020-04-01T17:04:10.000Z
 heading: "Developer Toolkit: How to Integrate TBTC into your Defi Dapp"
 description: lol
 template: resource

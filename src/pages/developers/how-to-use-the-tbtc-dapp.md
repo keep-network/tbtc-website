@@ -1,6 +1,6 @@
 ---
 title: "Individuals: How to Use the tBTC dApp"
-date: 2020-04-01
+date: 2020-04-01T16:04:10.000Z
 heading: How to Use the tBTC dApp
 description: lol
 template: resource
