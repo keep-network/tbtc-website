@@ -1,7 +1,7 @@
 ---
 title: tBTC Technical System Overview
 date: 2020-04-01T15:04:10.000Z
-description: lol
+description: Learn about TDT receipts, multiple lot sizes, Keep's random beacon, and threshold signatures.
 template: resource
 path: developers/tbtc-technical-system-overview
 ---
