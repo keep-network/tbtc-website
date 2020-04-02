@@ -7,43 +7,44 @@ import { App } from '../components'
 import { Article } from '../components/lib'
 
 
-export const NewsItemTemplate = ({ title, date, body }) => (
+export const ResourceTemplate = ({ title, body, date }) => (
   <Article
-    className="news-item"
+    className="resource"
     title={title}
-    date={date}
-    body={body} />
+    body={body}
+    date={date} />
 )
 
-const NewsItem = ({ data }) => {
+const Resource = ({ data }) => {
   const { markdownRemark: post } = data
+  const title = post.frontmatter.heading ?
+    post.frontmatter.heading : post.frontmatter.title
 
   return <App>
-    <NewsItemTemplate
-      date={post.frontmatter.date}
-      description={post.frontmatter.description}
+    <ResourceTemplate
       body={post.html}
-      title={post.frontmatter.title} />
+      title={title}
+      date={post.frontmatter.date} />
   </App>
 }
 
-NewsItem.propTypes = {
+Resource.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
 }
 
-export default NewsItem
+export default Resource
 
 export const pageQuery = graphql`
-  query NewsItemByID($id: String!) {
+  query ResourceByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
       frontmatter {
-        date(formatString: "YYYY-MM-DD")
         title
-        description
+        heading
+        date(formatString: "YYYY-MM-DD")
       }
     }
   }

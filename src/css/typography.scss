@@ -1,0 +1,115 @@
+@import 'fonts/apercu.scss';
+
+$body-font-family: 'apercu-mono-regular-pro', sans-serif;
+$body-font-size: 14px;
+
+
+html, body, #root {
+    font-family: $body-font-family;
+    font-size: $body-font-size;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smooth: always;
+}
+
+h1, .h1,
+h2, .h2 {
+    font-family: 'apercu-bold-pro', sans-serif;
+}
+
+h1, .h1 {
+    font-size: 3.57rem;
+    line-height: 1.2;
+
+    @media (max-width: #{$bp-small}) {
+        font-size: 2.5rem;
+    }
+}
+
+h2, .h2 {
+    font-size: 1.57rem;
+    line-height: 1.18;
+    margin: 1em 0;
+}
+
+h3, .h3 {
+    font-family: $body-font-family;
+    font-size: 1.28rem;
+    line-height: 1.5;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a {
+    color: $black;
+    text-decoration: none;
+    cursor: pointer;
+
+    &[href^=http]:after {
+        content: ' ↗';
+    }
+
+    .body & {
+        text-decoration: underline;
+
+        &:after {
+            content: '';
+        }
+    }
+}
+
+%arrow-link {
+    &[href^="/"]:after,
+    &[href^="#"]:after {
+        content: ' →';
+    }
+}
+
+.section-title {
+    @extend .h1;
+    border-top: 1px solid $black;
+    padding: 1em 0 0;
+
+    @media (min-width: #{$bp-small}) {
+        margin-bottom: 1.8em;
+    }
+}
+
+.body {
+    ol, ul {
+        margin: 2rem 0 3em;
+
+        li {
+            margin: 1rem 0;
+            line-height: 1.5;
+        }
+    }
+
+    ul {
+        margin: 2rem 0 3em;
+
+        li {
+            list-style: none;
+            position: relative;
+            padding-left: 32px;
+
+            &:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                content: '→';
+            }
+        }
+
+        @media (max-width: #{$bp-small}) {
+            padding-left: 10px;
+
+            li {
+                padding-left: 27px;
+            }
+        }
+    }
+}

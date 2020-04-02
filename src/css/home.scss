@@ -1,181 +1,241 @@
 .home {
-    font-family: 'apercu-mono-regular-pro';
+    .hero {
+        .row {
+            align-items: baseline;
+        }
 
-    .title {
-        font-size: 4em;
-        position: relative;
-        font-family: 'apercu-bold-pro';
-
-        .subtitle {
-            font-size: .2em;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            text-align: right;
-            font-family: 'apercu-mono-regular-pro';
-
-            .vertical-aligned {
-                position: relative;
-                top: 50%;
-                transform: translateY(-50%);
+        .quick-links {
+            ul {
+                padding: 0;
             }
 
-            br {
-                display: none;
+            li {
+                list-style: none;
+                margin: 30px 0;
+            }
+
+            a {
+                @extend %button-link;
+                margin-top: 0;
+            }
+
+            @media (min-width: #{$bp-medium}) {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+
+        .sand-dollar-hero {
+            width: 100%;
+            height: 100%;
+
+            @media (max-width: #{$bp-medium}) {
+                margin-top: 30px;
             }
         }
     }
-
-    .title + .announcement {
-        font-family: 'apercu-mono-regular-pro';
-        font-size: 1rem;
-
-        color: #4699FA;
-        background: black;
-        text-transform: uppercase;
-
-        // It's hacky, so sue me.
-        margin: 80px -10000px;
-        padding: 15px 10000px;
-
-        a {
-            color: white;
-            text-decoration: none;
-            text-transform: none;
-
-            &:hover {
-                text-decoration: underline;
-            }
-
-            @keyframes blip {
-                from {
-                    opacity: 1;
-                }
-
-                90% {
-                    opacity: 1;
-                }
-
-                to {
-                    opacity: 0;
-                }
-            }
-
-            &:before {
-                display: inline-block;
-                content: ' ';
-
-                border-radius: 50%;
-                background: #5AE680;
-
-                height: 0.5rem;
-                width: 0.5rem;
-
-                margin: 0 10px 0.1rem 20px;
-
-                animation: blip 3s infinite;
-            }
-        }
-    }
-
-    .step-by-step {
-        width: 100vw;
-        margin-left: calc((100vw - 100%) / -2);
+    .features {
         margin-top: 110px;
-        border-width: 1px 0;
-        border-style: solid;
-        border-color: #{$light-blue};
-        background-color: #{$lighter-grey};
-        font-size: .75em;
 
         ol {
             counter-reset: step-by-step;
             list-style: none;
 
-            width: #{$content-width};
             margin: 0 auto;
-            padding: 75px 0;
-            display: flex;
+            padding: 75px 0 145px;
 
             li {
                 counter-increment: step-by-step;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                padding: 0 5%;
 
-                flex: 1;
-                color: #{$dark-grey};
+                > * {
+                    margin-top: 0;
+                }
 
-                &::before {
+                p {
+                    margin-bottom: 2rem;
+                }
+
+                &:before {
                     content: "0" #{counter(step-by-step)};
-                    display: block;
-                    color: #{$blue};
-                    font-weight: bold;
+                    display: inline-block;
+                    font-size: 0.857rem;
                     line-height: 2em;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
                 }
             }
         }
-    }
 
-    .mission-statement {
-        padding: 60px 0;
-
-        .hook {
-            font-size: 2em;
-            line-height: 2em;
-            font-family: 'apercu-bold-pro';
-        }
-
-        .line-and-sinker {
-            font-size: .8em;
-            line-height: 2em;
-        }
-    }
-
-    @media (max-width: #{$content-width}) {
-        .title {
-            font-size: 2.75em;
-
-            .subtitle {
-                margin: 5px 0 0;
-                font-size: .2em;
-
-                .vertical-aligned {
-                    float: right;
-                    text-align: left;
-                }
-            }
-
-            + .announcement {
-                font-size: 0.7rem;
-                text-align: center;
-            }
-        }
-
-        .step-by-step {
-            padding: 10px 20px;
+        @media (max-width: #{$bp-medium}) {
+            margin-top: 30px;
+            padding: 10px 20px 30px;
 
             ol {
                 flex-direction: column;
+                align-items: center;
                 width: 100%;
                 box-sizing: border-box;
-                padding: 30px;
+                padding: 0 30px;
 
                 li {
                     margin: 30px 0;
+                    justify-content: left;
+
+                    &:before {
+                        left: -20px;
+                    }
                 }
             }
         }
 
-        .mission-statement {
-            .hook {
-                line-height: 1em;
-                font-size: 1.5em;
-                margin: 30px 0;
+        @media (max-width: #{$bp-small}) {
+            ol {
+                padding: 0 10px;
+
+                li {
+                    margin: 1rem 0;
+                }
+            }
+        }
+    }
+
+    .spotlight-launch {
+        .row {
+            align-items: center;
+        }
+
+        .body {
+            @extend p;
+        }
+
+        .spotlight-button-link {
+            @extend %button-link;
+            max-width: 100%;
+            min-width: 0;
+        }
+
+        @media (min-width: #{$bp-large}) {
+            h1 {
+                padding-right: 40%;
+            }
+        }
+    }
+
+    .latest-news {
+        padding: 60px 0 90px;
+
+        .row {
+            margin: 0;
+        }
+
+        .latest-news-item {
+            padding: 1em 0 2em;
+        }
+
+        a {
+            @extend %button-link;
+            max-width: 100%;
+            margin-top: 2em;
+        }
+
+        @media (min-width: #{$bp-medium}) {
+            .latest-news-item {
+                border-left: 1px solid $black;
+                padding: 0 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                &:last-of-type {
+                    border-right: 1px solid $black;
+                }
+
+                h2 {
+                    margin: 0 0 1em;
+                    min-height: 2em;
+                }
+
+                p {
+                    margin-top: 0;
+                }
+
+                a {
+                    margin-top: 5em;
+                }
+            }
+        }
+
+    }
+
+    .toolkit {
+        margin-bottom: 90px;
+
+        .spotlight {
+            .row {
+                align-items: center;
+
+                .button-link {
+                    margin-top: 1em;
+                }
+
+                @media (min-width: #{$bp-medium}) {
+                    margin-top: 1em;
+
+                    .col-xl-7 {
+                        text-align: center;
+                    }
+                }
             }
 
-            .line-and-sinker {
-                line-height: 1em;
-                font-size: .75em;
+            a {
+                @extend %button-link;
+                margin-top: 2em;
+            }
+        }
+    }
+
+    .integrations {
+        padding-bottom: 4em;
+
+        ul {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+
+            li {
+                list-style: none;
+                margin: 1em 0;
+
+                a {
+                    display: inline-block;
+                    @include hide-button-text;
+
+                    &.compound {
+                        width: 181px;
+                        height: 41px;
+                        background-image: url(../components/svgs/compound-logo.svg);
+                    }
+
+                    &.uniswap {
+                        width: 184px;
+                        height: 52px;
+                        background-image: url(../components/svgs/uniswap-logo.svg);
+                    }
+                }
+            }
+        }
+
+        @media (min-width: #{$bp-small}) {
+            padding-bottom: 7em;
+
+            ul {
+                flex-direction: row;
+                justify-content: space-evenly;
             }
         }
     }

@@ -4,7 +4,7 @@ name: Gatsby
 
 on:
   pull_request:
-    branches: [ master ]
+    branches: [ master, new-new ]
   push:
     branches: [ master ]
 
@@ -41,7 +41,7 @@ jobs:
     # A pull_request event is a PR; deploy to preview bucket.
     - if: github.event_name == 'pull_request'
       name: Deploy PR to GCP
-      uses: thesis/gcp-storage-bucket-action@v2.1.0
+      uses: thesis/gcp-storage-bucket-action@v3.1.0
       with:
         service-key: ${{ secrets.TBTC_NETWORK_UPLOADER_SERVICE_KEY_JSON }}
         project: tbtc-prod

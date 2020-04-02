@@ -1,0 +1,73 @@
+.newsletter {
+    .row {
+        align-items: baseline;
+    }
+
+    .col-lg-10 {
+        padding: 90px 0;
+        border-top: 1px solid $black;
+        border-bottom: 1px solid $black;
+        margin-bottom: 90px;
+    }
+
+    .mailing-list {
+        input {
+            display: block;
+            width: 100%;
+            margin-bottom: 1em;
+
+            @media (min-width: #{$bp-small}) {
+                max-width: 240px;
+            }
+        }
+
+        input[type="text"] {
+            border: 0;
+            border-radius: 0;
+            border-bottom: 1px solid $black;
+            background-color: transparent;
+            box-shadow: none;
+            padding: 10px 0;
+            transition: all 0.5s ease-in;
+            font-family: $body-font-family;
+            font-size: $body-font-size;
+
+            &:focus {
+                outline: 0;
+                box-shadow: none;
+                border-color: $black;
+            }
+
+            &:-webkit-autofill,
+            &:-webkit-autofill:hover,
+            &:-webkit-autofill:focus,
+            &:-webkit-autofill:active,
+            &:-internal-autofill-selected,
+            &:-internal-autofill-previewed  {
+                -webkit-box-shadow: 0 0 0 30px white inset !important;
+            }
+
+            &[readonly] {
+                background-color: transparent;
+            }
+        }
+
+        ::-webkit-input-placeholder { /* WebKit browsers */
+            color: $light-grey;
+        }
+        :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+           color: $light-grey;
+        }
+        ::-moz-placeholder { /* Mozilla Firefox 19+ */
+           color: $light-grey;
+        }
+        :-ms-input-placeholder { /* Internet Explorer 10+ */
+           color: $light-grey;
+        }
+
+        .error {
+            margin: 1em 0;
+        }
+    }
+}
+
