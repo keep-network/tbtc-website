@@ -51,8 +51,7 @@ collections:
           - {label: "Template Key", name: "template", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-          - >
-            {
+          - {
               label: "Supporters",
               name: "supporters",
               widget: "list",
@@ -75,8 +74,7 @@ collections:
         fields:
           - {label: "Template Key", name: "template", widget: "hidden", default: "faq-page"}
           - {label: "Title", name: "title", widget: "string"}
-          - >
-            {
+          - {
               label: "Questions",
               name: "questions",
               widget: "list",
