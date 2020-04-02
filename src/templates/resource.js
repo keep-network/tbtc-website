@@ -17,11 +17,13 @@ export const ResourceTemplate = ({ title, body, date }) => (
 
 const Resource = ({ data }) => {
   const { markdownRemark: post } = data
+  const title = post.frontmatter.heading ?
+    post.frontmatter.heading : post.frontmatter.title
 
   return <App>
     <ResourceTemplate
       body={post.html}
-      title={post.frontmatter.title}
+      title={title}
       date={post.frontmatter.date} />
   </App>
 }
@@ -41,6 +43,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        heading
         date(formatString: "YYYY-MM-DD")
       }
     }
