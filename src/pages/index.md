@@ -12,9 +12,9 @@ hero:
 features:
   - description: 'Every TBTC is backed 1:1 with BTC'
     title: Backed
-  - description: No intermediaries - Convert TBTC to BTC any time
-    title: Trustless
-  - description: The same high cryptography standards as Binance
+  - description: No intermediaries - Redeem TBTC for BTC at any time
+    title: Permissionless
+  - description: Audited and open-source
     title: Secure
   - description: 3 steps to convert from BTC to TBTC and back
     title: Simple
