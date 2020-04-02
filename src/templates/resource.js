@@ -7,11 +7,12 @@ import { App } from '../components'
 import { Article } from '../components/lib'
 
 
-export const ResourceTemplate = ({ title, body }) => (
+export const ResourceTemplate = ({ title, body, date }) => (
   <Article
-    className="news-item"
+    className="resource"
     title={title}
-    body={body} />
+    body={body}
+    date={date} />
 )
 
 const Resource = ({ data }) => {
@@ -20,7 +21,8 @@ const Resource = ({ data }) => {
   return <App>
     <ResourceTemplate
       body={post.html}
-      title={post.frontmatter.title} />
+      title={post.frontmatter.title}
+      date={post.frontmatter.date} />
   </App>
 }
 
@@ -39,6 +41,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        date(formatString: "YYYY-MM-DD")
       }
     }
   }

@@ -11,9 +11,7 @@ const Article = ({ title, date, body, className }) => (
             <h1>{title}</h1>
           </header>
           <div className="content">
-            { date ? (
-              <div className="date"><span>{date}</span></div>
-            ) : '' }
+            <div className="date"><span>{date}</span></div>
             <div className="body" dangerouslySetInnerHTML={{ __html: body }} />
           </div>
         </div>
