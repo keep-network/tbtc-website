@@ -4,6 +4,7 @@ title: 'Individuals: How to Use the tBTC dApp'
 heading: How to Use the tBTC dApp
 description: A step-by-step guide for using minting and redeeming TBTC.
 date: 2020-04-01T16:04:10.000Z
+path: developers/how-to-use-the-tbtc-dapp
 tags:
   - tbtc
 ---
