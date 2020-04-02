@@ -4,6 +4,9 @@
 
 toc::[]
 
+The tBTC site is built using https://www.gatsbyjs.org[Gatsby] and the CMS
+functionality provided by https://www.netlifycms.org[Netlify].
+
 == Development
 
 === Setup
@@ -12,34 +15,20 @@ Install dependencies with `npm install`
 
 === Run
 
-`npm start` runs the app in the development mode.
+`npm run develop` runs the app in the development mode.
 
-Open http://localhost:3000[http://localhost:3000] to view it in the browser.
+Open http://localhost:3000 to view it in the browser.
 
-The page will reload if you make edits. You will also see any lint errors in the console.
+The page will reload if you make edits. You will also see any lint errors in the
+console.
 
 == Deployment
 
-Currently the site is deployed using Firebase to tbtc.network on the
-`tbtc-prod` GCP project and cluster. Deploying a new build involves two steps:
+Currently the site is auto-deployed on master merge to Google Cloud Storage
+and fronted by Cloudflare at https://tbtc.network. Pull requests (including
+those created by the CMS) are auto-deployed to subdirectories at
+https://preview.tbtc.network by branch name.
 
-* `npm run publish` builds a static version of the site to `build/`
-* `firebase deploy` deploys the contents of `build/` to firebase
+== License
 
-If the local machine hasn't authed to firebase, `firebase deploy` should prompt
-for login. If the logged in user isn't authorized to run a deploy, check to see
-if that authorization can be added.
-
-== Docker
-
-To build a Docker image execute:
-```sh
-docker build . -t tbtc-dapp
-```
-
-To run the Docker image execute:
-```sh
-docker run -p 8080:80 tbtc-dapp
-```
-
-This will expose the site under http://localhost:8080[http://localhost:8080].
+tBTC and this site are released under the link:./LICENSE[MIT License].
