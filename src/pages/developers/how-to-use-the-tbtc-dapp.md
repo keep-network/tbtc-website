@@ -13,12 +13,9 @@ To start, you need to:
 
 * Make sure you have [Metamask](https://metamask.io/) installed.
 * Get some ETH from [Coinbase](http://coinbase.com) or another source (to pay for gas) if you don&#39;t have any already.
+* Make sure you have some ETH in your Metamask wallet.
 
-Now, send the ETH to your Metamask wallet:
-
-\[screenshot]
-
-Once the ETH is in your wallet, go to
+Once the ETH is in your wallet, go to [the Ropsten tBTC dApp](http://dapp.test.tbtc.network).
 
 Next there are 5 steps:
 
@@ -45,8 +42,6 @@ Next there are 5 steps:
 > b. Once qualified, mint TBTC from the Vending Machine (this requires two Metamask confirmations: one to approve the TDT-Vending Machine transfer, and one to do the actual minting).
 
 ![View of complete deposit.](/img/deposit-flow-complete.png)
-
-
 
 Once you have your TBTC, you are free to use it to act on the Ethereum chain. You also get a TDT, which can be used to redeem the deposit for BTC (see the next section). You can read more about TDTs in the [technical system overview](/developers/tbtc-technical-system-overview).
 
