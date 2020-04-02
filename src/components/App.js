@@ -2,6 +2,9 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { Announcement, Footer, Header, Newsletter } from './lib'
 
+import '../css/app.scss'
+
+
 export default (props) => {
   const { children } = props
 

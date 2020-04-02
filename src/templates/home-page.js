@@ -1,15 +1,14 @@
 import React from 'react'
-import { Link, graphql, StaticQuery } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 
-import { Spotlight } from './lib'
-import SandDollar from './svgs/SandDollar'
+import { App } from '../components'
+import { Spotlight } from '../components/lib'
+import SandDollar from '../components/svgs/SandDollar'
 
 
-const Home = ({ data }) => {
-  const { edges: newsItems } = data.allMarkdownRemark
-
-  return (<div className="home">
+export const HomePageTemplate = ({ newsItems }) => (
+  <div className="home">
     <div className="container">
       <div className="row justify-content-center no-gutters">
         <section className="hero col-sm-12 col-md-12 col-lg-10">
@@ -112,20 +111,35 @@ const Home = ({ data }) => {
         </section>
       </div>
     </div>
-  </div>)
+  </div>
+)
+
+const HomePage = ({ data }) => {
+  // const { markdownRemark: post } = data
+  const { edges: newsItems } = data.allMarkdownRemark
+
+  return (
+    <App>
+      <HomePageTemplate
+        newsItems={newsItems} />
+    </App>
+  )
 }
 
-Home.propTypes = {
+HomePage.propTypes = {
   data: PropTypes.shape({
+    markdownRemark: PropTypes.object,
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
     })
   })
 }
 
+export default HomePage
+
 // Query for latest news items, skip any entries that have a null path
 export const query = graphql`
-  query LatestNewsItems {
+  query HomePage {
     allMarkdownRemark(
       limit: 3,
       sort: {order: DESC, fields: [frontmatter___date]},
@@ -144,10 +158,3 @@ export const query = graphql`
     }
   }
 `
-
-export default () => (
-  <StaticQuery
-    query={query}
-    render={data => <Home data={data} />}
-  />
-)
