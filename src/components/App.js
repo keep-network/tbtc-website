@@ -12,7 +12,7 @@ export default (props) => {
     <div className="main">
       <Header />
       <Announcement>
-        Update <Link to="/news/2020-02-14-ropsten">tBTC is now live on Ropsten</Link>
+        <Link to="/news/2020-02-14-ropsten">tBTC is now live on Ropsten</Link>. Mainnet launch is coming soon.
       </Announcement>
       <div className="app">
         { children }
