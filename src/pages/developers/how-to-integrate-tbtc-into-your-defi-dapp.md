@@ -16,7 +16,7 @@ The following resources contain the tools needed to integrate TBTC, as well as a
 
 - [The Ropsten-connected tBTC dapp](https://github.com/keep-network/tbtc-dapp) (use the [tBTC dapp on testnet](http://dapp.test.tbtc.network/) here)
 - [tBTC smart contracts](https://github.com/keep-network/tbtc)
-- [js](https://github.com/keep-network/tbtc.js)
+- [tbtc.js](https://github.com/keep-network/tbtc.js)
 - [The technical specification](http://docs.keep.network/tbtc/)
 - [The Solidity API documentation](http://docs.keep.network/tbtc/solidity/)
 
