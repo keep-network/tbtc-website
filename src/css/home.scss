@@ -34,7 +34,7 @@
             }
         }
     }
-    .step-by-step {
+    .features {
         margin-top: 110px;
 
         ol {
@@ -42,34 +42,34 @@
             list-style: none;
 
             margin: 0 auto;
-            padding: 75px 0;
+            padding: 75px 0 145px;
 
             li {
                 counter-increment: step-by-step;
                 display: flex;
-                align-items: baseline;
-                justify-content: center;
+                flex-direction: column;
+                position: relative;
+                padding: 0 5%;
 
-                div {
-                    display: inline-block;
-                    text-align: left;
-                    max-width: 50%;
-                    @extend .h2;
+                > * {
+                    margin-top: 0;
                 }
 
-                &::before {
+                &:before {
                     content: "0" #{counter(step-by-step)};
                     display: inline-block;
-                    padding-right: 12.5%;
-                    font-size: 0.93rem;
+                    font-size: 0.857rem;
                     line-height: 2em;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
                 }
             }
         }
 
         @media (max-width: #{$bp-medium}) {
             margin-top: 30px;
-            padding: 10px 20px;
+            padding: 10px 20px 30px;
 
             ol {
                 flex-direction: column;
@@ -81,9 +81,19 @@
                     margin: 30px 0;
                     justify-content: left;
 
-                    div {
-                        width: 100%;
+                    &:before {
+                        left: -20px;
                     }
+                }
+            }
+        }
+
+        @media (max-width: #{$bp-small}) {
+            ol {
+                padding: 0 10px;
+
+                li {
+                    margin: 1rem 0;
                 }
             }
         }

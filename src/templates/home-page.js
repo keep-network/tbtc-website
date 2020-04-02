@@ -39,7 +39,7 @@ export const HomePageTemplate = ({ hero, newsItems, features }) => (
             </div>
           </div>
         </section>
-        <section className="step-by-step col-sm-12 col-md-12 col-lg-10">
+        <section className="features col-sm-12 col-md-12 col-lg-10">
           <ol className="row">
             { features && features.map((feature, i) => (
               <li key={`feature-${i}`}
