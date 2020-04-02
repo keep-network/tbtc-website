@@ -8,7 +8,7 @@ Developers can build on tBTC. There are several resources to help devs use tBTC 
 - [How to Integrate TBTC into Your Defi Dapp](/how-to-integrate-tbtc-into-your-defi-dapp)
 - The Ropsten-connected [tBTC dApp](http://dapp.test.tbtc.network/)
 - [tBTC smart contracts](https://github.com/keep-network/tbtc)
-- [js](https://github.com/keep-network/tbtc.js)
+- [tbtc.js](https://github.com/keep-network/tbtc.js)
 - [The technical specification](http://docs.keep.network/tbtc/)
 - [The Solidity API documentation](http://docs.keep.network/tbtc/solidity/)
 
