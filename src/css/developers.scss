@@ -1,0 +1,48 @@
+.developers {
+    .content {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 3.42rem;
+
+        .sidebar {
+            padding: 0;
+
+            li {
+                list-style: none;
+                font-weight: 300;
+                line-height: 1.5;
+                margin: 1em 0;
+
+                &:first-of-type {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        @media (min-width: #{$bp-large}) {
+            flex-direction: row;
+            justify-content: flex-start;
+            margin: 2.85rem 0 17.14rem;
+
+            .sidebar {
+                margin-right: 5%;
+
+                li {
+                    &:first-of-type {
+                        margin-top: 0;
+                    }
+                }
+            }
+
+            .body {
+                padding-right: 20%;
+            }
+        }
+
+        @media (min-width: #{$bp-extra-large}) {
+            .body {
+                padding-right: 30%;
+            }
+        }
+    }
+}

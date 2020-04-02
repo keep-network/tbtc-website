@@ -76,3 +76,40 @@ a {
         margin-bottom: 1.8em;
     }
 }
+
+.body {
+    ol, ul {
+        margin: 2rem 0 3em;
+
+        li {
+            margin: 1rem 0;
+            line-height: 1.5;
+        }
+    }
+
+    ul {
+        margin: 2rem 0 3em;
+
+        li {
+            list-style: none;
+            position: relative;
+            padding-left: 32px;
+
+            &:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                content: '→';
+            }
+        }
+
+        @media (max-width: #{$bp-small}) {
+            padding-left: 10px;
+
+            li {
+                padding-left: 27px;
+            }
+        }
+    }
+}

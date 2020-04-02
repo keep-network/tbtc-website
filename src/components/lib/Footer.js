@@ -23,6 +23,11 @@ const Footer = () => (
             </Link>
           </li>
           <li>
+            <Link to="/developers">
+              Build
+            </Link>
+          </li>
+          <li>
             <Link to="/faq">
               FAQ
             </Link>
