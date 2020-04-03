@@ -4,7 +4,7 @@ path: /
 title: Home
 hero:
   buttons:
-    - text: Get Launch Updates
+    - text: Get Email Updates
       url: '/#mailing-list'
     - text: Start Building
       url: /developers
@@ -20,18 +20,20 @@ features:
   - description: 3 steps to convert from BTC to TBTC and back
     title: Simple
 spotlight_1:
-  body: >
-    <a href="https://tbtc.network/" target="_blank">tBTC</a>, an open-source
-    project supported by <a href="https://keep.network/"
-    target="_blank">Keep</a>, <a href="https://summa.one/"
-    target="_blank">Summa</a>, and the <a href="https://www.crosschain.group/"
-    target="_blank">Cross Chain Group</a>, is live on Ropsten, the public
-    Ethereum testnet with full functionality.
+  body: >-
+    tBTC, an open-source project supported by <a href="https://keep.network/"
+    target="_blank" rel="noopener">Keep</a>, <a href="https://summa.one/"
+    target="_blank" rel="noopener">Summa</a>, and the <a
+    href="https://www.crosschain.group/" target="_blank" rel="noopener">Cross
+    Chain Group</a>, will go live on Ethereum mainnet and become available for
+    use. (Read more in <a
+    href="https://www.bloomberg.com/news/articles/2020-04-02/bitcoin-s-ethereum-rivalry-could-be-assuaged-with-tbtc-bridge"
+    target="_blank" rel="noreferrer">Bloomberg</a>.)
   button:
     text: Read more
     url: news/2020-02-14-ropsten
   label: Announcement
-  title: tBTC is live on the Ropsten testnet
+  title: 'Mainnet launch of tBTC announced for April 27th, 2020'
 spotlight_2:
   button:
     text: Developer Toolkit
