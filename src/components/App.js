@@ -12,7 +12,7 @@ export default (props) => {
     <div className="main">
       <Header />
       <Announcement>
-        <Link to="/news/2020-02-14-ropsten">tBTC is now live on Ropsten</Link>. Mainnet launch is coming soon.
+        tBTC will launch on April 27th, 2020. Read more in <a href="https://www.bloomberg.com/news/articles/2020-04-02/bitcoin-s-ethereum-rivalry-could-be-assuaged-with-tbtc-bridge" target="_blank" rel="noreferrer">Bloomberg</a>.
       </Announcement>
       <div className="app">
         { children }
