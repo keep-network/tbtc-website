@@ -26,9 +26,7 @@ spotlight_1:
     target="_blank" rel="noopener">Summa</a>, and the <a
     href="https://www.crosschain.group/" target="_blank" rel="noopener">Cross
     Chain Group</a>, will go live on Ethereum mainnet and become available for
-    use. (Read more in <a
-    href="https://www.bloomberg.com/news/articles/2020-04-02/bitcoin-s-ethereum-rivalry-could-be-assuaged-with-tbtc-bridge"
-    target="_blank" rel="noreferrer">Bloomberg</a>.)
+    use. (Announcement in Bloomberg.)
   button:
     text: Read more
     url: news/2020-02-14-ropsten
