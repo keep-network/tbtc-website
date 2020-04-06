@@ -26,10 +26,10 @@ spotlight_1:
     target="_blank" rel="noopener">Summa</a>, and the <a
     href="https://www.crosschain.group/" target="_blank" rel="noopener">Cross
     Chain Group</a>, will go live on Ethereum mainnet and become available for
-    use. (Announcement in Bloomberg.)
+    use.
   button:
     text: Read more
-    url: news/2020-02-14-ropsten
+    url: 'https://tbtc.network/news/2020-04-06-tbtc-will-launch-on-april-27-2020'
   label: Announcement
   title: 'Mainnet launch of tBTC announced for April 27th, 2020'
 spotlight_2:
