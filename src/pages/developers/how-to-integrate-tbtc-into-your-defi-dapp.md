@@ -19,7 +19,7 @@ Developers will need to be familiar with Solidity and with ERC-20 tokens general
 
 The following resources contain the tools needed to integrate TBTC, as well as a brief guide:
 
-- [The Ropsten-connected tBTC dapp](https://github.com/keep-network/tbtc-dapp) (use the [tBTC dapp on testnet](http://dapp.test.tbtc.network/) here)
+- [The Ropsten-connected tBTC dapp](https://github.com/keep-network/tbtc-dapp) (use the [tBTC dapp on testnet](https://dapp.test.tbtc.network/) here)
 - [tBTC smart contracts](https://github.com/keep-network/tbtc)
 - [tbtc.js](https://github.com/keep-network/tbtc.js)
 - [The technical specification](http://docs.keep.network/tbtc/)

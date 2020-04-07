@@ -50,7 +50,7 @@ const FaqPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <App>
+    <App title={post.frontmatter.title}>
       <FaqPageTemplate
         title={post.frontmatter.title}
         questions={post.frontmatter.questions} />

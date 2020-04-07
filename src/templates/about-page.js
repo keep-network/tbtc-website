@@ -13,7 +13,7 @@ export const AboutPageTemplate = ({ title, body, supporters }) => (
           <header>
             <h1>{title}</h1>
             <div className="body" dangerouslySetInnerHTML={{ __html: body }} />
-            <a href="http://dapp.test.tbtc.network/" target="_blank" rel="noopener noreferrer">Mint tBTC</a>
+            <a href="https://dapp.test.tbtc.network/" target="_blank" rel="noopener noreferrer">Mint tBTC</a>
           </header>
           <div className="supporters">
             {supporters && supporters.map((supporter, i) => (
@@ -34,7 +34,7 @@ const AboutPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <App>
+    <App title={post.frontmatter.title}>
       <AboutPageTemplate
         title={post.frontmatter.title}
         body={post.html}

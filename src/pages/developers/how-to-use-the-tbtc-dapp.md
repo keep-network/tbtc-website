@@ -16,7 +16,7 @@ To start, you need to:
 * Get some ETH from [Coinbase](http://coinbase.com) or another source (to pay for gas) if you don&#39;t have any already.
 * Make sure you have some ETH in your Metamask wallet.
 
-Once the ETH is in your wallet, go to [the Ropsten tBTC dApp](http://dapp.test.tbtc.network).
+Once the ETH is in your wallet, go to [the Ropsten tBTC dApp](https://dapp.test.tbtc.network).
 
 Next there are 5 steps:
 

@@ -7,7 +7,7 @@ import { App } from './../../components'
 const News = ({ data }) => {
   const { edges: newsItems } = data.allMarkdownRemark
   return (
-    <App>
+    <App title="News">
       <div className="news">
         <div className="container">
           <div className="row justify-content-center no-gutters">

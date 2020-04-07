@@ -35,7 +35,7 @@ const DevelopersPage = ({ data }) => {
   const { edges: resources } = data.allMarkdownRemark
 
   return (
-    <App>
+    <App title={post.frontmatter.title}>
       <DevelopersPageTemplate
         title={post.frontmatter.title}
         body={post.html}
