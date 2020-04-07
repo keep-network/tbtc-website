@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'tBTC — Bitcoin on Ethereum',
-    description: '1. Deposit BTC. 2. Mint TBTC. 3. Lend and earn interest on your BTC.'
+    title: "Bitcoin on Ethereum",
+    titleTemplate: "tBTC – %s",
+    description: "1. Deposit BTC. 2. Mint TBTC. 3. Lend and earn interest on your BTC.",
+    url: "https://tbtc.network",
   },
   plugins: [
     'gatsby-plugin-react-helmet',
