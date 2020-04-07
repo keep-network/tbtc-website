@@ -33,7 +33,7 @@ const Footer = () => (
             </Link>
           </li>
           <li>
-            <a href="http://dapp.test.tbtc.network/" target="_blank" rel="noopener noreferrer">
+            <a href="https://dapp.test.tbtc.network/" target="_blank" rel="noopener noreferrer">
               dAPP
             </a>
           </li>

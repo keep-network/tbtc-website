@@ -29,7 +29,7 @@ const Header = props => {
             <li><Link to="/faq">FAQ</Link></li>
           </ul>
           <ul className="nav-right">
-            <li><a className="mint-button" href="http://dapp.test.tbtc.network/" target="_blank" rel="noopener noreferrer">Mint tBTC</a></li>
+            <li><a className="mint-button" href="https://dapp.test.tbtc.network/" target="_blank" rel="noopener noreferrer">Mint tBTC</a></li>
             <li><a className="site-repo-link" href="https://github.com/keep-network/tbtc-website" target="_blank" rel="noopener noreferrer">Repository</a></li>
           </ul>
         </div>
