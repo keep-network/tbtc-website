@@ -18,7 +18,8 @@ export const NewsItemTemplate = ({ title, date, body }) => (
 const NewsItem = ({ data }) => {
   const { markdownRemark: post } = data
 
-  return <App>
+  return <App title={post.frontmatter.title}
+              description={post.frontmatter.description}>
     <NewsItemTemplate
       date={post.frontmatter.date}
       description={post.frontmatter.description}

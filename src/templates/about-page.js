@@ -34,7 +34,7 @@ const AboutPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <App>
+    <App title={post.frontmatter.title}>
       <AboutPageTemplate
         title={post.frontmatter.title}
         body={post.html}
