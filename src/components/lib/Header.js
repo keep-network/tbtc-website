@@ -13,9 +13,9 @@ const Header = props => {
   return (
     <header className="header">
       <nav className="nav">
-        <a className="logo" href="/">
+        <Link className="logo" to="/">
           <TBTCLogo width="165" />
-        </a>
+        </Link>
 
         <div className={classNames('menu', { 'open': showMenu })}>
           <button className={classNames('menu-label', { 'open': showMenu })}
