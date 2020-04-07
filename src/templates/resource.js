@@ -20,7 +20,7 @@ const Resource = ({ data }) => {
   const title = post.frontmatter.heading ?
     post.frontmatter.heading : post.frontmatter.title
 
-  return <App>
+  return <App title={title}>
     <ResourceTemplate
       body={post.html}
       title={title}
