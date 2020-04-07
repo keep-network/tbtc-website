@@ -23,7 +23,7 @@ const News = ({ data }) => {
                       <h2>{node.frontmatter.title}</h2>
                       <p>{node.excerpt}</p>
                     </div>
-                    <Link to={`/${node.frontmatter.path}`}>Read</Link>
+                    <Link to={`/${node.fields.slug}`}>Read</Link>
                   </div>
                 </div>
               ))}
@@ -43,15 +43,17 @@ export const query = graphql`
   query LatestNews {
     allMarkdownRemark(
       sort: {order: DESC, fields: [frontmatter___date]},
-      filter: {frontmatter: {path: {ne: null}, template: {eq: "news-item"}}}
+      filter: {frontmatter: {template: {eq: "news-item"}}}
     ) {
       edges {
         node {
           id
           excerpt
+          fields {
+            slug
+          }
           frontmatter {
             title
-            path
           }
         }
       }
