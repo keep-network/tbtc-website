@@ -13,14 +13,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         edges {
           node {
             id
+            fields {
+              slug
+            }
             frontmatter {
               path
               template
-            }
-            parent {
-              ... on File {
-                relativePath
-              }
             }
           }
         }
@@ -39,7 +37,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const templateName = node.frontmatter.template || `default`
     const template = path.resolve(path.join('src/templates/', `${templateName}.js`))
     createPage({
-      path: node.frontmatter.path || node.parent.relativePath.replace(/.md$/,''),
+      path: node.frontmatter.path || node.fields.slug,
       component: template,
       context: { id: node.id }, // additional data can be passed via context
     })
