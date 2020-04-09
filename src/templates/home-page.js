@@ -85,7 +85,7 @@ export const HomePageTemplate = (props) => {
               <div className="latest-news-item col-sm-12 col-md-4" key={node.id}>
                 <h2>{node.frontmatter.title}</h2>
                 <p>{node.excerpt}</p>
-                <Link to={`/${node.frontmatter.path}`}>Read more</Link>
+                <Link to={`/${node.fields.slug}`}>Read more</Link>
               </div>
             ))}
           </div>
@@ -185,15 +185,17 @@ export const query = graphql`
     allMarkdownRemark(
       limit: 3,
       sort: {order: DESC, fields: [frontmatter___date]},
-      filter: {frontmatter: {path: {ne: null}, template: {eq: "news-item"}}}
+      filter: {frontmatter: {template: {eq: "news-item"}}}
     ) {
       edges {
         node {
           id
           excerpt
+          fields {
+            slug
+          }
           frontmatter {
             title
-            path
           }
         }
       }

@@ -17,7 +17,7 @@ export const DevelopersPageTemplate = ({ title, body, resources }) => (
             <li>Resources</li>
             { resources && resources.map(({ node }) => (
               <li key={node.id}>
-                <Link to={node.frontmatter.path}>
+                <Link to={node.fields.slug}>
                   {node.frontmatter.title}
                 </Link>
               </li>
@@ -71,9 +71,11 @@ export const pageQuery = graphql`
       edges {
         node {
           id
+          fields {
+            slug
+          }
           frontmatter {
             title
-            path
           }
         }
       }

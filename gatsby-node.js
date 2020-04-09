@@ -1,4 +1,5 @@
 const path = require(`path`)
+const { createFilePath } = require('gatsby-source-filesystem')
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
@@ -12,14 +13,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         edges {
           node {
             id
-            frontmatter {
-              path
-              template
+            fields {
+              slug
             }
-            parent {
-              ... on File {
-                relativePath
-              }
+            frontmatter {
+              template
             }
           }
         }
@@ -38,9 +36,22 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const templateName = node.frontmatter.template || `default`
     const template = path.resolve(path.join('src/templates/', `${templateName}.js`))
     createPage({
-      path: node.frontmatter.path || node.parent.relativePath.replace(/.md$/,''),
+      path: node.fields.slug,
       component: template,
       context: { id: node.id }, // additional data can be passed via context
     })
   })
+}
+
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
+
+  if (node.internal.type === `MarkdownRemark`) {
+    const value = createFilePath({ node, getNode })
+    createNodeField({
+      name: `slug`,
+      node,
+      value,
+    })
+  }
 }

@@ -13,7 +13,7 @@ const Resources = ({ data }) => {
           <div className="resource-item" key={node.id}>
             <h2>{node.frontmatter.title}</h2>
             <p>{node.frontmatter.description}</p>
-            <Link to={`/${node.frontmatter.path}`}>go</Link>
+            <Link to={`/${node.fields.slug}`}>go</Link>
           </div>
       ))}
     </div>
@@ -34,15 +34,17 @@ export const query = graphql`
     allMarkdownRemark(
       limit: 3,
       sort: {order: ASC, fields: [frontmatter___date]},
-      filter: {frontmatter: {path: {ne: null}, template: {eq: "resource"}}}
+      filter: {frontmatter: {template: {eq: "resource"}}}
     ) {
       edges {
         node {
           id
+          fields {
+            slug
+          }
           frontmatter {
             title
             description
-            path
           }
         }
       }
