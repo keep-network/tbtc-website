@@ -17,7 +17,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               slug
             }
             frontmatter {
-              path
               template
             }
           }
@@ -37,7 +36,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const templateName = node.frontmatter.template || `default`
     const template = path.resolve(path.join('src/templates/', `${templateName}.js`))
     createPage({
-      path: node.frontmatter.path || node.fields.slug,
+      path: node.fields.slug,
       component: template,
       context: { id: node.id }, // additional data can be passed via context
     })
