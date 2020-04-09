@@ -185,7 +185,7 @@ export const query = graphql`
     allMarkdownRemark(
       limit: 3,
       sort: {order: DESC, fields: [frontmatter___date]},
-      filter: {frontmatter: {template: {eq: "news-item"}}}
+      filter: {frontmatter: {template: {eq: "news-item"}, tags: {eq: "featured"}}}
     ) {
       edges {
         node {
