@@ -141,3 +141,14 @@ collections:
               {label: "Question", name: "question", widget: "string"},
               {label: "Answer", name: "answer", widget: "markdown"}
             ]
+
+  - name: "header_and_footer"
+    label: "Header & Footer"
+    files:
+      - file: "src/pages/announcement/index.md"
+        label: "Announcement Banner"
+        name: "announcement"
+        fields:
+          - {label: "Template Key", name: "template", widget: "hidden", default: "announcement"}
+          - {label: "Title", name: "title", widget: "string", required: false}
+          - {label: "Body", name: "body", widget: "markdown", required: false, minimal: true}
