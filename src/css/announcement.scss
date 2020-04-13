@@ -38,7 +38,7 @@
         }
 
         a {
-            text-decoration: underline;
+            @extend %external-arrow-link;
         }
     }
 
