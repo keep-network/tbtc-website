@@ -31,7 +31,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return
   }
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  // Filter out the content that we don't want pages created for
+  const postOrPage = result.data.allMarkdownRemark.edges
+    .filter(edge => edge.node.frontmatter.template !== "announcement");
+
+  postOrPage.forEach(({ node }) => {
     debugger;
     const templateName = node.frontmatter.template || `default`
     const template = path.resolve(path.join('src/templates/', `${templateName}.js`))

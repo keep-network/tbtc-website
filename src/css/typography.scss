@@ -67,6 +67,12 @@ a {
     }
 }
 
+%external-arrow-link {
+    &[href^=http]:after {
+        content: ' ↗';
+    }
+}
+
 .section-title {
     @extend .h1;
     border-top: 1px solid $black;
