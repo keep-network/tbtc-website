@@ -1,5 +1,5 @@
 ---
-template: 'announcement'
-title: Launch Announcement
+template: announcement
+title: Stakedrop Announcement
 ---
-tBTC will launch on April 27th, 2020. Read more in <a href="https://www.bloomberg.com/news/articles/2020-04-02/bitcoin-s-ethereum-rivalry-could-be-assuaged-with-tbtc-bridge" target="_blank" rel="noopener noreferrer">Bloomberg</a>.
+Stake ETH, Earn KEEP: Join us for a live stakedrop event on June 8, 2020. <a href="https://www.crowdcast.io/e/keep-stakedrop---live" target="_blank" rel="noopener noreferrer">RSVP Here</a>.
