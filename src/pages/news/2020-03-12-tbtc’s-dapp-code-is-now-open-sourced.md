@@ -4,6 +4,8 @@ title: tBTC’s Reference dApp is Now Open-Source
 description: tBTC’s Reference dApp is Now Open-Source
 date: 2020-03-12T16:51:10.284Z
 path: news/2020-03-12-tbtc’s-dapp-code-is-now-open-sourced
+tags:
+  - featured
 ---
 The reference dApp for tBTC [is now open-source](https://github.com/keep-network/tbtc-dapp)! Anyone interested in integrating tBTC is welcome to fork and customize the dApp fit their needs.
 

@@ -3,6 +3,8 @@ template: news-item
 title: 'tBTC Will Launch on April 27, 2020'
 description: 'tBTC Will Launch on April 27, 2020'
 date: 2020-04-06T16:12:33.160Z
+tags:
+  - featured
 ---
 tBTC will launch on Ethereum mainnet on April 27th, 2020. Users will have full functionality to deposit BTC, mint and redeem TBTC, and use it in Ethereum DeFi apps.
 

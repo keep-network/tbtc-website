@@ -3,6 +3,8 @@ template: news-item
 title: tBTC Is Now Fully Open-Sourced
 description: tBTC Is Now Fully Open-Sourced
 date: 2020-03-25T18:02:20.718Z
+tags:
+  - featured
 ---
 tBTC is now fully open-sourced, including the code for signers’ groups.
 
