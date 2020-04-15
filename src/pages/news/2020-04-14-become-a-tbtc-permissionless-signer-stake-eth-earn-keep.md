@@ -3,6 +3,8 @@ template: news-item
 title: 'Become a tBTC Permissionless Signer: Stake ETH, Earn KEEP'
 description: 'Stake ETH, Earn KEEP / Stakedrop announcement'
 date: 2020-04-14T21:42:48.038Z
+tags:
+  - featured
 ---
 The first Keep “stakedrop” will begin June 8th. Any ETH holder can earn fees by becoming a tBTC signer. **[Register here for the virtual event at 12pm EST](https://www.crowdcast.io/e/keep-stakedrop---live/register)** to participate as a tBTC signer during the 6-month stakedrop, earning fees and gaining your permanent place as a signer.
 
