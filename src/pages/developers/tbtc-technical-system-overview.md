@@ -2,7 +2,7 @@
 template: resource
 path: developers/tbtc-technical-system-overview
 title: tBTC Technical System Overview
-heading: Important system concepts
+heading: tBTC Technical System Overview
 description: >-
   Learn about TDT receipts, multiple lot sizes, Keep's random beacon, and
   threshold signatures.
