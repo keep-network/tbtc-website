@@ -53,7 +53,7 @@ In the case of overpayment -- where a user deposits more than the chosen BTC lot
 
 The system will only accept the first UTXO greater than the deposit lot size. All other BTC sent to the signing group is forfeit. Therefore it is imperative that depositors send only a single UTXO. Accepting multiple UTXOs from depositors would impose significant on-chain complexity and gas fees, as each UTXO would need to be proven via SPV, and a signature on it explicitly authorized. Signers would have to be incentivized to sign each transaction despite the fact that the total value of the UTXOs is not known.
 
-\##Random Beacon for Signer Selection
+## Random Beacon for Signer Selection
 
 The Keep network requires a trusted source of randomness to select tBTC signers. This takes the form of a BLS Threshold Relay.
 
