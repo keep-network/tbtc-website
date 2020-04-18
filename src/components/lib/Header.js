@@ -23,14 +23,14 @@ const Header = props => {
               Navigation
           </button>
           <ul className="nav-left">
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/news">News</Link></li>
-            <li><Link to="/developers">Build</Link></li>
-            <li><Link to="/faq">FAQ</Link></li>
+            <li><Link to="/about">О нас</Link></li>
+            <li><Link to="/news">Новости</Link></li>
+            <li><Link to="/developers">Разработчикам</Link></li>
+            <li><Link to="/faq">Ответы на вопросы</Link></li>
           </ul>
           <ul className="nav-right">
-            <li><a className="mint-button" href="https://dapp.test.tbtc.network/" target="_blank" rel="noopener noreferrer">Mint tBTC</a></li>
-            <li><a className="site-repo-link" href="https://github.com/keep-network/tbtc-website" target="_blank" rel="noopener noreferrer">Repository</a></li>
+            <li><a className="mint-button" href="https://dapp.test.tbtc.network/" target="_blank" rel="noopener noreferrer">Создать tBTC</a></li>
+            <li><a className="site-repo-link" href="https://github.com/keep-network/tbtc-website" target="_blank" rel="noopener noreferrer">Репозиторий</a></li>
           </ul>
         </div>
       </nav>
