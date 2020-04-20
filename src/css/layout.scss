@@ -54,37 +54,27 @@ html, body, #root {
 }
 
 .body {
-    .table-wrapper {
-        overflow-x: auto;
-    }
-
     table {
+        width: 100%;
         border-spacing: 0;
-        overflow-x: auto;
+        border-collapse: collapse;
+
+        @media (max-width: #{$bp-small}) {
+            table-layout: fixed;
+            overflow-wrap: break-word;
+            font-size: 0.714rem;
+        }
 
         th,
         td {
             border: 1px solid $black;
-            border-bottom: none;
-            border-right: none;
             padding: 1em;
             vertical-align: top;
-
-            &:last-of-type {
-                border-right: 1px solid $black;
-            }
+            border-collapse: collapse;
         }
 
         th {
             text-align: left;
-        }
-
-        tbody {
-            tr:last-of-type {
-                td {
-                    border-bottom: 1px solid $black;
-                }
-            }
         }
     }
 }

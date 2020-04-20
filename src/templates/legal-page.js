@@ -6,7 +6,7 @@ import { App } from '../components'
 
 
 export const LegalPageTemplate = ({ title, body }) => (
-  <div className="page privacy-policy">
+  <div className="page legal-page">
     <div className="container">
       <div className="row justify-content-center no-gutters">
         <header className="page-header col-sm-12 col-md-12 col-lg-10">

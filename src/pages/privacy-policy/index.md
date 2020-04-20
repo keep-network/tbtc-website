@@ -76,8 +76,6 @@ We do not respond to or honor &quot;do not track&quot; (a/k/a DNT) signals or si
 
 If you provide personal information through the features on our website, we will only use your personal information as the law allows. Examples the activities for which we may collect information, the type of data we collect, and our lawful basis for collecting that data are listed below.
 
-<div class="table-wrapper">
-
 | **Purpose/Activity** | **Type of data** | **Lawful basis for processing including basis of legitimate interest** |
 | --- | --- | --- |
 | To register you for our newsletter | (a) Contact | Performance of a contract with you |
@@ -86,8 +84,6 @@ If you provide personal information through the features on our website, we will
 | To administer and protect our business and this website (including troubleshooting, data analysis, testing, system maintenance, support, reporting and hosting of data) | (a) Contact<br/>(b) Technical | (a) Necessary for our legitimate interests (for running our business, provision of administration and IT services, network security, to prevent fraud and in the context of a business reorganisation or group restructuring exercise)<br/>(b) Necessary to comply with a legal obligation |
 | To use data analytics to improve our website, products/services, marketing,customer relationships and experiences | (a) Technical<br/>(b) Usage | Necessary for our legitimate interests (to define types of customers for our products and services, to keep our website updated and relevant, to develop our business and to inform our marketing strategy) |
 | To make suggestions and recommendations to you about goods or services that may be of interest to you | (a) Contact<br/>(b) Technical<br/>(c) Usage<br/>(d) Profile<br/>(e) Marketing and Communications | Necessary for our legitimate interests (to develop our products/services and grow our business) |
-
-</div>
 
 - To carry out our obligations and enforce our rights.
 - In any other way we may describe when you provide the information.
