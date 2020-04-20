@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 
-import { App } from './../../components'
+import { App } from './../components'
 
 
 const News = ({ data }) => {
@@ -40,10 +40,10 @@ export default News
 // TODO: use fragment reuse query part https://www.gatsbyjs.org/docs/using-graphql-fragments/
 // Query for latest news items, skip any entries that have a null path
 export const query = graphql`
-  query LatestNews {
+  query LatestNews($locale: String!) {
     allMarkdownRemark(
       sort: {order: DESC, fields: [frontmatter___date]},
-      filter: {frontmatter: {template: {eq: "news-item"}}}
+      filter: {frontmatter: {template: {eq: "news-item"}}, fields: {locale: {eq: $locale}}}
     ) {
       edges {
         node {
@@ -51,6 +51,7 @@ export const query = graphql`
           excerpt
           fields {
             slug
+            locale
           }
           frontmatter {
             title

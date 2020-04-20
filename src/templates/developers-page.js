@@ -56,7 +56,7 @@ DevelopersPage.propTypes = {
 export default DevelopersPage
 
 export const pageQuery = graphql`
-  query DevelopersPage($id: String!) {
+  query DevelopersPage($id: String!, $locale: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
@@ -66,7 +66,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: {order: ASC, fields: [frontmatter___date]},
-      filter: {frontmatter: {template: {eq: "resource"}}}
+      filter: {frontmatter: {template: {eq: "resource"}}, fields: {locale: {eq: $locale}}}
     ) {
       edges {
         node {
