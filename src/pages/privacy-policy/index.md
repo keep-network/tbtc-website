@@ -1,5 +1,5 @@
 ---
-template: 'privacy-policy-page'
+template: 'legal-page'
 path: /privacy-policy
 title: Privacy Policy
 ---

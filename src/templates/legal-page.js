@@ -5,7 +5,7 @@ import { graphql } from 'gatsby'
 import { App } from '../components'
 
 
-export const PrivacyPolicyPageTemplate = ({ title, body }) => (
+export const LegalPageTemplate = ({ title, body }) => (
   <div className="page privacy-policy">
     <div className="container">
       <div className="row justify-content-center no-gutters">
@@ -20,28 +20,28 @@ export const PrivacyPolicyPageTemplate = ({ title, body }) => (
   </div>
 )
 
-const PrivacyPolicyPage = ({ data }) => {
+const LegalPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
     <App title={post.frontmatter.title}>
-      <PrivacyPolicyPageTemplate
+      <LegalPageTemplate
         title={post.frontmatter.title}
         body={post.html} />
     </App>
   )
 }
 
-PrivacyPolicyPage.propTypes = {
+LegalPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
 }
 
-export default PrivacyPolicyPage
+export default LegalPage
 
 export const pageQuery = graphql`
-  query PrivacyPolicyPage($id: String!) {
+  query LegalPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html

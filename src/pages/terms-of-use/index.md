@@ -1,5 +1,5 @@
 ---
-template: 'terms-page'
+template: 'legal-page'
 path: /terms-of-use
 title: Keep Network Terms of Use
 ---
