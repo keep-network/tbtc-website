@@ -37,10 +37,54 @@ html, body, #root {
     }
 }
 
+.page {
+    margin-bottom: 7rem;
+
+    @media (min-width: #{$bp-medium}) {
+        margin-bottom: 10rem;
+    }
+}
+
 .page-header {
     border-top: 1px solid $black;
     
     @media (min-width: #{$bp-medium}) {
         margin-bottom: 5rem;
+    }
+}
+
+.body {
+    .table-wrapper {
+        overflow-x: auto;
+    }
+
+    table {
+        border-spacing: 0;
+        overflow-x: auto;
+
+        th,
+        td {
+            border: 1px solid $black;
+            border-bottom: none;
+            border-right: none;
+            padding: 1em;
+            vertical-align: top;
+
+            &:last-of-type {
+                border-right: 1px solid $black;
+            }
+        }
+
+        th {
+            text-align: left;
+        }
+
+        tbody {
+            tr:last-of-type {
+                td {
+                    border-bottom: 1px solid $black;
+                }
+            }
+        }
     }
 }
