@@ -145,7 +145,7 @@ The safety and security of your information also depends on you. You are respons
 
 ## 12. Your California Privacy Rights <a id="YourCaliforniaPrivacyRights"></a>
 
-If you are a California resident, California law may provide you with additional rights regarding our use of your personal information. To learn more about your California privacy rights, you can view our Privacy Notice for California Residents [provide link to California Privacy Notice].
+If you are a California resident, California law may provide you with additional rights regarding our use of your personal information. To learn more about your California privacy rights, you can view our [Privacy Notice for California Residents](/california-privacy-notice).
 
 ## 13. Changes to Our Privacy Policy <a id="ChangesToOurPrivacyPolicy"></a>
 
