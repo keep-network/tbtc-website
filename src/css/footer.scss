@@ -57,12 +57,21 @@ footer {
 
             ul {
                 flex-direction: row;
+                flex-wrap: wrap;
                 margin: 0;
 
                 li {
                     margin: 0 70px 1em 0;
                 }
 
+                
+            }
+        }
+    }
+
+    @media (min-width: 829px) {
+        .footer-menu {
+            ul {
                 .copyright {
                     margin: 0 0 1em auto;
                 }
