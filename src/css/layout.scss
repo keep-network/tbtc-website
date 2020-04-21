@@ -37,10 +37,44 @@ html, body, #root {
     }
 }
 
+.page {
+    margin-bottom: 7rem;
+
+    @media (min-width: #{$bp-medium}) {
+        margin-bottom: 10rem;
+    }
+}
+
 .page-header {
     border-top: 1px solid $black;
     
     @media (min-width: #{$bp-medium}) {
         margin-bottom: 5rem;
+    }
+}
+
+.body {
+    table {
+        width: 100%;
+        border-spacing: 0;
+        border-collapse: collapse;
+
+        @media (max-width: #{$bp-small}) {
+            table-layout: fixed;
+            overflow-wrap: break-word;
+            font-size: 0.714rem;
+        }
+
+        th,
+        td {
+            border: 1px solid $black;
+            padding: 1em;
+            vertical-align: top;
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: left;
+        }
     }
 }

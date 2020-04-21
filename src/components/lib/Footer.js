@@ -40,7 +40,21 @@ const Footer = () => (
         </ul>
       </div>
       <div className="bottom-menu">
-        <p className="copyright">&copy; 2020 tBTC</p>
+        <ul>
+          <li>
+            <Link to="/privacy-policy">
+              Privacy Policy
+            </Link>
+          </li>
+          <li>
+            <Link to="/terms-of-use">
+              Terms of Use
+            </Link>
+          </li>
+          <li className="copyright">
+            &copy; 2020 tBTC
+          </li>
+        </ul>
       </div>
     </nav>
   </footer>

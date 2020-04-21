@@ -142,6 +142,30 @@ collections:
               {label: "Question", name: "question", widget: "string"},
               {label: "Answer", name: "answer", widget: "markdown"}
             ]
+      - file: "src/pages/privacy-policy/index.md"
+        label: "Privacy Policy"
+        name: "privacy_policy"
+        fields:
+          - {label: "Template Key", name: "template", widget: "hidden", default: "legal-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/privacy-policy"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/california-privacy-notice/index.md"
+        label: "California Privacy Notice"
+        name: "california_privacy_notice"
+        fields:
+          - {label: "Template Key", name: "template", widget: "hidden", default: "legal-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/california-privacy-notice"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/terms-of-use/index.md"
+        label: "Terms of Use"
+        name: "terms_of_use"
+        fields:
+          - {label: "Template Key", name: "template", widget: "hidden", default: "legal-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/terms-of-use"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "header_and_footer"
     label: "Header & Footer"
