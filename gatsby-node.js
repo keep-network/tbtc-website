@@ -1,7 +1,11 @@
 const path = require(`path`)
 const { createFilePath } = require('gatsby-source-filesystem')
 
+const writeConfig = require('./src/cms/config/index.js').writeConfig
+
 const config = require('./gatsby-config')
+
+const { defaultLanguage, supportedLanguages } = config.siteMetadata
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
@@ -46,7 +50,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     createPage({
       path: node.fields.slug,
       component: template,
-     // additional data can be passed via context
+      // additional data can be passed via context
       context: { id: node.id, locale: node.fields.locale },
     })
   })
@@ -74,8 +78,6 @@ function languagePath(path, lang) {
 
 exports.onCreateNode = async ({ graphql, node, actions, getNode }) => {
   const { createNodeField } = actions
-
-  const { defaultLanguage, supportedLanguages } = config.siteMetadata
 
   // set a slug for all markdown nodes, and use any supported 639-1 language
   // code prepended to the file extension to set a language-specific URL root
@@ -133,4 +135,9 @@ exports.onCreateNode = async ({ graphql, node, actions, getNode }) => {
       value: lang,
     })
   }
+}
+
+exports.onPostBootstrap = () => {
+  // generate the netlify config
+  writeConfig(path.join(__dirname, './static/admin/config.yml'))
 }
