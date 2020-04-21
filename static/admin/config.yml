@@ -4,6 +4,7 @@ backend:
   site_domain: tbtc.network
   base_url: https://backend.tbtc.network/
   auth_endpoint: netlify/auth
+  open_authoring: true
 
 site_url: https://tbtc.network
 
