@@ -17,6 +17,7 @@ collections:
   - name: "news-item"
     label: "News"
     folder: "src/pages/news"
+    extension: "md"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     preview_path: "news/{{slug}}"
@@ -32,6 +33,7 @@ collections:
   - name: "resource"
     label: "Resources"
     folder: "src/pages/developers"
+    extension: "md"
     create: true
     slug: "{{slug}}"
     preview_path: "developers/{{slug}}"
