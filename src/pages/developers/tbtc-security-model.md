@@ -17,7 +17,7 @@ Sidechains were invented as a way to experiment with unlocking Bitcoin’s poten
 
 Although Liquid works, it lacks BTC’s openness and security. Liquid relies on a trusted federation of signers to custody the “locked” bitcoin. If the signers so desire, they can censor withdrawals or walk away with funds. Further, there is no user recourse in the event of signer malice - users must rely completely on trusting the Liquid network and its underlying technology.
 
-tBTC is a **trust-minimized** alternative to this model. Signers are overcollateralized to 150% the value of the deposit they custody, and users are fully reimbursed in the event of signer fraud. Signers are chosen from an open and decentralized network of nodes that run the Keep protocol, all bonded on Ethereum.
+tBTC is a **trust-minimized** alternative to this model. Signers are overcollateralized to 150% the value of the deposit they custody, and users are fully reimbursed in the event of [signer fraud](#signer-fraud). Signers are chosen from an open and decentralized network of nodes that run the Keep protocol, all bonded on Ethereum.
 
 The basic operation of minting 1 TBTC, the pegged version of Bitcoin on Ethereum, is as follows:
 
@@ -25,14 +25,15 @@ The basic operation of minting 1 TBTC, the pegged version of Bitcoin on Ethereum
 2. A **signer group** forms and puts down **150% the value of 1 BTC in ETH** as collateral.
 3. The signer group generates a Bitcoin wallet using a [threshold ECDSA protocol](https://www.binance.vision/security/threshold-signatures-explained).
 4. The user sends 1 BTC to the Bitcoin wallet.
-5. The user generates an **SPV proof** of their deposit transaction, and sends it to the Ethereum chain.
+5. The user generates an [**SPV proof**](https://docs.keep.network/tbtc/#spv) of their deposit transaction, and sends it to the Ethereum chain.
 6. The user mints TBTC.
 
 Redeeming TBTC back into BTC is simply the same process in reverse:
 1. User burns TBTC and provides a receiving Bitcoin address to begin redemption.
 2. The **signer group** generates and publishes a signature for a Bitcoin transaction to send the Bitcoin to the user’s requested Bitcoin address.
 3. The user broadcasts this transaction and the generated signature to the Bitcoin network.
-TheI4.  signers generate an **SPV proof** of this transaction, publish it to the Ethereum chain, and receive their bonds back.
+
+The signers generate an **SPV proof** of this transaction, publish it to the Ethereum chain, and receive their bonds back.
 
 There are three systems at play in this operation:
 
@@ -71,7 +72,7 @@ Signers collectively bond 150% the value of the Bitcoin they custody, incentiviz
 
 tBTC v1 relies on a trusted ETH/BTC price feed operated by ecosystem participants. The primary feed, operated by MakerDAO, is a medianized feed of prices from Binance, HitBTC, Coinbase, Poloniex, Huobi, and Bitfinex. If the primary feed discontinues reporting, the system can fall back to a secondary feed.
 
-Price feeds introduce a class of attacks that can harm signers -- but thanks to the system design, do not impact depositors. A feed with stale or manipulated prices can push deposits into liquidation, but because liquidations are high-start falling-price auctions, signer bonds can be sold with little slippage, and above any manipulated reported price. Short-term price feed manipulations don’t threaten depositor funds, but are a risk for signers.
+Price feeds introduce a class of attacks that can harm signers -- but thanks to the system design, do not impact depositors. A feed with stale or manipulated prices can push deposits into liquidation, but because liquidations are high-start falling-price auctions, signer bonds can be sold with little [slippage](https://en.wikipedia.org/wiki/Slippage_(finance)), and above any manipulated reported price. Short-term price feed manipulations don’t threaten depositor funds, but are a risk for signers.
 
 A faulty feed that is being manipulated for many blocks begins to threaten the system over time. If a feed appears to be manipulated, rational users should redeem their deposits and exit the system. Notably, a faulty feed doesn’t interfere with user redemptions.
 
@@ -91,7 +92,7 @@ Still, the development team maintains a privileged key with 4 distinct capabilit
 
 1. [Updating the signer fee rate](https://github.com/keep-network/tbtc/blob/19aa270197d84d64ef3a64bdcb09544abf6787b3/solidity/contracts/system/TBTCSystem.sol#L160). The privileged key can modify the fees signers charge for deposits going forward. The modification only impacts new deposits opened after a time delay. The maximum fee that can be set is 10% and the minimum 5bps (0.05%), preventing this ability from enabling an inadvertent kill-switch.
 2. [Supporting additional lot sizes](https://github.com/keep-network/tbtc/blob/19aa270197d84d64ef3a64bdcb09544abf6787b3/solidity/contracts/system/TBTCSystem.sol#L160). The privileged key can modify and add to the available lot sizes for new deposits. This modification only impacts new deposits opened after a time delay. The available lot sizes must always include at least a 1 BTC lot size, and lot sizes can’t be greater than 10 BTC or less than 0.0005 BTC (50,000 sats), preventing an inadvertent kill-switch.
-3. [Modifying collateralization thresholds](https://github.com/keep-network/tbtc/blob/19aa270197d84d64ef3a64bdcb09544abf6787b3/solidity/contracts/system/TBTCSystem.sol#L195). The privileged key can adjust the three collateralization thresholds enforced by the system.This modification only impacts new deposits opened after a time delay, preventing this call from forcing existing deposit liquidation. The lowest threshold is 100%, and the highest is 300%, preventing this call from acting as an inadvertent kill-switch.
+3. [Modifying collateralization thresholds](https://github.com/keep-network/tbtc/blob/19aa270197d84d64ef3a64bdcb09544abf6787b3/solidity/contracts/system/TBTCSystem.sol#L195). The privileged key can adjust the three collateralization thresholds enforced by the system. This modification only impacts new deposits opened after a time delay, preventing this call from forcing existing deposit liquidation. The lowest threshold is 100%, and the highest is 300%, preventing this call from acting as an inadvertent kill-switch.
 4. [Pausing new deposits](https://github.com/keep-network/tbtc/blob/19aa270197d84d64ef3a64bdcb09544abf6787b3/solidity/contracts/system/TBTCSystem.sol#L129). The privileged key can pause new deposits for 10 days, once, without a time delay. After this ability is involved, it cannot be used again. This approach was preferred to a kill-switch or other control mechanism, giving developers a chance to notify users in case of a 0-day exploit, allowing users to withdraw their deposits from the peg in the case of a catastrophic failure. As with all other privileged key capabilities, this  does not affect open deposits, which can continue to be redeemed or used as normal.
 
 While tBTC’s governance has been designed to be restrictive and resilient in the face of malicious developers or a stolen key, as with any project making claims to censorship-resistance, the ongoing role of the development team and all code deserve heavy scrutiny by users and outside parties.
