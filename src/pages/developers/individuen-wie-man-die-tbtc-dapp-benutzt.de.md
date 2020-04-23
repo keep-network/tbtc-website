@@ -12,8 +12,6 @@ Dies ist eine Schritt-für-Schritt-Anleitung für die Verwendung der tBTC dApp.
 Um zu beginnen, müssen Sie:
 
 * Sicherstellen, dass Sie [Metamask](https://metamask.io/) installiert haben.
-
-
 * Besorgen Sie sich etwas ETH von [Coinbase](http://coinbase.com) oder aus einer anderen Quelle (um für Gas zu bezahlen), falls Sie nicht schon welche haben.
 * Stellen Sie sicher, dass Sie etwas ETH in Ihrer Metamask-Wallet haben
 
@@ -38,8 +36,6 @@ Danach folgen 5 Schritte:
    > a. Erstellen Sie den Nachweis und reichen Sie ihn ein (dies erfordert eine Metamask-Bestätigung)
    >
    > b. Sobald Sie qualifiziert sind, prägen Sie TBTC aus dem "Automaten" (dazu sind zwei Metamask-Bestätigungen erforderlich: eine zur Genehmigung des TDT-Automaten-Transfers und eine für die eigentliche Prägung).
-   >
-   >
 
 ![](/img/complete.png)
 
@@ -53,8 +49,6 @@ Zuerst gehen Sie wie beim ersten Durchlauf in die Dapp. Klicken Sie auf „redee
 
 Für die nächsten Schritte benötigen Sie die folgenden Informationen:
 
-
-
 1. Die TDT-ID, die Sie bei der Prägung des obigen TBTC erhalten haben. Sie können sich das wie das Ticket an der Garderobe vorstellen - Sie brauchen es, um den Mantel zurückzubekommen. Sie erhalten ihn erst am Ende des oben genannten Prozesses.
 
 
@@ -62,6 +56,23 @@ Für die nächsten Schritte benötigen Sie die folgenden Informationen:
 
 Sobald Sie diese Informationen haben, können Sie mit dem Einlösungsprozess beginnen.
 
-
-
 1. Beginnen Sie den Einlösungsvorgang mit der Eingabe dieser Informationen:
+
+
+2. Der Einlösungsvorgang erfordert vier Metamask-Bestätigungen von Ihnen:
+
+a. Die erste bestätigt die Übertragung von TBTC von Ihnen, um die TDT aus dem Automaten zu holen.
+
+b. Die zweite fordert die TDT vom Automaten an und sendet ihm im Gegenzug die TBTC zum Brennen.
+
+c. Der dritte fordert die Entnahme von BTC aus dem durch die TDT repräsentierte Einzahlung an. Nach diesem Schritt wird die Abhebungstransaktion im Bitcoin-Netzwerk veröffentlicht, und Sie müssen warten, bis die entsprechende Anzahl von Bestätigungen erfolgt ist.
+
+![](/img/begin-redemption-flow.png)
+
+
+
+d. Die letzte Metamask-Bestätigung übermittelt den SPV-Nachweis, dass die Auslösung abgeschlossen ist, was die geordnete Schließung der Unterzeichnergruppe ermöglicht:
+
+Sie haben jetzt Ihr TBTC gegen BTC eingetauscht!
+
+![](/img/deposit-flow-complete.png)
