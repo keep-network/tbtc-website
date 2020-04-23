@@ -5,8 +5,8 @@ module.exports = {
     description: "1. Deposit BTC. 2. Mint TBTC. 3. Lend and earn interest on your BTC.",
     url: "https://tbtc.network",
     // supported 639-1 language codes
-    supportedLanguages: ["en", "ru"],
-    defaultLanguage: "en",
+    supportedLocales: ["en", "ru"],
+    defaultLocale: "en",
   },
   plugins: [
     'gatsby-plugin-react-helmet',

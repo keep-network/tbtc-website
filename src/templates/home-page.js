@@ -1,11 +1,11 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 
 import { App } from '../components'
 import { Resources, Spotlight } from '../components/lib'
 import SandDollar from '../components/svgs/SandDollar'
-
+import Link from '../components/LocaleLink'
 
 export const HomePageTemplate = (props) => {
   const {
@@ -85,7 +85,7 @@ export const HomePageTemplate = (props) => {
               <div className="latest-news-item col-sm-12 col-md-4" key={node.id}>
                 <h2>{node.frontmatter.title}</h2>
                 <p>{node.excerpt}</p>
-                <Link to={`/${node.fields.slug}`}>Read more</Link>
+                <Link locale={node.fields.locale} to={`/${node.fields.slug}`}>Read more</Link>
               </div>
             ))}
           </div>
@@ -146,7 +146,7 @@ export default HomePage
 
 // Query for latest news items, skip any entries that have a null path
 export const query = graphql`
-  query HomePage($id: String!) {
+  query HomePage($id: String!, $locale: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       frontmatter {
@@ -185,13 +185,14 @@ export const query = graphql`
     allMarkdownRemark(
       limit: 3,
       sort: {order: DESC, fields: [frontmatter___date]},
-      filter: {frontmatter: {template: {eq: "news-item"}, tags: {eq: "featured"}}}
+      filter: {frontmatter: {template: {eq: "news-item"}, tags: {eq: "featured"}}, fields: {locale: {eq: $locale}}}
     ) {
       edges {
         node {
           id
           excerpt
           fields {
+            locale
             slug
           }
           frontmatter {

@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import { App } from '../components'
+import Link from '../components/LocaleLink'
 
 
 export const DevelopersPageTemplate = ({ title, body, resources }) => (

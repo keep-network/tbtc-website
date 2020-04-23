@@ -5,7 +5,7 @@ const writeConfig = require('./src/cms/config/index.js').writeConfig
 
 const config = require('./gatsby-config')
 
-const { defaultLanguage, supportedLanguages } = config.siteMetadata
+const { defaultLocale, supportedLocales } = config.siteMetadata
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
@@ -61,7 +61,7 @@ function langFromFilename(filename) {
   return potentialMatch && potentialMatch[1] || null
 }
 
-function languagePath(path, lang) {
+function localePath(path, lang) {
   let pathComponents = path.split('/').filter(s => s !== '')
   let last = pathComponents.pop()
 
@@ -85,15 +85,15 @@ exports.onCreateNode = async ({ graphql, node, actions, getNode }) => {
     let lang = langFromFilename(node.fileAbsolutePath)
     let slug = createFilePath({ node, getNode })
 
-    if (lang && supportedLanguages.includes(lang)) {
-      if (lang !== defaultLanguage) {
+    if (lang && supportedLocales.includes(lang)) {
+      if (lang !== defaultLocale) {
         slug = languagePath(slug, lang)
       } else {
         lang = null
       }
     }
 
-    lang = lang || defaultLanguage
+    lang = lang || defaultLocale
 
     createNodeField({
       name: `slug`,
@@ -109,22 +109,22 @@ exports.onCreateNode = async ({ graphql, node, actions, getNode }) => {
   }
   // create new pages for non-default languages
   else if (node.internal.type === 'SitePage') {
-    const nonDefaultLanguages = supportedLanguages.filter(l => l !== defaultLanguage)
+    const nonDefaultLocale = supportedLocales.filter(l => l !== defaultLocale)
 
-    let lang = defaultLanguage
+    let lang = defaultLocale
     if (node.component) {
       lang = langFromFilename(node.component)
       let path = node.path
 
-      if (lang && supportedLanguages.includes(lang)) {
-        if (lang !== defaultLanguage) {
+      if (lang && supportedLocales.includes(lang)) {
+        if (lang !== defaultLocale) {
           path = languagePath(path, lang)
         } else {
           lang = null
         }
       }
 
-      lang = lang || defaultLanguage
+      lang = lang || defaultLocale
 
       node.path = path
 

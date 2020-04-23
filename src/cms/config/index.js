@@ -4,8 +4,8 @@ const YAML = require('yaml')
 
 const config = require('../../../gatsby-config.js')
 
-const { defaultLanguage, supportedLanguages } = config.siteMetadata
-const nonDefaultLanguages = supportedLanguages.filter(l=>l !== defaultLanguage)
+const { defaultLocale, supportedLocales } = config.siteMetadata
+const nonDefaultLocales = supportedLocales.filter(l=>l !== defaultLocale)
 
 function generateConfig() {
   const configPath = path.join(__dirname, './base-config.yml')
@@ -20,7 +20,7 @@ function generateConfig() {
       let extension = collection.extension || 'md'
       let format = collection.format || 'frontmatter'
       newCollections.push(collection)
-      nonDefaultLanguages.forEach(lang => newCollections.push({
+      nonDefaultLocales.forEach(lang => newCollections.push({
         ...collection,
         extension: `${lang}.${extension}`,
         format,
@@ -30,7 +30,7 @@ function generateConfig() {
     }
     else if(collection.files !== undefined) {
       newCollections.push(collection)
-      nonDefaultLanguages.forEach(lang => newCollections.push({
+      nonDefaultLocales.forEach(lang => newCollections.push({
         ...collection,
         name: `${collection.name}-${lang}`,
         label: `${collection.label} (${lang})`,
