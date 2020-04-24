@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import { App } from '../components'
+import Link from '../components/LocaleLink'
 
 
 export const DevelopersPageTemplate = ({ title, body, resources }) => (
@@ -56,7 +57,7 @@ DevelopersPage.propTypes = {
 export default DevelopersPage
 
 export const pageQuery = graphql`
-  query DevelopersPage($id: String!) {
+  query DevelopersPage($id: String!, $locale: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
@@ -66,7 +67,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: {order: ASC, fields: [frontmatter___date]},
-      filter: {frontmatter: {template: {eq: "resource"}}}
+      filter: {frontmatter: {template: {eq: "resource"}}, fields: {locale: {eq: $locale}}}
     ) {
       edges {
         node {
