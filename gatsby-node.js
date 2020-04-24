@@ -56,24 +56,24 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   })
 }
 
-function langFromFilename(filename) {
+function localeFromFilename(filename) {
   const potentialMatch = filename.match(/.*\.(\w+)\.\w+$/i)
   return potentialMatch && potentialMatch[1] || null
 }
 
-function localePath(path, lang) {
+function localePath(path, locale) {
   let pathComponents = path.split('/').filter(s => s !== '')
   let last = pathComponents.pop()
 
-  if (last === `index.${lang}`) {
+  if (last === `index.${locale}`) {
     last = ''
   } else {
-    last = last.replace(new RegExp(`\\.${lang}$`, 'i'), '')
+    last = last.replace(new RegExp(`\\.${locale}$`, 'i'), '')
   }
 
   pathComponents.push(last)
 
-  return `/${lang}/${pathComponents.join('/')}`
+  return `/${locale}/${pathComponents.join('/')}`
 }
 
 exports.onCreateNode = async ({ graphql, node, actions, getNode }) => {
@@ -82,18 +82,17 @@ exports.onCreateNode = async ({ graphql, node, actions, getNode }) => {
   // set a slug for all markdown nodes, and use any supported 639-1 language
   // code prepended to the file extension to set a language-specific URL root
   if (node.internal.type === `MarkdownRemark`) {
-    let lang = langFromFilename(node.fileAbsolutePath)
-    let slug = createFilePath({ node, getNode })
+    let locale = localeFromFilename(node.fileAbsolutePath)
 
-    if (lang && supportedLocales.includes(lang)) {
-      if (lang !== defaultLocale) {
-        slug = languagePath(slug, lang)
-      } else {
-        lang = null
-      }
+    if (!supportedLocales.includes(locale)) {
+      locale = defaultLocale
     }
 
-    lang = lang || defaultLocale
+    let slug = createFilePath({ node, getNode })
+
+    if (locale !== defaultLocale) {
+      slug = localePath(slug, locale)
+    }
 
     createNodeField({
       name: `slug`,
@@ -104,35 +103,27 @@ exports.onCreateNode = async ({ graphql, node, actions, getNode }) => {
     createNodeField({
       name: `locale`,
       node,
-      value: lang,
+      value: locale,
     })
   }
-  // create new pages for non-default languages
+  // create new pages for non-default localeuages
   else if (node.internal.type === 'SitePage') {
     const nonDefaultLocale = supportedLocales.filter(l => l !== defaultLocale)
 
-    let lang = defaultLocale
+    let locale = defaultLocale
     if (node.component) {
-      lang = langFromFilename(node.component)
-      let path = node.path
+      locale = localeFromFilename(node.component)
 
-      if (lang && supportedLocales.includes(lang)) {
-        if (lang !== defaultLocale) {
-          path = languagePath(path, lang)
-        } else {
-          lang = null
-        }
+      if(!supportedLocales.includes(locale)) {
+        locale = defaultLocale
+      } else if (locale !== defaultLocale) {
+        node.path = localePath(path, locale)
       }
-
-      lang = lang || defaultLocale
-
-      node.path = path
-
     }
     createNodeField({
       name: `locale`,
       node,
-      value: lang,
+      value: locale,
     })
   }
 }
