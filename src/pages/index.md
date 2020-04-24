@@ -21,17 +21,13 @@ features:
     title: Simple
 spotlight_1:
   body: >-
-    tBTC, an open-source project supported by <a href="https://keep.network/"
-    target="_blank" rel="noopener">Keep</a>, <a href="https://summa.one/"
-    target="_blank" rel="noopener">Summa</a>, and the <a
-    href="https://www.crosschain.group/" target="_blank" rel="noopener">Cross
-    Chain Group</a>, will go live on Ethereum mainnet and become available for
-    use.
+    tBTC will begin moving toward full mainnet launch over the coming weeks.
+    Launch will occur over a series of milestones starting April 24th.
   button:
     text: Read more
-    url: 'https://tbtc.network/news/2020-04-06-tbtc-will-launch-on-april-27-2020'
+    url: 'https://tbtc.network/news/2020-04-24-tbtc-launch-key-dates/'
   label: Announcement
-  title: 'Mainnet launch of tBTC announced for April 27th, 2020'
+  title: 'tBTC Launch: Key Dates'
 spotlight_2:
   button:
     text: Developer Toolkit
