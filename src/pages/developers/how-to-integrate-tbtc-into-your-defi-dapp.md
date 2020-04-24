@@ -1,43 +1,44 @@
 ---
 template: resource
 path: developers/how-to-integrate-tbtc-into-your-defi-dapp
-title: 'Developers: How to Integrate tBTC into your DeFi dApp'
-heading: 'Developer Toolkit: How to Integrate tBTC into your DeFi dApp'
+title: 'Разработчикам: Как интегрировать tBTC в DeFi приложение'
+heading: 'Инструменты разработчиков: Как интегрировать tBTC в DeFi приложение'
 description: >-
-  Developers can integrate tBTC into dApps using publicly available resources
-  and libraries. Any app that uses an ERC-20 token can integrate TBTC. This
-  guide covers the resources and tools needed to integrate tBTC.
+  Разработчики могут интегрировать tBTC в приложения, используя открытые
+  библиотеки. Любое приложение, которое взаимодействует с ERC-20 токенами, может
+  интегрировать TBTC. Ниже перечислены ресурсы и инструменты, необходимые для
+  интеграции tBTC.
 date: 2020-04-01T17:04:10.000Z
 tags:
   - developers
 ---
-tBTC is the easy way to add Bitcoin to your dapp, making it accessible to BTC holders and unlocking user growth. By integrating TBTC, developers of DeFi dapps on Ethereum can let BTC holders earn interest or take out loans without having to trust centralized services.
+tBTC - это простой способ добавить BTC в ваше приложение, сделав его доступным для держателей BTC, и, таким образом, привлечь новых пользователей. Интегрируя TBTC, разработчики DeFi приложений на Ethereum могут позволить держателям BTC зарабатывать проценты или брать кредиты на бездоверительной основе.
 
-tBTC is an open-source project with many contributors. Developers can integrate TBTC into their dapps using publicly available resources and libraries. Any app that uses an ERC-20 token can integrate TBTC.
+tBTC - это проект с открытым исходным кодом с большим количеством разработчиков. Разработчики могут интегрировать tBTC в приложения, используя открытые библиотеки. Любое приложение, которое взаимодействует с ERC-20 токенами, может интегрировать TBTC.
 
-Developers will need to be familiar with Solidity and with ERC-20 tokens generally.
+Разработчикам необходимо иметь навыки программирования на Solidity и уметь работать с ERC-20 токенами.
 
-The following resources contain the tools needed to integrate TBTC, as well as a brief guide:
+Ниже перечислены инструменты и краткое руководство по их использованию, необходимые для интеграции TBTC:
 
-- [The Ropsten-connected tBTC dapp](https://github.com/keep-network/tbtc-dapp) (use the [tBTC dapp on testnet](https://dapp.test.tbtc.network/) here)
-- [tBTC smart contracts](https://github.com/keep-network/tbtc)
-- [tbtc.js](https://github.com/keep-network/tbtc.js)
-- [The technical specification](http://docs.keep.network/tbtc/)
-- [The Solidity API documentation](http://docs.keep.network/tbtc/solidity/)
+* [Репозиторий приложения tBTC в сети Ropsten](https://github.com/keep-network/tbtc-dapp) (и само [tBTC приложение](https://dapp.test.tbtc.network/))
+* [Смарт-контракты tBTC](https://github.com/keep-network/tbtc)
+* [tbtc.js](https://github.com/keep-network/tbtc.js)
+* [Техническая документация](http://docs.keep.network/tbtc/)
+* [Документация Solidity API](http://docs.keep.network/tbtc/solidity/)
 
-Developers are already building on tBTC using the tools above. Our recent hackathon at ETHDenver [produced several excellent applications](https://blog.keep.network/bitcoin-earn-wins-ethdenver-tbtc-hackathon-prize-5233ce805468) that may provide inspiration.
+Разработчики уже используют вышеперечисленные инструменты для интеграции с tBTC. В рамках нашего недавнего хакатона на конференции ETHDenver [было создано несколько отличных приложений](https://blog.keep.network/bitcoin-earn-wins-ethdenver-tbtc-hackathon-prize-5233ce805468), которые выглядят весьма многообещающе.
 
-Join the [Keep #tbtc channel on Discord](https://discord.gg/wYezN7v) for technical questions about tBTC and [tbtc.js](https://tbtc.network/news/2020-02-14-announcing-tbtc-js)
+Присоединяйтесь к нашему каналу [Keep #tbtc в Discord](https://discord.gg/wYezN7v) для получения более подробной информации о tBTC и [tbtc.js](https://tbtc.network/news/2020-02-14-announcing-tbtc-js)
 
-The following additional resources are also available:
+Дополнительные ресурсы для получения информации:
 
-- Join the tBTC mailing list (for updates including information about tBTC&#39;s upcoming launch on Ethereum mainnet)
-- tBTC&#39;s [GitHub](https://github.com/keep-network/tbtc)
-- The [technical spec](http://docs.keep.network/tbtc/index.pdf)
+* Подписывайтесь на почтовую рассылку tBTC (для получения последних новостей, в том числе информации о предстоящем запуске tBTC в основной сети Ethereum)
+* [GitHub](https://github.com/keep-network/tbtc) tBTC
+* [Техническая документация](http://docs.keep.network/tbtc/index.pdf)
 
-Follow these Twitter handles for news and opportunities to participate:
+Подписывайтесь в Twitter для получения свежих новостей и обновлений:
 
-@Keep\_project
+@Keep_project
 
 @mhluongo
 
