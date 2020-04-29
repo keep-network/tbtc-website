@@ -21,8 +21,8 @@ const LocaleLink = ({ children, to, locale, ...other }) =>
       }
 
       localeTo = localeTo.replace(
-        new RegExp(`^/${supportedLocales.join('|')}(/.*)$`),
-        `${locale === defaultLocale ? '' : '/' + locale}$1`
+        new RegExp(`^/${supportedLocales.join('/|')}(.*)$`),
+        `${locale === defaultLocale ? '' : locale + '/'}$1`
       )
 
       return <Link
