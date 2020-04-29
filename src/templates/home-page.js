@@ -85,7 +85,7 @@ export const HomePageTemplate = (props) => {
               <div className="latest-news-item col-sm-12 col-md-4" key={node.id}>
                 <h2>{node.frontmatter.title}</h2>
                 <p>{node.excerpt}</p>
-                <Link locale={node.fields.locale} to={`/${node.fields.slug}`}>Read more</Link>
+                <Link locale={node.fields.locale} to={`${node.fields.slug}`}>Read more</Link>
               </div>
             ))}
           </div>
