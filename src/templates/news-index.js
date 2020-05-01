@@ -24,7 +24,7 @@ const News = ({ data }) => {
                       <h2>{node.frontmatter.title}</h2>
                       <p>{node.excerpt}</p>
                     </div>
-                    <Link to={`/${node.fields.slug}`}>Read</Link>
+                    <Link to={`${node.fields.slug}`}>Read</Link>
                   </div>
                 </div>
               ))}

@@ -13,7 +13,7 @@ const Resources = ({ data }) => {
           <div className="resource-item" key={node.id}>
             <h2>{node.frontmatter.title}</h2>
             <p>{node.frontmatter.description}</p>
-            <Link to={`/${node.fields.slug}`}>go</Link>
+            <Link to={`${node.fields.slug}`}>go</Link>
           </div>
       ))}
     </div>
