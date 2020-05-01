@@ -20,10 +20,7 @@ const LocaleLink = ({ children, to, locale, ...other }) =>
         locale = defaultLocale
       }
 
-      localeTo = localeTo.replace(
-        new RegExp(`^/${supportedLocales.join('/|/')}/(.*)$`),
-        locale === defaultLocale ? '/' : `/${locale}/`
-      )
+      localeTo = localeTo.replace('/' + defaultLocale + '/', '/')
 
       return <Link
         to={localeTo}
