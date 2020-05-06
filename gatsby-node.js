@@ -1,5 +1,6 @@
 const path = require(`path`)
 const { createFilePath } = require('gatsby-source-filesystem')
+const { fmImagesToRelative } = require("gatsby-remark-relative-images")
 
 const writeConfig = require('./src/cms/config/index.js').writeConfig
 
@@ -78,6 +79,7 @@ function localePath(path, locale) {
 
 exports.onCreateNode = async ({ graphql, node, actions, getNode }) => {
   const { createNodeField } = actions
+  fmImagesToRelative(node) // convert image paths for gatsby images
 
   // set a slug for all markdown nodes, and use any supported 639-1 language
   // code prepended to the file extension to set a language-specific URL root
