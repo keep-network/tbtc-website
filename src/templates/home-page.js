@@ -7,16 +7,14 @@ import { ImageLink, Resources, Spotlight } from '../components/lib'
 import SandDollar from '../components/svgs/SandDollar'
 import Link from '../components/LocaleLink'
 
-export const HomePageTemplate = (props) => {
-  const {
-    hero,
-    features,
-    spotlight1,
-    spotlight2,
-    newsItems,
-    integrations = {}
-  } = props
-
+export const HomePageTemplate = ({
+  hero = {},
+  features = [],
+  spotlight1 = {},
+  spotlight2 = {},
+  newsItems = [],
+  integrations = {}
+}) => {
   return <div className="home">
     <div className="container">
       <div className="row justify-content-center no-gutters">
@@ -107,19 +105,20 @@ export const HomePageTemplate = (props) => {
         </section>
         <Resources />
         <section className="integrations col-sm-12 col-md-12 col-lg-10">
-          <h1 className="section-title">Integrations</h1>
+          <h1 className="section-title">{integrations.title}</h1>
           <ul>
-            {integrations.integrations.map((integration, i, list) => {
-              const className = isRemainder(i, list.length, 3) ? 'tail' : ''
-              return (
-                <li key={`integration-${i}`} className={className}>
-                  <ImageLink
-                    url={integration.url}
-                    label={integration.name}
-                    image={integration.logo}
-                  />
-                </li>
-              )
+            {integrations.integrations &&
+              integrations.integrations.map((integration, i, list) => {
+                const className = isRemainder(i, list.length, 3) ? 'tail' : ''
+                return (
+                  <li key={`integration-${i}`} className={className}>
+                    <ImageLink
+                      url={integration.url}
+                      label={integration.name}
+                      image={integration.logo}
+                    />
+                  </li>
+                )
             })}
           </ul>
         </section>
