@@ -213,18 +213,21 @@
 
                 a {
                     display: inline-block;
-                    @include hide-button-text;
 
-                    &.compound {
-                        width: 181px;
-                        height: 41px;
-                        background-image: url(../components/svgs/compound-logo.svg);
+                    .gatsby-image-wrapper {
+                        [aria-hidden="true"] {
+                            display: none;
+                        }
+        
+                        img {
+                            position: static !important;
+                            max-width: 100%;
+                        }
                     }
 
-                    &.uniswap {
-                        width: 184px;
-                        height: 52px;
-                        background-image: url(../components/svgs/uniswap-logo.svg);
+                    span,
+                    &:after {
+                        display: none;
                     }
                 }
             }
@@ -235,7 +238,13 @@
 
             ul {
                 flex-direction: row;
+                flex-wrap: wrap;
                 justify-content: space-evenly;
+
+                li {
+                    flex: 0 0 33.33333333%;
+                    max-width: 33.33333333%;
+                }
             }
         }
     }

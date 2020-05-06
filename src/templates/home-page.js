@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 
 import { App } from '../components'
-import { Resources, Spotlight } from '../components/lib'
+import { ImageLink, Resources, Spotlight } from '../components/lib'
 import SandDollar from '../components/svgs/SandDollar'
 import Link from '../components/LocaleLink'
 
@@ -13,7 +13,8 @@ export const HomePageTemplate = (props) => {
     features,
     spotlight1,
     spotlight2,
-    newsItems
+    newsItems,
+    integrations = {}
   } = props
 
   return <div className="home">
@@ -108,8 +109,15 @@ export const HomePageTemplate = (props) => {
         <section className="integrations col-sm-12 col-md-12 col-lg-10">
           <h1 className="section-title">Integrations</h1>
           <ul>
-            <li><a className="compound" href="https://compound.finance/">Compound</a></li>
-            <li><a className="uniswap" href="https://uniswap.org/">Uniswap</a></li>
+            {integrations.integrations.map((integration, i) => (
+              <li key={`integration-${i}`}>
+                <ImageLink
+                  url={integration.url}
+                  label={integration.name}
+                  image={integration.logo}
+                />
+              </li>
+            ))}
           </ul>
         </section>
       </div>
@@ -128,7 +136,8 @@ const HomePage = ({ data }) => {
         features={post.frontmatter.features}
         spotlight1={post.frontmatter.spotlight_1}
         spotlight2={post.frontmatter.spotlight_2}
-        newsItems={newsItems} />
+        newsItems={newsItems}
+        integrations={post.frontmatter.integrations_section} />
     </App>
   )
 }
@@ -178,6 +187,23 @@ export const query = graphql`
           button {
             text
             url
+          }
+        }
+        integrations_section {
+          title
+          integrations {
+            name
+            url
+            logo {
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 300, quality: 100) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+              alt
+            }
           }
         }
       }
