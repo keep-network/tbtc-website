@@ -107,6 +107,37 @@ collections:
                   {label: "Text", name: "text", widget: "string"},
                   {label: "Url", name: "url", widget: "string"}
                 ]
+          - label: "Integrations Section"
+            name: "integrations_section"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {
+                label: "Integrations",
+                name: "integrations",
+                widget: "list",
+                allow_add: true,
+                fields:
+                  [
+                    {label: "Name", name: "name", widget: "string"},
+                    {label: "URL", name: "url", widget: "string"},
+                    {
+                      label: Logo,
+                      name: logo,
+                      widget: object,
+                      fields:
+                        [
+                          {
+                            label: Image,
+                            name: image,
+                            widget: image,
+                            hint: "Image should be at least the 2x the desired display size",
+                          },
+                          { label: Alt, name: alt, widget: string },
+                        ],
+                    }
+                  ],
+              }
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
