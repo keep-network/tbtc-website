@@ -27,13 +27,9 @@ const AboutPagePreview = ({ entry, widgetFor }) => {
 }
 
 const DevelopersPagePreview = ({ entry, widgetFor }) => {
-  const entryResources = entry.getIn(["data", "resources"])
-  const resources = entryResources ? entryResources.toJS() : []
-
   return App({ children: DevelopersPageTemplate({
     title: entry.getIn(["data", "title"]),
     body: ReactDOMServer.renderToStaticMarkup(widgetFor("body")),
-    resources: resources
   }) })
 }
 
@@ -93,9 +89,9 @@ const ResourcePreview = ({ entry, widgetFor }) => {
 
 CMS.registerMediaLibrary(uploadcare)
 CMS.registerMediaLibrary(cloudinary)
-CMS.registerPreviewTemplate("about-page", AboutPagePreview)
-CMS.registerPreviewTemplate("developers-page", DevelopersPagePreview)
-CMS.registerPreviewTemplate("faq-page", FaqPagePreview)
+CMS.registerPreviewTemplate("about", AboutPagePreview)
+CMS.registerPreviewTemplate("developers", DevelopersPagePreview)
+CMS.registerPreviewTemplate("faq", FaqPagePreview)
 CMS.registerPreviewTemplate("home", HomePagePreview)
 CMS.registerPreviewTemplate("news-item", NewsItemPreview)
 CMS.registerPreviewTemplate("resource", ResourcePreview)
