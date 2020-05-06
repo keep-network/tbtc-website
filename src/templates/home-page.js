@@ -109,20 +109,29 @@ export const HomePageTemplate = (props) => {
         <section className="integrations col-sm-12 col-md-12 col-lg-10">
           <h1 className="section-title">Integrations</h1>
           <ul>
-            {integrations.integrations.map((integration, i) => (
-              <li key={`integration-${i}`}>
-                <ImageLink
-                  url={integration.url}
-                  label={integration.name}
-                  image={integration.logo}
-                />
-              </li>
-            ))}
+            {integrations.integrations.map((integration, i, list) => {
+              const className = isRemainder(i, list.length, 3) ? 'tail' : ''
+              return (
+                <li key={`integration-${i}`} className={className}>
+                  <ImageLink
+                    url={integration.url}
+                    label={integration.name}
+                    image={integration.logo}
+                  />
+                </li>
+              )
+            })}
           </ul>
         </section>
       </div>
     </div>
   </div>
+}
+
+// Determines whether the given index of an item is a remainder for the
+// specified number of columns
+function isRemainder(index, length, numColumns) {
+  return (index + 1) % numColumns && index > length - numColumns
 }
 
 const HomePage = ({ data }) => {
@@ -197,7 +206,7 @@ export const query = graphql`
             logo {
               image {
                 childImageSharp {
-                  fluid(maxWidth: 300, quality: 100) {
+                  fluid(maxHeight: 80, quality: 100) {
                     ...GatsbyImageSharpFluid
                   }
                 }
