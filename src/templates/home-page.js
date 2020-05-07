@@ -3,19 +3,18 @@ import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 
 import { App } from '../components'
-import { Resources, Spotlight } from '../components/lib'
+import { ImageLink, Resources, Spotlight } from '../components/lib'
 import SandDollar from '../components/svgs/SandDollar'
 import Link from '../components/LocaleLink'
 
-export const HomePageTemplate = (props) => {
-  const {
-    hero,
-    features,
-    spotlight1,
-    spotlight2,
-    newsItems
-  } = props
-
+export const HomePageTemplate = ({
+  hero = {},
+  features = [],
+  spotlight1 = {},
+  spotlight2 = {},
+  newsItems = [],
+  integrations = {}
+}) => {
   return <div className="home">
     <div className="container">
       <div className="row justify-content-center no-gutters">
@@ -106,15 +105,32 @@ export const HomePageTemplate = (props) => {
         </section>
         <Resources />
         <section className="integrations col-sm-12 col-md-12 col-lg-10">
-          <h1 className="section-title">Integrations</h1>
+          <h1 className="section-title">{integrations.title}</h1>
           <ul>
-            <li><a className="compound" href="https://compound.finance/">Compound</a></li>
-            <li><a className="uniswap" href="https://uniswap.org/">Uniswap</a></li>
+            {integrations.integrations &&
+              integrations.integrations.map((integration, i, list) => {
+                const className = isRemainder(i, list.length, 3) ? 'tail' : ''
+                return (
+                  <li key={`integration-${i}`} className={className}>
+                    <ImageLink
+                      url={integration.url}
+                      label={integration.name}
+                      image={integration.logo}
+                    />
+                  </li>
+                )
+            })}
           </ul>
         </section>
       </div>
     </div>
   </div>
+}
+
+// Determines whether the given index of an item is a remainder for the
+// specified number of columns
+function isRemainder(index, length, numColumns) {
+  return (index + 1) % numColumns && index > length - numColumns
 }
 
 const HomePage = ({ data }) => {
@@ -128,7 +144,8 @@ const HomePage = ({ data }) => {
         features={post.frontmatter.features}
         spotlight1={post.frontmatter.spotlight_1}
         spotlight2={post.frontmatter.spotlight_2}
-        newsItems={newsItems} />
+        newsItems={newsItems}
+        integrations={post.frontmatter.integrations_section} />
     </App>
   )
 }
@@ -178,6 +195,23 @@ export const query = graphql`
           button {
             text
             url
+          }
+        }
+        integrations_section {
+          title
+          integrations {
+            name
+            url
+            logo {
+              image {
+                childImageSharp {
+                  fluid(maxHeight: 80, quality: 100) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+              alt
+            }
           }
         }
       }

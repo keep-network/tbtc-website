@@ -9,6 +9,7 @@ import "../css/app.scss"
 import { AboutPageTemplate } from '../templates/about-page'
 import { DevelopersPageTemplate } from '../templates/developers-page'
 import { FaqPageTemplate } from '../templates/faq-page'
+import { HomePageTemplate } from '../templates/home-page'
 import { NewsItemTemplate } from '../templates/news-item'
 import { ResourceTemplate } from '../templates/resource'
 import App from '../components/App'
@@ -26,13 +27,9 @@ const AboutPagePreview = ({ entry, widgetFor }) => {
 }
 
 const DevelopersPagePreview = ({ entry, widgetFor }) => {
-  const entryResources = entry.getIn(["data", "resources"])
-  const resources = entryResources ? entryResources.toJS() : []
-
   return App({ children: DevelopersPageTemplate({
     title: entry.getIn(["data", "title"]),
     body: ReactDOMServer.renderToStaticMarkup(widgetFor("body")),
-    resources: resources
   }) })
 }
 
@@ -43,6 +40,33 @@ const FaqPagePreview = ({ entry }) => {
   return App({ children: FaqPageTemplate({
     title: entry.getIn(["data", "title"]),
     questions: questions
+  }) })
+}
+
+const HomePagePreview = ({ entry }) => {
+  const entryHero = entry.getIn(["data", "hero"])
+  const hero = entryHero ? entryHero.toJS() : []
+
+  const entryFeatures = entry.getIn(["data", "features"])
+  const features = entryFeatures ? entryFeatures.toJS() : []
+
+  const entrySpotlight1 = entry.getIn(["data", "spotlight_1"])
+  const spotlight1 = entrySpotlight1 ? entrySpotlight1.toJS() : []
+
+  const entrySpotlight2 = entry.getIn(["data", "spotlight_2"])
+  const spotlight2 = entrySpotlight2 ? entrySpotlight2.toJS() : []
+
+  const entryIntegrations = entry.getIn(["data", "integrations_section"])
+  const integrations = entryIntegrations ? entryIntegrations.toJS() : []
+
+  return App({ children: HomePageTemplate({
+    title: entry.getIn(["data", "title"]),
+    hero: hero,
+    features: features,
+    spotlight1: spotlight1,
+    spotlight2: spotlight2,
+    newsItems: [],
+    integrations: integrations,
   }) })
 }
 
@@ -65,8 +89,9 @@ const ResourcePreview = ({ entry, widgetFor }) => {
 
 CMS.registerMediaLibrary(uploadcare)
 CMS.registerMediaLibrary(cloudinary)
-CMS.registerPreviewTemplate("about-page", AboutPagePreview)
-CMS.registerPreviewTemplate("developers-page", DevelopersPagePreview)
-CMS.registerPreviewTemplate("faq-page", FaqPagePreview)
+CMS.registerPreviewTemplate("about", AboutPagePreview)
+CMS.registerPreviewTemplate("developers", DevelopersPagePreview)
+CMS.registerPreviewTemplate("faq", FaqPagePreview)
+CMS.registerPreviewTemplate("home", HomePagePreview)
 CMS.registerPreviewTemplate("news-item", NewsItemPreview)
 CMS.registerPreviewTemplate("resource", ResourcePreview)

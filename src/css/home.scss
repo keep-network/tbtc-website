@@ -209,22 +209,29 @@
 
             li {
                 list-style: none;
-                margin: 1em 0;
+                margin: 2.14rem 0;
+                text-align: center;
 
                 a {
                     display: inline-block;
-                    @include hide-button-text;
 
-                    &.compound {
-                        width: 181px;
-                        height: 41px;
-                        background-image: url(../components/svgs/compound-logo.svg);
+                    .gatsby-image-wrapper {
+                        [aria-hidden="true"] {
+                            display: none;
+                        }
+
+                        img {
+                            position: static !important;
+                            height: auto !important;
+                            width: auto !important;
+                            max-height: 80px;
+                            max-width: 230px;
+                        }
                     }
 
-                    &.uniswap {
-                        width: 184px;
-                        height: 52px;
-                        background-image: url(../components/svgs/uniswap-logo.svg);
+                    span,
+                    &:after {
+                        display: none;
                     }
                 }
             }
@@ -235,7 +242,41 @@
 
             ul {
                 flex-direction: row;
+                flex-wrap: wrap;
                 justify-content: space-evenly;
+
+                li {
+                    margin: 5.36rem 0;
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                }
+            }
+        }
+
+        @media (min-width: #{$bp-large}) {
+            padding-bottom: 7em;
+
+            ul {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+
+                li {
+                    flex: 0 0 33.33333333%;
+                    max-width: 33.33333333%;
+
+                    &:nth-child(3n - 2) {
+                        text-align: left;
+                    }
+
+                    &:nth-child(3n) {
+                        text-align: right;
+                    }
+
+                    &.tail {
+                        text-align: center;
+                    }
+                }
             }
         }
     }
