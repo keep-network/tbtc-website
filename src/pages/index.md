@@ -35,41 +35,42 @@ spotlight_2:
   label: Developers
   title: Integrate TBTC to add Bitcoin to your dApp
 integrations_section:
-  title: Integrations
   integrations:
-    - name: Compound
-      logo:
+    - logo:
         alt: Compound Logo
         image: /img/compound.png
-      url: https://compound.finance/
-    - name: Bison Trails
-      logo:
+      name: Compound
+      url: 'https://compound.finance/'
+    - logo:
         alt: Bison Trails
         image: /img/BisonTrails.png
-      url: https://bisontrails.co/
-    - name: Uniswap
-      logo:
+      name: Bison Trails
+      url: 'https://bisontrails.co/'
+    - logo:
         alt: Uniswap Logo
         image: /img/uniswap.png
-      url: https://uniswap.org/
-    - name: Kyber Network
-      logo:
+      name: Uniswap
+      url: 'https://uniswap.org/'
+    - logo:
         alt: Kyber Logo
         image: /img/kyber.png
-      url: https://kyber.network/
-    - name: Loopring
-      logo:
+      name: Kyber Network
+      url: 'https://kyber.network/'
+    - logo:
         alt: Loopring Logo
         image: /img/loopring.png
-      url: https://loopring.org/
-    - name: Oasis
-      logo:
-        alt: Oasis Logo
-        image: /img/oasis.png
-      url: https://oasis.app/
-    - name: Radar Relay
-      logo:
+      name: Loopring
+      url: 'https://loopring.org/'
+    - logo:
+        alt: 1inch Logo
+        image: /img/1inch.png
+      name: 1inch
+      url: 'https://1inch.exchange/'
+    - logo:
         alt: Radar Logo
         image: /img/relay.png
-      url: https://radarrelay.com/
+      name: Radar Relay
+      url: 'https://radarrelay.com/'
+  title: Integrations
 ---
+
