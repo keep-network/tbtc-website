@@ -213,7 +213,8 @@
                 margin: 2rem 0;
                 text-align: center;
 
-                .gatsby-image-wrapper {
+                .gatsby-image-wrapper,
+                > img {
                     max-width: 217px;
                 }
 
@@ -257,7 +258,8 @@
                     max-width: 25%;
                     text-align: center;
 
-                    .gatsby-image-wrapper {
+                    .gatsby-image-wrapper,
+                    > img {
                         max-width: 100%;
                     }
                 }
