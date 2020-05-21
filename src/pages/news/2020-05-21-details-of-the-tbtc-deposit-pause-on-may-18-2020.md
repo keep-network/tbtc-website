@@ -4,7 +4,7 @@ title: 'Details of the tBTC Deposit Pause on May 18, 2020'
 description: 'Details of the tBTC Deposit Pause on May 18, 2020'
 date: 2020-05-21T17:02:51.487Z
 ---
-On the morning UTC of May 18, 2020,[ the 10-day emergency pause of deposits](https://etherscan.io/tx/0xc5c08e982cfdd9d11b01c32bcb16b1597aa792c0bdf0f65d0a21386dd1edc846#eventlog) allowed by the [TBTC System contract](http://etherscan.io/address/0x41A1b40c1280883eA14C6a71e23bb66b83B3fB59) was [triggered](https://etherscan.io/tx/0xc5c08e982cfdd9d11b01c32bcb16b1597aa792c0bdf0f65d0a21386dd1edc846#eventlog). The action was taken after a significant issue in the redemption flow of deposit contracts was found that put signer bonds at risk in certain situations.
+On the morning UTC of May 18, 2020, [the 10-day emergency pause of deposits](https://etherscan.io/tx/0xc5c08e982cfdd9d11b01c32bcb16b1597aa792c0bdf0f65d0a21386dd1edc846#eventlog) allowed by the [TBTC System contract](http://etherscan.io/address/0x41A1b40c1280883eA14C6a71e23bb66b83B3fB59) was [triggered](https://etherscan.io/tx/0xc5c08e982cfdd9d11b01c32bcb16b1597aa792c0bdf0f65d0a21386dd1edc846#eventlog). The action was taken after a significant issue in the redemption flow of deposit contracts was found that put signer bonds at risk in certain situations.
 
 Shortly after the pause, a BTC-for-TBTC exchange was initiated that resulted in the recovery of 99.83% of the supply to [this address](https://etherscan.io/token/0x1bBE271d15Bb64dF0bc6CD28Df9Ff322F2eBD847?a=0xe52e028f0d8f2e7a9d78e48199234b1231774e6a). The removal of any remaining unused ETH in the system is currently underway.
 
