@@ -21,13 +21,15 @@ features:
     title: Simple
 spotlight_1:
   body: >-
-    tBTC will begin moving toward full mainnet launch over the coming weeks.
-    Launch will occur over a series of milestones starting April 24th.
+    On May 18 while the dapp was in alpha testing, an issue was discovered that
+    triggered a 10-day pause of deposits. The event summary, analysis, and
+    actions taken are available here.
   button:
     text: Read more
-    url: 'https://tbtc.network/news/2020-04-24-tbtc-launch-key-dates/'
+    url: >-
+      https://tbtc.network/news/2020-05-21-details-of-the-tbtc-deposit-pause-on-may-18-2020/
   label: Announcement
-  title: 'tBTC Launch: Key Dates'
+  title: 'Details of the tBTC Deposit Pause on May 18, 2020'
 spotlight_2:
   button:
     text: Developer Toolkit
