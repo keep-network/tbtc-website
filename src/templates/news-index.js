@@ -7,13 +7,14 @@ import Link from '../components/LocaleLink'
 
 const News = ({ data }) => {
   const { edges: newsItems } = data.allMarkdownRemark
+  const { frontmatter } = data.markdownRemark
   return (
     <App title="News">
       <div className="news">
         <div className="container">
           <div className="row justify-content-center no-gutters">
             <header className="page-header col-sm-12 col-md-12 col-lg-10">
-              <h1>News</h1>
+              <h1>{frontmatter.title}</h1>
               <Link to={`/news#mailing-list`}>Subscribe</Link>
             </header>
             <section className="col-sm-12 col-md-12 col-lg-10">
@@ -39,7 +40,12 @@ const News = ({ data }) => {
 News.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
-      locale: PropTypes.string,
+      fields: PropTypes.shape({
+        locale: PropTypes.string,
+      }),
+      frontmatter: PropTypes.shape({
+        title: PropTypes.string,
+      }),
     }),
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -56,6 +62,9 @@ export const query = graphql`
     markdownRemark(id: { eq: $id }) {
       fields {
         locale
+      }
+      frontmatter {
+        title
       }
     }
     allMarkdownRemark(

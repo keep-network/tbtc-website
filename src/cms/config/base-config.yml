@@ -138,6 +138,13 @@ collections:
                     }
                   ],
               }
+      - file: "src/pages/news/index.md"
+        label: "News"
+        name: "news"
+        fields:
+          - {label: "Template Key", name: "template", widget: "hidden", default: "news-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/news"}
+          - {label: "Title", name: "title", widget: "string"}
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"

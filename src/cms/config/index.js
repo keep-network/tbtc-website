@@ -7,10 +7,16 @@ const config = require('../../../gatsby-config.js')
 const { defaultLocale, supportedLocales } = config.siteMetadata
 const nonDefaultLocales = supportedLocales.filter(l=>l !== defaultLocale)
 
-function generateConfig() {
+function parseBaseConfig() {
   const configPath = path.join(__dirname, './base-config.yml')
   const contents = fs.readFileSync(configPath, 'utf8')
-  const base = YAML.parse(contents)
+  return YAML.parse(contents)
+}
+
+exports.parseBaseConfig = parseBaseConfig
+
+function generateConfig() {
+  const base = parseBaseConfig()
 
   let newCollections = []
 
