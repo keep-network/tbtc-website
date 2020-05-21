@@ -1,12 +1,35 @@
+const fs = require('fs')
 const path = require(`path`)
 const { createFilePath } = require('gatsby-source-filesystem')
 const { fmImagesToRelative } = require("gatsby-remark-relative-images")
 
-const writeConfig = require('./src/cms/config/index.js').writeConfig
+const { parseBaseConfig, writeConfig } = require('./src/cms/config/index.js')
 
 const config = require('./gatsby-config')
 
 const { defaultLocale, supportedLocales } = config.siteMetadata
+
+exports.onPreBootstrap = () => {
+  const base = parseBaseConfig()
+  const pages =
+    base.collections.find(c => c.name === "pages").files.map(f => f.file)
+  const nonDefaultLocales = supportedLocales.filter(l => l !== defaultLocale)
+
+  // Generate markdown pages for each locale for each file listed in the "pages"
+  // collection if they do not already exist. The "pages" collection is a file
+  // collection, meaning that it does not allow admin editors to create new
+  // items in the collection. Each page must be explicitly added.
+  // https://www.netlifycms.org/docs/collection-types/#file-collections
+  // Since they are a copy, they will have English by default until edited.
+  nonDefaultLocales.forEach(locale => {
+    pages.forEach(page => {
+      const localePage = page.replace(/(.*)\.(.*)$/, `$1.${locale}.$2`)
+      if (!fs.existsSync(localePage)) {
+        fs.copyFileSync(page, localePage)
+      }
+    })
+  })
+}
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
@@ -110,8 +133,6 @@ exports.onCreateNode = async ({ graphql, node, actions, getNode }) => {
   }
   // create new pages for non-default localeuages
   else if (node.internal.type === 'SitePage') {
-    const nonDefaultLocale = supportedLocales.filter(l => l !== defaultLocale)
-
     let locale = defaultLocale
     if (node.component) {
       locale = localeFromFilename(node.component)
