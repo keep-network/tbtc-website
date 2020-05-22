@@ -9,14 +9,14 @@ const Image = ({ imageData, className = "" }) => {
     return (
       <Img
         className={className}
-        fluid={image.childImageSharp.fluid}
         alt={alt}
+        {...image.childImageSharp}
       />
     )
   }
 
   if (!!childImageSharp) {
-    return <Img className={className} fluid={childImageSharp.fluid} alt={alt} />
+    return <Img className={className} alt={alt} {...childImageSharp} />
   }
 
   if (!!image && typeof image === "string") {

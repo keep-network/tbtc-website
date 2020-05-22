@@ -106,31 +106,36 @@ export const HomePageTemplate = ({
         <Resources />
         <section className="integrations col-sm-12 col-md-12 col-lg-10">
           <h1 className="section-title">{integrations.title}</h1>
-          <ul>
+          <div className="integration-items">
             {integrations.integrations &&
-              integrations.integrations.map((integration, i, list) => {
-                const className = isRemainder(i, list.length, 3) ? 'tail' : ''
-                return (
-                  <li key={`integration-${i}`} className={className}>
-                    <ImageLink
-                      url={integration.url}
-                      label={integration.name}
-                      image={integration.logo}
-                    />
-                  </li>
-                )
-            })}
-          </ul>
+              formatIntegrationRows(integrations.integrations, 4)}
+          </div>
         </section>
       </div>
     </div>
   </div>
 }
 
-// Determines whether the given index of an item is a remainder for the
-// specified number of columns
-function isRemainder(index, length, numColumns) {
-  return (index + 1) % numColumns && index > length - numColumns
+// Chunks integration items into rows of a given column number
+function formatIntegrationRows(items, numColumns) {
+  const chunks = []
+  while(items.length) {
+    chunks.push(items.splice(0, numColumns))
+  }
+
+  return chunks.map((chunk, i) => (
+    <div className={`row ${chunk.length < numColumns ? 'uneven' : ''}`}
+      key={`integration-row-${i}`}>
+      {chunk.map((item, j) => (
+        <ImageLink
+          key={`integration-${j}`}
+          url={item.url}
+          label={item.name}
+          image={item.logo}
+        />
+      ))}
+    </div>
+  ))
 }
 
 const HomePage = ({ data }) => {
@@ -205,8 +210,8 @@ export const query = graphql`
             logo {
               image {
                 childImageSharp {
-                  fluid(maxHeight: 80, quality: 100) {
-                    ...GatsbyImageSharpFluid
+                  fixed(width: 217, quality: 100) {
+                    ...GatsbyImageSharpFixed
                   }
                 }
               }
