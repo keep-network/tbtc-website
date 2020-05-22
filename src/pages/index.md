@@ -20,16 +20,12 @@ features:
   - description: 3 steps to convert from BTC to TBTC and back
     title: Simple
 spotlight_1:
-  body: >-
-    On May 18 while the dapp was in alpha testing, an issue was discovered that
-    triggered a 10-day pause of deposits. The event summary, analysis, and
-    actions taken are available here.
+  body: ' tBTC will shift to a release candidate model and implement a graduated supply cap. Expanded security measures include further audits and a 10x bug bounty.'
   button:
     text: Read more
-    url: >-
-      https://tbtc.network/news/2020-05-21-details-of-the-tbtc-deposit-pause-on-may-18-2020/
+    url: 'https://tbtc.network/news/2020-05-22-an-update-on-tbtc%E2%80%99s-launch/'
   label: Announcement
-  title: 'Details of the tBTC Deposit Pause on May 18, 2020'
+  title: An Update on tBTC’s Launch
 spotlight_2:
   button:
     text: Developer Toolkit
