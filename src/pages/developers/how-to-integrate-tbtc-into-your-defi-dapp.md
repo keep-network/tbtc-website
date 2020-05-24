@@ -35,10 +35,5 @@ The following additional resources are also available:
 - tBTC&#39;s [GitHub](https://github.com/keep-network/tbtc)
 - The [technical spec](http://docs.keep.network/tbtc/index.pdf)
 
-Follow these Twitter handles for news and opportunities to participate:
-
-@Keep\_project
-
-@mhluongo
-
-\#tBTC
+Follow [#tBTC](https://twitter.com/hashtag/tBTC) on Twitter for news and
+opportunities to participate.
