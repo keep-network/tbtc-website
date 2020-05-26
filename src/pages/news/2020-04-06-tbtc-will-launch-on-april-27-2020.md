@@ -20,8 +20,5 @@ Additional resources:
 * [Developer guide](https://tbtc.network/developers/how-to-integrate-tbtc-into-your-defi-dapp)
 * [tBTC technical system overview](https://tbtc.network/developers/tbtc-technical-system-overview)
 
-Follow on Twitter for news and opportunities to participate using #tbtc:
-
-[@Keep_project](https://twitter.com/keep_project)
-
-[@mhluongo](https://twitter.com/mhluongo)
+Follow [#tBTC](https://twitter.com/hashtag/tBTC) on Twitter for news and
+opportunities to participate.

@@ -21,10 +21,5 @@ Additional resources:
 * [tbtc.js](https://tbtc.network/news/2020-02-14-announcing-tbtc-js)
 * [Keep #tbtc channel on Discord](https://discord.gg/wYezN7v)
 
-Follow these Twitter handles for news and opportunities to participate:
-
-[@Keep_project](https://twitter.com/keep_project)
-
-[@mhluongo](https://twitter.com/mhluongo)
-
-\#tBTC
+Follow [#tBTC](https://twitter.com/hashtag/tBTC) on Twitter for news and
+opportunities to participate.
