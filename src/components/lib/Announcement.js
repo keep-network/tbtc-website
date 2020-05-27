@@ -37,7 +37,7 @@ export const query = graphql`
   }
 `
 
-const Announcement = ({ locale }) => (
+const Announcement = ({ locale = "en" }) => (
   <StaticQuery
     query={query}
     render={data => {
