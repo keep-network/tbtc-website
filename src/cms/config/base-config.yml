@@ -208,10 +208,10 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: "header_and_footer"
-    label: "Header & Footer"
+  - name: "header"
+    label: "Header"
     files:
-      - file: "src/pages/announcement/index.md"
+      - file: "src/header/announcement.md"
         label: "Announcement Banner"
         name: "announcement"
         fields:

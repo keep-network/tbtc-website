@@ -39,6 +39,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
+        filter: { fileAbsolutePath: { regex: "/(pages)/" } }
       ) {
         edges {
           node {
@@ -62,13 +63,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return
   }
 
-  // Filter out the content that we don't want pages created for
-  const postOrPage = result.data.allMarkdownRemark.edges
-    .filter(edge => edge.node.frontmatter.template !== "announcement");
-
   // Render pages based on their frontmatter template, if available, or a
   // default template at src/templates/default.js
-  postOrPage.forEach(({ node }) => {
+  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     const templateName = node.frontmatter.template || `default`
     const template = path.resolve(path.join('src/templates/', `${templateName}.js`))
     createPage({
