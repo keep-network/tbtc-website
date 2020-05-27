@@ -113,12 +113,12 @@ export const HomePageTemplate = ({
   </div>
 }
 
-const HomePage = ({ data }) => {
+const HomePage = ({ data, pageContext }) => {
   const { markdownRemark: post } = data
   const { edges: newsItems } = data.allMarkdownRemark
 
   return (
-    <App>
+    <App locale={pageContext.locale}>
       <HomePageTemplate
         hero={post.frontmatter.hero}
         features={post.frontmatter.features}

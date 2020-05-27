@@ -15,12 +15,12 @@ export const ResourceTemplate = ({ title, body, date }) => (
     date={date} />
 )
 
-const Resource = ({ data }) => {
+const Resource = ({ data, pageContext }) => {
   const { markdownRemark: post } = data
   const title = post.frontmatter.heading ?
     post.frontmatter.heading : post.frontmatter.title
 
-  return <App title={title}>
+  return <App title={title} locale={pageContext.locale}>
     <ResourceTemplate
       body={post.html}
       title={title}

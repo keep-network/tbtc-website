@@ -15,11 +15,12 @@ export const NewsItemTemplate = ({ title, date, body }) => (
     body={body} />
 )
 
-const NewsItem = ({ data }) => {
+const NewsItem = ({ data, pageContext }) => {
   const { markdownRemark: post } = data
 
   return <App title={post.frontmatter.title}
-              description={post.frontmatter.description}>
+              description={post.frontmatter.description}
+              locale={pageContext.locale}>
     <NewsItemTemplate
       date={post.frontmatter.date}
       description={post.frontmatter.description}

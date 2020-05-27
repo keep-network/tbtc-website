@@ -1,8 +1,9 @@
-import React from 'react'
-import { graphql, StaticQuery } from 'gatsby'
+import React from "react"
+import { graphql, StaticQuery } from "gatsby"
+import PropTypes from "prop-types"
 
 
-const Announcement = ({ body }) => (
+const AnnouncementTemplate = ({ body }) => (
   <div className="announcement">
     <div className="container">
       <div className="row justify-content-center no-gutters">
@@ -14,6 +15,9 @@ const Announcement = ({ body }) => (
   </div>
 )
 
+AnnouncementTemplate.propTypes = {
+  body: PropTypes.string
+}
 
 // Query for announcement
 export const query = graphql`
@@ -24,21 +28,32 @@ export const query = graphql`
       edges {
         node {
           html
+          fields {
+            locale
+          }
         }
       }
     }
   }
 `
 
-export default () => (
+const Announcement = ({ locale }) => (
   <StaticQuery
     query={query}
     render={data => {
-      const body = data.allMarkdownRemark.edges[0].node.html
+      const match = data.allMarkdownRemark.edges
+        .find(e => e.node.fields.locale === locale)
+      const { html: body } = match.node
       if (!body) {
         return null
       }
-      return <Announcement body={body} />
+      return <AnnouncementTemplate body={body} />
     }}
   />
 )
+
+Announcement.propTypes = {
+  locale: PropTypes.string
+}
+
+export default Announcement

@@ -5,11 +5,11 @@ import PropTypes from 'prop-types'
 import { App } from './../components'
 import Link from '../components/LocaleLink'
 
-const News = ({ data }) => {
+const News = ({ data, pageContext }) => {
   const { edges: newsItems } = data.allMarkdownRemark
   const { frontmatter } = data.markdownRemark
   return (
-    <App title="News">
+    <App title="News" locale={pageContext.locale}>
       <div className="news">
         <div className="container">
           <div className="row justify-content-center no-gutters">
