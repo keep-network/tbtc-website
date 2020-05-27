@@ -36,17 +36,19 @@ function generateConfig() {
     }
     else if(collection.files !== undefined) {
       newCollections.push(collection)
-      nonDefaultLocales.forEach(lang => newCollections.push({
-        ...collection,
-        name: `${collection.name}-${lang}`,
-        label: `${collection.label} (${lang})`,
-        files: collection.files.map((f) => ({
-          ...f,
-          name: `${f.name}-${lang}`,
-          label: `${f.name} (${lang})`,
-          file: f.file.replace(/(.*)\.(.*)$/, `$1.${lang}.$2`)
+      if (collection.name !== "integrations") {
+        nonDefaultLocales.forEach(lang => newCollections.push({
+          ...collection,
+          name: `${collection.name}-${lang}`,
+          label: `${collection.label} (${lang})`,
+          files: collection.files.map((f) => ({
+            ...f,
+            name: `${f.name}-${lang}`,
+            label: `${f.name} (${lang})`,
+            file: f.file.replace(/(.*)\.(.*)$/, `$1.${lang}.$2`)
+          }))
         }))
-      }))
+      }
     }
   })
 

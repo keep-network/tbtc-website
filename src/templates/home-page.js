@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 
 import { App } from '../components'
-import { ImageLink, Resources, Spotlight } from '../components/lib'
+import { Integrations, Resources, Spotlight } from '../components/lib'
 import SandDollar from '../components/svgs/SandDollar'
 import Link from '../components/LocaleLink'
 
@@ -106,36 +106,11 @@ export const HomePageTemplate = ({
         <Resources />
         <section className="integrations col-sm-12 col-md-12 col-lg-10">
           <h1 className="section-title">{integrations.title}</h1>
-          <div className="integration-items">
-            {integrations.integrations &&
-              formatIntegrationRows(integrations.integrations, 4)}
-          </div>
+          <Integrations />
         </section>
       </div>
     </div>
   </div>
-}
-
-// Chunks integration items into rows of a given column number
-function formatIntegrationRows(items, numColumns) {
-  const chunks = []
-  while(items.length) {
-    chunks.push(items.splice(0, numColumns))
-  }
-
-  return chunks.map((chunk, i) => (
-    <div className={`row ${chunk.length < numColumns ? 'uneven' : ''}`}
-      key={`integration-row-${i}`}>
-      {chunk.map((item, j) => (
-        <ImageLink
-          key={`integration-${j}`}
-          url={item.url}
-          label={item.name}
-          image={item.logo}
-        />
-      ))}
-    </div>
-  ))
 }
 
 const HomePage = ({ data }) => {
@@ -204,20 +179,6 @@ export const query = graphql`
         }
         integrations_section {
           title
-          integrations {
-            name
-            url
-            logo {
-              image {
-                childImageSharp {
-                  fixed(width: 217, quality: 100) {
-                    ...GatsbyImageSharpFixed
-                  }
-                }
-              }
-              alt
-            }
-          }
         }
       }
     }
