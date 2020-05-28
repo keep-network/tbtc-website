@@ -112,32 +112,6 @@ collections:
             widget: "object"
             fields:
               - {label: "Title", name: "title", widget: "string"}
-              - {
-                label: "Integrations",
-                name: "integrations",
-                widget: "list",
-                allow_add: true,
-                fields:
-                  [
-                    {label: "Name", name: "name", widget: "string"},
-                    {label: "URL", name: "url", widget: "string"},
-                    {
-                      label: Logo,
-                      name: logo,
-                      widget: object,
-                      fields:
-                        [
-                          {
-                            label: Image,
-                            name: image,
-                            widget: image,
-                            hint: "Image should be at least the 2x the desired display size",
-                          },
-                          { label: Alt, name: alt, widget: string },
-                        ],
-                    }
-                  ],
-              }
       - file: "src/pages/news/index.md"
         label: "News"
         name: "news"
@@ -208,13 +182,48 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: "header_and_footer"
-    label: "Header & Footer"
+  - name: "header"
+    label: "Header"
     files:
-      - file: "src/pages/announcement/index.md"
+      - file: "src/header/announcement.md"
         label: "Announcement Banner"
         name: "announcement"
         fields:
           - {label: "Template Key", name: "template", widget: "hidden", default: "announcement"}
           - {label: "Title", name: "title", widget: "string", required: false}
           - {label: "Body", name: "body", widget: "markdown", required: false, minimal: true}
+
+  - name: "integrations"
+    label: "Integrations"
+    files:
+      - file: "src/integrations/index.md"
+        label: "Integrations"
+        name: "integrations"
+        fields:
+          - {label: "Template Key", name: "template", widget: "hidden", default: "integrations"}
+          - {
+            label: "Integrations",
+            name: "integrations",
+            widget: "list",
+            allow_add: true,
+            fields:
+              [
+                {label: "Name", name: "name", widget: "string"},
+                {label: "URL", name: "url", widget: "string"},
+                {
+                  label: Logo,
+                  name: logo,
+                  widget: object,
+                  fields:
+                    [
+                      {
+                        label: Image,
+                        name: image,
+                        widget: image,
+                        hint: "Image should be at least the 2x the desired display size",
+                      },
+                      { label: Alt, name: alt, widget: string },
+                    ],
+                }
+              ],
+            }
