@@ -8,7 +8,7 @@ export default (props) => {
   const { children, title, description, locale } = props
   return (
     <div className="main">
-      <Header />
+      <Header locale={locale} />
       <SEO title={title} description={description} />
       <Announcement locale={locale} />
       <div className="app">
