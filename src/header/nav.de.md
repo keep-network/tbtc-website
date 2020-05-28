@@ -3,9 +3,9 @@ template: header-nav
 nav_items:
   - label: Info
     url: /about
-  - label: News
+  - label: Nachrichten
     url: /news
-  - label: Developers
+  - label: Entwickler
     url: /developers
   - label: FAQ
     url: /faq
