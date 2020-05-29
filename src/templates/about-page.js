@@ -30,11 +30,11 @@ export const AboutPageTemplate = ({ title, body, supporters }) => (
   </div>
 )
 
-const AboutPage = ({ data }) => {
+const AboutPage = ({ data, pageContext }) => {
   const { markdownRemark: post } = data
 
   return (
-    <App title={post.frontmatter.title}>
+    <App title={post.frontmatter.title} locale={pageContext.locale}>
       <AboutPageTemplate
         title={post.frontmatter.title}
         body={post.html}

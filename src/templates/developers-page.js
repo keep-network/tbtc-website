@@ -31,12 +31,12 @@ export const DevelopersPageTemplate = ({ title, body, resources }) => (
   </div>
 )
 
-const DevelopersPage = ({ data }) => {
+const DevelopersPage = ({ data, pageContext }) => {
   const { markdownRemark: post } = data
   const { edges: resources } = data.allMarkdownRemark
 
   return (
-    <App title={post.frontmatter.title}>
+    <App title={post.frontmatter.title} locale={pageContext.locale}>
       <DevelopersPageTemplate
         title={post.frontmatter.title}
         body={post.html}

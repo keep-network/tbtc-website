@@ -11,21 +11,22 @@ const { defaultLocale, supportedLocales } = config.siteMetadata
 
 exports.onPreBootstrap = () => {
   const base = parseBaseConfig()
-  const pages =
-    base.collections.find(c => c.name === "pages").files.map(f => f.file)
+  const fileCollections =
+    base.collections.filter(c => c.name === "pages" || c.name === "header")
+  const files = fileCollections
+    .reduce((acc, curr) => acc.concat(curr.files.map(f => f.file )), [])
   const nonDefaultLocales = supportedLocales.filter(l => l !== defaultLocale)
 
-  // Generate markdown pages for each locale for each file listed in the "pages"
-  // collection if they do not already exist. The "pages" collection is a file
-  // collection, meaning that it does not allow admin editors to create new
+  // Generate markdown pages for each locale for each file if they do not
+  // already exist. File collections do not allow admin editors to create new
   // items in the collection. Each page must be explicitly added.
   // https://www.netlifycms.org/docs/collection-types/#file-collections
   // Since they are a copy, they will have English by default until edited.
   nonDefaultLocales.forEach(locale => {
-    pages.forEach(page => {
-      const localePage = page.replace(/(.*)\.(.*)$/, `$1.${locale}.$2`)
-      if (!fs.existsSync(localePage)) {
-        fs.copyFileSync(page, localePage)
+    files.forEach(file => {
+      const localeFile = file.replace(/(.*)\.(.*)$/, `$1.${locale}.$2`)
+      if (!fs.existsSync(localeFile)) {
+        fs.copyFileSync(file, localeFile)
       }
     })
   })

@@ -5,13 +5,12 @@ import SEO from './SEO.js'
 import '../css/app.scss'
 
 export default (props) => {
-  const { children, title, description } = props
-
+  const { children, title, description, locale } = props
   return (
     <div className="main">
       <Header />
       <SEO title={title} description={description} />
-      <Announcement />
+      <Announcement locale={locale} />
       <div className="app">
         { children }
       </div>

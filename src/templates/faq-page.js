@@ -46,11 +46,11 @@ export const FaqPageTemplate = ({ title, questions }) => (
   </div>
 )
 
-const FaqPage = ({ data }) => {
+const FaqPage = ({ data, pageContext }) => {
   const { markdownRemark: post } = data
 
   return (
-    <App title={post.frontmatter.title}>
+    <App title={post.frontmatter.title} locale={pageContext.locale}>
       <FaqPageTemplate
         title={post.frontmatter.title}
         questions={post.frontmatter.questions} />
