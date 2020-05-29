@@ -1,5 +1,5 @@
 ---
 template: announcement
-title: Stakedrop Announcement
+title: Объявление о стейкдропе
 ---
-Stake ETH to become a tBTC signer! Join for a live stakedrop event on June 8, 2020. <a href="https://www.crowdcast.io/e/keep-stakedrop---live" target="_blank" rel="noopener noreferrer">RSVP Here</a>
+Застекайте ETH, чтобы стать участником tBTC! Присоединяйтесь к предстоящему стейкдропу, запланированному на 8 июня 2020. [RSVP](https://www.crowdcast.io/e/keep-stakedrop---live)
