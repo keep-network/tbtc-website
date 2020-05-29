@@ -2,7 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link, StaticQuery, graphql } from "gatsby"
 
-const LocaleLink = ({ children, to, locale, ...other }) =>
+import { withLocale } from "./App"
+
+export const CustomLocaleLink = ({ children, to, locale, ...other }) =>
   <StaticQuery
     query={query}
     render={({
@@ -34,12 +36,13 @@ const LocaleLink = ({ children, to, locale, ...other }) =>
       </Link>
     }} />
 
-LocaleLink.propTypes = {
+CustomLocaleLink.propTypes = {
   to: PropTypes.string,
   locale: PropTypes.string
 }
 
-export default LocaleLink
+// Uses context automatically provide the active locale
+export default withLocale(CustomLocaleLink)
 
 const query = graphql`
   query SiteLocale {

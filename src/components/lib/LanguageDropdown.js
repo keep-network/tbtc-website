@@ -5,13 +5,13 @@ import classNames from "classnames"
 import { useLocation } from "@reach/router"
 
 import Dropdown from "./Dropdown"
-import Link from "../LocaleLink"
+import { CustomLocaleLink as Link } from "../LocaleLink"
 
 const LanguageDropdownTemplate = ({ languages = [], selectedLanguage }) => {
   const location = useLocation()
   return (
     <Dropdown className="language-dropdown" label={selectedLanguage}>
-      <ul classNames="language-list">
+      <ul className="language-list">
         {languages.map((lang, i) => (
           <li key={`language-${i}`}>
             <Link
