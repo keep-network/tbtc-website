@@ -9,11 +9,11 @@ const Dropdown = ({ children, className, label }) => {
   }
 
   return (
-    <div className={classNames("dropdown", className)}>
+    <div className={classNames("dropdown", className, { "open": isOpen })}>
       <button className="dropdown-toggle" onClick={toggleOpen}>
-        {label}
+        <span>{label}</span>
       </button>
-      <div className={classNames("dropdown-menu", { "open": isOpen })}>
+      <div className="dropdown-menu">
         {children}
       </div>
     </div>

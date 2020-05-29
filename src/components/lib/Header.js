@@ -3,6 +3,7 @@ import classNames from "classnames"
 import { StaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 
+import LanguageDropdown from "./LanguageDropdown"
 import Link from "../LocaleLink"
 import TBTCLogo from "../svgs/TBTCLogo"
 
@@ -27,7 +28,11 @@ NavLink.propTypes = {
   label: PropTypes.string,
 }
 
-const HeaderTemplate = ({ nav_items: navItems, dapp_link: dappLink }) => {
+const HeaderTemplate = ({
+  nav_items: navItems,
+  dapp_link: dappLink,
+  locale
+}) => {
   const [showMenu, setMenu] = useState(false)
   const toggleMenu = () => {
     setMenu(! showMenu)
@@ -54,6 +59,7 @@ const HeaderTemplate = ({ nav_items: navItems, dapp_link: dappLink }) => {
           </ul>
           <ul className="nav-right">
             <li><a className="mint-button" href={dappLink.url} target="_blank" rel="noopener noreferrer">{dappLink.label}</a></li>
+            <li className="language-dropdown-wrapper"><LanguageDropdown locale={locale} /></li>
             <li><a className="site-repo-link" href="https://github.com/keep-network/tbtc-website" target="_blank" rel="noopener noreferrer">Repository</a></li>
           </ul>
         </div>
@@ -99,7 +105,7 @@ const Header = ({ locale = "en" }) => (
     render={data => {
       const match = data.allMarkdownRemark.edges
         .find(e => e.node.fields.locale === locale)
-      return <HeaderTemplate {...match.node.frontmatter} />
+      return <HeaderTemplate {...match.node.frontmatter} locale={locale} />
     }}
   />
 )

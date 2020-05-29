@@ -29,7 +29,7 @@
         ul {
             display: flex;
             flex-direction: row;
-            align-items: flex-end;
+            align-items: center;
             padding: 0;
             margin: 0;
 
@@ -48,6 +48,10 @@
                         text-decoration: underline;
                     }
                 }
+
+                &.language-dropdown-wrapper {
+                    padding: 0 22px;
+                }
             }
 
             &.nav-right {
@@ -63,6 +67,86 @@
             padding: 0.5rem;
             position: relative;
             top: -4px;
+        }
+
+        .language-dropdown {
+            position: relative;
+            top: 5px;
+
+            .dropdown-toggle {
+                text-align: center;
+                vertical-align: top;
+                border: 0;
+                padding: 0;
+                width: 60px;
+                height: 51px;
+                background-image: url(../img/speech-bubble.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+
+                span {
+                    display: inline-block;
+                    position: relative;
+                    top: -4px;
+                    margin-left: 2px;
+                }
+
+                &:hover {
+                    color: $black;
+                    background-color: transparent;
+                }
+
+                &:focus {
+                    outline: 0;
+                }
+            }
+
+            .dropdown-menu {
+                display: none;
+                position: absolute;
+                left: 0;
+                top: 102%;
+                z-index: 10;
+                background-color: $white;
+                border: 1px solid $black;
+                box-shadow: 7px 7px 0 $black;
+
+                ul {
+                    display: block;
+                    width: 100px;
+
+                    li {
+                        padding: 0;
+
+                        a {
+                            display: block;
+                            padding: 0.5em;
+
+                            &:hover {
+                                background-color: $black;
+                                color: $white;
+                                text-decoration: none;
+                            }
+
+                            &.selected {
+                                &:after {
+                                    content: ' ←';
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.open {
+                .dropdown-toggle {
+                    background-image: url(../img/speech-bubble-black.svg);
+                    color: $white;
+                }
+                .dropdown-menu {
+                    display: block;
+                }
+            }
         }
 
         .site-repo-link {
