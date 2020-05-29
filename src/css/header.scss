@@ -62,24 +62,29 @@
         }
 
         .mint-button {
-            background-color: $black;
-            color: $white;
-            padding: 0.5rem;
+            border: 1px solid $black;
+            padding: 0.65rem;
             position: relative;
-            top: -4px;
+            white-space: nowrap;
+
+            &:hover {
+                background-color: $black;
+                color: $white;
+                text-decoration: none;
+            }
         }
 
         .language-dropdown {
             position: relative;
-            top: 5px;
+            top: 4px;
 
             .dropdown-toggle {
                 text-align: center;
                 vertical-align: top;
                 border: 0;
                 padding: 0;
-                width: 60px;
-                height: 51px;
+                width: 47px;
+                height: 40px;
                 background-image: url(../img/speech-bubble.svg);
                 background-repeat: no-repeat;
                 background-size: contain;
@@ -87,7 +92,7 @@
                 span {
                     display: inline-block;
                     position: relative;
-                    top: -4px;
+                    top: -3px;
                     margin-left: 2px;
                 }
 
@@ -161,6 +166,14 @@
 
             &:after {
                 display: none;
+            }
+        }
+
+        @media (max-width: #{$bp-large}) {
+            ul {
+                > li {
+                    padding: 22px 11px;
+                }
             }
         }
 
