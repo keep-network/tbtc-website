@@ -9,13 +9,18 @@ import { CustomLocaleLink as Link } from "../LocaleLink"
 
 const LanguageDropdownTemplate = ({ languages = [], selectedLanguage }) => {
   const location = useLocation()
+
+  // strip prefix build name from url if present
+  const pathname =
+    location.pathname.replace(`/${process.env.GATSBY_BRANCH}/`, "/")
+
   return (
     <Dropdown className="language-dropdown" label={selectedLanguage}>
       <ul className="language-list">
         {languages.map((lang, i) => (
           <li key={`language-${i}`}>
             <Link
-              to={location.pathname}
+              to={pathname}
               locale={lang}
               className={classNames({"selected": lang === selectedLanguage})}
             >
