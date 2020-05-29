@@ -20,7 +20,12 @@ const LocaleLink = ({ children, to, locale, ...other }) =>
         locale = defaultLocale
       }
 
-      localeTo = localeTo.replace('/' + defaultLocale + '/', '/')
+      // strip any existing locale from the pathname
+      localeTo = localeTo.replace(/^\/\w{2}\//, "/")
+
+      if (locale !== defaultLocale) {
+        localeTo = `/${locale}${localeTo}`
+      }
 
       return <Link
         to={localeTo}
