@@ -50,7 +50,7 @@
                 }
 
                 &.language-dropdown-wrapper {
-                    padding: 0 22px;
+                    padding: 0 16px 0 22px;
                 }
             }
 
@@ -76,7 +76,7 @@
 
         .language-dropdown {
             position: relative;
-            top: 4px;
+            top: 3px;
 
             .dropdown-toggle {
                 text-align: center;
@@ -173,6 +173,10 @@
             ul {
                 > li {
                     padding: 22px 11px;
+
+                    &.language-dropdown-wrapper {
+                        padding: 0 5px;
+                    }
                 }
             }
         }
