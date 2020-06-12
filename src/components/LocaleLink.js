@@ -18,13 +18,18 @@ export const CustomLocaleLink = ({ children, to, locale, ...other }) =>
 
       let localeTo = to
 
+      // If the target locale isn't supported, default back to EN
       if (!supportedLocales.includes(locale)) {
         locale = defaultLocale
       }
 
-      // strip any existing locale from the pathname
-      localeTo = localeTo.replace(/^\/\w{2}\//, "/")
+      // Strip any existing locale prefix from the pathname
+      const localePrefix = new RegExp(`^\\/(${supportedLocales.join('|')})\\/`)
+      localeTo = localeTo.replace(localePrefix, "/")
 
+      // Prefix the url with the target locale only if the target locale isn't
+      // EN (the default locale), since the default locale doesn't require using
+      // a prefix. localeTo should already include a leading backlash.
       if (locale !== defaultLocale) {
         localeTo = `/${locale}${localeTo}`
       }
