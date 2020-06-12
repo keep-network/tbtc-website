@@ -192,6 +192,41 @@ collections:
           - {label: "Template Key", name: "template", widget: "hidden", default: "announcement"}
           - {label: "Title", name: "title", widget: "string", required: false}
           - {label: "Body", name: "body", widget: "markdown", required: false, minimal: true}
+      - file: "src/header/nav.md"
+        label: "Nav"
+        name: "header_nav"
+        fields:
+          - {label: "Template Key", name: "template", widget: "hidden", default: "header-nav"}
+          - {
+            label: "Nav Items",
+            name: "nav_items",
+            widget: "list",
+            allow_add: true,
+            fields:
+              [
+                { label: "Label", name: "label", widget: "string" },
+                {
+                  label: "URL",
+                  name: "url",
+                  widget: "string",
+                  hint: "Use a relative URL (e.g. /news) if the link is an internal link.",
+                },
+              ],
+            }
+          - {
+            label: "dApp Link",
+            name: "dapp_link",
+            widget: "object",
+            fields:
+              [
+                { label: "Label", name: "label", widget: "string" },
+                {
+                  label: "URL",
+                  name: "url",
+                  widget: "string",
+                },
+              ],
+            }
 
   - name: "integrations"
     label: "Integrations"
