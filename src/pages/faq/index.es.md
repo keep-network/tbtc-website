@@ -22,19 +22,18 @@ questions:
       examinan nuevos mecanismos que podrían reducir esta razón al 40% más
       adelante.
     question: '¿Por qué TBTC se relaciona con ETH en su razón actual? '
-  - answer: >
-      This technology is new and it’s impossible to anticipate every situation
-      where something could go wrong.  That being said, there are several
-      situations the community has identified and taken careful measures to
-      address. The security model is such that if the signers collude and run
-      off with your Bitcoin deposit, users are paid back in TBTC; that’s what
-      the ETH bonds are for (they’ll be seized and liquidated). If ETH takes a
-      massive dip in a short period of time and ALL signers run off and break
-      the peg at same time, the system falls back to a synthetic. For more
-      information, please look at the <a
-      href="https://docs.keep.network/tbtc/index.pdf" target="_blank">tBTC
-      technical spec</a>.
-    question: Where could something go wrong in the tBTC system?
+  - answer: >-
+      Esta tecnología es nueva y es imposible anticiparse a cada situación donde
+      algo podría fallar. Dicho esto, hay varias situaciones que la comunidad ha
+      identificado y atendido tomando medidas rigurosas. El modelo de seguridad
+      es tal, que si los firmantes conspiran y huyen con tu depósito de Bitcoin,
+      al usuario se le reembolsa en TBTC; esto es para lo que son los vínculos
+      con ETH (se incautará y liquidará). Si ETH cae masivamente en un corto
+      periodo de tiempo y TODOS los firmantes huyen y rompen el vínculo al mismo
+      tiempo, el sistema se pasa a un estado sintético. Para más información,
+      mira <a href="https://docs.keep.network/tbtc/index.pdf"
+      target="_blank">tBTC technical spec</a>.
+    question: ¿Dónde podría fallar algo en el sistema de tBTC?
   - answer: >
       Too many lot sizes becomes an issue for liquidity pools. Maintaining
       several standard lot sizes allows for greater redemption availability.
