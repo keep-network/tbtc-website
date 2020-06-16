@@ -1,7 +1,7 @@
 ---
 template: home-page
 path: /
-title: Home
+title: Página de inicio
 hero:
   buttons:
     - text: Obtén actualizaciones por email
