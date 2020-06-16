@@ -7,7 +7,7 @@ Developers can build on tBTC. There are several resources to help devs use tBTC 
 
 Desarrolladores, ¡pueden construir en tBTC! Existen varios recursos para ayudarles a usar la infraestructura tBTC para llevar Bitcoin a Ethereum. Comienza con los siguientes:
 
-* Cómo integrar TBTC en tu DeFi Dapp
+* [Cómo integrar TBTC en tu DeFi Dapp](https://tbtc.network/developers/how-to-integrate-tbtc-into-your-defi-dapp)
 * La [tBTC dApp](https://dapp.test.tbtc.network/) en Ropsten
 * Contratos inteligentes [tBTC](https://github.com/keep-network/tbtc)
 * [tbtc.js](https://github.com/keep-network/tbtc.js)
