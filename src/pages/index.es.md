@@ -4,37 +4,38 @@ path: /
 title: Home
 hero:
   buttons:
-    - text: Get Email Updates
+    - text: Obtén actualizaciones por email
       url: '/#mailing-list'
-    - text: Start Building
+    - text: Empieza a Construir
       url: /developers
-  subtitle: Deposit and redeem BTC in DeFi without intermediaries.
-  title: The safe way to earn with your Bitcoin.
+  subtitle: Deposita y redime BTC en DeFi sin intermediarios
+  title: La manera segura de ganar con Bitcoin
 features:
-  - description: 'Every TBTC is backed 1:1 with BTC'
-    title: Backed
-  - description: No intermediaries - Redeem TBTC for BTC at any time
-    title: Permissionless
-  - description: Audited and open-source
-    title: Secure
-  - description: 3 steps to convert from BTC to TBTC and back
+  - description: 'Cada TBTC está respaldado 1:1 con BTC'
+    title: Respaldado
+  - description: Sin intermediarios - Canjea TBTC por BTC en cualquier momento
+    title: Libre de autorizaciones
+  - description: Auditado y de código abierto
+    title: Seguro
+  - description: 3 pasos para convertir de BTC a TBTC y viceversa
     title: Simple
 spotlight_1:
   body: >-
-    tBTC will begin moving toward full mainnet launch over the coming weeks.
-    Launch will occur over a series of milestones starting April 24th.
+    tBTC empezará a transitar hacia un lanzamiento completo de la red principal
+    durante las siguientes semanas. El lanzamiento ocurrirá conforme a una serie
+    de objetivos, empezando el 24 de abril.
   button:
-    text: Read more
+    text: Lee más
     url: 'https://tbtc.network/news/2020-04-24-tbtc-launch-key-dates/'
-  label: Announcement
-  title: 'tBTC Launch: Key Dates'
+  label: Anuncio
+  title: 'Lanzamiento de tBTC: Fechas importantes'
 spotlight_2:
   button:
-    text: Developer Toolkit
+    text: Herramientas para desarrolladores
     url: /developers
-  label: Developers
-  title: Integrate TBTC to add Bitcoin to your dApp
+  label: Desarrolladores
+  title: Integra TBTC para añadir Bitcoin a tu dApp
 integrations_section:
-  title: Integrations
+  title: Integraciones
 ---
 
