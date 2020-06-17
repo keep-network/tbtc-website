@@ -1,5 +1,5 @@
 ---
 template: announcement
-title: Stakedrop Announcement
+title: Informe del Stakedrop
 ---
-Get ready to stake ETH and become a tBTC signer! tBTC signing with only ETH starts July 8th! <a href="https://www.crowdcast.io/e/keep-stakedrop---live" target="_blank" rel="noopener noreferrer">Stakedrop Announcement Here!</a>
+¡Participa con ETH y conviértete en un contratante de tBTC! Únete para un evento en vivo de stakedrop el 8 de junio, 2020 <a href="https://www.crowdcast.io/e/keep-stakedrop---live" target="_blank" rel="noopener noreferrer">Regístrate aquí</a>
