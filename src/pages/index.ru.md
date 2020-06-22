@@ -11,13 +11,13 @@ hero:
   subtitle: Вносите и выкупайте BTC через DeFi без посредников.
   title: 'Зарабатывайте безопасно, используя свои Биткоины.'
 features:
-  - description: 'Каждый TBTC поддерживается 1:1 с BTC'
+  - description: 'Каждый TBTC обеспечен 1:1 с BTC'
     title: Backed
   - description: No intermediaries - Redeem TBTC for BTC at any time
     title: Permissionless
   - description: Проверено аудиторами и имеет открытый исходный код
     title: Безопасно
-  - description: 3 шага для перевода из BTC в TBTC и обратно
+  - description: Для перевода BTC в TBTC и обратно требуется выполнить всего 3 шага
     title: Просто
 spotlight_1:
   body: >-
