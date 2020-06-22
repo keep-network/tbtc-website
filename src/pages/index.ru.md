@@ -1,24 +1,24 @@
 ---
 template: home-page
 path: /
-title: Home
+title: Главная
 hero:
   buttons:
-    - text: Get Email Updates
+    - text: Подписаться на новости
       url: '/#mailing-list'
-    - text: Start Building
+    - text: Разработчикам
       url: /developers
-  subtitle: Deposit and redeem BTC in DeFi without intermediaries.
-  title: The safe way to earn with your Bitcoin.
+  subtitle: Вносите и выкупайте BTC через DeFi без посредников.
+  title: 'Зарабатывайте безопасно, используя свои Биткоины.'
 features:
-  - description: 'Every TBTC is backed 1:1 with BTC'
+  - description: 'Каждый TBTC поддерживается 1:1 с BTC'
     title: Backed
   - description: No intermediaries - Redeem TBTC for BTC at any time
     title: Permissionless
-  - description: Audited and open-source
-    title: Secure
-  - description: 3 steps to convert from BTC to TBTC and back
-    title: Simple
+  - description: Проверено аудиторами и имеет открытый исходный код
+    title: Безопасно
+  - description: 3 шага для перевода из BTC в TBTC и обратно
+    title: Просто
 spotlight_1:
   body: >-
     tBTC will begin moving toward full mainnet launch over the coming weeks.
@@ -30,11 +30,11 @@ spotlight_1:
   title: 'tBTC Launch: Key Dates'
 spotlight_2:
   button:
-    text: Developer Toolkit
+    text: Инструменты Разработчика
     url: /developers
   label: Developers
   title: Integrate TBTC to add Bitcoin to your dApp
 integrations_section:
-  title: Integrations
+  title: Партнеры
 ---
 
