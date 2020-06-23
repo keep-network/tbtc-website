@@ -1,7 +1,7 @@
 ---
 template: about-page
 path: /about
-title: About tBTC
+title: Что такое tBTC?
 supporters:
   - description: >-
       Keep is a privacy layer for Ethereum. A “keep” is an off-chain container
