@@ -4,25 +4,27 @@ path: /about
 title: Что такое tBTC?
 supporters:
   - description: >-
-      Keep is a privacy layer for Ethereum. A “keep” is an off-chain container
-      for private data. Keeps help contracts harness the full power of the
-      public blockchain — enabling deep interactivity with private data. The
-      Keep network, powered by KEEP tokens, handles custodianship for tBTC.
+      Keep это слой приватности для Ethereum. Он является оффчейн контейнером
+      для приватных данных. Keep помогает контрактам использовать всю мощь
+      публичного блокчейна, обеспечивая глубокую интерактивность с частными
+      данными. Сеть Keep network, работающая на токенах KEEP,  управляет
+      хранением tBTC.
     name: Keep
     url: 'https://keep.network/'
   - description: >-
-      Summa provides custom-built interoperability solutions for companies
-      throughout the blockchain ecosystem. Its solutions allow companies to
-      access larger markets, expand their feature-sets, and access new liquidity
-      in a unified cross-chain marketplace.
+      Summa предоставляет специально разработанные решения для взаимодействия
+      компаний в рамках всей цепочки блоков. Данные решения позволяют компаниям
+      выходить на более крупные рынки, расширять наборы своих функций и получать
+      доступ к новой ликвидности на едином перекрестном рынке.
     name: Summa
     url: 'https://summa.one/'
   - description: >-
-      The Cross-Chain Group is an industry resource and working group dedicated
-      to furthering the research, design, and implementation of cross-chain
-      architecture. Through educational events, advisory services, and
-      open-source tooling, its goal is to expand blockchain interoperability and
-      foster an environment that is more connected, functional, and scalable.
+      Cross-Chain Group является отраслевым ресурсом и рабочей группой,
+      занимающейся исследованиями, проектированием и внедрением кроссчейн
+      архитектуры. Цель образовательных мероприятий, консультационных услуг и
+      инструментов с открытым исходным кодом состоит в том, чтобы расширить
+      функциональную совместимость блокчейнов и создать среду, которая является
+      более связанной, функциональной и масштабируемой.
     name: Cross-Chain Group
     url: 'https://www.crosschain.group/'
 ---
