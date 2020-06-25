@@ -34,14 +34,14 @@ questions:
       система станет синтетической. Подробнее об этом можно прочитать в
       документе <a href="https://docs.keep.network/tbtc/index.pdf"
       target="_blank">Техническая характеристика tBTC</a>.
-    question: Где может что-то пойти не так в системе tBTC?
+    question: Что может пойти не так в системе tBTC?
   - answer: >-
       Слишком большой размер лота становится проблемой для пулов ликвидности.
       Поддержание нескольких стандартных размеров лотов позволяет повысить
       доступность выкупа.
     question: >-
-      Почему существуют фиксированные размеры лотов? Почему не любой случайный
-      номинал?
+      Почему существуют фиксированные размеры лотов? Почему не используется
+      любой случайный номинал?
   - answer: >-
       Еще нет. Для этого необходимо провести работу по интеграции. Открытый
       исходный код на сайте<a href="https://github.com/keep-network/tbtc.js"
@@ -50,77 +50,83 @@ questions:
       транзакций, лучшим подходом является запуск electrum-сервера, его легко
       сделать и настроить.
     question: >-
-      Существует ли tBTC виджет который можно использовать для просмотра данных
+      Существует ли tBTC виджет, который можно использовать для просмотра данных
       об эмиссии и погашении tBTC в моем DeFi dApp?
   - answer: >-
       ConsenSys Diligence на данный момент завершает шестинедельный аудит кода и
       криптографии tBTC. Результаты будут опубликованы, как только они станут
       доступными.
     question: Был ли проведен аудит tBTC?
-  - answer: >
-      Each user should undertake their own analysis as to whether there are any
-      legal restrictions in their jurisdiction that would either prevent them
-      from using tBTC or require the user to register with certain government
-      entities.
-    question: Does Signing for tBTC and staking ETH make you a MSB?
-  - answer: >
-      Please check with a tax professional to determine whether depositing BTC
-      for TBTC is a taxable event in a given jurisdiction. One thing to consider
-      is the NFT associated with the UTXO of a deposit. This NFT is designed to
-      allow a fee to be paid for custody of BTC and to offer the ability to
-      redeem the exact same UTXO within the six month fee period.
-    question: Is depositing BTC for tBTC a taxable event?
-  - answer: >
-      tBTC’s signer sets use threshold ECDSA as a Bitcoin multisig replacement.
-      For every deposit, a new signer set is pulled together (selected by the
-      random beacon), and they generate a Bitcoin PKH address for the depositor,
-      which is marked on the Ethereum chain.
-    question: How is the tBTC signer set non-custodial?
-  - answer: >
-      Shortly after launch, there should be  a group of roughly 80 private sale
-      KEEP purchasers and a few other trusted parties signing for tBTC. Very
-      soon an opportunity will be announced for more individuals to participate
-      by staking ETH to become a signer.
-    question: Who are the signers? Can anyone become a signer?
-  - answer: >
-      Some people believe tBTC is better for several reasons.  Some projects
-      have built synthetic price pegs, which is not a true bridge. Other
-      projects are supply pegs, but have centralized parties adding friction to
-      the minting and redemption process and therefore, are not
-      censorship-resistant systems. Some new bridges are decentralized supply
-      pegs, however, those security models are less safe. They rely on a ⅔
-      honesty assumption, no ETH/extra collateral to back up deposits, and use
-      brand new “roll your own crypto” rather than peer-reviewed, t-ECDSA
-      cryptography).
-    question: Why is this better than other BTC on Ethereum projects?
-  - answer: >
-      No, there is no need to return at six months, except if there is a
-      preference to  redeem Bitcoin with a certain UTXO. This is what the NFT
-      receipt, TDT, is for. Most retail DeFi users do not have this
-      consideration, and do not need to return in six months.
+  - answer: >-
+      Каждый пользователь должен провести свой собственный анализ на предмет
+      наличия каких-либо правовых ограничений в его юрисдикции, которые могут
+      препятствовать ему использовать tBTC, или требовать от пользователя
+      регистрации в определенных государственных органах.
     question: >-
-      What does a six-month fee period mean? Can BTC be claimed only after six
-      months?
-  - answer: >
-      There are no firm plans to build a bridge on other chains. However the <a
-      href="https://www.crosschain.group/" target="_blank">Cross-Chain Group</a>
-      has had early conversations with chains like Cosmos, Zcash, and Polkadot
-      on trustless bridge designs.
-    question: Are there plans to build a Bitcoin bridge on other chains?
-  - answer: |
-      No.
-    question: Does tBTC ownership give you any governance rights?
-  - answer: >
-      The team behind tBTC is building a supply peg, not a price peg. It’s not a
-      synthetic mechanism. For bitcoin holders, it shouldn’t matter what the
-      actual price is, it just matters that you can redeem it for 1 BTC
-    question: Why not just do a price peg?
-  - answer: >
-      tBTC is a sidechain that requires work from anonymous parties, so bonds
-      from those parties must be held to prevent collusion. For now, it is
-      necessary to ensure that signers are bonded in order to protect against
-      misbehavior. A price feed oracle is needed to maintain the BTC/ETH price
-      for this bond.
-    question: Why does tBTC need a price feed oracle?
+      Являюсь ли я лицом выполняющим финансовые операции, если занимаюсь
+      стейкингом ETH и “подписыванием” в сети tBTC?
+  - answer: >-
+      Пожалуйста, проконсультируйтесь с налоговым специалистом, чтобы
+      определить, является ли депонирование BTC для BTC налогооблагаемым
+      событием в вашей юрисдикции. Обратите внимание на не взаимозаменяемый
+      токен (NFT), который ассоциируется с UTXO вашего депозита. NFT специально
+      разработан для оплаты комиссии за хранение BTC и предоставления
+      возможности “погашать” именно ваш UTXO в рамках шестимесячного периода.
+    question: 'Является ли внесение BTC за tBTC событием, которое облагается налогом?'
+  - answer: >-
+      Наборы tBTC для подписания используют пороговое значение ECDSA в качестве
+      замены Биткойн-мультисига. Для каждого депозита собирается новый набор
+      подписчиков (выбирается случайно), и они генерируют Биткойн PKH-адрес для
+      вкладчика, который помечается в цепочке Ethereum.
+    question: Каким образом подписант tBTC устанавливается не связанным с хранением?
+  - answer: >-
+      Вскоре после запуска должна появиться группа примерно из 80 частных
+      покупателей KEEP и нескольких других доверенных лиц, подписавших контракт
+      на tBTC. Очень скоро будет объявлена возможность для большего числа людей
+      принять участие в стейкинге ETH, чтобы стать подписчиком.
+    question: Кто эти подписанты? Каждый ли может стать подписывающим?
+  - answer: >-
+      Некоторые люди считают, что tBTC лучше по нескольким причинам. Есть
+      проекты, которые разработали искусственные привязки цены, что не является
+      истинным “мостом” между ETH и BTC. Другие основаны на связывании
+      предложения, но пользуются услугами централизованных сторон в процессе
+      эмиссии и погашения и, поэтому, не являются цензуроустойчивыми системами.
+      Некоторые новые “мосты” с привязкой предложения идут по пути
+      децентрализации, но их модели безопасности менее устойчивы. Они полагаются
+      на честность 2/3 сети, не взимают дополнительного залога для обеспечения
+      депозитов и используют подход “сделай свою собственную крипту”, вместо
+      проверенной криптографии t-ECDSA.
+    question: 'Почему это лучше, чем другие BTC на проектах Ethereum?'
+  - answer: >-
+      Нет, нет никакой необходимости возвращаться через шесть месяцев, за
+      исключением тех случаев, когда есть предпочтение выкупить биткоин с
+      помощью определенного UTXO. Это то, для чего существует квитанция NFT,
+      TDT. Большинство розничных пользователей DeFi не имеют этого соображения,
+      и им не нужно возвращаться через шесть месяцев.
+    question: >-
+      Что означает шестимесячный период оплаты? Можно ли претендовать на BTC
+      только через шесть месяцев?
+  - answer: >-
+      Нет никаких твердых планов строить мост на других цепях. Однако <a
+      href="https://www.crosschain.group/" target="_blank">Cross-Chain Group< /
+      a> уже имела ранние разговоры с такими цепями, как Cosmos, Zcash и
+      Polkadot, о проектах мостов без доверия.
+    question: Есть ли планы построить Биткойн-мост на других цепочках?
+  - answer: Нет.
+    question: Дает ли вам владение tBTC какие-либо права на управление?
+  - answer: >-
+      Команда, стоящая за tBTC, строит привязку поставок, а не ценовую привязку.
+      Это не синтетический механизм. Для держателей биткойнов не должно иметь
+      значения, какова фактическая цена, важно только то, что вы можете выкупить
+      его за 1 BTC.
+    question: Почему бы просто не сделать привязку цены?
+  - answer: >-
+      tBTC - это побочная цепочка, которая требует работы от анонимных сторон,
+      поэтому облигации этих сторон должны храниться, чтобы предотвратить
+      сговор. На данный момент необходимо обеспечить, чтобы подписавшие были
+      связаны друг с другом, чтобы защитить себя от неправильного поведения. Для
+      поддержания цены BTC/ETH для этой облигации необходим оракул ценового
+      канала.
+    question: Зачем tBTC нужен оракул подачи цен?
 ---
 
