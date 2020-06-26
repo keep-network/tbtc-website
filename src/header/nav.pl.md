@@ -10,6 +10,7 @@ nav_items:
   - label: FAQ
     url: /faq
 dapp_link:
-  label: Mint tBTC
-  url: https://dapp.test.tbtc.network/
+  label: Wybij TBTC
+  url: 'https://dapp.test.tbtc.network/'
 ---
+
