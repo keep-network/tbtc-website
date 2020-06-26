@@ -1,57 +1,129 @@
 ---
-template: 'faq-page'
+template: faq-page
 path: /faq
 title: FAQ
 questions:
-  - question: How does tBTC maintain the peg?
-    answer: >
-      tBTC does not maintain the peg. It’s a supply peg not a price peg, so there is no algorithmic mechanism needed to function as a decentralized peg.
-  - question: Why is the TBTC price not exactly the same as BTC?
-    answer: >
-      tBTC is not a price peg to BTC; it’s a supply peg. That means BTC/tBTC might not be exactly the same. tBTC might trade at a slight premium or a discount.
-  - question: Why is TBTC collateralized with ETH at its current ratio?
-    answer: >
-      Because it makes for a safer system, which is very important in DeFi especially at the launch of a new network. ETH is a more safe collateral type because it’s the DeFi standard, and the team working on tBTC has plans to shift the ETH/BTC collateralization ratio from 150% to 135% fairly soon after launch. It is also examining new mechanisms that could bring that ratio down to 40% collateralization later on.
-  - question: Where could something go wrong in the tBTC system?
-    answer: >
-      This technology is new and it’s impossible to anticipate every situation where something could go wrong.  That being said, there are several situations the community has identified and taken careful measures to address. The security model is such that if the signers collude and run off with your Bitcoin deposit, users are paid back in TBTC; that’s what the ETH bonds are for (they’ll be seized and liquidated). If ETH takes a massive dip in a short period of time and ALL signers run off and break the peg at same time, the system falls back to a synthetic. For more information, please look at the <a href="https://docs.keep.network/tbtc/index.pdf" target="_blank">tBTC technical spec</a>.
-  - question: Why are there fixed lot sizes? Why not any random denomination?
-    answer: >
-      Too many lot sizes becomes an issue for liquidity pools. Maintaining several standard lot sizes allows for greater redemption availability.
-  - question: Is there a tBTC widget I can use to directly hook tBTC minting and redeeming into my DeFi dapp?
-    answer: >
-      Not yet. Integration work is required to build tBTC minting and redemption into a dApp. The code is open-sourced in the <a href="https://github.com/keep-network/tbtc.js" target="_blank">tbtc.js GitHub</a>, enabling developers to build interfaces that match their products. To validate Bitcoin transactions, the best approach is to run an electrum server, which is very easy to spin up.
-  - question: Has tBTC been audited?
-    answer: >
-      ConsenSys Diligence is currently completing a six-week cryptography and code audit. The results will be published once they become available.
-  - question: Does Signing for tBTC and staking ETH make you a MSB?
-    answer: >
-      Each user should undertake their own analysis as to whether there are any legal restrictions in their jurisdiction that would either prevent them from using tBTC or require the user to register with certain government entities.
-  - question: Is depositing BTC for tBTC a taxable event?
-    answer: >
-      Please check with a tax professional to determine whether depositing BTC for TBTC is a taxable event in a given jurisdiction. One thing to consider is the NFT associated with the UTXO of a deposit. This NFT is designed to allow a fee to be paid for custody of BTC and to offer the ability to redeem the exact same UTXO within the six month fee period.
-  - question: How is the tBTC signer set non-custodial?
-    answer: >
-      tBTC’s signer sets use threshold ECDSA as a Bitcoin multisig replacement. For every deposit, a new signer set is pulled together (selected by the random beacon), and they generate a Bitcoin PKH address for the depositor, which is marked on the Ethereum chain.
-  - question: Who are the signers? Can anyone become a signer?
-    answer: >
-      Shortly after launch, there should be  a group of roughly 80 private sale KEEP purchasers and a few other trusted parties signing for tBTC. Very soon an opportunity will be announced for more individuals to participate by staking ETH to become a signer.
-  - question: Why is this better than other BTC on Ethereum projects?
-    answer: >
-      Some people believe tBTC is better for several reasons.  Some projects have built synthetic price pegs, which is not a true bridge. Other projects are supply pegs, but have centralized parties adding friction to the minting and redemption process and therefore, are not censorship-resistant systems. Some new bridges are decentralized supply pegs, however, those security models are less safe. They rely on a ⅔ honesty assumption, no ETH/extra collateral to back up deposits, and use brand new “roll your own crypto” rather than peer-reviewed, t-ECDSA cryptography).
-  - question: What does a six-month fee period mean? Can BTC be claimed only after six months?
-    answer: >
-      No, there is no need to return at six months, except if there is a preference to  redeem Bitcoin with a certain UTXO. This is what the NFT receipt, TDT, is for. Most retail DeFi users do not have this consideration, and do not need to return in six months.
-  - question: Are there plans to build a Bitcoin bridge on other chains?
-    answer: >
-      There are no firm plans to build a bridge on other chains. However the <a href="https://www.crosschain.group/" target="_blank">Cross-Chain Group</a> has had early conversations with chains like Cosmos, Zcash, and Polkadot on trustless bridge designs.
-  - question: Does tBTC ownership give you any governance rights?
-    answer: >
-      No.
-  - question: Why not just do a price peg?
-    answer: >
-      The team behind tBTC is building a supply peg, not a price peg. It’s not a synthetic mechanism. For bitcoin holders, it shouldn’t matter what the actual price is, it just matters that you can redeem it for 1 BTC
-  - question: Why does tBTC need a price feed oracle?
-    answer: >
-      tBTC is a sidechain that requires work from anonymous parties, so bonds from those parties must be held to prevent collusion. For now, it is necessary to ensure that signers are bonded in order to protect against misbehavior. A price feed oracle is needed to maintain the BTC/ETH price for this bond.
+  - answer: >-
+      tBTC связан с BTC общим предложением, а не ценой. Поэтому использование
+      алгоритмических механизмов для обеспечения ценовой привязки не требуется.
+    question: Как tBTC поддерживает свою привязку c BTC?
+  - answer: >-
+      tBTC и BTC не связаны между собой единой ценой, используется связка по
+      предложению. Это значит, что отношение BTC/tBTC может принимать разное
+      значение, а tBTC может торговаться с незначительным премиумом или
+      дисконтом.
+    question: Почему цена tBTC отличается от цены BTC?
+  - answer: >-
+      Потому что это делает систему более защищенной, что особенно важно в DeFi
+      при запуске новой сети. ETH служит более надежным обеспечением потому, что
+      является стандартом DeFi. При этом, команда, разрабатывающая tBTC,
+      планирует изменить залоговое соотношение ETH/BTC из 150% до 135% вскоре
+      после запуска. Так же рассматривается внедрение новых механизмов, которые
+      спустя некоторое время смогут опустить это соотношение до 40%.
+    question: Почему tBTC обеспечен токеном ETH в текущем соотношении?
+  - answer: >-
+      Технология tBTC является новой, поэтому невозможно предугадать каждый
+      случай, в котором что-то может пойти не так. Надо сказать, что наше
+      сообщество уже идентифицировало несколько таких ситуаций и приняло
+      продуманные меры для их решения. Модель безопасности tBTC такова, что если
+      подписанты вступят в сговор между собой и сбегут с биткоин-депозитом, то
+      пострадавшим от этого пользователям будет выплачен tBTC; вот для чего
+      существуют залоги ETH (они будут изъяты у мошенников и ликвидированы).
+      Если же цена ETH значительно упадет за короткий промежуток времени и ВСЕ
+      подписанты сбегут, одновременно разорвав привязку, то система станет
+      синтетической. Для получения большей информации обратитесь к документу <a
+      href="https://docs.keep.network/tbtc/index.pdf"
+      target="_blank">"Техническая характеристика tBTC"</a>.
+    question: Где в системе tBTC что-то может пойти не так?
+  - answer: >-
+      Слишком большое количество размеров лотов усложняет работу поставщикам
+      ликвидности. Сохранение нескольких стандартных размеров лотов создает
+      большую доступность для их выкупа.
+    question: Почему размер лотов зафиксирован? Почему нельзя выбрать случайный номинал?
+  - answer: >-
+      Пока нет. Чтобы использовать данные об эмиссии и погашении tBTC в dapps
+      нужно интегрироваться с сетью. Открытый исходный код в <a
+      href="https://github.com/keep-network/tbtc.js" target="_blank"> [tbtc.js
+      GitHub](https://github.com/keep-network/tbtc.js) </a> предоставляет
+      возможность разработчикам строить интерфейсы, которые соответствуют их
+      продуктам. Лучшим подходом для валидации биткоин-транзакций является
+      запуск electrum-сервера, который легко “поднять”.
+    question: >-
+      Существует ли виджет, используя который я могу “вытаскивать” данные об
+      эмиссии и погашении tBTC в мое Defi dapp?
+  - answer: >-
+      На данный момент, команда ConsenSys Diligence завершает шестинедельный
+      аудит кода и криптографии tBTC. Мы опубликуем результаты, как только они
+      станут доступными.
+    question: Проводился ли аудит tBTC?
+  - answer: >-
+      Каждому пользователю следует провести собственный анализ того, существуют
+      ли какие-либо легальные ограничения в его юрисдикции, препятствующие
+      использование им tBTC или требующие от него регистрации в определенных
+      госучреждениях.
+    question: >-
+      Считаюсь ли я лицом, предоставляющим финансовые услуги, если я занимаюсь
+      стейкингом ETH и “подписыванием” в сети tBTC?
+  - answer: >-
+      Для того, чтобы определить является ли перевод BTC в tBTC налогооблагаемой
+      операцией в вашей юрисдикции, обратитесь к соответствующему специалисту.
+      Обратите внимание на не взаимозаменяемый токен (NFT), который
+      ассоциируется с UTXO вашего депозита. NFT разработан для оплаты комиссии
+      за хранение BTC и предоставления возможности “погашать” именно ваш UTXO в
+      рамках шестимесячного периода.
+    question: Облагается ли налогом конвертация BTC в tBTC?
+  - answer: >-
+      Группа подписантов сети tBTC использует пороговую подпись ECDSA, как
+      замену мультисига Биткоина. Для каждого депозита случайным маячком (random
+      beacon) выбирается группа подписантов, которая генерирует хэш публичного
+      ключа (PKH) для вкладчика и записывает его в блокчейн Эфириума.
+    question: Как группа подписантов tBTC может быть не кастодиальной?
+  - answer: >-
+      Группа из приблизительно 80-ти участников приватной продажи KEEP, а также
+      нескольких других доверенных сторон, будут “подписывать” для tBTC сразу же
+      после запуска проекта. Очень скоро мы анонсируем возможность участия в
+      “подписании” путем стейкинга ETH для еще большего количества лиц.
+    question: Кто такие подписанты? Может ли кто-угодно стать подписантом?
+  - answer: >-
+      Некоторые люди верят, что tBTC лучше по нескольким причинам. Есть проекты,
+      которые разработали искусственные привязки цены, что не является истинным
+      “мостом” между Эфириумом и Биткоином. Другие основаны на связывании
+      предложения, но пользуются услугами централизованных сторон в процессе
+      эмиссии и погашения и, поэтому, не являются цензуроустойчивыми системами.
+      Некоторые новые “мосты” с привязкой предложения идут по пути
+      децентрализации, но их модели безопасности менее устойчивы. Они полагаются
+      на честность 2/3 сети, не взимают дополнительного залога для обеспечения
+      депозитов и используют подход “разверни свою крипту”, вместо проверенной
+      криптографии t-ECDSA.
+    question: Чем tBTC лучше других “Биткоинов” на блокчейне Эфириума?
+  - answer: >-
+      Нет никакой необходимости в возврате ровно через 6 месяцев, кроме того
+      случая, когда вы предпочитаете ”погасить” Биткоин используя определенный
+      UTXO. Именно для этого используется депозитный токен tBTC (TDT). Однако,
+      большинство ритейл пользователей DeFi не рассматривают этого, поэтому и не
+      нуждаются в возврате через 6 месяцев.
+    question: >-
+      Что такое “комиссия за шестимесячный период”? Получается, что вернуть
+      назад BTC можно только по истечении 6 месяцев?
+  - answer: >-
+      Твердых планов разработки “мостов” с другими блокчейнами у нас нет.
+      Однако, [Cross-Chain Group](https://www.crosschain.group/) уже вели
+      переговоры о построении “мостов”, не требующих к себе доверия, с Cosmos,
+      Zcash, и Polkadot.
+    question: Планируется ли разработка биткоин-мостов к другим блокчейнам?
+  - answer: Нет.
+    question: Предоставляет ли владение токеном tBTC какое-либо право управления?
+  - answer: >-
+      Команда, стоящая за tBTC, разрабатывает привязку по предложению, а не
+      синтетический механизм привязки по цене. Для держателей биткоина важна не
+      актуальная цена tBTC, а то, что его можно погасить за 1 BTC.
+    question: Почему бы просто не сделать привязку по цене?
+  - answer: >-
+      Так как tBTC - это сайдчейн, которым пользуются анонимные стороны, то для
+      предотвращения их возможного заговора с них взимается залог. На данный
+      момент важно обеспечить взимание залога с подписантов, чтобы защитить
+      пользователей от потенциальных нарушений. Оракул цены требуется для того,
+      чтобы сохранять соотношение BTC/ETH для этого залога.
+    question: Тогда почему tBTC нуждается в оракулах цены?
 ---
+
