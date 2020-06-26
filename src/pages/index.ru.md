@@ -1,40 +1,40 @@
 ---
 template: home-page
 path: /
-title: Home
+title: Главная
 hero:
   buttons:
-    - text: Get Email Updates
+    - text: Подписаться на новости
       url: '/#mailing-list'
-    - text: Start Building
+    - text: Разработчикам
       url: /developers
-  subtitle: Deposit and redeem BTC in DeFi without intermediaries.
-  title: The safe way to earn with your Bitcoin.
+  subtitle: Вносите и выкупайте BTC с DeFi без посредников.
+  title: 'Зарабатывайте безопасно, используя ваши Биткоины.'
 features:
-  - description: 'Every TBTC is backed 1:1 with BTC'
-    title: Backed
-  - description: No intermediaries - Redeem TBTC for BTC at any time
-    title: Permissionless
-  - description: Audited and open-source
-    title: Secure
-  - description: 3 steps to convert from BTC to TBTC and back
-    title: Simple
+  - description: 'Каждый TBTC обеспечен 1:1 с BTC'
+    title: Застраховано
+  - description: Никаких посредников - выкупайте TBTC за BTC в любое время
+    title: Удобно
+  - description: Проверено аудиторами и имеет открытый исходный код
+    title: Безопасно
+  - description: Перевод BTC в TBTC и обратно занимает всего 3 шага
+    title: Просто
 spotlight_1:
   body: >-
-    tBTC will begin moving toward full mainnet launch over the coming weeks.
-    Launch will occur over a series of milestones starting April 24th.
+    tBTC начнет движение к полному запуску майннет в ближайшие недели. Запуск
+    будет происходить в несколько этапов, начиная с 24 апреля 2020 года.
   button:
-    text: Read more
+    text: Подробнее
     url: 'https://tbtc.network/news/2020-04-24-tbtc-launch-key-dates/'
-  label: Announcement
-  title: 'tBTC Launch: Key Dates'
+  label: Объявление
+  title: 'Запуск tBTC: Ключевые Даты'
 spotlight_2:
   button:
-    text: Developer Toolkit
+    text: Инструменты Разработчика
     url: /developers
-  label: Developers
-  title: Integrate TBTC to add Bitcoin to your dApp
+  label: Разработчикам
+  title: 'Интегрируйте tBTC, чтобы добавить Биткойн в ваши dApp'
 integrations_section:
-  title: Integrations
+  title: Партнеры
 ---
 
