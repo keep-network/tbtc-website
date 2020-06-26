@@ -1,12 +1,12 @@
 ---
 template: home-page
 path: /
-title: Home
+title: Strona Główna
 hero:
   buttons:
-    - text: Get Email Updates
+    - text: Zapisz się po aktualizacje
       url: '/#mailing-list'
-    - text: Start Building
+    - text: Zacznij budować
       url: /developers
   subtitle: Deposit and redeem BTC in DeFi without intermediaries.
   title: The safe way to earn with your Bitcoin.
