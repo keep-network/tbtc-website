@@ -33,7 +33,7 @@ spotlight_2:
     text: Narzędzia programistyczne
     url: /developers
   label: Programiści
-  title: Zintegruj się z tBTC aby dodać Bitcoin do twojej aplikacji dApp
+  title: Zintegruj się z tBTC aby dodać Bitcoin do Twojej aplikacji dApp
 integrations_section:
   title: Integracje
 ---
