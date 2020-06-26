@@ -1,16 +1,31 @@
 ---
-template: 'about-page'
+template: about-page
 path: /about
-title: About tBTC
+title: Что такое tBTC?
 supporters:
-  - name: Keep
-    description: Keep is a privacy layer for Ethereum. A “keep” is an off-chain container for private data. Keeps help contracts harness the full power of the public blockchain — enabling deep interactivity with private data. The Keep network, powered by KEEP tokens, handles custodianship for tBTC.
-    url: https://keep.network/
-  - name: Summa
-    description: Summa provides custom-built interoperability solutions for companies throughout the blockchain ecosystem. Its solutions allow companies to access larger markets, expand their feature-sets, and access new liquidity in a unified cross-chain marketplace.
-    url: https://summa.one/
-  - name: Cross-Chain Group
-    description: The Cross-Chain Group is an industry resource and working group dedicated to furthering the research, design, and implementation of cross-chain architecture. Through educational events, advisory services, and open-source tooling, its goal is to expand blockchain interoperability and foster an environment that is more connected, functional, and scalable.
-    url: https://www.crosschain.group/
+  - description: >-
+      Keep это слой приватности для Ethereum. Он является оффчейн контейнером
+      для приватных данных. Keep помогает контрактам использовать всю мощь
+      публичного блокчейна, обеспечивая глубокую интерактивность с частными
+      данными. Сеть Keep network, работающая на токенах KEEP,  управляет
+      хранением tBTC.
+    name: Keep
+    url: 'https://keep.network/'
+  - description: >-
+      Summa предоставляет специально разработанные решения для взаимодействия
+      компаний в рамках всей цепочки блоков. Данные решения позволяют компаниям
+      выходить на более крупные рынки, расширять наборы своих функций и получать
+      доступ к новой ликвидности на едином перекрестном рынке.
+    name: Summa
+    url: 'https://summa.one/'
+  - description: >-
+      Cross-Chain Group является отраслевым ресурсом и рабочей группой,
+      занимающейся исследованиями, проектированием и внедрением кроссчейн
+      архитектуры. Цель образовательных мероприятий, консультационных услуг и
+      инструментов с открытым исходным кодом состоит в том, чтобы расширить
+      функциональную совместимость блокчейнов и создать среду, которая является
+      более связанной, функциональной и масштабируемой.
+    name: Cross-Chain Group
+    url: 'https://www.crosschain.group/'
 ---
-tBTC is a fully Bitcoin-backed ERC-20 token pegged to the price of Bitcoin. It facilitates Bitcoin holders to act on the Ethereum blockchain and access the decentralized finance (DeFi) ecosystem. tBTC is an open-source project supported by groups including [Keep](https://keep.network/), [Summa](https://summa.one/) and the [Cross-Chain Group](https://www.crosschain.group/).
+tBTC - это полностью обеспеченный Биткойнами токен ERC-20, привязанный к цене Биткойна. Он облегчает держателям Биткойнов действовать на блокчейне Ethereum и получать при этом доступ к экосистеме децентрализованных финансов (DeFi). tBTC является проектом с открытым исходным кодом и поддерживается различными организациями, включая [Keep](https://keep.network/), [Summa](https://summa.one/) и [Cross-Chain Group](https://www.crosschain.group/).
