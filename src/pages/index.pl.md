@@ -8,33 +8,33 @@ hero:
       url: '/#mailing-list'
     - text: Zacznij budować
       url: /developers
-  subtitle: Deposit and redeem BTC in DeFi without intermediaries.
-  title: The safe way to earn with your Bitcoin.
+  subtitle: Wpłacaj i wypłacaj BTC do DeFi bez pośredników.
+  title: Bezpieczny sposób aby zarabiać z Twoimi Bitcoinami.
 features:
-  - description: 'Every TBTC is backed 1:1 with BTC'
-    title: Backed
-  - description: No intermediaries - Redeem TBTC for BTC at any time
-    title: Permissionless
-  - description: Audited and open-source
-    title: Secure
-  - description: 3 steps to convert from BTC to TBTC and back
-    title: Simple
+  - description: 'Każdy TBTC jest poparty 1:1 przez BTC'
+    title: Poparty
+  - description: Bez pośredników - Wymień TBTC na BTC w każdym momencie
+    title: Niewymagający pozwoleń
+  - description: Audytowany i open-source
+    title: Bezpieczny
+  - description: 3 kroki do wymiany BTC na TBTC i spowrotem
+    title: Prosty
 spotlight_1:
   body: >-
-    tBTC will begin moving toward full mainnet launch over the coming weeks.
-    Launch will occur over a series of milestones starting April 24th.
+    tBTC rozpocznie przchodzenie na mainnet w ciągu najbliższych tygodni.
+    Uruchmonienie nastąpi w serii korków milowych, rozpoczynając od 24 kwietnia.
   button:
-    text: Read more
+    text: Czytaj więcej
     url: 'https://tbtc.network/news/2020-04-24-tbtc-launch-key-dates/'
-  label: Announcement
-  title: 'tBTC Launch: Key Dates'
+  label: Ogłoszenia
+  title: 'Uruchomienie tBTC: Ważne daty'
 spotlight_2:
   button:
-    text: Developer Toolkit
+    text: Narzędzia programistyczne
     url: /developers
-  label: Developers
-  title: Integrate TBTC to add Bitcoin to your dApp
+  label: Programiści
+  title: Zintegruj się z tBTC aby dodać Bitcoin do twojej aplikacji dApp
 integrations_section:
-  title: Integrations
+  title: Integracje
 ---
 
