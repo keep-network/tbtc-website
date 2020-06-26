@@ -1,15 +1,16 @@
 ---
 template: header-nav
 nav_items:
-  - label: Info
+  - label: Informacje
     url: /about
-  - label: News
+  - label: Wiadomości
     url: /news
-  - label: Developers
+  - label: Developerzy
     url: /developers
   - label: FAQ
     url: /faq
 dapp_link:
-  label: Mint tBTC
-  url: https://dapp.test.tbtc.network/
+  label: Wybij TBTC
+  url: 'https://dapp.test.tbtc.network/'
 ---
+
