@@ -1,11 +1,11 @@
 ---
 template: header-nav
 nav_items:
-  - label: Info
+  - label: Informacje
     url: /about
-  - label: News
+  - label: Wiadomości
     url: /news
-  - label: Developers
+  - label: Developerzy
     url: /developers
   - label: FAQ
     url: /faq
