@@ -45,41 +45,35 @@ questions:
       Aún no. Es requerido un trabajo de integración para construir el acuñado y
       canje de tTBC dentro de una dApp.  Existe código abierto en <a
       href="https://github.com/keep-network/tbtc.js" target="_blank">tbtc.js
-      GitHub</a>, que permite a los desarrolladores construir interfaces que se
+      GitHub</a> que permite a los desarrolladores construir interfaces que se
       ajusten a sus productos. Para validar transacciones de Bitcoin, el mejor
       método es ejecutando un servidor electrum, muy fácil de montar.
     question: >-
       ¿Hay algún widget de tBTC que pueda usar para enlazarme directamente a
       acuñar y canjear tBTC dentro de mi dApp de DeFi?
   - answer: >-
-      ConsenSys Diligence está actualmente completando una auditoría de seis
-      semanas de criptografía y código. Los resultados se publicarán cuando se
-      encuentren disponibles.
+      ConsenSys Diligence está actualmente completando una auditoría de
+      criptografía y código de seis semanas. Los resultados se publicarán cuando
+      se encuentren disponibles.
     question: ¿Se ha auditado tBTC?
   - answer: >-
       Cada usuario debe realizar su propio análisis acerca de las restriciones
-      legales en su juridicción que les prohiban el uso de usar tBTC, o en dado
-      caso, la necesidad de un adecuado registro con las entidades
-      gubernamentales determinadas.
+      legales en su juridicción que les prohiban el uso de tBTC, o en dado caso,
+      la necesidad de un adecuado registro con las entidades gubernamentales
+      determinadas.
     question: >-
       ¿El ser un firmante de tBTC y participar con ETH te hace un Negocio de
       Servicios Monetarios?
   - answer: >-
       Por favor compruebe con un asesor fiscal para determinar si el depósito de
-      BTC para TBTC es una operación fiscal en cierta jurisdicción. Un aspecto a
+      BTC para TBTC es una operación fiscal en su jurisdicción. Un aspecto a
       considerar es el NFT asociado con la UTXO (salida de transacción no
       gastada) del depósito. Este NFT permite que una couta sea pagada para la
       custodia del BTC y ofrece la posibilidad de regenerar exactamente la misma
       UTXO dentro del periodo de cuota de seis meses.
     question: '¿Depositar BTC para tBTC es una operación fiscal? '
   - answer: >-
-      tBTC’s signer sets use threshold ECDSA as a Bitcoin multisig replacement.
-      For every deposit, a new signer set is pulled together (selected by the
-      random beacon), and they generate a Bitcoin PKH address for the depositor,
-      which is marked on the Ethereum chain.
-
-
-      El set del firmante de tBTC usa el límite ECDSA como un reemplazo al
+      El set del firmante de tBTC usa el umbral ECDSA como un reemplazo al
       multisig de Bitcoin. Para cada depósito se asigna un nuevo set de firmante
       (seleccionado por el beacon aleatorio), y estos generan una dirección PKH
       de Bitcoin para el depositante, y esta es marcada en la cadena de
@@ -92,14 +86,14 @@ questions:
       participen con ETH para convertirse en firmantes.
     question: ¿Quiénes son los firmantes? ¿Cualquiera puede ser uno?
   - answer: >-
-      Algunas personas creen que tBTC es mejor por diversas razones. Algunos
+      Algunas personas creen que tBTC es mejor por diversas razones. Otros
       proyectos han construido vínculos de precio sintéticos, algo que no es un
-      verdadero enlace. Otros proyectos son vínculos de existencia, pero hay
-      grupos centralizados que añaden fricción al proceso de acuñado y
-      redención, y por lo tanto, no son sistemas libres de censura. Algunos
-      nuevos enlaces son vínculos de existencia descentralizados, pero esos
-      modelos de seguridad son menos seguros, puesto que dependen de asumir que
-      hay honesitdad a ⅔, no existe un colateral extra/de ETH para respaldar los
+      verdadero enlace. Ciertos otros son vínculos de existencia, pero hay
+      grupos centralizados que añaden fricción al proceso de acuñado y canje, y
+      por lo tanto, no son sistemas libres de censura. Algunos nuevos enlaces
+      son vínculos de existencia descentralizados, pero esos modelos de
+      seguridad son menos seguros, puesto que dependen de asumir que hay
+      honesitidad a ⅔, no existe un colateral extra/de ETH para respaldar los
       depósitos y usan lo nuevo de "haz tus propias cripto" en lugar de
       criptografía t-ECDSA revisada por expertos.
     question: ¿Por qué es este proyecto mejor que otros de BTC en Ethereum?
@@ -129,10 +123,9 @@ questions:
   - answer: >-
       tBTC es una cadena lateral que requiere de trabajo de entidades anónimas,
       así que los vínculos de estas se deben mantener para evitar
-      confavulaciones. Por ahora, es necesario que los firmantes estén
-      vinculados para protegerse del mal comportamiento. Un oráculo que
-      suministre el precio es requerido para mantener el precio de BTC/ETH para
-      este vínculo.
+      conspiraciones. Por ahora, es necesario que los firmantes estén vinculados
+      para protegerse del mal comportamiento. Un oráculo que suministre el
+      precio es requerido para mantener el precio de BTC/ETH para este vínculo.
     question: ¿Por qué se necesita un oráculo que suministre precios en tBTC?
 ---
 
