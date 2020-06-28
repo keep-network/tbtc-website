@@ -10,7 +10,7 @@ questions:
     question: ¿Cómo se mantiene el vínculo de tBTC?
   - answer: >-
       tBTC no es un vínculo de precio a BTC; es un vínculo de existencia. De
-      esta forma, BTC/tBTC podrían no ser exactamente lo mismo. tBTC puede
+      esta forma, BTC y tBTC podrían no ser exactamente lo mismo. tBTC puede
       comprarse a un precio ligeramente más alto o bajo.
     question: ¿Por qué el precio de tBTC no es exactamente igual al de BTC?
   - answer: >-
