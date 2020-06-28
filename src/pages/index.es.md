@@ -26,7 +26,7 @@ spotlight_1:
     más auditorías y un programa de recompensas de errores al 10x.
   button:
     text: Lee más
-    url: 'https://tbtc.network/news/2020-04-24-tbtc-launch-key-dates/'
+    url: 'https://tbtc.network/news/2020-05-22-an-update-on-tbtc%E2%80%99s-launch/'
   label: Anuncio
   title: Actualización sobre el lanzamiento de tBTC
 spotlight_2:
