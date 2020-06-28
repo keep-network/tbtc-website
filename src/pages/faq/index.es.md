@@ -11,7 +11,7 @@ questions:
   - answer: >-
       tBTC no es un vínculo de precio a BTC; es un vínculo de existencia. De
       esta forma, BTC/tBTC podrían no ser exactamente lo mismo. tBTC puede
-      comprarse a un precio ligeramente alto o bajo.
+      comprarse a un precio ligeramente más alto o bajo.
     question: ¿Por qué el precio de TBTC no es exactamente igual al de BTC?
   - answer: >-
       Porque hace al ecosistema más seguro, algo que es muy importante en DeFi,
@@ -55,16 +55,19 @@ questions:
     question: >-
       ¿Hay algún widget de tBTC que pueda usar para enlazarme directamente a
       acuñar y redimir tBTC dentro de mi dApp de DeFi?
-  - answer: >
-      ConsenSys Diligence is currently completing a six-week cryptography and
-      code audit. The results will be published once they become available.
-    question: Has tBTC been audited?
+  - answer: >-
+      ConsenSYs Diligence está actualmente completando una auditoría de seis
+      semanas de criptografía y código. Los resultados se publicarán cuando se
+      encuentren disponibles.
+    question: ¿Se ha auditado tBTC?
   - answer: >
       Each user should undertake their own analysis as to whether there are any
       legal restrictions in their jurisdiction that would either prevent them
       from using tBTC or require the user to register with certain government
       entities.
-    question: Does Signing for tBTC and staking ETH make you a MSB?
+    question: >-
+      Does Signing for tBTC and staking ETH make you a MSB? ¿El ser un firmante
+      de tBTC y 
   - answer: >
       Please check with a tax professional to determine whether depositing BTC
       for TBTC is a taxable event in a given jurisdiction. One thing to consider
