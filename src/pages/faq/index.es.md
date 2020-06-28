@@ -71,10 +71,10 @@ questions:
   - answer: >-
       Por favor compruebe con un asesor fiscal para determinar si el depósito de
       BTC para TBTC es una operación fiscal en cierta jurisdicción. Un aspecto a
-      considerar es el NFT asociado con el UTXO del depósito. Este NFT permite
-      que una couta sea pagada para la custodia del BTC y ofrece la posibilidad
-      de redimir exactamente el mismo UTXO dentro del periodo de seis meses de
-      cuota.
+      considerar es el NFT asociado con la UTXO (salida de transacción no
+      gastada) del depósito. Este NFT permite que una couta sea pagada para la
+      custodia del BTC y ofrece la posibilidad de redimir exactamente la misma
+      UTXO dentro del periodo de cuota de seis meses.
     question: '¿Depositar BTC para tBTC es una operación fiscal? '
   - answer: >-
       tBTC’s signer sets use threshold ECDSA as a Bitcoin multisig replacement.
@@ -95,25 +95,32 @@ questions:
       para tBTC. Muy pronto se anunciará una oportunidad para que más individuos
       participen con ETH para convertirse en firmantes.
     question: ¿Quiénes son los firmantes? ¿Cualquiera puede ser uno?
-  - answer: >
-      Some people believe tBTC is better for several reasons.  Some projects
-      have built synthetic price pegs, which is not a true bridge. Other
-      projects are supply pegs, but have centralized parties adding friction to
-      the minting and redemption process and therefore, are not
-      censorship-resistant systems. Some new bridges are decentralized supply
-      pegs, however, those security models are less safe. They rely on a ⅔
-      honesty assumption, no ETH/extra collateral to back up deposits, and use
-      brand new “roll your own crypto” rather than peer-reviewed, t-ECDSA
-      cryptography).
-    question: Why is this better than other BTC on Ethereum projects?
-  - answer: >
+  - answer: >-
+      Algunas personas creen que tBTC es mejor por diversas razones. Algunos
+      proyectos han construido vínculos de precio sintéticos, algo que no es un
+      verdadero enlace. Otros proyectos son vínculos de existencia, pero hay
+      grupos centralizados que añaden fricción al proceso de acuñado y
+      redención, y por lo tanto, no son sistemas libres de censura. Algunos
+      nuevos enlaces son vínculos de existencia descentralizados, pero esos
+      modelos de seguridad son menos seguros, puesto que dependen de asumir que
+      hay honesitdad a ⅔, no existe un colateral extra/de ETH para respaldar los
+      depósitos y usan lo nuevo de "haz tus propias cripto" en lugar de
+      criptografía t-ECDSA revisada por expertos.
+    question: ¿Por qué es este proyecto mejor que otros de BTC en Ethereum?
+  - answer: >-
       No, there is no need to return at six months, except if there is a
       preference to  redeem Bitcoin with a certain UTXO. This is what the NFT
       receipt, TDT, is for. Most retail DeFi users do not have this
       consideration, and do not need to return in six months.
+
+
+      No, y no hay necesidad de volver a los seis meses, a menos que se prefiera
+      redimir el Bitcoin con una UTXO determidada. Para esto es el recibo NFT
+      (TDT). La mayoría de los usuarios minoristas de DeFi no deberían tener
+      estas consideraciones, y no necesitan regresar en seis meses.
     question: >-
-      What does a six-month fee period mean? Can BTC be claimed only after six
-      months?
+      ¿A qué se refiere con el periodo de cuota de seis meses? ¿Será posible
+      reclamar el BTC sólo después de los seis meses?
   - answer: >
       There are no firm plans to build a bridge on other chains. However the <a
       href="https://www.crosschain.group/" target="_blank">Cross-Chain Group</a>
