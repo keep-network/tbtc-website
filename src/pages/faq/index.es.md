@@ -68,19 +68,27 @@ questions:
     question: >-
       ¿El ser un firmante de tBTC y participar con ETH te hace un Negocio de
       Servicios Monetarios?
-  - answer: >
-      Please check with a tax professional to determine whether depositing BTC
-      for TBTC is a taxable event in a given jurisdiction. One thing to consider
-      is the NFT associated with the UTXO of a deposit. This NFT is designed to
-      allow a fee to be paid for custody of BTC and to offer the ability to
-      redeem the exact same UTXO within the six month fee period.
-    question: Is depositing BTC for tBTC a taxable event?
-  - answer: >
+  - answer: >-
+      Por favor compruebe con un asesor fiscal para determinar si el depósito de
+      BTC para TBTC es una operación fiscal en cierta jurisdicción. Un aspecto a
+      considerar es el NFT asociado con el UTXO del depósito. Este NFT permite
+      que una couta sea pagada para la custodia del BTC y ofrece la posibilidad
+      de redimir exactamente el mismo UTXO dentro del periodo de seis meses de
+      cuota.
+    question: '¿Depositar BTC para tBTC es una operación fiscal? '
+  - answer: >-
       tBTC’s signer sets use threshold ECDSA as a Bitcoin multisig replacement.
       For every deposit, a new signer set is pulled together (selected by the
       random beacon), and they generate a Bitcoin PKH address for the depositor,
       which is marked on the Ethereum chain.
-    question: How is the tBTC signer set non-custodial?
+
+
+      El set del firmante de tBTC usa el límite ECDSA como un reemplazo al
+      multisig de Bitcoin. Para cada depósito se asigna un nuevo set de firmante
+      (seleccionado por el beacon aleatorio), y estos generan una dirección PKH
+      de Bitcoin para el depositante, y esta es marcada en la cadena de
+      Ethereum.
+    question: ¿Cómo es que el set para el firmante de tBTC es uno sin custodia?
   - answer: >
       Shortly after launch, there should be  a group of roughly 80 private sale
       KEEP purchasers and a few other trusted parties signing for tBTC. Very
