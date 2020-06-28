@@ -121,20 +121,21 @@ questions:
     question: >-
       ¿A qué se refiere con el periodo de cuota de seis meses? ¿Será posible
       reclamar el BTC sólo después de los seis meses?
-  - answer: >
-      There are no firm plans to build a bridge on other chains. However the <a
-      href="https://www.crosschain.group/" target="_blank">Cross-Chain Group</a>
-      has had early conversations with chains like Cosmos, Zcash, and Polkadot
-      on trustless bridge designs.
-    question: Are there plans to build a Bitcoin bridge on other chains?
-  - answer: |
-      No.
-    question: Does tBTC ownership give you any governance rights?
-  - answer: >
-      The team behind tBTC is building a supply peg, not a price peg. It’s not a
-      synthetic mechanism. For bitcoin holders, it shouldn’t matter what the
-      actual price is, it just matters that you can redeem it for 1 BTC
-    question: Why not just do a price peg?
+  - answer: >-
+      Ahora no existen planes firmes para contruir el enlace sobre otras
+      cadenas. Aunque el <a href="https://www.crosschain.group/"
+      target="_blank">Cross-Chain Group</a> ya ha tenido conversaciones
+      puntuales con otras cadenas como Cosmos, Zcash y Polkadot sobre diseños de
+      enlaces fiables.
+    question: ¿Hay planes para construir enlaces con Bitcoin en otras cadenas?
+  - answer: No.
+    question: ¿La posesión de tBTC te otorga algún derecho de gobernanza?
+  - answer: >-
+      El equipo detrás de tBTC está construyendo un vínculo de existencia, no de
+      precio. No es un mecanismo sintético. Para los poseedores de Bitcoin, no
+      debería importar cuál es el precio actual, sólo el que lo puedas canjear
+      por 1 BTC.
+    question: ¿Por qué no simplemente un vínculo de precio?
   - answer: >
       tBTC is a sidechain that requires work from anonymous parties, so bonds
       from those parties must be held to prevent collusion. For now, it is
