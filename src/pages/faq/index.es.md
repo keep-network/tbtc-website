@@ -60,14 +60,14 @@ questions:
       semanas de criptografía y código. Los resultados se publicarán cuando se
       encuentren disponibles.
     question: ¿Se ha auditado tBTC?
-  - answer: >
-      Each user should undertake their own analysis as to whether there are any
-      legal restrictions in their jurisdiction that would either prevent them
-      from using tBTC or require the user to register with certain government
-      entities.
+  - answer: >-
+      Cada usuario debe realizar su propio análisis acerca de las restriciones
+      legales en su juridicción que les prohiban el uso de usar tBTC, o en dado
+      caso, la necesidad de un adecuado registro con las entidades
+      gubernamentales determinadas.
     question: >-
-      Does Signing for tBTC and staking ETH make you a MSB? ¿El ser un firmante
-      de tBTC y 
+      ¿El ser un firmante de tBTC y participar con ETH te hace un Negocio de
+      Servicios Monetarios?
   - answer: >
       Please check with a tax professional to determine whether depositing BTC
       for TBTC is a taxable event in a given jurisdiction. One thing to consider
