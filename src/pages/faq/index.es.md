@@ -89,12 +89,12 @@ questions:
       de Bitcoin para el depositante, y esta es marcada en la cadena de
       Ethereum.
     question: ¿Cómo es que el set para el firmante de tBTC es uno sin custodia?
-  - answer: >
-      Shortly after launch, there should be  a group of roughly 80 private sale
-      KEEP purchasers and a few other trusted parties signing for tBTC. Very
-      soon an opportunity will be announced for more individuals to participate
-      by staking ETH to become a signer.
-    question: Who are the signers? Can anyone become a signer?
+  - answer: >-
+      Después del lanzamiento habrá un grupo de aproximadamente 80 compradores
+      de la venta privada de KEEP y algunos otros grupos de confianza firmando
+      para tBTC. Muy pronto se anunciará una oportunidad para que más individuos
+      participen con ETH para convertirse en firmantes.
+    question: ¿Quiénes son los firmantes? ¿Cualquiera puede ser uno?
   - answer: >
       Some people believe tBTC is better for several reasons.  Some projects
       have built synthetic price pegs, which is not a true bridge. Other
