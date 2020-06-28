@@ -130,12 +130,13 @@ questions:
       debería importar cuál es el precio actual, sólo el que lo puedas canjear
       por 1 BTC.
     question: ¿Por qué no simplemente un vínculo de precio?
-  - answer: >
-      tBTC is a sidechain that requires work from anonymous parties, so bonds
-      from those parties must be held to prevent collusion. For now, it is
-      necessary to ensure that signers are bonded in order to protect against
-      misbehavior. A price feed oracle is needed to maintain the BTC/ETH price
-      for this bond.
-    question: Why does tBTC need a price feed oracle?
+  - answer: >-
+      tBTC es una cadena lateral que requiere de trabajo de entidades anónimas,
+      así que los vínculos de estas se deben mantener para evitar
+      confavulaciones. Por ahora, es necesario que los firmantes estén
+      vinculados para protegerse del mal comportamiento. Un oráculo que
+      suministre el precio es requerido para mantener el precio de BTC/ETH para
+      este vínculo.
+    question: ¿Por qué se necesita un oráculo que suministre precios en tBTC?
 ---
 
