@@ -1,6 +1,6 @@
 ---
 template: announcement
-title: Informe del Stakedrop
+title: Anuncio del Stakedrop
 ---
 ¡Prepárate para participar con ETH y convertirte en un firmante de tBTC! ¡Empezamos el 8 de julio!
 
