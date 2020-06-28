@@ -27,7 +27,7 @@ questions:
       algo podría fallar. Dicho esto, hay varias situaciones que la comunidad ha
       identificado y atendido tomando medidas rigurosas. El modelo de seguridad
       es tal, que si los firmantes conspiran y huyen con tu depósito de Bitcoin,
-      al usuario se le reembolsa en tBTC; esto es para lo que son los vínculos
+      al usuario se le reembolsa en tBTC, y es para esto que son los vínculos
       con ETH (se incautará y liquidará). Si ETH cae masivamente en un corto
       periodo de tiempo y TODOS los firmantes huyen y rompen el vínculo al mismo
       tiempo, el sistema se pasa a un estado sintético. Para más información,
@@ -35,13 +35,9 @@ questions:
       target="_blank">tBTC technical spec</a>.
     question: ¿Dónde podría fallar algo en el sistema de tBTC?
   - answer: >-
-      Too many lot sizes becomes an issue for liquidity pools. Maintaining
-      several standard lot sizes allows for greater redemption availability.
-
-
       Demasiados tamaños de lote se convierten en un problema para las reservas
       de liquidez. El mantener varios tamaños de lote estándar permite una mayor
-      disponibilidad de redención.
+      disponibilidad de canje.
     question: >-
       ¿Por qué los tamaños de lote son fijos? ¿Por qué no alguna denominación al
       azar?
