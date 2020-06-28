@@ -21,14 +21,14 @@ features:
     title: Simple
 spotlight_1:
   body: >-
-    tBTC empezará a transitar hacia un lanzamiento completo de la red principal
-    durante las siguientes semanas. El lanzamiento ocurrirá conforme a una serie
-    de objetivos, empezando el 24 de abril.
+    tBTC cambiará a un modelo de liberación de candidatos e implementará un
+    límite de existencia graduado. Las medidas de seguridad ampliadas incluirán
+    más auditorías y un programa de recompensas de errores al 10x.
   button:
     text: Lee más
     url: 'https://tbtc.network/news/2020-04-24-tbtc-launch-key-dates/'
   label: Anuncio
-  title: 'Lanzamiento de tBTC: Fechas importantes'
+  title: Actualización sobre el lanzamiento de tBTC
 spotlight_2:
   button:
     text: Herramientas para desarrolladores
