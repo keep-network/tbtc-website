@@ -8,7 +8,7 @@ hero:
       url: '/#mailing-list'
     - text: Empieza a Construir
       url: /developers
-  subtitle: Deposita y redime BTC en DeFi sin intermediarios
+  subtitle: Deposita y canjea BTC en DeFi sin intermediarios
   title: La manera segura de ganar con Bitcoin
 features:
   - description: 'Cada TBTC está respaldado 1:1 con BTC'
