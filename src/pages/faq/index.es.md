@@ -34,20 +34,27 @@ questions:
       mira <a href="https://docs.keep.network/tbtc/index.pdf"
       target="_blank">tBTC technical spec</a>.
     question: ¿Dónde podría fallar algo en el sistema de tBTC?
-  - answer: >
+  - answer: >-
       Too many lot sizes becomes an issue for liquidity pools. Maintaining
       several standard lot sizes allows for greater redemption availability.
-    question: Why are there fixed lot sizes? Why not any random denomination?
-  - answer: >
-      Not yet. Integration work is required to build tBTC minting and redemption
-      into a dApp. The code is open-sourced in the <a
-      href="https://github.com/keep-network/tbtc.js" target="_blank">tbtc.js
-      GitHub</a>, enabling developers to build interfaces that match their
-      products. To validate Bitcoin transactions, the best approach is to run an
-      electrum server, which is very easy to spin up.
+
+
+      Demasiados tamaños de lote se convierten en un problema para las reservas
+      de liquidez. El mantener varios tamaños de lote estándar permite una mayor
+      disponibilidad de redención.
     question: >-
-      Is there a tBTC widget I can use to directly hook tBTC minting and
-      redeeming into my DeFi dapp?
+      ¿Por qué los tamaños de lote son fijos? ¿Por qué no alguna denominación al
+      azar?
+  - answer: >-
+      Aún no. Es requerido un trabajo de integración para construir el acuñado y
+      redención de tTBC dentro de una dApp.  Existe código abierto en <a
+      href="https://github.com/keep-network/tbtc.js" target="_blank">tbtc.js
+      GitHub</a>, que permite a los desarrolladores construir interfaces que se
+      ajusten a sus productos. Para validar transacciones de Bitcoin, el mejor
+      método es ejecutando un servidor electrum, muy fácil de montar.
+    question: >-
+      ¿Hay algún widget de tBTC que pueda usar para enlazarme directamente a
+      acuñar y redimir tBTC dentro de mi dApp de DeFi?
   - answer: >
       ConsenSys Diligence is currently completing a six-week cryptography and
       code audit. The results will be published once they become available.
