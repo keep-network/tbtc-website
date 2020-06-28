@@ -12,7 +12,7 @@ questions:
       tBTC no es un vínculo de precio a BTC; es un vínculo de existencia. De
       esta forma, BTC/tBTC podrían no ser exactamente lo mismo. tBTC puede
       comprarse a un precio ligeramente más alto o bajo.
-    question: ¿Por qué el precio de TBTC no es exactamente igual al de BTC?
+    question: ¿Por qué el precio de tBTC no es exactamente igual al de BTC?
   - answer: >-
       Porque hace al ecosistema más seguro, algo que es muy importante en DeFi,
       especialmente en el lanzamiento de una nueva red. ETH es un tipo más
@@ -21,13 +21,13 @@ questions:
       ETH/BTC de 150% a 135% prontamente después del lanzamiento. También se
       examinan nuevos mecanismos que podrían reducir esta razón al 40% más
       adelante.
-    question: '¿Por qué TBTC se relaciona con ETH en su razón actual? '
+    question: '¿Por qué tBTC se relaciona con ETH en su razón actual? '
   - answer: >-
       Esta tecnología es nueva y es imposible anticiparse a cada situación donde
       algo podría fallar. Dicho esto, hay varias situaciones que la comunidad ha
       identificado y atendido tomando medidas rigurosas. El modelo de seguridad
       es tal, que si los firmantes conspiran y huyen con tu depósito de Bitcoin,
-      al usuario se le reembolsa en TBTC; esto es para lo que son los vínculos
+      al usuario se le reembolsa en tBTC; esto es para lo que son los vínculos
       con ETH (se incautará y liquidará). Si ETH cae masivamente en un corto
       periodo de tiempo y TODOS los firmantes huyen y rompen el vínculo al mismo
       tiempo, el sistema se pasa a un estado sintético. Para más información,
@@ -56,7 +56,7 @@ questions:
       ¿Hay algún widget de tBTC que pueda usar para enlazarme directamente a
       acuñar y canjear tBTC dentro de mi dApp de DeFi?
   - answer: >-
-      ConsenSYs Diligence está actualmente completando una auditoría de seis
+      ConsenSys Diligence está actualmente completando una auditoría de seis
       semanas de criptografía y código. Los resultados se publicarán cuando se
       encuentren disponibles.
     question: ¿Se ha auditado tBTC?
