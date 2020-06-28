@@ -47,14 +47,14 @@ questions:
       azar?
   - answer: >-
       Aún no. Es requerido un trabajo de integración para construir el acuñado y
-      redención de tTBC dentro de una dApp.  Existe código abierto en <a
+      canje de tTBC dentro de una dApp.  Existe código abierto en <a
       href="https://github.com/keep-network/tbtc.js" target="_blank">tbtc.js
       GitHub</a>, que permite a los desarrolladores construir interfaces que se
       ajusten a sus productos. Para validar transacciones de Bitcoin, el mejor
       método es ejecutando un servidor electrum, muy fácil de montar.
     question: >-
       ¿Hay algún widget de tBTC que pueda usar para enlazarme directamente a
-      acuñar y redimir tBTC dentro de mi dApp de DeFi?
+      acuñar y canjear tBTC dentro de mi dApp de DeFi?
   - answer: >-
       ConsenSYs Diligence está actualmente completando una auditoría de seis
       semanas de criptografía y código. Los resultados se publicarán cuando se
@@ -73,7 +73,7 @@ questions:
       BTC para TBTC es una operación fiscal en cierta jurisdicción. Un aspecto a
       considerar es el NFT asociado con la UTXO (salida de transacción no
       gastada) del depósito. Este NFT permite que una couta sea pagada para la
-      custodia del BTC y ofrece la posibilidad de redimir exactamente la misma
+      custodia del BTC y ofrece la posibilidad de regenerar exactamente la misma
       UTXO dentro del periodo de cuota de seis meses.
     question: '¿Depositar BTC para tBTC es una operación fiscal? '
   - answer: >-
@@ -108,14 +108,8 @@ questions:
       criptografía t-ECDSA revisada por expertos.
     question: ¿Por qué es este proyecto mejor que otros de BTC en Ethereum?
   - answer: >-
-      No, there is no need to return at six months, except if there is a
-      preference to  redeem Bitcoin with a certain UTXO. This is what the NFT
-      receipt, TDT, is for. Most retail DeFi users do not have this
-      consideration, and do not need to return in six months.
-
-
       No, y no hay necesidad de volver a los seis meses, a menos que se prefiera
-      redimir el Bitcoin con una UTXO determidada. Para esto es el recibo NFT
+      canjear el Bitcoin con una UTXO determidada. Para esto es el recibo NFT
       (TDT). La mayoría de los usuarios minoristas de DeFi no deberían tener
       estas consideraciones, y no necesitan regresar en seis meses.
     question: >-
