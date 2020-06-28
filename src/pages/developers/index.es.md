@@ -12,4 +12,4 @@ Desarrolladores, ¡pueden construir en tBTC! Existen varios recursos para ayudar
 * [Especificación técnica](http://docs.keep.network/tbtc/)
 * [Solidity API - Documentación](http://docs.keep.network/tbtc/solidity/)
 
-Ya se está construyendo en tBTC con estas herramientas. El hackathon en ETHDenver [produjo diversas aplicaciones excelentes](https://blog.keep.network/bitcoin-earn-wins-ethdenver-tbtc-hackathon-prize-5233ce805468) que podrían servir de ejemplo.
+Ya se está construyendo en tBTC con estas herramientas. El hackathon en ETHDenver [produjo diversas excelentes aplicaciones](https://blog.keep.network/bitcoin-earn-wins-ethdenver-tbtc-hackathon-prize-5233ce805468) que podrían servir de ejemplo.
