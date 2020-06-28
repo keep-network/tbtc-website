@@ -4,9 +4,9 @@ path: /faq
 title: FAQ
 questions:
   - answer: >-
-      tBTC no costea el vínculo. Es un vínculo de existencia, no de precio, así
-      que no es necesario ningún mecanismo algorítmico para que funcione como un
-      vínculo descentralizado.
+      Al tratarse de un vínculo de existencia y no de precio, no es necesario
+      ningún mecanismo algorítmico para que funcione como un vínculo
+      descentralizado.
     question: ¿Cómo se mantiene el vínculo de tBTC?
   - answer: >-
       tBTC no es un vínculo de precio a BTC; es un vínculo de existencia. De
