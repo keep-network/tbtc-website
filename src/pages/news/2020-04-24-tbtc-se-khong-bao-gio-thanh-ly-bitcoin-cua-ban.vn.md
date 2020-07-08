@@ -16,4 +16,16 @@ tBTC không yêu cầu người dùng tự duy trì chốt. Điều này trái n
 
 Nắm ETH trên tBTC nhằm mục đích không duy trì một chốt mà là để thiết lập các ưu đãi cho người ký để làm việc đúng. Do đó, nắm ETH thực sự làm cho tiền gửi BTC của người dùng an toàn hơn, vì nó bảo đảm tài sản trong trường hợp bị đánh cắp. tBTC được thiết kế là cách an toàn để sử dụng Bitcoin trên Ethereum; yêu cầu người ký nắm giữ là một trong những cách làm điều đó. 
 
-Tham gia [#tbtc Discord channel](https://chat.tbtc.network) để biết thêm về tBTC. Và tham gia danh sách nhận thư [tại đây.](https://tbtc.network/#mailing-list)
+
+[Tham gia danh sách email](https://tbtc.network/#mailing-list) để được cập nhật.
+
+Nguồn bổ sung:
+
+•	Keep’s [GitHub](https://github.com/keep-network)
+
+•	The tBTC [Technical spec](http://docs.keep.network/tbtc/index.pdf)
+
+•	[tbtc.js](https://tbtc.network/news/2020-02-14-announcing-tbtc-js)
+
+•	The [Keep #tbtc channel on Discord](https://chat.tbtc.network)
+

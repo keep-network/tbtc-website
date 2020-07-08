@@ -66,10 +66,14 @@ Mục tiêu chung của chúng tôi là đảm bảo một mạng lưới linh h
 
 Hãy cùng Play for keeps!
 
-[Tham gia danh sách](https://tbtc.network/#mailing-list) nhận email tBTC để cập nhật
+[Tham gia danh sách email](https://tbtc.network/#mailing-list) để được cập nhật.
 
 Nguồn bổ sung:
+
 •	Keep’s [GitHub](https://github.com/keep-network)
+
 •	The tBTC [Technical spec](http://docs.keep.network/tbtc/index.pdf)
+
 •	[tbtc.js](https://tbtc.network/news/2020-02-14-announcing-tbtc-js)
+
 •	The [Keep #tbtc channel on Discord](https://chat.tbtc.network)

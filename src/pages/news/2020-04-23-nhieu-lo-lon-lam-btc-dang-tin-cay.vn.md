@@ -15,6 +15,14 @@ Lý do cho độ lớn lô chuẩn là để đảm bảo rằng tiền gửi lu
 
 Nếu người gửi tiền muốn gửi một lượng BTC lớn hơn mức được hỗ trợ bởi các kích cỡ lô hiện có, họ có thể tạo nhiều yêu cầu gửi tiền và cấp tiền cho nhiều khoản tiền gửi. Điều này cho phép mỗi khoản tiền gửi được hỗ trợ bởi một nhóm ký khác nhau, điều này vừa đơn giản hóa cam kết của các nhóm ký và bảo vệ hệ thống rộng hơn khỏi thất bại của nhóm ký bị cô lập, cố tình làm hại hoặc theo cách khác. Vì vậy, bằng cách sử dụng hệ thống có nhiều kích cỡ, người dùng có thể gửi cơ bản bất kỳ số lượng Bitcoin nào họ muốn. Bạn có thể đọc thêm về cách độ lớn lô hoạt động trong tổng quan [hệ thống kỹ thuật](https://tbtc.network/developers/tbtc-technical-system-overview/) của tBTC. Lưu ý rằng tổng quan sử dụng ví dụ về độ lớn lô 1 BTC cố định để dễ giải thích - nhưng tBTC hiện sử dụng nhiều kích cỡ lô khoảng giữa 1 BTC và 0,001 BTC.
 
-Tham gia [#tbtc Discord channel](https://chat.tbtc.network) để biết thêm về tBTC. Và tham gia danh sách nhận thư [tại đây.](https://tbtc.network/#mailing-list)
+[Tham gia danh sách email](https://tbtc.network/#mailing-list) để được cập nhật.
 
+Nguồn bổ sung:
 
+•	Keep’s [GitHub](https://github.com/keep-network)
+
+•	The tBTC [Technical spec](http://docs.keep.network/tbtc/index.pdf)
+
+•	[tbtc.js](https://tbtc.network/news/2020-02-14-announcing-tbtc-js)
+
+•	The [Keep #tbtc channel on Discord](https://chat.tbtc.network)

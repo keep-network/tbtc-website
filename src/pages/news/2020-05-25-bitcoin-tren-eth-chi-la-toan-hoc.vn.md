@@ -82,5 +82,19 @@ Chúng tôi đã cam kết hợp tác với cộng đồng để thiết kế v�
 
 #### Tham gia
 
-Quan tâm đến việc tích hợp tBTC với giao thức DeFi, ứng dụng hoặc ví của bạn hoặc tham gia với tBTC khi nó ra mắt? Liên hệ với chúng tôi tại [team@crosschain.group](https://mail.google.com/mail/?fs=1&tf=1&to=team%40crosschain.group&view=cm)
+Quan tâm đến việc tích hợp tBTC với giao thức DeFi, ứng dụng hoặc ví của bạn hoặc tham gia với tBTC khi nó ra mắt? 
+
+
+[Tham gia danh sách email](https://tbtc.network/#mailing-list) để được cập nhật.
+
+Nguồn bổ sung:
+
+•	Keep’s [GitHub](https://github.com/keep-network)
+
+•	The tBTC [Technical spec](http://docs.keep.network/tbtc/index.pdf)
+
+•	[tbtc.js](https://tbtc.network/news/2020-02-14-announcing-tbtc-js)
+
+•	The [Keep #tbtc channel on Discord](https://chat.tbtc.network)
+
 

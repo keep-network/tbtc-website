@@ -49,3 +49,17 @@ Một cuộc kiểm toán bảo thứ ba cũng đang được tổ chức. Ngoà
 ### Ngày 8 tháng 6 Stakedrop
 
 Là một phần trong quá trình triển khai dự án đang diễn ra, [stakesdrop tBTC](https://www.crowdcast.io/e/keep-stakedrop---live/register), bất kỳ ai cũng có thể được nhận thẻ KEEP khi là đóng vai trò là người nộp tiền tốt trên mạng, dự kiến bắt đầu ​​vào ngày 8 tháng 6.
+
+
+[Tham gia danh sách email](https://tbtc.network/#mailing-list) để được cập nhật.
+
+Nguồn bổ sung:
+
+•	Keep’s [GitHub](https://github.com/keep-network)
+
+•	The tBTC [Technical spec](http://docs.keep.network/tbtc/index.pdf)
+
+•	[tbtc.js](https://tbtc.network/news/2020-02-14-announcing-tbtc-js)
+
+•	The [Keep #tbtc channel on Discord](https://chat.tbtc.network)
+
