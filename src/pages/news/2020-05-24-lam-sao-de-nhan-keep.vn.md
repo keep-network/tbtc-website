@@ -72,4 +72,4 @@ Nguồn bổ sung:
 •	Keep’s [GitHub](https://github.com/keep-network)
 •	The tBTC [Technical spec](http://docs.keep.network/tbtc/index.pdf)
 •	[tbtc.js](https://tbtc.network/news/2020-02-14-announcing-tbtc-js)
-•	The [Keep #tbtc channel on Discord](https://discord.gg/wYezN7v)
+•	The [Keep #tbtc channel on Discord](https://chat.tbtc.network)

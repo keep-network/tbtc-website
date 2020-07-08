@@ -31,5 +31,5 @@ Các nhóm đóng góp cho tBTC nhận ra rằng có những liên kết BTC-ETH
 
 tBTC là cách an toàn để sử dụng BTC trên Ethereum. Bảo mật là cốt lõi của nhiệm vụ dự án, và nó đã được thiết kế phù hợp. Yêu cầu người ký thế chấp là một tính năng ở đây, không phải là một lỗi. Họ cân bằng lợi ích của người dùng với những nhà cung cấp dịch vụ cho phép mạng hoạt động. Chính cam kết của người ký giúp đảm bảo an toàn cho người gửi tiền Tài sản trên mạng - trong khi vẫn trả công thích hợp cho công việc được thực hiện bởi người ký. Hoạt động hiệu quả phụ thuộc vào sự liên kết của các ưu đãi và trong trường hợp này, tài sản thế chấp của người ký là một trong những công cụ giúp mạng an toàn. 
 
-Tham gia [#tbtc Discord channel](https://discord.gg/wYezN7v) để biết thêm về tBTC. Và tham gia danh sách nhận thư [tại đây.](https://tbtc.network/#mailing-list)
+Tham gia [#tbtc Discord channel](https://chat.tbtc.network) để biết thêm về tBTC. Và tham gia danh sách nhận thư [tại đây.](https://tbtc.network/#mailing-list)
 

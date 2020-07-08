@@ -44,4 +44,4 @@ Nguồn bổ sung:
 
 •	[tbtc.js](https://tbtc.network/news/2020-02-14-announcing-tbtc-js)
 
-•	The [Keep #tbtc channel on Discord](https://discord.gg/wYezN7v)
+•	The [Keep #tbtc channel on Discord](https://chat.tbtc.network)

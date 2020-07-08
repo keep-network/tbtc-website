@@ -18,7 +18,7 @@ tBTC là dự án đầu tiên được đề xuất bởi Cross Chain Group (CC
 
 Nếu bạn có thời gian, hãy xem chi tiết tại [tBTC protocol spec](http://docs.keep.network/tbtc/index.pdf). Đây là TL của bạn; DR:
 
-tBTC duy trì các thuộc tính tiền cứng Bitcoin Bitcoin trên tài chính phi tập trung. Nó là một dApp lớn đầu tiên được xây dựng trên Keep Network, tận dụng cơ sở hạ tầng Keep Keep để kiểm duyệt-,lạm phát và tương thức. tBTC là Bitcoin của bạn, có sẵn trên Ethereum. Nó phân cấp phi tập trung, dễ thay đổi, và quan trọng nhất là an toàn.
+tBTC duy trì các thuộc tính tiền cứng Bitcoin trên tài chính phi tập trung. Nó là một dApp lớn đầu tiên được xây dựng trên Keep Network, tận dụng cơ sở hạ tầng Keep Keep để kiểm duyệt-,lạm phát và tương thức. tBTC là Bitcoin của bạn, có sẵn trên Ethereum. Nó phân cấp phi tập trung, dễ thay đổi, và quan trọng nhất là an toàn.
 
 TBTC là dựa trên Bitcoin ERC-20 đổi theo tỉ lệ 1:1, được tạo ra thông qua một giao thức phi tập trung. Điều này có nghĩa là nếu bạn có 1 TBTC, bạn có thể tự tin rằng bạn có thể đổi lấy 1 BTC. Nó là một chuỗi phụ, hoặc cung cấp chốt. tBTC không phải là một tổng hợp - nó không phải là giá của Bitcoin trên Ethereum, mà là Bitcoin trên Ethereum, mang lại khả năng mở rộng của Bitcoin cho DeFi (và bạn không phải chờ đợi bản cuối cùng).
 
