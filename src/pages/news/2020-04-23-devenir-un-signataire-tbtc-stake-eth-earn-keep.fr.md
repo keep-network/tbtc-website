@@ -16,7 +16,7 @@ Le "stakedrop" est conçu pour permettre à quiconque possédant de l'ETH d'agir
 
 Le *stakedrop* dura à peu près 6 mois, jusqu'à ce que tous les jetons KEEP alloués à la distribution soient épuisés. À ce moment, les signataires auront besoin de placer leur jetons KEEP au travail afin de continuer d'opérer comme signataires. [Lisez en plus sur le stakedrop et devenez signataires avec Keep. ](https://blog.keep.network/how-to-get-keep-stake-eth-42252ee11863)
 
-[Joignez la liste de courriel tBTC](https://tbtc.network/#mailing-list) pour des annonces sur le projet project updates, et posez des questions sur la [ chaine Discord #tbtc ](https://discord.gg/wYezN7v).
+[Joignez la liste de courriel tBTC](https://tbtc.network/#mailing-list) pour des annonces sur le projet project updates, et posez des questions sur la [ chaine Discord #tbtc ](https://chat.tbtc.network).
 
 Ressources additionnelles :
 

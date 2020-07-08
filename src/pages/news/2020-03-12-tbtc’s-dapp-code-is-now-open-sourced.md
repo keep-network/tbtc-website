@@ -15,4 +15,4 @@ tBTC is deployed periodically to Ropsten, corresponding to tagged releases. Toda
 
 Further details and source code are on the way!
 
-In the meantime, check out the [GitHub](https://github.com/keep-network/tbtc) or [join the  mailing list](#mailing-list) for updates on the upcoming launch. To learn more about the technical design, read the [spec](http://docs.keep.network/tbtc/index.pdf), or ask questions [on the #tbtc Discord channel](https://discord.gg/wYezN7v).
+In the meantime, check out the [GitHub](https://github.com/keep-network/tbtc) or [join the  mailing list](#mailing-list) for updates on the upcoming launch. To learn more about the technical design, read the [spec](http://docs.keep.network/tbtc/index.pdf), or ask questions [on the #tbtc Discord channel](https://chat.tbtc.network).

@@ -19,7 +19,7 @@ Additional resources:
 * [GitHub](https://github.com/keep-network/tbtc)
 * [Technical spec](http://docs.keep.network/tbtc/index.pdf)
 * [tbtc.js](https://tbtc.network/news/2020-02-14-announcing-tbtc-js)
-* [Keep #tbtc channel on Discord](https://discord.gg/wYezN7v)
+* [Keep #tbtc channel on Discord](https://chat.tbtc.network)
 
 Follow [#tBTC](https://twitter.com/hashtag/tBTC) on Twitter for news and
 opportunities to participate.
