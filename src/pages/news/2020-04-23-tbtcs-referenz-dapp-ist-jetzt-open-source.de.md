@@ -14,4 +14,4 @@ tBTC wird regelmäßig bei Ropsten implementiert, entsprechend den markierten Ve
 
 Weitere Details und Quellcode sind auf dem Weg!
 
-In der Zwischenzeit informieren Sie sich im [GitHub](https://github.com/keep-network/tbtc) oder tragen Sie sich [in die Mailing-Liste ein](#mailing-list) um über Neuigkeiten zum bevorstehenden Start informiert zu werden. Um mehr über das technische Design zu erfahren, lesen Sie die [spec](http://docs.keep.network/tbtc/index.pdf), oder stellen Sie Fragen [im Discord Kanal #tbtc ](https://discord.gg/wYezN7v).
+In der Zwischenzeit informieren Sie sich im [GitHub](https://github.com/keep-network/tbtc) oder tragen Sie sich [in die Mailing-Liste ein](#mailing-list) um über Neuigkeiten zum bevorstehenden Start informiert zu werden. Um mehr über das technische Design zu erfahren, lesen Sie die [spec](http://docs.keep.network/tbtc/index.pdf), oder stellen Sie Fragen [im Discord Kanal #tbtc ](https://chat.tbtc.network).

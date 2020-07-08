@@ -14,7 +14,7 @@ The stakedrop is designed to let anyone who holds ETH act as a permissionless si
 
 The stakedrop will last for approximately 6 months, until all of the KEEP tokens allocated to the drop are exhausted. After that point, all stakers will be required to stake KEEP to continue to act as signers. [Read more about the stakedrop and becoming a signer from Keep](https://blog.keep.network/how-to-get-keep-stake-eth-42252ee11863).
 
-[Join the tBTC mailing list](https://tbtc.network/#mailing-list) for project updates, and ask questions on the[\#tbtc Discord channel](https://discord.gg/wYezN7v).
+[Join the tBTC mailing list](https://tbtc.network/#mailing-list) for project updates, and ask questions on the[\#tbtc Discord channel](https://chat.tbtc.network).
 
 Additional resources:
 

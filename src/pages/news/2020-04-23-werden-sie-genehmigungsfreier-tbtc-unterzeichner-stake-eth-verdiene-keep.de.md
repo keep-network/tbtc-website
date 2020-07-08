@@ -16,7 +16,7 @@ Der Stakedrop ist so konzipiert, dass jeder, der ETH besitzt, als genehmigungslo
 
 Der Stakedrop wird etwa 6 Monate dauern, bis alle für den Stakedrop zugewiesenen KEEP-Token aufgebraucht sind. Danach müssen alle Staker KEEP einsetzen, um weiterhin als Unterzeichner auftreten zu können. Lesen Sie mehr über den Stakedrop und wie man ein Unterzeichner von Keep](https://blog.keep.network/how-to-get-keep-stake-eth-42252ee11863) wird.
 
-[Melden Sie sich für die tBTC-Mailingliste an](https://tbtc.network/#mailing-list), um Projektaktualisierungen zu erhalten und stellen Sie Fragen im [\#tbtc Discord Kanal](https://discord.gg/wYezN7v).
+[Melden Sie sich für die tBTC-Mailingliste an](https://tbtc.network/#mailing-list), um Projektaktualisierungen zu erhalten und stellen Sie Fragen im [\#tbtc Discord Kanal](https://chat.tbtc.network).
 
 Weitere Ressourcen:
 

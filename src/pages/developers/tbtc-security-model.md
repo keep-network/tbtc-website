@@ -125,4 +125,4 @@ Future improvements to tBTC include [replacing the trusted price feed](https://g
 
 tBTC is created by [Keep](https://keep.network), [Summa](https://summa.one), and the [Cross Chain Group](https://crosschain.group), and is fully open sourced [on GitHub](https://github.com/keep-network/tbtc).
 
-Join [the #tbtc Discord channel](https://discord.gg/wYezN7v) to ask further questions and learn more about the security model.
+Join [the #tbtc Discord channel](https://chat.tbtc.network) to ask further questions and learn more about the security model.
