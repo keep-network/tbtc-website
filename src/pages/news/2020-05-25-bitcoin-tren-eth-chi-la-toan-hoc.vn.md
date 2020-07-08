@@ -69,11 +69,11 @@ Mua lại đơn giản như tạo tiền; 1 TBTC luôn được đổi thành 1 
 
 #### Quy trình đổi:
 
-Ứng dụng đổi cho phép một khoản tiền gửi tBTC được đổi lại cho các khoản BTC ban đầu bằng Token tiền gửi tBTC hợp lệ. Một TDT được gắn với một khoản tiền gửi tBTC cụ thể Bitcoin Bitcoin UTXO. Giữ token cho phép đổi số tiền gửi tBTC sang Bitcoin ban đầu.
+Ứng dụng đổi cho phép một khoản tiền gửi tBTC được đổi lại cho các khoản BTC ban đầu bằng Token tiền gửi tBTC hợp lệ. Một TDT được gắn với một khoản tiền gửi tBTC cụ thể Bitcoin UTXO. Giữ token cho phép đổi số tiền gửi tBTC sang Bitcoin ban đầu.
 
 Trong các thiết kế ban đầu, tiền gửi tBTC ngay lập tức được chuyển đổi thành token ERC-20 TBTC khi đủ điều kiện (bằng chứng tiền gửi). Trong thiết kế cuối cùng của tBTC v1, theo mặc định, tiền gửi đủ điều kiện chỉ cung cấp cho bạn một TDT. Có một hợp đồng riêng, được gọi là Máy bán hàng tự động TBTC, được sử dụng để tạo TBTC để đổi lấy TDT, trừ đi một khoản ký quỹ bằng với phí ký tên cho khoản tiền gửi. Chủ sở hữu TDT có quyền độc quyền mua lại UTXO cơ bản cho đến khi khoản tiền gửi vượt thời hạn (6 tháng), trong khi tạo TBTC từ tiền gửi chuyển quyền sở hữu token đó sang máy bán hàng tự động, từ đó mọi người có thể lấy và đổi tiền gửi . 
 
-DeFi mở rộng quy mô với Ethereum, nhưng hãy tưởng tượng điều gì sẽ xảy ra khi DeFi có quyền truy cập vào thanh khoản Bitcoin Bitcoin. Sắp ra mắt: tBTC đã chạy trên mạng kiểm tra nội bộ của chúng tôi kể từ tháng 10 và sẽ có trên mạng kiểm tra công khai vào đầu Q1.
+DeFi mở rộng quy mô với Ethereum, nhưng hãy tưởng tượng điều gì sẽ xảy ra khi DeFi có quyền truy cập vào thanh khoản Bitcoin. Sắp ra mắt: tBTC đã chạy trên mạng kiểm tra nội bộ của chúng tôi kể từ tháng 10 và sẽ có trên mạng kiểm tra công khai vào đầu Q1.
 
 
 #### Thiết kế nguồn giá:
