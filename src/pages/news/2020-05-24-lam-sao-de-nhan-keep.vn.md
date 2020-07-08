@@ -40,7 +40,7 @@ Cho đến stakesrop, chúng tôi sẽ chạy một mạng thử nghiệm đư�
 
 Chúng tôi tập hợp lại trên Discord để đặt vào mạng thử nghiệm, đảm bảo chắc chắn, cải thiện tài liệu và học hỏi lẫn nhau.
 
-[#Tham gia Discord để bắt đầu Playing for Keeps](https://discord.gg/UhfpKCS)
+[#Tham gia Discord để bắt đầu Playing for Keeps](https://chat.tbtc.network)
 
 Trong khi trò chơi được bật, các đóng góp sẽ được công nhận hai tuần một lần bởi một hội đồng giám khảo cộng đồng và đủ điều kiện nhận KEEP. Không có đóng góp quá nhỏ, miễn là nó hỗ trợ mạng. 
 
