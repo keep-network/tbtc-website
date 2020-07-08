@@ -50,8 +50,14 @@ Giờ đây, tBTC kết hợp tính ổn định và tính thanh khoản của B
 
 Bitcoin chiếm phần lớn giá trị tài sản điện tử trên thế giới, và giờ đây, có một cách an toàn, phi tập trung, minh bạch để BTC đó được đưa vào hoạt động để hỗ trợ các trường hợp sử dụng DeFi đầy hứa hẹn và các dự án khác trên Ethereum. Nhóm của chúng tôi đã xác định một số trường hợp sử dụng DeFi cho tBTC nói riêng và sẽ sớm chia sẻ thông tin và thông báo bổ sung. Cho đến ngày hôm nay, tBTC vẫn [hoạt động trên mạng thử nghiệm Ropsten Ethereum](https://tbtc.network/news/2020-02-14-ropsten). 
 
-Tham gia danh sách nhận thư tBTC [để cập nhật](https://tbtc.network/#mailing-list), bao gồm thông tin về việc ra 
-mắt sắp tới của tBTC trên mạng chính Ethereum. Để tìm hiểu thêm về thiết kế kỹ thuật tBTC, hãy đọc [thông số kỹ thuật](http://docs.keep.network/tbtc/index.pdf). Tham gia kênh [Keep #tbtc trên Discord](https://discord.gg/wYezN7v) để biết các câu hỏi kỹ thuật về tBTC và [tbtc.js](https://tbtc.network/news/2020-02-14-announcing-tbtc-js) và theo dõi các Twitter này để biết tin tức và cơ hội tham gia:
+[Tham gia danh sách email](https://tbtc.network/#mailing-list) để được cập nhật.
 
-[@Keep_project](http://twitter.com/keep_project)
-[@mhluongo](http://twitter.com/mhluongo)
+Nguồn bổ sung:
+
+•	Keep’s [GitHub](https://github.com/keep-network)
+
+•	The tBTC [Technical spec](http://docs.keep.network/tbtc/index.pdf)
+
+•	[tbtc.js](https://tbtc.network/news/2020-02-14-announcing-tbtc-js)
+
+•	The [Keep #tbtc channel on Discord](https://discord.gg/wYezN7v)
