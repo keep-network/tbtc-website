@@ -21,7 +21,7 @@ Because TBTC is interchangeable with TDT, they can be considered two states of t
 
 Finally, TBTC is a Bitcoin stablecoin: it is fully backed by BTC at a rate of 1:1. Because users must deposit BTC in order to mint TBTC, there is always enough Bitcoin locked in the network to support this. tBTC functions as a stablecoin for Bitcoin similarly to how MakerDAO’s DAI functions as a stablecoin for USD.
 
-[Join the tBTC mailing list](https://tbtc.network/#mailing-list) for project updates, and ask questions on the [\#tbtc Discord channel](https://discord.gg/wYezN7v).
+[Join the tBTC mailing list](https://tbtc.network/#mailing-list) for project updates, and ask questions on the [\#tbtc Discord channel](https://chat.tbtc.network).
 
 
 
