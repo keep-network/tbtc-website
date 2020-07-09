@@ -41,22 +41,26 @@ questions:
     answer: >
       ローンチのすぐ後に、おおよそ 80 のプライベートセールでの KEEP 購入者のグループと、その他少数の信頼された関係者が tBTC の署名を行います。
       すぐにより多くの個人が署名者として ETH をステーキングし、参加する機会がアナウンスされるでしょう。
-  - question: Why is this better than other BTC on Ethereum projects?
+  - question: 何故他の BTC をイーサリアムに載せるプロジェクトよりも良いのでしょうか？
     answer: >
-      Some people believe tBTC is better for several reasons.  Some projects have built synthetic price pegs, which is not a true bridge. Other projects are supply pegs, but have centralized parties adding friction to the minting and redemption process and therefore, are not censorship-resistant systems. Some new bridges are decentralized supply pegs, however, those security models are less safe. They rely on a ⅔ honesty assumption, no ETH/extra collateral to back up deposits, and use brand new “roll your own crypto” rather than peer-reviewed, t-ECDSA cryptography).
-  - question: What does a six-month fee period mean? Can BTC be claimed only after six months?
+      いくつかの理由から、 tBTC はより優れていると考える人もいます。他のいくつかのプロジェクトは合成された価格のペッグを用いますが、これは本当のブリッジではありません。また他のプロジェクトは供給量をペッグしますが、中央集権的な第三者が発行と買い戻しのプロセスに軋轢をもたらします。そのため、これらは監視に対する耐性を持ちません。
+      また、いくつかの新しいブリッジは分散化された供給量のペッグを行いますが、セキュリティモデルが安全ではありません。彼らは正直さを仮定しており、預け入れた BTC をバックアップする ETH や追加の担保がなく、 ピアレビューされた t-ECDSA 暗号ではなくオレオレ暗号を使っているのです。
+  - question: 6ヶ月の手数料期間は何を意味していますか？BTC は6ヶ月後にしか請求できないのでしょうか？
     answer: >
-      No, there is no need to return at six months, except if there is a preference to  redeem Bitcoin with a certain UTXO. This is what the NFT receipt, TDT, is for. Most retail DeFi users do not have this consideration, and do not need to return in six months.
-  - question: Are there plans to build a Bitcoin bridge on other chains?
+      いいえ。特定の UTXO からビットコインを引き出したいという希望がないかぎり、6ヶ月待つ必要はありません。これがまさに、NFT レシート (TDT) が存在する理由です。ほとんどの DeFi こうしたことを考慮しないため、6ヶ月待つ必要はないのです。
+  - question: 他のチェーンにビットコインのブリッジを作る計画はありますか？
     answer: >
-      There are no firm plans to build a bridge on other chains. However the <a href="https://www.crosschain.group/" target="_blank">Cross-Chain Group</a> has had early conversations with chains like Cosmos, Zcash, and Polkadot on trustless bridge designs.
-  - question: Does tBTC ownership give you any governance rights?
+      他のチェーン上にブリッジを作るしっかりしたプランはありません。ただ、<a href="https://www.crosschain.group/" target="_blank">Cross-Chain Group</a> は Cosmos や Zcash, Polkadot とトラストレスなブリッジのデザインについて、初期段階のやりとりをしています。
+  - question: tBTC を保有することでガバナンス の権利を得ることができますか？
     answer: >
-      No.
-  - question: Why not just do a price peg?
+      いいえ
+  - question: ただ価格をペッグするだけではダメなのですか？
     answer: >
-      The team behind tBTC is building a supply peg, not a price peg. It’s not a synthetic mechanism. For bitcoin holders, it shouldn’t matter what the actual price is, it just matters that you can redeem it for 1 BTC
-  - question: Why does tBTC need a price feed oracle?
+      tBTC のチームは価格のペッグではなく、供給量のペッグを作ろうとしています。これは合成資産の仕組みではありません。
+      ビットコイン保有者にとって、価格は問題ではありません。ただ間違いなく 1 BTCを引き出せるかどうかが問題なのです。
+  - question: 何故 tBTC はプライスフィードのオラクルを必要とするのでしょうか？
     answer: >
-      tBTC is a sidechain that requires work from anonymous parties, so bonds from those parties must be held to prevent collusion. For now, it is necessary to ensure that signers are bonded in order to protect against misbehavior. A price feed oracle is needed to maintain the BTC/ETH price for this bond.
+      tBTC は匿名の集団の働きを必要とするサイドチェーンです。そのため、この匿名の集団からの債権は共謀を防ぐために保持されなければなりません。
+      意図しない振る舞いから保護するため、署名者は担保がついていることを確実にする必要があります。
+      プライスフィード オラクルはこの担保のために BTC/ETH の価格を維持するために必要なのです。
 ---
