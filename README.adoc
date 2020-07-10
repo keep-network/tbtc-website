@@ -67,12 +67,12 @@ image:https://miro.medium.com/max/1400/0*G4C9mTufYa8WMpsu[width=700,height=300]
 +
 image:https://miro.medium.com/max/1400/0*DveQ8XdDYSIlrB5S[width=700,height=250]
  
-     . Click to Compare & Pull request. 
-+
-image:https://miro.medium.com/max/1400/0*uGSvkuH7YBOgDRAo[width=700,height=250]
+     . Click to Compare & Pull request, when you want to create a PR for just that one commit, then put summarize the changes and review them again before clicking "Create pull request".
  
-     . Click to base repository and choose your repository.  You will see files updated, put summarize those changes and review them again before clicking "Create pull request".
+     . Conversely, when you want to group multiple commits into 1 PR then click to base repository and choose your repository.  You will see files updated, put summarize those changes and review them again before clicking "Create pull request".
 +
+image:https://miro.medium.com/max/1400/0*uGSvkuH7YBOgDRAo[width=700,height=250]     
++ 
 When you have finished the work and want it to be displayed on the website https://tbtc.network/ then create a PR from your repository to base repository: keep-network/tbtc-website.
 +
 All done, please wait for it to be reviewed before merging.
