@@ -14,7 +14,7 @@ tBTC is trustless, allowing users to convert TBTC to BTC at any time with no int
 
 Compound uses cTokens to represent the underlying asset, earn interest, and act as collateral. Once you have your TBTC, you can transfer it to cTBTC. Through this chain -- BTC >> TBTC >> cTBTC -- the underlying BTC is accruing interest on Compound.
 
-[Join the tBTC mailing list](https://tbtc.network/#mailing-list) for project updates, and ask questions on the [\#tbtc Discord channel](https://discord.gg/wYezN7v).
+[Join the tBTC mailing list](https://tbtc.network/#mailing-list) for project updates, and ask questions on the [\#tbtc Discord channel](https://chat.tbtc.network).
 
 Additional resources:
 

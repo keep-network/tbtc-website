@@ -23,7 +23,7 @@ Zusätzliche Ressourcen:
 * [tbtc.js](https://tbtc.network/news/2020-02-14-announcing-tbtc-js)
 
 
-* [Keep #tbtc channel in Discord](https://discord.gg/wYezN7v)
+* [Keep #tbtc channel in Discord](https://chat.tbtc.network)
 
 
 

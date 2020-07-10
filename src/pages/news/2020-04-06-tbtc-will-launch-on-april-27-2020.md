@@ -10,7 +10,7 @@ tBTC will launch on Ethereum mainnet on April 27th, 2020. Users will have full f
 
 Supported by [Keep](http://keep.network), [Summa](https://summa.one/), and the [Cross-Chain Group](https://www.crosschain.group/), tBTC lets people use Bitcoin to act on Ethereum. It has been [live on the Ropsten testnet](https://tbtc.network/news/2020-02-14-ropsten) since February.
 
-[Join the tBTC mailing list](https://tbtc.network/#mailing-list) for project updates, and ask questions on the [\#tbtc Discord channel](https://discord.gg/wYezN7v).
+[Join the tBTC mailing list](https://tbtc.network/#mailing-list) for project updates, and ask questions on the [\#tbtc Discord channel](https://chat.tbtc.network).
 
 Additional resources:
 
