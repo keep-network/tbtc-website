@@ -53,7 +53,9 @@ Copy URL and navigate to the directory where you want to save this project on yo
     
     . run command *git clone url_just_copied*
 
-4. Run the website and your computer to translate.
+4. Run the website and your computer to translate. 
+
+    Navigate to the directory /tbtc-website
 
     . Install dependencies with command : npm install
     
