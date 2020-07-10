@@ -22,13 +22,6 @@ Open http://localhost:3000 to view it in the browser.
 The page will reload if you make edits. You will also see any lint errors in the
 console.
 
-== Deployment
-
-Currently the site is auto-deployed on master merge to Google Cloud Storage
-and fronted by Cloudflare at https://tbtc.network. Pull requests (including
-those created by the CMS) are auto-deployed to subdirectories at
-https://preview.tbtc.network by branch name.
-
 === How to contribute translations
 
 ==== Environment required 
@@ -86,6 +79,14 @@ All done, please wait for it to be reviewed before merging.
 
 Contact https://chat.tbtc.network/[The Keep #tbtc channel on Discord] if have any problem.
 
+
+
+== Deployment
+
+Currently the site is auto-deployed on master merge to Google Cloud Storage
+and fronted by Cloudflare at https://tbtc.network. Pull requests (including
+those created by the CMS) are auto-deployed to subdirectories at
+https://preview.tbtc.network by branch name.
 
 == License
 
