@@ -45,9 +45,9 @@ questions:
   - question: 是否有跨链计划?
     answer: >
       目前还没有在其他链条上建造桥梁的明确计划。不过我们与 <a href="https://www.crosschain.group/" target="_blank">Cross-Chain Group</a> 一些可跨链团队有过关于跨链的沟通，比如：Cosmos, Zcash, 和 Polkadot.
-  - question: Does tBTC ownership give you any governance rights?
+  - question: tBTC所有权是否有管理权？
     answer: >
-      No.
+      没有
   - question: 为什么不直接实行价格挂钩呢?
     answer: >
       tBTC的团队正在建立一个供应挂钩，而不是价格挂钩。它不是一个合成的机制。对于比特币持有者来说，实际价格是多少并不重要，重要的是你能用1比特币兑换它
