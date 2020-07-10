@@ -82,7 +82,7 @@ When you have finished the work and want it to be displayed on the website https
 +
 All done, please wait for it to be reviewed before merging.
 
-
+Contact https://chat.tbtc.network/[The Keep #tbtc channel on Discord] if have any problem.
 
 
 == License
