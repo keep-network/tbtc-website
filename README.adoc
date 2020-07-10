@@ -29,15 +29,15 @@ and fronted by Cloudflare at https://tbtc.network. Pull requests (including
 those created by the CMS) are auto-deployed to subdirectories at
 https://preview.tbtc.network by branch name.
 
-== How to contribute translations
+=== How to contribute translations
 
-=== Environment required 
+==== Environment required 
 
 https://git-scm.com/[Git]
 
 https://nodejs.org/en/[NodeJs]
 
-=== Run website and translate
+==== Run website and translate
 
 1. You have to fork tbtc-website to your repository -> Click the fork on the top right corner
 
