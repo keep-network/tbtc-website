@@ -29,6 +29,62 @@ and fronted by Cloudflare at https://tbtc.network. Pull requests (including
 those created by the CMS) are auto-deployed to subdirectories at
 https://preview.tbtc.network by branch name.
 
+== How to contribute translations
+
+=== Environment required 
+
+https://git-scm.com/[Git]
+
+https://nodejs.org/en/[NodeJs]
+
+=== Run website and translate
+
+1. You have to fork tbtc-website to your repository -> Click the fork on the top right corner
+
+2. After the fork is successful, the code will reside in your repository. We will add new languages for the website if it does not already exist.
+
+    . Open file *gatsby-config.js* and check *supportedLocales*. Suppose you need to support Korean language but the website does not yet support then you will update *supportedLocales*. Add ko to the list _[“en”, “ru”, “de”, “es”, “fr”, “pl”, “ja”,”vn” , “ko”]_ and click to *Commit changes*.
+
+3. Clone project to your computer. 
+
+    . image:https://miro.medium.com/max/998/0*MY40WheAmbj_1t5y[width=400,height=250]
++
+Copy URL and navigate to the directory where you want to save this project on your computer.
+    
+    . run command *git clone url_just_copied*
+
+4. Run the website and your computer to translate.
+
+    . Install dependencies with command : npm install
+    
+    . Runs the app in the development mode : npm run develop
+
+    . When successful you will see the log 
++    
+image:https://miro.medium.com/max/1400/0*G4C9mTufYa8WMpsu[width=700,height=300]
+    
+    . Now you can go http://localhost:8000/ and see the website that has added your language. To translate access to http://localhost:8000/admin/, click to Logging in and grant GitHub usage rights. Now you will see a set of categories such as News, Resources … and you will see that your language has been added. Let’s translate it.
+    . Have to save it after translated. Every time you save a file, it is automatically submitted to Github.
+ 
+5. Create a pull request
+
+    . Every time you save a file, it is automatically submitted to Github. You will see a suggestion on creating a pull request.
++
+image:https://miro.medium.com/max/1400/0*DveQ8XdDYSIlrB5S[width=700,height=250]
+ 
+     . Click to Compare & Pull request , please merge to your branch master first.
++
+image:https://miro.medium.com/max/1400/0*uGSvkuH7YBOgDRAo[width=700,height=250]
+ 
+     . Click to base repository and choose your repository.  You will see files updated, put summarize those changes and review them again before clicking "Create pull request".
++
+When you have finished the work and want it to be displayed on the website https://tbtc.network/ then create a PR from your repository to base repository: keep-network/tbtc-website.
++
+All done, please wait for it to be reviewed before merging.
+
+
+
+
 == License
 
 tBTC and this site are released under the link:./LICENSE[MIT License].
