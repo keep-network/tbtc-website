@@ -19,4 +19,4 @@ But while Ethereum is popular as a home for DeFi, roughly two thirds of the worl
 tBTC bridges this gap, letting people use their BTC to participate in DeFi platforms on Ethereum. Users deposit BTC and mint TBTC, an ERC-20 token backed 1:1 by Bitcoin. They can then use TBTC to participate in projects including Maker DAO and Compound, which represent a majority of the world’s DeFi ecosystem.
 
 **\
-Join the [\#tbtc Discord channel](https://discord.gg/wYezN7v) to learn more about tBTC. Join the tBTC mailing list [here](https://tbtc.network/#mailing-list).**
+Join the [\#tbtc Discord channel](https://chat.tbtc.network) to learn more about tBTC. Join the tBTC mailing list [here](https://tbtc.network/#mailing-list).**

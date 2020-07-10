@@ -4,37 +4,38 @@ path: /
 title: Home
 hero:
   buttons:
-    - text: Get Email Updates
+    - text: E-Mail-Updates erhalten
       url: '/#mailing-list'
-    - text: Start Building
+    - text: Entwicklung beginnen.
       url: /developers
-  subtitle: Deposit and redeem BTC in DeFi without intermediaries.
-  title: The safe way to earn with your Bitcoin.
+  subtitle: Einzahlung und Einlösung von BTC in DeFi ohne Vermittler.
+  title: 'Der sichere Weg, mit deinen Bitcoin zu verdienen.'
 features:
-  - description: 'Every TBTC is backed 1:1 with BTC'
-    title: Backed
-  - description: No intermediaries - Redeem TBTC for BTC at any time
-    title: Permissionless
-  - description: Audited and open-source
-    title: Secure
-  - description: 3 steps to convert from BTC to TBTC and back
-    title: Simple
+  - description: 'Jedes TBTC wird 1:1 mit BTC abgesichert'
+    title: Abgesichert
+  - description: Keine Vermittler - TBTC jederzeit gegen BTC einlösen
+    title: Genehmigungslos
+  - description: Geprüft und Open-Source
+    title: Sicher
+  - description: 3 Schritte zur Konvertierung von BTC zu TBTC und zurück
+    title: Einfach
 spotlight_1:
   body: >-
-    tBTC will begin moving toward full mainnet launch over the coming weeks.
-    Launch will occur over a series of milestones starting April 24th.
+    tBTC wird sich in den kommenden Wochen auf den vollständigen Start des
+    Mainnetzes zubewegen. Der Start wird über eine Reihe von Meilensteinen ab
+    dem 24. April erfolgen.
   button:
-    text: Read more
+    text: Lesen Sie mehr
     url: 'https://tbtc.network/news/2020-04-24-tbtc-launch-key-dates/'
-  label: Announcement
-  title: 'tBTC Launch: Key Dates'
+  label: Ankündigung
+  title: 'tBTC-Lancierung: Eckdaten'
 spotlight_2:
   button:
-    text: Developer Toolkit
+    text: Entwickler Toolkit
     url: /developers
-  label: Developers
-  title: Integrate TBTC to add Bitcoin to your dApp
+  label: Entwickler
+  title: 'Integrieren Sie TBTC, um Bitcoin zu Ihrer dApp hinzuzufügen'
 integrations_section:
-  title: Integrations
+  title: Integrationen
 ---
 

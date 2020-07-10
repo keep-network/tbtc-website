@@ -1,15 +1,15 @@
 ---
-template: 'developers-page'
+template: developers-page
 path: /developers
-title: Build with tBTC
+title: Entwickeln auf tBTC
 ---
-Developers can build on tBTC. There are several resources to help devs use tBTC infrastructure to bring Bitcoin to Ethereum. Get started with the following resources:
+Entwickler können auf dem tBTC aufsetzen. Es gibt verschiedene Ressourcen, die Entwicklern helfen, die tBTC-Infrastruktur zu nutzen, um Bitcoin zu Ethereum zu bringen. Beginnen Sie mit den folgenden Ressourcen:
 
-- [How to Integrate TBTC into Your Defi Dapp](/developers/how-to-integrate-tbtc-into-your-defi-dapp)
-- The Ropsten-connected [tBTC dApp](https://dapp.test.tbtc.network/)
+- [Wie Sie TBTC in Ihre Defi Dapp integrieren](/developers/how-to-integrate-tbtc-into-your-defi-dapp)
+- Das Ropsten-connected [tBTC dApp](https://dapp.test.tbtc.network/)
 - [tBTC smart contracts](https://github.com/keep-network/tbtc)
 - [tbtc.js](https://github.com/keep-network/tbtc.js)
-- [The technical specification](http://docs.keep.network/tbtc/)
-- [The Solidity API documentation](http://docs.keep.network/tbtc/solidity/)
+- [Technische Spezifikationen](http://docs.keep.network/tbtc/)
+- [Die Solidity-API-Dokumentation](http://docs.keep.network/tbtc/solidity/)
 
-Developers are already building on tBTC using the tools above. The hackathon at ETHDenver [produced several excellent applications](https://blog.keep.network/bitcoin-earn-wins-ethdenver-tbtc-hackathon-prize-5233ce805468) that may provide examples.
+Entwickler bauen bereits auf dem tBTC auf, indem sie die oben genannten Werkzeuge verwenden. Der Hackathon an der ETHDenver [hat mehrere ausgezeichnete Anwendungen hervorgebracht] (https://blog.keep.network/bitcoin-earn-wins-ethdenver-tbtc-hackathon-prize-5233ce805468), die Beispiele liefern können.
