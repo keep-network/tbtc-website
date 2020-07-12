@@ -2,6 +2,11 @@
 template: developers-page
 path: /developers
 title: Construye con tBTC
+heading: Construye con tBTC
+description: '-'
+date: 2020-06-28T05:00:00.000Z
+tags:
+  - tBTC
 ---
 Desarrolladores, ¡pueden construir en tBTC! Existen varios recursos para ayudarles a usar la infraestructura tBTC para llevar Bitcoin a Ethereum. Comienza con los siguientes:
 
