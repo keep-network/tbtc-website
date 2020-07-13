@@ -4,18 +4,18 @@ title: tBTC su Ropsten
 description: tBTC su Ropsten
 date: 2020-02-14T14:44:00.000Z
 ---
-tBTC is Open-Source and Live on Ropsten
+tBTC è open source e live su Ropsten
 
-The first release of tBTC is now live on Ropsten, the public Ethereum testnet.
+La prima release di tBTC è live su Ropsten, la rete test di Ethereum.
 
-To try minting your first TBTC, visit the [reference dApp](https://dapp.test.tbtc.network). Make sure you're loaded up on testnet bitcoin and Ropsten ether, and you can be the first TBTC whale :sunglasses_emoji:
+Per minare i tuoi primi tBTC, guarda la [dAPP di riferimento](https://dapp.test.tbtc.network). Assicurati di aver caricato qualche Bitcoin sulla testnet di Ropsten e sii pronto a diventare la prima whale di tBTC :sunglasses_emoji:
 
-While the code undergoes audit and further testing, development is now [public on GitHub](https://github.com/keep-network/tbtc).  That means you can begin building Bitcoin experiences on DeFi apps like Compound and Uniswap, today. To learn more about this release, you can:
+Mentre il codice è attualmente ancora sotto audit e ulteriori test, gli aggiornamenti sullo sviluppo sono [pubblici su GitHub](https://github.com/keep-network/tbtc). Ciò vuol dire che puoi iniziare a costruire la tua esperienza con Bitcoin sulle applicazioni DeFi come UniSwap e Compound. Per altro materiale su questa release, puoi:
 
-\-> [Read the latest spec](https://docs.keep.network/tbtc/index.pdf)
+\-> [Leggere le specifiche](https://docs.keep.network/tbtc/index.pdf)
 
-\-> [Browse the source code](https://github.com/keep-network/tbtc/tree/master/solidity)
+\-> [Approfondire il codice sorgente](https://github.com/keep-network/tbtc/tree/master/solidity)
 
-\-> [Play with the dApp](https://dapp.test.tbtc.network/)
+\-> [Utilizzare la dAPP](https://dapp.test.tbtc.network/)
 
-\-> [Build on testnet](https://www.npmjs.com/package/@keep-network/tbtc.js)
+\-> [Sviluppare sulla Testnet](https://www.npmjs.com/package/@keep-network/tbtc.js)
