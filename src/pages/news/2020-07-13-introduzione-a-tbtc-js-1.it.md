@@ -2,7 +2,7 @@
 template: news-item
 title: Introduzione a tBTC.js
 description: tBTC.js
-date: 2020-07-13T12:08:01.159Z
+date: 2020-02-13T12:08:01.159Z
 ---
 Una nuova libreria, [`tbtc.js`](https://github.com/keep-network/tbtc.js), è online su GitHub, e rappresenta il modo più semplice e sicuro per integrare Bitcoin nella tua dAPP Ethereum.
 
