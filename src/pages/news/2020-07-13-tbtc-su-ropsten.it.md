@@ -1,0 +1,21 @@
+---
+template: news-item
+title: tBTC su Ropsten
+description: tBTC su Ropsten
+date: 2020-02-14T14:44:00.000Z
+---
+tBTC is Open-Source and Live on Ropsten
+
+The first release of tBTC is now live on Ropsten, the public Ethereum testnet.
+
+To try minting your first TBTC, visit the [reference dApp](https://dapp.test.tbtc.network). Make sure you're loaded up on testnet bitcoin and Ropsten ether, and you can be the first TBTC whale :sunglasses_emoji:
+
+While the code undergoes audit and further testing, development is now [public on GitHub](https://github.com/keep-network/tbtc).  That means you can begin building Bitcoin experiences on DeFi apps like Compound and Uniswap, today. To learn more about this release, you can:
+
+\-> [Read the latest spec](https://docs.keep.network/tbtc/index.pdf)
+
+\-> [Browse the source code](https://github.com/keep-network/tbtc/tree/master/solidity)
+
+\-> [Play with the dApp](https://dapp.test.tbtc.network/)
+
+\-> [Build on testnet](https://www.npmjs.com/package/@keep-network/tbtc.js)
