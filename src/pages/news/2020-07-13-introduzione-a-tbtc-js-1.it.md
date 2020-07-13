@@ -6,7 +6,7 @@ date: 2020-07-13T12:08:01.159Z
 ---
 Una nuova libreria, [`tbtc.js`](https://github.com/keep-network/tbtc.js), è online su GitHub, e rappresenta il modo più semplice e sicuro per integrare Bitcoin nella tua dAPP Ethereum.
 
-`tbtc.js` rende facile per gli sviluppatori integrare Bitcoin in ogni dAPP Ethereum. Ciò significa che prodotti come [Compound](https://compound.finance/)*,* dydx[](https://dydx.exchange/) *e* Aave[](https://aave.com/) possono garantire ai Bitcoin hodlers che vogliono sfruttare la DeFi, una esperienza pressocchè perfetta.
+`tbtc.js` rende facile per gli sviluppatori integrare Bitcoin in ogni dAPP Ethereum. Ciò significa che prodotti come [Compound](https://compound.finance/)*,* [dydx](https://dydx.exchange/) e [Aave](https://aave.com/) possono garantire ai Bitcoin hodlers che vogliono sfruttare la DeFi, una esperienza pressocchè perfetta.
 
 La libreria risolve il problema dell'integrazione cross-chain, interagendo direttamente con il network di Bitcoin attraverso un client Electrum ad un client Ethereum, grazie ad un protocollo Web3.
 
