@@ -6,23 +6,21 @@ date: 2020-04-29T07:33:00.000Z
 ---
 2020-04-29
 
-The launch of[tBTC](https://tbtc.network/), the open-source project that allows people to use Bitcoin safely in Ethereum DeFi apps, began this week with the support of more than 40 companies including MakerDAO, Compound and Uniswap, which collectively represent[three quarters](https://defipulse.com/)of the total DeFi market.
+Il lancio di [tBTC](https://tbtc.network/), il progetto open-source che permette agli utenti di usare i propri BTC in sicurezza sulla DeFi di Ethereum, inizia questa settimana col supporto di più di 40 società, incluso MakerDAO, Compound e UniSwap, che complessivamente rappresentano i 3/4 del totale del mercato DeFi.
 
-tBTC, a project developed by[Summa](https://summa.one/),[Cross-Chain Group](https://www.crosschain.group/), and[Keep Network](http://keep.network/), lets[BTC holders safely convert their BTC](https://blog.keep.network/introducing-tbtc-the-safest-way-to-earn-with-your-bitcoin-fec077f171f4)into the ERC-20 TBTC token and vice-versa at any time at a rate of 1:1, with no signoff needed from an intermediary. Users’ BTC is safeguarded by groups of “signers” selected by a random beacon to minimize counterparty risk.
+tBTC, un progetto sviluppato da [Summa](https://summa.one/),[Cross-Chain Group](https://www.crosschain.group/), e [Keep Network](http://keep.network/), consente ai [BTC holders di convertire in sicurezza i loro BTC ](https://blog.keep.network/introducing-tbtc-the-safest-way-to-earn-with-your-bitcoin-fec077f171f4)in un token ERC-20 (TBTC) e viceversa, ad un rapporto di cambio di 1:1 senza necessità di firme da intermediari. L'utente di BTC è protetto da un gruppo di "signers" selezionati casualmente dalla "random beacon" allo scopo di minimizzare il rischio di controparte.
 
-The launch began Monday, April 27, with the deployment of the KEEP token contract and all custodial and staking contracts. KEEP is the native work token of the Keep Network, whose random beacon selects tBTC signers. Signers must stake both ETH and KEEP in order to perform functions that facilitate the depositing and redeeming of BTC.
+Il lancio inizia Lunedi 27 Aprile, con il rilascio del contratto del token KEEP, insieme al contratto di custodia e di staking. KEEP è il token nativo della rete di KEEP, dalla quale il sistema di random beacon pesca in modo del tutto casuale i tBTC signers. I Signers devono avere in staking sia ETH che KEEP, allo scopo di permettere al sistema il suo funzionamento, che facilita il deposito e il riscatto dei BTC.
 
-On April 24, the MakerDAO community voted to finalize their first ETHBTC feed, deployed specifically for tBTC, and to whitelist the future tBTC contract. The random beacon will deploy May 4 and a week later tBTC will launch on mainnet using MakerDAO’s ETHBTC feed. Starting[June 8th anyone will be able to join tBTC’s signers in the KEEP stakedrop](https://www.crowdcast.io/e/keep-stakedrop---live/register), earning fees for acting as signers on the network.
+Il 24 Aprile, la community di MakerDAO approva con votazione il primo feed ETHBTC specificamente progettato per tBTC e per il futuro smart contract di tBTC. La random beacon verrà rilasciata il 4 Maggio e una settimana successiva sarà il turno di tBTC, attraverso il feed di MakerDAO. Dall'8 di giugno [chiunque potrà diventare tBTC signer grazie al programma KEEP stakedrop](https://www.crowdcast.io/e/keep-stakedrop---live/register), guadgnandone commissioni sulle transazioni di rete.
 
-Supporters announced to date include integrations with decentralized platforms, aggregators, exchanges, and wallets as well as stakers, signers, auditors and custody providers. Initially there will be about 80 stakers including Paradigm, a16z, Fenbushi Capital, Polychain Capital and Draper Associates.
+I sostenitori annunciati sono piattaforme decentralizzate di integrazione, exchanges, aggregatori, wallets, stakers e servizi di custodia. Inizialmente avremo circa 80 stakers inclusi Paradigm, a16z, Fenbushi Capital, Polychain Capital e Draper Associates.
 
-Join the discussion on[Discord](https://discord.gg/2HnCxsd)to[Play for Keeps and earn your spot to stake on mainnet](https://blog.keep.network/how-to-play-for-keeps-297f246455d4)as part of the community of stakers and builders.
+Partecipa alla discussione su [Discord ](https://discord.gg/2HnCxsd)al canale [Play for Keeps e guadagna la tua parte grazie allo staking sulla mainnet ](https://blog.keep.network/how-to-play-for-keeps-297f246455d4) come membro della community di stakers e sviluppatori.
 
 \---
 
-Below is a full list of groups supporting tBTC at launch:
-
-tBTC integrations:
+Di seguito una lista di attori che supporteranno tBTC al lancio:
 
 * MakerDAO and OasisDEX
 * Compound
@@ -49,7 +47,7 @@ tBTC integrations:
 * Exodus
 * Wyre
 
-Groups Supporting tBTC & Keep Product Development
+Gruppi che supportano lo sviluppo di tBTC e di Keep Network:
 
 * Summa
 * TokenSoft
