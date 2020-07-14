@@ -1,7 +1,7 @@
 ---
 template: 'about-page'
 Atalho: /about
-Título: Sobre tBTC
+Título: Sobre tBTC.
 Apoiadores:
   - nome: Keep
     Descrição: Keep é uma camada de privacidade para o Ethereum. O “keep” é um contentor da cadeia [off-chain] para dados privados. Estes ajudam os contratos a aproveitarem todo o poder da cadeia de bloco [blockchain] pública — permitindo uma interação profunda com os dados privados. A rede Keep, sustentada pelos tokens Keep, encarrega-se da custódia dos tBTC.
