@@ -8,7 +8,7 @@ tBTC è open source e live su Ropsten
 
 La prima release di tBTC è live su Ropsten, la rete test di Ethereum.
 
-Per minare i tuoi primi tBTC, guarda la [dAPP di riferimento](https://dapp.test.tbtc.network). Assicurati di aver caricato qualche Bitcoin sulla testnet di Ropsten e sii pronto a diventare la prima whale di tBTC :sunglasses_emoji:
+Per minare i tuoi primi TBTC, guarda la [dAPP di riferimento](https://dapp.test.tbtc.network). Assicurati di aver caricato qualche Bitcoin sulla testnet di Ropsten e sii pronto a diventare la prima whale di tBTC :sunglasses_emoji:
 
 Mentre il codice è attualmente ancora sotto audit e ulteriori test, gli aggiornamenti sullo sviluppo sono [pubblici su GitHub](https://github.com/keep-network/tbtc). Ciò vuol dire che puoi iniziare a costruire la tua esperienza con Bitcoin sulle applicazioni DeFi come UniSwap e Compound. Per altro materiale su questa release, puoi:
 
