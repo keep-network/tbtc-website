@@ -2,7 +2,7 @@
 template: resource
 title: Come funziona il token KEEP
 heading: Keep Token
-description: KEEP è utilizzato per assegnare lavoro su Keep Network
+description: KEEP è utilizzato per svolgere lavoro sul Keep Network
 date: 2020-04-15T11:53:37.823Z
 tags:
   - keep
