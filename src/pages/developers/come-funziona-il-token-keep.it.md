@@ -7,21 +7,19 @@ date: 2020-04-15T11:53:37.823Z
 tags:
   - keep
 ---
-
-
 Il token nativo di Keep, KEEP, sostiene il network e supporta tutte le dAPP costruite sopra. A chiunque voglia far parte del network è richiesto di detenere KEEP; i membri sono abilitati a ricevere ricompense svolgendo lavoro per la piattaforma. Questo lavoro consiste nell'offrire potenza computazionale e disponibilità necessaria per selezionare ed estrarre fuori dal network i "keeps" insieme ad altri dati associati. I membri sono selezionati casualmente per coordinare un protocollo di generazione di chiave distribuita, una chiave pubblica ECDSA, usata per produrre indirizzi di un wallet che poi va ad essere pubblicato sulla chain ospitante.
 
 KEEP è l'incentivo chiave che guida un comportamento lecito e costruttivo, facilita efficienza e fiducia e promuove adozione e crescita del network. E' un token di lavoro -- il suo possesso conferisce il diritto di eseguire funzioni chiave sul network. Per questo processo, i possessori del token devono assegnare ad un minimo numero di KEEP la funzione di collaterale. Le opportunità di lavoro sono assegnate casualmente, ma nel lungo termine la quantità di lavoro assegnata è sempre proporzionale alla quantità di KEEP detenuta a collaterale. Per esempio, una persona che possiede 1000 KEEP può aspettarsi di essere selezionata per eseguire un lavoro 10 volte più frequentemente di un utente che ne detiene 100, guadagnandone quindi più commissioni.
 
 L'architettuta del network incrementa l'utilità del token. I KEEP conferiscono agli holders una ricompensa proporzionale alla quantità collateralizzata, e quindi all'"impegno" trasferito sul network. L'idea è che chi è più coinvolto e finanziariamente dedito al progetto, percepisce maggiori ricompense. Lo staking minimo richiesto è alto al lancio della mainnet, ma diminuisce gradualmente nei successivi 6 mesi.
 
-Interested readers should check out[Mulitcoin’s deep dive into work tokens](https://multicoin.capital/2018/02/13/new-models-utility-tokens/)for further insights on the concept.
+I lettori interessati dovrebbero leggere [Mulitcoin’s deep dive into work tokens ](https://multicoin.capital/2018/02/13/new-models-utility-tokens/)per ulteriori dettagli sulla questione.
 
 **Libertà, non coercizione**
 
-L'etica di Keep è basata sulla assegnazione di ampia autonomia all'holderKeep’s ethos is to give the token holder the maximum possible autonomy. We believe in designing systems of incentives, not in prescribing behavior. As such, the KEEP token offers flexibility for holders and operators to decide where they want to put their risk and how to manage it. We are interested in building ecosystems that allow people to act as they wish, and in which the aggregate behavior of all participants results in a net benefit and the growing adoption of the network and its token.
+L'etica di Keep è basata sulla assegnazione di ampia autonomia all'holder. Crediamo in un sistema di incentivi, non di obblighi. Quindi il token KEEP offre flessibilità nella gestione e allocazione del rischio. Siamo interessati a realizzare un ecosistema dove le persone interagiscono come desiderano, e dove comportamenti leciti di tutti i partecipanti determinano un beneficio per l'adozione e per la crescita di valore dello stesso token.
 
-Keep is designed to support an unlimited array of applications and to give members total freedom in choosing where to invest their resources and time. Keep members must “approve” any app on the network in order to be considered for work within that app. Each project will have its own specific parameters and requirements, and it’s up to KEEP holders to decide whether the specific incentives of each justify the risks and the time commitment.
+Keep è progettato per supportare molteplici livelli applicativi e per dare ai membri totale libertà nella scelta di quanto investire, quali risorse e quanto tempo impiegare. I membri di Keep sono chiamati ad "approvare" qualsiasi progetto sul network, allo scopo di essere candidabili a svolgervi del lavoro. Ogni progetto ha i suoi specifici parametri e  designed to support an unlimited array of applications and to give members total freedom in choosing where to invest their resources and time. Keep members must “approve” any app on the network in order to be considered for work within that app. Each project will have its own specific parameters and requirements, and it’s up to KEEP holders to decide whether the specific incentives of each justify the risks and the time commitment.
 
 The only component that all KEEP service providers must participate in is the random beacon, which selects groups of signers for the apps built on Keep. When someone using one of these apps needs the beacon to generate a random number, that user pays a fee which is then split between the delegators participating in the beacon.
 
