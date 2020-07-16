@@ -1,8 +1,8 @@
 ---
 template: news-item
-title: Nhiều lô lớn làm cho tBTC đáng tin cậy và dễ tiếp cận với mọi người
-description: Nhiều lô lớn làm cho tBTC đáng tin cậy và dễ tiếp cận với mọi người
-date: 2020-04-23T15:19:06.656Z
+title: Tính minh bạch tại Keep
+description: Chúng tôi đã tham gia vào Sổ đăng ký tiết lộ nguồn mở của Messari 
+date: 2020-07-12T15:19:06.656Z
 ---
 
 ![](https://cdn.steemitimages.com/DQmSvWqwzPt3x43WrV7sd1vV2BaRZA5aV2txEPc1AzDaq9s/1.jpeg)
