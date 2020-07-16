@@ -31,11 +31,11 @@ La tokenomics di KEEP è relativamente semplice. Ad un livello molto basilare, K
 
 La filosofia di KEEP è incentrata sul principio che le persone devono avere libera scelta, e questo genera la nascita di incentivi sani e comportamenti corretti, rispetto invece alla possibilità che tali soggetti vengano costretti o obbligati a compiere determinate azioni. KEEP, un token di lavoro, incardina il suo design su questo principio. Esso offre agli holders la capacità di scegliere su quale progetto rischiare e quanti token impegnare. Non abbiamo dubbi che tale percorso sia conservativo. Alcuni parteciperanno in tutte le dAPP, altri invece a poche o altri ancora addirittura a due o tre. Il team di Keep non giudica le scelte dei membri/holders di KEEP. Siamo solo sicuri che nell'insieme, tutto l'ecosistema sarà in grado di generare con le proprie scelte un valore per tutti i partecipanti.
 
-[JEntraoin the tBTC mailing list](https://tbtc.network/#mailing-list)for updates.
+[Entra nella tBTC mailing list](https://tbtc.network/#mailing-list) per restare aggiornato.
 
-Additional resources:
+Ulteriori Risorse:
 
-* Keep’s[GitHub](https://github.com/keep-network)
-* The tBTC[Technical spec](http://docs.keep.network/tbtc/index.pdf)
+* Keep [GitHub](https://github.com/keep-network)
+* tBTC[ Documento Tecnico](http://docs.keep.network/tbtc/index.pdf)
 * [tbtc.js](https://tbtc.network/news/2020-02-14-announcing-tbtc-js)
-* The[Keep #tbtc channel on Discord](https://discord.gg/wYezN7v)
+* Canale [Keep #tbtc su Discord](https://discord.gg/wYezN7v)
