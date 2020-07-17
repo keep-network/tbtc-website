@@ -5,7 +5,7 @@ module.exports = {
     description: "1. Deposit BTC. 2. Mint TBTC. 3. Lend and earn interest on your BTC.",
     url: "https://tbtc.network",
     // supported 639-1 language codes
-    supportedLocales: ["en", "ru", "de", "es", "fr", "pl", "ja", "vn", "id", "zh"],
+    supportedLocales: ["en", "ru", "de", "es", "fr", "pl", "ja", "vn", "id", "zh", "pt"],
     defaultLocale: "en",
   },
   plugins: [
