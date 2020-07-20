@@ -7,67 +7,53 @@ date: 2020-01-04T12:07:14.261Z
 tags:
   - developers
 ---
-tBTC incorporates novel design features that carry important implications for users. This piece explains four of these: TDT receipts, multiple lot sizes, Keep&#39;s random beacon, and threshold signatures.
+tBTC è stato disegnato in modo da produrre per gli utenti una nuova e importante esperienza di utilizzo. Questo articolo vuole spiegarne alcune caratteristiche: Ricevute TDT, dimensioni del lotto, Keep random beacon e la soglia minima di firme (threshold signatures)
 
-## TBTC Deposit Token (TDT)
+TBTC Token Deposito (TDT) il TDT è un NFT (token non fungibile) generato quando un utente richiede un deposito. Un TDT è un NFT di tipo ERC-721 che serve da controparte a TBTC. Rappresenta quindi una richiesta di avvio di deposito sottesa ad una UTXO sulla blockchain di Bitcoin.
 
-The TBTC Deposit Token (TDT) is a non-fungible token that is minted when a user requests a deposit. A TDT is a non-fungible ERC-721 token that serves as a counterpart to TBTC. It represents a claim to a deposit&#39;s underlying UTXO on the Bitcoin blockchain.
+I depositi TBTC possono essere bloccati o sbloccati. Un deposito bloccato può essere solo riscattato dal titolare-richiedente originario in possesso del TDT relativo. Ogni TDT è unico e collegato al deposito generato, e attribuisce diritti esclusivi fino a 6 mesi al suo titolare.
 
-TBTC deposits can be locked or unlocked. A locked deposit can only be redeemed by the deposit owner with the corresponding TDT. Each TDT is unique to the deposit that mints it and carries the exclusive right for up to a 6 month term to redeem the deposit.
+Una volta che il deposito viene certificato con una reale transazione sulla blockchain di Bitcoin, il titolare può chiederne il riscatto e, dopo aver corrisposto una piccola commissione, restare garantito dalla stessa UTXO che ha "finanziato" il deposito stesso.
 
-Once a deposit is fully qualified through a proof of the funding Bitcoin transaction (called the SPV Relay), the holder can request redemption, and, after paying any outstanding signing fees, be guaranteed the same UTXO that funded the deposit on the Bitcoin network.
+TDT e TBTC sono interscambiabili attraverso un contratto chiamato "the vending machine", che gestisce gli scambi da TDT a TBTC e viceversa.
 
-The TDT and TBTC are interchangeable through a contract called the vending machine, which manages the exchange of TDT for TBTC and vice-versa.
+A ogni TDT corrisponde un TBTC. A ogni TBTC bruciato, corrisponde in ritorno uno specifico TDT. Il TDT è necessario per riscattare un deposito bloccato di BTC. Considera il TDT una specie di ricevuta fiscale senza la quale è impossibile avviare una procedura di rimborso.
 
-* Given a TDT, it will mint TBTC.
-* Given TBTC, it will burn it and return a specific TDT.
+I TDT sono trasferibili. Un holder può scegliere di tradarli o usarli a collaterale.
 
-*The TDT is required to redeem a locked BTC deposit*. Think of it like the ticket from a strict coat check: without it, you can&#39;t get your BTC back.
+Nel caso di comportamenti malevoli, il possessore di TDT è comunque garantito dalla collateralizzazione richiesta al gruppo di signers. Se il deposito è riscattato da un altro utente dopo la scadenza dei 6 mesi, il possessore di TDT è comunque garantito a compensazione dai TBTC (al netto delle commissioni). Considera che il possessore di TDT può sempre riscattare i BTC dopo la scadenza del periodo di 6 mesi, sempre se altri utenti non ci abbiano pensato prima.
 
-TDTs are transferable. Holders may choose to trade them, for example, or use them as collateral elsewhere.
+Poichè c'è più convenienza a rubare un deposito da 1 BTC piuttosto che un altro da 0.001 BTC, il deposito da 1 BTC è più soggetto ad attacchi come quelli di tipo re-orgs. Come NFT, TDT consente che tale rischio sia già prezzato al suo interno, e questo aspetto è dirimente per le applicazioni che usano BTC come collaterale. Qualsiasi potenziale utente di TDT necessita di valutare per bene il rischio. TDT è disegnato per fornire un vantaggio isolando il rischio, poichè un attacco nei confronti di un deposito a garanzia di un TDT impatta solo nei confronti del possessore del TDT, e non sull'asset messo a garanzia (BTC).
 
-In the event of fraud or collateralization issues, the holder of a TDT is guaranteed compensation in TBTC via the signing group&#39;s bonded collateral. If the deposit is redeemed by another account after it has reached term, then the TDT holder is guaranteed compensation in TBTC (less signer fees). Note a TDT holder can still redeem their deposit for BTC even once the 6 month term has elapsed, if no other users have redeemed it.
+Lotti e Dimensioni I depositi su tBTC sono concessi sulla base di lotti. Per rendere il sistema razionale e gestibile, un lotto viene definito come un set di dimensioni fisse, generati dal sistema. Se un depositante vuole depositare un quantità di BTC superiore a quella della dimensione del lotto, è costretto a inoltrare molteplici richieste di deposito e finanziare ognuna di essa. Queto consente a ogni deposito di essere supportato e garantito da un unico e differente gruppo di signers, il che semplifica il processo di collateralizzazione e mitiga l'intero sistema da possibili rischi connessi a vulnerabilità all'interno di un singolo gruppo o comportamenti collusivi.
 
-Since there is more value in stealing a 1 BTC deposit than a 0.001 BTC deposit, the former is likely more susceptible to attacks like re-orgs. As an NFT, TDTs allow this risk to be priced in, which is highly relevant for applications that use BTC as collateral. Any recipient of a TDT will need to evaluate the risk profile of a given token themselves. TDTs are designed to provide a net benefit by isolating risk, since attacks against the deposit backing a TDT should only impact the TDT holder, rather than the entire supply-pegged currency.
+Questa architettura determina implicazioni cui l'utente deve attribuire familiarità.
 
-## Lots and Lot Sizes
+Ogni deposito deve essere uguale alla dimensione del lotto standard
 
-Deposits on tBTC are managed in lots. To make the system rational and manageable, lots are one of a set of fixed sizes, managed by the system. If a depositor wants to deposit a larger amount of BTC than supported by existing lot sizes, they must create multiple deposit requests and fund multiple deposits. This allows for each deposit to be backed by a different signing group, which both simplifies the bonding of signing groups and insulates the wider system against isolated signing group failures, malicious or otherwise.
+Il sistema riconosce tutte le istanze di deposito sotto o sovradimensionato -- nel quale un utente deposita una quantità maggiore o minore del lotto standard -- come una azione errata. L'effetto principale di un sotto-sovra dimensionamento è una distorsione della collateralizzazione dei signers. Il sistema quindi è progettato per fare in modo che tale distorsione, che rappresenta un costo ed un rischio, ricada in capo all'utente depositante.
 
-This design has important implications that users should be familiar with.
+In caso di sottodimensionamento -- dove l'utente deposita un ammontare in BTC minore del lotto -- il sistema non crea una proof che può essere riscattata per TBTC.
 
-*Each deposit must match one of the standard lot sizes*
+Gli utenti devono prestare attenzione a questa fattispecie. In una situazione dove sono disponibili, per esempio, solo lotti da 1 BTC, è facile ipotizzare che un utente possa provare a depositare 1 BTC dividendolo in 2 depositi da 0,5 BTC. Un utente che segue questa logica, si vedrà perso tutto il deposito, in quanto il sistema riconosce 2 istanze di depositi sottdimensionati. In 2 parole: il deposito deve corrispondere esattamente alla quantità definita dal lotto disponibile.
 
-The system handles all instances of overpayment and underpayment -- in which a user deposits an amount that is either larger or smaller than the standard deposit size -- as faulty user behavior. The primary effect of over- or underpayment on the system is to distort the collateralization of the signers. The system is designed to pass the costs of this on to the user.
+In caso di sovradimensionamento -- ovvero dove un utente deposita una quantità superiore rispetto al lotto disponibile -- il sistema genera una proof riscattabile per TBTC pari esclusivamente alla dimensione del lotto standard. In un mercato efficiente, possiamo aspettarci che in questo caso tale proof sia immediatamente riscattata in quanto il depositante si aspetta di riacquisire la quantità in eccesso nel deposito agendo da arbitraggista. Fin quando il deposito non viene riscattato dal depositante originario, la quantità in eccesso è da considerarsi persa.
 
-In the case of underpayment -- in which a user deposits an amount less than the chosen BTC lot size -- the system will not create a proof that can be redeemed for TBTC. The user forfeits the BTC locked into the deposit, which can be divided among the signers.
+In un esempio con lotto da 1 BTC, un utente che deposita 1,4 BTC riceverà una proof che gli consente di minare solo 1 BTC (pari al lotto disponibile). C'è pertanto a sistema una quantità in eccesso (0,4 BTC) che ci si può aspettare venga riscattata velocemente in quanto basata sull'opportunità di avere 1,4 BTC in cambio di un solo TBTC. L'utente che ha depositato sovradimensionando il lotto sarà invece costretto a riscattare il suo TBTC per 1 solo BTC, vedendosi perso l'ulteriore 0,4 BTC. A meno che non è più rapido degli arbitraggisti e riesce a riscattare immediatamente il suo TBTC per i suoi originari 1,4 BTC.
 
-*Users should be acutely aware of this. In a situation where the only available lot size is 1 BTC, for example, it is easy to imagine a user attempting to claim 1 TBTC by making two deposits of 0.5 BTC each. A user that does so will lose all of their BTC, as the system will simply recognize two distinct instances of underpayment. In short, the lot size of a deposit is fixed when the deposit is created, and the deposit must be funded with that amount.*
+Il sistema accetta solo la prima UTXO più grande del lotto disponibile. Tutti gli altri BTC inviati al gruppo di signers saranno da considerarsi persi. Pertanto è imperativo che il depositante utilizzi una sola UTXO. Accettando UTXO multiple dai depositanti, si incrementerebbe la complessità della gestione on-chain e un aumento vertiginoso del gas, in quanto ogni UTXO viene prima provata via SPV e poi con una firma autorizzata. I signers inoltre sarebbero incentivati a firmare ogni transazione a discapito del fatto che tali transazioni non riescano a esser calcolate nel totale del loro ammontare.
 
-In the case of overpayment -- where a user deposits more than the chosen BTC lot size -- the system will generate a proof, but only for the standard lot size, redeemable in exchange for that amount in TBTC. In an efficient market, we would expect this to be immediately redeemed, as the redeemer expects to take the overfunded amount locked in the deposit as arbitrage. Unless the deposit is redeemed by the original depositor, the overpayment is forfeit.
+Random Beacon per la selezione dei signers Il Network di Keep si poggia su un meccanismo di provata e casuale selezione dei tBTC signers. Questo meccanismo prende il nome di BLS Threshold Relay.
 
-*In a 1 BTC lot size example, a user who deposits 1.4 BTC will receive a proof allowing them to mint exactly 1 TBTC (the amount corresponding to the lot size). There is now an oversize deposit in the system, which one would expect to be redeemed quickly given the opportunity to exchange 1 TBTC for 1.4 BTC. The user who deposited the extra BTC will, like all other users, be able to redeem their 1 TBTC for 1 BTC, but the extra 0.4 BTC is lost (unless the user realizes their mistake and quickly redeems their TBTC for the original 1.4 BTC deposit).*
+Quando arriva una richiesta alla formazione di un gruppo di signers, il sistema tBTC usa un seed casuale per definire il gruppo di signers, all'interno di una pool di candidati. Questi signers coordineranno la fase di rilascio di una chiave distribuita che risulterà in una ECDSA pubblica per il gruppo, usata per generare un indirizzo successivamente memorizzato sulla catena ospitante. Questo finalizza il processo di selezione dei signers.
 
-The system will only accept the first UTXO greater than the deposit lot size. All other BTC sent to the signing group is forfeit. Therefore it is imperative that depositors send only a single UTXO. Accepting multiple UTXOs from depositors would impose significant on-chain complexity and gas fees, as each UTXO would need to be proven via SPV, and a signature on it explicitly authorized. Signers would have to be incentivized to sign each transaction despite the fact that the total value of the UTXOs is not known.
+Threshold Signatures (Soglia minima di firme) tBTC usa una soglia minima di firme per generare una chiave. Questo consente ad un gruppo di signers di rilasciare una chiave pubblica singola da un set di chiavi private condivise. Tale metodo abilita un sottogruppo di signers a creare firme per conto di un più grande gruppo di signers. Gli utenti possono verificare il gruppo di signers attraverso l'associazione fra una chiave pubblica singola e chiavi private multiple. Pertanto si ottiene sicurezza senza necessità di un design classico multififma (multisig).
 
-## Random Beacon for Signer Selection
+La soglia minima di firme comporta alcuni vantaggi:
 
-The Keep network requires a trusted source of randomness to select tBTC signers. This takes the form of a BLS Threshold Relay.
+Relativamente semplice coordinazione richiesta per l'aggregazione di un gruppo Nessun membro del gruppo necessita di trust Il gruppo resta resiliente ad eventuale comportamenti malevoli perseguiti anche da una sua maggioranzaT Per tBTC v1, i gruppi di signers sono 3 di 3, e ciò significa che un gruppo necessita della collaborazione di 3 membri per generare una firma valida.
 
-When a request comes in to create a signing group, the tBTC system uses a random seed from a secure decentralized random beacon to randomly select signing group members from the eligible pool of signers. These signers coordinate a distributed key generation protocol that results in a public ECDSA key for the group, which is used to produce a wallet address that is then published to the host chain. This completes the signer selection phase.
 
-## Threshold Signatures
+Trovi ulteriori informazione sulla soglia minima di firme [Qui](https://blog.keep.network/threshold-signatures-ff2c2b98d9c7).
 
-tBTC uses threshold signatures for key generation. Threshold signatures allow for a group of signers to generate a single public key from a set of private key &quot;shares.&quot; This method enables a subset of the signers to create signatures on behalf of the larger group. Users can verify groups of signers through a single public key corresponding to multiple private keys. This provides security without the work requirements of standard multisig designs.
-
-Threshold signatures provide a number of benefits:
-
-* Relatively little coordination is needed to set up a group
-* No single member of the group has to be trusted
-* They are resilient to as much as half of the group being malicious or failing to generate
-
-For tBTC v1, signing groups are 3-of-3, meaning they are groups of 3 signers that require all 3 signers to collaborate to create signatures on behalf of the group.
-
-You can find additional information about threshold signatures [here](https://blog.keep.network/threshold-signatures-ff2c2b98d9c7).
-
-Visit our [GitHub](https://github.com/keep-network/tbtc) for more information, tools, and documentation. [Join the tBTC mailing list](https://tbtc.network/#mailing-list) for updates, including information about tBTC&#39;s upcoming launch on Ethereum mainnet. To learn more about tBTC&#39;s technical design, read the [technical spec](http://docs.keep.network/tbtc/index.pdf). Join the [Keep #tbtc channel on Discord](https://chat.tbtc.network) for technical questions about tBTC and [tbtc.js](https://tbtc.network/news/2020-02-14-announcing-tbtc-js), and follow [along on Twitter](https://twitter.com/search?q=%22%23tbtc%22&src=typed_query) news and opportunities to participate.
+Visita il nostro [GitHub](https://github.com/keep-network/tbtc) per ulteriori informazioni, tools e documentazioni. Entra nella [tBTC mailing list](https://tbtc.network/#mailing-list) per aggiornamenti, incluso il rilascio di tBTC su Ethereum. Per risorse addizionali, entra nel [Canale Keep #tbtc su Discord](https://chat.tbtc.network). Partecipa alle discussioni tecniche su [tbtc.js](https://tbtc.network/news/2020-02-14-announcing-tbtc-js) e [Seguici su Twitter](https://twitter.com/search?q=%22%23tbtc%22&src=typed_query) per news ed opportunità di partecipazione.
