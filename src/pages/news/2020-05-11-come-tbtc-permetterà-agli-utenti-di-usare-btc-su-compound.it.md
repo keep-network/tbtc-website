@@ -4,8 +4,6 @@ title: Come tBTC permetterà agli utenti di usare BTC su Compound
 description: Come tBTC permetterà agli utenti di usare BTC su Compound
 date: 2020-05-11T07:16:12.474Z
 ---
-2020-05-11
-
 tBTC consentirà alle persone di usare Bitcoin sulla blockchain di Ethereum. Una delle prime cose che TBTC consentirà di fare, è l'integrazione con Compound, un protocollo money market sviluppato su Ethereum che eroga per gli utenti servizio di prestiti e finanziamenti. Compound oggi rappresenta più [del 12%.](https://defipulse.com/) del mercato DeFi.
 
 Per usare Compound con i tuoi BTC, come prima cosa devi minare TBTC. Leggi la guida per scambiare BTC con TBTC [qui](https://tbtc.network/developers/how-to-use-the-tbtc-dapp/).
