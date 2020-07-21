@@ -10,7 +10,7 @@ tags:
 ---
 Разработчики могут строить на tBTC. Существует несколько ресурсов, которые помогут разработчикам использовать инфраструктуру tBTC для использования Биткойна в Ethereum. Начните работу со следующих ресурсов:
 
-* [Как интегрировать tBTC в DeFi приложение](/developers/how-to-integrate-tbtc-into-your-defi-dapp)
+* [Как интегрировать tBTC в DeFi приложение](https://tbtc.network/developers/how-to-integrate-tbtc-into-your-defi-dapp)
 * Приложение [tBTC](https://dapp.test.tbtc.network/) в сети Ropsten
 * [Смарт-контракты tBTC](https://github.com/keep-network/tbtc)
 * [tbtc.js](https://github.com/keep-network/tbtc.js)
