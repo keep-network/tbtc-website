@@ -1,16 +1,33 @@
 ---
-template: 'about-page'
+template: about-page
 path: /about
-title: About tBTC
+title: Über tBTC
 supporters:
-  - name: Keep
-    description: Keep is a privacy layer for Ethereum. A “keep” is an off-chain container for private data. Keeps help contracts harness the full power of the public blockchain — enabling deep interactivity with private data. The Keep network, powered by KEEP tokens, handles custodianship for tBTC.
-    url: https://keep.network/
-  - name: Summa
-    description: Summa provides custom-built interoperability solutions for companies throughout the blockchain ecosystem. Its solutions allow companies to access larger markets, expand their feature-sets, and access new liquidity in a unified cross-chain marketplace.
-    url: https://summa.one/
-  - name: Cross-Chain Group
-    description: The Cross-Chain Group is an industry resource and working group dedicated to furthering the research, design, and implementation of cross-chain architecture. Through educational events, advisory services, and open-source tooling, its goal is to expand blockchain interoperability and foster an environment that is more connected, functional, and scalable.
-    url: https://www.crosschain.group/
+  - description: >-
+      Keep ist eine Datenschutzschicht für Ethereum. Ein "Keep" ist ein
+      Off-Chain-Container für private Daten. Keeps Hilfsverträge nutzen die
+      volle Leistung der öffentlichen Blockchain und ermöglichen eine
+      weitreichende Interaktivität mit privaten Daten. Das Keep-Netzwerk, das
+      von KEEP-Token gespeist wird, übernimmt die Verwahrung für das tBTC.
+    name: Keep
+    url: 'https://keep.network/'
+  - description: >-
+      Summa bietet maßgeschneiderte Interoperabilitätslösungen für Unternehmen
+      im gesamten Blockchain-Ökosystem. Ihre Lösungen ermöglichen Unternehmen
+      den Zugang zu größeren Märkten, die Erweiterung ihres Funktionsumfangs und
+      den Zugang zu neuer Liquidität in einem einheitlichen,
+      kettenübergreifenden Marktplatz.
+    name: Summa
+    url: 'https://summa.one/'
+  - description: >-
+      Die Cross-Chain Group ist eine Ressourcen- und Arbeitsgruppe der
+      Industrie, die sich der Förderung von Forschung, Design und
+      Implementierung von kettenübergreifender Architektur widmet. Durch
+      Bildungsveranstaltungen, Beratungsdienste und Open-Source-Werkzeuge
+      verfolgt sie das Ziel, die Blockchain-Interoperabilität zu erweitern und
+      eine Umgebung zu fördern, die besser vernetzt, funktionaler und
+      skalierbarer ist.
+    name: Cross-Chain Group
+    url: 'https://www.crosschain.group/'
 ---
-tBTC is a fully Bitcoin-backed ERC-20 token pegged to the price of Bitcoin. It facilitates Bitcoin holders to act on the Ethereum blockchain and access the decentralized finance (DeFi) ecosystem. tBTC is an open-source project supported by groups including [Keep](https://keep.network/), [Summa](https://summa.one/) and the [Cross-Chain Group](https://www.crosschain.group/).
+tBTC ist ein vollständig Bitcoin-unterstützter ERC-20-Token, der an den Preis von Bitcoin gekoppelt ist. Er erleichtert es Bitcoin-Besitzern, auf der Ethereum-Blockchain zu agieren und Zugang zum Ökosystem der dezentralisierten Finanzierung (DeFi) zu erhalten. tBTC ist ein Open-Source-Projekt, das von Gruppen wie [Keep] (https://keep.network/), [Summa] (https://summa.one/) und der [Cross-Chain Group] (https://www.crosschain.group/) unterstützt wird.

@@ -28,7 +28,7 @@ jobs:
     - if: github.event_name == 'pull_request'
       run: npm run build:prefixed
       env:
-        BRANCH: ${{ github.head_ref }}
+        GATSBY_BRANCH: ${{ github.head_ref }}
     # A push event is a master merge; deploy to primary bucket.
     - if: github.event_name == 'push'
       name: Deploy Master to GCP

@@ -2,7 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link, StaticQuery, graphql } from "gatsby"
 
-const LocaleLink = ({ children, to, locale, ...other }) =>
+import { withLocale } from "./App"
+
+export const CustomLocaleLink = ({ children, to, locale, ...other }) =>
   <StaticQuery
     query={query}
     render={({
@@ -16,11 +18,21 @@ const LocaleLink = ({ children, to, locale, ...other }) =>
 
       let localeTo = to
 
+      // If the target locale isn't supported, default back to EN
       if (!supportedLocales.includes(locale)) {
         locale = defaultLocale
       }
 
-      localeTo = localeTo.replace('/' + defaultLocale + '/', '/')
+      // Strip any existing locale prefix from the pathname
+      const localePrefix = new RegExp(`^\\/(${supportedLocales.join('|')})\\/`)
+      localeTo = localeTo.replace(localePrefix, "/")
+
+      // Prefix the url with the target locale only if the target locale isn't
+      // EN (the default locale), since the default locale doesn't require using
+      // a prefix. localeTo should already include a leading backlash.
+      if (locale !== defaultLocale) {
+        localeTo = `/${locale}${localeTo}`
+      }
 
       return <Link
         to={localeTo}
@@ -29,12 +41,13 @@ const LocaleLink = ({ children, to, locale, ...other }) =>
       </Link>
     }} />
 
-LocaleLink.propTypes = {
+CustomLocaleLink.propTypes = {
   to: PropTypes.string,
   locale: PropTypes.string
 }
 
-export default LocaleLink
+// Uses context automatically provide the active locale
+export default withLocale(CustomLocaleLink)
 
 const query = graphql`
   query SiteLocale {

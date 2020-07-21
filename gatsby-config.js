@@ -5,7 +5,8 @@ module.exports = {
     description: "1. Deposit BTC. 2. Mint TBTC. 3. Lend and earn interest on your BTC.",
     url: "https://tbtc.network",
     // supported 639-1 language codes
-    supportedLocales: ["en", "ru", "de", "es", "fr", "pl"],
+    supportedLocales: [
+      "en", "de", "es", "fr", "id", "it", "ja", "ko", "pl", "ru", "vn", "zh"],
     defaultLocale: "en",
   },
   plugins: [
@@ -112,5 +113,5 @@ module.exports = {
     }, // must be after other CSS plugins
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
-  pathPrefix: '/' + process.env['BRANCH'],
+  pathPrefix: '/' + process.env['GATSBY_BRANCH'],
 }

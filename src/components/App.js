@@ -4,18 +4,33 @@ import SEO from './SEO.js'
 
 import '../css/app.scss'
 
-export default (props) => {
-  const { children, title, description, locale } = props
+const LocaleContext = React.createContext({})
+
+const App = ({ children, title, description, locale }) => {
   return (
-    <div className="main">
-      <Header />
-      <SEO title={title} description={description} />
-      <Announcement locale={locale} />
-      <div className="app">
-        { children }
+    <LocaleContext.Provider value={{ locale }}>
+      <div className="main">
+        <Header locale={locale} />
+        <SEO title={title} description={description} />
+        <Announcement locale={locale} />
+        <div className="app">
+          { children }
+        </div>
+        <Newsletter />
+        <Footer />
       </div>
-      <Newsletter />
-      <Footer />
-    </div>
+    </LocaleContext.Provider>
   )
 }
+
+export function withLocale(Child) {
+  return (props) => (
+    <LocaleContext.Consumer>
+      {({ locale }) => <Child {...props} locale={locale} />}
+    </LocaleContext.Consumer>
+  )
+}
+
+export const LocaleConsumer = LocaleContext.Consumer
+
+export default App

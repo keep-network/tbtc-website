@@ -27,7 +27,7 @@ The following resources contain the tools needed to integrate TBTC, as well as a
 
 Developers are already building on tBTC using the tools above. Our recent hackathon at ETHDenver [produced several excellent applications](https://blog.keep.network/bitcoin-earn-wins-ethdenver-tbtc-hackathon-prize-5233ce805468) that may provide inspiration.
 
-Join the [Keep #tbtc channel on Discord](https://discord.gg/wYezN7v) for technical questions about tBTC and [tbtc.js](https://tbtc.network/news/2020-02-14-announcing-tbtc-js)
+Join the [Keep #tbtc channel on Discord]( https://chat.tbtc.network) for technical questions about tBTC and [tbtc.js](https://tbtc.network/news/2020-02-14-announcing-tbtc-js)
 
 The following additional resources are also available:
 
