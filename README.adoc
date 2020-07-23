@@ -29,6 +29,26 @@ and fronted by Cloudflare at https://tbtc.network. Pull requests (including
 those created by the CMS) are auto-deployed to subdirectories at
 https://preview.tbtc.network by branch name.
 
+
+== Contributors ✨
+
+Thanks goes to these wonderful contributors
+https://allcontributors.org/docs/en/emoji-key[emoji key]:
+
+[cols=2*]
+|===
+
+a|
+image::https://avatars0.githubusercontent.com/u/7621557?s=400&u=3b727e26f38b733c62c58ddf61808b1bb3680855&v=4[Michael Gluzman]
+http://michaelgluzman.design/[Michael Gluzman] +
+🎨 🖋
+
+a|
+image:https://pbs.twimg.com/profile_images/1266400731801751552/uTzMSov2_400x400.jpg[Mike Vinson] +
+https://www.behance.net/mvinson[Mike Vinson] +
+🎨 🖋
+|===
+
 == License
 
 tBTC and this site are released under the link:./LICENSE[MIT License].
