@@ -4,23 +4,23 @@ title: 'Developer Toolkit: Jak zintegrować tBTC z DeFi App'
 heading: 'Developer Toolkit: Jak zintegrować tBTC z DeFi App'
 description: >-
   tBTC to łatwy sposób na dodanie Bitcoinów do Twojej dApp, dzięki czemu możesz
-  ją udostępnić posiadaczom BTC i zwiększyć wzrost liczby użytkowników. Poprzez
+  ją udostępnić posiadaczom BTC i zwiększyć liczbę użytkowników. Poprzez
   integrację TBTC, developerzy aplikacji DeFi na Ethereum umożliwiają
-  posiadaczom BTC zarabiać na odsetkach lub zaciągać pożyczki bez polegania na
-  scentralizowanych usługach.
+  posiadaczom BTC zarabianie na odsetkach lub zaciąganie pożyczek bez polegania
+  na scentralizowanych usługach.
 date: 2020-07-24T15:32:29.807Z
 tags:
   - developers
 ---
-tBTC to łatwy sposób na dodanie Bitcoinów do Twojej dApp, dzięki czemu możesz ją udostępnić posiadaczom BTC i zwiększyć wzrost liczby użytkowników. Poprzez integrację TBTC, developerzy aplikacji DeFi na Ethereum umożliwiają posiadaczom BTC zarabiać na odsetkach lub zaciągać pożyczki bez polegania na scentralizowanych usługach.
+tBTC to łatwy sposób na dodanie Bitcoinów do Twojej dApp, dzięki czemu możesz ją udostępnić posiadaczom BTC i zwiększyć liczbę użytkowników. Poprzez integrację tBTC, developerzy aplikacji DeFi na Ethereum umożliwiają posiadaczom BTC zarabianie na odsetkach lub zaciąganie pożyczek bez polegania na scentralizowanych usługach.
 
-tBTC jest projektem typu open-source posiadającym wielu współtwórców. Developerzy mogą zintegrować TBTC ze swoimi dappami, korzystając z publicznie dostępnych zasobów i bibliotek. TBTC można zintegrować z każdą aplikacją korzystającą z tokena ERC-20.
+tBTC jest projektem typu open-source posiadającym wielu współtwórców. Developerzy mogą zintegrować tBTC ze swoimi dappami, korzystając z publicznie dostępnych zasobów i bibliotek. tBTC można zintegrować z każdą aplikacją korzystającą z tokena ERC-20.
 
 Developerzy muszą znać Solidity i mieć ogólne pojęcie o tym, czym są tokeny ERC-20.
 
-Poniżej zamieszamy zasoby zawierające narzędzia potrzebne do integracji TBTC:
+Poniżej zamieszamy zasoby zawierające narzędzia potrzebne do integracji tBTC:
 
-* Połaczenie dapp z Ropstenem (tutaj może uruchomić dapp tBTC w tesnecie)
+* Połaczenie dApp z Ropstenem (tutaj może uruchomić dApp tBTC w tesnecie)
 * Inteligentne kontrakty tBTC
 * Tbtc.js
 * Specyfikacja techniczna
@@ -32,7 +32,7 @@ Dołącz do kanału Keep #tbtc na Discordzie, aby uzyskać więcej informacji na
 
 Dostępne są również następujące zasoby:
 
-* Dołącz do listy mailingowej tBTC (aby otrzymywać aktualizacje, w tym informacje o zbliżającym się uruchomieniu tBTC w sieci głównej Ethereum) 
+* Dołącz do listy mailingowej tBTC (aby otrzymywać aktualizacje, w tym informacje o zbliżającym się uruchomieniu TBTC w sieci głównej Ethereum) 
 * GitHub tBTC
 * Specyfikacja techniczna
 
