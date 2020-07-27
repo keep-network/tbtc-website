@@ -27,8 +27,8 @@ spotlight_1:
     text: Толығырақ
     url: 'https://tbtc.network/news/2020-04-24-tbtc-launch-key-dates/'
   label: Хабарландыру
-  title: 'Запуск tBTC: Ключевые Даты'
-spotlight_2:Іске қосу және tBTC: негізгі күндер
+  title: 'Іске қосу және tBTC: негізгі күндер'
+spotlight_2:
   button:
     text: Әзірлеуші Құралдары
     url: /developers
