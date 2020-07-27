@@ -67,8 +67,38 @@ module.exports = {
         name: 'images',
       },
     },
+    {
+      resolve: 'gatsby-source-git',
+      options: {
+        name: 'tbtc-docs',
+        remote: 'file:///Users/Shadowfiend/github.com/keep-network/tbtc/.git',
+        branch: 'named-mermaids',
+        patterns: 'docs/**',
+      },
+    },
+    {
+      resolve: 'gatsby-source-git',
+      options: {
+        name: 'staking-docs',
+        remote: 'https://github.com/Shadowfiend/gitbook-test.git',
+        branch: 'master',
+        patterns: '*.md',
+      },
+    },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    {
+      resolve: `@hitsuji_no_shippo/gatsby-transformer-asciidoc`,
+      options: {
+        safe: 'server',
+        attributes: {
+          values: {
+            showtitle: true,
+          },
+          options: { paths: { 'dir-path-from-project': 'from.project.dir' } },
+        },
+      },
+    },
     {
       resolve: 'gatsby-transformer-remark',
       options: {

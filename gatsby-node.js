@@ -32,7 +32,114 @@ exports.onPreBootstrap = () => {
   })
 }
 
+const createAsciidocPages = async ({ actions, graphql, reporter }) => {
+  const { createPage } = actions
+
+  const result = await graphql(`
+    {
+      allAsciidoc(
+        filter: { paths: { absolute: { file: { regex: "/index.adoc/" } } } }
+      ) {
+        edges {
+          node {
+            id
+            html
+            timeToRead
+            document {
+              title
+              subtitle
+              main
+            }
+            #author {
+            #  fullName
+            #  firstName
+            #  lastName
+            #  middleName
+            #  authorInitials
+            #  email
+            #}
+            #revision {
+            #  date
+            #  number
+            #  remark
+            #}
+            paths {
+              absolute {
+                file
+              }
+              from {
+                source {
+                  file
+                  full
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  // Handle errors
+  if (result.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+
+  // Render pages based on their frontmatter template, if available, or a
+  // default template at src/templates/default.js
+  result.data.allAsciidoc.edges.forEach(({ node }) => {
+    const template = path.resolve(path.join('src/templates/', `spec.js`))
+    createPage({
+      path: `spec/${node.paths.from.source.file}`,
+      component: template,
+      // additional data can be passed via context
+      context: { id: node.id, /*locale: node.fields.locale*/ },
+    })
+  })
+}
+
+const createStakingDocsPages = async ({ actions, graphql, reporter }) => {
+  const { createPage } = actions
+
+  const result = await graphql(`
+  {
+    allMarkdownRemark(filter:{ fileAbsolutePath: {regex: "/.*/staking-docs/.*/"} }) {
+      edges {
+        node {
+          id
+          html
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+`)
+
+  // Handle errors
+  if (result.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+
+  // Render pages based on their frontmatter template, if available, or a
+  // default template at src/templates/default.js
+  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    const template = path.resolve(path.join('src/templates/', `staking-docs.js`))
+    createPage({
+      path: `staking-docs/${node.fields.slug}`,
+      component: template,
+      // additional data can be passed via context
+      context: { id: node.id, /*locale: node.fields.locale*/ },
+    })
+  })
+}
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
+  createAsciidocPages({ actions, graphql, reporter })
+  createStakingDocsPages({ actions, graphql, reporter })
   const { createPage } = actions
 
   const result = await graphql(`
