@@ -13,6 +13,7 @@ export const HomePageTemplate = ({
   spotlight1 = {},
   spotlight2 = {},
   newsItems = [],
+  resources = [],
   integrations = {}
 }) => {
   return <div className="home">
@@ -103,7 +104,18 @@ export const HomePageTemplate = ({
             </div>
           </Spotlight>
         </section>
-        <Resources />
+        <section className="latest-news col-sm-12 col-md-12 col-lg-10">
+          <h1 className="section-title">Build with tBTC</h1>
+          <div className="row">
+            { resources && resources.map(({ node }) => (
+              <div className="latest-news-item col-sm-12 col-md-4" key={node.id}>
+                <h2>{node.frontmatter.title}</h2>
+                <p>{node.excerpt}</p>
+                <Link locale={node.fields.locale} to={`${node.fields.slug}`}>Go</Link>
+              </div>
+            ))}
+          </div>
+        </section>
         <section className="integrations col-sm-12 col-md-12 col-lg-10">
           <h1 className="section-title">{integrations.title}</h1>
           <Integrations />
@@ -115,7 +127,8 @@ export const HomePageTemplate = ({
 
 const HomePage = ({ data, pageContext }) => {
   const { markdownRemark: post } = data
-  const { edges: newsItems } = data.allMarkdownRemark
+  const { edges: newsItems } = data.featuredNews
+  const { edges: resources } = data.latestResources
 
   return (
     <App locale={pageContext.locale}>
@@ -125,6 +138,7 @@ const HomePage = ({ data, pageContext }) => {
         spotlight1={post.frontmatter.spotlight_1}
         spotlight2={post.frontmatter.spotlight_2}
         newsItems={newsItems}
+        resources={resources}
         integrations={post.frontmatter.integrations_section} />
     </App>
   )
@@ -133,7 +147,10 @@ const HomePage = ({ data, pageContext }) => {
 HomePage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
-    allMarkdownRemark: PropTypes.shape({
+    featuredNews: PropTypes.shape({
+      edges: PropTypes.array,
+    }),
+    latestResources: PropTypes.shape({
       edges: PropTypes.array,
     })
   })
@@ -182,7 +199,7 @@ export const query = graphql`
         }
       }
     }
-    allMarkdownRemark(
+    featuredNews: allMarkdownRemark(
       limit: 3,
       sort: {order: DESC, fields: [frontmatter___date]},
       filter: {frontmatter: {template: {eq: "news-item"}, tags: {eq: "featured"}}, fields: {locale: {eq: $locale}}}
