@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 
 import { App } from '../components'
-import { Integrations, Resources, Spotlight } from '../components/lib'
+import { Integrations, Spotlight } from '../components/lib'
 import SandDollar from '../components/svgs/SandDollar'
 import Link from '../components/LocaleLink'
 
@@ -104,11 +104,11 @@ export const HomePageTemplate = ({
             </div>
           </Spotlight>
         </section>
-        <section className="latest-news col-sm-12 col-md-12 col-lg-10">
+        <section className="resources col-sm-12 col-md-12 col-lg-10">
           <h1 className="section-title">Build with tBTC</h1>
           <div className="row">
             { resources && resources.map(({ node }) => (
-              <div className="latest-news-item col-sm-12 col-md-4" key={node.id}>
+              <div className="resource-item col-sm-12 col-md-4" key={node.id}>
                 <h2>{node.frontmatter.title}</h2>
                 <p>{node.excerpt}</p>
                 <Link locale={node.fields.locale} to={`${node.fields.slug}`}>Go</Link>
@@ -199,10 +199,31 @@ export const query = graphql`
         }
       }
     }
+
     featuredNews: allMarkdownRemark(
       limit: 3,
       sort: {order: DESC, fields: [frontmatter___date]},
       filter: {frontmatter: {template: {eq: "news-item"}, tags: {eq: "featured"}}, fields: {locale: {eq: $locale}}}
+    ) {
+      edges {
+        node {
+          id
+          excerpt
+          fields {
+            locale
+            slug
+          }
+          frontmatter {
+            title
+          }
+        }
+      }
+    }
+
+    latestResources: allMarkdownRemark(
+      limit: 3,
+      sort: {order: DESC, fields: [frontmatter___date]},
+      filter: {frontmatter: {template: {eq: "resource"}}, fields: {locale: {eq: $locale}}}
     ) {
       edges {
         node {
