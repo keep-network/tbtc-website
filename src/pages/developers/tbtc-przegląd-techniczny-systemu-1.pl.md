@@ -4,21 +4,21 @@ title: tBTC Przegląd techniczny systemu
 heading: tBTC Przegląd techniczny systemu
 description: >-
   tBTC wprowadza nowatorskie funkcje dla użytkowników. W niniejszym artykule
-  omówimy cztery z nich: pokwitowania TDT, wielkości lotów, sygnał losowy Keep
-  (random beacon) i podpisy progowe (threshold signature).
+  omówimy cztery z nich: pokwitowania TDT, wielkości lotów, generator losowości
+  Keep (random beacon) i podpisy progowe (threshold signatures).
 date: 2020-07-23T17:52:23.428Z
 tags:
   - developers
 ---
-tBTC wprowadza nowatorskie funkcje dla użytkowników. W niniejszym artykule omówimy cztery z nich: pokwitowania TDT, wielkości lotów, sygnał losowy Keep (random beacon) i podpisy progowe (threshold signature).
+tBTC wprowadza nowatorskie funkcje dla użytkowników. W niniejszym artykule omówimy cztery z nich: pokwitowania TDT, wielkości lotów, generator losowości Keep (random beacon) i podpisy progowe (threshold signatures).
 
 ## Token depozytowy TBTC (TDT)
 
-TBTC (TDT) to niezamienny token (ang. non-fungible), który jest wybijany w momencie, gdy użytkownik uruchamia depozyt. TDT to niezamienny token ERC-721, który jest odpowiednikiem TBTC. Reprezentuje prawo własności UTXO w łańcuchu bloków Bitcoin.
+TBTC (TDT) to niezamienny token (ang. non-fungible), który jest wybijany w momencie, gdy użytkownik uruchamia depozyt. TDT to niezamienny token ERC-721, który jest odpowiednikiem TBTC. Reprezentuje prawo własności do UTXO w łańcuchu bloków Bitcoin przynależnego do danego depozytu.
 
 Depozyty TBTC można zablokować lub odblokować. Zablokowany depozyt może zostać wykupiony tylko przez właściciela depozytu za pomocą odpowiedniego TDT. Każdy TDT jest unikalny dla depozytu, w którym zapisane jest wyłączne prawo do wykupu depozytu przez okres 6 miesięcy.
 
-W momencie, gdy depozyt jest zatwierdzony poprzez dowód finansowania transakcji (zwany SPV Relay), posiadacz może zażądać wykupu, a po uiszczeniu wszelkich opłat, ma zagwarantowane UTXO które sfinansowało depozyt w sieci Bitcoin.
+W momencie, gdy depozyt jest zatwierdzony poprzez dowód sfinansowania transakcji (zwany SPV Relay), posiadacz może zażądać wykupu, a po uiszczeniu wszelkich opłat, ma zagwarantowane UTXO które sfinansowało depozyt w sieci Bitcoin.
 
 TDT i TBTC są wymienne na podstawie umowy zwanej automatem sprzedającym (ang. vending machine), który zarządza wymianą TDT na TBTC i odwrotnie.
 
@@ -51,7 +51,7 @@ W przypadku nadpłaty – kiedy użytkownik wpłaci więcej niż wybrana wielko�
 
 Przykład: jeśli użytkownik zdeponuje 1,4 BTC w locie o wielkości 1 BTC, otrzyma on dowód pozwalający na wybicie dokładnie 1 TBTC (kwota odpowiadająca wielkości lota). W systemie pojawi się depozyt z nadpłatą, który inny użytkownik spodziewa się wykupić i wymienić 1 TBTC na 1,4 BTC. Użytkownik, który nadpłacił BTC będzie mógł, tak jak wszyscy inni użytkownicy, wymienić swój 1 TBTC na 1 BTC, ale dodatkowe 0,4 BTC zostanie utracone (chyba, że użytkownik zda sobie sprawę z popełnionego błędu i szybko wymieni swoje TBT na pierwotny depozyt 1,4 BTC).
 
-System zaakceptuje tylko UTXO większe niż wielkość depozytu. Wszystkie inne BTC wysłane do grupy sygnatariuszy przepadają. Dlatego konieczne jest, aby deponenci wysyłali tylko jeden UTXO. Akceptowanie wielu UTXO od deponentów spowodowałoby znaczną złożoność łańcucha i opłaty za energie (ang. gas fees), ponieważ każde UTXO musiałoby zostać potwierdzone za pośrednictwem SPV i autoryzowanego podpisu. Sygnatariusze musieliby być zachęcani do podpisywania każdej transakcji, mimo, że całkowita wartość UTXO nie jest znana.
+System zaakceptuje tylko pierwsze UTXO większe niż wielkość depozytu. Wszystkie inne BTC wysłane do grupy sygnatariuszy przepadają. Dlatego konieczne jest, aby deponenci wysyłali tylko jeden UTXO. Akceptowanie wielu UTXO od deponentów spowodowałoby znaczną złożoność łańcucha i opłaty (ang. gas fees), ponieważ każde UTXO musiałoby zostać potwierdzone za pośrednictwem SPV i autoryzowanego podpisu. Sygnatariusze musieliby być zachęcani do podpisywania każdej transakcji, mimo, że całkowita wartość UTXO nie jest znana.
 
 ## Random Beacon do wyboru sygnatariusza
 
