@@ -57,7 +57,7 @@ System zaakceptuje tylko pierwsze UTXO większe niż wielkość depozytu. Wszyst
 
 Siec Keep wymaga zaufanego źródła losowości do wybierania sygnatariuszy tBTC. W tym przypadku jest to tzw. BLS Threshold Relay.
 
-Gdy pojawi się żądanie utworzenia grupy sygnatariuszy, system tBTC użyje losowe ziarno (random seed) z bezpiecznego zdecentralizowanego random beacon’a do losowego wybrania członków grupy podpisujących z odpowiedniej puli sygnatariuszy. Sygnatariusze koordynują rozproszony protokół generowania kluczy, w wyniku czego powstaje publiczny klucz ECDSA, który jest używany do utworzenia adresu portfela, który jest następnie publikowany w łańcuchu hosta. Tak wygląda proces wyboru sygnatariusza.
+Gdy pojawi się żądanie utworzenia grupy sygnatariuszy, system tBTC użyje losowości (random seed) z bezpiecznego zdecentralizowanego random beacon’a do losowego wybrania członków grupy podpisujących z odpowiedniej puli sygnatariuszy. Sygnatariusze koordynują rozproszony protokół generowania kluczy, w wyniku czego powstaje publiczny klucz ECDSA, który jest używany do utworzenia adresu portfela, który jest następnie publikowany w łańcuchu hosta. Ten krok kończy pełny schemat wyboru i inicjalizacji sygnatariuszy.
 
 ## Podpisy progowe
 
@@ -67,7 +67,8 @@ Podpisy progowe zapewniają szereg korzyści:
 
 * Utworzenie grupy wymaga stosunkowo niewielkiej koordynacji Nie trzeba weryfikować zaufania względem członków grupy
 * Są odporne nawet wtedy, gdy połowa grupy działa na szkodę lub nie uda się jej wygenerować podpisu
-* W przypadku tBTC v1, grupy sygnatariuszy występują w modelu 3 z 3 – oznacza to, że są grupy 3 sygnatariuszy, które wymagają współpracy wszystkich 3 sygnatariuszy przy tworzeniu podpisów w imieniu grupy.
+
+  W przypadku tBTC v1, grupy sygnatariuszy występują w modelu 3 z 3 – oznacza to, że są grupy 3 sygnatariuszy, które wymagają współpracy wszystkich 3 sygnatariuszy przy tworzeniu podpisów w imieniu grupy.
 
 Dodatkowe informacje na temat progowych podpisów znajdziesz tutaj.
 
