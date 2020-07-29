@@ -7,7 +7,6 @@ import Image from './Image'
 import ImageLink from './ImageLink'
 import Integrations from './Integrations'
 import Newsletter from './Newsletter'
-import Resources from './Resources'
 import Spotlight from './Spotlight'
 
 export {
@@ -20,6 +19,5 @@ export {
     ImageLink,
     Integrations,
     Newsletter,
-    Resources,
     Spotlight
 }
