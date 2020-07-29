@@ -68,8 +68,8 @@ Podpisy progowe zapewniają szereg korzyści:
 * Utworzenie grupy wymaga stosunkowo niewielkiej koordynacji Nie trzeba weryfikować zaufania względem członków grupy
 * Są odporne nawet wtedy, gdy połowa grupy działa na szkodę lub nie uda się jej wygenerować podpisu
 
-  W przypadku tBTC v1, grupy sygnatariuszy występują w modelu 3 z 3 – oznacza to, że są grupy 3 sygnatariuszy, które wymagają współpracy wszystkich 3 sygnatariuszy przy tworzeniu podpisów w imieniu grupy.
+  W przypadku tBTC v1, oznacza to, że gruby składają się z 3 sygnatariuszy i wymanagana jest współpraca ich wszystkich w celu stworzenia podpisu w imieniu grupy.
 
 Dodatkowe informacje na temat progowych podpisów znajdziesz tutaj.
 
-Odwiedź nas na GitHubie, aby uzyskać dostęp do informacji, narzędzi i dokumentacji. Dołącz również do listy mailingowej tBTC, aby otrzymywać najświeższe wiadomości, w tym informacje o zbliżającym się uruchomieniu tBTC w mainnecie Ethereum. Aby dowiedzieć się więcej o projekcie technicznym tBTC, przeczytaj specyfikację techniczną. Dołącz do kanału Keep #tbt na Discordzie, aby uzyskać odpowiedzi na pytania techniczne dotyczące tBTC i tbtc.js, a także śledzić wiadomości na Twitterze.
+Odwiedź nas na GitHubie, aby uzyskać dostęp do informacji, narzędzi i dokumentacji. Dołącz również do listy mailingowej tBTC, aby otrzymywać najświeższe wiadomości, w tym informacje o zbliżającym się uruchomieniu tBTC w mainnecie Ethereum. Aby dowiedzieć się więcej o projekcie technicznym tBTC, przeczytaj specyfikację techniczną. Dołącz do kanału Keep #tbtс na Discordzie, aby uzyskać odpowiedzi na pytania techniczne dotyczące tBTC i tbtc.js, a także śledzić wiadomości na Twitterze.
