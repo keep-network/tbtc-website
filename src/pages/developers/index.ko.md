@@ -1,7 +1,12 @@
 ---
-template: 'developers-page'
+template: developers-page
 path: /developers
 title: tBTC로 시작하세요
+heading: tBTC로 시작하세요
+description: tBTC로 시작하세요
+date: 2020-07-29T11:01:29.814Z
+tags:
+  - tBTC로 시작하세요
 ---
 tBTC에서 개발을 시작할 수 있습니다. 개발자는 비트코인을 이더리움으로 가져오기위한 다양한 tBTC 인프라를 활용할 수 있습니다. 아래 리소스들로 시작해 보세요.
 
