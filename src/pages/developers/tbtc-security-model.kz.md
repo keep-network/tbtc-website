@@ -1,32 +1,32 @@
 ---
 template: resource
-title: tBTC Security Model
+title: tBTC қорғау моделі
 heading: tBTC Security Model
 description: >-
-  The following is an overview of tBTC’s security model and how it achieves a
-  high level of security for users and signers.
+  Төменде tBTC қауіпсіздік моделіне шолу және оның қалай а
+  пайдаланушылар мен қол қоюшылар үшін қауіпсіздіктің жоғары деңгейі.
 date: 2020-04-18T18:21:28.438Z
 tags:
   - security
 ---
-tBTC is designed as the safe way for people to use Bitcoin on Ethereum. Different projects take differing approaches to security. The following is an overview of tBTC’s security model and how it achieves a high level of security for users and signers.
+tBTC Ethereum-да Bitcoin-ді қолданудың қауіпсіз әдісі ретінде жасалған. Әр түрлі жобалар қауіпсіздікке әр түрлі көзқарастарды қолданады. Төменде tBTC қауіпсіздік моделіне шолу және оның пайдаланушылар мен қол қоюшылар үшін қауіпсіздіктің жоғары деңгейіне қалай қол жеткізуге болатындығы..
 
-## A trust-minimized Bitcoin sidechain
+## Минималды Bitcoin sidechain
 
-Sidechains were invented as a way to experiment with unlocking Bitcoin’s potential on other chains. The idea is simple - lock BTC on the main Bitcoin blockchain, and unlock it for use on another blockchain, creating a new currency pegged to BTC. In practice, building a 2-way peg without trusted intermediaries is difficult. Blockstream’s Liquid is an example of a Bitcoin sidechain in production that relies on trusted intermediaries.
+Sidechains басқа тізбектерде Bitcoin-нің әлеуетін ашуға тәжірибе жасау әдісі ретінде ойлап табылды. Идея қарапайым - BTC-ді негізгі Bitcoin блокчейніне құлыптап қойыңыз да, оны басқа блокчейнде пайдалану үшін құлыптан шығарыңыз, BTC-ге жаңа валюта жасаңыз. Іс жүзінде сенімді делдалдарсыз екі жақты шұңқыр салу қиын. Blockstream сұйықтығы - бұл сенімді делдалдарға сүйенетін өндірістегі Bitcoin сидекайнының мысалы..
 
-Although Liquid works, it lacks BTC’s openness and security. Liquid relies on a trusted federation of signers to custody the “locked” bitcoin. If the signers so desire, they can censor withdrawals or walk away with funds. Further, there is no user recourse in the event of signer malice - users must rely completely on trusting the Liquid network and its underlying technology.
+Сұйық жұмыс істесе де, BTC-тің ашықтығы мен қауіпсіздігі жоқ. Сұйық «қол қойылған» биткоинді сақтау үшін қол қоюшылардың сенімді федерациясына сүйенеді. Егер қол қоюшылар қаласа, олар цензураны алып тастай алады немесе қаражаттан бас тарта алады. Бұдан басқа, қол қоюшыларға зиян келтірген жағдайда, пайдаланушыларға өтініш жоқ - пайдаланушылар Сұйық желісіне және оның негізгі технологиясына толықтай сенуі керек..
 
-tBTC is a **trust-minimized** alternative to this model. Signers are overcollateralized to 150% the value of the deposit they custody, and users are fully reimbursed in the event of [signer fraud](#signer-fraud). Signers are chosen from an open and decentralized network of nodes that run the Keep protocol, all bonded on Ethereum.
+tBTC осы модельге балама ** сенімді түрде төмендетілген **. Қол қоюшылар олар сақтаған депозиттің құнынан 150% артық мөлшерде қамтамасыз етілген және пайдаланушылар толықтай өтеген кездеf [signer fraud](#signer-fraud). Қолтаңбалар Ethereum-да байланысқан Keep протоколын іске қосатын ашық және орталықтандырылмаған тораптардан таңдалады.
 
-The basic operation of minting 1 TBTC, the pegged version of Bitcoin on Ethereum, is as follows:
+Bitcoin-дің Ethereum-дағы версиясы болып табылатын 1 TBTC-нің негізгі операциясы келесідей:
 
-1. A bonded ECDSA keep is requested from the Keep network to sign for 1 BTC.
-2. A **signer group** forms and puts down **150% the value of 1 BTC in ETH** as collateral.
-3. The signer group generates a Bitcoin wallet using a [threshold ECDSA protocol](https://www.binance.vision/security/threshold-signatures-explained).
-4. The user sends 1 BTC to the Bitcoin wallet.
-5. The user generates an [**SPV proof**](https://docs.keep.network/tbtc/#spv) of their deposit transaction, and sends it to the Ethereum chain.
-6. The user mints TBTC.
+1. ECDSA байланыстырылған Keep 1 желісіне қол қою үшін Keep желісінен сұралады.
+2. ** қол қоюшылар тобы ** қамтамасыз етуші ретінде ETH ** 1 BTC мәнін ** 150% құрайды және қояды.
+3. Қол қоюшылар тобы a көмегімен Bitcoin әмиянын жасайды [шектік ECDSA хаттамасы](https://www.binance.vision/security/threshold-signatures-explained).
+4. Пайдаланушы Bitcoin әмиянына 1 BTC жібереді.
+5. Пайдаланушы жасайды [**SPV дәлелдеу**](https://docs.keep.network/tbtc/#spv) олардың депозиттік мәмілесін қарастырады және Ethereum тізбегіне жібереді.
+6. Пайдаланушы TBTC-ті қағып алады.
 
 Redeeming TBTC back into BTC is simply the same process in reverse:
 1. User burns TBTC and provides a receiving Bitcoin address to begin redemption.
