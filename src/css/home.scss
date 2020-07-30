@@ -17,11 +17,27 @@
             a {
                 @extend %button-link;
                 margin-top: 0;
+                max-width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
 
             @media (min-width: #{$bp-medium}) {
                 display: flex;
                 justify-content: flex-end;
+            }
+
+            @media (min-width: #{$bp-small}) {
+                li {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                a {
+                    min-width: 240px;
+                    width: auto;
+                    padding: 10px 30px 10px 10px;
+                }
             }
         }
 

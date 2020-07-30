@@ -40,7 +40,7 @@ footer {
     }
 
     @media (min-width: #{$bp-small}) {
-        margin: 0 $gutter-width;
+        margin: auto $gutter-width 0;
     }
 
     @media (min-width: #{$bp-medium}) {
