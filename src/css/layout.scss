@@ -16,9 +16,11 @@ html, body, #root {
 }
 
 .main {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+    @media (min-width: #{$bp-small}) {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+    }
 }
 
 .app {
