@@ -28,101 +28,101 @@ Bitcoin-дің Ethereum-дағы версиясы болып табылатын 
 5. Пайдаланушы жасайды [**SPV дәлелдеу**](https://docs.keep.network/tbtc/#spv) олардың депозиттік мәмілесін қарастырады және Ethereum тізбегіне жібереді.
 6. Пайдаланушы TBTC-ті қағып алады.
 
-Redeeming TBTC back into BTC is simply the same process in reverse:
-1. User burns TBTC and provides a receiving Bitcoin address to begin redemption.
-2. The **signer group** generates and publishes a signature for a Bitcoin transaction to send the Bitcoin to the user’s requested Bitcoin address.
-3. The user broadcasts this transaction and the generated signature to the Bitcoin network.
+BTC-ге tbtc-ті қайтару-бұл кері тәртіпте бірдей процесс:
+1. Пайдаланушы TBTC-ті күйдіріп, сатып алуды бастау үшін Bitcoin алатын мекен-жайын ұсынады.
+2. Онда **signer group** пайдаланушының сұралған Bitcoin мекен-жайына Bitcoin жіберу үшін Bitcoin транзакциясына қол қояды және жариялайды.
+3. Пайдаланушы осы транзакцияны және жасалған қолтаңбаны Bitcoin желісіне таратады.
 
-The signers generate an **SPV proof** of this transaction, publish it to the Ethereum chain, and receive their bonds back.
+Қол қоюшылар а жасайды **SPV proof** осы мәмілені жасаңыз, Ethereum тізбегіне жариялаңыз және олардың облигацияларын қайтарып алыңыз.
 
-There are three systems at play in this operation:
+Бұл операцияда үш жүйе бар:
 
-1. The Keep Network, which creates signer federations per deposit to custody bitcoin.
-2. The Bitcoin price feed, which is used to determine the collateralisation of signers on the Ethereum host chain.
-3. The Bitcoin relay, which verifies BTC transactions to mint and redeem TBTC.
+1. Онда Keep Network, ол биткоинді сақтауға депозитке қол қою федерацияларын жасайды.
+2. Онда Ethereum хостинг тізбегінде қол қоюшылардың кепілге қойылғандығын анықтау үшін қолданылатын Bitcoin бағасының берілуі.
+3. Онда Bitcoin релесі, ол BTC транзакциясын TBTC жалдау және сатып алу үшін растайды.
 
-## A decentralized network of signers
+## Орталықтандырылмаған қол қоюшылар желісі
 
-tBTC uses the [Keep Network](https://keep.network/) to provide an always-online, decentralized network of signers. Each signer group that custodies a bitcoin deposit is made up of 3 nodes. These nodes are randomly selected from a large pool, using the [Keep random beacon](https://docs.keep.network/random-beacon/). Any opportunity to manipulate the signer set is mitigated by the KEEP token’s staking model, which provides Sybil resistance.
+tBTC қолданады [Keep Network](https://keep.network/) қол қоюшылардың әрқашан онлайн, орталықтандырылмаған желісін қамтамасыз ету. Биткоинді сақтайтын әр қол қоюшы топ deposit is 3 түйіннен тұрады. Бұл тораптар үлкен бассейнде кездейсоқ түрде таңдалады [Keep random beacon](https://docs.keep.network/random-beacon/). Айла-шарғы жасаудың кез келген мүмкіндігі қол қоюшылар жиынтығы Sybil кедергісін қамтамасыз ететін KEEP staking моделі арқылы азаяды.
 
-To ensure users are compensated in the case of failure or fraud, signers are overcollateralized in ETH to a ratio of 150% the value of the bitcoin deposit. tBTC handles signer failure and signer fraud, punishing signers and fully reimbursing the user in TBTC, as well as making the signer ineligible for future work.
+Пайдаланушыларға сәтсіздік немесе алаяқтық жағдайында өтемақы беру үшін абоненттер Bitcoin депозитінің құнынан 150% қатынасында үстеме пайда алады. tBTC қол қоюшы ақауларын өңдейді қол қоюшылардың алаяқтық әрекеттері, қол қоюшыларды жазалау және TBTC-дегі пайдаланушыны толығымен өтеу, сонымен қатар қол қоюшыны болашақ жұмысына жарамсыз ету.
 
-### Signer failure
+### Қол қою сәтсіздігі
 
-Signers not responding to a redemption request in a timely manner constitutes a signer failure. Signer failures can include a failure to produce a signature for redemption, as well as failure to produce an SPV proof of inclusion in a Bitcoin block for a redemption.
+Сатып алу туралы сұрау салуға уақтылы жауап бермеген қол қоюшылар қол қоюшының бас тартуын білдіреді. Қол қоюшының сәтсіздігі қолтаңбаның жасалмауы болуы мүмкін redemption, ретінде сонымен қатар сатып алу үшін Bitcoin блогына енгізілгені туралы SPV дәлелі келтірілмеген.
 
-All failures are treated as protocol aborts, and initiate the [abort liquidation flow](https://docs.keep.network/tbtc/#redemption). Signer bonds are seized and auctioned off for TBTC so that the user can be reimbursed for their inaccessible funds, and half of the remainder of the signer bonds (a maximum of 1/6th of the original bond) are returned to the signers.
+Барлық сәтсіздіктер протоколды тоқтату ретінде қарастырылады және басталады [түсімді жою](https://docs.keep.network/tbtc/#redemption).Қол қоюшылардың облигациялары аукционнан алынды және сатылды пайдаланушының қол жетімсіз қаражаттарының орнын толтыру үшін және қол қойған облигациялардың қалған жартысының орнын толтыру үшін TBTC үшін (максималды түпнұсқаның 1/6 бөлігі) қол қоюшыларға қайтарылады.
 
-In order to recoup their losses from liquidation, signing groups may choose to recover BTC after an abort has commenced. The reference client leaves offline coordination to each signer.
+Жойылудан болған шығынды өтеу үшін қол қоюшы топтар БТЖ-ны түсік басталғаннан кейін қалпына келтіруді таңдауы мүмкін. Анықтамалық клиент әр қол қоюшыға дербес үйлестіруді қалдырады.
 
-### Signer fraud
+### Қол қоюшы алаяқтық
 
-Signer fraud is the only action in the tBTC system that leads to full, punitive slashing. Any signer that moves bitcoin without authorization by the tBTC protocol is slashed, burning their work token and seizing their entire bond for user recourse.
+Қол қоюшылардың алаяқтылығы - бұл толық және жазалауға әкелетін tBTC жүйесіндегі жалғыз әрекет. TBTC протоколының рұқсатынсыз биткоинді жылжытатын кез-келген қол қоюшы қысқартылып, жұмыс таңбасын жағып, пайдаланушының жүгінуі үшін өзінің барлық байланысын алады..
 
-Fraud is proven by presenting the unauthorized signature on-chain as a fraud proof. Anyone can present a fraud proof and receive the ETH left over after auctioning of signer bonds.
+Алаяқтық заңсыз қолтаңбаны алаяқтықтың дәлелі ретінде ұсыну арқылы дәлелденеді. Кез келген адам алаяқтық туралы дәлелдемені ұсына алады және қол қоюшы облигациялары аукционнан кейін қалған ETH алады.
 
-Signer fraud is punished in both tBTC and Keep ECDSA protocols.
+Қол қоюшылардың алаяқтықтары tBTC және Keep ECDSA хаттамаларында жазаланады.
 
-1. At the tBTC layer, the fraud liquidation flow is enacted and bonds are used to purchase TBTC. The holder of the [tBTC Deposit Token](https://tbtc.network/developers/tbtc-technical-system-overview) is compensated in TBTC, unless the deposit is backing currently-circulating TBTC. In this case, the TBTC is burnt to maintain the 1:1 supply peg.
-2. At the Keep layer, the signer is slashed and their KEEP tokens are burned, potentially removing them from the candidate pool. Slashed signers are not only losing their capital, but opportunity for future fees.
+1. TBTC қабатында алаяқтықты жою ағыны қабылданады және TBTC сатып алу үшін облигациялар қолданылады. [TBTC Depozit Token] иесіне (https://tbtc.network/developers/tbtc-technical-system-overview) TBTC-те өтемақы төленеді, егер депозит қазір айналымда жүрген TBTC-ді қолдамаса. Бұл жағдайда TBTC 1 : 1 жеткізу шкаласын ұстап тұру үшін күйіп кетеді.
+2. Keep қабатында қол қоюшы кесіліп, олардың KEEP таңбалауыштары өртеніп, оларды кандидаттардың пулынан алып тастауы мүмкін. Қысылған қол қоюшылар тек капиталын жоғалтып қана қоймайды, сонымен қатар болашақ төлемдер үшін де мүмкіндік алады.
 
-## A robust price feed
+## Бағаның берік болуы
 
-Signers collectively bond 150% the value of the Bitcoin they custody, incentivizing honest behavior as detailed above. These bonds are in Ethereum’s native asset, ETH, which necessitates a Bitcoin price feed. As such, the security of the price feed is integral to the system.
+Қол қоюшылар жоғарыда көрсетілгендей адал мінез-құлықты ынталандырып, өздері сақтаған Bitcoin құнының 150% -ын біріктіреді. Бұл облигациялар Ethereum-дің табиғи активі - ETH-де, ол Bitcoin бағасының өсуін талап етеді. Осылайша, бағаны қамтамасыз ету жүйенің ажырамас бөлігі болып табылады.
 
-tBTC v1 relies on a trusted ETH/BTC price feed operated by ecosystem participants. The primary feed, operated by MakerDAO, is a medianized feed of prices from Binance, HitBTC, Coinbase, Poloniex, Huobi, and Bitfinex. If the primary feed discontinues reporting, the system can fall back to a secondary feed.
+tBTC v1 экожүйе қатысушылары басқаратын сенімді ETH / BTC бағасына сүйенеді. MakerDAO басқаратын негізгі жеміс - бұл Binance, HitBTC, Coinbase, Poloniex, Huobi және Bitfinex бағалары туралы ақпараттандырылған жем. Егер бастапқы арна есеп беруді тоқтатса, жүйе қайталама берілімге оралуы мүмкін.
 
-Price feeds introduce a class of attacks that can harm signers -- but thanks to the system design, do not impact depositors. A feed with stale or manipulated prices can push deposits into liquidation, but because liquidations are high-start falling-price auctions, signer bonds can be sold with little [slippage](https://en.wikipedia.org/wiki/Slippage_(finance)), and above any manipulated reported price. Short-term price feed manipulations don’t threaten depositor funds, but are a risk for signers.
+Бағалар арналары қол қоюшыларға зиян келтіретін шабуылдар класын енгізеді - бірақ жүйенің дизайны арқасында салымшыларға әсер етпейді. Ескі немесе басқарылатын бағалары бар жем депозиттерді таратуға итермелеуі мүмкін, бірақ тарату бағасы арзан бағамен аукцион болғандықтан, қол қоюшылардың облигациялары аз сатылады [тайғақ](https://en.wikipedia.org/wiki/Slippage_(finance)), және кез-келген айла-шарғы жасалған бағадан жоғары. Қысқа мерзімді бағаны айла-шарғы жасау салымшылардың қаражаттарына қауіп төндірмейді, бірақ қол қоюшылар үшін қауіп тудырады.
 
-A faulty feed that is being manipulated for many blocks begins to threaten the system over time. If a feed appears to be manipulated, rational users should redeem their deposits and exit the system. Notably, a faulty feed doesn’t interfere with user redemptions.
+Көптеген блоктар үшін басқарылатын ақаулық уақыт өте келе жүйеге қауіп төндіре бастайды. Егер арна басқарылатын болып көрінсе, ұтымды пайдаланушылар депозиттерін қайтарып, жүйеден шығуы керек. Атап айтсақ, дұрыс емес ағын пайдаланушының төлеміне кедергі келтірмейді.
 
-A manipulated feed won’t save a malicious signer from being slashed, but it can lower the level of depositor recourse in the case of misbehavior. In this regard, the price feed is a defense-in-depth measure - disabling the feed falls back to a weaker security model.
+Басқарылатын арна зиянды қол қоюшыны бұзудан сақтап қалмайды, бірақ ол дұрыс жұмыс істемеген жағдайда салымшылардың жүгіну деңгейін төмендетуі мүмкін. Осыған байланысты, бағаны беру терең қорғаныс шарасы болып табылады - жемді өшіру әлсіз қауіпсіздік моделіне көшеді.
 
 ## A Bitcoin transaction relay
 
-Proving the state of the Bitcoin chain on Ethereum requires a form of cross-chain communication. tBTC uses [SPV proofs](https://docs.keep.network/tbtc/#spv) to accomplish this, relying on an [open-source relay](https://github.com/summa-tx/relays) built by [Summa](https://summa.one). While the relay tracks the state of the Bitcoin chain, it still relies on the “SPV assumptions”, a weaker form of security than the full verification of running a full node.
+Ethereum-да Bitcoin тізбегінің күйін қамтамасыз ету кросс-тізбекті байланыс түрін қажет етеді. tBTC пайдаланады [SPV дәлел](https://docs.keep.network/tbtc/#spv)бұған жету үшін, [ашық көзі бар эстафета](https://github.com/summa-tx/relays) салған [Summa](https://summa.one). Реле Bitcoin тізбегінің күйін қадағалап отырса да, ол әлі де «SPV жорамалдарына», толық түйінді басқаруды тексеруден гөрі қауіпсіздіктің әлсіз түрі болып табылады..
 
-The use of SPV proofs ensures that TBTC is hard-pegged to real BTC -- it isn’t possible to “print more” BTC. Similarly, the proofs don’t rely on an honest federation, as bitcoin state is verified in the smart contract itself.
+SPV дәлелдерін қолдану TBTC-дің нақты BTC-мен байланыстырылуын қамтамасыз етеді - BTC-ті «көп басып шығару» мүмкін емес. Сол сияқты, дәлелдер адал федерацияға сенбейді, өйткені биткоин күйі ақылды келісімшарттың өзінде тексерілген.
 
-## Governance
+## Басқару
 
-The first version of tBTC has been built without any ability to upgrade contracts, following a Bitcoin-inspired philosophy of immutability and opt-in governance. Any future versions of tBTC will be new systems, and require social coordination to “upgrade”, similar to how a hard fork might on Bitcoin.
+TBTC-тің алғашқы нұсқасы Bitcoin-мен рухтандырылған өзгермейтін философияға сүйене отырып, келісімшарттарды жаңарту мүмкіндігіне ие болмай жасалған. TBTC-тің кез-келген болашақ нұсқалары жаңа жүйелер болады және қатты шанышқының Bitcoin-ге қалай әсер ететініне ұқсас «жаңаруы» керек..
 
-Still, the development team maintains a privileged key with 4 distinct capabilities at launch. These capabilities only apply to new deposits, preventing the team from interfering with existing deposits or long-held funds.
+Әзірге әзірлеушілер командасы іске қосылған кезде 4 ерекше мүмкіндікке ие артықшылықты кілтті қолданады. Бұл мүмкіндіктер жаңа депозиттерге ғана қолданылады, бұл ұжымның бұрыннан бар депозиттерге немесе ұзақ мерзімді қаражатқа араласуына жол бермейді.
 
-1. [Updating the signer fee rate](https://github.com/keep-network/tbtc/blob/19aa270197d84d64ef3a64bdcb09544abf6787b3/solidity/contracts/system/TBTCSystem.sol#L160). The privileged key can modify the fees signers charge for deposits going forward. The modification only impacts new deposits opened after a time delay. The maximum fee that can be set is 10% and the minimum 5bps (0.05%), preventing this ability from enabling an inadvertent kill-switch.
-2. [Supporting additional lot sizes](https://github.com/keep-network/tbtc/blob/19aa270197d84d64ef3a64bdcb09544abf6787b3/solidity/contracts/system/TBTCSystem.sol#L160). The privileged key can modify and add to the available lot sizes for new deposits. This modification only impacts new deposits opened after a time delay. The available lot sizes must always include at least a 1 BTC lot size, and lot sizes can’t be greater than 10 BTC or less than 0.0005 BTC (50,000 sats), preventing an inadvertent kill-switch.
-3. [Modifying collateralization thresholds](https://github.com/keep-network/tbtc/blob/19aa270197d84d64ef3a64bdcb09544abf6787b3/solidity/contracts/system/TBTCSystem.sol#L195). The privileged key can adjust the three collateralization thresholds enforced by the system. This modification only impacts new deposits opened after a time delay, preventing this call from forcing existing deposit liquidation. The lowest threshold is 100%, and the highest is 300%, preventing this call from acting as an inadvertent kill-switch.
-4. [Adding a fallback price feed](https://github.com/keep-network/tbtc/blob/master/solidity/contracts/system/TBTCSystem.sol#L404). The privileged key can append new price feed contract addresses to the list of queried feeds. Because feeds are queried in the order they were added, and the first feed that reports without an error is used, this privilege can only be used to influence the reported price if the existing price feed has failed and stops reporting. This modification cannot disable the primary price feed without price feed operator collusion, and is only valid after a time delay.
-4. [Pausing new deposits](https://github.com/keep-network/tbtc/blob/19aa270197d84d64ef3a64bdcb09544abf6787b3/solidity/contracts/system/TBTCSystem.sol#L129). The privileged key can pause new deposits for 10 days, once, without a time delay. After this ability is involved, it cannot be used again. This approach was preferred to a kill-switch or other control mechanism, giving developers a chance to notify users in case of a 0-day exploit, allowing users to withdraw their deposits from the peg in the case of a catastrophic failure. As with all other privileged key capabilities, this  does not affect open deposits, which can continue to be redeemed or used as normal.
+1. [Қол қоюшылардың сыйақы мөлшерлемесін жаңарту](https://github.com/keep-network/tbtc/blob/19aa270197d84d64ef3a64bdcb09544abf6787b3/solidity/contracts/system/TBTCSystem.sol#L160). Артықшылықты кілт салымшылардың алдағы салымдар үшін алатын сыйақыларын өзгерте алады. Бұл өзгеріс уақыт өткеннен кейін ашылған жаңа салымдарға ғана әсер етеді. Орнатуға болатын максималды төлем 10% құрайды, ал минималды 5бит (0,05%), бұл қабілетсіз абайсызда қосқышты қосуға мүмкіндік бермейді.
+2. [Қосымша лот мөлшерін қолдау](https://github.com/keep-network/tbtc/blob/19aa270197d84d64ef3a64bdcb09544abf6787b3/solidity/contracts/system/TBTCSystem.sol#L160). Артықшылықты кілт жаңа депозиттер үшін лоттардың мөлшерін өзгерте және толықтыра алады. Бұл модификация уақыт өткеннен кейін ашылған жаңа салымдарға ғана әсер етеді. Қол жетімді лоттардың өлшемдері әрқашан кем дегенде 1 BTC лот мөлшерін қамтуы керек, ал лоттардың мөлшері 10 BTC немесе 0.0005 BTC (50,000 саты) -дан аспауы керек, бұл абайсызда өлтіруді ауыстыруға жол бермейді.
+3. [Кепілмен қамтамасыз ету шегін өзгерту](https://github.com/keep-network/tbtc/blob/19aa270197d84d64ef3a64bdcb09544abf6787b3/solidity/contracts/system/TBTCSystem.sol#L195). Артықшылықты кілт жүйемен қамтамасыз етудің үш шегін реттей алады. Бұл өзгеріс тек уақыт өткеннен кейін ашылған жаңа салымдарға ғана әсер етеді, бұл қоңыраудың қолданыстағы депозиттердің жойылуына жол бермейді. Төменгі деңгей 100%, ал ең жоғарғысы - 300%, бұл қоңыраудың абайсызда өлтіруді ауыстыру мүмкіндігін болдырмайды.
+4. [Артқы бағаның жаңаруын қосу](https://github.com/keep-network/tbtc/blob/master/solidity/contracts/system/TBTCSystem.sol#L404). Артықшылықты кілт сұраныстағы арналардың тізіміне бағаны беру туралы жаңа келісімшарт мекен-жайларын қоса алады. Арналар қосылу реті бойынша сұратылғандықтан және қатесіз есеп беретін алғашқы арна қолданылғандықтан, бұл артықшылық, егер қолда бар баға берілмеген болса және есеп беруді тоқтатқан болса, хабарланған бағаға әсер ету үшін қолданыла алады. Бұл өзгеріс бастапқы бағаны беруді оператор операторының келісуінсіз өшіре алмайды және уақыт өткеннен кейін ғана жарамды болады.
+4. [Жаңа салымдарды тоқтату](https://github.com/keep-network/tbtc/blob/19aa270197d84d64ef3a64bdcb09544abf6787b3/solidity/contracts/system/TBTCSystem.sol#L129). Артықшылықты кілт жаңа салымдарды бір күнде, бірде-бір рет, кідіріссіз тоқтата алады. Бұл қабілет болғаннан кейін оны қайтадан пайдалануға болмайды. Бұл тәсіл килл-коммутаторға немесе басқа басқару тетіктеріне қарағанда жақсырақ болды, бұл әзірлеушілерге 0 күндік эксплуатация жағдайында пайдаланушыларға хабарлауға мүмкіндік береді, бұл пайдаланушыларға апаттық жағдайда сәтсіздікке ұшыраған жағдайда депозиттерін алуға мүмкіндік береді. Барлық басқа артықшылықты кілттердің мүмкіндіктері сияқты, бұл ашық депозиттерге әсер етпейді, оларды қалпына келтіруді немесе қалыпты түрде пайдалануды жалғастыра беруге болады.
 
-While tBTC’s governance has been designed to be restrictive and resilient in the face of malicious developers or a stolen key, as with any project making claims to censorship-resistance, the ongoing role of the development team and all code deserve heavy scrutiny by users and outside parties.
+TBTC-тің әкімшілігі зиянды ойыншыларға немесе олармен бір-бірімен байланыс орнатады, кез-келген жобамен айналысуға және кез-келген ұсыныс бойынша қарсыластарға қарсылықты талап етеді. партиялар.
 
-## Additional attacks
+## Қосымша шабуылдар
 
-The strongest attack known against the tBTC sidechain mechanism requires collusion of three roles -- the price feed maintainer, a large number of signers, and new depositors.
+tBTC sidechain механизміне қарсы белгілі күшті шабуыл үш рөлді келісуді қажет етеді - бағаны ұстау, көптеген қол қоюшылар және жаңа салымшылар..
 
-* First, the feed maintainer manipulates the reported prices such that ETH is, for example, 100% overvalued relative to BTC. This manipulation needs to be maintained over time.
-* New depositors can now see that any BTC they deposit will now only have 75% recourse in case of fraud, and should avoid the system. Colluding depositors, however, continue to deposit BTC.
-* Honest signers will continue to custody BTC, regardless of the recourse collateralization. If there are a large number of malicious signers in the signing set, however, this is an opportunity to collude and abscond with BTC in low-collateral deposits. These signers will be liquidated, losing 75% of 1 BTC for every BTC they steal, as well as being ejected en masse from the network for future signing.
-* For each 1 BTC removed from the system, either 75% of 1 BTC in ETH is auctioned off or the same remains available for auction; any deposit whose auction has not been taken is breaking the supply peg until such a time as TBTC value is worth the auctioned bond.
+* Біріншіден, жем беруші ETH бағасы, мысалы, BTC-ге қарағанда 100% жоғары бағаланады. Бұл манипуляцияны уақыт өте келе сақтау қажет.
+* Жаңа салымшылар енді өздері салған кез келген BTC-де алаяқтық жағдайында тек 75% жүгінетінін көре алады және жүйеден аулақ болу керек. Салымшылармен алаяқтық жасасқанмен, BTC депозитін жалғастыруда.
+* Адал қол қойған адамдар BTC-ті кепілдік қамтамасыздандыруға қарамастан сақтайды. Егер қол қою жиынтығында зиянды қол қоюшылар саны көп болса, алайда, бұл төмен кепілдік депозиттердегі BTC-мен қақтығысып, қол қою мүмкіндігі. Бұл қол қоюшылар жойылады, олар ұрлаған әрбір BTC үшін 1 BTC-нің 75% жоғалтады, сондай-ақ болашақ қол қою үшін желіден шығарылады.
+* Жүйеден шығарылған әрбір 1 BTC үшін, ETH-дегі 1 БТК-нің 75% -ы аукционға шығарылады немесе сол аукционға қол жетімді болып қалады; аукционы алынбаған кез-келген депозит, TBTC құны аукциондық облигацияларға тең болғанға дейін жеткізілім кестесін бұзады.
 
-This attack is difficult, requiring significant capital and coordination. The strongest mitigation [is Keep’s random beacon](https://blog.keep.network/whats-in-a-beacon-12c34b0bc078), requiring a large portion of malicious signers across the staked candidate pool, or extraordinary luck on the side of the attacker.
+Бұл шабуыл қиын, айтарлықтай капиталды және үйлестіруді қажет етеді. Ең күшті жұмсарту [is Keep’s random beacon](https://blog.keep.network/whats-in-a-beacon-12c34b0bc078), талап етілген кандидаттар пулына зиянды қол қоюшылардың көп бөлігін немесе шабуылдаушының жағында ерекше сәттілікті талап етеді.
 
-## Alternative security models (BTCB, RenBTC)
+## Баламалы қауіпсіздік модельдері (BTCB, RenBTC)
 
-There are many alternate models for pegged Bitcoin, each with varying levels of security. Centralized Bitcoin banks like [Binance’s BTCB](https://www.binance.com/en/blog/347360878904684544/Introducing-BitcoinPegged-Token-on-Binance-Chain) offer a simple solution - they handle the pegging of BTC, but you have to trust them to do so. Permissioned federations of companies such as Liquid and [Wrapped Bitcoin](https://www.wbtc.network/) are the same model with different stakeholders.
+Бітелген Bitcoin-ге арналған көптеген балама модельдер бар, олардың әрқайсысы әр түрлі қауіпсіздік деңгейіне ие. Орталықтандырылған Bitcoin банктері ұнайды [Binance’s BTCB](https://www.binance.com/en/blog/347360878904684544/Introducing-BitcoinPegged-Token-on-Binance-Chain) қарапайым шешімді ұсыныңыз - олар BTC-дің түйісуін өңдейді, бірақ сіз бұған сенуіңіз керек. Сұйық және. Сияқты компаниялардың рұқсат етілген федерациялары [Wrapped Bitcoin](https://www.wbtc.network/) әр түрлі мүдделі тараптармен бірдей модель.
 
-By contrast, open federations better align with the decentralized nature of Bitcoin; to this end, some projects have chosen different security tradeoffs.
+Керісінше, ашық федерациялар Bitcoin-нің орталықтандырылмаған сипатына сәйкес келеді; осы мақсатта кейбір жобалар әртүрлі қауіпсіздік құралдарын таңдады.
 
-[Ren](https://medium.com/renproject/welcome-to-the-renvm-developer-center-c1ade842fe07) is an example of an open federation, implementing pegged BTC over a custom consensus layer. Ren’s model is similar to Keep’s - validators on Ren stake the native work token, REN, in order to participate in the protocol. However, Ren only requires validators to stake a fixed amount of REN in order to custody bitcoin, which offers no recourse for depositors in the event of fraud. By contrast, tBTC requires signers to be overcollateralized at all times, in both ETH and KEEP. Ren also uses fewer federations, sharding their validator set, with a 2/3 threshold for security. tBTC mandates a separate signer group for each deposit, with all signers required to authorize transactions. Another major distinction is tBTC’s use of SPV proofs, requiring that tBTC follows the “heaviest chain” on Bitcoin, and preventing signers from censoring user deposits or choosing forks. Ren’s federation doesn’t provide these guarantees. Lastly, Ren’s security model involves additional novel consensus and MPC protocols, exposing a much larger attack surface area.
+[Ren](https://medium.com/renproject/welcome-to-the-renvm-developer-center-c1ade842fe07) арнайы федерацияның мысалы, BTC-ді арнайы консенсус қабатына теңестіру. Реннің моделі Keep-ке ұқсас - хаттамаға қатысу үшін REN-дегі валидаторлар REN-дің жергілікті жұмыс токенін ұсынады. Алайда, Рен тек тексерушілерден алаяқтық жағдайында салымшыларға жүгінуге мүмкіндік бермейтін биткоинді сақтау үшін REN-дің белгіленген мөлшеріне ие болуды талап етеді. Керісінше, tBTC қол қоюшылардан ETH және KEEP-де барлық уақытта артық қамсыздандыруды талап етеді. Рен сонымен қатар қауіпсіздігін 2/3 шегі бар валидатор жиынтығынан аз федерацияларды пайдаланады. tBTC әр салым үшін жеке қол қоюшылар тобын тағайындайды, оған барлық қол қоюшылар транзакцияларды растауға міндетті. Тағы бір маңызды айырмашылық - tBTC-тің SPV дәлелдерін қолдану, бұл tBTC Bitcoin-дегі «ең ауыр тізбекті» ұстануды талап етеді және қол қоюшылардың пайдаланушылар депозиттерін цензураға немесе шанышқыларды таңдауға жол бермейді. Рен федерациясы бұл кепілдіктерді бермейді. Соңында, Реннің қауіпсіздік моделі қосымша жаңа келісім мен MPC хаттамаларын қамтиды, шабуыл бетінің аймағын едәуір кеңейтеді.
 
-## Conclusion
+## Қорытынды
 
-There are a variety of bitcoin pegs, and more are introduced every day. tBTC stands out as broadly compatible with Ethereum, trust-minimized, and secure.
+Биткоиннің әртүрлі шұңқырлары бар және басқалары күн сайын енгізілуде. tBTC Ethereum-пен кеңінен үйлесімді, сенімді және қауіпсіз.
 
-Future improvements to tBTC include [replacing the trusted price feed](https://github.com/keep-network/tbtc/issues/254) and [reducing ETH collateral requirements](https://github.com/keep-network/tbtc/issues?q=is%3Aissue+is%3Aopen+collateral).
+TBTC-тің келешектегі жақсартулары мыналарды қамтиды [сенімді бағаны ауыстыру](https://github.com/keep-network/tbtc/issues/254) және [reducing ETH collateral requirements](https://github.com/keep-network/tbtc/issues?q=is%3Aissue+is%3Aopen+collateral).
 
-tBTC is created by [Keep](https://keep.network), [Summa](https://summa.one), and the [Cross Chain Group](https://crosschain.group), and is fully open sourced [on GitHub](https://github.com/keep-network/tbtc).
+tBTC құрған [Keep](https://keep.network), [Summa](https://summa.one), және [Cross Chain Group](https://crosschain.group), толығымен ашылған [on GitHub](https://github.com/keep-network/tbtc).
 
-Join [the #tbtc Discord channel](https://chat.tbtc.network) to ask further questions and learn more about the security model.
+Қосылыңыз [the #tbtc Discord channel](https://chat.tbtc.network) қосымша сұрақтар қою және қауіпсіздік моделі туралы көбірек білу.
