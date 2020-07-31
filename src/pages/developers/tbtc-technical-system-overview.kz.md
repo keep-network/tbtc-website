@@ -2,7 +2,7 @@
 template: resource
 path: developers/tbtc-technical-system-overview
 title: tBTC Техникалық жүйеге шолу
-heading: tBTC Technical System Overview
+heading: tBTC Техникалық жүйеге шолу
 description: >-
   TDT түбіртектері, лоттардың көп мөлшері, Keep-тің кездейсоқ маяктары және т.б.
   шекті қолдар.
