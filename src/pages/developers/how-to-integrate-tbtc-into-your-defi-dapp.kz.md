@@ -1,7 +1,7 @@
 ---
 template: resource
 path: developers/how-to-integrate-tbtc-into-your-defi-dapp
-title: 'Әзірлеушілер: tBTC-ны DeFi dApp-қа қалай біріктіруге болады'
+title: 'Developers: How to Integrate tBTC into your DeFi dApp'
 heading: 'Developer Toolkit: How to Integrate tBTC into your DeFi dApp'
 description: >-
   Developers can integrate tBTC into dApps using publicly available resources
