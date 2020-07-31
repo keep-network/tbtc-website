@@ -2,13 +2,12 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 import classNames from "classnames"
-import { useLocation } from "@reach/router"
 
 import Dropdown from "./Dropdown"
 import { CustomLocaleLink as Link } from "../LocaleLink"
 
 const LanguageDropdownTemplate = ({ languages = [], selectedLanguage }) => {
-  const location = useLocation()
+  const { location } = window
 
   // strip prefix build name from url if present
   const pathname =
