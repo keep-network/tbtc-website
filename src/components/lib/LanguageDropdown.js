@@ -7,7 +7,8 @@ import Dropdown from "./Dropdown"
 import { CustomLocaleLink as Link } from "../LocaleLink"
 
 const LanguageDropdownTemplate = ({ languages = [], selectedLanguage }) => {
-  const { location } = window
+  const location =
+    typeof window !== 'undefined' && window.location || { pathname: "" }
 
   // strip prefix build name from url if present
   const pathname =
