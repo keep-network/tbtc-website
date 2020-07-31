@@ -19,7 +19,7 @@ tBTC - көптеген қатысушылары бар ашық көзі бар
 
 Төмендегі ресурстарда TBTC интеграциясы үшін қажетті құралдар және қысқаша нұсқаулық бар:
 
-- [Ropsten-қосылған tBTC Dapp](https://github.com/keep-network/tbtc-dapp) (use the [tBTC dapp on testnet](https://dapp.test.tbtc.network/) here)
+- [Ropsten-қосылған tBTC Dapp](https://github.com/keep-network/tbtc-dapp) (қолданыңыз [tBTC dapp on testnet](https://dapp.test.tbtc.network/) мұнда)
 - [tBTC smart келісімшарттар](https://github.com/keep-network/tbtc)
 - [tbtc.js](https://github.com/keep-network/tbtc.js)
 - [Техникалық сипаттамасы](http://docs.keep.network/tbtc/)
