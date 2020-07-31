@@ -1,11 +1,11 @@
 ---
 template: legal-page
 path: /terms-of-use
-title: tBTC Network Terms of Use
+title: tBTC желісін пайдалану шарттары
 ---
 Last Modified: May 1, 2020
 
-## Acceptance of the Terms of Use
+## Пайдалану шарттарын қабылдау
 
 These terms of use are entered into by and between You and Keep SECZ, a Cayman Islands special economic zone company ("**Company**", "**we**" or "**us**"). The following terms and conditions, together with any documents they expressly incorporate by reference (collectively, these "**Terms of Use**"), govern your access to and use of the network located at [tbtc.network](https://tbtc.network/) as well as any content, functionality, smart contracts, distributed applications ("Dapps") and services offered on or through the tBTC network (collectively, the "**Network**"). The Network is currently administered by the Company using open source protocols; however, we intend over time for the Network and the network protocol to become decentralized and governed entirely by the community of its users in whatever manner they determine.
 
