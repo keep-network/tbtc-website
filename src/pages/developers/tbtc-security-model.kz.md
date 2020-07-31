@@ -1,7 +1,7 @@
 ---
 template: resource
-title: tBTC қорғау моделі
-heading: tBTC Security Model
+title: tBTC Қауіпсіздік моделі
+heading: tBTC Қауіпсіздік моделі
 description: >-
   Төменде tBTC қауіпсіздік моделіне шолу және оның қалай а
   пайдаланушылар мен қол қоюшылар үшін қауіпсіздіктің жоғары деңгейі.
