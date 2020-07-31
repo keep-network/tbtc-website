@@ -1,39 +1,39 @@
 ---
 template: resource
 path: developers/how-to-integrate-tbtc-into-your-defi-dapp
-title: 'Әзірлеушілер: tBTC-ны DeFi dApp-қа қалай біріктіруге болады'
-heading: 'Әзірлеуші құралдар жинағы: tBTC-ны DeFi dApp-қа қалай біріктіруге болады'
+title: 'Developers: How to Integrate tBTC into your DeFi dApp'
+heading: 'Developer Toolkit: How to Integrate tBTC into your DeFi dApp'
 description: >-
-  Әзірлеушілер жалпы қол жетімді ресурстарды пайдалана отырып, tBTC-ді dApp-қа біріктіре алады
-  және кітапханалар. ERC-20 токенін қолданатын кез-келген бағдарлама TBTC-ді біріктіре алады. Бұл
-  нұсқаулық tBTC интеграциясы үшін қажет ресурстар мен құралдарды қамтиды.
+  Developers can integrate tBTC into dApps using publicly available resources
+  and libraries. Any app that uses an ERC-20 token can integrate TBTC. This
+  guide covers the resources and tools needed to integrate tBTC.
 date: 2020-04-01T17:04:10.000Z
 tags:
   - developers
 ---
-tBTC - Bitcoin-ді даптаңызға қосудың оңай әдісі, оны BTC ұстаушыларына қол жетімді етеді және пайдаланушының өсуіне жол бермейді. TBTC-ді біріктіру арқылы Ethereum-да DeFi-даптарды жасаушылар BTC иелеріне орталықтандырылған қызметтерге сенбестен пайыз алуға немесе несие алуға мүмкіндік бере алады..
+tBTC is the easy way to add Bitcoin to your dapp, making it accessible to BTC holders and unlocking user growth. By integrating TBTC, developers of DeFi dapps on Ethereum can let BTC holders earn interest or take out loans without having to trust centralized services.
 
-tBTC - көптеген қатысушылары бар ашық көзі бар жоба. Әзірлеушілер жалпыға қол жетімді ресурстар мен кітапханаларды қолдана отырып, TBTC-ді қосыла алады. ERC-20 токенін қолданатын кез-келген бағдарлама TBTC-ді біріктіре алады.
+tBTC is an open-source project with many contributors. Developers can integrate TBTC into their dapps using publicly available resources and libraries. Any app that uses an ERC-20 token can integrate TBTC.
 
-Әзірлеушілерге Қатты болу және ERC-20 токендері туралы білу қажет.
+Developers will need to be familiar with Solidity and with ERC-20 tokens generally.
 
-Төмендегі ресурстарда TBTC интеграциясы үшін қажетті құралдар және қысқаша нұсқаулық бар:
+The following resources contain the tools needed to integrate TBTC, as well as a brief guide:
 
-- [Ropsten-қосылған tBTC Dapp](https://github.com/keep-network/tbtc-dapp) (use the [tBTC dapp on testnet](https://dapp.test.tbtc.network/) here)
-- [tBTC smart келісімшарттар](https://github.com/keep-network/tbtc)
+- [The Ropsten-connected tBTC dapp](https://github.com/keep-network/tbtc-dapp) (use the [tBTC dapp on testnet](https://dapp.test.tbtc.network/) here)
+- [tBTC smart contracts](https://github.com/keep-network/tbtc)
 - [tbtc.js](https://github.com/keep-network/tbtc.js)
-- [Техникалық сипаттамасы](http://docs.keep.network/tbtc/)
-- [Solidity API құжаттамасы](http://docs.keep.network/tbtc/solidity/)
+- [The technical specification](http://docs.keep.network/tbtc/)
+- [The Solidity API documentation](http://docs.keep.network/tbtc/solidity/)
 
-Әзірлеушілер жоғарыда аталған құралдарды қолдана отырып, tBTC-те құрылуда. Біздің ETHDenver-тегі жақындағы хакатонымыз [бірнеше тамаша қосымшалар шығарды](https://blog.keep.network/bitcoin-earn-wins-ethdenver-tbtc-hackathon-prize-5233ce805468) олар шабыт бере алады.
+Developers are already building on tBTC using the tools above. Our recent hackathon at ETHDenver [produced several excellent applications](https://blog.keep.network/bitcoin-earn-wins-ethdenver-tbtc-hackathon-prize-5233ce805468) that may provide inspiration.
 
-Қосылыңыз [Keep #tbtc арна қосулы Discord]( https://chat.tbtc.network) tBTC туралы техникалық сұрақтар үшін және [tbtc.js](https://tbtc.network/news/2020-02-14-announcing-tbtc-js)
+Join the [Keep #tbtc channel on Discord]( https://chat.tbtc.network) for technical questions about tBTC and [tbtc.js](https://tbtc.network/news/2020-02-14-announcing-tbtc-js)
 
-Келесі қосымша ресурстар бар:
+The following additional resources are also available:
 
-- TBTC тарату тізіміне қосылыңыз (жаңартуларды, соның ішінде ақпаратты tBTC&#39;s алдағы Ethereum магистральдық ұшырылымы)
+- Join the tBTC mailing list (for updates including information about tBTC&#39;s upcoming launch on Ethereum mainnet)
 - tBTC&#39;s [GitHub](https://github.com/keep-network/tbtc)
-- Онда [техникалық сипаттама](http://docs.keep.network/tbtc/index.pdf)
+- The [technical spec](http://docs.keep.network/tbtc/index.pdf)
 
-Орындаңыз [#tBTC](https://twitter.com/hashtag/tBTC) қосулы Twitter жаңалықтар мен
-қатысу мүмкіндіктері.
+Follow [#tBTC](https://twitter.com/hashtag/tBTC) on Twitter for news and
+opportunities to participate.
