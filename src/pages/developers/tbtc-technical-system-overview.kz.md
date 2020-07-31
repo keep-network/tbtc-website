@@ -1,76 +1,77 @@
 ---
 template: resource
 path: developers/tbtc-technical-system-overview
-title: tBTC Technical System Overview
+title: tBTC Техникалық жүйеге шолу
 heading: tBTC Technical System Overview
 description: >-
-  Learn about TDT receipts, multiple lot sizes, Keep's random beacon, and
-  threshold signatures.
+  TDT түбіртектері, лоттардың көп мөлшері, Keep-тің кездейсоқ маяктары және т.б.
+  шекті қолдар.
 date: 2020-04-01T15:04:10.000Z
 tags:
   - developers
 ---
-tBTC incorporates novel design features that carry important implications for users. This piece explains four of these: TDT receipts, multiple lot sizes, Keep&#39;s random beacon, and threshold signatures.
+tBTC пайдаланушылар үшін маңызды салдары бар жаңа дизайн ерекшеліктерін қамтиды. Бұл бөлімде олардың төртеуі түсіндіріледі: TDT түбіртектері, бірнеше лот өлшемдері, кездейсоқ Маяк Keep can&#39; s және шекті қолдар.
 
-## TBTC Deposit Token (TDT)
+## TBTC Токен қоймасы (TDT)
 
-The TBTC Deposit Token (TDT) is a non-fungible token that is minted when a user requests a deposit. A TDT is a non-fungible ERC-721 token that serves as a counterpart to TBTC. It represents a claim to a deposit&#39;s underlying UTXO on the Bitcoin blockchain.
+BTC (TDT) депозитінің белгісі-пайдаланушы депозитті сұраған кезде шығарылатын алмастырылмайтын белгі. TDT-бұл TBTC аналогы ретінде қызмет ететін өзгермейтін ERC-721 белгісі. Бұл Bitcoin blockchain-де UTXO негізіндегі депозитке шағым.
 
-TBTC deposits can be locked or unlocked. A locked deposit can only be redeemed by the deposit owner with the corresponding TDT. Each TDT is unique to the deposit that mints it and carries the exclusive right for up to a 6 month term to redeem the deposit.
+TBTC салымдарды құлыптауға немесе құлыптан шығаруға болады. Бекітілген салымды тек тиісті ИДТ-мен салым иесі өтеуі мүмкін. Әрбір TDT оны шығаратын депозитке ғана тән және 6 айға дейінгі мерзімге салымды өтеу құқығына ие.
 
-Once a deposit is fully qualified through a proof of the funding Bitcoin transaction (called the SPV Relay), the holder can request redemption, and, after paying any outstanding signing fees, be guaranteed the same UTXO that funded the deposit on the Bitcoin network.
+Bitcoin транзакциясының (SPV релесі деп аталады) қаржыландыруының дәлелі арқылы депозит толықтай толтырылғаннан кейін, иесі өтеуді сұрай алады және қол қойылмаған төлемдерді төлегеннен кейін Bitcoin желісіндегі депозитті қаржыландырған UTXO кепілдендіріледі.
 
-The TDT and TBTC are interchangeable through a contract called the vending machine, which manages the exchange of TDT for TBTC and vice-versa.
+TDT және TBTC TDT-ны TBTC-ке ауыстыруды басқаратын автоматтар деп аталатын келісім-шарт арқылы алмасады және керісінше.
 
-* Given a TDT, it will mint TBTC.
-* Given TBTC, it will burn it and return a specific TDT.
+* TDT ескере отырып, ол TBTC жалбызын шығарады.
+* TBTC ескере отырып, ол оны күйдіріп, белгілі бір TDT қайтарады.
 
-*The TDT is required to redeem a locked BTC deposit*. Think of it like the ticket from a strict coat check: without it, you can&#39;t get your BTC back.
+*TDT BTC-тің оқшауланған депозитін өтеу үшін қажет*. Мұны қатал пальтодағы билет сияқты ойлаңыз: онсыз сіз can&#39;сіздің BTC-ны қайтарып алыңыз.
 
-TDTs are transferable. Holders may choose to trade them, for example, or use them as collateral elsewhere.
+TDTs берілуі мүмкін. Ұстаушылар, мысалы, оларды саудалауды немесе басқа жерде кепіл ретінде пайдалануға құқылы.
 
-In the event of fraud or collateralization issues, the holder of a TDT is guaranteed compensation in TBTC via the signing group&#39;s bonded collateral. If the deposit is redeemed by another account after it has reached term, then the TDT holder is guaranteed compensation in TBTC (less signer fees). Note a TDT holder can still redeem their deposit for BTC even once the 6 month term has elapsed, if no other users have redeemed it.
+Алаяқтық немесе кепілге қатысты мәселелер туындаған жағдайда, TDT иесіне қол қою тобы арқылы ТБТК өтемақысы кепілдендірілген&#39;s кепілдік қамтамасыз ету. Егер салым мерзімі аяқталғаннан кейін басқа шотпен өтелсе, онда TDT иесіне TBTC-да өтемақы кепілдік беріледі (қол қою комиссиясын есептемегенде). Ескеріңіз, егер TDT иесі 6 айлық мерзім өткеннен кейін де BTC үшін депозитін қайтара алады, егер оны басқа пайдаланушылар сатып алмаған болса.
 
-Since there is more value in stealing a 1 BTC deposit than a 0.001 BTC deposit, the former is likely more susceptible to attacks like re-orgs. As an NFT, TDTs allow this risk to be priced in, which is highly relevant for applications that use BTC as collateral. Any recipient of a TDT will need to evaluate the risk profile of a given token themselves. TDTs are designed to provide a net benefit by isolating risk, since attacks against the deposit backing a TDT should only impact the TDT holder, rather than the entire supply-pegged currency.
+1 BTC кен орнын ұрлаудың 0,001 BTC депозитінен гөрі көп құндылығы бар болғандықтан, қайта орг сияқты шабуылдарға көбірек ұшырайды. NFT ретінде TDTs бұл тәуекелді бағалауға мүмкіндік береді, бұл BTC-ны кепіл ретінде пайдаланатын қосымшалар үшін өте маңызды. TDT-дің кез-келген алушысы берілген белгінің қауіп-қатер профилін өздері бағалауы керек. TDTs тәуекелді оқшаулау арқылы таза пайда алуға арналған, өйткені TDT-дің депозитіне қарсы шабуылдар тек жеткізілетін валютаға емес, TDT иесіне ғана әсер етуі керек.
 
-## Lots and Lot Sizes
+## Лоттар мен лоттар
 
-Deposits on tBTC are managed in lots. To make the system rational and manageable, lots are one of a set of fixed sizes, managed by the system. If a depositor wants to deposit a larger amount of BTC than supported by existing lot sizes, they must create multiple deposit requests and fund multiple deposits. This allows for each deposit to be backed by a different signing group, which both simplifies the bonding of signing groups and insulates the wider system against isolated signing group failures, malicious or otherwise.
+TBTC депозиттері лот бойынша басқарылады. Жүйені ұтымды және басқарылатын ету үшін лоттар жүйемен басқарылатын бекітілген өлшемдердің жиынтығының бірі болып табылады. Егер салымшы қолданыстағы лоттар көлемінен гөрі BTC мөлшерін көбірек сақтағысы келсе, олар бірнеше депозиттік сұраныстарды жасап, бірнеше салымдарды қаржыландыруы керек. Бұл әр салымды басқа қол қою тобымен қолдауға мүмкіндік береді, ол қол қою топтарының байланысын жеңілдетеді және кеңейтілген жүйені оқшауланған қол қою тобының сәтсіздіктерінен, зиянды немесе басқа жолдармен оқшаулайды.
 
-This design has important implications that users should be familiar with.
+Бұл дизайн пайдаланушыларға таныс болуы керек маңызды әсерлерге ие.
 
-*Each deposit must match one of the standard lot sizes*
+*Әр салым стандартты лот мөлшеріне сәйкес келуі керек*
 
-The system handles all instances of overpayment and underpayment -- in which a user deposits an amount that is either larger or smaller than the standard deposit size -- as faulty user behavior. The primary effect of over- or underpayment on the system is to distort the collateralization of the signers. The system is designed to pass the costs of this on to the user.
+Жүйе артық төлеу және төлемақының барлық жағдайларын қарастырады --пайдаланушы салымның стандартты мөлшерінен үлкен немесе кіші мөлшерде салым салады -- пайдаланушының дұрыс емес әрекеті ретінде. Шамадан тыс немесе артық төлемнің жүйеге тигізетін негізгі әсері қол қоюшылардың кепілін бұзу болып табылады. Жүйе осы шығындарды пайдаланушыға беру үшін жасалған.
 
-In the case of underpayment -- in which a user deposits an amount less than the chosen BTC lot size -- the system will not create a proof that can be redeemed for TBTC. The user forfeits the BTC locked into the deposit, which can be divided among the signers.
+Пайдаланушы BTC таңдалған лот мөлшерінен аз мөлшерде төлем жасаған жағдайда, төлем TBTC үшін өтеуге болатындығын дәлелдей алмайды. Пайдаланушы қол қойылған адамдар арасында бөлуге болатын депозитке салынған BTC-ны жоғалтады.
 
-*Users should be acutely aware of this. In a situation where the only available lot size is 1 BTC, for example, it is easy to imagine a user attempting to claim 1 TBTC by making two deposits of 0.5 BTC each. A user that does so will lose all of their BTC, as the system will simply recognize two distinct instances of underpayment. In short, the lot size of a deposit is fixed when the deposit is created, and the deposit must be funded with that amount.*
+*Пайдаланушылар бұл туралы мұқият білуі керек. Лоттың жалғыз қол жетімді мөлшері - 1 BTC болған жағдайда, мысалы, әрқайсысы 0,5 BTC-тен екі депозит жасау арқылы 1 TBTC-ге талап етуге тырысатын пайдаланушыны елестету оңай. Мұны қолданушы барлық BTC-нен айырылады, өйткені жүйе төлемнің екі нақты жағдайын біледі. Қысқаша айтқанда, депозиттің лот мөлшері депозит құрылған кезде белгіленеді және салым осы сомамен қаржыландырылуы керек.*
 
-In the case of overpayment -- where a user deposits more than the chosen BTC lot size -- the system will generate a proof, but only for the standard lot size, redeemable in exchange for that amount in TBTC. In an efficient market, we would expect this to be immediately redeemed, as the redeemer expects to take the overfunded amount locked in the deposit as arbitrage. Unless the deposit is redeemed by the original depositor, the overpayment is forfeit.
+Артық төлеу жағдайында -- мұнда пайдаланушы таңдалған BTC лотының мөлшерінен көп депозит салады -- жүйе дәлелді қалыптастырады, бірақ тек стандартты лот өлшемі үшін ғана, ТБТК-да сол соманың орнына өтелетін болады. Тиімді нарықта біз оны тез арада қайтарып аламыз деп үміттенеміз, өйткені сатып алушы депозитке жабылған артық қаржыландырылған соманы арбитраж ретінде алады деп күтеді. Егер салымды бастапқы салымшы өтемеген болса, артық төлем өндіріп алынады.
 
-*In a 1 BTC lot size example, a user who deposits 1.4 BTC will receive a proof allowing them to mint exactly 1 TBTC (the amount corresponding to the lot size). There is now an oversize deposit in the system, which one would expect to be redeemed quickly given the opportunity to exchange 1 TBTC for 1.4 BTC. The user who deposited the extra BTC will, like all other users, be able to redeem their 1 TBTC for 1 BTC, but the extra 0.4 BTC is lost (unless the user realizes their mistake and quickly redeems their TBTC for the original 1.4 BTC deposit).*
+*1 BTC лот мөлшерінің мысалында 1.4 BTC депозитін салған пайдаланушыға 1 TBTC (лот көлеміне сәйкес келетін мөлшерде) жалғанға рұқсат беретін дәлелдеме алынады. Қазір жүйеде
+1 TBTC-ны 1,4 BTC-ке ауыстыру мүмкіндігі арқылы тез сатып алынатын болады деп болжанған үлкен депозит бар. Қосымша BTC-ді салған пайдаланушы, барлық басқа пайдаланушылар сияқты,  1 BTC үшін 1 TBTC сатып ала алады, бірақ қосымша 0.4 BTC жоғалады (егер пайдаланушы өз қателіктерін түсінбесе және TBTC-ді бастапқы 1.4 BTC депозитіне тез қайтарып алмаса).*
 
-The system will only accept the first UTXO greater than the deposit lot size. All other BTC sent to the signing group is forfeit. Therefore it is imperative that depositors send only a single UTXO. Accepting multiple UTXOs from depositors would impose significant on-chain complexity and gas fees, as each UTXO would need to be proven via SPV, and a signature on it explicitly authorized. Signers would have to be incentivized to sign each transaction despite the fact that the total value of the UTXOs is not known.
+Жүйе тек алғашқы UTXO-ны депозиттік лот мөлшерінен үлкен мөлшерде қабылдайды. Қол қою тобына жіберілген BTC-дің барлығына тыйым салынған. Сондықтан салымшыларға бір ғана UTXO жіберуі өте маңызды. Салымшылардан бірнеше UTXO қабылдау, тізбектегі күрделілік пен газға үлкен төлемдер әкелуі мүмкін, өйткені әрбір UTXO SPV арқылы расталуы және оған қолы нақты рұқсат етілуі керек. UTXO жалпы құны белгісіз болғанына қарамастан, қол қоюшылар әр транзакцияға қол қоюға ынталандырылуы керек.
 
-## Random Beacon for Signer Selection
+## Random Beacon қол қоюшыны таңдау үшін
 
-The Keep network requires a trusted source of randomness to select tBTC signers. This takes the form of a BLS Threshold Relay.
+Keep желісі tBTC қол қоюшыларын таңдау үшін кездейсоқтықтың сенімді көзін қажет етеді. Бұл BLS шекті эстафетасы түрінде болады.
 
-When a request comes in to create a signing group, the tBTC system uses a random seed from a secure decentralized random beacon to randomly select signing group members from the eligible pool of signers. These signers coordinate a distributed key generation protocol that results in a public ECDSA key for the group, which is used to produce a wallet address that is then published to the host chain. This completes the signer selection phase.
+Қол қою тобын құру туралы сұрау түскен кезде, tBTC жүйесі қауіпсіз орталықтандырылмаған кездейсоқ маяктан кездейсоқ тұқым қолданады, қол қою тобының мүшелерін кездейсоқ таңдау үшін. Бұл қолтаңбалар таратылған кілттерді құру протоколын үйлестіреді, нәтижесінде топ үшін жалпыға ортақ ECDSA кілті пайда болады, ол кейіннен хост тізбегінде жарияланған әмиян мекенжайын жасау үшін қолданылады. Бұл қол қоюшыны таңдау кезеңін аяқтайды.
 
-## Threshold Signatures
+## Шекті қолдар
 
-tBTC uses threshold signatures for key generation. Threshold signatures allow for a group of signers to generate a single public key from a set of private key &quot;shares.&quot; This method enables a subset of the signers to create signatures on behalf of the larger group. Users can verify groups of signers through a single public key corresponding to multiple private keys. This provides security without the work requirements of standard multisig designs.
+tBTC кілттерді құру үшін шекті қолтаңбаларды қолданады. Шектік қолтаңбалар қол қоюшылар тобына жеке ашық кілттер жиынтығынан жеке ашық кілтті жасауға мүмкіндік береді &quot;shares.&quot; Бұл әдіс қол қоюшылардың ішкі тобына үлкен топтың атынан қолтаңба жасауға мүмкіндік береді. Пайдаланушылар бірнеше жеке кілттерге сәйкес келетін жалғыз ашық кілт арқылы қол қоюшылар тобын тексере алады. Бұл стандартты мультисигиалды дизайнның жұмыс талаптарынсыз қауіпсіздікті қамтамасыз етеді.
 
-Threshold signatures provide a number of benefits:
+Шекті қолдар бірқатар артықшылықтар береді:
 
-* Relatively little coordination is needed to set up a group
-* No single member of the group has to be trusted
-* They are resilient to as much as half of the group being malicious or failing to generate
+* Топ құру үшін салыстырмалы түрде аз үйлестіру қажет
+* Топтың бірде-бір мүшесіне сенуге болмайды
+* Олар зиянды немесе туғыза алмайтын топтың жартысына дейін икемді
 
-For tBTC v1, signing groups are 3-of-3, meaning they are groups of 3 signers that require all 3 signers to collaborate to create signatures on behalf of the group.
+TBTC v1 үшін қол қою топтары 3-тен 3-ке дейін, яғни бұл 3 қол қоюшылар тобы, топтың атынан қолтаңбалар жасау үшін барлық 3 қол қоюшымен бірлесе жұмыс істеуді талап етеді..
 
-You can find additional information about threshold signatures [here](https://blog.keep.network/threshold-signatures-ff2c2b98d9c7).
+Шекті қолдар туралы қосымша ақпаратты таба аласыз [Мұнда](https://blog.keep.network/threshold-signatures-ff2c2b98d9c7).
 
-Visit our [GitHub](https://github.com/keep-network/tbtc) for more information, tools, and documentation. [Join the tBTC mailing list](https://tbtc.network/#mailing-list) for updates, including information about tBTC&#39;s upcoming launch on Ethereum mainnet. To learn more about tBTC&#39;s technical design, read the [technical spec](http://docs.keep.network/tbtc/index.pdf). Join the [Keep #tbtc channel on Discord](https://chat.tbtc.network) for technical questions about tBTC and [tbtc.js](https://tbtc.network/news/2020-02-14-announcing-tbtc-js), and follow [along on Twitter](https://twitter.com/search?q=%22%23tbtc%22&src=typed_query) news and opportunities to participate.
+Бізге кіріңіз [GitHub](https://github.com/keep-network/tbtc) қосымша ақпарат, құралдар және құжаттар үшін. [tBTC тарату тізіміне қосылыңыз](https://tbtc.network/#mailing-list) жаңартуларды, соның ішінде ақпаратты tBTC&#39;s алдағы Ethereum магистральдық ұшырылымы. Туралы көбірек білу tBTC&#39;s техникалық дизайн, оқыңыз [техникалық сипаттама](http://docs.keep.network/tbtc/index.pdf). Қосылыңыз [Keep #tbtc арна қосулы Discord](https://chat.tbtc.network) tBTC туралы техникалық сұрақтар үшін және [tbtc.js](https://tbtc.network/news/2020-02-14-announcing-tbtc-js), және орындаңыз [бойынша Twitter](https://twitter.com/search?q=%22%23tbtc%22&src=typed_query) жаңалықтар мен қатысу мүмкіндіктері.
