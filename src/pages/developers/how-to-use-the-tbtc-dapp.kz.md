@@ -1,112 +1,111 @@
 ---
 template: resource
-title: 'Cách sử dụng tBTC dApp'
-heading: Cách sử dụng tBTC dApp
-description: là hướng dẫn từng bước cách sử dụng dBTC dApp
+title: 'Жеке тұлғалар: tBTC dApp-ті қалай пайдалану керек'
+heading: tBTC dApp-ты қалай қолдануға болады
+description: tBTC-ді жалбыздандыру және сатып алу бойынша қадамдық нұсқаулық
 date: 2020-04-01T16:04:10.000Z
 path: developers/huong-dan-su-dung-tbtc-dapp
 tags:
   - tbtc
 ---
-Sau đây là hướng dẫn từng bước cách sử dụng dBTC dApp.
+Бұл tBTC dApp-ты қолдануға арналған қадамдық нұсқаулық.
 
-Để bắt đầu, bạn cần:
+Бастау үшін сізге керек:
 
-•	Hãy chắc chắn rằng bạn đã cài đặt [Metamask](https://metamask.io/).
+•	Сізде бар екеніне көз жеткізіңіз [Metamask](https://metamask.io/) орнатылған.
 
-•	Lấy một số ETH từ [Coinbase](http://coinbase.com) hoặc một nguồn khác (để trả phí giao dịch) nếu bạn chưa có bất kỳ nguồn nào.
+•	Келесіден ETH алыңыз [Coinbase](http://coinbase.com) немесе егер сізде болмаса, басқа көзге (газ үшін төлеу үшін).
 
-•	Đảm bảo bạn có một số ETH trong ví Metamask.
+•	Metamask әмиянында ETH бар екеніне көз жеткізіңіз.
 
-Khi ETH có trong ví của bạn, hãy truy cập [Ropsten tBTC dApp.]((https://dapp.test.tbtc.network))
+ETH әмияныңызда болғаннан кейін, оған өтіңіз [Ropsten tBTC dApp.]((https://dapp.test.tbtc.network))
 
-Tiếp theo có 5 bước
+Келесі 5 қадам бар:
 
-1.	Tạo khoản tiền gửi
+1.	Депозит жасаңыз:
 
 ![image.png](https://cdn.steemitimages.com/DQmeEFprmUDdEwbj1Gt24jdwqRCRH7A1XMrT5crB64W7FmW/image.png)
 
-2.	Tạo địa chỉ ví BTC (hiện tại yêu cầu 2 xác nhận Metamask):
+2.	BTC әмиянының мекен-жайын жасаңыз (қазір 2 метамаска растауы қажет):
 
 
 ![image.png](https://cdn.steemitimages.com/DQmeu4Fa43HksGt6tVJr7Av2NrVFkLtf24qGcKpnqSTw53q/image.png)
 
 
-3.	Gửi BTC của bạn từ bất kỳ ví nào đến địa chỉ đó bằng mã QR được cung cấp. Bạn cũng có thể tự sao chép / dán địa chỉ:
+3.	Берілген QR кодын пайдаланып, өзіңіздің BTC кодыңызды кез келген әмияннан сол мекен-жайға жіберіңіз. Мекенжайды өзіңіз көшіре аласыз / қоя аласыз:
 
 
 ![image.png](https://cdn.steemitimages.com/DQmQ1p5tT87TUg6n4KRrxLBjcfGpPwVW7ZmKSdamvKMcH4A/image.png)
 
 
-4.	Chờ xác nhận tiền gửi trên chuỗi Bitcoin. Việc này sẽ trải qua 6 xác nhận hoặc mất khoảng một giờ:
+4.	Bitcoin тізбегінде депозитті растауды күтіңіз. Бұл 6 растауды немесе шамамен бір сағатты алуы керек:
 
 
 ![image.png](https://cdn.steemitimages.com/DQmS4u2ghHNLakMU856wNZwrkMjfgpVcvBxsQuvBeDgFTro/image.png)
 
 
-5.	Khi khoản tiền gửi được xác nhận, bạn sẽ có thể tạo bằng chứng SPV, đây là bằng chứng tiền điện tử cho khoản tiền gửi của bạn từ chuỗi BTC. Cung cấp bằng chứng này để nhận TBTC của bạn. Bước cuối cùng gồm hai phần:
+5.	Депозит расталғаннан кейін сіз BTC тізбегінен сіздің салымыңыздың криптографиялық дәлелі болып табылатын SPV дәлелін жасай аласыз. Сіздің TBTC алу үшін мұны қамтамасыз етіңіз. Бұл соңғы қадам екі бөлімнен тұрады:
 
-a. Cung cấp bằng chứng và gửi đi (quá trình này cần một xác nhận của Metamask)
+a. Дәлелді көрсетіп, оны жіберіңіз (бір метамаска растауы қажет)
 
-b. Khi đủ điều kiện, hãy tạo TBTC từ Máy bán hàng tự động (quá trình này cần hai xác nhận của Metamask: một xác nhận để chấp nhận việc chuyển giao Máy bán hàng tự động TDT và một xác nhận để thực hiện việc tạo tiền thực tế).
+b. Біліктілікке ие болғаннан кейін, сатылым автоматынан TBTC жалбызын шығарыңыз (бұл үшін екі метамаска растауы қажет: біреуі TDT-Vending Machine берілуін мақұлдау үшін, ал екіншісі - нақтыланған ақша жасау).
 
 
 ![image.png](https://cdn.steemitimages.com/DQmRuoNYCfM4MaVRUD4a5gXstNFtyNDf5vecEqFrhMi8HPM/image.png)
  
 --------------
 
-Khi đã có TBTC, bạn có thể tự do sử dụng để hành động trên chuỗi Ethereum. Bạn cũng nhận được một TDT, có thể được sử dụng để hoàn trả tiền gửi lấy BTC (xem mục tiếp theo). Bạn có thể đọc thêm về TDT trong [tổng quan hệ thống kỹ thuật](https://tbtc.network/developers/tbtc-tong-quan-he-thong-ky-thuat/).
+Сіздің TBTC болғаннан кейін сіз оны Ethereum тізбегінде әрекет ету үшін пайдалана аласыз. Сондай-ақ, сіз TDT аласыз, оны BTC үшін салымды өтеу үшін пайдалануға болады (келесі бөлімді қараңыз). Сіз TDT туралы көбірек біле аласыз [техникалық жүйеге шолу](https://tbtc.network/developers/tbtc-technical-system-overview).
 
-## Cách đổi TBTC lấy BTC
+## BTC үшін TBTC-ті қалай қалпына келтіруге болады
 
 
-Ở đầu kia của luồng tBTC là sự hoàn trả, tại đây bạn thực hiện trao đổi TBTC và nhận lại BTC.
+TBTC ағынының екінші жағында өтеу болып табылады, онда сіз TBTC алмасып, оның орнына BTC-ны аласыз.
 
-Đầu tiên, truy cập dapp như bạn sẽ làm trong luồng đầu tiên. Nhấp vào "hoàn trả".
+Алдымен, бірінші ағындағыдай, дапқа барыңыз. «Сатып алу» түймесін басыңыз.
 
-Đối với các bước tiếp theo, bạn cần các thông tin sau:
+Келесі қадамдар үшін сізге келесі ақпарат қажет:
 
-1.	ID TDT mà bạn nhận được khi tạo TBTC ở trên. Bạn có thể nghĩ về điều này giống như tấm vé trong phòng kiểm tra áo khoác - bạn cần nó để lấy lại chiếc áo khoác. Bạn chỉ nhận được nó ở cuối luồng tiền gửi ở trên.
+1. Жоғарыдағы TBTC-ті жалбыздау кезінде алған TDT куәлігі. Сіз бұл туралы пальтоды тексергендегі билет сияқты ойлай аласыз - пальтоды қайтару үшін сізге қажет. Сіз оны тек жоғарыдағы ағынның соңында аласыз.
+2. Сіздің BTC жіберілетін BTC мекен-жайы.
 
-2.	Địa chỉ BTC mà bạn muốn gửi BTC.
+Сізде бұл ақпарат болғаннан кейін сатып алу процесін бастауға болады.
 
-Khi bạn có thông tin này, bạn có thể bắt đầu quá trình hoàn trả.
-
-1.	Bắt đầu luồng hoàn trả bằng cách nhập thông tin này:
+1.	Осы ақпаратты енгізу арқылы сатып алу ағынын бастаңыз:
 
 
 ![image.png](https://cdn.steemitimages.com/DQmdqBPcZMfTvhKtdT7qoth1A6ctPcpe2aNJnM7KwyrdjaJ/image.png)
 
  
-2.	Luồng hoàn trả sẽ yêu cầu bạn thực hiện bốn xác nhận Metamask:
+2.	Өтеу ағынына сізден төрт Metamask растауы қажет:
 
-a. Xác nhận đầu tiên chấp thuận việc chuyển TBTC từ bạn để lấy TDT từ máy bán hàng tự động.
+a. Біріншісі сатылым автоматынан TDT алу үшін сізден TBTC беруді мақұлдайды.
 
-b. Xác nhận thứ hai yêu cầu TDT từ máy bán hàng tự động, gửi TBTC để đốt trao đổi.
+b. Екіншісі сатылым автоматынан ПТТ сұрайды, оның орнына TBTC оны күйдіруге жібереді.
 
-c. Xác nhận thứ ba yêu cầu rút BTC khỏi khoản tiền gửi được đại diện bởi TDT. Sau bước này, giao dịch rút tiền được công bố lên mạng Bitcoin và bạn phải đợi cho đến khi quan sát được số lượng xác nhận phù hợp.
+c. Үшіншісі ТТД ұсынған депозиттен БТК алуды талап етеді. Осы қадамнан кейін Bitcoin желісіне ақша аударымы жарияланады, растаудың тиісті саны сақталмайынша күтуіңіз керек.
 
 
 ![image.png](https://cdn.steemitimages.com/DQmQ5vMuiEhGKccQJ17DjuXzoTVoYRdedhdsauLoKMYWqKi/image.png)
 
 
-d. Xác nhận Metamask cuối cùng nộp bằng chứng SPV rằng sự hoàn trả đã hoàn tất, cho phép ngưng hoạt động theo thứ tự của nhóm người ký:
+d. Metamask-тің SPV-ді түпкілікті ұсынғанын растау, ақшаны қайтару аяқталғандығын растайтын құжат, қол қоюшыға тапсырыс бойынша шығаруға рұқсат береді:
 
 -----------
 
-Bây giờ bạn đã thực hiện hoàn TBTC để lấy BTC!
+Енді tBTC үшін BTC сатып алдыңыз!
 
 
 ![image.png](https://cdn.steemitimages.com/DQmPwh6JTBpvveWjfpT1DiQPUvVRhgLbAk2GCLD3AaP75ks/image.png)
 
-[Tham gia danh sách email](https://tbtc.network/#mailing-list) để được cập nhật.
+[TBTC тарату тізіміне қосылыңыз](https://tbtc.network/#mailing-list) жаңартулар үшін.
 
-Nguồn bổ sung:
+Қосымша ақпарат көздері:
 
 •	Keep’s [GitHub](https://github.com/keep-network)
 
-•	The tBTC [Technical spec](http://docs.keep.network/tbtc/index.pdf)
+•	The tBTC [Техникалық сипаттама](http://docs.keep.network/tbtc/index.pdf)
 
 •	[tbtc.js](https://tbtc.network/news/2020-02-14-announcing-tbtc-js)
 
-•	The [Keep #tbtc channel on Discord](https://chat.tbtc.network)
+•	The [Keep #tbtc арна қосулы Discord](https://chat.tbtc.network)
