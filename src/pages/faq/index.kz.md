@@ -1,57 +1,57 @@
 ---
 template: 'faq-page'
 path: /faq
-title: FAQ
+title: Жиі қойылатын сұрақтар
 questions:
-  - question: How does tBTC maintain the peg?
+  - question: TBTC шыңын қалай ұстайды?
     answer: >
-      tBTC does not maintain the peg. It’s a supply peg not a price peg, so there is no algorithmic mechanism needed to function as a decentralized peg.
-  - question: Why is the TBTC price not exactly the same as BTC?
+      tBTC шұңқырды ұстамайды. Бұл бағаны өлшеуіш емес, сондықтан орталықтандырылмаған ілгіш ретінде жұмыс істеуге алгоритмдік механизм жоқ.
+  - question: Неліктен TBTC бағасы BTC-мен бірдей емес?
     answer: >
-      tBTC is not a price peg to BTC; it’s a supply peg. That means BTC/tBTC might not be exactly the same. tBTC might trade at a slight premium or a discount.
-  - question: Why is TBTC collateralized with ETH at its current ratio?
+      tBTC бұл BTC-тің бағалары емес; бұл жабдықтау шыбығы. Демек BTC / tBTC дәл сәйкес келмеуі мүмкін. tBTC жеңілдікпен немесе жеңілдікпен сауда жасай алады.
+  - question: Неліктен TBTC ETH-пен оның қазіргі қатынасында қамтамасыз етілген?
     answer: >
-      Because it makes for a safer system, which is very important in DeFi especially at the launch of a new network. ETH is a more safe collateral type because it’s the DeFi standard, and the team working on tBTC has plans to shift the ETH/BTC collateralization ratio from 150% to 135% fairly soon after launch. It is also examining new mechanisms that could bring that ratio down to 40% collateralization later on.
-  - question: Where could something go wrong in the tBTC system?
+      Бұл DeFi-де, әсіресе жаңа желіні іске қосу кезінде өте маңызды жүйені қамтамасыз етеді. ETH кепілдік қамтамасыз етудің анағұрлым қауіпсіз түрі, өйткені бұл DeFi стандарты, сондықтан tBTC-де жұмыс істейтін топ іске қосылғаннан кейін ETH / BTC кепілдендіру коэффициентін 150% -дан 135% -ға ауыстыруды жоспарлап отыр. Сондай-ақ, бұл коэффициентті кейіннен 40% кепілге дейін жеткізетін жаңа тетіктер қарастырылуда.
+  - question: TBTC жүйесінде бірдеңе дұрыс болмауы мүмкін?
     answer: >
-      This technology is new and it’s impossible to anticipate every situation where something could go wrong.  That being said, there are several situations the community has identified and taken careful measures to address. The security model is such that if the signers collude and run off with your Bitcoin deposit, users are paid back in TBTC; that’s what the ETH bonds are for (they’ll be seized and liquidated). If ETH takes a massive dip in a short period of time and ALL signers run off and break the peg at same time, the system falls back to a synthetic. For more information, please look at the <a href="https://docs.keep.network/tbtc/index.pdf" target="_blank">tBTC technical spec</a>.
-  - question: Why are there fixed lot sizes? Why not any random denomination?
+      Бұл технология жаңа және бірдеңе істен шығуы мүмкін кез-келген жағдайды болжау мүмкін емес. Осыған байланысты қоғамдастық бірнеше жағдайды анықтап, оларды шешу үшін мұқият шаралар қабылдады. Қауіпсіздік моделі дегеніміз, егер қол қоюшылар сіздің Bitcoin депозитіңізбен қақтығысып қалса, пайдаланушыларға TBTC-те ақы төленеді; бұл ETH облигацияларына арналған (олар алынып, жойылады). Егер ETH қысқа уақыт ішінде үлкен көлемде батып кетсе және БАРЛЫҚ қол қоюшылар жүгіріп өтіп, бір уақытта сынғышты бұзса, жүйе синтетикаға қайта оралады. Қосымша ақпарат алу үшін мына бөлімге қараңыз <a href="https://docs.keep.network/tbtc/index.pdf" target="_blank">tBTC technical spec</a>.
+  - question: Неліктен тіркелген лоттардың мөлшері бар? Неліктен кездейсоқ деноминация емес?
     answer: >
-      Too many lot sizes becomes an issue for liquidity pools. Maintaining several standard lot sizes allows for greater redemption availability.
-  - question: Is there a tBTC widget I can use to directly hook tBTC minting and redeeming into my DeFi dapp?
+      Өте көп мөлшердегі өтімділік пулдары үшін проблема туындайды. Бірнеше стандартты лот мөлшерін сақтау сатып алудың қол жетімді болуына мүмкіндік береді.
+  - question: Менде tBTC жалбызын қосу және сатып алу үшін тікелей пайдалана алатын tBTC виджеті бар ма DeFi dapp?
     answer: >
-      Not yet. Integration work is required to build tBTC minting and redemption into a dApp. The code is open-sourced in the <a href="https://github.com/keep-network/tbtc.js" target="_blank">tbtc.js GitHub</a>, enabling developers to build interfaces that match their products. To validate Bitcoin transactions, the best approach is to run an electrum server, which is very easy to spin up.
-  - question: Has tBTC been audited?
+      Әлі жоқ. Интеграциялық жұмыс dApp-қа tBTC минтингін және өтеуді құру үшін қажет. Код ашық түрде ұсынылған <a href="https://github.com/keep-network/tbtc.js" target="_blank">tbtc.js GitHub</a>, әзірлеушілерге өз өнімдеріне сәйкес интерфейстер құруға мүмкіндік беру. Bitcoin транзакцияларының дұрыстығын растау үшін ең жақсы тәсіл - электр серверін іске қосу, оны айналдыру өте оңай.
+  - question: TBTC тексерілді?
     answer: >
-      ConsenSys Diligence is currently completing a six-week cryptography and code audit. The results will be published once they become available.
-  - question: Does Signing for tBTC and staking ETH make you a MSB?
+      Қазіргі уақытта ConsenSys Diligence алты апталық криптография мен код аудитін аяқтауда. Нәтижелер қол жетімді болғаннан кейін жарияланады.
+  - question: TBTC-ке қол қою және ETH-ті ұстап тұру сізді MSB етеді?
     answer: >
-      Each user should undertake their own analysis as to whether there are any legal restrictions in their jurisdiction that would either prevent them from using tBTC or require the user to register with certain government entities.
-  - question: Is depositing BTC for tBTC a taxable event?
+      Әрбір қолданушы өздерінің юрисдикциясында олардың tBTC-ті қолдануға кедергі келтіретін немесе пайдаланушының белгілі бір мемлекеттік органдарда тіркелуін талап ететін қандай-да бір шектеулер бар-жоғын тексереді.
+  - question: TBTC үшін BTC депозитін салу салық салынатын оқиға болып табылады?
     answer: >
-      Please check with a tax professional to determine whether depositing BTC for TBTC is a taxable event in a given jurisdiction. One thing to consider is the NFT associated with the UTXO of a deposit. This NFT is designed to allow a fee to be paid for custody of BTC and to offer the ability to redeem the exact same UTXO within the six month fee period.
-  - question: How is the tBTC signer set non-custodial?
+      BTC телекоммуникация станциясына TBTC-ті депозитке салу осы юрисдикцияда салық салынатын оқиға болып табыла ма екенін салық маманынан сұраңыз. Қарастыруға болатын бір нәрсе - NFT депозиттің UTXO-мен байланысты. Бұл NFT BTC-ді сақтаған үшін ақы төлеуге мүмкіндік береді және алты айлық төлем мерзімі ішінде дәл сол UTXO-ны сатып алу мүмкіндігін ұсынады..
+  - question: TBTC қол қоюшы қалай қамауға алынбайды?
     answer: >
-      tBTC’s signer sets use threshold ECDSA as a Bitcoin multisig replacement. For every deposit, a new signer set is pulled together (selected by the random beacon), and they generate a Bitcoin PKH address for the depositor, which is marked on the Ethereum chain.
-  - question: Who are the signers? Can anyone become a signer?
+      tBTC қол қоюшылары Bitcoin мультисигальды ауыстыру ретінде ECDSA шекті мәнін пайдаланады. Әрбір депозит үшін жаңа қол қоюшының жиынтығы жиналады (кездейсоқ маяк таңдалады) және олар Ethereum тізбегінде белгіленген салымшы үшін Bitcoin PKH мекенжайын жасайды.
+  - question: Қол қоюшылар кімдер? Кез келген адам қол қоюшы бола алады?
     answer: >
-      Shortly after launch, there should be  a group of roughly 80 private sale KEEP purchasers and a few other trusted parties signing for tBTC. Very soon an opportunity will be announced for more individuals to participate by staking ETH to become a signer.
-  - question: Why is this better than other BTC on Ethereum projects?
+      Іске қосылғаннан кейін көп ұзамай шамамен 80 жеке сату KEEP сатып алушылар тобы және tBTC-ке қол қоятын басқа да сенімді тараптар болуы керек. Жақында ETH қол қоюшы болу арқылы көп адамдар қатысуға мүмкіндік жарияланады.
+  - question: Неліктен бұл Ethereum жобаларындағы басқа BTC-ге қарағанда жақсы??
     answer: >
-      Some people believe tBTC is better for several reasons.  Some projects have built synthetic price pegs, which is not a true bridge. Other projects are supply pegs, but have centralized parties adding friction to the minting and redemption process and therefore, are not censorship-resistant systems. Some new bridges are decentralized supply pegs, however, those security models are less safe. They rely on a ⅔ honesty assumption, no ETH/extra collateral to back up deposits, and use brand new “roll your own crypto” rather than peer-reviewed, t-ECDSA cryptography).
-  - question: What does a six-month fee period mean? Can BTC be claimed only after six months?
+      Кейбір адамдар tBTC бірнеше себептерге байланысты жақсы деп санайды. Кейбір жобаларда шынайы көпір емес синтетикалық бағаларды орнатады. Басқа жобалар жабдықтау қазықтары болып табылады, бірақ орталықтандырылған партиялар жалбыз мен сатып алу процесіне үйкеліс қосады, сондықтан цензураға қарсы жүйелер емес. Кейбір жаңа көпірлер орталықтандырылмаған жабдықтар тіректері болып табылады, алайда бұл қауіпсіздік модельдері қауіпсіз емес. Олар а-ға сүйенеді ⅔ адалдық туралы болжам, салымдарды резервтеу үшін ETH / қосымша кепілдеме жоқ, және T-ECDSA криптографиясынан гөрі жаңа “roll your own crypto” пайдаланыңыз).
+  - question: Алты айлық төлем мерзімі нені білдіреді? BTC-ге алты айдан кейін ғана талап етілуі мүмкін бе?
     answer: >
-      No, there is no need to return at six months, except if there is a preference to  redeem Bitcoin with a certain UTXO. This is what the NFT receipt, TDT, is for. Most retail DeFi users do not have this consideration, and do not need to return in six months.
-  - question: Are there plans to build a Bitcoin bridge on other chains?
+      Жоқ, белгілі бір UTXO-мен Bitcoin-ді сатып алу артықшылығы болмаса, алты айдан кейін оралудың қажеті жоқ. Бұл NFT түбіртегі, TDT үшін арналған. DeFi-дің бөлшек саудадағы пайдаланушыларының көпшілігінде бұл мәселе қарастырылмайды және алты айдан кейін оралудың қажеті жоқ.
+  - question: Басқа тізбектерге Bitcoin көпірін салу жоспарлары бар ма?
     answer: >
-      There are no firm plans to build a bridge on other chains. However the <a href="https://www.crosschain.group/" target="_blank">Cross-Chain Group</a> has had early conversations with chains like Cosmos, Zcash, and Polkadot on trustless bridge designs.
-  - question: Does tBTC ownership give you any governance rights?
+      Басқа тізбектерге көпір салу туралы нақты жоспарлар жоқ. Алайда <a href="https://www.crosschain.group/" target="_blank">Cross-Chain Group</a> Cosmos, Zcash және Polkadot сияқты шынжырлармен сенімді көпір дизайнында ертерек әңгімелесті.
+  - question: TBTC меншігі сізге қандай да бір басқару құқығын бере ме?
     answer: >
-      No.
-  - question: Why not just do a price peg?
+      Жоқ.
+  - question: Неліктен тек баға бағасын жасамасқа?
     answer: >
-      The team behind tBTC is building a supply peg, not a price peg. It’s not a synthetic mechanism. For bitcoin holders, it shouldn’t matter what the actual price is, it just matters that you can redeem it for 1 BTC
-  - question: Why does tBTC need a price feed oracle?
+      TBTC-тің артында тұрған команда бағаны емес, жеткізу шкаласын тұрғызуда. Бұл синтетикалық механизм емес. Биткоинді ұстаушылар үшін нақты бағаның қандай екендігі маңызды емес, оны тек 1 BTC үшін сатып ала аласыз.
+  - question: Неліктен tBTC-ке бағалық oracle қажет?
     answer: >
-      tBTC is a sidechain that requires work from anonymous parties, so bonds from those parties must be held to prevent collusion. For now, it is necessary to ensure that signers are bonded in order to protect against misbehavior. A price feed oracle is needed to maintain the BTC/ETH price for this bond.
+      tBTC бұл белгісіз тараптардың жұмысын талап ететін сырлаулық, сондықтан келіссөздердің алдын алу үшін сол тараптардың облигациялары сақталуы керек. Әзірге тәртіп бұзушылықтан қорғау үшін қол қоюшылардың өзара байланысын қамтамасыз ету қажет. Осы облигацияның BTC / ETH бағасын ұстап тұру үшін бағаны қамтамасыз ететін оракл қажет.
 ---
