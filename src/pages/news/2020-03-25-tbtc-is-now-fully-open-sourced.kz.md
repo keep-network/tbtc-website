@@ -8,18 +8,18 @@ tags:
 ---
 tBTC енді қол қоюшылар тобына арналған кодты қосқанда, толықтай қол жетімді.
 
-The [Keep ECDSA](https://github.com/keep-network/keep-ecdsa), which underlies the signers’ groups, is now publicly available on GitHub. This includes the on- and off-chain pieces of ECDSA keeps and Bonded ECDSA keeps for the Keep network, which enable the creation and functioning of signers’ groups on tBTC.
+[Keep ECDSA](https://github.com/keep-network/keep-ecdsa), қол қоюшылар тобының негізін құрайтын топ қазір GitHub-те қол жетімді. Бұл ECDSA сақтағыштарының және tBTC-тегі қол қоюшылар тобын құруға және жұмыс істеуге мүмкіндік беретін Keep желісіне арналған ECDSA байланыстырылған құрылғыларының бөліктерін қамтиды.
 
-tBTC is committed to open-sourcing as the best standard for transparency and security in DeFi.This open-sourcing makes tBTC the first and only BTC bridge that allows for permissionless signing.
+tBTC DeFi-дегі ашықтық пен қауіпсіздіктің ең жақсы стандарты ретінде ашық ағындарды іздеуді қолдайды.
 
-[Join the tBTC mailing list](https://tbtc.network/#mailing-list) for updates, including information about tBTC’s upcoming launch on Ethereum mainnet.
+[TBTC тарату тізіміне қосылыңыз](https://tbtc.network/#mailing-list)tBTC-тің Ethereum магистральдық желісінде алдағы уақытта іске қосылуы туралы ақпаратты қоса, жаңартулар үшін
 
-Additional resources:
+Қосымша ресурстар:
 
 * [GitHub](https://github.com/keep-network/tbtc)
-* [Technical spec](http://docs.keep.network/tbtc/index.pdf)
+* [Техникалық сипаттама](http://docs.keep.network/tbtc/index.pdf)
 * [tbtc.js](https://tbtc.network/news/2020-02-14-announcing-tbtc-js)
-* [Keep #tbtc channel on Discord](https://chat.tbtc.network)
+* [Keep #tbtc арна қосулы Discord](https://chat.tbtc.network)
 
-Follow [#tBTC](https://twitter.com/hashtag/tBTC) on Twitter for news and
-opportunities to participate.
+Іздеңіз [#tBTC](https://twitter.com/hashtag/tBTC) Twitter-де жаңалықтарды және
+қатысу мүмкіндіктері.
