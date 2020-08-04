@@ -37,17 +37,17 @@ KEEP SECZ жоғарыда аталған жеке ақпарат санатта
 
 - Тікелей сізден. Мысалы, сіз толтырған формалардан немесе сіз пайдаланатын өнімдерден.
 
-## Use of Personal Information
+## Жеке ақпаратты пайдалану
 
-We may use or disclose the personal information we collect for one or more of the following business purposes:
+Біз жинайтын жеке ақпаратты келесі іскерлік мақсаттарда пайдалануымызға немесе аша алуымыз мүмкін:
 
-- To fulfill or meet the reason you provided the information. For example, if you request to be included on an email list or in a user group, we will use that personal information to respond to your request. If you provide your personal information to enter into a smart contract, we will use that information for that purpose. We may also save your information to facilitate your future use of our Network.
-- To process your requests, purchases, transactions, and payments and prevent transactional fraud.
-- To provide you with support and to respond to your inquiries, including to investigate and address your concerns and monitor and improve our responses.
-- To respond to law enforcement requests and as required by applicable law, court order, or governmental regulations.
-- As described to you when collecting your personal information or as otherwise set forth in the CCPA.
+- Сіз берген ақпараттың себебін орындау немесе қанағаттандыру. Мысалы, егер сіз электрондық пошта тізіміне немесе пайдаланушылар тобына қосылуды сұрасаңыз, біз сіздің жеке ақпаратыңызды сіздің сұранысыңызға жауап беру үшін қолданамыз. Егер сіз ақылды келісімшарт жасасу үшін жеке мәліметтеріңізді ұсынсаңыз, біз сол ақпаратты сол мақсатта қолданамыз. Біздің желімізді одан әрі пайдалану үшін сіздің ақпаратыңызды сақтауымыз мүмкін.
+- Сіздің сұраныстарыңызды, сатып алуларды, транзакцияларды және төлемдерді өңдеу және транзакциялық алаяқтықтың алдын алу үшін.
+- Сізге қолдау көрсету және сіздің сұрауларыңызға жауап беру, соның ішінде мәселелеріңізді зерттеу және шешу, біздің жауаптарымызды бақылау және жақсарту.
+- Құқық қорғау органдарының сұраныстарына және қолданыстағы заңдарға, сот шешімдеріне немесе үкімет қаулыларына сәйкес жауап беру.
+- Сіздің жеке мәліметтеріңізді жинау кезінде сізге сипатталғандай немесе CCPA-де басқаша көрсетілген.
 
-KEEP SECZ will not collect additional categories of personal information or use the personal information we collected for materially different, unrelated, or incompatible purposes without providing you notice.
+KEEP SECZ жеке ақпараттың қосымша санаттарын жинамайды немесе біз сізді ескертпестен материалдық емес, байланыстырылмаған немесе сәйкес келмейтін мақсаттар үшін пайдаланбайды.
 
 ## Жеке ақпаратты ортақ пайдалану
 
