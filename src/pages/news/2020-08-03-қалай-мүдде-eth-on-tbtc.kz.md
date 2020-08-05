@@ -1,8 +1,19 @@
-@@ -5,6 +5,8 @@ description: >-
-  Members of the Keep Network can “delegate,” or stake, ETH for a chance to be
-  selected as signers, who verify and hold BTC deposited by users of the app.
+---
+template: news-item
+title: TBTC-де ETH-ды қалай ұстауға болады
+description: >-
+  Keep Network мүшелері болу мүмкіндігіне ETH-ті «жібере алады» немесе қатысады
+  қосымшаның пайдаланушылары сақтаған BTC тексеретін және ұстап тұратын қол қоюшылар ретінде таңдалды.
 date: 2020-08-03T14:45:10.925Z
 tags:
   - ''
 ---
-tBTC, which lets people use Bitcoin to access Ethereum DeFi apps, uses a system of random signing groups to process transactions. Signers must bond an amount of ETH equal to 150% the value of the BTC being deposited, in order to disincentivize bad behavior. This 150% bond is forfeited in the event a signer does not perform their required function -- for example, sending a BTC redemption to an incorrect wallet address.
+tBTC, адамдарға Bitcoin-ді Ethereum DeFi қосымшаларына кіруге мүмкіндік береді, транзакцияларды өңдеу үшін кездейсоқ қол қою топтарының жүйесін пайдаланады. Жаман мінез-құлықты айқындау үшін қол қоюшылар ETH мөлшерін BTC салымының 150% -на тең сомада байланыстыруы керек. Бұл 150% облигация қол қоюшы талап етілген функцияларды орындамаған жағдайда, мысалы, BTC сатып алуды әмиянның қате мекенжайына жіберген жағдайда жоғалтады.
+
+tBTC бұл Keep жобасы, [Summa](http://summa.one) және [Cross-Chain Group](https://crosschain.group/). Keep-тің қосымшасы - бұл ERC-20 таңбалары бар TBTC депозиттеріне қол қоюшыларды таңдайтын кездейсоқ маяк.
+
+Мүшелері [Keep Network](http://keep.network) қосымшаның пайдаланушылары сақтаған BTC-ті тексеріп, ұстап тұрған қол қоюшылар ретінде таңдалу үшін олардың ETH-ті «өкілдік ете» немесе үлестіре алады.
+
+tBTC Sybil кедергісі үшін өзіндік жұмыс таңбасы бар жүйені қажет етеді. Бұл қажеттілікті KEEP жұмыс белгісі толтырады; Keep TBTC үшін қамқоршылықты басқарады, сондықтан қол қоюшы ретінде әрекет ететіндер әдетте KEEP және ETH-ті өз міндеттерін орындау үшін тартуы керек. TBTC қол қоюшылары қосымшада өз функцияларын дұрыс орындаған кезде, олар KEEP таңбалауышы түрінде ақы алады.
+
+Қосылыңыз [\#tbtc Discord channel](https://discord.gg/wYezN7v) tBTC-де ETH қою туралы көбірек білу. TBTC тарату тізіміне қосылыңыз [here](https://tbtc.network/#mailing-list).
