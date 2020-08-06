@@ -12,12 +12,12 @@ questions:
   - question: 为什么TBTC以当前比率抵押ETH ？
     answer: >
       因为它使一个更安全的系统，这是非常重要的DeFi，特别是在一个新的网络推出。ETH是一种更安全的担保类型，因为它是DeFi标准，而负责tBTC的团队计划在发布后不久将ETH/BTC担保比率从150%降低到135%。它还在研究新的机制，以便在今后将这一比率降至40%。
-  - question: tBTC系统会在什么地方出question吗？
+  - question: tBTC系统会在什么地方出故障吗？
     answer: >
       这是一项新技术，不可能预测所有可能出错的情况。尽管如此，社区已经确定了若干情况并采取了谨慎措施加以解决。安全模型是这样的:如果签名者串通并偷走了你的比特币存款，用户将被以TBTC支付;这就是ETH债券的用途(它们将被扣押和清算)。如果ETH在短时间内大幅下跌，同时所有的签注者都跑掉了，系统就会回落到合成。更多信息，请查看  <a href="https://docs.keep.network/tbtc/index.pdf" target="_blank">tBTC技术规范 spec</a>.
-  - question: 为什么有固定的size?为什么不是任意的siez呢？
+  - question: 为什么有固定的size？为什么不是任意的size呢？
     answer: >
-      太多的size会导致流动性池容易出现question。维持几个标准的size允许更大的赎回可用性。
+      太多的size会导致流动性池容易出现问题。维持几个标准的size允许更大的赎回可用性。
   - question: 有没有一个tBTC工具，我可以用来直接挂钩tBTC铸造和赎回到我的DeFi dapp？
     answer: >
       还没有。将tBTC铸造和兑换成dApp需要整合工作。代码在 <a href="https://github.com/keep-network/tbtc.js" target="_blank">tbtc.js GitHub</a>中并且是开源的，使开发人员能够构建与其产品相匹配的接口。要验证比特币交易，最好的方法是运行一个electrum服务，这非常容易启动。 
@@ -39,7 +39,7 @@ questions:
   - question: 相比其他BTC在Ethereum项目，tBTC有什么优势？
     answer: >
       我们认为tBTC更好，原因如下。一些项目建立了合成的价格挂钩，这并不是真正的桥梁。其他项目是供应挂钩，但有中央政党增加摩擦的铸造和赎回过程，因此，不是抵御审查的系统。一些新的桥梁是分散的供应钉，然而，这些安全模式不太安全。他们依靠一个⅔可靠的假设,没有ETH/额外抵押品来抵押,并使用全新的“自行滚动加密”而非同行评议,t-ECDSA加密)。
-  - question: 六个月的收费期是什么意思?BTC只能在6个月后赎回吗？
+  - question: 六个月的收费期是什么意思？BTC只能在6个月后赎回吗？
     answer: >
       不，不需要在六个月后返回，除非你想兑换特定UTXO比特币。这就是NFT收据TDT的用途。大多数DeFi用户没有这个考虑，不需要在六个月内返回。
   - question: 是否有跨链计划？
