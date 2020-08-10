@@ -1,20 +1,21 @@
 ---
 template: news-item
-title: How tBTC Lets People Use Bitcoin on Compound
-description: How tBTC Lets People Use Bitcoin on Compound
+title: tBTC адамдарға Bitcoin-ді қалай пайдалануға мүмкіндік береді байламда
+description: tBTC адамдарға Bitcoin-ді қалай пайдалануға мүмкіндік береді байламда
 date: 2020-05-11T18:40:17.656Z
 ---
-tBTC lets people use Bitcoin to act on the Ethereum blockchain. One of the first things people will be able to do with their TBTC is an integration with Compound, an Ethereum-based algorithmic money market protocol that lets users earn interest or borrow assets. Compound represents [over 12%](https://defipulse.com/) of the total defi market.
+tBTC адамдарға Bitcoin-ді Ethereum blockchain-те әрекет етуге мүмкіндік береді. Адамдардың TBTC-мен жұмыс істей алатын алғашқы нәрселерінің бірі - Compound-пен интеграция, Ethereum негізіндегі ақша нарығының алгоритмдік протоколы, ол пайдаланушыларға пайыздар алуға немесе активтер алуға мүмкіндік береді. 
+Құрама білдіреді [үстінде 12%](https://defipulse.com/) жалпы дефi нарығының.
 
-To use Compound with your BTC, you first need to mint TBTC. Read the guide for exchanging BTC for TBTC [here](https://tbtc.network/developers/how-to-use-the-tbtc-dapp/).
+Құрама-ды BTC-мен пайдалану үшін алдымен TBTC жалбызды алу керек. BTC айырбастау туралы нұсқаулықты оқыңыз TBTC [Мұнда](https://tbtc.network/developers/how-to-use-the-tbtc-dapp/).
 
-tBTC lets users earn interest without middlemen, reducing counterparty risk and friction.
+tBTC пайдаланушыларға делдалсыз қызығушылықты арттыруға мүмкіндік береді, бұл контрагенттің тәуекелін және үйкелісті азайтады.
 
-tBTC is trustless, allowing users to convert TBTC to BTC at any time with no intermediary. It uses threshold ECDSA, which is audited and used by major crypto wallets and exchanges including Binance. Users can track their BTC at all times. Because tBTC is open source, the code and fee structure are transparent.
+tBTC пайдаланушыларға TBTC-ті кез-келген уақытта делдалсыз айырбастауға мүмкіндік беретін сенімсіз. Ол ECDSA шекті мәнін пайдаланады, ол тексеріледі және крипто әмияндармен және биржалармен қоса Binance қолданылады. Пайдаланушылар өздерінің BTC-ді әрдайым бақылай алады. TBTC ашық болғандықтан, код пен төлем құрылымы ашық.
 
-Compound uses cTokens to represent the underlying asset, earn interest, and act as collateral. Once you have your TBTC, you can transfer it to cTBTC. Through this chain -- BTC >> TBTC >> cTBTC -- the underlying BTC is accruing interest on Compound.
+Құрам cTokens-ті базалық активті білдіру, пайыз алу және кепіл ретінде әрекет ету үшін пайдаланады. Егер сізде TBTC бар болса, оны cTBTC-ке беруге болады. Осы тізбек арқылы -- BTC >> TBTC >> cTBTC -- негізгі BTC қосылымға пайыздарды есептейді.
 
-[Join the tBTC mailing list](https://tbtc.network/#mailing-list) for project updates, and ask questions on the [\#tbtc Discord channel](https://chat.tbtc.network).
+[tBTC тарату тізіміне қосылыңыз](https://tbtc.network/#mailing-list) жоба жаңартуларын алу үшін және [\#tbtc Discord channel](https://chat.tbtc.network).
 
 Қосымша ресурстар:
 
