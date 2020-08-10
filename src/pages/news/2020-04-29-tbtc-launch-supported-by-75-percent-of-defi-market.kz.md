@@ -6,24 +6,24 @@ date: 2020-04-29T15:18:31.976Z
 tags:
   - featured
 ---
-Іске қосу [tBTC](https://tbtc.network/), the open-source project that allows people to use Bitcoin safely in Ethereum DeFi apps, began this week with the support of more than 40 companies including MakerDAO, Compound and Uniswap, which collectively represent [three quarters](https://defipulse.com/) of the total DeFi market.
+Іске қосу [tBTC](https://tbtc.network/), адамдарға Bitcoin-ді Ethereum DeFi қосымшаларында қауіпсіз пайдалануға мүмкіндік беретін ашық бастапқы жоба, осы аптада 40-тан астам компанияның қолдауымен басталды, оның ішінде MakerDAO, Compound және Uniswap, қайсысы ұжым болып табылады [үш төрттен](https://defipulse.com/) жалпы DeFi нарығының.
 
-tBTC, a project developed by [Summa](https://summa.one/),[ Cross-Chain Group](https://www.crosschain.group/), and [Keep Network](http://keep.network), lets [BTC holders safely convert their BTC](https://blog.keep.network/introducing-tbtc-the-safest-way-to-earn-with-your-bitcoin-fec077f171f4) into the ERC-20 TBTC token and vice-versa at any time at a rate of 1:1, with no signoff needed from an intermediary. Users’ BTC is safeguarded by groups of “signers” selected by a random beacon to minimize counterparty risk.
+tBTC, жасаған жоба [Summa](https://summa.one/),[ Cross-Chain Group](https://www.crosschain.group/), және [Keep Network](http://keep.network), мүмкіндік береді [BTC ұстаушылар қауіпсіз түрде оларды айырбастайды BTC](https://blog.keep.network/introducing-tbtc-the-safest-way-to-earn-with-your-bitcoin-fec077f171f4) ERC-20 TBTC токеніне және керісінше кез-келген уақытта 1 : 1 мөлшерінде, делдалдың қол қоюы қажет емес. Пайдаланушылар BTC-ті контрагенттің тәуекелін азайту үшін кездейсоқ маяк таңдаған «қол қоюшылар» тобы қорғайды.
 
-The launch began Monday, April 27, with the deployment of the KEEP token contract and all custodial and staking contracts. KEEP is the native work token of the Keep Network, whose random beacon selects tBTC signers. Signers must stake both ETH and KEEP in order to perform functions that facilitate the depositing and redeeming of BTC.
+Іске қосу дүйсенбіде, 27 сәуірде KEEP таңбалауыш келісім-шартын және барлық кепілдік шарттарын орналастырумен басталды. KEEP - бұл кездейсоқ маяк tBTC қол қоюшыларын таңдайтын Keep Network-тің негізгі жұмысы. Депонирлеуді жеңілдететін функцияларды орындау үшін қол қоюшылар ETH және KEEP екеуін де қамтуы керек redeeming туралы BTC.
 
-On April 24, the MakerDAO community voted to finalize their first ETHBTC feed, deployed specifically for tBTC, and to whitelist the future tBTC contract. The random beacon will deploy May 4 and a week later tBTC will launch on mainnet using MakerDAO’s ETHBTC feed. Starting [June 8th anyone will be able to join tBTC’s signers in the KEEP stakedrop](https://www.crowdcast.io/e/keep-stakedrop---live/register), earning fees for acting as signers on the network.
+24 сәуірде MakerDAO қауымдастығы tBTC үшін арнайы орналастырылған ETH BTC алғашқы ақпаратын аяқтауға және tBTC-тің болашақ келісім-шартын ақ тізімге енгізуге дауыс берді. Кездейсоқ маяк 4 мамырда орналастырылады және бір аптадан кейін tBTC магистральды қолдана отырып іске қосылады MakerDAO ETH BTC жем. Бастау [8 маусымда кез-келген адам TBTC қол қоюшыларына KEEP стейкдроп қосыла алады](https://www.crowdcast.io/e/keep-stakedrop---live/register), желіде қол қоюшы ретінде қызмет көрсеткені үшін ақы алу.
 
-Supporters announced to date include integrations with decentralized platforms, aggregators, exchanges, and wallets as well as stakers, signers, auditors and custody providers. Initially there will be about 80 stakers including Paradigm, a16z, Fenbushi Capital, Polychain Capital and Draper Associates.
+Бүгінге дейін жарияланған жақтаушыларға орталықтандырылмаған платформалармен, агрегаторлармен, биржалармен және әмияндармен, сонымен қатар стейктермен, қол қоюшылармен, аудиторлармен және қамқоршылармен интеграция кіреді. Бастапқыда шамамен 80 қатысушы болады Paradigm, a16z, Fenbushi Capital, Polychain Capital және Draper Associates.
 
-Join the discussion on [Discord](https://discord.gg/2HnCxsd) to [Play for Keeps and earn your spot to stake on mainnet](https://blog.keep.network/how-to-play-for-keeps-297f246455d4) as part of the community of stakers and builders.
+Талқылауға қосылыңыз [Discord](https://discord.gg/2HnCxsd) дейін [Play for Keeps және магистральға қатысу үшін өз орнын табыңыз](https://blog.keep.network/how-to-play-for-keeps-297f246455d4) стакандар мен құрылысшылар қауымдастығының бөлігі ретінде.
 
 \---
 
 
-Below is a full list of groups supporting tBTC at launch:
+Төменде tBTC іске қосылған кезде қолдайтын топтардың толық тізімі берілген:
 
-tBTC integrations:
+tBTC интеграциялар:
 
 * MakerDAO and OasisDEX
 * Compound
@@ -50,7 +50,7 @@ tBTC integrations:
 * Exodus
 * Wyre
 
-Groups Supporting tBTC & Keep Product Development
+Қолдау көрсететін топтар tBTC & Keep Өнімді әзірлеу
 
 * Summa
 * TokenSoft
