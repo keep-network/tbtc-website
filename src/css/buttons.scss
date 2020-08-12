@@ -2,7 +2,7 @@ button, .button,
 input[type="submit"] {
     border: 1px solid $black;
     border-radius: 0;
-    padding: 10px;
+    padding: 11px;
     white-space: nowrap;
     cursor: pointer;
     background-color: $white;
@@ -12,6 +12,7 @@ input[type="submit"] {
     font-weight: 500;
     font-size: $body-font-size;
     letter-spacing: 1.5px;
+    line-height: 100%;
     appearance: none;
 
     &:hover:enabled {

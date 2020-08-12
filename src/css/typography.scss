@@ -1,35 +1,49 @@
 @import 'fonts/apercu.scss';
 
 $body-font-family: 'apercu-regular-pro', sans-serif;
-$body-font-size: 14px;
+$body-font-size: 18px;
+$body-font-size-mobile: 20px;
 
 
 html, body, #root {
     font-family: $body-font-family;
     font-size: $body-font-size;
+    line-height: 156%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-smooth: always;
+
+    @media (max-width: #{$bp-small}) {
+        font-size: $body-font-size-mobile;
+        line-height: 150%;
+    }
 }
 
 h1, .h1,
 h2, .h2 {
     font-family: 'apercu-bold-pro', sans-serif;
+    margin: 1.56rem 0;
 }
 
 h1, .h1 {
-    font-size: 3.57rem;
-    line-height: 1.2;
+    font-size: 3.33rem; // 60px
+    line-height: 117%;
 
     @media (max-width: #{$bp-small}) {
-        font-size: 2.5rem;
+        font-size: 2.1rem; // 42px
+        line-height: 107%;
     }
 }
 
 h2, .h2 {
-    font-size: 1.57rem;
-    line-height: 1.18;
+    font-size: 1.56rem; // 28px
+    line-height: 125%;
     margin: 1em 0;
+
+    @media (max-width: #{$bp-small}) {
+        font-size: 1.45rem; // 28.5px
+        line-height: 123%;
+    }
 }
 
 h3, .h3 {
@@ -39,7 +53,7 @@ h3, .h3 {
 }
 
 p {
-    line-height: 1.5;
+    line-height: 156%;
 }
 
 a {

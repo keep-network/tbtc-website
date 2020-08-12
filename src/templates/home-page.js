@@ -25,9 +25,9 @@ export const HomePageTemplate = ({
               <h1>
                 { hero.title }
               </h1>
-              <h2 className="h3">
+              <p>
                 { hero.subtitle }
-              </h2>
+              </p>
             </div>
             <nav className="col-sm-12 col-md-6 quick-links">
               <ul>
