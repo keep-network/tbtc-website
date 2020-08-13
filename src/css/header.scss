@@ -45,10 +45,7 @@
                     font-weight: 500;
                     letter-spacing: 1.5px;
                     line-height: 233%;
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
+                    position: relative;
                 }
 
                 &.language-dropdown-wrapper {
@@ -56,9 +53,37 @@
                 }
             }
 
-            &.nav-right {
-                > li:last-of-type {
-                    margin-right: -22px;
+            &.menu-links {
+                > li {
+                    &:last-of-type {
+                        margin-right: -22px;
+                    }
+
+                    > a:not(.mint-button) {
+                        &:hover,
+                        &:active,
+                        &.active {
+                            &:after {
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                bottom: -12px;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                width: 5px;
+                                height: 5px;
+                                border-radius: 50%;
+                                border: 1px solid $black;
+                            }
+                        }
+
+                        &:active,
+                        &.active {
+                            &:after {
+                                background-color: $black;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -231,9 +256,23 @@
                         }
                     }
 
-                    &.nav-right {
-                        > li:last-of-type {
-                            margin-right: 0;
+                    &.menu-links {
+                        > li {
+                            &:last-of-type {
+                                margin: 22px 0 0;
+                            }
+
+                            > a:not(.mint-button) {
+                                &:hover,
+                                &:active {
+                                    &:after {
+                                        position: static;
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                        margin: -3px 20px 0;
+                                    }
+                                }
+                            }
                         }
                     }
                 }

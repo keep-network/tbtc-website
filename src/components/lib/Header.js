@@ -51,7 +51,7 @@ const HeaderTemplate = ({
               onClick={toggleMenu}>
                 Navigation
             </button>
-            <ul className="nav-right">
+            <ul className="menu-links">
               {navItems.map((item, i) => (
                 <li key={`nav-item-${i}`}>
                   <NavLink {...item} activeClassName="active" />
