@@ -6,8 +6,8 @@ import PropTypes from "prop-types"
 const AnnouncementTemplate = ({ body }) => (
   <div className="announcement">
     <div className="container">
-      <div className="row justify-content-center no-gutters">
-        <div className="col-10 col-sm-12 col-md-12 col-lg-10 content">
+      <div className="row no-gutters">
+        <div className="content">
           <div className="body" dangerouslySetInnerHTML={{ __html: body }} />
         </div>
       </div>
