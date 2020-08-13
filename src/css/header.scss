@@ -70,10 +70,16 @@
             white-space: nowrap;
             line-height: 100%;
 
-            &:hover {
+            &:hover,
+            &:active {
                 background-color: $black;
                 color: $white;
                 text-decoration: none;
+            }
+
+            &:active {
+                top: 3px;
+                left: 3px;
             }
         }
 
