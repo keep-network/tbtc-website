@@ -26,10 +26,10 @@ html, body, #root {
 .app {
     flex: 1;
     color: #{$black};
-    margin: 50px 0 0;
+    margin: 1.56rem 0 0;
 
     @media (max-width: #{$bp-small}) {
-        margin: 30px auto 0;
+        margin: 1.5rem auto 0;
     }
 }
 
