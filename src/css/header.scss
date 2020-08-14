@@ -4,7 +4,6 @@
         flex-direction: row;
         align-items: center;
         padding: 48px 0 25px;
-        margin: 0 $gutter-width;
 
         .logo {
             svg {
@@ -289,52 +288,30 @@
             .menu-label {
                 display: block;
                 position: absolute;
-                top: 10px;
-                width: 75px;
+                top: 21px;
+                right: -5px;
                 padding: 0;
                 margin: 0;
-                height: 60px;
+                width: 40px;
+                height: 40px;
 
-                background: white;
-                color: black;
+                background-image: url(../img/hamburger-open.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-color: transparent;
 
                 cursor: pointer;
                 border: 0;
                 @include hide-button-text;
 
-                &:before, &:after {
-                    position: absolute;
-                    top: 25px;
-
-                    content: '';
-                    background: black;
-
-                    width: 10px;
-                    height: 10px;
-                    border-radius: 10px;
-                }
-
-                &:before {
-                    left: 25px
-                }
-                &:after {
-                    right: 25px
+                &:hover {
+                    background-color: transparent;
                 }
 
                 &.open {
-                    background: black;
-                    color: white;
-
-                    &:after, &:before {
-                        background: white;
-                    }
+                    background-image: url(../img/hamburger-close.svg);
                 }
             }
         }
-
-        @media (max-width: #{$bp-small}) {
-            margin: 0 15px;
-        }
-
     }
 }
