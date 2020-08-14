@@ -55,9 +55,7 @@ html, body, #root {
     }
 }
 
-.page-header {
-    border-top: 1px solid $black;
-    
+.page-header {    
     @media (min-width: #{$bp-medium}) {
         margin-bottom: 5rem;
     }
