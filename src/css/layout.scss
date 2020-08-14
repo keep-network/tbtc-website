@@ -26,10 +26,10 @@ html, body, #root {
 .app {
     flex: 1;
     color: #{$black};
-    margin: 1.56rem 0 0;
+    margin: var(--baseline-grid-height) 0 0;
 
     @media (max-width: #{$bp-small}) {
-        margin: 1.5rem auto 0;
+        margin: var(--baseline-grid-height) auto 0;
     }
 }
 

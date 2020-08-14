@@ -11,7 +11,7 @@
 
             li {
                 list-style: none;
-                margin: 1.56rem 0;
+                margin: var(--baseline-grid-height) 0;
             }
 
             a {
@@ -59,7 +59,7 @@
             list-style: none;
 
             margin: 0 auto;
-            padding: 3.12rem 0;
+            padding: var(--baseline-grid-height-2x) 0;
 
             li {
                 counter-increment: step-by-step;
@@ -96,7 +96,7 @@
             ol {
                 li {
                     p {
-                        margin-bottom: 1.56rem;
+                        margin-bottom: var(--baseline-grid-height);
                     }
                 }
             }
@@ -114,7 +114,7 @@
                 padding: 0 30px;
 
                 li {
-                    margin: 1.5rem 0 0;
+                    margin: $baseline-grid-height-mobile 0 0;
                     justify-content: left;
 
                     &:before {
@@ -126,7 +126,7 @@
                     }
 
                     &:last-of-type {
-                        margin: 1.5rem 0;
+                        margin: $baseline-grid-height-mobile 0;
                     }
                 }
             }
@@ -146,7 +146,7 @@
     .billboard {
         background-color: $black;
         color: $white;
-        padding: 1.5rem 0 3rem;
+        padding: var(--baseline-grid-height) 0 var(--baseline-grid-height-2x);
 
         .billboard-button-link {
             @extend %button-link;
@@ -164,14 +164,12 @@
         }
 
         @media (min-width: #{$bp-medium}) {
-            padding: 1.56rem 0 3.12rem;
-
             h1 {
                 max-width: 70%;
             }
 
             .body {
-                margin-bottom: 3.12rem;
+                margin-bottom: var(--baseline-grid-height-2x);
                 max-width: 40%;
             }
         }
