@@ -143,24 +143,36 @@
         }
     }
 
-    .spotlight-launch {
-        .row {
-            align-items: center;
+    .billboard {
+        background-color: $black;
+        color: $white;
+        padding: 1.5rem 0 3rem;
+
+        .billboard-button-link {
+            @extend %button-link;
+            border-color: $white;
+            background-color: transparent;
+            color: $white;
         }
 
         .body {
-            @extend p;
+            margin-bottom: 3rem;
+
+            p:last-of-type {
+                margin-bottom: 0;
+            }
         }
 
-        .spotlight-button-link {
-            @extend %button-link;
-            max-width: 100%;
-            min-width: 0;
-        }
+        @media (min-width: #{$bp-medium}) {
+            padding: 1.56rem 0 3.12rem;
 
-        @media (min-width: #{$bp-large}) {
             h1 {
-                padding-right: 40%;
+                max-width: 70%;
+            }
+
+            .body {
+                margin-bottom: 3.12rem;
+                max-width: 40%;
             }
         }
     }

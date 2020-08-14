@@ -58,26 +58,28 @@ export const HomePageTemplate = ({
             )) }
           </ol>
         </section>
-        <section className="major-announcement col-sm-12 col-md-12 col-lg-10">
-          <Spotlight className="spotlight-launch" sideLabelText={spotlight1.label}>
+      </div>
+    </div>
+    <section className="billboard">
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-sm-12 col-md-12 col-lg-10">
             <h1>
               {spotlight1.title}
             </h1>
-            <div className="row">
-              <div className="col-sm-12 col-md-8">
-                <div className="body" dangerouslySetInnerHTML={{ __html: spotlight1.body }}/>
-              </div>
-              <div className="col-sm-12 col-md-4">
-                {spotlight1.button ? (
-                  <a className="spotlight-button-link"
-                    href={spotlight1.button.url} target="_blank" rel="noopener noreferrer">
-                    {spotlight1.button.text}
-                  </a>
-                ) : ''}
-              </div>
-            </div>
-          </Spotlight>
-        </section>
+            <div className="body" dangerouslySetInnerHTML={{ __html: spotlight1.body }}/>
+            {spotlight1.button ? (
+              <a className="billboard-button-link"
+                href={spotlight1.button.url} target="_blank" rel="noopener noreferrer">
+                {spotlight1.button.text}
+              </a>
+            ) : ''}
+          </div>
+        </div>
+      </div>
+    </section>
+    <div className="container">
+      <div className="row justify-content-center no-gutters">
         <section className="latest-news col-sm-12 col-md-12 col-lg-10">
           <h1 className="section-title">Latest News</h1>
           <div className="row">

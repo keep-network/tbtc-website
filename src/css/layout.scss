@@ -34,6 +34,10 @@ html, body, #root {
 }
 
 .container {
+    @media (min-width: #{$bp-small}) {
+        max-width: 100%;
+    }
+
     @media (min-width: #{$bp-medium}) {
         max-width: 100%;
     }
