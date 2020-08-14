@@ -143,7 +143,7 @@
                 display: none;
                 position: absolute;
                 left: 0;
-                top: 102%;
+                top: 114%;
                 z-index: 10;
                 background-color: $white;
                 border: 1px solid $black;
@@ -158,7 +158,8 @@
 
                         a {
                             display: block;
-                            padding: 0.5em;
+                            padding: 0.38rem 0.5rem;
+                            line-height: 100%;
 
                             &:hover {
                                 background-color: $black;
