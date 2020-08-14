@@ -51,7 +51,7 @@ export const HomePageTemplate = ({
           <ol className="row">
             { features && features.map((feature, i) => (
               <li key={`feature-${i}`}
-                className="col-12 col-sm-12 col-md-6 col-lg-3">
+                className="col-12 col-sm-12 col-md-6 col-xl-3">
                 <h2>{feature.title}</h2>
                 <p>{feature.description}</p>
               </li>
