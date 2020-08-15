@@ -32,6 +32,7 @@ spotlight_2:
     url: /developers
   label: Developer
   title: Integerasi TBTC untuk menambahkan Bitcoin kedalam dApp anda
+  align: left
 integrations_section:
   title: Integrasi
 ---

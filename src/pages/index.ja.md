@@ -32,6 +32,7 @@ spotlight_2:
     url: /developers
   label: デベロッパー
   title: dApp でビットコインをサポートしよう
+  align: left
 integrations_section:
   title: インテグレーション
 ---

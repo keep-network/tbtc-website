@@ -107,6 +107,20 @@ collections:
                   {label: "Text", name: "text", widget: "string"},
                   {label: "Url", name: "url", widget: "string"}
                 ]
+              - {
+                label: "Background Image",
+                name: "bg_image",
+                widget: "image",
+                hint: "IMPORTANT! Image must be exactly named \"spotlight-2-bg.png\"
+                  (it also must be a png), otherwise it will not appear.
+                  Minimum image width of 980px required (to be rendered as
+                  490px) to support higher resolution screens.",
+              }
+              - label: "Align Content"
+                name: "align"
+                widget: "select"
+                options: ["left", "right"]
+                default: "left"
           - label: "Integrations Section"
             name: "integrations_section"
             widget: "object"

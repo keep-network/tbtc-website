@@ -223,29 +223,106 @@
 
     }
 
-    .toolkit {
-        margin-bottom: 90px;
+    .tailored-cta {
+        position: relative;
+        margin-bottom: 4rem;
 
-        .spotlight {
-            .row {
-                align-items: center;
+        &:before {
+            content: '';
+            display: block;
+            height: 100%;
+            width: 50%;
+            position: absolute;
+            top: 0;
+            background-color: $black;
+        }
 
-                .button-link {
-                    margin-top: 1em;
-                }
+        .container {
+            position: relative;
+            background-image: url(../../static/img/spotlight-2-bg.png);
+            background-repeat: no-repeat;
+            background-size: 490px 308px;
+        }
 
-                @media (min-width: #{$bp-medium}) {
-                    margin-top: 1em;
+        .side-label {
+            position: absolute;
+            top: 0;
+            color: $white;
+            z-index: 10;
+            transform-origin: top left;
+            transform: rotate(-90deg) translate(-100%, 50%);
+            padding: 1rem 0;
+            letter-spacing: 1.5px;
+            font-family: 'apercu-mono-regular-pro', sans-serif;
+            text-transform: uppercase;
 
-                    .col-xl-7 {
-                        text-align: center;
-                    }
-                }
+            &:after {
+                content: '';
+                display: inline-block;
+                width: 70px;
+                height: 1px;
+                background-color: $white;
+                position: relative;
+                top: -5px;
+                margin: 0 0 0 21px;
             }
+        }
+
+        .tailored-cta-content {
+            background-color: $black;
+            color: $white;
 
             a {
                 @extend %button-link;
-                margin-top: 2em;
+                color: $white;
+                border-color: $white;
+                background-color: $black;
+                margin-top: calc(var(--baseline-grid-height) / 2);
+            }
+        }
+
+        --top-padding: calc(3 * var(--baseline-grid-height));
+        --bottom-padding: calc(4 * var(--baseline-grid-height));
+
+        &.left {
+            &:before {
+                left: 0;
+            }
+
+            .container {
+                background-position: center right;
+            }
+
+            .side-label {
+                left: 0;
+                transform: rotate(-90deg) translate(-100%, 50%);
+            }
+
+            .tailored-cta-content {
+                padding: var(--top-padding) 8.33% var(--bottom-padding) 16.67%;
+            }
+        }
+
+        &.right {
+            &:before {
+                right: 0;
+            }
+
+            .container {
+                background-position: center left;
+
+                .row {
+                    flex-direction: row-reverse;
+                }
+            }
+
+            .side-label {
+                right: 0;
+                transform: rotate(-90deg) translate(-100%, 250%);
+            }
+
+            .tailored-cta-content {
+                padding: var(--top-padding) 16.67% var(--bottom-padding) 8.33%;
             }
         }
     }

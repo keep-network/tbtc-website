@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 
 import { App } from '../components'
-import { Integrations, Spotlight } from '../components/lib'
+import { Integrations } from '../components/lib'
 import SandDollar from '../components/svgs/SandDollar'
 import Link from '../components/LocaleLink'
 
@@ -92,20 +92,23 @@ export const HomePageTemplate = ({
             ))}
           </div>
         </section>
-        <section className="toolkit col-sm-12 col-md-12 col-lg-10">
-          <Spotlight sideLabelText="Developers" doubleLabel>
-            <div className="row">
-              <div className="col-sm-12 col-md-7 col-xl-5 h1">
-                {spotlight2.title}
-              </div>
-              <div className="col-sm-12 col-md-5 col-xl-7">
-                <a href={spotlight2.button.url}>
-                  {spotlight1.button.text}
-                </a>
-              </div>
-            </div>
-          </Spotlight>
-        </section>
+      </div>
+    </div>
+    <section className={`tailored-cta ${spotlight2.align}`}>
+      <div className="container">
+        <div className="side-label">{spotlight2.label}</div>
+        <div className="row">
+          <div className="tailored-cta-content col-sm-12 col-md-12 col-lg-8">
+            <h2>{spotlight2.title}</h2>
+            <a href={spotlight2.button.url}>
+              {spotlight1.button.text}
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div className="container">
+      <div className="row justify-content-center no-gutters">
         <section className="resources col-sm-12 col-md-12 col-lg-10">
           <h1 className="section-title">Build with tBTC</h1>
           <div className="row">
@@ -195,6 +198,7 @@ export const query = graphql`
             text
             url
           }
+          align
         }
         integrations_section {
           title

@@ -34,6 +34,7 @@ spotlight_2:
     url: /developers
   label: Programiści
   title: Zintegruj się z tBTC aby dodać Bitcoin do Twojej aplikacji dApp
+  align: left
 integrations_section:
   title: Integracje
 ---
