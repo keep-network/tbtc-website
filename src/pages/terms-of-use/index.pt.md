@@ -156,48 +156,49 @@ VOCÊ IRREVOCAMENTE, RENUNCIA, LIBERA E ISENTA A TODAS AS RECLAMAÇÕES, SEJAM E
 
 O ACIMA EXPOSTO NÃO AFETA QUAISQUER GARANTIAS QUE NÃO POSSAM SER EXCLUÍDAS OU LIMITADAS DE ACORDO COM A LEI APLICÁVEL.
 
-## Limitation on Liability
+## Limitação de Responsabilidade
 
-IN NO EVENT WILL THE COMPANY, ITS AFFILIATES OR THEIR LICENSORS, SERVICE PROVIDERS, EMPLOYEES, AGENTS, OFFICERS OR DIRECTORS BE LIABLE FOR DAMAGES OF ANY KIND, UNDER ANY LEGAL THEORY, ARISING OUT OF OR IN CONNECTION WITH YOUR USE, OR INABILITY TO USE, THE NETWORK, ANY NETWORKS LINKED TO IT, ANY SMART CONTRACTS OR DISTRIBUTED APPLICATIONS EXISTING ON OR CONNECTING TO THE NETWORK, ANY LOSS OF FUNDS OR COLLATERAL, ANY CONTENT ON THE NETWORK OR SUCH OTHER NETWORKS OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE NETWORK OR SUCH OTHER NETWORKS, INCLUDING ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO, PERSONAL INJURY, PAIN AND SUFFERING, EMOTIONAL DISTRESS, LOSS OF REVENUE, LOSS OF PROFITS, LOSS OF BUSINESS OR ANTICIPATED SAVINGS, LOSS OF USE, LOSS OF GOODWILL, LOSS OF DATA, AND WHETHER CAUSED BY TORT (INCLUDING NEGLIGENCE), BREACH OF CONTRACT OR OTHERWISE, EVEN IF FORESEEABLE. UNDER NO CIRCUMSTANCES WILL WE BE RESPONSIBLE FOR ANY DAMAGES, LOSS OR INJURY RESULTING FROM HACKING, TAMPERING OR OTHER UNAUTHORIZED ACCESS OR USE OF THE NETWORK OR ITS CONTENTS.
+EM NENHUM CASO A EMPRESA, SEUS AFILIADOS OU SEUS LICENCIADORES, PRESTADORES DE SERVIÇOS, FUNCIONÁRIOS, AGENTES, OFICIAIS OU DIRETORES SERÃO RESPONSÁVEIS POR DANOS DE QUALQUER TIPO, SOB QUALQUER TEORIA JURÍDICA, DECORRENTE DE OU EM CONEXÃO COM SEU USO, OU INCAPACIDADE DE UTILIZAÇÃO, A REDE, QUALQUER REDE AINDA LIGADA, QUALQUER CONTRATO INTELIGENTE OU APLICATIVO DISTRIBUÍDO QUE EXISTE OU CONECTE À REDE, QUALQUER PERDA DE FUNDOS OU COLATERAL, QUALQUER CONTEÚDO NA REDE OU TAIS OUTRAS REDES OU SERVIÇOS OU SISTEMAS OBTIDOS TAIS OUTRAS REDES, INCLUINDO QUALQUER DANO DIRETO, INDIRETO, ESPECIAL, INCIDENTAL, CONSEQÜENCIAL OU PUNITIVO, INCLUINDO MAS NÃO SE LIMITANDO A LESÕES PESSOAIS, DOR E SOFRIMENTO, AFLIÇÃO EMOCIONAL, PERDA DE RECEITAS, PERDA DE LUCROS, PERDA DE 
+NEGÓCIOS OU DE ECONOMIAS ANTECIPADAS, PERDA DE USO, PERDA DE BOA VONTADE, PERDA DE DADOS, E AINDA QUE CAUSADO POR DANO (INCLUINDO NEGLIGÊNCIA), QUEBRA DE CONTRATO OU DE OUTRA FORMA, MESMO SE PREVISÍVEL. SOB NENHUMA CIRCUNSTÂNCIA SEREMOS RESPONSÁVEIS POR QUALQUER DANO, PERDA OU LESÃO RESULTANTE DE HACKING, ADVERTÊNCIA OU OUTRO ACESSO OU USO NÃO AUTORIZADO DA REDE OU DO SEU CONTEÚDO.
 
-THE FOREGOING DOES NOT AFFECT ANY LIABILITY WHICH CANNOT BE EXCLUDED OR LIMITED UNDER APPLICABLE LAW.
+O QUE PRECEDE NÃO AFETA NENHUMA RESPONSABILIDADE QUE NÃO POSSA SER EXCLUÍDA OU LIMITADA DE ACORDO COM A LEI APLICÁVEL.
 
-## Indemnification
+## Indenização
 
-You agree to defend, indemnify and hold harmless the Company, its affiliates, licensors and service providers, and its and their respective officers, directors, employees, contractors, agents, licensors, suppliers, successors and assigns from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, debts and fees (including reasonable attorneys' fees) arising out of or relating to: your use of or access to the Network; your violation of any third party right; the provision by you of any false or misleading information; your violation of any law, rule or regulation; your violation of these Terms of Use; your willful misconduct; or your use of the Network, including, but not limited to, your User Contributions, any use of the Network's content, services and products other than as expressly authorized in these Terms of Use or your use of any information obtained from the Network.
+Você concorda em defender, indenizar e isentar a Empresa, suas afiliadas, licenciantes e prestadores de serviços e seus e respectivos executivos, diretores, funcionários, contratados, agentes, licenciadores, fornecedores, sucessores e cessionários de e contra quaisquer reivindicações, responsabilidades, danos, julgamentos, prêmios, perdas, custos, despesas, dívidas e honorários (incluindo honorários advocatícios razoáveis) decorrentes ou relacionados a: seu uso ou acesso à Rede; sua violação de qualquer direito de terceiros; o fornecimento por você de qualquer informação falsa ou enganosa; sua violação de qualquer lei, regra ou regulamento; sua violação destes Termos de Uso; sua conduta dolosa; ou seu uso da Rede, incluindo, mas não limitado a, suas Contribuições de Usuário, qualquer uso do conteúdo, serviços e produtos da Rede que não seja expressamente autorizado nestes Termos de Uso ou seu uso de qualquer informação obtida da Rede.
 
-## Release of Claims
+## Liberação de Reivindicações
 
-You acknowledge that the Network (including without limitation the smart contracts) and your use of the Network contain certain risks, including without limitation the following risks:  any smart contracts you interact with are entirely your own responsibility and your own liability, and we are not a party to the smart contracts; At any time, your access to your Digital Assets may be suspended or terminated or there may be a delay in your access or use of your Digital Assets which may result in the Digital Assets diminishing in value or you being unable to complete a smart contract; if your collateral declines such that your collateral is no longer sufficient to secure your position as a signer or depositor that a liquidation auction may not produce sufficient revenue to return your collateral, or other users may seize your collateral to close out your account; and the Network and related smart contracts may be suspended or terminated for any or no reason, which may limit your access to your Digital Assets. You assume all risk in connection with your access to and use of the Network and its smart contracts, and you waive and release us from any and all liability, claims, causes of action or damages arising from or in any way related to your use of the Network or the smart contracts.
+Você reconhece que a Rede (incluindo, sem limitação, os contratos inteligentes) e seu uso da Rede contêm certos riscos, incluindo, sem limitação, os seguintes riscos: quaisquer contratos inteligentes com os quais você interage são inteiramente de sua própria responsabilidade, e não somos uma parte dos contratos inteligentes; A qualquer momento, seu acesso aos seus Ativos Digitais pode ser suspenso ou encerrado ou pode haver um atraso no seu acesso ou uso dos seus Ativos Digitais, o que pode resultar na diminuição do valor dos Ativos Digitais ou na impossibilidade de concluir um contrato inteligente; se sua garantia/colateral recusar, de forma que sua garantia/colateral não seja mais suficiente para garantir sua posição como assinante ou depositante, um leilão de liquidação poderá não gerar receita suficiente para devolver sua garantia/colateral, ou outros usuários poderão aproveitar sua garantia/colateral para encerrar sua conta; e a Rede e os contratos inteligentes relacionados podem ser suspensos ou rescindidos por qualquer ou nenhum motivo, o que pode limitar seu acesso aos seus Ativos Digitais. Você assume todos os riscos relacionados ao seu acesso e uso da Rede e seus contratos inteligentes, e renuncia e nos isenta de toda e qualquer responsabilidade, reclamação, causa de ação ou dano decorrente de ou de alguma forma relacionado ao seu uso de a Rede ou os contratos inteligentes.
 
-## Governing Law and Jurisdiction
+## Lei Aplicável e Jurisdição
 
-All matters relating to the Network and these Terms of Use and any dispute or claim arising therefrom or related thereto (in each case, including non-contractual disputes or claims), shall be governed by and construed in accordance with the internal laws of the Cayman Islands without giving effect to any choice or conflict of law provision or rule.
+Todos os assuntos relacionados à Rede e estes Termos de Uso e qualquer disputa ou reclamação decorrente ou relacionada a ela (em cada caso, incluindo disputas ou reivindicações não contratuais), serão regidos e interpretados de acordo com as leis internas das Ilhas Cayman sem efetivar qualquer escolha ou conflito de disposição ou regra de lei.
 
-Any legal suit, action or proceeding arising out of, or related to, these Terms of Use or the Network shall be instituted exclusively in the courts of the Cayman Islands. You waive any and all objections to the exercise of jurisdiction over you by such courts and to venue in such courts.
+Qualquer ação legal, ação ou processo decorrente ou relacionado a estes Termos de Uso ou à Rede será instituído exclusivamente nos tribunais das Ilhas Cayman. Você renuncia a todas e quaisquer objeções ao exercício da jurisdição sobre você por esses tribunais e à sua jurisdição.
 
-## Arbitration
+## Arbitragem
 
-At Company's sole discretion, it may require You to submit any disputes arising from the use of these Terms of Use or the Network, including disputes arising from or concerning their interpretation, violation, invalidity, non-performance, or termination, to final and binding arbitration under the Rules of Arbitration of the American Arbitration Association applying Cayman Island law.
+A critério exclusivo da Empresa, pode exigir que Você apresente quaisquer disputas decorrentes do uso destes Termos de Uso ou da Rede, incluindo disputas decorrentes de ou relacionadas à sua interpretação, violação, invalidez, incumprimento ou rescisão, para arbitragem de final e vinculação sob as Regras de Arbitragem da American Arbitration Association aplicando a lei das Ilhas Cayman.
 
-## Limitation on Time to File Claims
+## Limitação no Tempo para Registrar Reivindicações
 
-ANY CAUSE OF ACTION OR CLAIM YOU MAY HAVE ARISING OUT OF OR RELATING TO THESE TERMS OF USE OR THE NETWORK MUST BE COMMENCED WITHIN ONE (1) YEAR AFTER THE CAUSE OF ACTION ACCRUES, OTHERWISE, SUCH CAUSE OF ACTION OR CLAIM IS PERMANENTLY BARRED.
+QUALQUER CAUSA DE AÇÃO OU RECLAMAÇÃO QUE VOCÊ PODE TER DECORRENTE OU RELACIONADA A ESTES TERMOS DE USO OU A REDE DEVE SER INICIADA DENTRO DE UM (1) ANO APÓS A CAUSA DE AÇÃO ACONTECE, DE OUTRA FORMA, TAL CAUSA DE AÇÃO OU RECLAMAÇÃO É PERMANENTEMENTE BARRADA.
 
-## Waiver and Severability
+## Renúncia e Separabilidade
 
-No waiver of by the Company of any term or condition set forth in these Terms of Use shall be deemed a further or continuing waiver of such term or condition or a waiver of any other term or condition, and any failure of the Company to assert a right or provision under these Terms of Use shall not constitute a waiver of such right or provision.
+Nenhuma renúncia da Empresa a qualquer termo ou condição estabelecido nestes Termos de Uso será considerada uma renúncia adicional ou contínua de tal termo ou condição ou uma renúncia a qualquer outro termo ou condição, e qualquer falha da Empresa em afirmar um direito ou disposição de acordo com estes Termos de Uso não constituirá uma renúncia a esse direito ou disposição.
 
-If any provision of these Terms of Use is held by a court or other tribunal of competent jurisdiction to be invalid, illegal or unenforceable for any reason, such provision shall be eliminated or limited to the minimum extent such that the remaining provisions of the Terms of Use will continue in full force and effect.
+Se qualquer disposição destes Termos de Uso for considerada por um tribunal ou outro tribunal de jurisdição competente como inválida, ilegal ou inexequível por qualquer motivo, essa disposição deverá ser eliminada ou limitada ao mínimo que as demais disposições dos Termos de Uso irão continuar com força e efeito totais.
 
-## Entire Agreement
+## Total acordo
 
-The Terms of Use and our Privacy Policy constitute the sole and entire agreement between you and Keep SECZ with respect to the Network and supersede all prior and contemporaneous understandings, agreements, representations and warranties, both written and oral, with respect to the Network.
+Os Termos de Uso e nossa Política de Privacidade constituem o único e total acordo entre você e a Keep SECZ com relação à Rede e substituem todos os entendimentos, acordos, representações e garantias anteriores e contemporâneos, escritos e orais, com relação à Rede.
 
-## Your Comments and Concerns
+## Seus Comentários e Preocupações
 
-This Network is initially operated by Keep SEZC.
+Esta rede é operada inicialmente pelo Keep SEZC.
 
-All feedback, comments, requests for technical support and other communications relating to the Network should be directed to: [legal@keep.network](mailto:legal@keep.network).
+Todo feedback, comentários, solicitações de suporte técnico e outras comunicações relacionadas à Rede devem ser direcionadas para: [legal@keep.network](mailto:legal@keep.network).
 
 0142785.0724991 4828-0651-3078v3
