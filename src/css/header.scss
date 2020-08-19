@@ -44,6 +44,7 @@
                     letter-spacing: 1.5px;
                     line-height: 233%;
                     position: relative;
+                    white-space: nowrap;
                 }
 
                 &.language-dropdown-wrapper {
@@ -202,23 +203,10 @@
             }
         }
 
-        @media (max-width: #{$bp-large}) {
-            ul {
-                > li {
-                    padding: 22px 11px;
-
-                    &.language-dropdown-wrapper {
-                        padding: 0 5px;
-                    }
-                }
-            }
-        }
-
-        @media (max-width: #{$bp-medium}) {
+        @media (max-width: #{$bp-extra-large}) {
             position: relative;
             flex-direction: column;
             align-items: flex-start;
-            padding: 25px 0;
 
             .logo {
                 svg {
@@ -263,7 +251,8 @@
 
                             > a:not(.mint-button) {
                                 &:hover,
-                                &:active {
+                                &:active,
+                                &.active {
                                     &:after {
                                         position: static;
                                         display: inline-block;
@@ -288,7 +277,7 @@
             .menu-label {
                 display: block;
                 position: absolute;
-                top: 21px;
+                top: 43px;
                 right: -5px;
                 padding: 0;
                 margin: 0;
@@ -310,6 +299,28 @@
 
                 &.open {
                     background-image: url(../img/hamburger-close.svg);
+                }
+            }
+        }
+
+        @media (max-width: #{$bp-large}) {
+            ul {
+                > li {
+                    padding: 22px 11px;
+
+                    &.language-dropdown-wrapper {
+                        padding: 0 5px;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: #{$bp-medium}) {
+            padding: 25px 0;
+
+            .menu {
+                .menu-label {
+                    top: 21px;
                 }
             }
         }
