@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 
 import { App } from '../components'
-import { Integrations } from '../components/lib'
+import { Image, Integrations } from '../components/lib'
 import SandDollar from '../components/svgs/SandDollar'
 import Link from '../components/LocaleLink'
 
@@ -104,6 +104,9 @@ export const HomePageTemplate = ({
               {spotlight1.button.text}
             </a>
           </div>
+          <div className="tailored-cta-image col-sm-12 col-md-12 col-lg-4">
+            <Image imageData={spotlight2.image} />
+          </div>
         </div>
       </div>
     </section>
@@ -197,6 +200,16 @@ export const query = graphql`
           button {
             text
             url
+          }
+          image {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 490, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            alt
           }
           align
         }

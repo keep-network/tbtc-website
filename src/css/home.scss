@@ -239,9 +239,10 @@
 
         .container {
             position: relative;
-            background-image: url(../../static/img/spotlight-2-bg.png);
-            background-repeat: no-repeat;
-            background-size: 490px 308px;
+
+            .row {
+                align-items: center;
+            }
         }
 
         .side-label {
@@ -269,6 +270,8 @@
         }
 
         .tailored-cta-content {
+            position: relative;
+            z-index: 5;
             background-color: $black;
             color: $white;
 
@@ -279,6 +282,10 @@
                 background-color: $black;
                 margin-top: calc(var(--baseline-grid-height) / 2);
             }
+        }
+
+        .tailored-cta-image {
+            background-color: $white;
         }
 
         --top-padding: calc(3 * var(--baseline-grid-height));
@@ -323,6 +330,52 @@
 
             .tailored-cta-content {
                 padding: var(--top-padding) 16.67% var(--bottom-padding) 8.33%;
+            }
+        }
+
+        @media (max-width: #{$bp-large}) {
+            &:before {
+                display: none;
+            }
+
+            .tailored-cta-content {
+                &:before,
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background-color: $black;
+                    position: absolute;
+                    left: 50%;
+                    top: 0;
+                    z-index: -1;
+                }
+
+                &:before {
+                    transform: translateX(-100%);
+                }
+            }
+
+            &.left,
+            &.right {
+                .side-label {
+                    left: 0;
+                    right: auto;
+                    transform: rotate(-90deg) translate(-100%, 20%);
+                }
+            }
+
+            &.right {
+                .tailored-cta-content {
+                    padding: var(--top-padding) 8.33% var(--bottom-padding) 16.67%;
+                }
+            }
+        }
+
+        @media (max-width: #{$bp-small}) {
+            .side-label {
+                padding: 0.5rem 0 1rem;
             }
         }
     }

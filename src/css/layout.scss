@@ -8,6 +8,12 @@ $bp-large: 992px;
 $bp-medium: 768px;
 $bp-small: 576px;
 
+@mixin container-max-100 {
+    max-width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
 
 html, body, #root {
     margin: 0;
@@ -34,12 +40,16 @@ html, body, #root {
 }
 
 .container {
+    @media (max-width: #{$bp-medium - 1}) {
+        @include container-max-100;
+    }
+
     @media (min-width: #{$bp-small}) and (max-width: #{$bp-medium - 1}) {
-        max-width: 100%;
+        @include container-max-100;
     }
 
     @media (min-width: #{$bp-large}) {
-        max-width: 100%;
+        @include container-max-100;
     }
 
     @media (min-width: #{$bp-extra-large}) {
