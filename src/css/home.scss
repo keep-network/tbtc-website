@@ -178,7 +178,7 @@
     }
 
     .latest-news {
-        padding: 60px 0 90px;
+        padding: 3.33rem 0;
 
         .row {
             margin: 0;
@@ -195,6 +195,8 @@
         }
 
         @media (min-width: #{$bp-medium}) {
+            padding: 7rem 0 8rem;
+
             .latest-news-item {
                 border-left: 1px solid $black;
                 padding: 0 30px;
@@ -225,7 +227,7 @@
 
     .tailored-cta {
         position: relative;
-        margin-bottom: 4rem;
+        margin-bottom: 6.11rem;
 
         &:before {
             content: '';
@@ -371,6 +373,10 @@
                     padding: var(--top-padding) 8.33% var(--bottom-padding) 16.67%;
                 }
             }
+        }
+
+        @media (max-width: #{$bp-medium}) {
+            margin-bottom: 3.33rem;
         }
 
         @media (max-width: #{$bp-small}) {
