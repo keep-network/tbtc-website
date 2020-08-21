@@ -185,40 +185,67 @@
         }
 
         .latest-news-item {
-            padding: 1em 0 2em;
-        }
+            padding: 0 30px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid $black;
+            position: relative;
+            margin-bottom: var(--baseline-grid-height-2x);
 
-        a {
-            @extend %button-link;
-            max-width: 100%;
-            margin-top: 2em;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            .date {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: $black;
+                color: $white;
+                font-size: 0.61rem;
+                font-family: 'apercu-mono-regular-pro', sans-serif;
+                padding: 0 16px;
+            }
+
+            h2 {
+                margin: 3.89rem 0 1rem;
+            }
+
+            a {
+                @extend %button-link;
+                border-style: solid none none none;
+                display: block;
+                margin: auto -30px 0 -30px;
+                width: calc(100% + 60px);
+            }
+
+            p {
+                margin: 0 0 calc(2 * var(--baseline-grid-height));
+            }
         }
 
         @media (min-width: #{$bp-medium}) {
             padding: 7rem 0 8rem;
+        }
+
+        @media (min-width: #{$bp-large}) {
+            .row {
+                justify-content: space-between;
+            }
 
             .latest-news-item {
-                border-left: 1px solid $black;
-                padding: 0 30px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-
-                &:last-of-type {
-                    border-right: 1px solid $black;
-                }
+                flex: 0 0 30%;
+                max-width: 30%;
+                margin: 0;
 
                 h2 {
-                    margin: 0 0 1em;
-                    min-height: 2em;
+                    margin-bottom: 0;
+                    padding: 0 0 1rem;
+                    min-height: 158px;
                 }
 
                 p {
-                    margin-top: 0;
-                }
-
-                a {
-                    margin-top: 5em;
+                    margin: 0 0 calc(2.5 * var(--baseline-grid-height));
                 }
             }
         }
