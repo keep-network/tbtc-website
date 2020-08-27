@@ -83,6 +83,12 @@
                             }
                         }
                     }
+
+                    &:not(.language-dropdown-wrapper) {
+                        max-width: 210px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
                 }
             }
         }
@@ -91,8 +97,16 @@
             border: 1px solid $black;
             padding: 11px;
             position: relative;
-            white-space: nowrap;
             line-height: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            span {
+                max-width: 95%;
+                margin-right: 14px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
 
             &:hover,
             &:active {
@@ -260,6 +274,10 @@
                                         margin: -3px 20px 0;
                                     }
                                 }
+                            }
+
+                            &:not(.language-dropdown-wrapper) {
+                                max-width: none;
                             }
                         }
                     }

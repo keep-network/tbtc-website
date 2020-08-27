@@ -57,7 +57,7 @@ const HeaderTemplate = ({
                   <NavLink {...item} activeClassName="active" />
                 </li>
               ))}
-              <li><a className="mint-button" href={dappLink.url} target="_blank" rel="noopener noreferrer">{dappLink.label}</a></li>
+              <li><a className="mint-button" href={dappLink.url} target="_blank" rel="noopener noreferrer"><span>{dappLink.label}</span></a></li>
               <li className="language-dropdown-wrapper"><LanguageDropdown locale={locale} /></li>
               <li><a className="site-repo-link" href="https://github.com/keep-network/tbtc-website" target="_blank" rel="noopener noreferrer">Repository</a></li>
             </ul>
