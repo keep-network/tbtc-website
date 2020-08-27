@@ -12,7 +12,9 @@ const { defaultLocale, supportedLocales } = config.siteMetadata
 exports.onPreBootstrap = () => {
   const base = parseBaseConfig()
   const fileCollections =
-    base.collections.filter(c => c.name === "pages" || c.name === "header")
+    base.collections.filter(
+      c => c.name === "pages" || c.name === "header" || c.name === "footer"
+    )
   const files = fileCollections
     .reduce((acc, curr) => acc.concat(curr.files.map(f => f.file )), [])
   const nonDefaultLocales = supportedLocales.filter(l => l !== defaultLocale)
