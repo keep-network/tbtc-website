@@ -32,6 +32,10 @@ spotlight_2:
     url: /developers
   label: Developers
   title: TBTC로 여러분의 dApp에 비트코인을 추가하세요
+  image:
+    image: /images/spotlight-2-bg.png
+    alt: Integra TBTC icon
+  align: left
 integrations_section:
   title: Integrations
 ---

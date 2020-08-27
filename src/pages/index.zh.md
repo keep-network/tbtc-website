@@ -32,6 +32,10 @@ spotlight_2:
     url: /developers
   label: 开发者
   title: 整合TBTC将比特币添加到你的dApp中
+  image:
+    image: /images/spotlight-2-bg.png
+    alt: Integra TBTC icon
+  align: left
 integrations_section:
   title: 整合
 ---

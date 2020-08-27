@@ -8,6 +8,7 @@ import Dropdown from "./Dropdown"
 import { CustomLocaleLink as Link } from "../LocaleLink"
 
 const LanguageDropdownTemplate = ({ languages = [], selectedLanguage }) => {
+  /* eslint-disable no-redeclare */
   try {
     var location = useLocation()
   } catch (error) {

@@ -32,6 +32,10 @@ spotlight_2:
     url: /developers
   label: Developer
   title: Integerasi TBTC untuk menambahkan Bitcoin kedalam dApp anda
+  image:
+    image: /images/spotlight-2-bg.png
+    alt: Integerasi TBTC icon
+  align: left
 integrations_section:
   title: Integrasi
 ---

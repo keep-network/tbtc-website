@@ -9,7 +9,7 @@
             }
 
             h6 {
-                font-size: $body-font-size;
+                font-size: var(--body-font-size);
                 line-height: 1.5;
             }
 
@@ -24,7 +24,7 @@
                 display: inline-block;
                 background-color: $black;
                 color: $white;
-                font-weight: 500;
+                font-family: 'apercu-mono-regular-pro', sans-serif;
                 letter-spacing: 1.5px;
                 padding: 10px;
                 margin-bottom: 4rem;
@@ -38,7 +38,6 @@
         .col-lg-10 {
             header {
                 margin-left: 10%;
-                max-width: 60%;
             }
         }
 
@@ -59,7 +58,22 @@
             }
 
             .body {
+                width: 80%;
+            }
+        }
+    }
+
+    @media (min-width: #{$bp-extra-large}) {
+        .col-lg-10 {
+            header {
+                max-width: 60%;
+            }
+        }
+
+        .content {
+            .body {
                 width: 60%;
+                margin-left: 0;
             }
         }
     }

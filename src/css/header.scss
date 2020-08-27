@@ -1,11 +1,117 @@
+@mixin mobile-nav {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .logo {
+        svg {
+            display: block;
+        }
+    }
+
+    .menu {
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        ul {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+
+            li {
+                width: 100%;
+                padding: 0;
+
+                a {
+                    display: block;
+                    padding: 22px 0;
+                }
+
+                .mint-button {
+                    display: inline-block;
+                    padding: 0.5rem;
+                    top: 0;
+                    margin: 22px 0;
+                }
+            }
+
+            &.menu-links {
+                > li {
+                    &:last-of-type {
+                        margin: 22px 0 0;
+                    }
+
+                    > a:not(.mint-button) {
+                        &:hover,
+                        &:active,
+                        &.active {
+                            &:after {
+                                position: static;
+                                display: inline-block;
+                                vertical-align: middle;
+                                margin: -3px 20px 0;
+                            }
+                        }
+                    }
+
+                    &:not(.language-dropdown-wrapper) {
+                        max-width: none;
+                    }
+                }
+            }
+        }
+
+        &.open {
+            margin: 30px 0 0;
+
+            ul {
+                display: flex;
+            }
+        }
+    }
+
+    .language-dropdown-wrapper {
+        margin: 22px 0;
+    }
+
+    .menu-label {
+        display: block;
+        position: absolute;
+        top: 43px;
+        right: -5px;
+        padding: 0;
+        margin: 0;
+        width: 40px;
+        height: 40px;
+
+        background-image: url(../img/hamburger-open.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: transparent;
+
+        cursor: pointer;
+        border: 0;
+        @include hide-button-text;
+
+        &:hover {
+            background-color: transparent;
+        }
+
+        &.open {
+            background-image: url(../img/hamburger-close.svg);
+        }
+    }
+}
+
 .header {
     .nav {
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 25px 0 10px;
-        margin: 0 $gutter-width;
-        border-bottom: 1px solid $black;
+        padding: 48px 0 25px;
 
         .logo {
             svg {
@@ -18,7 +124,7 @@
             flex: 1 100%;
             flex-direction: row;
             align-items: center;
-            justify-content: space-between;
+            justify-content: flex-end;
             margin: 0 0 0 22px;
         }
 
@@ -41,12 +147,12 @@
                     color: $black;
                     text-decoration: none;
                     text-transform: uppercase;
+                    font-family: 'apercu-mono-regular-pro', sans-serif;
                     font-weight: 500;
                     letter-spacing: 1.5px;
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
+                    line-height: 233%;
+                    position: relative;
+                    white-space: nowrap;
                 }
 
                 &.language-dropdown-wrapper {
@@ -54,23 +160,72 @@
                 }
             }
 
-            &.nav-right {
-                > li:last-of-type {
-                    margin-right: -22px;
+            &.menu-links {
+                > li {
+                    &:last-of-type {
+                        margin-right: -22px;
+                    }
+
+                    > a:not(.mint-button) {
+                        &:hover,
+                        &:active,
+                        &.active {
+                            &:after {
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                bottom: -12px;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                width: 5px;
+                                height: 5px;
+                                border-radius: 50%;
+                                border: 1px solid $black;
+                            }
+                        }
+
+                        &:active,
+                        &.active {
+                            &:after {
+                                background-color: $black;
+                            }
+                        }
+                    }
+
+                    &:not(.language-dropdown-wrapper) {
+                        max-width: 210px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
                 }
             }
         }
 
         .mint-button {
             border: 1px solid $black;
-            padding: 0.65rem;
+            padding: 11px;
             position: relative;
-            white-space: nowrap;
+            line-height: 100%;
+            display: flex;
+            justify-content: space-between;
 
-            &:hover {
+            span {
+                max-width: 95%;
+                margin-right: 14px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            &:hover,
+            &:active {
                 background-color: $black;
                 color: $white;
                 text-decoration: none;
+            }
+
+            &:active {
+                top: 3px;
+                left: 3px;
             }
         }
 
@@ -83,8 +238,8 @@
                 vertical-align: top;
                 border: 0;
                 padding: 0;
-                width: 47px;
-                height: 40px;
+                width: 61px;
+                height: 50px;
                 background-image: url(../img/speech-bubble.svg);
                 background-repeat: no-repeat;
                 background-size: contain;
@@ -110,7 +265,7 @@
                 display: none;
                 position: absolute;
                 left: 0;
-                top: 102%;
+                top: 114%;
                 z-index: 10;
                 background-color: $white;
                 border: 1px solid $black;
@@ -125,7 +280,8 @@
 
                         a {
                             display: block;
-                            padding: 0.5em;
+                            padding: 0.38rem 0.5rem;
+                            line-height: 100%;
 
                             &:hover {
                                 background-color: $black;
@@ -169,6 +325,20 @@
             }
         }
 
+        @media (max-width: #{$max-page-width}) {
+            :lang(de) &,
+            :lang(es) &,
+            :lang(pl) &,
+            :lang(ru) &,
+            :lang(vn) & {
+                @include mobile-nav;
+            }
+        }
+
+        @media (max-width: #{$bp-extra-large}) {
+            @include mobile-nav;
+        }
+
         @media (max-width: #{$bp-large}) {
             ul {
                 > li {
@@ -182,111 +352,23 @@
         }
 
         @media (max-width: #{$bp-medium}) {
-            position: relative;
-            flex-direction: column;
-            align-items: flex-start;
             padding: 25px 0;
 
-            .logo {
-                svg {
-                    display: block;
-                }
-            }
-
             .menu {
-                width: 100%;
-                margin: 0;
-                flex-direction: column;
-                justify-content: flex-end;
-                align-items: flex-end;
-
                 ul {
-                    display: none;
-                    flex-direction: column;
-                    width: 100%;
-
                     li {
-                        width: 100%;
-                        padding: 0;
-
-                        a {
-                            display: block;
-                            padding: 22px 0;
-                        }
-
                         .mint-button {
-                            display: inline-block;
-                            padding: 0.5rem;
-                            top: 0;
-                            margin-bottom: 1rem;
-                        }
-                    }
-
-                    &.nav-right {
-                        > li:last-of-type {
-                            margin-right: 0;
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
                         }
                     }
                 }
 
-                &.open {
-                    margin: 30px 0 0;
-
-                    ul {
-                        display: flex;
-                    }
-                }
-            }
-
-            .menu-label {
-                display: block;
-                position: absolute;
-                top: 10px;
-                width: 75px;
-                padding: 0;
-                margin: 0;
-                height: 60px;
-
-                background: white;
-                color: black;
-
-                cursor: pointer;
-                border: 0;
-                @include hide-button-text;
-
-                &:before, &:after {
-                    position: absolute;
-                    top: 25px;
-
-                    content: '';
-                    background: black;
-
-                    width: 10px;
-                    height: 10px;
-                    border-radius: 10px;
-                }
-
-                &:before {
-                    left: 25px
-                }
-                &:after {
-                    right: 25px
-                }
-
-                &.open {
-                    background: black;
-                    color: white;
-
-                    &:after, &:before {
-                        background: white;
-                    }
+                .menu-label {
+                    top: 21px;
                 }
             }
         }
-
-        @media (max-width: #{$bp-small}) {
-            margin: 0 15px;
-        }
-
     }
 }

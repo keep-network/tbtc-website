@@ -30,7 +30,7 @@
             padding: 10px 0;
             transition: all 0.5s ease-in;
             font-family: $body-font-family;
-            font-size: $body-font-size;
+            font-size: var(--body-font-size);
 
             &:focus {
                 outline: 0;

@@ -46,7 +46,7 @@
                 display: block;
                 content: ' ↕';
                 font-family: $body-font-family;
-                font-size: $body-font-size;
+                font-size: var(--body-font-size);
                 font-weight: normal;
             }
         }

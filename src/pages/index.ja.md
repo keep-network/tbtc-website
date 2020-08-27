@@ -32,6 +32,10 @@ spotlight_2:
     url: /developers
   label: デベロッパー
   title: dApp でビットコインをサポートしよう
+  image:
+    image: /images/spotlight-2-bg.png
+    alt: Integra TBTC icon
+  align: left
 integrations_section:
   title: インテグレーション
 ---

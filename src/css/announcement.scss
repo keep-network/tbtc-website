@@ -1,50 +1,34 @@
 .announcement {
+    position: relative;
+
+    &:before {
+        content: '';
+        display: block;
+        background-color: $black;
+        width: 40%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
     .content {
         position: relative;
-        padding: 21px 0 0;
-
-        &:before,
-        &::after {
-            content: '';
-            background-color: $black;
-            display: block;
-            position: absolute;
-            left: 0;
-        }
-
-        &:before {
-            width: 1px;
-            height: 45px;
-            top: 0;
-        }
-
-        &:after {
-            width: 15px;
-            height: 1px;
-            top: 45px;
-        }
-
-        p {
-            padding-left: 80px;
-            position: relative;
-
-            &:before {
-                content: ' .... ';
-                display: inline-block;
-                position: absolute;
-                top: -3px;
-                left: 30px;
-            }
-        }
+        background-color: $black;
+        color: $white;
+        border-left: 4px dotted $white;
+        padding: 0 30px;
+        max-width: 83.33333333%;
 
         a {
             @extend %external-arrow-link;
+            color: $white;
         }
     }
 
     @media (max-width: #{$bp-small}) {
-        + .app {
-            margin: 0 auto;
+        .content {
+            padding: 0 15px;
         }
     }
 }

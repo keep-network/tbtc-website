@@ -8,6 +8,12 @@ $bp-large: 992px;
 $bp-medium: 768px;
 $bp-small: 576px;
 
+@mixin container-max-100 {
+    max-width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
 
 html, body, #root {
     margin: 0;
@@ -26,14 +32,26 @@ html, body, #root {
 .app {
     flex: 1;
     color: #{$black};
-    margin: 50px 0 0;
+    margin: var(--baseline-grid-height) 0 0;
 
     @media (max-width: #{$bp-small}) {
-        margin: 30px auto 0;
+        margin: var(--baseline-grid-height) auto 0;
     }
 }
 
 .container {
+    @media (max-width: #{$bp-medium - 1}) {
+        @include container-max-100;
+    }
+
+    @media (min-width: #{$bp-small}) and (max-width: #{$bp-medium - 1}) {
+        @include container-max-100;
+    }
+
+    @media (min-width: #{$bp-large}) {
+        @include container-max-100;
+    }
+
     @media (min-width: #{$bp-extra-large}) {
         max-width: $max-page-width;
     }
@@ -47,9 +65,7 @@ html, body, #root {
     }
 }
 
-.page-header {
-    border-top: 1px solid $black;
-    
+.page-header {    
     @media (min-width: #{$bp-medium}) {
         margin-bottom: 5rem;
     }

@@ -32,6 +32,10 @@ spotlight_2:
     url: /developers
   label: Nhà phát triển
   title: Tích hợp TBTC để thêm Bitcoin vào dApp của bạn
+  image:
+    image: /images/spotlight-2-bg.png
+    alt: Integra TBTC icon
+  align: left
 integrations_section:
   title: Tích hợp
 ---

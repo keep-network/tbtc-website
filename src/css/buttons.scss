@@ -2,16 +2,17 @@ button, .button,
 input[type="submit"] {
     border: 1px solid $black;
     border-radius: 0;
-    padding: 10px;
+    padding: 11px;
     white-space: nowrap;
     cursor: pointer;
     background-color: $white;
     text-transform: uppercase;
     text-align: left;
-    font-family: $body-font-family;
+    font-family: 'apercu-mono-regular-pro', sans-serif;
     font-weight: 500;
-    font-size: $body-font-size;
+    font-size: var(--body-font-size);
     letter-spacing: 1.5px;
+    line-height: 100%;
     appearance: none;
 
     &:hover:enabled {
@@ -30,7 +31,7 @@ input[type="submit"] {
     @extend .button;
     display: block;
     position: relative;
-    padding: 10px 20px 10px 10px;
+    padding: 11px 20px 11px 11px;
     margin-top: 1em;
 
     &:after {
@@ -38,7 +39,7 @@ input[type="submit"] {
         content: ' →';
         position: absolute;
         top: 50%;
-        right: 10px;
+        right: 11px;
         transform: translateY(-50%);
     }
 

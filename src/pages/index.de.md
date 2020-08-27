@@ -35,6 +35,10 @@ spotlight_2:
     url: /developers
   label: Entwickler
   title: 'Integrieren Sie TBTC, um Bitcoin zu Ihrer dApp hinzuzufügen'
+  image:
+    image: /images/spotlight-2-bg.png
+    alt: Integrieren TBTC icon
+  align: left
 integrations_section:
   title: Integrationen
 ---

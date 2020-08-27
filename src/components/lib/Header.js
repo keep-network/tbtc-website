@@ -39,31 +39,31 @@ const HeaderTemplate = ({
   }
 
   return (
-    <header className="header">
-      <nav className="nav">
-        <Link className="logo" to="/">
-          <TBTCLogo width="165" />
-        </Link>
+    <header className="header container">
+      <div className="row justify-content-center no-gutters">
+        <nav className="nav col-sm-12 col-md-12 col-lg-10">
+          <Link className="logo" to="/">
+            <TBTCLogo width="165" />
+          </Link>
 
-        <div className={classNames("menu", { "open": showMenu })}>
-          <button className={classNames("menu-label", { "open": showMenu })}
-            onClick={toggleMenu}>
-              Navigation
-          </button>
-          <ul className="nav-left">
-            {navItems.map((item, i) => (
-              <li key={`nav-item-${i}`}>
-                <NavLink {...item} activeClassName="active" />
-              </li>
-            ))}
-          </ul>
-          <ul className="nav-right">
-            <li><a className="mint-button" href={dappLink.url} target="_blank" rel="noopener noreferrer">{dappLink.label}</a></li>
-            <li className="language-dropdown-wrapper"><LanguageDropdown locale={locale} /></li>
-            <li><a className="site-repo-link" href="https://github.com/keep-network/tbtc-website" target="_blank" rel="noopener noreferrer">Repository</a></li>
-          </ul>
-        </div>
-      </nav>
+          <div className={classNames("menu", { "open": showMenu })}>
+            <button className={classNames("menu-label", { "open": showMenu })}
+              onClick={toggleMenu}>
+                Navigation
+            </button>
+            <ul className="menu-links">
+              {navItems.map((item, i) => (
+                <li key={`nav-item-${i}`}>
+                  <NavLink {...item} activeClassName="active" />
+                </li>
+              ))}
+              <li><a className="mint-button" href={dappLink.url} target="_blank" rel="noopener noreferrer"><span>{dappLink.label}</span></a></li>
+              <li className="language-dropdown-wrapper"><LanguageDropdown locale={locale} /></li>
+              <li><a className="site-repo-link" href="https://github.com/keep-network/tbtc-website" target="_blank" rel="noopener noreferrer">Repository</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
   )
 }
