@@ -105,7 +105,9 @@ exports.onCreateNode = async ({ graphql, node, actions, getNode }) => {
   
   // fmImagesToRelative is changing frontmatter links to relative links >:/
   if (!node.frontmatter ||
-    (node.frontmatter && node.frontmatter.template !== `header-nav`)) {
+    (node.frontmatter &&
+      node.frontmatter.template !== `header-nav` &&
+      node.frontmatter.template !== `footer-nav`)) {
     fmImagesToRelative(node) // convert image paths for gatsby images
   }
 

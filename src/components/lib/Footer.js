@@ -1,63 +1,80 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
+import PropTypes from "prop-types"
 
+import Link from "../LocaleLink"
 import TBTCLogo from '../svgs/TBTCLogo'
 
 
-const Footer = () => (
+const FooterTemplate = ({
+  nav_columns: navColumns,
+  copyright_text: copyright,
+}) => (
   <footer>
-    <div className="footer-logo">
-      <TBTCLogo width="165" />
+    <div className="container">
+      <div className="row justify-content-center no-gutters">
+        <div className="col-sm-12 col-lg-10">
+          <div className="footer-logo">
+            <TBTCLogo width="165" />
+          </div>
+          <nav className="footer-menu">
+            {navColumns.map((col, i) => (
+              <ul key={`nav-column-${i}`}>
+                {col.items.map((item, j) => (
+                  <li key={`nav-item-${j}`}>
+                    <Link to={item.url}>{item.label}</Link>
+                  </li>
+                ))}
+              </ul>
+            ))}
+          </nav>
+        </div>
+        <div className="copyright col-sm-12 col-lg-10">
+          {copyright}
+        </div>
+      </div>
     </div>
-    <nav className="footer-menu">
-      <div className="top-menu">
-        <ul>
-          <li>
-            <Link to="/about">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to="/news">
-              News
-            </Link>
-          </li>
-          <li>
-            <Link to="/developers">
-              Build
-            </Link>
-          </li>
-          <li>
-            <Link to="/faq">
-              FAQ
-            </Link>
-          </li>
-          <li>
-            <a href="https://dapp.test.tbtc.network/" target="_blank" rel="noopener noreferrer">
-              dAPP
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div className="bottom-menu">
-        <ul>
-          <li>
-            <Link to="/privacy-policy">
-              Privacy Policy
-            </Link>
-          </li>
-          <li>
-            <Link to="/terms-of-use">
-              Terms of Use
-            </Link>
-          </li>
-          <li className="copyright">
-            &copy; 2020 tBTC
-          </li>
-        </ul>
-      </div>
-    </nav>
   </footer>
 )
+
+export const query = graphql`
+  query Footer {
+    allMarkdownRemark(
+      filter: { frontmatter: { template: { eq: "footer-nav" } } }
+    ) {
+      edges {
+        node {
+          fields {
+            locale
+          }
+          frontmatter {
+            nav_columns {
+              items {
+                label
+                url
+              }
+            }
+            copyright_text
+          }
+        }
+      }
+    }
+  }
+`
+
+const Footer = ({ locale = "en" }) => (
+  <StaticQuery
+    query={query}
+    render={data => {
+      const match = data.allMarkdownRemark.edges
+        .find(e => e.node.fields.locale === locale)
+      return <FooterTemplate {...match.node.frontmatter} locale={locale} />
+    }}
+  />
+)
+
+Footer.propTypes = {
+  locale: PropTypes.string
+}
 
 export default Footer
