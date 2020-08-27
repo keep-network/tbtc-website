@@ -1,3 +1,111 @@
+@mixin mobile-nav {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .logo {
+        svg {
+            display: block;
+        }
+    }
+
+    .menu {
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        ul {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+
+            li {
+                width: 100%;
+                padding: 0;
+
+                a {
+                    display: block;
+                    padding: 22px 0;
+                }
+
+                .mint-button {
+                    display: inline-block;
+                    padding: 0.5rem;
+                    top: 0;
+                    margin: 22px 0;
+                }
+            }
+
+            &.menu-links {
+                > li {
+                    &:last-of-type {
+                        margin: 22px 0 0;
+                    }
+
+                    > a:not(.mint-button) {
+                        &:hover,
+                        &:active,
+                        &.active {
+                            &:after {
+                                position: static;
+                                display: inline-block;
+                                vertical-align: middle;
+                                margin: -3px 20px 0;
+                            }
+                        }
+                    }
+
+                    &:not(.language-dropdown-wrapper) {
+                        max-width: none;
+                    }
+                }
+            }
+        }
+
+        &.open {
+            margin: 30px 0 0;
+
+            ul {
+                display: flex;
+            }
+        }
+    }
+
+    .language-dropdown-wrapper {
+        margin: 22px 0;
+    }
+
+    .menu-label {
+        display: block;
+        position: absolute;
+        top: 43px;
+        right: -5px;
+        padding: 0;
+        margin: 0;
+        width: 40px;
+        height: 40px;
+
+        background-image: url(../img/hamburger-open.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: transparent;
+
+        cursor: pointer;
+        border: 0;
+        @include hide-button-text;
+
+        &:hover {
+            background-color: transparent;
+        }
+
+        &.open {
+            background-image: url(../img/hamburger-close.svg);
+        }
+    }
+}
+
 .header {
     .nav {
         display: flex;
@@ -217,112 +325,18 @@
             }
         }
 
+        @media (max-width: #{$max-page-width}) {
+            :lang(de) &,
+            :lang(es) &,
+            :lang(pl) &,
+            :lang(ru) &,
+            :lang(vn) & {
+                @include mobile-nav;
+            }
+        }
+
         @media (max-width: #{$bp-extra-large}) {
-            position: relative;
-            flex-direction: column;
-            align-items: flex-start;
-
-            .logo {
-                svg {
-                    display: block;
-                }
-            }
-
-            .menu {
-                width: 100%;
-                margin: 0;
-                flex-direction: column;
-                justify-content: flex-end;
-                align-items: flex-end;
-
-                ul {
-                    display: none;
-                    flex-direction: column;
-                    width: 100%;
-
-                    li {
-                        width: 100%;
-                        padding: 0;
-
-                        a {
-                            display: block;
-                            padding: 22px 0;
-                        }
-
-                        .mint-button {
-                            display: inline-block;
-                            padding: 0.5rem;
-                            top: 0;
-                            margin: 22px 0;
-                        }
-                    }
-
-                    &.menu-links {
-                        > li {
-                            &:last-of-type {
-                                margin: 22px 0 0;
-                            }
-
-                            > a:not(.mint-button) {
-                                &:hover,
-                                &:active,
-                                &.active {
-                                    &:after {
-                                        position: static;
-                                        display: inline-block;
-                                        vertical-align: middle;
-                                        margin: -3px 20px 0;
-                                    }
-                                }
-                            }
-
-                            &:not(.language-dropdown-wrapper) {
-                                max-width: none;
-                            }
-                        }
-                    }
-                }
-
-                &.open {
-                    margin: 30px 0 0;
-
-                    ul {
-                        display: flex;
-                    }
-                }
-            }
-
-            .language-dropdown-wrapper {
-                margin: 22px 0;
-            }
-
-            .menu-label {
-                display: block;
-                position: absolute;
-                top: 43px;
-                right: -5px;
-                padding: 0;
-                margin: 0;
-                width: 40px;
-                height: 40px;
-
-                background-image: url(../img/hamburger-open.svg);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-color: transparent;
-
-                cursor: pointer;
-                border: 0;
-                @include hide-button-text;
-
-                &:hover {
-                    background-color: transparent;
-                }
-
-                &.open {
-                    background-image: url(../img/hamburger-close.svg);
-                }
-            }
+            @include mobile-nav;
         }
 
         @media (max-width: #{$bp-large}) {

@@ -9,7 +9,7 @@ const LocaleContext = React.createContext({})
 const App = ({ children, title, description, locale }) => {
   return (
     <LocaleContext.Provider value={{ locale }}>
-      <div className="main">
+      <div className="main" lang={locale}>
         <Header locale={locale} />
         <SEO title={title} description={description} />
         <Announcement locale={locale} />
