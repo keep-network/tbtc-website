@@ -99,10 +99,7 @@ a {
     @extend .h1;
     border-top: 1px solid $black;
     padding: var(--baseline-grid-height) 0 0;
-
-    @media (min-width: #{$bp-small}) {
-        margin-bottom: $baseline-grid-height * 2;
-    }
+    margin-bottom: var(--baseline-grid-height-2x);
 }
 
 .body {

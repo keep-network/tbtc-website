@@ -84,7 +84,8 @@ export const HomePageTemplate = ({
           <h1 className="section-title">Latest News</h1>
           <div className="row">
             { newsItems && newsItems.map(({ node }) => (
-              <div className="latest-news-item col-sm-12 col-md-4" key={node.id}>
+              <div className="latest-news-item col-sm-12 col-lg-4" key={node.id}>
+                <div className="date">{node.frontmatter.date}</div>
                 <h2>{node.frontmatter.title}</h2>
                 <p>{node.excerpt}</p>
                 <Link locale={node.fields.locale} to={`${node.fields.slug}`}>Read more</Link>
@@ -234,6 +235,7 @@ export const query = graphql`
           }
           frontmatter {
             title
+            date(formatString: "YYYY-MM-DD")
           }
         }
       }
