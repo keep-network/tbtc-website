@@ -7,27 +7,6 @@ import LanguageDropdown from "./LanguageDropdown"
 import Link from "../LocaleLink"
 import TBTCLogo from "../svgs/TBTCLogo"
 
-const NavLink = ({ url, label, ...other }) => {
-  if (/^http/.test(url)) {
-    return (
-      <a href={url} target="_blank" rel="noopener noreferrer">
-        {label}
-      </a>
-    )
-  }
-
-  return (
-    <Link to={url} {...other}>
-      {label}
-    </Link>
-  )
-}
-
-NavLink.propTypes = {
-  url: PropTypes.string,
-  label: PropTypes.string,
-}
-
 const HeaderTemplate = ({
   nav_items: navItems,
   dapp_link: dappLink,
@@ -54,7 +33,9 @@ const HeaderTemplate = ({
             <ul className="menu-links">
               {navItems.map((item, i) => (
                 <li key={`nav-item-${i}`}>
-                  <NavLink {...item} activeClassName="active" />
+                  <Link to={item.url} activeClassName="active">
+                    {item.label}
+                  </Link>
                 </li>
               ))}
               <li><a className="mint-button" href={dappLink.url} target="_blank" rel="noopener noreferrer"><span>{dappLink.label}</span></a></li>
