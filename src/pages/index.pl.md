@@ -35,7 +35,7 @@ spotlight_2:
   label: Programiści
   title: Zintegruj się z tBTC aby dodać Bitcoin do Twojej aplikacji dApp
   image:
-    image: /images/spotlight-2-bg.png
+    image: /img/spotlight-2-bg.png
     alt: Integra TBTC icon
   align: left
 integrations_section:

@@ -36,7 +36,7 @@ spotlight_2:
   label: Desarrolladores
   title: Integra TBTC para añadir Bitcoin a tu dApp
   image:
-    image: /images/spotlight-2-bg.png
+    image: /img/spotlight-2-bg.png
     alt: Integra TBTC icon
   align: left
 integrations_section:

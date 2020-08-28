@@ -127,14 +127,6 @@ exports.createSchemaCustomization = ({ actions }) => {
 
 exports.onCreateNode = async ({ graphql, node, actions, getNode }) => {
   const { createNodeField } = actions
-  
-  // fmImagesToRelative is changing frontmatter links to relative links >:/
-  if (!node.frontmatter ||
-    (node.frontmatter &&
-      node.frontmatter.template !== `header-nav` &&
-      node.frontmatter.template !== `footer-nav`)) {
-    fmImagesToRelative(node) // convert image paths for gatsby images
-  }
 
   // set a slug for all markdown nodes, and use any supported 639-1 language
   // code prepended to the file extension to set a language-specific URL root
