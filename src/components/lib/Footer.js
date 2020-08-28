@@ -2,6 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import PropTypes from "prop-types"
 
+import Image from "./Image"
 import Link from "../LocaleLink"
 import TBTCLogo from '../svgs/TBTCLogo'
 
@@ -22,7 +23,10 @@ const FooterTemplate = ({
               <ul key={`nav-column-${i}`}>
                 {col.items.map((item, j) => (
                   <li key={`nav-item-${j}`}>
-                    <Link to={item.url}>{item.label}</Link>
+                    <Link to={item.url}>
+                      {item.icon ? <Image imageData={item.icon} /> : ""}
+                      {item.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
