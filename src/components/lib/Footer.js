@@ -16,7 +16,7 @@ const FooterTemplate = ({
       <div className="row justify-content-center no-gutters">
         <div className="col-sm-12 col-lg-10">
           <div className="footer-logo">
-            <TBTCLogo width="165" />
+            <TBTCLogo width="230" />
           </div>
           <nav className="footer-menu">
             {navColumns.map((col, i) => (
