@@ -100,6 +100,31 @@ function localePath(path, locale) {
   return `/${locale}/${pathComponents.join('/')}`
 }
 
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = `
+    type MarkdownRemark implements Node {
+      frontmatter: Frontmatter
+    }
+    type Frontmatter {
+      nav_columns: [NavColumns]
+    }
+    type NavColumns {
+      items: [Items]
+    }
+    type Items {
+      icon: Icon
+      label: String
+      url: String
+    }
+    type Icon {
+      alt: String
+      image: File @fileByRelativePath
+    }
+  `
+  createTypes(typeDefs)
+}
+
 exports.onCreateNode = async ({ graphql, node, actions, getNode }) => {
   const { createNodeField } = actions
   

@@ -52,6 +52,12 @@ export const query = graphql`
               items {
                 label
                 url
+                icon {
+                  image {
+                    relativePath
+                  }
+                  alt
+                }
               }
             }
             copyright_text
