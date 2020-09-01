@@ -32,10 +32,10 @@ footer {
 
            li {
                list-style: none;
-               margin: 1em 0;
+               margin: var(--baseline-grid-height) 0;
 
                &:first-of-type {
-                   margin-top: 0.5em;
+                   margin-top: calc(0.5 * var(--baseline-grid-height));
                }
 
                a {
