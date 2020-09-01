@@ -74,16 +74,13 @@
 
                 p {
                     margin-bottom: 0;
-                    font-family: 'apercu-mono-regular-pro', sans-serif;
-                    font-size: 0.89rem;
-                    line-height: 175%;
+                    @extend %p2;
                 }
 
                 &:before {
                     content: "0" #{counter(step-by-step)};
                     display: inline-block;
-                    font-family: 'apercu-mono-regular-pro', sans-serif;
-                    font-size: 0.89rem;
+                    @extend %p2;
                     line-height: 219%;
                     position: absolute;
                     top: 0;
