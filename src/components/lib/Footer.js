@@ -23,7 +23,7 @@ const FooterTemplate = ({
               <ul key={`nav-column-${i}`}>
                 {col.items.map((item, j) => (
                   <li key={`nav-item-${j}`}>
-                    <Link to={item.url}>
+                    <Link to={item.url} className={item.icon ? "icon-link" : ""}>
                       {item.icon ? <Image imageData={item.icon} /> : ""}
                       {item.label}
                     </Link>
