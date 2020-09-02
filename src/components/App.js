@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useEffect }from 'react'
 import { Announcement, Footer, Header, Newsletter } from './lib'
 import SEO from './SEO.js'
+
+import Prism from 'prismjs'
 
 import '../css/app.scss'
 
 const LocaleContext = React.createContext({})
 
 const App = ({ children, title, description, locale }) => {
+  useEffect(() => {
+    // Enable syntax highlighting globally
+    Prism.highlightAll()
+  }, [])
+
   return (
     <LocaleContext.Provider value={{ locale }}>
       <div className="main" lang={locale}>
