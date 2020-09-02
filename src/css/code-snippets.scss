@@ -1,0 +1,37 @@
+// Overrides to the Prism default theme
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+    background: rgba($graphite, 0.15);
+}
+
+pre[class*="language-"] {
+    padding: 21px;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+    @extend %p2;
+    text-shadow: none;
+    color: $black;
+    font-feature-settings: 'salt' on;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+    color: $success;
+}
+
+.token.function,
+.token.class-name {
+    color: $alert;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+    color: $notify;
+}
