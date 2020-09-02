@@ -35,3 +35,18 @@ pre[class*="language-"] {
 .token.keyword {
     color: $notify;
 }
+
+.line-numbers {
+    .line-numbers-rows {
+        top: -6px;
+        border-right: 0;
+
+        > span {
+            @extend %p2;
+
+            &:before {
+                color: $graphite;
+            }
+        }
+    }
+}
