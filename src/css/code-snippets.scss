@@ -50,3 +50,8 @@ pre[class*="language-"] {
         }
     }
 }
+
+pre + .github-embed-link {
+    margin: -0.75em 0 0 3.8em;
+    text-decoration: none;
+}
