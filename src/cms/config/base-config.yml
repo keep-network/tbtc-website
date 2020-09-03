@@ -27,14 +27,6 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {
-          label: "Show Line Numbers for Code Snippets",
-          name: "lineNumbers",
-          widget: "boolean",
-          required: false,
-          hint: "This will display line numbers for code blocks in the published
-            site, not in rich text below or in the preview."
-        }
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list", required: false}
 
@@ -52,14 +44,6 @@ collections:
       - {label: "Heading", name: "heading", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {
-          label: "Show Line Numbers for Code Snippets",
-          name: "lineNumbers",
-          widget: "boolean",
-          required: false,
-          hint: "This will display line numbers for code blocks in the published
-            site, not in rich text below or in the preview."
-        }
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 

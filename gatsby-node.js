@@ -108,7 +108,6 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
     type Frontmatter {
       nav_columns: [NavColumns]
-      lineNumbers: Boolean
     }
     type NavColumns {
       items: [Items]

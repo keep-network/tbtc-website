@@ -7,13 +7,13 @@ import { App } from '../components'
 import { Article } from '../components/lib'
 
 
-export const NewsItemTemplate = ({ title, date, body, lineNumbers = false }) => (
+export const NewsItemTemplate = ({ title, date, body }) => (
   <Article
     className="news-item"
     title={title}
     date={date}
     body={body}
-    lineNumbers={lineNumbers} />
+  />
 )
 
 const NewsItem = ({ data, pageContext }) => {
@@ -27,7 +27,7 @@ const NewsItem = ({ data, pageContext }) => {
       description={post.frontmatter.description}
       body={post.html}
       title={post.frontmatter.title}
-      lineNumbers={post.frontmatter.lineNumbers} />
+    />
   </App>
 }
 
@@ -48,7 +48,6 @@ export const pageQuery = graphql`
         date(formatString: "YYYY-MM-DD")
         title
         description
-        lineNumbers
       }
     }
   }

@@ -2,14 +2,14 @@ import React, { useEffect } from 'react'
 import classNames from 'classnames'
 import Prism from 'prismjs'
 
-const Article = ({ title, date, body, className, lineNumbers }) => {
+const Article = ({ title, date, body, className }) => {
   useEffect(() => {
     Prism.highlightAll() // Enable syntax highlighting for code blocks
   })
 
   return (
     <div
-      className={classNames('article', className, {'line-numbers': lineNumbers})}
+      className={classNames('article', className)}
     >
       <div className="container">
         <div className="row justify-content-center no-gutters">

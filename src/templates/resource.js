@@ -7,13 +7,13 @@ import { App } from '../components'
 import { Article } from '../components/lib'
 
 
-export const ResourceTemplate = ({ title, body, date, lineNumbers = false }) => (
+export const ResourceTemplate = ({ title, body, date }) => (
   <Article
     className="resource"
     title={title}
     body={body}
     date={date}
-    lineNumbers={lineNumbers} />
+  />
 )
 
 const Resource = ({ data, pageContext }) => {
@@ -26,7 +26,7 @@ const Resource = ({ data, pageContext }) => {
       body={post.html}
       title={title}
       date={post.frontmatter.date}
-      lineNumbers={post.frontmatter.lineNumbers} />
+    />
   </App>
 }
 
@@ -47,7 +47,6 @@ export const pageQuery = graphql`
         title
         heading
         date(formatString: "YYYY-MM-DD")
-        lineNumbers
       }
     }
   }
