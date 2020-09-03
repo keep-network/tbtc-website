@@ -31,7 +31,9 @@ collections:
           label: "Show Line Numbers for Code Snippets",
           name: "lineNumbers",
           widget: "boolean",
-          required: false
+          required: false,
+          hint: "This will display line numbers for code blocks in the published
+            site, not in rich text below or in the preview."
         }
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list", required: false}
@@ -54,7 +56,9 @@ collections:
           label: "Show Line Numbers for Code Snippets",
           name: "lineNumbers",
           widget: "boolean",
-          required: false
+          required: false,
+          hint: "This will display line numbers for code blocks in the published
+            site, not in rich text below or in the preview."
         }
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}

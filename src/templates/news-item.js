@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import classNames from 'classnames'
 
 import { graphql } from 'gatsby'
 
@@ -10,10 +9,11 @@ import { Article } from '../components/lib'
 
 export const NewsItemTemplate = ({ title, date, body, lineNumbers = false }) => (
   <Article
-    className={classNames('news-item', {'line-numbers': lineNumbers})}
+    className="news-item"
     title={title}
     date={date}
-    body={body} />
+    body={body}
+    lineNumbers={lineNumbers} />
 )
 
 const NewsItem = ({ data, pageContext }) => {
