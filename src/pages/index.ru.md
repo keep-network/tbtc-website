@@ -35,7 +35,7 @@ spotlight_2:
   label: Разработчикам
   title: 'Интегрируйте tBTC, чтобы добавить Биткойн в ваши dApp'
   image:
-    image: /images/spotlight-2-bg.png
+    image: /img/spotlight-2-bg.png
     alt: Integra TBTC icon
   align: left
 integrations_section:

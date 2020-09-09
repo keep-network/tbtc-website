@@ -12,7 +12,9 @@ const { defaultLocale, supportedLocales } = config.siteMetadata
 exports.onPreBootstrap = () => {
   const base = parseBaseConfig()
   const fileCollections =
-    base.collections.filter(c => c.name === "pages" || c.name === "header")
+    base.collections.filter(
+      c => c.name === "pages" || c.name === "header" || c.name === "footer"
+    )
   const files = fileCollections
     .reduce((acc, curr) => acc.concat(curr.files.map(f => f.file )), [])
   const nonDefaultLocales = supportedLocales.filter(l => l !== defaultLocale)
@@ -98,14 +100,33 @@ function localePath(path, locale) {
   return `/${locale}/${pathComponents.join('/')}`
 }
 
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = `
+    type MarkdownRemark implements Node {
+      frontmatter: Frontmatter
+    }
+    type Frontmatter {
+      nav_columns: [NavColumns]
+    }
+    type NavColumns {
+      items: [Items]
+    }
+    type Items {
+      icon: Icon
+      label: String
+      url: String
+    }
+    type Icon {
+      alt: String
+      image: File @fileByRelativePath
+    }
+  `
+  createTypes(typeDefs)
+}
+
 exports.onCreateNode = async ({ graphql, node, actions, getNode }) => {
   const { createNodeField } = actions
-  
-  // fmImagesToRelative is changing frontmatter links to relative links >:/
-  if (!node.frontmatter ||
-    (node.frontmatter && node.frontmatter.template !== `header-nav`)) {
-    fmImagesToRelative(node) // convert image paths for gatsby images
-  }
 
   // set a slug for all markdown nodes, and use any supported 639-1 language
   // code prepended to the file extension to set a language-specific URL root

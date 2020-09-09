@@ -283,3 +283,50 @@ collections:
                 }
               ],
             }
+
+  - name: "footer"
+    label: "Footer"
+    files:
+      - file: "src/footer/index.md"
+        label: "Footer Nav"
+        name: "footer_nav"
+        fields:
+          - {label: "Template Key", name: "template", widget: "hidden", default: "footer-nav"}
+          - label: "Nav Columns"
+            name: "nav_columns"
+            widget: "list"
+            allow_add: true
+            fields:
+              - {
+                label: "Items",
+                name: "items",
+                widget: "list",
+                allow_add: true,
+                fields:
+                  [
+                    { label: "Label", name: "label", widget: "string" },
+                    {
+                      label: "URL",
+                      name: "url",
+                      widget: "string",
+                      hint: "Use a relative URL (e.g. /press or #team) if the link is an internal link.",
+                    },
+                    {
+                      label: Icon,
+                      name: icon,
+                      widget: object,
+                      fields: [
+                        {
+                          label: "Image",
+                          name: "image",
+                          widget: file,
+                          media_library: { config: { multiple: false } },
+                          hint: "SVG only. SVG must have width and height attributes set in the file."
+                        },
+                        {label: "Alt", name: "alt", widget: "string"}
+                      ],
+                      required: false,
+                    }
+                  ]
+                }
+          - {label: "Copyright Text", name: "copyright_text", widget: "string"}

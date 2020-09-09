@@ -57,6 +57,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        path: `${__dirname}/src/footer`,
+        name: 'footer',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         path: `${__dirname}/src/integrations`,
         name: 'integrations',
       },
@@ -76,9 +83,6 @@ module.exports = {
         plugins: [
           {
             resolve: 'gatsby-remark-relative-images',
-            options: {
-              name: 'uploads',
-            },
           },
           {
             resolve: 'gatsby-remark-images',
