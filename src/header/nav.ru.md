@@ -11,6 +11,5 @@ nav_items:
     url: /faq
 dapp_link:
   label: Начните зарабатывать tBTC
-  url: 'https://dapp.test.tbtc.network/'
+  url: 'https://dapp.tbtc.network/'
 ---
-
