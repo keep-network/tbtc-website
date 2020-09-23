@@ -11,5 +11,5 @@ nav_items:
     url: /faq
 dapp_link:
   label: tBTC 발행
-  url: https://dapp.test.tbtc.network/
+  url: https://dapp.tbtc.network/
 ---

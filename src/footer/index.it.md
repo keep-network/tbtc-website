@@ -22,7 +22,7 @@ nav_columns:
           image: /img/discord-logo.svg
           alt: Discord Logo
       - label: Mint TBTC
-        url: https://dapp.test.tbtc.network/
+        url: https://dapp.tbtc.network/
         icon:
           image: /img/tbtc-token.svg
           alt: tBTC token

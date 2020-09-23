@@ -11,5 +11,5 @@ nav_items:
     url: /faq
 dapp_link:
   label: 铸造 tBTC
-  url: https://dapp.test.tbtc.network/
+  url: https://dapp.tbtc.network/
 ---
