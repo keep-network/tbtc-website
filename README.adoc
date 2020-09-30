@@ -198,4 +198,5 @@ https://github.com/keep-network/tbtc-website/commits?author=afmsavage[🖋]
 
 == License
 
+tBTC is basically Bitcoin on Ethereum without the middlemen or KYC
 tBTC and this site are released under the link:./LICENSE[MIT License].
