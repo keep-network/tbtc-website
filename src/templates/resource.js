@@ -12,7 +12,8 @@ export const ResourceTemplate = ({ title, body, date }) => (
     className="resource"
     title={title}
     body={body}
-    date={date} />
+    date={date}
+  />
 )
 
 const Resource = ({ data, pageContext }) => {
@@ -24,7 +25,8 @@ const Resource = ({ data, pageContext }) => {
     <ResourceTemplate
       body={post.html}
       title={title}
-      date={post.frontmatter.date} />
+      date={post.frontmatter.date}
+    />
   </App>
 }
 

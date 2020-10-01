@@ -12,7 +12,8 @@ export const NewsItemTemplate = ({ title, date, body }) => (
     className="news-item"
     title={title}
     date={date}
-    body={body} />
+    body={body}
+  />
 )
 
 const NewsItem = ({ data, pageContext }) => {
@@ -25,7 +26,8 @@ const NewsItem = ({ data, pageContext }) => {
       date={post.frontmatter.date}
       description={post.frontmatter.description}
       body={post.html}
-      title={post.frontmatter.title} />
+      title={post.frontmatter.title}
+    />
   </App>
 }
 

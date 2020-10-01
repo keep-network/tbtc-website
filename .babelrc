@@ -1,0 +1,20 @@
+{
+  "plugins": [
+    ["prismjs", {
+        "languages": ["solidity", "sol", "javascript", "js"],
+        "plugins": ["line-numbers"],
+        "theme": "default",
+        "css": true
+    }]
+  ],
+  "presets": [
+    [
+      "babel-preset-gatsby",
+      {
+        "targets": {
+          "browsers": [">0.2%", "not dead", "not op_mini all"]
+        }
+      }
+    ]
+  ]
+}
