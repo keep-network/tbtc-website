@@ -3,6 +3,8 @@ template: news-item
 title: tBTC Integrates Bridge With Celo Blockchain Platform
 description: tBTC Integrates Bridge With Celo Blockchain Platform
 date: 2020-10-01T13:31:37.518Z
+tags:
+  - featured
 ---
 tBTC, which enables Bitcoin holders to act on the Ethereum blockchain, has added an integration with the [Celo](https://celo.org/) Platform, an open blockchain platform designed to make financial tools accessible to people with a mobile phone.
 
