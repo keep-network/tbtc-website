@@ -177,6 +177,18 @@ export const query = graphql`
         hero {
           title
           subtitle
+          image {
+            alt
+            url
+            image {
+              relativePath
+              childImageSharp {
+                fluid(maxWidth: 490, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
           buttons {
             text
             url
