@@ -17,14 +17,11 @@
             }
 
             a:first-child {
-                @extend %button-link;
+                @extend %black-button-link;
                 margin-top: 0;
                 max-width: 100%;
                 overflow: hidden;
                 text-overflow: ellipsis;
-
-                background: $black;
-                color: $white;
             }
 
             @media (min-width: #{$bp-small}) {
@@ -147,10 +144,7 @@
         padding: var(--baseline-grid-height) 0 var(--baseline-grid-height-2x);
 
         .billboard-button-link {
-            @extend %button-link;
-            border-color: $white;
-            background-color: transparent;
-            color: $white;
+            @extend %black-button-link;
         }
 
         .body {
@@ -301,7 +295,7 @@
             color: $white;
 
             a {
-                @extend %button-link;
+                @extend %black-button-link;
                 color: $white;
                 border-color: $white;
                 background-color: $black;
