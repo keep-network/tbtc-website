@@ -29,22 +29,15 @@
                     display: block;
                     padding: 22px 0;
                 }
-
-                .mint-button {
-                    display: inline-block;
-                    padding: 0.5rem;
-                    top: 0;
-                    margin: 22px 0;
-                }
             }
 
             &.menu-links {
                 > li {
                     &:last-of-type {
-                        margin: 22px 0 0;
+                        margin: 12px 0 0;
                     }
 
-                    > a:not(.mint-button) {
+                    > a {
                         &:hover,
                         &:active,
                         &.active {
@@ -57,11 +50,23 @@
                         }
                     }
 
-                    &:not(.language-dropdown-wrapper) {
+                    &:not(.language-dropdown-wrapper):not(.fork-link-wrapper) {
                         max-width: none;
                     }
                 }
             }
+        }
+
+        .icon-link {
+            text-indent: 0;
+            padding: 0 0 0 31px;
+            // Padding help with icon text, but we still need to match the
+            // padding behavior of the pure-text links, so put that in margin.
+            margin: 22px 0;
+        }
+
+        .discord-link {
+            text-indent: 15px;
         }
 
         &.open {
@@ -112,6 +117,8 @@
         flex-direction: row;
         align-items: center;
         padding: 48px 0 25px;
+
+        font-size: calc(var(--body-font-size) * 0.88);
 
         .logo {
             svg {
@@ -166,7 +173,7 @@
                         margin-right: -22px;
                     }
 
-                    > a:not(.mint-button) {
+                    > a {
                         &:hover,
                         &:active,
                         &.active {
@@ -192,40 +199,32 @@
                         }
                     }
 
-                    &:not(.language-dropdown-wrapper) {
+                    .discord-link {
+                        &:hover,
+                        &:active,
+                        &.active {
+                            &:after {
+                                bottom: -4.5px;
+                            }
+                        }
+                    }
+
+                    .fork-link {
+                        &:hover,
+                        &:active,
+                        &.active {
+                            &:after {
+                                content: none;
+                            }
+                        }
+                    }
+
+                    &:not(.language-dropdown-wrapper):not(.fork-link-wrapper) {
                         max-width: 210px;
                         overflow: hidden;
                         text-overflow: ellipsis;
                     }
                 }
-            }
-        }
-
-        .mint-button {
-            border: 1px solid $black;
-            padding: 11px;
-            position: relative;
-            line-height: 100%;
-            display: flex;
-            justify-content: space-between;
-
-            span {
-                max-width: 95%;
-                margin-right: 14px;
-                overflow: hidden;
-                text-overflow: ellipsis;
-            }
-
-            &:hover,
-            &:active {
-                background-color: $black;
-                color: $white;
-                text-decoration: none;
-            }
-
-            &:active {
-                top: 3px;
-                left: 3px;
             }
         }
 
@@ -310,18 +309,30 @@
             }
         }
 
-        .site-repo-link {
+        .icon-link {
             display: block;
-            width: 22px;
-            height: 26px;
-            padding: 10px;
-            background-image: url(../components/svgs/Repo.svg);
+            width: 31px;
+            height: 31px;
             background-repeat: no-repeat;
             background-position: center;
             @include hide-button-text;
+            overflow: visible;
+        }
+
+        .discord-link {
+            background-image: url(../components/svgs/Discord.svg);
+        }
+
+        .fork-link {
+            background-image: url(../components/svgs/Repo.svg);
 
             &:after {
                 display: none;
+            }
+
+            &:hover {
+                text-indent: 0;
+                padding: 0 0 0 31px;
             }
         }
 
@@ -355,16 +366,6 @@
             padding: 25px 0;
 
             .menu {
-                ul {
-                    li {
-                        .mint-button {
-                            display: flex;
-                            justify-content: space-between;
-                            width: 100%;
-                        }
-                    }
-                }
-
                 .menu-label {
                     top: 21px;
                 }

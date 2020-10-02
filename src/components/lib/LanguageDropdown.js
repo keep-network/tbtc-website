@@ -40,7 +40,6 @@ const LanguageDropdownTemplate = ({ languages = [], selectedLanguage }) => {
 
 LanguageDropdownTemplate.propTypes = {
   nav_items: PropTypes.array,
-  dapp_link: PropTypes.object,
 }
 
 export const query = graphql`

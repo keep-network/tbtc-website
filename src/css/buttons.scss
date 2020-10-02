@@ -58,7 +58,7 @@ input[type="submit"] {
 }
 
 @mixin hide-button-text {
-    text-indent: 1000%;
+    text-indent: 10000%;
     white-space: nowrap;
     overflow: hidden;
 }

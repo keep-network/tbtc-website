@@ -9,7 +9,4 @@ nav_items:
     url: /developers
   - label: よくある質問
     url: /faq
-dapp_link:
-  label: tBTC を発行する
-  url: https://dapp.tbtc.network/
 ---
