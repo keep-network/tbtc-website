@@ -178,6 +178,61 @@ const HomePage = ({ data, pageContext }) => {
   )
 }
 
+const ButtonType = PropTypes.shape({
+  url: PropTypes.string,
+  text: PropTypes.string,
+})
+const ImageType = PropTypes.shape({
+  image: PropTypes.string,
+  alt: PropTypes.string,
+  link: PropTypes.string,
+})
+
+const NodeType = PropTypes.shape({
+  node: PropTypes.shape({
+    id: PropTypes.string,
+    excerpt: PropTypes.string,
+    frontmatter: PropTypes.shape({
+      date: PropTypes.string,
+      title: PropTypes.string,
+    }),
+    fields: PropTypes.shape({
+      locale: PropTypes.string,
+      slug: PropTypes.string,
+    }),
+  }),
+})
+
+HomePageTemplate.propTypes = {
+  hero: PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    buttons: PropTypes.arrayOf(ButtonType),
+    image: ImageType,
+  }),
+  features: PropTypes.arrayOf(
+    PropTypes.shape({ title: PropTypes.string, description: PropTypes.string })
+  ),
+  spotlight1: PropTypes.shape({
+    body: PropTypes.string,
+    button: ButtonType,
+    label: PropTypes.string,
+    title: PropTypes.string,
+  }),
+  spotlight2: PropTypes.shape({
+    align: PropTypes.oneOf(["left", "right", "center"]),
+    button: ButtonType,
+    image: ImageType,
+    label: PropTypes.string,
+    title: PropTypes.string,
+  }),
+  newsItems: PropTypes.arrayOf(NodeType),
+  resources: PropTypes.arrayOf(NodeType),
+  integrations: PropTypes.shape({
+    title: PropTypes.string,
+  }),
+}
+
 HomePage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
