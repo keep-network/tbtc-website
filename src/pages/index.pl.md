@@ -4,12 +4,14 @@ path: /
 title: Strona Główna
 hero:
   buttons:
-    - text: Zapisz się po aktualizacje
-      url: '/#mailing-list'
-    - text: Zacznij budować
-      url: /developers
+    - text: Wybij TBTC
+      url: https://dapp.tbtc.network/
   subtitle: Wpłacaj i wypłacaj BTC do DeFi bez pośredników.
   title: Bezpieczny sposób aby zarabiać z Twoimi Bitcoinami.
+  image:
+    alt: Wybij TBTC
+    image: /img/dapp.svg
+    url: https://dapp.tbtc.network/
 features:
   - description: 'Każdy TBTC jest poparty 1:1 przez BTC'
     title: Poparty

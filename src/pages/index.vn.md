@@ -4,12 +4,14 @@ path: /
 title: Trang chủ
 hero:
   buttons:
-    - text: Nhận cập nhật
-      url: '/#mailing-list'
-    - text: Bắt đầu phát triển
-      url: /developers
+    - text: Đúc tBTC
+      url: https://dapp.tbtc.network/
   subtitle: Gửi tiền vào đổi BTC trong DEFI mà không qua trung gian.
   title: Cách an toàn để kiếm tiền với Bitcoin của bạn.
+  image:
+    alt: Đúc tBTC
+    image: /img/dapp.svg
+    url: https://dapp.tbtc.network/
 features:
   - description: 'Mỗi TBTC được hỗ trợ 1: 1 bằng BTC'
     title: Bảo chứng
@@ -25,7 +27,7 @@ spotlight_1:
     text: Xem thêm
     url: 'https://tbtc.network/news/2020-05-22-an-update-on-tbtc%E2%80%99s-launch/'
   label: Thông báo
-  title: Cập nhật về ra mắt tBTC 
+  title: Cập nhật về ra mắt tBTC
 spotlight_2:
   button:
     text: Bộ công cụ dành cho nhà phát triển

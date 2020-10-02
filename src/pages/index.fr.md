@@ -4,12 +4,14 @@ path: /
 title: Home
 hero:
   buttons:
-    - text: Get Email Updates
-      url: '/#mailing-list'
-    - text: Start Building
-      url: /developers
+    - text: Start Minting
+      url: https://dapp.tbtc.network/
   subtitle: Deposit and redeem BTC in DeFi without intermediaries.
   title: The safe way to earn with your Bitcoin.
+  image:
+    alt: Mint tBTC
+    image: /img/dapp.svg
+    url: https://dapp.tbtc.network/
 features:
   - description: 'Every TBTC is backed 1:1 with BTC'
     title: Backed
