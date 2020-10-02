@@ -77,6 +77,10 @@ function redemptionTransactionChecks(
     return (uint256(_output.extractValue()));
 }
 ```
+<a class="github-embed-link" href="https://github.com/keep-network/tbtc/blob/9651d53a443b3d2470e13ee1db0ecae60be8b246/solidity/contracts/deposit/DepositRedemption.sol#L326-L355" target="_blank" rel="noopener noreferrer">
+    tbtc/blob/9651d53a443b3d2470e13ee1db0ecae60be8b246/solidity/contracts/deposit/DepositRedemption.sol
+    <span>Lines 326 to 355 in <strong>9651d53</strong></span>
+</a>
 
 The error identified was in the last check, “Tx sends value to wrong pubkeyhash”:
 
