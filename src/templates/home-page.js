@@ -19,34 +19,31 @@ export const HomePageTemplate = ({
     <div className="home">
       <div className="container">
         <div className="row justify-content-center no-gutters">
-        <section className="hero col-sm-12 col-md-12 col-lg-10">
-          <div className="row">
-            <div className="col-sm-12 col-md-6">
-              <h1>
-                { hero.title }
-              </h1>
-              <p>
-                { hero.subtitle }
-              </p>
-            </div>
-            <nav className="col-sm-12 col-md-6 quick-links">
-              <ul>
-                { hero.buttons && hero.buttons.map((button, i) => (
-                  <li key={`hero-button-${i}`}>
-                    <Link to={button.url}>
-                      { button.text }
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          </div>
-          <div className="row justify-content-center no-gutter">
-            <div className="col-10">
-              <SandDollar className="sand-dollar-hero" />
-            </div>
-          </div>
-          </nav>
+          <section className="hero col-sm-12 col-md-12 col-lg-10 row">
+            <header className="col-sm-12 col-md-12">
+              <h1>{hero.title}</h1>
+              <p className="subtitle">{hero.subtitle}</p>
+
+              <nav>
+                <ul className="quick-links">
+                  {hero.buttons &&
+                    hero.buttons.map((button, i) => (
+                      <li key={`hero-button-${i}`}>
+                        <Link to={button.url}>{button.text}</Link>
+                      </li>
+                    ))}
+                </ul>
+              </nav>
+            </header>
+
+            {hero.image.url && hero.image.url.trim().length > 0 ? (
+              <Link className="hero" to={hero.image.url}>
+                <Image className="hero" imageData={hero.image} />
+              </Link>
+            ) : (
+              <Image className="hero" imageData={hero.image} />
+            )}
+          </section>
           <section className="features col-sm-12 col-md-12 col-lg-10">
             <ol className="row">
               {features &&
