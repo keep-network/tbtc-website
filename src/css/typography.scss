@@ -12,10 +12,18 @@ html {
     --baseline-grid-height: #{$baseline-grid-height};
     --baseline-grid-height-2x: #{$baseline-grid-height * 2};
 
+    --body-foreground-color: #{$black};
+    --body-background-color: #{$white};
+
     @media (max-width: #{$bp-small}) {
         --body-font-size: #{$body-font-size-mobile};
         --baseline-grid-height: #{$baseline-grid-height-mobile};
         --baseline-grid-height-2x: #{$baseline-grid-height-mobile * 2};
+    }
+
+    @media (prefers-color-scheme: dark) {
+        --body-foreground-color: #{$white};
+        --body-background-color: #{$black};
     }
 }
 
@@ -77,7 +85,7 @@ h3, .h3 {
 }
 
 a {
-    color: $black;
+    color: var(--body-foreground-color);
     text-decoration: none;
     cursor: pointer;
 

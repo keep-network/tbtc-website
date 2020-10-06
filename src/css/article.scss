@@ -22,8 +22,8 @@
         .date {
             span {
                 display: inline-block;
-                background-color: $black;
-                color: $white;
+                background-color: var(--body-foreground-color);
+                color: var(--body-background-color);
                 font-family: 'apercu-mono-regular-pro', sans-serif;
                 letter-spacing: 1.5px;
                 padding: 10px;
