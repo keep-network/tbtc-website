@@ -47,6 +47,7 @@ input[type="submit"] {
         background-color: $black;
         color: $white;
         border-color: $white;
+        text-decoration: none;
     }
 
     &[href^=http]:after {
@@ -74,6 +75,8 @@ input[type="submit"] {
         background-color: $white;
         color: $black;
         border-color: $black;
+
+        text-decoration: none;
     }
 }
 
