@@ -4,12 +4,14 @@ path: /
 title: Home
 hero:
   buttons:
-    - text: 이메일 업데이트 받기
-      url: '/#mailing-list'
-    - text: 개발 시작하기
-      url: /developers
+    - text: tBTC 발행
+      url: https://dapp.tbtc.network/
   subtitle: 중개인 없이 BTC를 입금하고 Defi BTC를 발급 받으세요.
   title: 비트코인을 이용해 안전하게 수익내는 방법.
+  image:
+    alt: tBTC 발행
+    image: /img/dapp.svg
+    url: https://dapp.tbtc.network/
 features:
   - description: '모든 TBTC는 BTC와 1:1로 담보되어 있습니다'
     title: 담보

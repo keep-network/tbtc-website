@@ -9,7 +9,4 @@ nav_items:
     url: /developers
   - label: FAQ
     url: /faq
-dapp_link:
-  label: Wybij TBTC
-  url: 'https://dapp.tbtc.network/'
 ---

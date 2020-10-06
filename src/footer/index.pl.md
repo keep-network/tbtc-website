@@ -17,7 +17,7 @@ nav_columns:
         url: /terms-of-use
   - items:
       - label: Join Our Discord
-        url: https://chat.keep.network/
+        url: https://chat.tbtc.network/
         icon:
           image: /img/discord-logo.svg
           alt: Discord Logo

@@ -4,12 +4,14 @@ path: /
 title: Home
 hero:
   buttons:
-    - text: Ricevi aggiornamenti via mail
-      url: '/#mailing-list'
-    - text: Inizia a Progettare
-      url: /developers
+    - text: Start Minting
+      url: https://dapp.tbtc.network/
   subtitle: Deposita e riscatta BTC in DeFi senza intermediari.
   title: Il modo sicuro di guadagnare con i tuoi Bitcoin.
+  image:
+    alt: Mint using the tBTC dApp
+    image: /img/dapp.svg
+    url: https://dapp.tbtc.network/
 features:
   - description: 'Ogni TBTC è garantito 1:1 con BTC'
     title: Garanzia

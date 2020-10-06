@@ -4,12 +4,14 @@ path: /
 title: Home
 hero:
   buttons:
-    - text: E-Mail-Updates erhalten
-      url: '/#mailing-list'
-    - text: Entwicklung beginnen.
-      url: /developers
+    - text: Mint tBTC
+      url: https://dapp.tbtc.network/
   subtitle: Einzahlung und Einlösung von BTC in DeFi ohne Vermittler.
   title: 'Der sichere Weg, mit deinen Bitcoin zu verdienen.'
+  image:
+    alt: Mint tBTC
+    image: /img/dapp.svg
+    url: https://dapp.tbtc.network/
 features:
   - description: 'Jedes TBTC wird 1:1 mit BTC abgesichert'
     title: Abgesichert

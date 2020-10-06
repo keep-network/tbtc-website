@@ -4,12 +4,14 @@ path: /
 title: Home
 hero:
   buttons:
-    - text: Email Updates
-      url: '/#mailing-list'
-    - text: Mulai Membangun
-      url: /developers
+    - text: Mint tBTC
+      url: https://dapp.tbtc.network/
   subtitle: Deposit dan menarik(redeem) BTC di DeFi tanpa campur tangan pihak lain.
   title: Cara yang aman untuk menghasilkan dengan Bitcoin anda.
+  image:
+    alt: Mint using the tBTC dApp
+    image: /img/dapp.svg
+    url: https://dapp.tbtc.network/
 features:
   - description: 'Setiap TBTC bernilai 1:1 BTC'
     title: Backed

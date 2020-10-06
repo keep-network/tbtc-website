@@ -9,7 +9,4 @@ nav_items:
     url: /developers
   - label: FAQ
     url: /faq
-dapp_link:
-  label: Начните зарабатывать tBTC
-  url: 'https://dapp.tbtc.network/'
 ---

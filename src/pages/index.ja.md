@@ -4,12 +4,14 @@ path: /
 title: ホーム
 hero:
   buttons:
-    - text: ニュースを購読
-      url: '/#mailing-list'
-    - text: 開発を始める
-      url: /developers
+    - text: tBTC を発行する
+      url: https://dapp.tbtc.network/
   subtitle: 仲介者なく BTC を DeFi に預ける、引き出す
   title: Bitcoin で安全に収入を得る
+  image:
+    alt: tBTC を発行する
+    image: /img/dapp.svg
+    url: https://dapp.tbtc.network/
 features:
   - description: '全ての TBTC は 1対1 で BTC が担保されています'
     title: 担保

@@ -9,7 +9,4 @@ nav_items:
     url: /developers
   - label: 常见问题解答
     url: /faq
-dapp_link:
-  label: 铸造 tBTC
-  url: https://dapp.tbtc.network/
 ---

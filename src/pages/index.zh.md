@@ -4,12 +4,14 @@ path: /
 title: 首页
 hero:
   buttons:
-    - text: 订阅最新信息
-      url: '/#mailing-list'
-    - text: 开始构建
-      url: /developers
+    - text: 铸造 tBTC
+      url: https://dapp.tbtc.network/
   subtitle: 在无中介机构的情况下，在DeFi中存款和赎回BTC。
   title: 用比特币赚钱的安全方法
+  image:
+    alt: 铸造 tBTC
+    image: /img/dapp.svg
+    url: https://dapp.tbtc.network/
 features:
   - description: tBTC和BTC完全1:1
     title: 可靠

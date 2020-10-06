@@ -31,7 +31,7 @@ input[type="submit"] {
     @extend .button;
     display: block;
     position: relative;
-    padding: 11px 20px 11px 11px;
+    padding: 11px 34px 11px 11px;
     margin-top: 1em;
 
     &:after {
@@ -41,6 +41,13 @@ input[type="submit"] {
         top: 50%;
         right: 11px;
         transform: translateY(-50%);
+    }
+
+    &:hover {
+        background-color: $black;
+        color: $white;
+        border-color: $white;
+        text-decoration: none;
     }
 
     &[href^=http]:after {
@@ -57,8 +64,24 @@ input[type="submit"] {
     }
 }
 
+%black-button-link {
+    @extend %button-link;
+
+    background-color: $black;
+    color: $white;
+    border-color: $white;
+
+    &:hover {
+        background-color: $white;
+        color: $black;
+        border-color: $black;
+
+        text-decoration: none;
+    }
+}
+
 @mixin hide-button-text {
-    text-indent: 1000%;
+    text-indent: 10000%;
     white-space: nowrap;
     overflow: hidden;
 }

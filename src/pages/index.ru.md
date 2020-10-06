@@ -6,10 +6,14 @@ hero:
   buttons:
     - text: Подписаться на новости
       url: '/#mailing-list'
-    - text: Разработчикам
-      url: /developers
+    - text: Начните зарабатывать tBTC
+      url: https://dapp.tbtc.network/
   subtitle: Вносите и выкупайте BTC с DeFi без посредников.
   title: 'Зарабатывайте безопасно, используя ваши Биткоины.'
+  image:
+    alt: Начните зарабатывать tBTC
+    image: /img/dapp.svg
+    url: https://dapp.tbtc.network/
 features:
   - description: 'Каждый TBTC обеспечен 1:1 с BTC'
     title: Застраховано

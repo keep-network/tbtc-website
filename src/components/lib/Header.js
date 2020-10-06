@@ -7,11 +7,7 @@ import LanguageDropdown from "./LanguageDropdown"
 import Link from "../LocaleLink"
 import TBTCLogo from "../svgs/TBTCLogo"
 
-const HeaderTemplate = ({
-  nav_items: navItems,
-  dapp_link: dappLink,
-  locale
-}) => {
+const HeaderTemplate = ({ nav_items: navItems, locale }) => {
   const [showMenu, setMenu] = useState(false)
   const toggleMenu = () => {
     setMenu(! showMenu)
@@ -38,9 +34,27 @@ const HeaderTemplate = ({
                   </Link>
                 </li>
               ))}
-              <li><a className="mint-button" href={dappLink.url} target="_blank" rel="noopener noreferrer"><span>{dappLink.label}</span></a></li>
-              <li className="language-dropdown-wrapper"><LanguageDropdown locale={locale} /></li>
-              <li><a className="site-repo-link" href="https://github.com/keep-network/tbtc-website" target="_blank" rel="noopener noreferrer">Repository</a></li>
+              <li>
+                <Link
+                  className="discord-link icon-link"
+                  to="https://chat.tbtc.network"
+                  activeClassName="active"
+                >
+                  Discord
+                </Link>
+              </li>
+              <li className="language-dropdown-wrapper">
+                <LanguageDropdown locale={locale} />
+              </li>
+              <li className="fork-link-wrapper">
+                <Link
+                  className="fork-link icon-link"
+                  to="https://github.com/keep-network/tbtc-website"
+                  activeClassName="active"
+                >
+                  Fork
+                </Link>
+              </li>
             </ul>
           </div>
         </nav>
@@ -51,7 +65,6 @@ const HeaderTemplate = ({
 
 HeaderTemplate.propTypes = {
   nav_items: PropTypes.array,
-  dapp_link: PropTypes.object,
 }
 
 export const query = graphql`
@@ -66,10 +79,6 @@ export const query = graphql`
           }
           frontmatter {
             nav_items {
-              label
-              url
-            }
-            dapp_link {
               label
               url
             }

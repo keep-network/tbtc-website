@@ -1,38 +1,30 @@
 .home {
-    .hero {
-        .row {
-            align-items: baseline;
+    section.hero {
+        h1, .subtitle {
+            text-align: center;
         }
 
-        .quick-links {
-            ul {
-                padding: 0;
-            }
+        ul.quick-links {
+            display: flex;
+            padding: 0;
+            align-items: center;
+            flex-direction: column;
 
             li {
+                display: flex-item;
                 list-style: none;
                 margin: var(--baseline-grid-height) 0;
             }
 
-            a {
-                @extend %button-link;
+            a:first-child {
+                @extend %black-button-link;
                 margin-top: 0;
                 max-width: 100%;
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
 
-            @media (min-width: #{$bp-medium}) {
-                display: flex;
-                justify-content: flex-end;
-            }
-
             @media (min-width: #{$bp-small}) {
-                li {
-                    display: flex;
-                    flex-direction: column;
-                }
-
                 a {
                     min-width: 342px;
                     width: auto;
@@ -41,7 +33,11 @@
             }
         }
 
-        .sand-dollar-hero {
+        a.hero:after {
+            content: '';
+        }
+
+        img.hero {
             width: 100%;
             height: 100%;
 
@@ -148,10 +144,7 @@
         padding: var(--baseline-grid-height) 0 var(--baseline-grid-height-2x);
 
         .billboard-button-link {
-            @extend %button-link;
-            border-color: $white;
-            background-color: transparent;
-            color: $white;
+            @extend %black-button-link;
         }
 
         .body {
@@ -302,7 +295,7 @@
             color: $white;
 
             a {
-                @extend %button-link;
+                @extend %black-button-link;
                 color: $white;
                 border-color: $white;
                 background-color: $black;

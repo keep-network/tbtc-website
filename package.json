@@ -50,12 +50,14 @@
     "develop": "npm run clean && gatsby develop",
     "build-quick": "gatsby build",
     "lint:js": "npm run eslint",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
     "test": "echo \"No tests yet!\" && exit 0"
   },
   "devDependencies": {
     "babel-plugin-prismjs": "^2.0.1",
     "babel-preset-gatsby": "^0.5.8",
-    "prettier": "^1.15.3"
+    "eslint": "^6.8.0",
+    "eslint-config-keep": "git+https://github.com/keep-network/eslint-config-keep.git#0.3.0",
+    "eslint-plugin-react": "^7.19.0",
+    "prettier": "^2.0.5"
   }
 }

@@ -85,6 +85,10 @@ a {
         content: ' ↗';
     }
 
+    &:hover {
+        text-decoration: underline;
+    }
+
     .body & {
         text-decoration: underline;
 
@@ -98,6 +102,10 @@ a {
     &[href^="/"]:after,
     &[href^="#"]:after {
         content: ' →';
+    }
+
+    &:hover {
+        text-decoration: underline;
     }
 }
 

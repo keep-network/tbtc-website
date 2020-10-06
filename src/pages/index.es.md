@@ -4,12 +4,14 @@ path: /
 title: Página de inicio
 hero:
   buttons:
-    - text: Obtén actualizaciones por email
-      url: '/#mailing-list'
-    - text: Empieza a Construir
-      url: /developers
+    - text: Haz tBTC
+      url: https://dapp.tbtc.network/
   subtitle: Deposita y canjea BTC en DeFi sin intermediarios
   title: La manera segura de ganar con Bitcoin
+  image:
+    alt: Mint using the tBTC dApp
+    image: /img/dapp.svg
+    url: https://dapp.tbtc.network/
 features:
   - description: 'Cada TBTC está respaldado 1:1 con BTC'
     title: Respaldado
