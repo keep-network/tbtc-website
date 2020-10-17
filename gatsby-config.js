@@ -6,7 +6,12 @@ module.exports = {
     url: "https://tbtc.network",
     // supported 639-1 language codes
     supportedLocales: [
-      "en", "de", "es", "fr", "id", "it", "ja", "ko", "pl", "ru", "vn", "zh"],
+      'en', 'be', 'bg', 'bs', 'de', 
+      'es', 'fr', 'ga', 'hr', 'hu', 
+      'id', 'is', 'it', 'ja', 'ka', 
+      'ko', 'lv', 'no', 'pl', 'ro', 
+      'ru', 'uk', 'vn', 'zh'
+    ],
     defaultLocale: "en",
   },
   plugins: [
