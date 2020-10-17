@@ -13,8 +13,7 @@ tags:
 <!---
 
   Translator: meh#9634
-  
-  
+    
 -->
 
 
@@ -75,7 +74,7 @@ Threshold signatures memberikan beberapa manfaat antara lain:
 
 * Hnaya butuh sedikit koordinasi untuk membuat grup.
 * Tidak ada yang benar-benar harus dipercaya.
-* Mereka tangguh hingga setengah dari grup menjadi jahat atau gagal dibuat.
+* Semuanya aman asalkan tidak sampai separuh dari grup adalah oknum, atau setidaknya tidak gagal dalam proses pembuatan.
 
 Untuk tBTC v1, grup penandatangan adalah 3 dari 3, artinya mereka adalah grup dari 3 penandatangan yang diharuskan menandatangani untuk membuat tanda tangan atas seluruh grup.
 
