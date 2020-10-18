@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import PropTypes from "prop-types"
 
 import { App } from "../components"
-import { Image, Integrations } from "../components/lib"
+import { Image, Integrations, ExchangeList } from "../components/lib"
 import Link from "../components/LocaleLink"
 
 export const HomePageTemplate = ({
@@ -111,6 +111,15 @@ export const HomePageTemplate = ({
           </section>
         </div>
       </div>
+      <section className="exchange-list">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-sm12 col-md-12 col-lg-10">
+              <ExchangeList title="Can't Mint? Get TBCT on an Exchange" />
+            </div>
+          </div>
+        </div>
+      </section>
       <section className={`tailored-cta ${spotlight2.align}`}>
         <div className="container">
           <div className="side-label">{spotlight2.label}</div>

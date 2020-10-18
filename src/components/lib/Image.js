@@ -34,6 +34,10 @@ const Image = ({ imageData, className = "" }) => {
     )
   }
 
+  if (!!image && !!React.isValidElement(image)) {
+    return image
+  }
+
   return null
 }
 
@@ -41,7 +45,7 @@ Image.propTypes = {
   imageData: PropTypes.shape({
     alt: PropTypes.string,
     childImageSharp: PropTypes.object,
-    image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    image: PropTypes.oneOfType([PropTypes.object, PropTypes.string, PropTypes.element]),
   }).isRequired,
   className: PropTypes.string,
 }

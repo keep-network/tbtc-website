@@ -242,6 +242,109 @@
 
     }
 
+    .exchange-list {
+        margin-bottom: 3.12rem;
+        background-color: #{$black};
+
+        .exchange-list-container {
+            .section-title {
+                font-size: 3.04rem;
+                text-align: center;
+                color: #{$white};
+
+                @media (max-width: #{$bp-large}) {
+                    font-size: 2.1rem;
+                }
+
+                @media (max-width: #{$bp-small}) {
+                    font-size: 1.45rem;
+                }
+            }
+
+            .row {
+                margin-left: 0;
+                margin-right: 0;
+                flex-direction: row;
+                justify-content: space-evenly;
+
+                @media (min-width: #{$bp-large}) {
+                    flex-wrap: nowrap;
+                }
+
+                @media (min-width: #{$bp-small}) {
+                    flex-direction: row;
+                }
+
+                a.image-link {
+                    @extend %black-button-link;
+                    position: relative;
+                    overflow: hidden;
+                    margin: 24px;
+                    width: 248px;
+                    height: 42px;
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid #{$white};
+                    padding: 10px;
+
+                    span {
+                        position: absolute;
+                        left: 53px;
+                    }
+
+                    @media (min-width: 992px) {
+                        flex: 0 0 auto;
+                        max-width: 25%;
+                        text-align: center;
+                    }
+
+                    &::after {
+                        margin-left: auto;
+                        color: #{$white};
+                    }
+
+                    svg {
+                        path {
+                            fill: var(--svg-secondary-color);
+                        }
+                    }
+                    // Set colors for specific paths in matcha-logo
+                    svg.matcha-logo {
+                        path:nth-child(1), path:nth-child(4) {
+                            fill: var(--svg-grey-color);
+                        }
+                        path:nth-child(2), path:nth-child(5) {
+                            fill: var(--svg-main-color);
+                        }
+                        path:nth-child(3), path:nth-child(6) {
+                            fill: var(--svg-secondary-color);
+                        }
+                    }
+
+                    &:hover {
+                        svg {
+                            path {
+                                fill: var(--svg-main-color);
+                            }
+                        }
+                        // Set colors for specific paths in matcha-logo
+                        svg.matcha-logo {
+                            path:nth-child(1), path:nth-child(4) {
+                                fill: var(--svg-grey-color);
+                            }
+                            path:nth-child(2), path:nth-child(5) {
+                                fill: var(--svg-secondary-color);
+                            }
+                            path:nth-child(3), path:nth-child(6) {
+                                fill: var(--svg-main-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .tailored-cta {
         position: relative;
         margin-bottom: 6.11rem;
