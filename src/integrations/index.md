@@ -36,4 +36,10 @@ integrations:
       image: /img/relay.png
     name: Radar Relay
     url: 'https://radarrelay.com/'
+  - logo:
+      alt: DeFi Pulse Logo
+      image: /img/defipulse.png
+    name: DeFi Pulse
+    url: 'https://defipulse.com/'
 ---
+
