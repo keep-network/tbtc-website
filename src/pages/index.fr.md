@@ -4,43 +4,42 @@ path: /
 title: Home
 hero:
   buttons:
-    - text: Start Minting
+    - text: Commencer à frapper
       url: https://dapp.tbtc.network/
-  subtitle: Deposit and redeem BTC in DeFi without intermediaries.
-  title: The safe way to earn with your Bitcoin.
+  subtitle: Déposez et échangez des BTC dans DeFi sans intermédiaires.
+  title: Le moyen sûr de gagner avec votre Bitcoin.
   image:
-    alt: Mint tBTC
+    alt: Mint using the tBTC dApp
     image: /img/dapp.svg
     url: https://dapp.tbtc.network/
 features:
-  - description: 'Every TBTC is backed 1:1 with BTC'
-    title: Backed
-  - description: No intermediaries - Redeem TBTC for BTC at any time
+  - description: 'Chaque TBTC est soutenu 1: 1 avec BTC'
+    title: Soutenu
+  - description: Pas d'intermédiaire, échangez TBTC contre BTC à tout moment
     title: Permissionless
-  - description: Audited and open-source
-    title: Secure
-  - description: 3 steps to convert from BTC to TBTC and back
+  - description: Audité et open-source
+    title: Sécurise
+  - description: 3 étapes pour convertir de BTC en TBTC et inversement
     title: Simple
 spotlight_1:
   body: >-
-    tBTC will begin moving toward full mainnet launch over the coming weeks.
-    Launch will occur over a series of milestones starting April 24th.
+    tBTC, le projet open-source qui permet aux gens d'utiliser Bitcoin en toute sécurité dans les applications Ethereum DeFi, est en ligne et prêt à être utilisé.
   button:
-    text: Read more
-    url: 'https://tbtc.network/news/2020-04-24-tbtc-launch-key-dates/'
-  label: Announcement
-  title: 'tBTC Launch: Key Dates'
+    text: Lire la suite
+    url: 'https://tbtc.network/news/2020-09-22-tbtc-is-live/'
+  label: Annonce
+  title: Le tBTC est actif
 spotlight_2:
-  button:
-    text: Developer Toolkit
-    url: /developers
-  label: Developers
-  title: Integrate TBTC to add Bitcoin to your dApp
-  image:
-    image: /img/spotlight-2-bg.png
-    alt: Integrate TBTC icon
   align: left
+  button:
+    text: Boîte à outils du développeur
+    url: /developers
+  image:
+    alt: Integrate TBTC icon
+    image: /img/spotlight-2-bg.png
+  label: Pour les développeurs
+  title: Intégrez TBTC pour ajouter Bitcoin à votre dApp
 integrations_section:
-  title: Integrations
+  title: Intégrations
 ---
 
