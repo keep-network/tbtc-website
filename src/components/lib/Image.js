@@ -34,7 +34,7 @@ const Image = ({ imageData, className = "" }) => {
     )
   }
 
-  if (!!image && !!React.isValidElement(image)) {
+  if (React.isValidElement(image)) {
     return image
   }
 

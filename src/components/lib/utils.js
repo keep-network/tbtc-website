@@ -16,7 +16,7 @@ import React from "react";
  * @params {Object} items[].logo.childImageSharp
  * @params {Object|string|element} items[].logo.image - either object, string (path to the image) or React element that returns the image
  * @param {number} numColumns - number of columns you want to have
- * @params {string} key - prefix for key
+ * @param {string} key - prefix for key
  * @returns {unknown[]}
  */
 export function formatImageLinkRows(items, numColumns, key) {

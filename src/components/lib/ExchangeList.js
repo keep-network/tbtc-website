@@ -5,7 +5,6 @@ import RadarLogo from "../svgs/RadarLogo"
 import MatchaLogo from "../svgs/MatchaLogo"
 import UniswapLogo from "../svgs/UniswapLogo"
 import BalancerLogo from "../svgs/BalancerLogo"
-import classNames from "classnames"
 
 const getExchangeListItems = () => {
   return [
@@ -59,7 +58,7 @@ const ExchangeListItems = () => {
 
 const ExchangeList = ({ title }) => {
   return (
-    <div className={classNames("exchange-list-container")}>
+    <div className="exchange-list-container">
       <h1 className="section-title"> {title} </h1>
       <ExchangeListItems />
     </div>

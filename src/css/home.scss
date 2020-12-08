@@ -1,3 +1,32 @@
+@mixin set-matcha-colors($color1, $color2, $color3) {
+    path:nth-child(1), path:nth-child(4) {
+        fill: var($color1);
+    }
+    path:nth-child(2), path:nth-child(5) {
+        fill: var($color2);
+    }
+
+    path:nth-child(3), path:nth-child(6) {
+        fill: var($color3);
+    }
+}
+
+@mixin set-default-matcha-colors {
+    @include set-matcha-colors(
+        --svg-grey-color,
+        --svg-main-color,
+        --svg-secondary-color
+    )
+}
+
+@mixin set--default-match-colors-hover {
+    @include set-matcha-colors(
+        --svg-grey-color,
+        --svg-secondary-color,
+        --svg-main-color
+    )
+}
+
 .home {
     section.hero {
         h1, .subtitle {
@@ -247,17 +276,18 @@
         background-color: #{$black};
 
         .exchange-list-container {
+            margin-bottom: 2rem;
             .section-title {
-                font-size: 3.04rem;
+                font-size: 1.45rem;
                 text-align: center;
                 color: #{$white};
 
-                @media (max-width: #{$bp-large}) {
+                @media (min-width: #{$bp-small}) {
                     font-size: 2.1rem;
                 }
 
-                @media (max-width: #{$bp-small}) {
-                    font-size: 1.45rem;
+                @media (min-width: #{$bp-large}) {
+                    font-size: 3.04rem;
                 }
             }
 
@@ -269,10 +299,6 @@
 
                 @media (min-width: #{$bp-large}) {
                     flex-wrap: nowrap;
-                }
-
-                @media (min-width: #{$bp-small}) {
-                    flex-direction: row;
                 }
 
                 a.image-link {
@@ -292,7 +318,7 @@
                         left: 53px;
                     }
 
-                    @media (min-width: 992px) {
+                    @media (min-width: #{$bp-large}) {
                         flex: 0 0 auto;
                         max-width: 25%;
                         text-align: center;
@@ -310,18 +336,13 @@
                     }
                     // Set colors for specific paths in matcha-logo
                     svg.matcha-logo {
-                        path:nth-child(1), path:nth-child(4) {
-                            fill: var(--svg-grey-color);
-                        }
-                        path:nth-child(2), path:nth-child(5) {
-                            fill: var(--svg-main-color);
-                        }
-                        path:nth-child(3), path:nth-child(6) {
-                            fill: var(--svg-secondary-color);
-                        }
+                        @include set-default-matcha-colors()
                     }
 
                     &:hover {
+                        &::after {
+                            color: #{$black};
+                        }
                         svg {
                             path {
                                 fill: var(--svg-main-color);
@@ -329,15 +350,7 @@
                         }
                         // Set colors for specific paths in matcha-logo
                         svg.matcha-logo {
-                            path:nth-child(1), path:nth-child(4) {
-                                fill: var(--svg-grey-color);
-                            }
-                            path:nth-child(2), path:nth-child(5) {
-                                fill: var(--svg-secondary-color);
-                            }
-                            path:nth-child(3), path:nth-child(6) {
-                                fill: var(--svg-main-color);
-                            }
+                            @include set--default-match-colors-hover();
                         }
                     }
                 }
