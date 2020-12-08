@@ -287,6 +287,42 @@ collections:
               ],
             }
 
+  - name: "exchangeList"
+    label: "Exchange List"
+    files:
+      - file: "src/exchangeList/index.md"
+        label: "Exchange List"
+        name: "exchangeList"
+        fields:
+          - { label: "Template Key", name: "template", widget: "hidden", default: "exchangeList" }
+          - {
+            label: "Exchange List",
+            name: "exchangeList",
+            widget: "list",
+            allow_add: true,
+            fields:
+              [
+                { label: "Name", name: "name", widget: "string" },
+                { label: "URL", name: "url", widget: "string" },
+                {
+                  label: Logo,
+                  name: logo,
+                  widget: object,
+                  fields:
+                    [
+                      {
+                        label: Image,
+                        name: image,
+                        widget: image,
+                        hint: "Image should be at least the 2x the desired display size",
+                      },
+                      { label: Alt, name: alt, widget: string },
+                    ],
+                }
+              ],
+            }
+
+
   - name: "footer"
     label: "Footer"
     files:

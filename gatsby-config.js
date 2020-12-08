@@ -64,6 +64,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        path: `${__dirname}/src/exchangeList`,
+        name: 'exchangeList',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         path: `${__dirname}/src/integrations`,
         name: 'integrations',
       },
