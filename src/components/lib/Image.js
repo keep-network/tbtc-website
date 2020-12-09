@@ -2,18 +2,13 @@ import React from "react"
 import PropTypes from "prop-types"
 import Img from "gatsby-image"
 import { withPrefix } from "gatsby"
+import { ReactSVG } from "react-svg"
 
 const Image = ({ imageData, className = "" }) => {
   const { alt = "", childImageSharp, image } = imageData
 
   if (!!image && !!image.childImageSharp) {
-    return (
-      <Img
-        className={className}
-        alt={alt}
-        {...image.childImageSharp}
-      />
-    )
+    return <Img className={className} alt={alt} {...image.childImageSharp} />
   }
 
   if (!!childImageSharp) {
@@ -34,8 +29,8 @@ const Image = ({ imageData, className = "" }) => {
     )
   }
 
-  if (React.isValidElement(image)) {
-    return image
+  if (image.extension === "svg" && image.publicURL) {
+    return <ReactSVG src={image.publicURL} className="wrapper-class-name" />;
   }
 
   return null
@@ -45,7 +40,11 @@ Image.propTypes = {
   imageData: PropTypes.shape({
     alt: PropTypes.string,
     childImageSharp: PropTypes.object,
-    image: PropTypes.oneOfType([PropTypes.object, PropTypes.string, PropTypes.element]),
+    image: PropTypes.oneOfType([
+      PropTypes.object,
+      PropTypes.string,
+      PropTypes.element,
+    ]),
   }).isRequired,
   className: PropTypes.string,
 }

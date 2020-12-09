@@ -1,68 +1,68 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { formatImageLinkRows } from "./utils"
-import RadarLogo from "../svgs/RadarLogo"
-import MatchaLogo from "../svgs/MatchaLogo"
-import UniswapLogo from "../svgs/UniswapLogo"
-import BalancerLogo from "../svgs/BalancerLogo"
+import {graphql, StaticQuery} from "gatsby";
 
-const getExchangeListItems = () => {
-  return [
-    {
-      url: "https://balancer.exchange/#/swap",
-      name: "Balancer",
-      logo: {
-        alt: "balancer logo",
-        image: (
-          <BalancerLogo width="30" height="30" />
-        ),
-      },
-    },
-    {
-      url: "https://app.uniswap.org/#/swap",
-      name: "Uniswap",
-      logo: {
-        alt: "uniswap logo",
-        image: (
-          <UniswapLogo width="30" height="30" />
-        ),
-      },
-    },
-    {
-      url: "https://relay.radar.tech/",
-      name: "Radar",
-      logo: {
-        alt: "radar logo",
-        image: (
-          <RadarLogo width="30" height="30" />
-        ),
-      },
-    },
-    {
-      url: "https://matcha.xyz/",
-      name: "Matcha",
-      logo: {
-        alt: "matcha",
-        image: (
-          <MatchaLogo width="30" height="30" />
-        ),
-      },
-    },
-  ]
+const ExchangeListItems = ({ exchangeItems = [] }) => {
+  return (
+    <div className="exchange-items">
+      {formatImageLinkRows(exchangeItems, 4, "exchange")}
+    </div>
+  )
 }
 
-const ExchangeListItems = () => {
-  const exchangeItems = getExchangeListItems()
-  return <div className="exchange-items">{formatImageLinkRows(exchangeItems, 4, 'exchange')}</div>
+ExchangeListItems.propTypes = {
+  exchangeItems: PropTypes.array,
 }
+
+export const query = graphql`
+  query ExchangeList {
+    allMarkdownRemark(
+      filter: { frontmatter: { template: { eq: "exchangeList" } } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            exchangeList {
+              name
+              url
+              logo {
+                image {
+                  childImageSharp {
+                    fixed(width: 217, quality: 100) {
+                      ...GatsbyImageSharpFixed
+                    }
+                  }
+                  extension
+                  publicURL
+                }
+                alt
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`
 
 const ExchangeList = ({ title }) => {
   return (
     <div className="exchange-list-container">
       <h1 className="section-title"> {title} </h1>
-      <ExchangeListItems />
+      <StaticQuery
+        query={query}
+        render={(data) => {
+          const exchangeItems =
+            data.allMarkdownRemark.edges[0].node.frontmatter.exchangeList;
+          if (!exchangeItems) {
+            return null;
+          }
+          return <ExchangeListItems exchangeItems={exchangeItems} />;
+        }}
+      />
     </div>
-  )
+  );
 }
 
 ExchangeList.propTypes = {
