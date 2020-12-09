@@ -291,66 +291,76 @@
                 }
             }
 
-            .row {
-                margin-left: 0;
-                margin-right: 0;
-                flex-direction: row;
+            .row-ul-container {
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
                 justify-content: space-evenly;
 
                 @media (min-width: #{$bp-large}) {
                     flex-wrap: nowrap;
+                    justify-content: center;
                 }
 
-                a.image-link {
-                    @extend %black-button-link;
-                    position: relative;
-                    overflow: hidden;
-                    margin: 24px;
+                .row-li-container {
+                    padding: 0;
                     width: 248px;
-                    height: 42px;
-                    display: flex;
-                    align-items: center;
-                    border: 1px solid #{$white};
-                    padding: 10px;
-
-                    span {
-                        position: absolute;
-                        left: 53px;
-                    }
-
+                    min-width: 0;
                     @media (min-width: #{$bp-large}) {
-                        flex: 0 0 auto;
-                        max-width: 25%;
+                        width: auto;
+                        flex-shrink: 0;
                         text-align: center;
+                        padding: 5px;
                     }
 
-                    &::after {
-                        margin-left: auto;
-                        color: #{$white};
-                    }
+                    a.image-link {
+                        @extend %black-button-link;
 
-                    svg {
-                        path {
-                            fill: var(--svg-secondary-color);
+                        overflow: hidden;
+                        margin: 0 auto 30px;
+                        max-width: 90%;
+                        height: 42px;
+                        display: flex;
+                        align-items: center;
+                        border: 1px solid #{$white};
+                        padding: 10px;
+
+                        span {
+                            font-size: 0.84rem;
+                            position: absolute;
+                            left: 53px;
                         }
-                    }
-                    // Set colors for specific paths in matcha-logo
-                    svg.matcha-logo {
-                        @include set-default-matcha-colors()
-                    }
-
-                    &:hover {
                         &::after {
-                            color: #{$black};
+                            margin-left: auto;
+                            color: #{$white};
                         }
+
                         svg {
+                            display: flex;
                             path {
-                                fill: var(--svg-main-color);
+                                fill: var(--svg-secondary-color);
                             }
                         }
                         // Set colors for specific paths in matcha-logo
                         svg.matcha-logo {
-                            @include set--default-match-colors-hover();
+                            @include set-default-matcha-colors()
+                        }
+
+                        &:hover {
+                            &::after {
+                                color: #{$black};
+                            }
+                            svg {
+                                path {
+                                    fill: var(--svg-main-color);
+                                }
+                            }
+                            // Set colors for specific paths in matcha-logo
+                            svg.matcha-logo {
+                                @include set--default-match-colors-hover();
+                            }
                         }
                     }
                 }
@@ -522,25 +532,63 @@
     .integrations {
         padding-bottom: 4em;
 
-        .row {
-            margin-left: 0;
-            margin-right: 0;
+        .row-ul-container {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            list-style-type: none;
 
-            flex-direction: column;
 
-            a {
-                display: inline-block;
-                margin: 2rem 0;
-                text-align: center;
 
-                .gatsby-image-wrapper,
-                > img {
-                    max-width: 217px;
+            @media (min-width: #{$bp-large}) {
+                flex-wrap: nowrap;
+                justify-content: space-between;
+
+                &.uneven {
+                    justify-content: space-around;
+                }
+            }
+
+            .row-li-container {
+                padding: 0;
+                //margin: 0 20px;
+                width: 248px;
+                min-width: 0;
+                position: relative;
+                display: table-cell;
+                vertical-align: middle;
+                flex-shrink: 1;
+                @media (min-width: #{$bp-large}) {
+                    width: auto;
+                    text-align: center;
                 }
 
-                span,
-                &:after {
-                    display: none;
+                a {
+                    display: inline-block;
+                    margin: 2rem 0;
+                    text-align: center;
+
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid #{$white};
+
+                    .gatsby-image-wrapper {
+                        margin: 0 auto;
+                    }
+
+                    .gatsby-image-wrapper,
+                    > img {
+                        max-width: 217px;
+                    }
+
+                    span,
+                    &:after {
+                        display: none;
+                    }
                 }
             }
         }
@@ -551,39 +599,10 @@
             .section-title {
                 margin-bottom: 4rem;
             }
-
-            .row {
-                flex-direction: row;
-                justify-content: space-between;
-
-                &.uneven {
-                    justify-content: space-evenly;
-                }
-
-                a {
-                    flex: 0 0 50%;
-                    max-width: 50%;
-                }
-            }
         }
 
         @media (min-width: #{$bp-large}) {
             padding-bottom: 7em;
-
-            .row {
-                flex-wrap: nowrap;
-
-                a {
-                    flex: 0 0 auto;
-                    max-width: 25%;
-                    text-align: center;
-
-                    .gatsby-image-wrapper,
-                    > img {
-                        max-width: 100%;
-                    }
-                }
-            }
         }
     }
 }

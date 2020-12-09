@@ -17,26 +17,31 @@ import React from "react";
  * @params {Object|string|element} items[].logo.image - either object, string (path to the image) or React element that returns the image
  * @param {number} numColumns - number of columns you want to have
  * @param {string} key - prefix for key
- * @returns {unknown[]}
+ * @return {unknown[]}
  */
 export function formatImageLinkRows(items, numColumns, key) {
   const chunks = []
-  while(items.length) {
+  while (items.length) {
     chunks.push(items.splice(0, numColumns))
   }
 
   return chunks.map((chunk, i) => (
-    <div className={`row ${chunk.length < numColumns ? "uneven" : ""}`}
-         key={`${key}-row-${i}`}>
+    <ul
+      className={`row-ul-container ${
+        chunk.length < numColumns ? "uneven" : ""
+      }`}
+      key={`${key}-ul-${i}`}
+    >
       {chunk.map((item, j) => (
-        <ImageLink
-          key={`${key}-${j}`}
-          url={item.url}
-          label={item.name}
-          image={item.logo}
-          className="image-link"
-        />
+        <li className={`row-li-container`} key={`${key}-ul-${i}-li-${j}`}>
+          <ImageLink
+            url={item.url}
+            label={item.name}
+            image={item.logo}
+            className="image-link"
+          />
+        </li>
       ))}
-    </div>
+    </ul>
   ))
 }
