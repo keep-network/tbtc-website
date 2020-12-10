@@ -13,6 +13,7 @@ export const HomePageTemplate = ({
   spotlight2 = {},
   newsItems = [],
   resources = [],
+  exchangeList = {},
   integrations = {},
 }) => {
   return (
@@ -115,7 +116,7 @@ export const HomePageTemplate = ({
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-sm12 col-md-12 col-lg-10">
-              <ExchangeList title="Can't Mint? Get TBCT on an Exchange" />
+              <ExchangeList title={exchangeList.title} />
             </div>
           </div>
         </div>
@@ -181,6 +182,7 @@ const HomePage = ({ data, pageContext }) => {
         spotlight2={post.frontmatter.spotlight_2}
         newsItems={newsItems}
         resources={resources}
+        exchangeList={post.frontmatter.exchange_list_section}
         integrations={post.frontmatter.integrations_section}
       />
     </App>
@@ -237,6 +239,9 @@ HomePageTemplate.propTypes = {
   }),
   newsItems: PropTypes.arrayOf(NodeType),
   resources: PropTypes.arrayOf(NodeType),
+  exchangeList: PropTypes.shape({
+    title: PropTypes.string,
+  }),
   integrations: PropTypes.shape({
     title: PropTypes.string,
   }),
@@ -314,6 +319,9 @@ export const query = graphql`
             alt
           }
           align
+        }
+        exchange_list_section {
+          title
         }
         integrations_section {
           title

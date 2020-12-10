@@ -56,6 +56,9 @@ const HomePagePreview = ({ entry }) => {
   const entrySpotlight2 = entry.getIn(["data", "spotlight_2"])
   const spotlight2 = entrySpotlight2 ? entrySpotlight2.toJS() : []
 
+  const entryExchangeList = entry.getIn(["data", "exchange_list_section"])
+  const exchangeList = entryExchangeList ? entryExchangeList.toJS() : []
+
   const entryIntegrations = entry.getIn(["data", "integrations_section"])
   const integrations = entryIntegrations ? entryIntegrations.toJS() : []
 
@@ -66,6 +69,7 @@ const HomePagePreview = ({ entry }) => {
     spotlight1: spotlight1,
     spotlight2: spotlight2,
     newsItems: [],
+    exchangeList: exchangeList,
     integrations: integrations,
   }) })
 }

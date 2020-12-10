@@ -150,6 +150,11 @@ collections:
             widget: "object"
             fields:
               - {label: "Title", name: "title", widget: "string"}
+          - label: "Exchange_List_Section"
+            name: "exchange_list_section"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
       - file: "src/pages/news/index.md"
         label: "News"
         name: "news"
