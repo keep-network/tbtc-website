@@ -312,25 +312,25 @@
                         width: auto;
                         flex-shrink: 0;
                         text-align: center;
-                        padding: 5px;
+                        padding: 0.26rem;
                     }
 
                     a.image-link {
                         @extend %black-button-link;
 
                         overflow: hidden;
-                        margin: 0 auto 30px;
+                        margin: 0 auto 2rem;
                         max-width: 90%;
                         height: 42px;
                         display: flex;
                         align-items: center;
                         border: 1px solid #{$white};
-                        padding: 10px;
+                        padding: 0.56rem;
 
                         span {
                             font-size: 0.84rem;
                             position: absolute;
-                            left: 53px;
+                            left: 2.95rem
                         }
                         &::after {
                             margin-left: auto;
