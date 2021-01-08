@@ -29,6 +29,11 @@ jobs:
       run: npm run build:prefixed
       env:
         GATSBY_BRANCH: ${{ github.head_ref }}
+    - name: "Set up security.txt and .well-known/security.txt"
+      run: |
+         mkdir public/.well-known
+         cp security.txt public/security.txt
+         cp security.txt public/.well-known/security.txt
     # A push event is a master merge; deploy to primary bucket.
     - if: github.event_name == 'push'
       name: Deploy Master to GCP
