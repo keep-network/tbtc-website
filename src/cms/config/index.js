@@ -36,7 +36,7 @@ function generateConfig() {
     }
     else if(collection.files !== undefined) {
       newCollections.push(collection)
-      if (collection.name !== "integrations") {
+      if (collection.name !== "integrations" && collection.name !== "exchangeList") {
         nonDefaultLocales.forEach(lang => newCollections.push({
           ...collection,
           name: `${collection.name}-${lang}`,

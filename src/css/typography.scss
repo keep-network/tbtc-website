@@ -17,6 +17,11 @@ html {
         --baseline-grid-height: #{$baseline-grid-height-mobile};
         --baseline-grid-height-2x: #{$baseline-grid-height-mobile * 2};
     }
+
+    // for the future dark mode functionality you should swap main color with secondary color for svg
+    --svg-main-color: hsl(24, 45%, 2%);
+    --svg-secondary-color: hsl(20, 100%, 99%);
+    --svg-grey-color: hsl(20, 4%, 58%);
 }
 
 html, body, #root {

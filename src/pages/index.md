@@ -40,6 +40,8 @@ spotlight_2:
     image: /img/spotlight-2-bg.png
   label: For Developers
   title: Integrate TBTC to add Bitcoin to your dApp
+exchange_list_section:
+  title: Can't Mint? Get TBCT on an Exchange
 integrations_section:
   title: Integrations
 ---

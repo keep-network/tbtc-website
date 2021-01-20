@@ -41,6 +41,8 @@ spotlight_2:
     image: /img/spotlight-2-bg.png
     alt: Integrieren TBTC icon
   align: left
+exchange_list_section:
+  title: Can't Mint? Get TBCT on an Exchange
 integrations_section:
   title: Integrationen
 ---

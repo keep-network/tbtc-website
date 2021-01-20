@@ -1,41 +1,18 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 import PropTypes from "prop-types"
-
-import ImageLink from "./ImageLink"
+import {formatImageLinkRows} from "./utils";
 
 
 const IntegrationsTemplate = ({ integrations = [] }) => (
   <div className="integration-items">
-    {formatRows(integrations, 4)}
+    {formatImageLinkRows(integrations, 4, 'integration')}
   </div>
 )
 
 
 IntegrationsTemplate.propTypes = {
   integrations: PropTypes.array,
-}
-
-// Chunks integration items into rows of a given column number
-function formatRows(items, numColumns) {
-  const chunks = []
-  while(items.length) {
-    chunks.push(items.splice(0, numColumns))
-  }
-
-  return chunks.map((chunk, i) => (
-    <div className={`row ${chunk.length < numColumns ? "uneven" : ""}`}
-      key={`integration-row-${i}`}>
-      {chunk.map((item, j) => (
-        <ImageLink
-          key={`integration-${j}`}
-          url={item.url}
-          label={item.name}
-          image={item.logo}
-        />
-      ))}
-    </div>
-  ))
 }
 
 export const query = graphql`

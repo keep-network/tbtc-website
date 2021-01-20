@@ -1,3 +1,32 @@
+@mixin set-matcha-colors($color1, $color2, $color3) {
+    path:nth-child(1), path:nth-child(4) {
+        fill: var($color1);
+    }
+    path:nth-child(2), path:nth-child(5) {
+        fill: var($color2);
+    }
+
+    path:nth-child(3), path:nth-child(6) {
+        fill: var($color3);
+    }
+}
+
+@mixin set-default-matcha-colors {
+    @include set-matcha-colors(
+        --svg-grey-color,
+        --svg-main-color,
+        --svg-secondary-color
+    )
+}
+
+@mixin set--default-match-colors-hover {
+    @include set-matcha-colors(
+        --svg-grey-color,
+        --svg-secondary-color,
+        --svg-main-color
+    )
+}
+
 .home {
     section.hero {
         h1, .subtitle {
@@ -242,6 +271,103 @@
 
     }
 
+    .exchange-list {
+        margin-bottom: 3.12rem;
+        background-color: #{$black};
+
+        .exchange-list-container {
+            margin-bottom: 2rem;
+            .section-title {
+                font-size: 1.45rem;
+                text-align: center;
+                color: #{$white};
+
+                @media (min-width: #{$bp-small}) {
+                    font-size: 2.1rem;
+                }
+
+                @media (min-width: #{$bp-large}) {
+                    font-size: 3.04rem;
+                }
+            }
+
+            .row-ul-container {
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+
+                @media (min-width: #{$bp-large}) {
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                }
+
+                .row-li-container {
+                    padding: 0;
+                    width: 248px;
+                    min-width: 0;
+                    @media (min-width: #{$bp-large}) {
+                        width: auto;
+                        flex-shrink: 0;
+                        text-align: center;
+                        padding: 0.26rem;
+                    }
+
+                    a.image-link {
+                        @extend %black-button-link;
+
+                        overflow: hidden;
+                        margin: 0 auto 2rem;
+                        max-width: 90%;
+                        height: 42px;
+                        display: flex;
+                        align-items: center;
+                        border: 1px solid #{$white};
+                        padding: 0.56rem;
+
+                        span {
+                            font-size: 0.84rem;
+                            position: absolute;
+                            left: 2.95rem
+                        }
+                        &::after {
+                            margin-left: auto;
+                            color: #{$white};
+                        }
+
+                        svg {
+                            display: flex;
+                            path {
+                                fill: var(--svg-secondary-color);
+                            }
+                        }
+                        // Set colors for specific paths in matcha-logo
+                        svg.matcha-logo {
+                            @include set-default-matcha-colors()
+                        }
+
+                        &:hover {
+                            &::after {
+                                color: #{$black};
+                            }
+                            svg {
+                                path {
+                                    fill: var(--svg-main-color);
+                                }
+                            }
+                            // Set colors for specific paths in matcha-logo
+                            svg.matcha-logo {
+                                @include set--default-match-colors-hover();
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .tailored-cta {
         position: relative;
         margin-bottom: 6.11rem;
@@ -406,25 +532,63 @@
     .integrations {
         padding-bottom: 4em;
 
-        .row {
-            margin-left: 0;
-            margin-right: 0;
+        .row-ul-container {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            list-style-type: none;
 
-            flex-direction: column;
 
-            a {
-                display: inline-block;
-                margin: 2rem 0;
-                text-align: center;
 
-                .gatsby-image-wrapper,
-                > img {
-                    max-width: 217px;
+            @media (min-width: #{$bp-large}) {
+                flex-wrap: nowrap;
+                justify-content: space-between;
+
+                &.uneven {
+                    justify-content: space-around;
+                }
+            }
+
+            .row-li-container {
+                padding: 0;
+                //margin: 0 20px;
+                width: 248px;
+                min-width: 0;
+                position: relative;
+                display: table-cell;
+                vertical-align: middle;
+                flex-shrink: 1;
+                @media (min-width: #{$bp-large}) {
+                    width: auto;
+                    text-align: center;
                 }
 
-                span,
-                &:after {
-                    display: none;
+                a {
+                    display: inline-block;
+                    margin: 2rem 0;
+                    text-align: center;
+
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid #{$white};
+
+                    .gatsby-image-wrapper {
+                        margin: 0 auto;
+                    }
+
+                    .gatsby-image-wrapper,
+                    > img {
+                        max-width: 217px;
+                    }
+
+                    span,
+                    &:after {
+                        display: none;
+                    }
                 }
             }
         }
@@ -435,39 +599,10 @@
             .section-title {
                 margin-bottom: 4rem;
             }
-
-            .row {
-                flex-direction: row;
-                justify-content: space-between;
-
-                &.uneven {
-                    justify-content: space-evenly;
-                }
-
-                a {
-                    flex: 0 0 50%;
-                    max-width: 50%;
-                }
-            }
         }
 
         @media (min-width: #{$bp-large}) {
             padding-bottom: 7em;
-
-            .row {
-                flex-wrap: nowrap;
-
-                a {
-                    flex: 0 0 auto;
-                    max-width: 25%;
-                    text-align: center;
-
-                    .gatsby-image-wrapper,
-                    > img {
-                        max-width: 100%;
-                    }
-                }
-            }
         }
     }
 }

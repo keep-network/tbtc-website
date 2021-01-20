@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import PropTypes from "prop-types"
 
 import { App } from "../components"
-import { Image, Integrations } from "../components/lib"
+import { Image, Integrations, ExchangeList } from "../components/lib"
 import Link from "../components/LocaleLink"
 
 export const HomePageTemplate = ({
@@ -13,6 +13,7 @@ export const HomePageTemplate = ({
   spotlight2 = {},
   newsItems = [],
   resources = [],
+  exchangeList = {},
   integrations = {},
 }) => {
   return (
@@ -111,6 +112,15 @@ export const HomePageTemplate = ({
           </section>
         </div>
       </div>
+      <section className="exchange-list">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-sm12 col-md-12 col-lg-10">
+              <ExchangeList title={exchangeList.title} />
+            </div>
+          </div>
+        </div>
+      </section>
       <section className={`tailored-cta ${spotlight2.align}`}>
         <div className="container">
           <div className="side-label">{spotlight2.label}</div>
@@ -172,6 +182,7 @@ const HomePage = ({ data, pageContext }) => {
         spotlight2={post.frontmatter.spotlight_2}
         newsItems={newsItems}
         resources={resources}
+        exchangeList={post.frontmatter.exchange_list_section}
         integrations={post.frontmatter.integrations_section}
       />
     </App>
@@ -228,6 +239,9 @@ HomePageTemplate.propTypes = {
   }),
   newsItems: PropTypes.arrayOf(NodeType),
   resources: PropTypes.arrayOf(NodeType),
+  exchangeList: PropTypes.shape({
+    title: PropTypes.string,
+  }),
   integrations: PropTypes.shape({
     title: PropTypes.string,
   }),
@@ -305,6 +319,9 @@ export const query = graphql`
             alt
           }
           align
+        }
+        exchange_list_section {
+          title
         }
         integrations_section {
           title
