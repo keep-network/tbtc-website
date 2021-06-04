@@ -4,7 +4,7 @@
     &:before {
         content: '';
         display: block;
-        background-color: $black;
+        background-color: var(--body-foreground-color);
         width: 40%;
         height: 100%;
         position: absolute;
@@ -14,15 +14,15 @@
 
     .content {
         position: relative;
-        background-color: $black;
-        color: $white;
-        border-left: 4px dotted $white;
+        background-color: var(--body-foreground-color);
+        color: var(--body-background-color);
+        border-left: 4px dotted var(--body-background-color);
         padding: 0 30px;
         max-width: 83.33333333%;
 
         a {
             @extend %external-arrow-link;
-            color: $white;
+            color:var(--body-background-color);
         }
     }
 

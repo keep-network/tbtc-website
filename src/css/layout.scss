@@ -15,11 +15,10 @@ $bp-extra-small: 374px;
     padding-left: 30px;
 }
 
-
 html, body, #root {
     margin: 0;
     overflow-x: hidden;
-    background-color: $white;
+    background: var(--body-background-color);
 }
 
 .main {
@@ -32,7 +31,8 @@ html, body, #root {
 
 .app {
     flex: 1;
-    color: #{$black};
+    color: var(--body-foreground-color);
+
     margin: var(--baseline-grid-height) 0 0;
 
     @media (max-width: #{$bp-small}) {
@@ -66,7 +66,7 @@ html, body, #root {
     }
 }
 
-.page-header {    
+.page-header {
     @media (min-width: #{$bp-medium}) {
         margin-bottom: 5rem;
     }

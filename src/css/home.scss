@@ -139,8 +139,8 @@
     }
 
     .billboard {
-        background-color: $black;
-        color: $white;
+        background-color: var(--body-foreground-color);
+        color: var(--body-background-color);
         padding: var(--baseline-grid-height) 0 var(--baseline-grid-height-2x);
 
         .billboard-button-link {

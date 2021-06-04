@@ -1,6 +1,6 @@
 footer {
-    background-color: $black;
-    color: $white;
+    background-color: var(--body-foreground-color);
+    color: var(--body-background-color);
     padding: var(--baseline-grid-height-2x) 0;
 
     .col-sm-12 {
@@ -15,7 +15,7 @@ footer {
             transform: rotate(-90deg) translate(-100%, 0);
 
             path {
-                fill: $white;
+                fill: var(--body-background-color);
             }
         }
     }
@@ -36,7 +36,6 @@ footer {
                 margin: var(--baseline-grid-height) 0;
 
                 a {
-                    color: $white;
                     font-family: 'apercu-mono-regular-pro', sans-serif;
                     text-transform: uppercase;
                     font-weight: 500;

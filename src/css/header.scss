@@ -123,6 +123,10 @@
         .logo {
             svg {
                 display: block;
+
+                path {
+                    fill: var(--body-foreground-color);
+                }
             }
         }
 
@@ -151,7 +155,6 @@
                 padding: 22px;
 
                 a {
-                    color: $black;
                     text-decoration: none;
                     text-transform: uppercase;
                     font-family: 'apercu-mono-regular-pro', sans-serif;
@@ -187,14 +190,14 @@
                                 width: 5px;
                                 height: 5px;
                                 border-radius: 50%;
-                                border: 1px solid $black;
+                                border: 1px solid var(--body-foreground-color);
                             }
                         }
 
                         &:active,
                         &.active {
                             &:after {
-                                background-color: $black;
+                                background-color: var(--body-foreground-color);
                             }
                         }
                     }
@@ -251,7 +254,6 @@
                 }
 
                 &:hover {
-                    color: $black;
                     background-color: transparent;
                 }
 
@@ -266,9 +268,9 @@
                 left: 0;
                 top: 114%;
                 z-index: 10;
-                background-color: $white;
-                border: 1px solid $black;
-                box-shadow: 7px 7px 0 $black;
+                background-color: var(--body-background-color);
+                border: 1px solid var(--body-foreground-color);
+                box-shadow: 7px 7px 0 var(--body-foreground-color);
 
                 ul {
                     display: block;
@@ -283,8 +285,8 @@
                             line-height: 100%;
 
                             &:hover {
-                                background-color: $black;
-                                color: $white;
+                                background-color: var(--body-foreground-color);
+                                color: var(--body-background-color);
                                 text-decoration: none;
                             }
 

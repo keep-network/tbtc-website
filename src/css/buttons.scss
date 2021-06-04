@@ -16,8 +16,8 @@ input[type="submit"] {
     appearance: none;
 
     &:hover:enabled {
-        background-color: $black;
-        color: #{$white};
+        background-color: var(--body-foreground-color);
+        color: var(--body-background-color);
     }
 
     &:disabled {
@@ -44,10 +44,11 @@ input[type="submit"] {
     }
 
     &:hover {
-        background-color: $black;
-        color: $white;
-        border-color: $white;
         text-decoration: none;
+
+        background-color: var(--body-foreground-color);
+        color: var(--body-background-color);
+        border-color: var(--body-background-color);
     }
 
     &[href^=http]:after {
@@ -67,14 +68,14 @@ input[type="submit"] {
 %black-button-link {
     @extend %button-link;
 
-    background-color: $black;
-    color: $white;
-    border-color: $white;
+    background-color: var(--body-foreground-color);
+    color: var(--body-background-color);
+    border-color: var(--body-background-color);
 
     &:hover {
-        background-color: $white;
-        color: $black;
-        border-color: $black;
+        background-color: var(--body-background-color);
+        color: var(--body-foreground-color);
+        border-color: var(--body-foreground-color);
 
         text-decoration: none;
     }
