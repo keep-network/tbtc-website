@@ -72,3 +72,5 @@ However this mechanism design flaw is resolved, we've learned a ton from this ex
 The DAO and community have decisions to make.
 
 Whether the community decides to add another approver address, upgrade the contracts to an "optimistic redemption"-style mechanism, or research and consider other options, as a dev team, we're here to advise, and help build a more robust, secure, and neutral future of finance, together.
+
+*T﻿his blog was originally posted under the [Threshold Network website](https://blog.threshold.network/a-tale-of-two-bugs/)*
