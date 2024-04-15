@@ -12,7 +12,7 @@ Neither bug puts user funds at risk. The first was patched and released yesterda
 
 ## The first bug — a denial-of-service vector
 
-On Saturday, September 30th, an FTX-associated address [requested a redemption](https://etherscan.io/tx/0x0b3796cf79fe87d15dfe9bd038941adc9ccb693694c28bbacba12989d48f0c78?ref=blog.threshold.network)of 76.81431578 BTC.
+On Saturday, September 30th, an FTX-associated address [requested a redemption](https://etherscan.io/tx/0x0b3796cf79fe87d15dfe9bd038941adc9ccb693694c28bbacba12989d48f0c78?ref=blog.threshold.network) of 76.81431578 BTC.
 
 In tBTC today, redemptions can be requested by any user with an L1 tBTC balance. After some time, an off-chain maintainer delegated by the Threshold DAO in the [WalletCoordinator](https://etherscan.io/address/0x64EA4b84e2BdfD313428b96658260E495a420093?ref=blog.threshold.network#readProxyContract) contract verifies a redemption request, prompting signers to consider a redemption request valid. If 51 of 100 signers for a particular wallet agree, they jointly sign and release those funds on the Bitcoin blockchain.
 
