@@ -31,5 +31,5 @@ nav_columns:
         icon:
           image: /img/fork.svg
           alt: Fork repo icon
-copyright_text: ©2020 tBTC
+copyright_text: ©2020-2024 tBTC
 ---
