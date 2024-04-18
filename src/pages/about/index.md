@@ -13,10 +13,13 @@ supporters:
     name: Threshold Network
     url: 'https://threshold.network'
   - description: >-
-      Keep is a privacy layer for Ethereum. A “keep” is an off-chain container
+      Keep was a privacy layer for Ethereum. A “keep” is an off-chain container
       for private data. Keeps help contracts harness the full power of the
       public blockchain — enabling deep interactivity with private data. The
-      Keep network, powered by KEEP tokens, handles custodianship for tBTC.
+      Keep network, powered by KEEP tokens, handled custodianship for tBTC v1.
+      It has been superseded by the Threshold Network for tBTC v2, an upgraded,
+      more scalable, and more efficient version of tBTC operated by Threshold
+      since 2022.
     name: Keep
     url: 'https://keep.network/'
   - description: >-
