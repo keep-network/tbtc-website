@@ -32,7 +32,7 @@ tBTC v2 can sidestep the requirement of the economic guarantees via over-collate
 
 While every other wrapped BTC solution is a centralized or hybrid alternative, tBTC stands out as a trust-minimized bridge aligned with Bitcoin’s tenets of accessibility, security, and transparency.
 
-## Evolution from v1 to v2 
+## Evolution from v1 to v2
 
 Today, tBTC is a trust-minimized bitcoin bridge, but getting there was meticulous and well-considered. Bitcoin bridge models can either use a trusted middleman, like Bitgo with wBTC, to create a 1:1 ERC-20 representation of BTC, or they can overcollateralize to provide an “economic guarantee” of security.
 
@@ -44,7 +44,7 @@ With tBTC v1, bridging bitcoin to Ethereum occurred through “signer groups” 
 
 Although technically an effective means of bridging BTC, tBTC v1 couldn't due to the capital lock-up requirements. Capital seeks an efficient route, and locking up large sums to bridge bitcoin into other ecosystems created an obstacle to longer-term growth.
 
-Many Bitcoin bridging models proposed in the last 6 months, including Zeus, Y, and Z, are designed this way—but having walked this path, tBTC has moved on to a more efficient alternative.
+Many Bitcoin bridging models proposed in the last 6 months are designed this way, but having walked this path, tBTC has moved on to a more efficient alternative.
 
 ## tBTC v2 and the end of over-collateralization
 
@@ -62,4 +62,4 @@ The evolution of Bitcoin’s L2 scaling will not be risk-free. Protocols that re
 
 At the foundation of the Bitcoin L2 sector is tokenized bitcoin, where tBTC is positioned to be a significant contributor. As more networks look for ways to activate BTC capital in their ecosystem, tBTC will be an increasingly attractive option for its robust history and functionality.
 
-Bitcoin bridging innovation is not an easy problem to solve. Even breakthrough applications likeBitVM are [showing flaws](https://medium.com/@twhittle/bitvm-bridges-considered-unsafe-9e1ce75c8176), seeming to be years away from finding a safe and secure bridging application. What we have today in tBTC is a proven model, and as Bitcoin L2s heat up, tBTC is positioned to be one of the most significant contributors to continuing the growth of this sector thanks to L2s using tBTC as their foundation.
+Bitcoin bridging innovation is not an easy problem to solve. Even breakthrough applications like BitVM are [showing flaws](https://medium.com/@twhittle/bitvm-bridges-considered-unsafe-9e1ce75c8176), seeming to be years away from finding a safe and secure bridging application. What we have today in tBTC is a proven model, and as Bitcoin L2s heat up, tBTC is positioned to be one of the most significant contributors to continuing the growth of this sector thanks to L2s using tBTC as their foundation.
