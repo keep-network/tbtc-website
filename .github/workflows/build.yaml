@@ -4,9 +4,9 @@ name: Gatsby
 
 on:
   pull_request:
-    branches: [ master, new-new ]
+    branches: [ main, new-new ]
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build-and-deploy:
@@ -34,7 +34,7 @@ jobs:
          mkdir public/.well-known
          cp security.txt public/security.txt
          cp security.txt public/.well-known/security.txt
-    # A push event is a master merge; deploy to primary bucket.
+    # A push event is a main merge; deploy to primary bucket.
     - if: github.event_name == 'push'
       name: Deploy Master to GCP
       uses: thesis/gcp-storage-bucket-action@v3.1.0
