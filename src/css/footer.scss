@@ -13,7 +13,7 @@ footer {
         svg {
             transform-origin: top left;
             transform: rotate(-90deg) translate(-100%, 0);
-            filter: invert();
+            filter: #{"invert"}#{"()"};
         }
     }
 
