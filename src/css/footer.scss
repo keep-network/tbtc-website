@@ -13,10 +13,7 @@ footer {
         svg {
             transform-origin: top left;
             transform: rotate(-90deg) translate(-100%, 0);
-
-            path {
-                fill: $white;
-            }
+            filter: invert();
         }
     }
 
