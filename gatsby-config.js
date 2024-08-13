@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Bitcoin on Ethereum",
+    title: "Bitcoin Everywhere",
     titleTemplate: "tBTC – %s",
-    description: "1. Deposit BTC. 2. Mint TBTC. 3. Lend and earn interest on your BTC.",
+    description: "Mint tBTC to use your Bitcoin everywhere. Decentralized and secure.",
     url: "https://tbtc.network",
     // supported 639-1 language codes
     supportedLocales: [
@@ -19,7 +19,7 @@ module.exports = {
 
         // manifest config
         appName: 'tBTC',
-        appDescription: 'tBTC — Bitcoin on Ethereum',
+        appDescription: 'tBTC — Bitcoin Everywhere',
         icons: {
           android: true,
           appleIcon: true,
