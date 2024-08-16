@@ -113,9 +113,13 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
     type Frontmatter {
       nav_columns: [NavColumns]
+      supporters: [Supporter]
     }
     type NavColumns {
       items: [Items]
+    }
+    type Supporter {
+      description: String @md
     }
     type Items {
       icon: Icon

@@ -19,7 +19,7 @@ export const AboutPageTemplate = ({ title, body, supporters }) => (
             {supporters && supporters.map((supporter, i) => (
               <div className="supporter" key={`supporters-${i}`}>
                 <h2>{supporter.name}</h2>
-                <p><span>{supporter.description}</span></p>
+                <p><span dangerouslySetInnerHTML={{__html: supporter.description.html}} /></p>
                 <a href={supporter.url} target="_blank" rel="noopener noreferrer">Go</a>
               </div>
             ))}
@@ -59,7 +59,9 @@ export const pageQuery = graphql`
       frontmatter {
         title
         supporters {
-          description
+          description {
+            html
+          }
           name
           url
         }
