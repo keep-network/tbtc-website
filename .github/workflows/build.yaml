@@ -12,16 +12,15 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [12.11.x]
-
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Read .nvmrc
+      run: echo "NVMRC=$(cat ./.nvmrc)" >> $GITHUB_OUTPUT
+      id: nvm
+    - name: Use Node.js ${{ steps.nvm.outputs.NVMRC }}
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: "${{ steps.nvm.outputs.NVMRC }}"
     - run: npm ci
     - if: github.event_name == 'push'
       run: npm run build --if-present
