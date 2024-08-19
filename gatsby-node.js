@@ -1,31 +1,32 @@
-const fs = require('fs')
+const fs = require("fs")
 const path = require(`path`)
-const { createFilePath } = require('gatsby-source-filesystem')
+const { createFilePath } = require("gatsby-source-filesystem")
 const { fmImagesToRelative } = require("gatsby-remark-relative-images")
 
-const { parseBaseConfig, writeConfig } = require('./src/cms/config/index.js')
+const { parseBaseConfig, writeConfig } = require("./src/cms/config/index.js")
 
-const config = require('./gatsby-config')
+const config = require("./gatsby-config")
 
 const { defaultLocale, supportedLocales } = config.siteMetadata
 
 exports.onPreBootstrap = () => {
   const base = parseBaseConfig()
-  const fileCollections =
-    base.collections.filter(
-      c => c.name === "pages" || c.name === "header" || c.name === "footer"
-    )
-  const files = fileCollections
-    .reduce((acc, curr) => acc.concat(curr.files.map(f => f.file )), [])
-  const nonDefaultLocales = supportedLocales.filter(l => l !== defaultLocale)
+  const fileCollections = base.collections.filter(
+    (c) => c.name === "pages" || c.name === "header" || c.name === "footer"
+  )
+  const files = fileCollections.reduce(
+    (acc, curr) => acc.concat(curr.files.map((f) => f.file)),
+    []
+  )
+  const nonDefaultLocales = supportedLocales.filter((l) => l !== defaultLocale)
 
   // Generate markdown pages for each locale for each file if they do not
   // already exist. File collections do not allow admin editors to create new
   // items in the collection. Each page must be explicitly added.
   // https://www.netlifycms.org/docs/collection-types/#file-collections
   // Since they are a copy, they will have English by default until edited.
-  nonDefaultLocales.forEach(locale => {
-    files.forEach(file => {
+  nonDefaultLocales.forEach((locale) => {
+    files.forEach((file) => {
       const localeFile = file.replace(/(.*)\.(.*)$/, `$1.${locale}.$2`)
       if (!fs.existsSync(localeFile)) {
         fs.copyFileSync(file, localeFile)
@@ -70,7 +71,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   // default template at src/templates/default.js
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     const templateName = node.frontmatter.template || `default`
-    const template = path.resolve(path.join('src/templates/', `${templateName}.js`))
+    const template = path.resolve(
+      path.join("src/templates/", `${templateName}.js`)
+    )
     createPage({
       path: node.fields.slug,
       component: template,
@@ -82,28 +85,30 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
 function localeFromFilename(filename) {
   const potentialMatch = filename.match(/.*\.(\w+)\.\w+$/i)
-  return potentialMatch && potentialMatch[1] || null
+  return (potentialMatch && potentialMatch[1]) || null
 }
 
 function localePath(path, locale) {
-  let pathComponents = path.split('/').filter(s => s !== '')
+  const pathComponents = path.split("/").filter((s) => s !== "")
   let last = pathComponents.pop()
 
   if (last === `index.${locale}`) {
-    last = ''
+    last = ""
   } else {
-    last = last.replace(new RegExp(`\\.${locale}$`, 'i'), '')
+    last = last.replace(new RegExp(`\\.${locale}$`, "i"), "")
   }
 
   pathComponents.push(last)
 
-  return `/${locale}/${pathComponents.join('/')}`
+  return `/${locale}/${pathComponents.join("/")}`
 }
 
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
   const typeDefs = `
     type MarkdownRemark implements Node {
+      html: String
+      excerpt: String
       frontmatter: Frontmatter
     }
     type Frontmatter {
@@ -156,12 +161,12 @@ exports.onCreateNode = async ({ graphql, node, actions, getNode }) => {
     })
   }
   // create new pages for non-default localeuages
-  else if (node.internal.type === 'SitePage') {
+  else if (node.internal.type === "SitePage") {
     let locale = defaultLocale
     if (node.component) {
       locale = localeFromFilename(node.component)
 
-      if(!supportedLocales.includes(locale)) {
+      if (!supportedLocales.includes(locale)) {
         locale = defaultLocale
       } else if (locale !== defaultLocale) {
         node.path = localePath(path, locale)
@@ -177,5 +182,5 @@ exports.onCreateNode = async ({ graphql, node, actions, getNode }) => {
 
 exports.onPostBootstrap = () => {
   // generate the netlify config
-  writeConfig(path.join(__dirname, './static/admin/config.yml'))
+  writeConfig(path.join(__dirname, "./static/admin/config.yml"))
 }
