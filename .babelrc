@@ -5,7 +5,11 @@
         "plugins": ["line-numbers"],
         "theme": "default",
         "css": true
-    }]
+    }],
+    ["@babel/plugin-transform-class-properties", {
+        "loose": true
+    }],
+    "@babel/plugin-transform-classes"
   ],
   "presets": [
     [

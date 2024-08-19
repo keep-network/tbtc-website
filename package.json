@@ -58,6 +58,8 @@
   "devDependencies": {
     "babel-plugin-prismjs": "^2.0.1",
     "babel-preset-gatsby": "^0.5.8",
+    "@babel/plugin-transform-classes": "^7.25.0",
+    "@babel/plugin-transform-class-properties": "^7.24.7",
     "eslint": "^6.8.0",
     "eslint-config-keep": "git+https://github.com/keep-network/eslint-config-keep.git#0.3.0",
     "eslint-plugin-react": "^7.19.0",
