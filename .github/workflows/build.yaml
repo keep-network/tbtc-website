@@ -12,17 +12,17 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [12.11.x]
-
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+    - name: Read .nvmrc
+      run: echo "NVMRC=$(cat ./.nvmrc)" >> $GITHUB_OUTPUT
+      id: nvm
+    - name: Use Node + Yarn
+      uses: actions/setup-node@v3
       with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm ci
+        node-version: "${{ steps.nvm.outputs.NVMRC }}"
+        cache: "yarn"
+    - run: yarn install --frozen-lockfile -std=c++17
     - if: github.event_name == 'push'
       run: npm run build --if-present
     - if: github.event_name == 'pull_request'

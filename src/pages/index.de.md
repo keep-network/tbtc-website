@@ -44,4 +44,3 @@ spotlight_2:
 integrations_section:
   title: Integrationen
 ---
-

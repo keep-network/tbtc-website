@@ -1,0 +1,13 @@
+diff --git a/node_modules/gatsby-remark-relative-images/dist/index.js b/node_modules/gatsby-remark-relative-images/dist/index.js
+index 2c1529d..d6c76c9 100644
+--- a/node_modules/gatsby-remark-relative-images/dist/index.js
++++ b/node_modules/gatsby-remark-relative-images/dist/index.js
+@@ -54,7 +54,7 @@ exports.default = ({ files, markdownNode, markdownAST }, pluginOptions) => __awa
+     // Process all HTML images in markdown body
+     (0, unist_util_select_1.selectAll)('html', markdownAST).forEach((_node) => {
+         const node = _node;
+-        const $ = cheerio_1.default.load(node.value);
++        const $ = cheerio_1.load(node.value);
+         if ($(`img`).length === 0)
+             return;
+         $(`img`).each((_, element) => {
