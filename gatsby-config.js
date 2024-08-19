@@ -25,25 +25,31 @@ module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
-    // {
-    //   resolve: `gatsby-plugin-favicon`,
-    //   options: {
-    //     logo: "./src/favicon.svg",
-    //     // manifest config
-    //     appName: "tBTC",
-    //     appDescription: "tBTC — Bitcoin Everywhere",
-    //     icons: {
-    //       android: true,
-    //       appleIcon: true,
-    //       appleStartup: true,
-    //       coast: false,
-    //       favicons: true,
-    //       firefox: true,
-    //       yandex: false,
-    //       windows: false,
-    //     },
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: "./src/favicon.svg",
+        name: `tBTC`,
+        shortName: "tBTC",
+        description: "tBTC — Bitcoin Everywhere",
+        start_url: `/`,
+        display: `standalone`,
+        // TODO
+        // background_color: `#f7f0eb`,
+        // theme_color: `#a2466c`,
+        lang: "en",
+        localize: [
+          // TODO add other supported locales
+          {
+            start_url: `/de/`,
+            lang: `de`,
+            name: `tBTC`,
+            short_name: `tBTC`,
+            description: `tBTC — Bitcoin überall.`,
+          },
+        ],
+      },
+    },
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: "gatsby-source-filesystem",
