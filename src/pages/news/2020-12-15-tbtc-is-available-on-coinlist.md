@@ -13,4 +13,4 @@ Each TBTC token is fully backed and matched by at least 1 BTC held in reserve. U
 Launched in September 2020, tBTC has undergone three audits, by ConsenSys, Trail of Bits, and Sergei Delgado. Via Nexus Mutual, tBTC includes protections of funds covering issues in Solidity on Ethereum.
 
 **\
-Updates related to tBTC can be found on [the Discord channel](https://discord.gg/wYezN7v).**
+Updates related to tBTC can be found on [the Discord channel](https://discord.com/invite/threshold?ref=tbtc.network).**

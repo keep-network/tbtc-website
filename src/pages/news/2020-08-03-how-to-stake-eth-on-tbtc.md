@@ -16,4 +16,4 @@ Members of the [Keep Network](http://keep.network) can “delegate,” or stake,
 
 tBTC requires a system with its own work token for Sybil resistance. This need is filled by the work token KEEP; since Keep handles custodianship for tBTC, those acting as signers normally need to stake both KEEP and ETH to perform their tasks. When tBTC signers perform their functions on the app properly, they receive fees in the form of KEEP tokens.
 
-Join the [\#tbtc Discord channel](https://discord.gg/wYezN7v) to learn more about staking ETH on tBTC. Join the tBTC mailing list [here](https://tbtc.network/#mailing-list).
+Join the [\#tbtc Discord channel](https://discord.com/invite/threshold?ref=tbtc.network) to learn more about staking ETH on tBTC. Join the tBTC mailing list [here](https://tbtc.network/#mailing-list).

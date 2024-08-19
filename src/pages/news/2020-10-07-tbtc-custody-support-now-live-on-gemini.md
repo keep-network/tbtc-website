@@ -12,4 +12,4 @@ tBTC allows people to exchange BTC for TBTC, an ERC-20 token, at a rate of 1:1. 
 
 tBTC users can now access [Gemini Custody](https://gemini.com/custody) to store and manage their TBTC tokens [here](https://gemini.com/prices/tbtc).
 
-**Join the [\#tbtc Discord channel](https://discord.com/invite/wYezN7v) to learn more about tBTC.**
+**Join the [\#tbtc Discord channel](https://discord.com/invite/threshold?ref=tbtc.network) to learn more about tBTC.**

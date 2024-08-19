@@ -98,6 +98,6 @@ As we publish more docs and example code, and more projects build on the SDK, do
 
 If you’re working on a Bitcoin L2 and looking for a robust bridge that’s stood the test of time, we’d love to help!
 
-Reach out on [Discord](http://filee6611e9768d396a0fcc4526006678.odt/discord.gg/threshold?ref=blog.threshold.network), shoot us an email, or [check out the docs](https://github.com/keep-network/tbtc-v2?ref=blog.threshold.network) to get started!
+Reach out on [Discord](https://discord.com/invite/threshold?ref=tbtc.network?ref=tbtc.network), shoot us an email, or [check out the docs](https://github.com/keep-network/tbtc-v2?ref=blog.threshold.network) to get started!
 
 *T﻿his blog was originally published on the [Threshold Network Website](https://blog.threshold.network/tbtc-is-for-l2s/).*

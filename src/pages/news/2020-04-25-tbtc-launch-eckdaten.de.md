@@ -16,4 +16,4 @@ tBTC wird sich in den kommenden Wochen auf den vollständigen Start des Mainnetz
 
 Am 8. Juni schließlich kann jeder ein Unterzeichner des tBTC im KEEP-Stakedrop werden. **[Einlandung zur Teilnahme an der Live-Veranstaltung](https://www.crowdcast.io/e/keep-stakedrop---live/register).**
 
-Um sich in der Zwischenzeit zu engagieren, schließen Sie sich dem #tBTC [Discord](https://discordapp.com/invite/UhfpKCS) an und [Play for KEEPs](https://blog.keep.network/how-to-play-for-keeps-297f246455d4) und verdienen Sie sich Ihren Platz, um im Mainnet zu staken.
+Um sich in der Zwischenzeit zu engagieren, schließen Sie sich dem #tBTC [Discord](https://discord.com/invite/threshold?ref=tbtc.network) an und [Play for KEEPs](https://blog.keep.network/how-to-play-for-keeps-297f246455d4) und verdienen Sie sich Ihren Platz, um im Mainnet zu staken.
