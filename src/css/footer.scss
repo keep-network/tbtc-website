@@ -73,7 +73,31 @@ footer {
         }
     }
 
-    .copyright {
+    .built-by {
+      text-align: right;
+
+      a {
+        color: white;
+
+        &:after {
+          display: none;
+        }
+
+        > svg {
+          // Simulate an underline that shows up on hover.
+          border-bottom: 1px solid black;
+          padding-bottom: 3px;
+          height: 24px;
+          margin-bottom: -5px;
+        }
+
+        &:hover > svg {
+          border-bottom-color: white;
+        }
+      }
+    }
+
+    .copyright, .built-by {
         margin: calc(2 * var(--baseline-grid-height-2x)) 0 0;
         @extend %p2;
     }
@@ -119,8 +143,12 @@ footer {
             }
         }
 
-        .copyright {
+        .copyright, .built-by {
             margin: var(--baseline-grid-height-2x) 0 0;
+        }
+
+        .built-by {
+            text-align: left;
         }
     }
 
