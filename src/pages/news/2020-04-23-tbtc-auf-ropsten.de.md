@@ -8,7 +8,7 @@ tBTC ist Open-Source und live auf Ropsten
 
 Die erste Version von tBTC ist jetzt live auf Ropsten, dem öffentlichen Ethereum-Testnet.
 
-Um zu versuchen, Ihr erstes TBTC zu prägen, besuchen Sie die [referenz dApp](https://dapp.test.tbtc.network). Vergewissern Sie sich, dass Sie  Testnet-Bitcoin und Ropsten-Ether besitzen, und Sie können der erste TBTC-Wal sein.
+Um zu versuchen, Ihr erstes tBTC zu prägen, besuchen Sie die [referenz dApp](https://dapp.test.tbtc.network). Vergewissern Sie sich, dass Sie  Testnet-Bitcoin und Ropsten-Ether besitzen, und Sie können der erste tBTC-Wal sein.
 
 Während der Code einer Prüfung und weiteren Tests unterzogen wird, ist die Entwicklung jetzt [öffentlich auf GitHub](https://github.com/keep-network/tbtc).  Das bedeutet, dass Sie heute damit beginnen können, Bitcoin-Erfahrungen auf DeFi-Anwendungen wie Compound und Uniswap zu sammeln. Wenn Sie mehr über diese Version erfahren möchten, können Sie folgendes tun:
 

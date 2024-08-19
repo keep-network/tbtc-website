@@ -4,7 +4,7 @@ title: An Update on tBTC’s Launch
 description: An Update on tBTC’s Launch
 date: 2020-05-22T18:19:06.656Z
 ---
-On Friday, May 15, the alpha version of tBTC -- release candidate zero (rc.0) -- went live. On the morning of May 18, [the 10-day emergency pause of deposits](https://etherscan.io/tx/0xc5c08e982cfdd9d11b01c32bcb16b1597aa792c0bdf0f65d0a21386dd1edc846#eventlog) allowed by the [TBTCSystem contract](http://etherscan.io/address/0x41A1b40c1280883eA14C6a71e23bb66b83B3fB59) was triggered. This occurred after a significant issue in the redemption flow of deposit contracts was identified that put signer bonds at risk in certain situations.
+On Friday, May 15, the alpha version of tBTC -- release candidate zero (rc.0) -- went live. On the morning of May 18, [the 10-day emergency pause of deposits](https://etherscan.io/tx/0xc5c08e982cfdd9d11b01c32bcb16b1597aa792c0bdf0f65d0a21386dd1edc846#eventlog) allowed by the [tBTCSystem contract](http://etherscan.io/address/0x41A1b40c1280883eA14C6a71e23bb66b83B3fB59) was triggered. This occurred after a significant issue in the redemption flow of deposit contracts was identified that put signer bonds at risk in certain situations.
 
 Full details are available [here](https://tbtc.network/news/2020-05-21-details-of-the-tbtc-deposit-pause-on-may-18-2020/).
 
@@ -28,7 +28,7 @@ Initially the dApp built atop rc.1 will remain in alpha. Eventually, the dApp wi
 
 ### A graduated supply cap
 
-Money in the system will be used as a metric to quantify a release candidate’s readiness. rc.1 will feature a hard cap on the TBTC supply, starting at 100 BTC in the first month. Each month, the contracts will loosen the deposit restriction based on a pre-committed schedule.
+Money in the system will be used as a metric to quantify a release candidate’s readiness. rc.1 will feature a hard cap on the tBTC supply, starting at 100 BTC in the first month. Each month, the contracts will loosen the deposit restriction based on a pre-committed schedule.
 
 | Month     | 1   | 2   | 3   | 4    | 5   |
 | --------- | --- | --- | --- | ---- | --- |

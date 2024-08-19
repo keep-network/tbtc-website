@@ -9,12 +9,12 @@ questions:
   - question: Tại sao giá của tBTC không giống BTC ?
     answer: >
       tBTC không duy trì tỉ lệ giá theo BTC,nó sẽ duy trì theo tổng cung. Điều đó có nghĩa là BTC / tBTC có thể không hoàn toàn giống nhau. tBTC có thể giao dịch với mức phí thấp hay mã giảm giá.
-  - question: Tại sao TBTC được thế chấp bằng ETH theo tỷ lệ hiện tại?
+  - question: Tại sao tBTC được thế chấp bằng ETH theo tỷ lệ hiện tại?
     answer: >
       Bởi vì đơn vị này tạo thành một hệ thống an toàn hơn, điều này rất quan trọng trong DeFi, đặc biệt là khi ra mắt một hệ thống mạng mới. ETH là loại tài sản thế chấp an toàn hơn vì thuộc tiêu chuẩn DeFi và nhóm tBTC có kế hoạch thay đổi tỷ lệ thế chấp ETH / BTC từ 150% xuống 135% hiệu quả ngay sau khi ra mắt. Nhóm này cũng đang thử nghiệm các cơ chế mới để có thể đưa tỷ lệ thế chấp xuống tới 40% trong tương lai.
   - question: Có trường hợp xảy ra lỗi trong hệ thống tBTC không?
     answer: >
-      Đây là công nghệ mới và không thể lường trước được mọi tình huống có sự cố xảy ra. Tuy nhiên, có một số trường hợp cộng đồng đã xác định và thực hiện các biện pháp cẩn trọng để giải quyết. Mô hình bảo mật như sau nếu bên ký âm mưu và rút tài khoản Bitcoin của bạn, người dùng sẽ được trả lại tài sản đó bằng TBTC; đó là những gì trái phiếu ETH (chúng sẽ bị tịch thu và thanh toán). Nếu ETH giảm mạnh trong một khoảng thời gian ngắn và TẤT CẢ các bên ký thoát ra và phá vỡ chốt cùng một lúc, hệ thống sẽ trở về trạng thái của một hệ thống tổng hợp. Để biết thêm thông tin, xin vui lòng tham khảo <a href="https://docs.keep.network/tbtc/index.pdf" target="_blank">thông số kỹ thuật tBTC</a>.
+      Đây là công nghệ mới và không thể lường trước được mọi tình huống có sự cố xảy ra. Tuy nhiên, có một số trường hợp cộng đồng đã xác định và thực hiện các biện pháp cẩn trọng để giải quyết. Mô hình bảo mật như sau nếu bên ký âm mưu và rút tài khoản Bitcoin của bạn, người dùng sẽ được trả lại tài sản đó bằng tBTC; đó là những gì trái phiếu ETH (chúng sẽ bị tịch thu và thanh toán). Nếu ETH giảm mạnh trong một khoảng thời gian ngắn và TẤT CẢ các bên ký thoát ra và phá vỡ chốt cùng một lúc, hệ thống sẽ trở về trạng thái của một hệ thống tổng hợp. Để biết thêm thông tin, xin vui lòng tham khảo <a href="https://docs.keep.network/tbtc/index.pdf" target="_blank">thông số kỹ thuật tBTC</a>.
 
   - question: Tại sao lại có các loại kích thước lô cố định? Tại sao không có bất kỳ mệnh giá ngẫu nhiên nào?
     answer: >
@@ -23,7 +23,7 @@ questions:
     answer: >
       Hiện tại chưa có tiện ích đó. Nhưng thực hiện tích hợp là cần thiết để xây dựng quá trình tạo và đổi lại <a href="https://github.com/keep-network/tbtc.js" target="_blank">tBTC</a> vào cùng một ứng dụng phi tập trung (dApp). Đây là mã nguồn mở tbtc.js GitHub, cho phép các nhà phát triển xây dựng giao diện phù hợp với sản phẩm của mình. Để xác thực các giao dịch Bitcoin, cách tiếp cận tốt nhất là chạy một server electrum, phương pháp này rất dễ dàng để quay vòng thực hiện.
 
-  - question: TBTC đã được kiểm toán chưa?
+  - question: tBTC đã được kiểm toán chưa?
     answer: >
       ConsenSys Diligence hiện đang hoàn thành kiểm toán mã hóa và dữ liệu trong sáu tuần. Kết quả sẽ được công bố khi khả dụng.
   - question: Việc đăng ký dùng tBTC và đặt cược ETH có giúp bạn trở thành MSB không?
@@ -31,7 +31,7 @@ questions:
       Mỗi người dùng nên thực hiện phân tích riêng xem liệu có bất kỳ hạn chế pháp lý nào trong phạm vi quyền hạn của mình, ngăn cản sử dụng tBTC hoặc yêu cầu người dùng đăng ký với một số cơ quan chính phủ nhất định hay không.
   - question: Việc gửi BTC để lấy tBTC có phải chịu thuế không?
     answer: >
-      Vui lòng kiểm tra với chuyên gia thuế để xác định xem việc gửi BTC để lấy TBTC có phải chịu thuế trong phạm vi quyền hạn nhất định hay không. Một điều cần lưu ý là NFT liên quan đến UTXO trong khoản gửi. NFT này được thiết kế để thu một khoản phí lưu giữ BTC và để cung cấp khả năng đổi lại chính xác UTXO cùng loại trong vòng sáu tháng chịu phí.
+      Vui lòng kiểm tra với chuyên gia thuế để xác định xem việc gửi BTC để lấy tBTC có phải chịu thuế trong phạm vi quyền hạn nhất định hay không. Một điều cần lưu ý là NFT liên quan đến UTXO trong khoản gửi. NFT này được thiết kế để thu một khoản phí lưu giữ BTC và để cung cấp khả năng đổi lại chính xác UTXO cùng loại trong vòng sáu tháng chịu phí.
 
   - question: Người ký tBTC tự kiểm soát tài sản như thế nào?
     answer: >

@@ -6,15 +6,15 @@ questions:
   - question: How does tBTC maintain the peg?
     answer: >
       tBTC does not maintain the peg. It’s a supply peg not a price peg, so there is no algorithmic mechanism needed to function as a decentralized peg.
-  - question: Why is the TBTC price not exactly the same as BTC?
+  - question: Why is the tBTC price not exactly the same as BTC?
     answer: >
       tBTC is not a price peg to BTC; it’s a supply peg. That means BTC/tBTC might not be exactly the same. tBTC might trade at a slight premium or a discount.
-  - question: Why is TBTC collateralized with ETH at its current ratio?
+  - question: Why is tBTC collateralized with ETH at its current ratio?
     answer: >
       Because it makes for a safer system, which is very important in DeFi especially at the launch of a new network. ETH is a more safe collateral type because it’s the DeFi standard, and the team working on tBTC has plans to shift the ETH/BTC collateralization ratio from 150% to 135% fairly soon after launch. It is also examining new mechanisms that could bring that ratio down to 40% collateralization later on.
   - question: Where could something go wrong in the tBTC system?
     answer: >
-      This technology is new and it’s impossible to anticipate every situation where something could go wrong.  That being said, there are several situations the community has identified and taken careful measures to address. The security model is such that if the signers collude and run off with your Bitcoin deposit, users are paid back in TBTC; that’s what the ETH bonds are for (they’ll be seized and liquidated). If ETH takes a massive dip in a short period of time and ALL signers run off and break the peg at same time, the system falls back to a synthetic. For more information, please look at the <a href="https://docs.keep.network/tbtc/index.pdf" target="_blank">tBTC technical spec</a>.
+      This technology is new and it’s impossible to anticipate every situation where something could go wrong.  That being said, there are several situations the community has identified and taken careful measures to address. The security model is such that if the signers collude and run off with your Bitcoin deposit, users are paid back in tBTC; that’s what the ETH bonds are for (they’ll be seized and liquidated). If ETH takes a massive dip in a short period of time and ALL signers run off and break the peg at same time, the system falls back to a synthetic. For more information, please look at the <a href="https://docs.keep.network/tbtc/index.pdf" target="_blank">tBTC technical spec</a>.
   - question: Why are there fixed lot sizes? Why not any random denomination?
     answer: >
       Too many lot sizes becomes an issue for liquidity pools. Maintaining several standard lot sizes allows for greater redemption availability.
@@ -29,7 +29,7 @@ questions:
       Each user should undertake their own analysis as to whether there are any legal restrictions in their jurisdiction that would either prevent them from using tBTC or require the user to register with certain government entities.
   - question: Is depositing BTC for tBTC a taxable event?
     answer: >
-      Please check with a tax professional to determine whether depositing BTC for TBTC is a taxable event in a given jurisdiction. One thing to consider is the NFT associated with the UTXO of a deposit. This NFT is designed to allow a fee to be paid for custody of BTC and to offer the ability to redeem the exact same UTXO within the six month fee period.
+      Please check with a tax professional to determine whether depositing BTC for tBTC is a taxable event in a given jurisdiction. One thing to consider is the NFT associated with the UTXO of a deposit. This NFT is designed to allow a fee to be paid for custody of BTC and to offer the ability to redeem the exact same UTXO within the six month fee period.
   - question: How is the tBTC signer set non-custodial?
     answer: >
       tBTC’s signer sets use threshold ECDSA as a Bitcoin multisig replacement. For every deposit, a new signer set is pulled together (selected by the random beacon), and they generate a Bitcoin PKH address for the depositor, which is marked on the Ethereum chain.

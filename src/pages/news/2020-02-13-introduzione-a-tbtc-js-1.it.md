@@ -14,11 +14,11 @@ Con `tbtc.js`, puoi:
 
 \->  Accettare depositi in Bitcoin direttamente nella tua dAPP
 
-\->  Minare TBTC
+\->  Minare tBTC
 
-\->  Trasferire e scambiare TBTC come un qualsiasi token ERC-20
+\->  Trasferire e scambiare tBTC come un qualsiasi token ERC-20
 
-\->  Riscattare i tuoi Bitcoin utilizzando TBTC[](https://github.com/keep-network/tbtc.js#redeeming-a-deposit)
+\->  Riscattare i tuoi Bitcoin utilizzando tBTC[](https://github.com/keep-network/tbtc.js#redeeming-a-deposit)
 
 ... il tutto senza passare per un servizio di custodia e senza cambiare la tua struttura tecnologica o di software.
 

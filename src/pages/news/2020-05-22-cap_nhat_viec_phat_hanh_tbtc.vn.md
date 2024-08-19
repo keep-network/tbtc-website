@@ -4,7 +4,7 @@ title: Cập nhật về ra mắt tBTC
 description: Cập nhật về ra mắt tBTC
 date: 2020-05-22T18:19:06.656Z
 ---
-Vào thứ Sáu, ngày 15 tháng 5, phiên bản alpha của tBTC — phiên bản dùng thử zero (rc.0) — đã ra mắt. Vào sáng ngày 18 tháng 5, việc[ tạm dừng khẩn cấp tiền gửi 10 ngày](https://etherscan.io/tx/0xc5c08e982cfdd9d11b01c32bcb16b1597aa792c0bdf0f65d0a21386dd1edc846#eventlog) được cho phép bởi hợp đồng [TBTCSystem](http://etherscan.io/address/0x41A1b40c1280883eA14C6a71e23bb66b83B3fB59) đã được thực hiện. Điều này xảy ra khi việc mua lại hợp đồng tiền gửi được xác định là đặt người ký cam kết vào một số tình huống rủi ro.
+Vào thứ Sáu, ngày 15 tháng 5, phiên bản alpha của tBTC — phiên bản dùng thử zero (rc.0) — đã ra mắt. Vào sáng ngày 18 tháng 5, việc[ tạm dừng khẩn cấp tiền gửi 10 ngày](https://etherscan.io/tx/0xc5c08e982cfdd9d11b01c32bcb16b1597aa792c0bdf0f65d0a21386dd1edc846#eventlog) được cho phép bởi hợp đồng [tBTCSystem](http://etherscan.io/address/0x41A1b40c1280883eA14C6a71e23bb66b83B3fB59) đã được thực hiện. Điều này xảy ra khi việc mua lại hợp đồng tiền gửi được xác định là đặt người ký cam kết vào một số tình huống rủi ro.
 
 Chi tiết đầy đủ [tại đây](https://tbtc.network/news/2020-05-21-details-of-the-tbtc-deposit-pause-on-may-18-2020/).
 
@@ -27,7 +27,7 @@ Ban đầu, dApp được xây dựng trên rc.1 sẽ vẫn ở bản alpha. Cu�
 
 ### Giới hạn cung tăng dần
 
-Tiền trong hệ thống sẽ được sử dụng như một thước đo để xác định sự sẵn sàng của phiên bản thử nghiệm. rc.1 sẽ có một giới hạn nguồn cung TBTC, bắt đầu từ 100 BTC trong tháng đầu tiên. Mỗi tháng, các hợp đồng sẽ nới lỏng các giới hạn cung tiền gửi dựa trên kế hoạch đã cam kết trước.
+Tiền trong hệ thống sẽ được sử dụng như một thước đo để xác định sự sẵn sàng của phiên bản thử nghiệm. rc.1 sẽ có một giới hạn nguồn cung tBTC, bắt đầu từ 100 BTC trong tháng đầu tiên. Mỗi tháng, các hợp đồng sẽ nới lỏng các giới hạn cung tiền gửi dựa trên kế hoạch đã cam kết trước.
 
 | Month     | 1   | 2   | 3   | 4    | 5   |
 | --------- | --- | --- | --- | ---- | --- |

@@ -13,13 +13,13 @@ hero:
     image: /img/dapp.svg
     url: https://dapp.tbtc.network/
 features:
-  - description: '모든 TBTC는 BTC와 1:1로 담보되어 있습니다'
+  - description: '모든 tBTC는 BTC와 1:1로 담보되어 있습니다'
     title: 담보
-  - description: 중개인이 없습니다 - BTC를 이용해 TBTC를 언제든 발급 받으세요
+  - description: 중개인이 없습니다 - BTC를 이용해 tBTC를 언제든 발급 받으세요
     title: 비허가형
   - description: 검증 완료되었으며, 오픈소스입니다
     title: 안정성
-  - description: BTC를 TBTC로 변환 및 복구하기 위해 3 단계 작업이 필요합니다
+  - description: BTC를 tBTC로 변환 및 복구하기 위해 3 단계 작업이 필요합니다
     title: 간단함
 spotlight_1:
   body: ' tBTC는 candidate 모델을 배포할 예정이며, 공급량음 점차 늘어날 예정입니다. 추가적인 검증 과 10배의 버그 바운티를 통해 확대된 보안을 제공합니다.'
@@ -33,10 +33,10 @@ spotlight_2:
     text: 개발자 툴킷
     url: /developers
   label: Developers
-  title: TBTC로 여러분의 dApp에 비트코인을 추가하세요
+  title: tBTC로 여러분의 dApp에 비트코인을 추가하세요
   image:
     image: /img/spotlight-2-bg.png
-    alt: Integra TBTC icon
+    alt: Integra tBTC icon
   align: left
 integrations_section:
   title: Integrations

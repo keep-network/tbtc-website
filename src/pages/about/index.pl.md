@@ -28,4 +28,4 @@ supporters:
     name: Cross-Chain Group
     url: 'https://www.crosschain.group/'
 ---
-TBTC to token ERC-20, który jest ściśle oparty na Bitcoinie i związany z jego ceną. Ułatwia posiadaczom Bitcoina działanie na łańcuchu bloków Ethereum i dostęp do ekosystemu zdecentralizowanych finansów (DeFi). tBTC to projekt open-source wspierany m.in. przez [Keep](https://keep.network/), [Summa](https://summa.one/) oraz [Cross-Chain Group](https://www.crosschain.group/).
+tBTC to token ERC-20, który jest ściśle oparty na Bitcoinie i związany z jego ceną. Ułatwia posiadaczom Bitcoina działanie na łańcuchu bloków Ethereum i dostęp do ekosystemu zdecentralizowanych finansów (DeFi). tBTC to projekt open-source wspierany m.in. przez [Keep](https://keep.network/), [Summa](https://summa.one/) oraz [Cross-Chain Group](https://www.crosschain.group/).

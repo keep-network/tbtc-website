@@ -13,13 +13,13 @@ hero:
     image: /img/dapp.svg
     url: https://dapp.tbtc.network/
 features:
-  - description: 'Every TBTC is backed 1:1 with BTC'
+  - description: 'Every tBTC is backed 1:1 with BTC'
     title: Backed
-  - description: No intermediaries - Redeem TBTC for BTC at any time
+  - description: No intermediaries - Redeem tBTC for BTC at any time
     title: Permissionless
   - description: Audited and open-source
     title: Secure
-  - description: 3 steps to convert from BTC to TBTC and back
+  - description: 3 steps to convert from BTC to tBTC and back
     title: Simple
 spotlight_1:
   body: >-
@@ -36,10 +36,10 @@ spotlight_2:
     text: Developer Toolkit
     url: /developers
   image:
-    alt: Integrate TBTC icon
+    alt: Integrate tBTC icon
     image: /img/spotlight-2-bg.png
   label: For Developers
-  title: Integrate TBTC to add Bitcoin to your dApp
+  title: Integrate tBTC to add Bitcoin to your dApp
 integrations_section:
   title: Integrations
 ---

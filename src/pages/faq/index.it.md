@@ -6,27 +6,27 @@ domande:
   - domanda: Come fa tBTC a mantenere un ancoraggio sul prezzo di 1:1 con Bitcoin?
     risposta: >
       tBTC non mantiene un rapporto di prezzo paritario. E' il circolante che lo mantiene, e non un prezzo, ed in tal modo non sono necessari algoritmi di consenso.
-  - domanda: Perchè il prezzo di TBTC non è esattamente lo stesso di BTC?
+  - domanda: Perchè il prezzo di tBTC non è esattamente lo stesso di BTC?
     risposta: >
       tBTC non ha un rapporto paritario di prezzo col BTC; E' un ancoraggio di circolante. Ciò significa che non può essere esattamente identico. tBTC potrebbe scambiare ad un leggero sovrapprezzo o sconto.
-  - domanda: Perchè TBTC è collateralizzato in ETH sulla base del tuo prezzo?
+  - domanda: Perchè tBTC è collateralizzato in ETH sulla base del tuo prezzo?
     risposta: >
       Perchè ciò rende il sistema più sicuro, che è molto importante nella DeFi, specialmente nel momento di lancio di un progetto. ETH è più sicuro come collaterale perchè ormai è uno standard DeFi, ed il team sta lavorando ad un piano affinchè su tBTC la collateralizzazione sul cambio ETH/BTC possa scendere da 150% a 135%. Si stanno anche approfondendo meccanismi che possono portare il ratio di collateralizzazione anche al 40%, ma solo in fasi successive.
   - domanda: Cosa può andare storto nel sistema tBTC?
     risposta: >
-      Questa tecnologia è nuova ed è impossibile prevedere cosa possa andare storto. Detto questo, ci sono molt rischi che la comunità ha identificato e si sono prese misure cautelative. Il modello di sicurezza è tale che se il signer collude e ruba i tuoi Bitcoin, l'utente è rimborsato in TBTC; questa è la funzione della collateralizzazione in ETH. Se ETH subisce una grossa discesa di prezzo in breve tempo e TUTTI i signers ritirano il collaterale e spezzano l'ancoraggio con il controvalore in BTC, il sistema genera un sintetico. Per maggiori informazioni, leggi <a href="https://docs.keep.network/tbtc/index.pdf" target="_blank">Qui</a>.
+      Questa tecnologia è nuova ed è impossibile prevedere cosa possa andare storto. Detto questo, ci sono molt rischi che la comunità ha identificato e si sono prese misure cautelative. Il modello di sicurezza è tale che se il signer collude e ruba i tuoi Bitcoin, l'utente è rimborsato in tBTC; questa è la funzione della collateralizzazione in ETH. Se ETH subisce una grossa discesa di prezzo in breve tempo e TUTTI i signers ritirano il collaterale e spezzano l'ancoraggio con il controvalore in BTC, il sistema genera un sintetico. Per maggiori informazioni, leggi <a href="https://docs.keep.network/tbtc/index.pdf" target="_blank">Qui</a>.
   - domanda: Perchè usate i lotti di dimensione fissa? Perchè i lotti non sono variabili?
     risposta: >
       Troppi lotti sono un rischio per il bacino di liquidità. Mantenendo lotti fissi consente maggiore efficienza nella operazione di riscatto.
-  - domanda: C'è un widget tBTC che posso usare direttamente nella mia DeFi dApp per consentire il mining ed il riscatto di TBTC?
+  - domanda: C'è un widget tBTC che posso usare direttamente nella mia DeFi dApp per consentire il mining ed il riscatto di tBTC?
     risposta: >
       Non ancora. L'integrazione è richiesta per far funzionare tBTC come sistema di mining e riscatto in una dApp. Il codice è open-source nel <a href="https://github.com/keep-network/tbtc.js" target="_blank">tbtc.js GitHub</a>, enabling developers to build interfaces that match their products. To validate Bitcoin transactions, the best approach is to run an electrum server, which is very easy to spin up.
   - domanda: tBTC ha passato controlli di sicurezza?
     risposta: >
       ConsenSys Diligence è attualmente impegnata a completare un programma di 6 settimane sulla parte crittografica e di codice. I risultati saranno pubblicati non appena disponibili.
-  - domanda: Depositare BTC per TBTC è un evento passibile di prelievo fiscale?
+  - domanda: Depositare BTC per tBTC è un evento passibile di prelievo fiscale?
     risposta: >
-      Controlla la tua posizione fiscale con un commercialista per capire se l'utilizzo di BTC o TBTC determinano un evento tassabile nella tua giurisdizione. Una cosa da considerare è che il token non fungibile (TBTC) è associtato a una UTXO di deposito. Questo NFT è progettato per corrispondere una commissione di custodia di BTC e per offrire un servizio di riscatto della stessa UTXO entro i successivi 6 mesi.
+      Controlla la tua posizione fiscale con un commercialista per capire se l'utilizzo di BTC o tBTC determinano un evento tassabile nella tua giurisdizione. Una cosa da considerare è che il token non fungibile (tBTC) è associtato a una UTXO di deposito. Questo NFT è progettato per corrispondere una commissione di custodia di BTC e per offrire un servizio di riscatto della stessa UTXO entro i successivi 6 mesi.
   - domanda: Perchè definite il signer tBTC non custodian?
     risposta: >
       Il signer tBTC usa una threshold ECDSA al posto di una multisig Bitcoin. Per ogni deposito, un nuovo gruppo di signer è selezionato causalmente dalla random beacon e coinvolto nella transazione. Essi generano un nuovo indirizzo PKH per il depositante, che viene registrato sulla chain di Ethereum.

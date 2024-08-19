@@ -14,7 +14,7 @@ questions:
       Angebotsanbindung. Das bedeutet, dass BTC/tBTC möglicherweise nicht genau
       gleich sind. tBTC könnte mit einem leichten Auf- oder Abschlag gehandelt
       werden.
-    question: Warum ist der Preis von TBTC nicht genau der gleiche wie der von BTC?
+    question: Warum ist der Preis von tBTC nicht genau der gleiche wie der von BTC?
   - answer: >
       Weil es für ein sichereres System sorgt, was bei DeFi sehr wichtig ist,
       insbesondere bei der Einführung eines neuen Netzwerks. ETH ist ein
@@ -23,14 +23,14 @@ questions:
       ETH/BTC-Kollateralisierung von 150% auf 135% ziemlich bald nach der
       Lancierung zu verschieben. Es prüft auch neue Mechanismen, die dieses
       Verhältnis später auf 40% Kollateralisierung senken könnten.
-    question: Warum ist TBTC mit ETH im aktuellen Verhältnis kollateralisiert?
+    question: Warum ist tBTC mit ETH im aktuellen Verhältnis kollateralisiert?
   - answer: >
       Diese Technologie ist neu, und es ist unmöglich, jede Situation
       vorauszusehen, in der etwas schief gehen könnte.  Dennoch gibt es mehrere
       Situationen, die die Community erkannt und sorgfältige Maßnahmen ergriffen
       hat, um ihnen zu begegnen. Das Sicherheitsmodell ist so ausgelegt, dass,
       wenn die Unterzeichner sich zusammenschließen und mit Ihrem Bitcoin
-      Deposit abhauen, die Benutzer im TBTC zurückbezahlt werden; dafür sind die
+      Deposit abhauen, die Benutzer im tBTC zurückbezahlt werden; dafür sind die
       ETH-Anleihen gedacht (sie werden beschlagnahmt und liquidiert). Wenn ETH
       in kurzer Zeit einen massiven Einbruch erleidet und ALLE Unterzeichner
       weglaufen und gleichzeitig den Peg brechen, fällt das System auf ein
@@ -67,7 +67,7 @@ questions:
     question: Macht die Unterzeichnung des tBTC und das Staken von ETH Sie zu einem MSB?
   - answer: >
       Bitte erkundigen Sie sich bei einem Steuerfachmann, ob die Hinterlegung
-      von BTC für TBTC ein steuerpflichtiges Ereignis in einer bestimmten
+      von BTC für tBTC ein steuerpflichtiges Ereignis in einer bestimmten
       Gerichtsbarkeit ist. Eine Sache, die zu berücksichtigen ist, ist die NFT,
       die mit der UTXO einer Einzahlung verbunden ist. Diese NFT soll die
       Zahlung einer Gebühr für die Verwahrung von BTC ermöglichen und die

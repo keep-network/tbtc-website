@@ -66,7 +66,7 @@ questions:
       Servicios Monetarios?
   - answer: >-
       Por favor compruebe con un asesor fiscal para determinar si el depósito de
-      BTC para TBTC es una operación fiscal en su jurisdicción. Un aspecto a
+      BTC para tBTC es una operación fiscal en su jurisdicción. Un aspecto a
       considerar es el NFT asociado con la UTXO (salida de transacción no
       gastada) del depósito. Este NFT permite que una couta sea pagada para la
       custodia del BTC y ofrece la posibilidad de regenerar exactamente la misma

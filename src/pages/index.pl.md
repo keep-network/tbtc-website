@@ -4,22 +4,22 @@ path: /
 title: Strona Główna
 hero:
   buttons:
-    - text: Wybij TBTC
+    - text: Wybij tBTC
       url: https://dapp.tbtc.network/
   subtitle: Wpłacaj i wypłacaj BTC do DeFi bez pośredników.
   title: Bezpieczny sposób aby zarabiać z Twoimi Bitcoinami.
   image:
-    alt: Wybij TBTC
+    alt: Wybij tBTC
     image: /img/dapp.svg
     url: https://dapp.tbtc.network/
 features:
-  - description: 'Każdy TBTC jest poparty 1:1 przez BTC'
+  - description: 'Każdy tBTC jest poparty 1:1 przez BTC'
     title: Poparty
-  - description: Bez pośredników - Wymień TBTC na BTC w każdym momencie
+  - description: Bez pośredników - Wymień tBTC na BTC w każdym momencie
     title: Niewymagający pozwoleń
   - description: Audytowany i open-source
     title: Bezpieczny
-  - description: 3 kroki do wymiany BTC na TBTC i spowrotem
+  - description: 3 kroki do wymiany BTC na tBTC i spowrotem
     title: Prosty
 spotlight_1:
   body: >-
@@ -38,7 +38,7 @@ spotlight_2:
   title: Zintegruj się z tBTC aby dodać Bitcoin do Twojej aplikacji dApp
   image:
     image: /img/spotlight-2-bg.png
-    alt: Integra TBTC icon
+    alt: Integra tBTC icon
   align: left
 integrations_section:
   title: Integracje

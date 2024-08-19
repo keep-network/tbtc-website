@@ -13,13 +13,13 @@ hero:
     image: /img/dapp.svg
     url: https://dapp.tbtc.network/
 features:
-  - description: 'Setiap TBTC bernilai 1:1 BTC'
+  - description: 'Setiap tBTC bernilai 1:1 BTC'
     title: Backed
-  - description: Tidak ada pihak ketiga - Menarik(Redeem) TBTC setiap BTC kapanpun
+  - description: Tidak ada pihak ketiga - Menarik(Redeem) tBTC setiap BTC kapanpun
     title: Permissionless
   - description: Teraudit dan terbuka(open-source)
     title: Aman
-  - description: 3 langkah untuk mengubah BTC ke TBTC dan kembali
+  - description: 3 langkah untuk mengubah BTC ke tBTC dan kembali
     title: Simpel
 spotlight_1:
   body: ' tBTC akan berpindah ke model kandidat pelepasan dan menerapkan batas pasokan. Langkah-langkah keamanan diperluas mencakup audit lebih lanjut dan 10x bug bounty.'
@@ -33,10 +33,10 @@ spotlight_2:
     text: Developer Toolkit
     url: /developers
   label: Developer
-  title: Integerasi TBTC untuk menambahkan Bitcoin kedalam dApp anda
+  title: Integerasi tBTC untuk menambahkan Bitcoin kedalam dApp anda
   image:
     image: /img/spotlight-2-bg.png
-    alt: Integerasi TBTC icon
+    alt: Integerasi tBTC icon
   align: left
 integrations_section:
   title: Integrasi

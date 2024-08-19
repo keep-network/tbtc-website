@@ -22,11 +22,11 @@ With `tbtc.js`, you can
 
 -> [Accept Bitcoin deposits in your dApp](https://github.com/keep-network/tbtc.js#creating-and-funding-a-deposit)
 
-->  Mint TBTC
+->  Mint tBTC
 
-->  Transfer and trade TBTC as you would any other ERC-20 token
+->  Transfer and trade tBTC as you would any other ERC-20 token
 
--> [Redeem users' TBTC for Bitcoin](https://github.com/keep-network/tbtc.js#redeeming-a-deposit)
+-> [Redeem users' tBTC for Bitcoin](https://github.com/keep-network/tbtc.js#redeeming-a-deposit)
 
 ... all without taking custody or changing your tech stack.
 

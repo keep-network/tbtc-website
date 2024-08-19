@@ -15,13 +15,13 @@ hero:
     image: /img/dapp.svg
     url: https://dapp.tbtc.network/
 features:
-  - description: 'Каждый TBTC обеспечен 1:1 с BTC'
+  - description: 'Каждый tBTC обеспечен 1:1 с BTC'
     title: Застраховано
-  - description: Никаких посредников - выкупайте TBTC за BTC в любое время
+  - description: Никаких посредников - выкупайте tBTC за BTC в любое время
     title: Удобно
   - description: Проверено аудиторами и имеет открытый исходный код
     title: Безопасно
-  - description: Перевод BTC в TBTC и обратно занимает всего 3 шага
+  - description: Перевод BTC в tBTC и обратно занимает всего 3 шага
     title: Просто
 spotlight_1:
   body: >-
@@ -40,7 +40,7 @@ spotlight_2:
   title: 'Интегрируйте tBTC, чтобы добавить Биткойн в ваши dApp'
   image:
     image: /img/spotlight-2-bg.png
-    alt: Integra TBTC icon
+    alt: Integra tBTC icon
   align: left
 integrations_section:
   title: Партнеры

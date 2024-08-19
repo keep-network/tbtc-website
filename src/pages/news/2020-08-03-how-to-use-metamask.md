@@ -6,7 +6,7 @@ date: 2020-08-03T14:49:45.894Z
 ---
 tBTC lets Bitcoin holders access DeFi applications built on Ethereum. At launch, this will require BTC holders who may have limited experience with Ethereum to use tools that are unfamiliar to them.[ Metamask](https://metamask.io/) is one such tool.
 
-In order to act on the Ethereum blockchain, people need something called a “dApp browser” that allows them to install and run a wallet to hold, transfer, and deposit Ethereum’s ERC-20 tokens -- including TBTC. Metamask is a popular choice.
+In order to act on the Ethereum blockchain, people need something called a “dApp browser” that allows them to install and run a wallet to hold, transfer, and deposit Ethereum’s ERC-20 tokens -- including tBTC. Metamask is a popular choice.
 
 To get started, go to [metamask.io](https://metamask.io/) and click “Download >> Install MetaMask for Chrome”
 

@@ -13,13 +13,13 @@ hero:
     image: /img/dapp.svg
     url: https://dapp.tbtc.network/
 features:
-  - description: 'Jedes TBTC wird 1:1 mit BTC abgesichert'
+  - description: 'Jedes tBTC wird 1:1 mit BTC abgesichert'
     title: Abgesichert
-  - description: Keine Vermittler - TBTC jederzeit gegen BTC einlösen
+  - description: Keine Vermittler - tBTC jederzeit gegen BTC einlösen
     title: Genehmigungslos
   - description: Geprüft und Open-Source
     title: Sicher
-  - description: 3 Schritte zur Konvertierung von BTC zu TBTC und zurück
+  - description: 3 Schritte zur Konvertierung von BTC zu tBTC und zurück
     title: Einfach
 spotlight_1:
   body: >-
@@ -36,10 +36,10 @@ spotlight_2:
     text: Entwickler Toolkit
     url: /developers
   label: Entwickler
-  title: 'Integrieren Sie TBTC, um Bitcoin zu Ihrer dApp hinzuzufügen'
+  title: 'Integrieren Sie tBTC, um Bitcoin zu Ihrer dApp hinzuzufügen'
   image:
     image: /img/spotlight-2-bg.png
-    alt: Integrieren TBTC icon
+    alt: Integrieren tBTC icon
   align: left
 integrations_section:
   title: Integrationen

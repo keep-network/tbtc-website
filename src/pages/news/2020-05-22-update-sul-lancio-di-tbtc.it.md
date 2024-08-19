@@ -26,7 +26,7 @@ Inizialmente la dApp costruita sulla rc.1 rimarrà in versione alpha. Eventualme
 
 ### Un limite graduale al circolante
 
-Una moneta in un sistema è usata come metro di misurazione della capacità del sistema stesso ad essere pronto e giunto alla versione definitiva. Nella rc.1, si porrà un limite al circolante TBTC di 100 BTC nel primo mese. Nei mesi successivi, tale limite verrà gradualmente rimosso sulla base di un piano predefinito di sviluppo.
+Una moneta in un sistema è usata come metro di misurazione della capacità del sistema stesso ad essere pronto e giunto alla versione definitiva. Nella rc.1, si porrà un limite al circolante tBTC di 100 BTC nel primo mese. Nei mesi successivi, tale limite verrà gradualmente rimosso sulla base di un piano predefinito di sviluppo.
 
 | Month     | 1   | 2   | 3   | 4    | 5   |
 | --------- | --- | --- | --- | ---- | --- |

@@ -13,13 +13,13 @@ hero:
     image: /img/dapp.svg
     url: https://dapp.tbtc.network/
 features:
-  - description: '全ての TBTC は 1対1 で BTC が担保されています'
+  - description: '全ての tBTC は 1対1 で BTC が担保されています'
     title: 担保
-  - description: 仲介者は存在しません - いつでも TBTC で BTC を引き出せます
+  - description: 仲介者は存在しません - いつでも tBTC で BTC を引き出せます
     title: パーミッションレス
   - description: 監査済、しかもオープンソース
     title: セキュリティ
-  - description: たったの 3 ステップで BTC を TBTC に。もちろんその逆も
+  - description: たったの 3 ステップで BTC を tBTC に。もちろんその逆も
     title: シンプル
 spotlight_1:
   body: 'tBTC はリリース候補モデルへ移行し、段階的な通貨供給を実装します。更なるコード監査と10倍のバグ報奨金プログラムを含む、警備体勢の拡充を行います'
@@ -36,7 +36,7 @@ spotlight_2:
   title: dApp でビットコインをサポートしよう
   image:
     image: /img/spotlight-2-bg.png
-    alt: Integra TBTC icon
+    alt: Integra tBTC icon
   align: left
 integrations_section:
   title: インテグレーション

@@ -12,7 +12,7 @@ tBTC cho phép người dùng sử dụng Bitcoin của họ để tham gia vào
 
 ### Người dùng Bitcoin không bao giờ bị thanh lý trên tBTC.
 
-tBTC không yêu cầu người dùng tự duy trì chốt. Điều này trái ngược với, ví dụ, Maker có một chốt do người dùng duy trì được thiết kế để mọi người có thể mất ETH nếu tài sản thế chấp của họ giảm xuống dưới ngưỡng tối thiểu. TBTC 1: 1 chốt với BTC được thiết lập và duy trì bởi các luồng tiền gửi và hoàn của mạng, cho phép tạo 1 TBTC cho mỗi BTC gửi và đốt một TBTC cho mỗi BTC hoàn bởi người dùng. 
+tBTC không yêu cầu người dùng tự duy trì chốt. Điều này trái ngược với, ví dụ, Maker có một chốt do người dùng duy trì được thiết kế để mọi người có thể mất ETH nếu tài sản thế chấp của họ giảm xuống dưới ngưỡng tối thiểu. tBTC 1: 1 chốt với BTC được thiết lập và duy trì bởi các luồng tiền gửi và hoàn của mạng, cho phép tạo 1 tBTC cho mỗi BTC gửi và đốt một tBTC cho mỗi BTC hoàn bởi người dùng. 
 
 Nắm ETH trên tBTC nhằm mục đích không duy trì một chốt mà là để thiết lập các ưu đãi cho người ký để làm việc đúng. Do đó, nắm ETH thực sự làm cho tiền gửi BTC của người dùng an toàn hơn, vì nó bảo đảm tài sản trong trường hợp bị đánh cắp. tBTC được thiết kế là cách an toàn để sử dụng Bitcoin trên Ethereum; yêu cầu người ký nắm giữ là một trong những cách làm điều đó. 
 
