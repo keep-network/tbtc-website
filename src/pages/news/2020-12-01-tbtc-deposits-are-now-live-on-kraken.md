@@ -22,4 +22,4 @@ tBTC, the decentralized solution for using bitcoin in Ethereum DeFi, is designed
 
 
 
-Updates related to tBTC can be found on [the Discord channel](https://discord.gg/wYezN7v).
+Updates related to tBTC can be found on [the Discord channel](https://discord.com/invite/threshold?ref=tbtc.network).

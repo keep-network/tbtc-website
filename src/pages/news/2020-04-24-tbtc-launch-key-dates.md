@@ -16,4 +16,4 @@ tBTC will begin moving toward full mainnet launch over the coming weeks. Launch 
 
 Finally, on June 8th anyone will be able to become a tBTC signer in the KEEP stakedrop. **[RSVP here to the live stakedrop event](https://www.crowdcast.io/e/keep-stakedrop---live/register).**
 
-To get involved in the meantime, join the #tBTC [Discord](https://discordapp.com/invite/UhfpKCS) to [Play for KEEPs](https://blog.keep.network/how-to-play-for-keeps-297f246455d4), earning your spot to stake on mainnet.
+To get involved in the meantime, join the #tBTC [Discord](https://discord.com/invite/threshold?ref=tbtc.network) to [Play for KEEPs](https://blog.keep.network/how-to-play-for-keeps-297f246455d4), earning your spot to stake on mainnet.

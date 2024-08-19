@@ -19,4 +19,4 @@ In tBTC, UTXOs are represented by the TBTC Deposit Token (TDT), a non-fungible t
 Once a deposit is fully qualified through a proof of the funding Bitcoin transaction (called the SPV Relay), the holder can request redemption, and, after paying any outstanding signing fees, be guaranteed the same UTXO that funded the deposit on the Bitcoin network.
 
 **\
-Join the [\#tbtc Discord channel](https://discord.gg/wYezN7v) to learn more about tBTC. Join the tBTC mailing list [here](https://tbtc.network/#mailing-list).**
+Join the [\#tbtc Discord channel](https://discord.com/invite/threshold?ref=tbtc.network) to learn more about tBTC. Join the tBTC mailing list [here](https://tbtc.network/#mailing-list).**
