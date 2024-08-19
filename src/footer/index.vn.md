@@ -17,7 +17,7 @@ nav_columns:
         url: /terms-of-use
   - items:
       - label: Join Our Discord
-        url: https://discord.com/invite/threshold
+        url: https://discord.com/invite/threshold?ref=tbtc.network
         icon:
           image: /img/discord-logo.svg
           alt: Discord Logo

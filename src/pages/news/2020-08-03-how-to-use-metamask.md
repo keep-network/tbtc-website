@@ -23,4 +23,4 @@ Once installation is complete, click on the fox icon and, after agreeing to the 
 Once these steps are complete, people can access the Ethereum mainnet using their Metamask wallets to send and receive ERC-20 tokens including tBTC. Note the option to switch between mainnet and testnets including Ropsten in the left-hand corner of the screen.
 
 **\
-Join the [\#tbtc Discord channel](https://discord.gg/wYezN7v) to learn more about tBTC. Join the tBTC mailing list [here](https://tbtc.network/#mailing-list).**
+Join the [\#tbtc Discord channel](https://discord.com/invite/threshold?ref=tbtc.network) to learn more about tBTC. Join the tBTC mailing list [here](https://tbtc.network/#mailing-list).**

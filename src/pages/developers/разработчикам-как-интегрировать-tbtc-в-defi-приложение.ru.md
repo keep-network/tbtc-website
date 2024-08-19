@@ -27,7 +27,7 @@ tBTC - это проект с открытым исходным кодом с б
 
 Разработчики уже используют вышеперечисленные инструменты для интеграции с tBTC. В рамках нашего недавнего хакатона на конференции ETHDenver [было создано несколько отличных приложений](https://blog.keep.network/bitcoin-earn-wins-ethdenver-tbtc-hackathon-prize-5233ce805468), которые выглядят весьма многообещающе.
 
-Присоединяйтесь к нашему каналу [Keep #tbtc в Discord](https://discord.gg/wYezN7v) для получения более подробной информации о tBTC и [tbtc.js](https://tbtc.network/news/2020-02-14-announcing-tbtc-js)
+Присоединяйтесь к нашему каналу [Keep #tbtc в Discord](https://discord.com/invite/threshold?ref=tbtc.network) для получения более подробной информации о tBTC и [tbtc.js](https://tbtc.network/news/2020-02-14-announcing-tbtc-js)
 
 Дополнительные ресурсы для получения информации:
 

@@ -16,7 +16,7 @@ On April 24, the MakerDAO community voted to finalize their first ETHBTC feed, d
 
 Supporters announced to date include integrations with decentralized platforms, aggregators, exchanges, and wallets as well as stakers, signers, auditors and custody providers. Initially there will be about 80 stakers including Paradigm, a16z, Fenbushi Capital, Polychain Capital and Draper Associates.
 
-Join the discussion on [Discord](https://discord.gg/2HnCxsd) to [Play for Keeps and earn your spot to stake on mainnet](https://blog.keep.network/how-to-play-for-keeps-297f246455d4) as part of the community of stakers and builders.
+Join the discussion on [Discord](https://discord.com/invite/threshold?ref=tbtc.network) to [Play for Keeps and earn your spot to stake on mainnet](https://blog.keep.network/how-to-play-for-keeps-297f246455d4) as part of the community of stakers and builders.
 
 \---
 
