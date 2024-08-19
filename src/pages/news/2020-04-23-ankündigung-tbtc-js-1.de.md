@@ -14,11 +14,11 @@ Mit `tbtc.js` können Sie
 
 \-> [Bitcoin-Einzahlungen in Ihrer dApp akzeptieren](https://github.com/keep-network/tbtc.js#creating-and-funding-a-deposit)
 
-\->  TBTC prägen / münzen
+\->  tBTC prägen / münzen
 
-\-> Transferieren und handeln Sie TBTC wie jeden anderen ERC-20-Token
+\-> Transferieren und handeln Sie tBTC wie jeden anderen ERC-20-Token
 
-\-> [TBTC der Benutzer gegen Bitcoin einlösen](https://github.com/keep-network/tbtc.js#redeeming-a-deposit)
+\-> [tBTC der Benutzer gegen Bitcoin einlösen](https://github.com/keep-network/tbtc.js#redeeming-a-deposit)
 
 ... und das alles, ohne die Verwahrung zu übernehmen oder Ihren Tech-Stack zu verändern.
 

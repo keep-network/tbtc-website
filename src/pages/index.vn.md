@@ -13,13 +13,13 @@ hero:
     image: /img/dapp.svg
     url: https://dapp.tbtc.network/
 features:
-  - description: 'Mỗi TBTC được hỗ trợ 1: 1 bằng BTC'
+  - description: 'Mỗi tBTC được hỗ trợ 1: 1 bằng BTC'
     title: Bảo chứng
-  - description: Không có trung gian - Đổi TBTC lấy BTC bất cứ lúc nào
+  - description: Không có trung gian - Đổi tBTC lấy BTC bất cứ lúc nào
     title: Không trung gian
   - description: Đã kiểm toán và là mã nguồn mở
     title: Bảo mật
-  - description: Chỉ cần 3 bước để đổi BTC sang TBTC và ngược lại.
+  - description: Chỉ cần 3 bước để đổi BTC sang tBTC và ngược lại.
     title: Đơn giản
 spotlight_1:
   body: ' tBTC sẽ chuyển sang mô hình ứng cử viên và sẽ giới hạn tổng cung. Mở rộng các biện pháp an ninh bao gồm kiểm toán thêm và trao giải thưởng cho các lỗi tìm thấy gấp 10 lần.'
@@ -33,10 +33,10 @@ spotlight_2:
     text: Bộ công cụ dành cho nhà phát triển
     url: /developers
   label: Nhà phát triển
-  title: Tích hợp TBTC để thêm Bitcoin vào dApp của bạn
+  title: Tích hợp tBTC để thêm Bitcoin vào dApp của bạn
   image:
     image: /img/spotlight-2-bg.png
-    alt: Integra TBTC icon
+    alt: Integra tBTC icon
   align: left
 integrations_section:
   title: Tích hợp

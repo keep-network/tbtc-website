@@ -6,7 +6,7 @@ date: 2020-04-06T16:12:33.160Z
 tags:
   - ''
 ---
-tBTC will launch on Ethereum mainnet on April 27th, 2020. Users will have full functionality to deposit BTC, mint and redeem TBTC, and use it in Ethereum DeFi apps.
+tBTC will launch on Ethereum mainnet on April 27th, 2020. Users will have full functionality to deposit BTC, mint and redeem tBTC, and use it in Ethereum DeFi apps.
 
 Supported by [Keep](http://keep.network), [Summa](https://summa.one/), and the [Cross-Chain Group](https://www.crosschain.group/), tBTC lets people use Bitcoin to act on Ethereum. It has been [live on the Ropsten testnet](https://tbtc.network/news/2020-02-14-ropsten) since February.
 

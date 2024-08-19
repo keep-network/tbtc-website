@@ -12,7 +12,7 @@ Der erste Keep "Stakedrop" wird am 8. Juni beginnen. Jeder ETH-Inhaber kann Geb�
 
 Das [Keep](https://keep.network/) Netzwerk  übernimmt die Verwahrung für das tBTC. Der systemeigene Asset des Netzwerks, KEEP, ist ein Arbeits-Token, der den Betrieb des Systems erleichtert. Normalerweise müssen die Unterzeichner des tBTC sowohl KEEP als auch ETH einsetzen. Der Stakedrop ermöglicht es Personen ohne KEEP, als Unterzeichner aufzutreten und nur ihre ETH zu benutzen, wobei die entsprechenden KEEP-Token mit der Zeit verdient werden.
 
-Der Stakedrop ist so konzipiert, dass jeder, der ETH besitzt, als genehmigungsloser Unterzeichner des tBTC auftreten kann und dabei hilft, die beiden führenden Blockchains der Welt zu überbrücken und gleichzeitig TBTC und KEEP für seine Teilnahme zu verdienen. Während des Stakedrops kann jeder ETH-Inhaber eine Keep-Node betreiben und Gebühren an seiner ETH einnehmen.
+Der Stakedrop ist so konzipiert, dass jeder, der ETH besitzt, als genehmigungsloser Unterzeichner des tBTC auftreten kann und dabei hilft, die beiden führenden Blockchains der Welt zu überbrücken und gleichzeitig tBTC und KEEP für seine Teilnahme zu verdienen. Während des Stakedrops kann jeder ETH-Inhaber eine Keep-Node betreiben und Gebühren an seiner ETH einnehmen.
 
 Der Stakedrop wird etwa 6 Monate dauern, bis alle für den Stakedrop zugewiesenen KEEP-Token aufgebraucht sind. Danach müssen alle Staker KEEP einsetzen, um weiterhin als Unterzeichner auftreten zu können. Lesen Sie mehr über den Stakedrop und wie man ein Unterzeichner von Keep](https://blog.keep.network/how-to-get-keep-stake-eth-42252ee11863) wird.
 

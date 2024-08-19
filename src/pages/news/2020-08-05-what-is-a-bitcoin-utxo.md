@@ -14,7 +14,7 @@ UTXOs, then, are effectively “change” from previous BTC transactions. This f
 
 UTXOs also introduce some challenges. As their size gets smaller, the relative cost of processing transactions increases. At a certain point, this risks making exchanges uneconomical -- if the processing fee involved in buying a cup of coffee is greater than the price of the coffee itself, the purchase no longer makes sense. The community is aware of this, and people are working on a number of solutions.
 
-In tBTC, UTXOs are represented by the TBTC Deposit Token (TDT), a non-fungible token that is minted when a user requests a deposit. A TDT is an ERC-721 token that serves as a counterpart to TBTC. It represents a claim to a deposit's underlying UTXO on the Bitcoin blockchain. Each TDT is unique to the deposit that mints it and carries the exclusive right for up to a 6 month term to redeem the deposit.
+In tBTC, UTXOs are represented by the tBTC Deposit Token (TDT), a non-fungible token that is minted when a user requests a deposit. A TDT is an ERC-721 token that serves as a counterpart to tBTC. It represents a claim to a deposit's underlying UTXO on the Bitcoin blockchain. Each TDT is unique to the deposit that mints it and carries the exclusive right for up to a 6 month term to redeem the deposit.
 
 Once a deposit is fully qualified through a proof of the funding Bitcoin transaction (called the SPV Relay), the holder can request redemption, and, after paying any outstanding signing fees, be guaranteed the same UTXO that funded the deposit on the Bitcoin network.
 

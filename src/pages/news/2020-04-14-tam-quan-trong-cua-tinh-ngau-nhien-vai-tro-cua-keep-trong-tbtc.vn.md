@@ -8,7 +8,7 @@ Cách Keep đóng góp cho ứng dụng đầu tiên cho phép mọi người ki
 
 !(https://cdn.steemitimages.com/DQmTV2TBjQTKjwPh82aXvcC9fRKh7zXg5yv1geKCcNobN8f/2.jpeg)
 
-Keep là một trong ba dự án đóng góp cho tBTC, sẽ ra mắt vào ngày 27 tháng 4 và cho phép người nắm giữ Bitcoin sử dụng các ứng dụng tài chính phi tập trung Ethereum lần đầu tiên. Keep, Summa và Cross-Chain Group đều chịu trách nhiệm cho ít nhất một trong các yếu tố kỹ thuật của dự án nguồn mở, cho phép người dùng kiếm tiền an toàn trên Ethereum bằng Bitcoin của họ. Keep đóng góp cụ thể là đèn hiệu ngẫu nhiên chọn người ký cho tiền gửi TBTC, đó là token ERC-20. tBTC cần một hệ thống có token để chống lại Sybil. Bản thân người ký cũng được chọn trong số nhóm ứng cử viên trên mạng Keep.
+Keep là một trong ba dự án đóng góp cho tBTC, sẽ ra mắt vào ngày 27 tháng 4 và cho phép người nắm giữ Bitcoin sử dụng các ứng dụng tài chính phi tập trung Ethereum lần đầu tiên. Keep, Summa và Cross-Chain Group đều chịu trách nhiệm cho ít nhất một trong các yếu tố kỹ thuật của dự án nguồn mở, cho phép người dùng kiếm tiền an toàn trên Ethereum bằng Bitcoin của họ. Keep đóng góp cụ thể là đèn hiệu ngẫu nhiên chọn người ký cho tiền gửi tBTC, đó là token ERC-20. tBTC cần một hệ thống có token để chống lại Sybil. Bản thân người ký cũng được chọn trong số nhóm ứng cử viên trên mạng Keep.
 
 ### Keep bảo đảm riêng tư
 

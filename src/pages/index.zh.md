@@ -19,7 +19,7 @@ features:
     title: 无需许可
   - description: 审计并开源
     title: 安全
-  - description: 3个步就可以将BTC转换到TBTC
+  - description: 3个步就可以将BTC转换到tBTC
     title: 简便
 spotlight_1:
   body: ' tBTC将转换为一个版本候选模型，并实施分级供应上限。扩展的安全措施包括进一步的审计和10倍的bug奖励 '
@@ -33,10 +33,10 @@ spotlight_2:
     text: 开发人员工具包
     url: /developers
   label: 开发者
-  title: 整合TBTC将比特币添加到你的dApp中
+  title: 整合tBTC将比特币添加到你的dApp中
   image:
     image: /img/spotlight-2-bg.png
-    alt: Integra TBTC icon
+    alt: Integra tBTC icon
   align: left
 integrations_section:
   title: 整合
