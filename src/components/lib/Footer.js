@@ -6,6 +6,7 @@ import Image from "./Image"
 import Link from "../LocaleLink"
 import TBTCLogo from "../svgs/TBTCLogo"
 import ThesisLogo from "../svgs/thesis-logo"
+import ThresholdLogo from "../svgs/threshold-logo"
 
 const FooterTemplate = ({
   nav_columns: navColumns,
@@ -38,10 +39,18 @@ const FooterTemplate = ({
         </div>
         <div className="copyright col-sm-6 col-lg-5">{copyright}</div>
         <div className="built-by col-sm-6 col-lg-5">
-          Built by{" "}
-          <a href="https://thesis.co">
-            <ThesisLogo />
-          </a>
+          <p>
+            Built by{" "}
+            <a href="https://thesis.co" className="thesis">
+              <ThesisLogo />
+            </a>
+          </p>
+          <p>
+            Powered by{" "}
+            <a href="https://threshold.network" className="threshold">
+              <ThresholdLogo />
+            </a>
+          </p>
         </div>
       </div>
     </div>

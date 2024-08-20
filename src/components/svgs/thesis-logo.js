@@ -4,8 +4,6 @@ const ThesisLogo = ({ width, height }) => {
   return (
     <svg
       alt="Thesis"
-      width="75"
-      height="18"
       viewBox="0 0 112 27"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
