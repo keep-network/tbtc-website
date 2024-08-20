@@ -1,11 +1,12 @@
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import React from "react"
+import { StaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 
 import Image from "./Image"
 import Link from "../LocaleLink"
-import TBTCLogo from '../svgs/TBTCLogo'
-
+import TBTCLogo from "../svgs/TBTCLogo"
+import ThesisLogo from "../svgs/thesis-logo"
+import ThresholdLogo from "../svgs/threshold-logo"
 
 const FooterTemplate = ({
   nav_columns: navColumns,
@@ -23,7 +24,10 @@ const FooterTemplate = ({
               <ul key={`nav-column-${i}`}>
                 {col.items.map((item, j) => (
                   <li key={`nav-item-${j}`}>
-                    <Link to={item.url} className={item.icon ? "icon-link" : ""}>
+                    <Link
+                      to={item.url}
+                      className={item.icon ? "icon-link" : ""}
+                    >
                       {item.icon ? <Image imageData={item.icon} /> : ""}
                       {item.label}
                     </Link>
@@ -33,8 +37,20 @@ const FooterTemplate = ({
             ))}
           </nav>
         </div>
-        <div className="copyright col-sm-12 col-lg-10">
-          {copyright}
+        <div className="copyright col-sm-6 col-lg-5">{copyright}</div>
+        <div className="built-by col-sm-6 col-lg-5">
+          <p>
+            Built by{" "}
+            <a href="https://thesis.co" className="thesis">
+              <ThesisLogo />
+            </a>
+          </p>
+          <p>
+            Powered by{" "}
+            <a href="https://threshold.network" className="threshold">
+              <ThresholdLogo />
+            </a>
+          </p>
         </div>
       </div>
     </div>
@@ -75,16 +91,17 @@ export const query = graphql`
 const Footer = ({ locale = "en" }) => (
   <StaticQuery
     query={query}
-    render={data => {
-      const match = data.allMarkdownRemark.edges
-        .find(e => e.node.fields.locale === locale)
+    render={(data) => {
+      const match = data.allMarkdownRemark.edges.find(
+        (e) => e.node.fields.locale === locale
+      )
       return <FooterTemplate {...match.node.frontmatter} locale={locale} />
     }}
   />
 )
 
 Footer.propTypes = {
-  locale: PropTypes.string
+  locale: PropTypes.string,
 }
 
 export default Footer

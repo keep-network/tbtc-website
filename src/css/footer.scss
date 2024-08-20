@@ -73,9 +73,45 @@ footer {
         }
     }
 
-    .copyright {
+    .copyright, .built-by {
         margin: calc(2 * var(--baseline-grid-height-2x)) 0 0;
         @extend %p2;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .built-by {
+      flex-direction: column;
+      align-items: flex-end;
+
+      a {
+        color: white;
+
+        &:after {
+          display: none;
+        }
+
+        > svg {
+          // Simulate an underline that shows up on hover.
+          border-bottom: 1px solid black;
+          padding-bottom: 3px;
+        }
+
+        &.thesis > svg {
+          height: 24px;
+          margin-bottom: -5px;
+        }
+
+        &.threshold > svg {
+          height: 19px;
+          margin-bottom: -5px;
+        }
+
+        &:hover > svg {
+          border-bottom-color: white;
+        }
+      }
     }
 
     @media (max-width: #{$bp-large}) {
@@ -119,8 +155,12 @@ footer {
             }
         }
 
-        .copyright {
+        .copyright, .built-by {
             margin: var(--baseline-grid-height-2x) 0 0;
+        }
+
+        .built-by {
+            align-items: flex-start;
         }
     }
 
