@@ -2,6 +2,7 @@
 template: news-item
 title: A tale of two bugs
 description: The FTX exploit attempted redemption of tBTC revealed two bugs.
+canonicalUrl: https://blog.threshold.network/a-tale-of-two-bugs/
 date: 2024-04-15T12:17:09.130Z
 ---
 As has been reported this week, an address associated with the FTX exploit has been moving funds through a number of cross-chain projects.

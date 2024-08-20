@@ -1,34 +1,42 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react"
+import PropTypes from "prop-types"
 
-import { graphql } from 'gatsby'
+import { graphql } from "gatsby"
 
-import { App } from '../components'
-import { Article } from '../components/lib'
-
+import { App } from "../components"
+import { Article } from "../components/lib"
+import { Helmet } from "react-helmet"
 
 export const NewsItemTemplate = ({ title, date, body }) => (
-  <Article
-    className="news-item"
-    title={title}
-    date={date}
-    body={body}
-  />
+  <Article className="news-item" title={title} date={date} body={body} />
 )
 
 const NewsItem = ({ data, pageContext }) => {
   const { markdownRemark: post } = data
 
-  return <App title={post.frontmatter.title}
-              description={post.frontmatter.description}
-              locale={pageContext.locale}>
-    <NewsItemTemplate
-      date={post.frontmatter.date}
-      description={post.frontmatter.description}
-      body={post.html}
+  console.log(post.frontmatter, post.frontmatter.canonicalUrl)
+
+  return (
+    <App
       title={post.frontmatter.title}
-    />
-  </App>
+      description={post.frontmatter.description}
+      locale={pageContext.locale}
+    >
+      {post.frontmatter.canonicalUrl ? (
+        <Helmet>
+          <link rel="canonical" href={post.frontmatter.canonicalUrl} />
+        </Helmet>
+      ) : (
+        <></>
+      )}
+      <NewsItemTemplate
+        date={post.frontmatter.date}
+        description={post.frontmatter.description}
+        body={post.html}
+        title={post.frontmatter.title}
+      />
+    </App>
+  )
 }
 
 NewsItem.propTypes = {
@@ -48,6 +56,7 @@ export const pageQuery = graphql`
         date(formatString: "YYYY-MM-DD")
         title
         description
+        canonicalUrl
       }
     }
   }
