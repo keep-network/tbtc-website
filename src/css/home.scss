@@ -8,7 +8,10 @@
             display: flex;
             padding: 0;
             align-items: center;
-            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+
+            flex-direction: row;
 
             li {
                 display: flex-item;
@@ -16,12 +19,17 @@
                 margin: var(--baseline-grid-height) 0;
             }
 
-            a:first-child {
-                @extend %black-button-link;
+            a {
+                @extend %button-link;
                 margin-top: 0;
                 max-width: 100%;
                 overflow: hidden;
                 text-overflow: ellipsis;
+            }
+
+            li:first-child a {
+                @extend %black-button-link;
+                margin-top: 0;
             }
 
             @media (min-width: #{$bp-small}) {
