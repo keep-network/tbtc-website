@@ -28,7 +28,7 @@ export const HomePageTemplate = ({
                 <ul className="quick-links">
                   {hero.buttons &&
                     hero.buttons.map((button, i) => (
-                      <li key={`hero-button-${i}`}>
+                      <li key={`hero-button-${i}`} className={button.type}>
                         <Link to={button.url}>{button.text}</Link>
                       </li>
                     ))}
