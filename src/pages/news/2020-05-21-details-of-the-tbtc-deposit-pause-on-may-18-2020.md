@@ -3,8 +3,6 @@ template: news-item
 title: 'Details of the tBTC Deposit Pause on May 18, 2020'
 description: 'Details of the tBTC Deposit Pause on May 18, 2020'
 date: 2020-05-21T17:02:51.487Z
-tags:
-  - featured
 ---
 On the morning UTC of May 18, 2020, [the 10-day emergency pause of deposits](https://etherscan.io/tx/0xc5c08e982cfdd9d11b01c32bcb16b1597aa792c0bdf0f65d0a21386dd1edc846#eventlog) allowed by the [tBTC System contract](http://etherscan.io/address/0x41A1b40c1280883eA14C6a71e23bb66b83B3fB59) was [triggered](https://etherscan.io/tx/0xc5c08e982cfdd9d11b01c32bcb16b1597aa792c0bdf0f65d0a21386dd1edc846#eventlog). The action was taken after a significant issue in the redemption flow of deposit contracts was found that put signer bonds at risk in certain situations.
 

@@ -3,8 +3,6 @@ template: news-item
 title: 'Werden Sie genehmigungsfreier tBTC Unterzeichner: Stake ETH, verdiene KEEP '
 description: 'Stake ETH, Earn KEEP / Stakedrop-Ankündigung'
 date: 2020-04-23T07:35:39.263Z
-tags:
-  - featured
 ---
 
 

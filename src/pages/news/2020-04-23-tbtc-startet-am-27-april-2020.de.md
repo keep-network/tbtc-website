@@ -3,8 +3,6 @@ template: news-item
 title: tBTC startet am 27. April 2020
 description: tBTC startet am 27. April 2020
 date: 2020-04-23T07:23:54.324Z
-tags:
-  - featured
 ---
 Das tBTC wird am 27. April 2020 auf dem Ethereum-Mainnet gestartet. Benutzer werden die volle Funktionalität haben, BTC zu hinterlegen, tBTC zu prägen und einzulösen und es in Ethereum DeFi-Apps zu verwenden.
 

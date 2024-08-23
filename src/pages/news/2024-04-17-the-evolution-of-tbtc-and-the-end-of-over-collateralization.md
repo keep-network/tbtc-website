@@ -6,9 +6,9 @@ description: >-
   is positioned to be one of the most significant contributors to continuing the
   growth of this sector thanks to L2s using tBTC as their foundation.
 date: 2024-04-17T11:09:46.661Z
+tags:
+  - featured
 ---
-## The history of tBTC
-
 [Billions of dollars](https://defillama.com/protocol/merlins-seal) in BTC is currently being activated thanks to Bitcoin L2s. The Bitcoin scaling narrative is only going to grow from here as funding continues to pour in, the L2s announce their official launches, and industry OGs continue to [validate the narrative](https://twitter.com/anuragarjun/status/1772721722745299352).
 
 Attempting to capture a share of this rapidly growing L2 market, various BTC bridge models are popping up. Yet, these protocols show that they are not forward-looking, using outdated overcollateralized models or making unrealistic claims of achieving trustlessness.

@@ -3,8 +3,6 @@ template: news-item
 title: tBTC Is Live
 description: tBTC is live
 date: 2020-09-22T13:27:02.333Z
-tags:
-  - ''
 ---
 tBTC, the open-source project that allows people to use Bitcoin safely in Ethereum DeFi apps, is live and ready to be used. A project of Keep, Summa and the Cross-Chain Group, tBTC lets people exchange BTC for tBTC, an ERC-20 token that can be used on DeFi platforms, at a rate of 1:1.
 

@@ -3,8 +3,6 @@ template: news-item
 title: 'Devenir un signataire tBTC : Stake ETH, earn KEEP'
 description: 'Stake ETH, earn KEEP / Annonce de Stakedrop'
 date: 2020-04-23T01:29:48.337Z
-tags:
-  - featured
 ---
 Le premier “stakedrop” Keep commencera le 8 juin. Nimporte qui possédant du ETH pourra gagner des jetons KEEP en devenant by un signataire tBTC.
 

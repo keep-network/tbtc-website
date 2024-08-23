@@ -3,8 +3,6 @@ template: news-item
 title: tBTC Custody Support Now Live on Gemini
 description: tBTC Custody Support Now Live on Gemini
 date: 2020-10-07T15:01:56.809Z
-tags:
-  - featured
 ---
 [Gemini](https://gemini.com/), the global cryptocurrency exchange and custodian, has added custody support for tBTC. An open-source project by [Keep](https://keep.network/), [Summa](https://summa.one/), and the [Cross-Chain Group](https://crosschain.group/), tBTC lets Bitcoin holders safely act on the Ethereum blockchain so they can earn using DeFi.
 

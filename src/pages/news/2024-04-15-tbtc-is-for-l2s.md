@@ -10,6 +10,8 @@ description: >-
   the most trustworthy bridges in the space.
 canonicalUrl: https://blog.threshold.network/tbtc-is-for-l2s/
 date: 2024-04-15T12:35:21.390Z
+tags:
+  - featured
 ---
 Bitcoin is having a moment.
 
