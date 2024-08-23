@@ -7332,7 +7332,7 @@ gatsby-plugin-sass@^2.0.7:
     "@babel/runtime" "^7.12.5"
     sass-loader "^7.3.1"
 
-gatsby-plugin-sharp@^5.13.7:
+gatsby-plugin-sharp@^5.14.0-next.2:
   version "5.14.0-next.2"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-5.14.0-next.2.tgz#b34386b7b4def149d25b9e9a7dd5b1902a67afc1"
   integrity sha512-JzGf942gLr/20o9dlN2M0D/jzYoqSVXu9YropSk/NTgZFac6wB9CJhGBzuN3R8+PoY+cpgNB0QYUQbFdUa/JoQ==
