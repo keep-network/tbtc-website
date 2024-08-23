@@ -8,6 +8,7 @@ description: >-
   peak](https://dune.com/threshold/tbtc?ref=blog.threshold.network), serving
   users on Solana, Arbitrum, Optimism, Polygon, and Ethereum—making it one of
   the most trustworthy bridges in the space.
+canonicalUrl: https://blog.threshold.network/tbtc-is-for-l2s/
 date: 2024-04-15T12:35:21.390Z
 ---
 Bitcoin is having a moment.
