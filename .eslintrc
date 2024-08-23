@@ -1,6 +1,5 @@
 {
     "extends": [
-        "plugin:react/recommended",
         "eslint-config-keep"
     ],
     "parser": "babel-eslint",
@@ -16,5 +15,9 @@
         "react": {
             "version": "detect"
         }
+    },
+    "scripts": {
+        "lint.js": "eslint .",
+        "lint:js:fix": "eslint --fix ."
     }
 }
