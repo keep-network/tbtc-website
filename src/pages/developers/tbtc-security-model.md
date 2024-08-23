@@ -96,17 +96,20 @@ federation, as bitcoin state is verified in the smart contract itself.
 
 ## Governance
 
-The first version of tBTC has been built without any ability to upgrade contracts, following a Bitcoin-inspired philosophy of immutability and opt-in governance. Any future versions of tBTC will be new systems, and require social coordination to “upgrade”, similar to how a hard fork might on Bitcoin.
+tBTC v2 has a variety of parameters that are governance-controlled, and these
+are outlined in the [tBTC developer
+README](https://github.com/keep-network/tbtc-v2/tree/main/docs#parameters).
+tBTC governance parameters are currently governed by the Threshold DAO, whose
+structure and operations are outlined in the [Threshold DAO
+documentation](https://docs.threshold.network/governance/dao). Governance
+parameters are generally future-facing: existing wallets are locked to the
+parameters that existed when the wallets were created, maintaining the forward
+security and predictability of existing deposits.
 
-Still, the development team maintains a privileged key with 4 distinct capabilities at launch. These capabilities only apply to new deposits, preventing the team from interfering with existing deposits or long-held funds.
-
-1. [Updating the signer fee rate](https://github.com/keep-network/tbtc/blob/19aa270197d84d64ef3a64bdcb09544abf6787b3/solidity/contracts/system/TBTCSystem.sol#L160). The privileged key can modify the fees signers charge for deposits going forward. The modification only impacts new deposits opened after a time delay. The maximum fee that can be set is 10% and the minimum 5bps (0.05%), preventing this ability from enabling an inadvertent kill-switch.
-2. [Supporting additional lot sizes](https://github.com/keep-network/tbtc/blob/19aa270197d84d64ef3a64bdcb09544abf6787b3/solidity/contracts/system/TBTCSystem.sol#L160). The privileged key can modify and add to the available lot sizes for new deposits. This modification only impacts new deposits opened after a time delay. The available lot sizes must always include at least a 1 BTC lot size, and lot sizes can’t be greater than 10 BTC or less than 0.0005 BTC (50,000 sats), preventing an inadvertent kill-switch.
-3. [Modifying collateralization thresholds](https://github.com/keep-network/tbtc/blob/19aa270197d84d64ef3a64bdcb09544abf6787b3/solidity/contracts/system/TBTCSystem.sol#L195). The privileged key can adjust the three collateralization thresholds enforced by the system. This modification only impacts new deposits opened after a time delay, preventing this call from forcing existing deposit liquidation. The lowest threshold is 100%, and the highest is 300%, preventing this call from acting as an inadvertent kill-switch.
-4. [Adding a fallback price feed](https://github.com/keep-network/tbtc/blob/master/solidity/contracts/system/TBTCSystem.sol#L404). The privileged key can append new price feed contract addresses to the list of queried feeds. Because feeds are queried in the order they were added, and the first feed that reports without an error is used, this privilege can only be used to influence the reported price if the existing price feed has failed and stops reporting. This modification cannot disable the primary price feed without price feed operator collusion, and is only valid after a time delay.
-4. [Pausing new deposits](https://github.com/keep-network/tbtc/blob/19aa270197d84d64ef3a64bdcb09544abf6787b3/solidity/contracts/system/TBTCSystem.sol#L129). The privileged key can pause new deposits for 10 days, once, without a time delay. After this ability is involved, it cannot be used again. This approach was preferred to a kill-switch or other control mechanism, giving developers a chance to notify users in case of a 0-day exploit, allowing users to withdraw their deposits from the peg in the case of a catastrophic failure. As with all other privileged key capabilities, this  does not affect open deposits, which can continue to be redeemed or used as normal.
-
-While tBTC’s governance has been designed to be restrictive and resilient in the face of malicious developers or a stolen key, as with any project making claims to censorship-resistance, the ongoing role of the development team and all code deserve heavy scrutiny by users and outside parties.
+One of the key parameters set by the DAO are the fees for bridging in (minting)
+and bridging back to Bitcoin (redemption). The latest information on these fees
+and DAO actions related to them is on the [Threshold DAO tBTC fees
+page](https://docs.threshold.network/applications/tbtc-v2/fees).
 
 ## Alternative security models (BTCB, RenBTC)
 
