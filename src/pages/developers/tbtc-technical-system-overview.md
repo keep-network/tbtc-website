@@ -1,12 +1,12 @@
 ---
 template: resource
 path: developers/tbtc-technical-system-overview
-title: tBTC Technical System Overview
+title: tBTC System Overview
 heading: tBTC Technical System Overview
 description: >-
   Learn about threshold signatures, wallet generation & signer selection,
   deposit sweeping, and optimistic minting.
-date: 2024-08-01T15:04:10.000Z
+date: 2024-08-18T15:04:10.000Z
 tags:
   - developers
 ---

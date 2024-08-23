@@ -5,7 +5,7 @@ heading: tBTC Security Model
 description: >-
   The following is an overview of tBTC’s security model and how it achieves a
   high level of security for users and signers.
-date: 2020-04-18T18:21:28.438Z
+date: 2024-08-01T18:21:28.438Z
 tags:
   - security
 ---
