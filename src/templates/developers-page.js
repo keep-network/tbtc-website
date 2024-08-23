@@ -66,8 +66,11 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      sort: {order: ASC, fields: [frontmatter___date]},
-      filter: {frontmatter: {template: {eq: "resource"}}, fields: {locale: {eq: $locale}}}
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: {
+        frontmatter: { template: { eq: "resource" }, tags: { ne: "unlisted" } }
+        fields: { locale: { eq: $locale } }
+      }
     ) {
       edges {
         node {
