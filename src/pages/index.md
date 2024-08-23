@@ -4,10 +4,13 @@ path: /
 title: Home
 hero:
   buttons:
-    - text: Start Minting
+    - text: Deposit BTC
       url: https://dapp.tbtc.network/
-  subtitle: Deposit and redeem BTC in DeFi without intermediaries.
-  title: The safe way to earn with your Bitcoin.
+    - text: Explore
+      url: https://tbtcscan.com/
+      type: secondary
+  title: Bitcoin, everywhere.
+  subtitle: Deposit and use BTC across DeFi without intermediaries.
   image:
     alt: Mint using the tBTC dApp
     image: /img/dapp.svg
@@ -39,7 +42,7 @@ spotlight_2:
     alt: Integrate tBTC icon
     image: /img/spotlight-2-bg.png
   label: For Developers
-  title: Integrate tBTC to add Bitcoin to your dApp
+  title: Build your app and chain on Bitcoin with tBTC
 integrations_section:
   title: Integrations
 ---
