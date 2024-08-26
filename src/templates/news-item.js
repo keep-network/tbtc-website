@@ -14,8 +14,6 @@ export const NewsItemTemplate = ({ title, date, body }) => (
 const NewsItem = ({ data, pageContext }) => {
   const { markdownRemark: post } = data
 
-  console.log(post.frontmatter, post.frontmatter.canonicalUrl)
-
   return (
     <App
       title={post.frontmatter.title}
