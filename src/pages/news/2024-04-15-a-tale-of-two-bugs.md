@@ -1,17 +1,26 @@
 ---
 template: news-item
-title: A tale of two bugs
-description: The FTX exploit attempted redemption of tBTC revealed two bugs.
+title: "A Tale of Two Bugs: Uncovering Vulnerabilities in tBTC Amid the FTX Exploit"
+description: Explore how the FTX exploit uncovered two critical bugs in tBTC, including a denial-of-service vector and a redemption mechanism design flaw, and the steps taken to address them.
 canonicalUrl: https://blog.threshold.network/a-tale-of-two-bugs/
 date: 2024-04-15T12:17:09.130Z
+tags:
+  - featured
+  - tBTC
+  - FTX exploit
+  - Bitcoin bridge
+  - DeFi security
 ---
+## Examining the Impact of Two Bugs Exposed by the FTX Exploit
+
+
 As has been reported this week, an address associated with the FTX exploit has been moving funds through a number of cross-chain projects.
 
 While most of the funds have [gone through Thorchain](https://www.theblock.co/post/255108/thorswap-dex-enters-maintenance-mode-amid-illicit-activity?ref=blog.threshold.network), some of them have been routed through tBTC. In the process, two bugs have been exposed.
 
 Neither bug puts user funds at risk. The first was patched and released yesterday, while the second requires community discussion and consensus.
 
-## The first bug — a denial-of-service vector
+### The First Bug: A Denial-of-Service Vector
 
 On Saturday, September 30th, an FTX-associated address [requested a redemption](https://etherscan.io/tx/0x0b3796cf79fe87d15dfe9bd038941adc9ccb693694c28bbacba12989d48f0c78?ref=blog.threshold.network) of 76.81431578 BTC.
 
@@ -23,7 +32,7 @@ After some time, this redemption request was approved by the redemptions maintai
 
 Shortly after, **something incredible happened**.
 
-An unknown third party [sent BTC transactions](https://mempool.space/tx/afbd1e38fd6cf282b1d42973d7c0b52705b9b311c08ea49e50ba9a6d4faff582?ref=blog.threshold.network)to two of the wallets behind tBTC.
+An unknown third party [sent BTC transactions](https://mempool.space/tx/afbd1e38fd6cf282b1d42973d7c0b52705b9b311c08ea49e50ba9a6d4faff582?ref=blog.threshold.network) to two of the wallets behind tBTC.
 
 Now, this happens all the time — tBTC is minted by depositing BTC, after all. But instead of a normal deposit transaction, these transactions were crafted manually in such a way that the tBTC signing clients thought the wallets were "busy" moving funds, and unable to service redemption requests. The approval maintainer waited for the wallets to no longer be "busy" — which never happened.
 
@@ -37,15 +46,15 @@ At this point, alerting and monitoring systems used by contributors across the D
 
 By then, we'd also come to understand that one of the blocked redemptions was associated with FTX.
 
-## The second bug — redemption mechanism design flaw
+### The Second Bug: A Redemption Mechanism Design Flaw
 
 The second bug became apparent as we prepared the first patch.
 
-The Threshold DAO can delegate to multiple approver addresses in the`WalletCoordinator`contract.
+The Threshold DAO can delegate to multiple approver addresses in the `WalletCoordinator` contract.
 
 Unfortunately, as of today, there has only been one delegation to a single maintainer address — a single point of failure. Today, that address is controlled by a US-owned company, disallowed from approving the FTX-associated redemption.
 
-### Fixing the mechanism design
+#### Fixing the Redemption Mechanism
 
 Only having a single delegated approver with $25M in TVL was an oversight. Still, the bigger issue is the mechanism design itself.
 
@@ -68,10 +77,10 @@ Finally, if and when the community judges the system secure without a redemption
 
 However this mechanism design flaw is resolved, we've learned a ton from this experience ­— and I'm glad we learned it this week rather than 10x from here.
 
-## What next?
+### Next Steps for the Threshold DAO and Community
 
 The DAO and community have decisions to make.
 
 Whether the community decides to add another approver address, upgrade the contracts to an "optimistic redemption"-style mechanism, or research and consider other options, as a dev team, we're here to advise, and help build a more robust, secure, and neutral future of finance, together.
 
-*T﻿his blog was originally posted under the [Threshold Network website](https://blog.threshold.network/a-tale-of-two-bugs/).*
+*This blog was originally posted under the [Threshold Network website](https://blog.threshold.network/a-tale-of-two-bugs/).*
