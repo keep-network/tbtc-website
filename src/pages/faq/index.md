@@ -32,7 +32,7 @@ questions:
       Shortly after launch, there should be  a group of roughly 80 private sale KEEP purchasers and a few other trusted parties signing for tBTC. Very soon an opportunity will be announced for more individuals to participate by staking ETH to become a signer.
   - question: Why is this better than other BTC on Ethereum projects?
     answer: >
-      Some people believe tBTC is better for several reasons.  Some projects have built synthetic price pegs, which is not a true bridge. Other projects are supply pegs, but have centralized parties adding friction to the minting and redemption process and therefore, are not censorship-resistant systems. Some new bridges are decentralized supply pegs, however, those security models are less safe. They rely on a ⅔ honesty assumption and use brand new “roll your own crypto” rather than peer-reviewed, widely deployed t-ECDSA cryptography).
+      Some people believe tBTC is better for several reasons.  Some projects have built synthetic price pegs, which is not a true bridge. Other projects are supply pegs, but have centralized parties adding friction to the minting and redemption process and therefore, are not censorship-resistant systems. Some new bridges are decentralized supply pegs, however, those security models are less safe. They rely on a ⅔ honesty assumption, use brand new “roll your own crypto” rather than peer-reviewed, widely deployed t-ECDSA cryptography), or use an outdated capital-inefficient approach that tBTC has already outgrown in v2 of the protocol.
   - question: Does tBTC ownership give you any governance rights?
     answer: >
       No.
