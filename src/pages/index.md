@@ -26,13 +26,13 @@ features:
     title: Simple
 spotlight_1:
   body: >-
-    tBTC, the open-source project that allows people to use Bitcoin safely in
-    Ethereum DeFi apps, is live and ready to be used.
+    tBTC, the open-source project that allows people to use Bitcoin in DeFi
+    apps, has been operating safely for 4 years and bridged over 11,000 BTC.
   button:
     text: Read more
-    url: 'https://tbtc.network/news/2020-09-22-tbtc-is-live/'
+    url: '/news/2024-08-26-4-years-of-tbtc/'
   label: Announcement
-  title: tBTC Is Live
+  title: 4 years of tBTC
 spotlight_2:
   align: left
   button:

@@ -12,4 +12,4 @@ Developers can build on tBTC. There are several resources to help devs use tBTC 
 - [The technical specification](http://docs.keep.network/tbtc/)
 - [The Solidity API documentation](http://docs.keep.network/tbtc/solidity/)
 
-Developers are already building on tBTC using the tools above. The hackathon at ETHDenver [produced several excellent applications](https://blog.keep.network/bitcoin-earn-wins-ethdenver-tbtc-hackathon-prize-5233ce805468) that may provide examples.
+Developers are already building on tBTC using the tools above.
