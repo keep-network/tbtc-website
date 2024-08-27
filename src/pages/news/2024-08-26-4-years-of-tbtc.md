@@ -79,19 +79,19 @@ Threshold DAO to [pay USD
 expenses](https://blog.threshold.network/borrowing-against-dao-treasury-assets-for-expenses-thresholds-move-to-thusd/).
 L2s from [BOB](https://www.gobob.xyz) to [Mezo](https://mezo.org) have been
 relying on tBTC to provide more use cases and possibilities to the world of
-Bitcoin. And finally, tBTC is being bridged from Ethereum to important chains
+Bitcoin. And finally, tBTC is being bridged from Ethereum to landmark chains
 like
 [Base](https://blog.threshold.network/navigating-the-future-of-defi-tbtc-launches-on-base/)
 and
 [Polygon](https://blog.threshold.network/unleashing-bitcoin-tbtc-launches-on-polygon-powered-by-wormhole/)
-and being minted natively on high-use chains like
+and being minted natively on high-throughput chains like
 [Solana](https://blog.threshold.network/tbtc-launches-on-solana/) and, soon,
 Arbitrum.
 
 ## 4 years is just the beginning
 
-tBTC is starting to appear everywhere, but it's also just getting started, both
-as a building block and as an infrastructure tool. tBTC promises to be
+tBTC is starting to appear everywhere, but it's also just getting started. Both
+as a building block and as an infrastructure tool, tBTC promises to be
 instrumental in building out the networks that are adding productive uses to
 Bitcoin, including underpinning a new wave of native experiences for
 Bitcoin-native users like [transparent access to Bitcoin
@@ -112,8 +112,10 @@ diverse and experienced set of operators and the most trusted decentralized
 bridge and token as the premier BitVM implementation will become a natural
 choice.
 
-Between these upgrades, L2 adoption, increased availability in blue chip DeFi
-protocols like Aave and GMX, new and more seamless integrations across existing
-and novel chains, and as-of-yet unexplored protocols built on top of the
-straightforward access to decentralized BTC collateral provided by tBTC, the
-coming years promise to be the most exciting yet.
+Between core technology upgrades, L2 adoption, increased availability in blue
+chip DeFi protocols like Aave and GMX, new and more seamless integrations
+across existing and novel chains, and as-of-yet unexplored protocols built on
+top of the straightforward access to decentralized BTC collateral provided by
+tBTC, the coming years promise to be the most exciting yet.
+
+Want to join in the fun? [Start building with tBTC now](/developers).
