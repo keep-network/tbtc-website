@@ -36,7 +36,7 @@ const DevelopersPage = ({ data, pageContext }) => {
   const { edges: resources } = data.allMarkdownRemark
 
   return (
-    <App title={post.frontmatter.title} locale={pageContext.locale}>
+    <App title={post.frontmatter.title} description={post.frontmatter.description} locale={pageContext.locale}>
       <DevelopersPageTemplate
         title={post.frontmatter.title}
         body={post.html}
@@ -63,6 +63,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        description
       }
     }
     allMarkdownRemark(
