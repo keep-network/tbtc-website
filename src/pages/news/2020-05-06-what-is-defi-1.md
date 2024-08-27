@@ -1,7 +1,7 @@
 ---
 template: news-item
 title: What Is DeFi?
-description: What Is DeFi?
+description: Decentralized finance -- or DeFi -- is a term for financial services delivered through decentralized technology, particularly blockchains.
 date: 2020-05-06T17:29:36.410Z
 ---
 Decentralized finance -- or DeFi -- is a term for financial services delivered through decentralized technology, particularly blockchains. Many in business and technology have identified middlemen such as banks and ratings agencies as weak points in financial systems. DeFi aims to eliminate the problem of middlemen by delivering financial services -- such as collateralized loans, dividends, and equity in various assets -- through decentralized smart contracts that are efficient, transparent, and widely accessible.

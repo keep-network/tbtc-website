@@ -1,7 +1,7 @@
 ---
 title: Announcing tbtc.js
 date: 2020-02-14
-description: lol
+description: tbtc.js makes it easy for developers to directly integrate Bitcoin into their dApps.
 template: news-item
 path: news/2020-02-14-announcing-tbtc-js
 ---

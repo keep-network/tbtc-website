@@ -1,7 +1,7 @@
 ---
 template: news-item
-title: '3-in-1: How tBTC is ERC-20, ERC-721, and Stablecoin'
-description: 'How tBTC is ERC-20 Token, ERC-721, and Stablecoin'
+title: '3-in-1: How tBTC is an ERC-20, ERC-721, and Stablecoin'
+description: 'Lean how tBTC allows people to act on the Ethereum blockchain using Bitcoin.'
 date: 2020-05-06T15:34:44.666Z
 ---
 tBTC allows people to act on the Ethereum blockchain using Bitcoin. tBTC is minted when a user provides proof of their BTC deposit, and it can be thought of as simultaneously three types of tokens: an ERC-20 token, an ERC-721 token, and a stablecoin.
