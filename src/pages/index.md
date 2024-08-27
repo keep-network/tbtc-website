@@ -2,6 +2,7 @@
 template: home-page
 path: /
 title: Home
+description: Mint tBTC to use your Bitcoin everywhere. Decentralized and secure.
 hero:
   buttons:
     - text: Deposit BTC
