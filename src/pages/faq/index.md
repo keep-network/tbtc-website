@@ -14,7 +14,7 @@ questions:
       This technology is new and it’s impossible to anticipate every situation where something could go wrong.  That being said, there are several situations the community has identified and taken careful measures to address. For more information, please look at the <a href="/developers/tbtc-security-model" target="_blank">tBTC Security Model</a> page.
   - question: Is there a tBTC widget I can use to directly hook tBTC minting and redeeming into my DeFi dapp?
     answer: >
-      Not yet. Integration work is required to build tBTC minting and redemption into a dApp. The [developer documentation](/developers) includes links to the tBTC SDK and SDK docs, enabling developers to build interfaces that match their products. To validate Bitcoin transactions, the best approach is to run an electrum server, which is very easy to spin up.
+      Not yet. Integration work is required to build tBTC minting and redemption into a dApp. The <a href="/developers" target="_blank">developer documentation</a> includes links to the tBTC SDK and SDK docs, enabling developers to build interfaces that match their products. To validate Bitcoin transactions, the best approach is to run an electrum server, which is very easy to spin up.
   - question: Has tBTC been audited?
     answer: >
         tBTC has undergone multiple audits (3 for v1, 3 and counting for v2), as have the underlying node clients, and tBTC is a part of the Threshold Network bug bounty program.
