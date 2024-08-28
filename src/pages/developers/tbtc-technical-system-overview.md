@@ -12,9 +12,10 @@ tags:
 ---
 
 tBTC v2 securely and quickly bridges Bitcoin to any other chain 24 hours a day,
-7 days a week, leveraging the [Threshold Network's](https://threshold.network)
-decentralized set of nodes for security, as well as select additional partners
-for faster operations.
+7 days a week, leveraging the security of the [Threshold
+Network's](https://threshold.network) decentralized set of nodes and their
+staked [T tokens](https://docs.threshold.network/resources/t-token), as well as
+select additional partners for accelerated operations.
 
 This piece explains the four core pillars of tBTC's design: threshold
 signatures, walet generation & signer selection, deposit sweeping, and
@@ -46,11 +47,13 @@ _Deeper details are available [in the Threshold documentation](https://docs.thre
 tBTC v2 generates Bitcoin wallets that are backed by a governable number of
 signers (100 per wallet) from the Threshold Network's node pool. Signers are
 selected randomly from the available nodes in the Threshold Network, with
-probability weighted by their staked T. One node may have multiple signers in a
-given wallet, and tBTC relies on an honest majority assumption and
-probabilistic security to ensure the security of each wallet (see the [tBTC
-security model](/developers/tbtc-security-model) docs for more). Staked T
-on the Threshold Network is the economic value used to secure the system.
+probability weighted by how much of the [Threshold T
+token](https://docs.threshold.network/resources/t-token) each node has staked
+(with a 40,000 T minimum). One node may have multiple signers in a given
+wallet, and tBTC relies on an honest majority assumption and probabilistic
+security to ensure the security of each wallet (see the [tBTC security
+model](/developers/tbtc-security-model) docs for more). Staked T on the
+Threshold Network is the economic value used to secure the system.
 
 A new wallet is generated at a governable interval (every 2 weeks as of this
 writing), and new deposits are directed to the new wallet once it is set up.
