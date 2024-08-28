@@ -11,15 +11,13 @@ tags:
   - Bitcoin bridge
   - DeFi security
 ---
-## The Impact of Two Bugs Exposed by the FTX Exploit
-
 As has been reported this week, an address associated with the FTX exploit has been moving funds through a number of cross-chain projects.
 
 While most of the funds have [gone through Thorchain](https://www.theblock.co/post/255108/thorswap-dex-enters-maintenance-mode-amid-illicit-activity?ref=blog.threshold.network), some of them have been routed through tBTC. In the process, two bugs have been exposed.
 
 Neither bug puts user funds at risk. The first was patched and released yesterday, while the second requires community discussion and consensus.
 
-## The First Bug: A Denial-of-Service Vector
+## The first bug — a denial-of-service vector
 
 On Saturday, September 30th, an FTX-associated address [requested a redemption](https://etherscan.io/tx/0x0b3796cf79fe87d15dfe9bd038941adc9ccb693694c28bbacba12989d48f0c78?ref=blog.threshold.network) of 76.81431578 BTC.
 
@@ -45,7 +43,7 @@ At this point, alerting and monitoring systems used by contributors across the D
 
 By then, we'd also come to understand that one of the blocked redemptions was associated with FTX.
 
-## The Second Bug: A Redemption Mechanism Design Flaw
+## The second bug — redemption mechanism design flaw
 
 The second bug became apparent as we prepared the first patch.
 
@@ -53,7 +51,7 @@ The Threshold DAO can delegate to multiple approver addresses in the `WalletCoor
 
 Unfortunately, as of today, there has only been one delegation to a single maintainer address — a single point of failure. Today, that address is controlled by a US-owned company, disallowed from approving the FTX-associated redemption.
 
-### Fixing the Redemption Mechanism
+### Fixing the mechanism design
 
 Only having a single delegated approver with $25M in TVL was an oversight. Still, the bigger issue is the mechanism design itself.
 
@@ -76,7 +74,7 @@ Finally, if and when the community judges the system secure without a redemption
 
 However this mechanism design flaw is resolved, we've learned a ton from this experience ­— and I'm glad we learned it this week rather than 10x from here.
 
-## Next Steps for the Threshold DAO and Community
+## What next?
 
 The DAO and community have decisions to make.
 
