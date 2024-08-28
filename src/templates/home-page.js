@@ -98,7 +98,7 @@ export const HomePageTemplate = ({
                   >
                     <div className="date">{node.frontmatter.date}</div>
                     <h2>{node.frontmatter.title}</h2>
-                    <p>{node.frontmatter.description}</p>
+                    <p>{node.frontmatter.description || node.excerpt}</p>
                     <Link
                       locale={node.fields.locale}
                       to={`${node.fields.slug}`}
