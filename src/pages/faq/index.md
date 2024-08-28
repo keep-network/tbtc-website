@@ -29,7 +29,16 @@ questions:
       tBTC’s signer sets use threshold ECDSA as a Bitcoin multisig replacement. For every deposit, a new signer set is pulled together (selected by the random beacon), and they generate a Bitcoin PKH address for the depositor, which is marked on the Ethereum chain.
   - question: Who are the signers? Can anyone become a signer?
     answer: >
-      Shortly after launch, there should be  a group of roughly 80 private sale KEEP purchasers and a few other trusted parties signing for tBTC. Very soon an opportunity will be announced for more individuals to participate by staking ETH to become a signer.
+      Anyone who holds at least 40,000 <a
+      href="https://docs.threshold.network/resources/t-token">T tokens</a> can
+      stake them
+      and authorize the tBTC Threshold application to become a signer for tBTC.
+      Currently, the Threshold Council manages authorizing new operators to
+      participate in tBTC protocol operations to ensure system performance
+      while adjustments are made to allow operations by anyone who can run a
+      node. More details about staking T tokens and the Threshold Network are
+      available <a href="https://docs.threshold.network">in the Threshold
+      Network documentation</a>.
   - question: Why is this better than other BTC on Ethereum projects?
     answer: >
       Some people believe tBTC is better for several reasons.  Some projects have built synthetic price pegs, which is not a true bridge. Other projects are supply pegs, but have centralized parties adding friction to the minting and redemption process and therefore, are not censorship-resistant systems. Some new bridges are decentralized supply pegs, however, those security models are less safe. They rely on a ⅔ honesty assumption, use brand new “roll your own crypto” rather than peer-reviewed, widely deployed t-ECDSA cryptography), or use an outdated capital-inefficient approach that tBTC has already outgrown in v2 of the protocol.
