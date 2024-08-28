@@ -69,9 +69,9 @@ DAO](https://blog.threshold.network/decentralized-merger/). In early 2022, the
 first decentralized merger was completed to create the Threshold Network,
 whose nodes now operate the systems that back tBTC bridging. In the intervening
 time, Threshold has become a full-fledged DAO with an associated legal entity,
-various guilds responsible for driving its priorities and products forward, bug
-bounty programs associated with tBTC and other protocols backed by the network,
-and more.
+various guilds responsible for driving its priorities and products forward, [bug
+bounty programs](https://immunefi.com/bounty/thresholdnetwork/) associated with
+tBTC and other protocols backed by the network, and more.
 
 More recently, Threshold launched [thUSD](https://www.thresholdusd.org/en/), a
 stablecoin backed by Bitcoin based on tBTC, which is now being used by the
