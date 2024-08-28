@@ -1,6 +1,6 @@
 ---
 template: news-item
-title: "tBTC is for L2s: The Trust-Minimized Bitcoin Bridge for Layer 2 Scaling"
+title: "tBTC is for L2s: A Bitcoin Bridge Built for Scaling"
 description: >-
   tBTC is a semi-permissioned Bitcoin bridge that has been in production for nearly four years, and continues to evolve towards full trust-minimization for users on Solana, Arbitrum, Optimism, Polygon, and Ethereum.
 canonicalUrl: https://blog.threshold.network/tbtc-is-for-l2s/
@@ -26,7 +26,7 @@ Alongside the surge of interest in Bitcoin, decentralized finance (DeFi) markets
 
 So, how can BTC take its rightful place in the L2 DeFi ecosystem, and how did we arrive to this new paradigm of ‘Building on Bitcoin’?
 
-### A Quick History of Bitcoin L2s
+## A Quick History of Bitcoin L2s
 
 For years, the Lightning network—a channel-based payment network that later inspired Plasma and optimistic roll-ups—was called “the only Bitcoin L2”.
 
@@ -42,7 +42,7 @@ That upgrade, nearly 3 years ago, seemed innocuous to many outside a small group
 
 Ordinals, the controversial satoshi-hunting NFT meta-protocol on Bitcoin, and BitVM, a new way to run publicly verifiable programs on Bitcoin, are both built on Taproot—and have both spurred new developer interest across the network. With this renewed developer interest and improved programmability on Bitcoin, small communities began to wonder: can we improve the current landscape of Bitcoin L2s?
 
-### What Defines a Bitcoin L2?
+## What Defines a Bitcoin L2?
 
 Even as they continue cropping up, the use of the term “L2” at all is controversial . On other networks like Ethereum, the definition of an L2 has been debated for years.
 
@@ -60,7 +60,7 @@ Alexei at [BOB](https://twitter.com/build_on_bob) puts it quite well:
 
 To call a network a Bitcoin L2, it needs to somehow share the security of the Bitcoin network, and it needs to use BTC as an asset.
 
-### tBTC: Primed for the Bitcoin Renaissance
+## tBTC: Primed for the Bitcoin Renaissance
 
 Whether you’re hacking on Lightning, DLCs, BRC-20s, or a new Bitcoin-based network, it’s clear that we’re in a Bitcoin Renaissance—a term coined by Elizabeth Stark at Lightning Labs, and now being spun into a [full-blown conference](https://bitcoin-renaissance.com/) later this month.
 
@@ -68,7 +68,7 @@ Of course, my favorite indicator is the number of teams who have reached out abo
 
 Rather than backing bitcoin against a 1:1 reserve of an additional collateral token, tBTC directly taps into the power of BTC to bridge it to other networks via smart contracts and a randomly selected group of signers. [Those who stake T](https://docs.threshold.network/staking-and-running-a-node/tbtc-beta-stakers-program?ref=blog.threshold.network), the native Threshold token, act as signers in the network.
 
-### The Evolution of tBTC: From Semi-Permissioned to Fully Trust-Minimized
+## The Evolution of tBTC: From Semi-Permissioned to Fully Trust-Minimized
 
 Today’s tBTC is a robust, semi-permissioned Bitcoin bridge, iterating toward full trust-minimization. tBTC has been in production for nearly 3.5 years without major incident with over [2,500 BTC bridged at its peak](https://dune.com/threshold/tbtc?ref=blog.threshold.network), serving users on Solana, Arbitrum, Optimism, Polygon, and Ethereum—making it one of the most trustworthy bridges in the space.
 
@@ -78,7 +78,7 @@ While L2 proponents will debate over different models and definitions, one thing
 
 To avoid reinventing the wheel, new L2 founders can opt to use tBTC as their Bitcoin bridge. tBTC can seriously speed up development for new Bitcoin L2s by solving one of their two major issues—**a secure, production-ready, and well-audited Bitcoin bridge**.
 
-### Our Principles: Security, Neutrality, and Economic Alignment
+## Our Principles: Security, Neutrality, and Economic Alignment
 
 For the Threshold DAO and tBTC developers, this influx of L2 interest has been a welcome challenge. How might we best support these teams? How should we treat developers outside the Threshold ecosystem?
 
@@ -90,7 +90,7 @@ I’d like to propose a few principles that we follow as a community.
 
 **Economic alignment—**Today, the Threshold DAO subsidizes the security monitoring and staking rewards powering the tBTC bridge. We are an established project, but we don’t have unlimited resources. If we’re made to pick between helping different projects build on tBTC, we should prefer those with economic models that make the tBTC bridge stronger and more sustainable.
 
-### tBTC SDK: Enabling Seamless Bitcoin Integration for L2s
+## tBTC SDK: Enabling Seamless Bitcoin Integration for L2s
 
 With developers in mind, we launched the [tBTC SDK](https://docs.threshold.network/app-development/tbtc-v2/tbtc-sdk/?ref=blog.threshold.network). The SDK can be used to enable seamless Bitcoin L1 deposits across dApps, wallets, and new L2s.
 
@@ -98,7 +98,7 @@ A live, running example of this at play is present in our [Threshold Dashboard](
 
 As we publish more docs and example code, and more projects build on the SDK, documentation and cross-chain liquidity will continue to grow.
 
-### Join the Bitcoin Renaissance with tBTC
+## Join the Bitcoin Renaissance with tBTC
 
 If you’re working on a Bitcoin L2 and looking for a robust bridge that’s stood the test of time, we’d love to help!
 
