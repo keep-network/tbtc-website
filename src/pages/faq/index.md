@@ -17,7 +17,7 @@ questions:
       Not yet. Integration work is required to build tBTC minting and redemption into a dApp. The <a href="/developers" target="_blank">developer documentation</a> includes links to the tBTC SDK and SDK docs, enabling developers to build interfaces that match their products. To validate Bitcoin transactions, the best approach is to run an electrum server, which is very easy to spin up.
   - question: Has tBTC been audited?
     answer: >
-        tBTC has undergone multiple audits (3 for v1, 3 and counting for v2), as have the underlying node clients, and tBTC is a part of the Threshold Network bug bounty program. You can view v2 audits on <a href="https://github.com/threshold-network/security-audits">this page</a>.
+        tBTC has undergone multiple audits (3 for v1, 3 and counting for v2), as have the underlying node clients, and tBTC is a part of the Threshold Network bug bounty program. You can view v2 audits on <a href="https://github.com/threshold-network/security-audits">this page</a>. Additionally, Threshold has a bug bounty program <a href="https://immunefi.com/bounty/thresholdnetwork/">on Immunefi</a> for ongoing security work.
   - question: Does Signing for tBTC make you a MSB?
     answer: >
       Each user should undertake their own analysis as to whether there are any legal restrictions in their jurisdiction that would either prevent them from using tBTC or require the user to register with certain government entities.
