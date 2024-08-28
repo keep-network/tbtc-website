@@ -1,9 +1,15 @@
 ---
 template: news-item
-title: A tale of two bugs
-description: The FTX exploit attempted redemption of tBTC revealed two bugs.
+title: "A Tale of Two Bugs: tBTC and the FTX Exploit"
+description: Explore how the FTX exploit uncovered two critical bugs in tBTC, including a denial-of-service vector and a redemption mechanism design flaw, and the steps taken to address them.
 canonicalUrl: https://blog.threshold.network/a-tale-of-two-bugs/
 date: 2024-04-15T12:17:09.130Z
+tags:
+  - featured
+  - tBTC
+  - FTX exploit
+  - Bitcoin bridge
+  - DeFi security
 ---
 As has been reported this week, an address associated with the FTX exploit has been moving funds through a number of cross-chain projects.
 
@@ -23,7 +29,7 @@ After some time, this redemption request was approved by the redemptions maintai
 
 Shortly after, **something incredible happened**.
 
-An unknown third party [sent BTC transactions](https://mempool.space/tx/afbd1e38fd6cf282b1d42973d7c0b52705b9b311c08ea49e50ba9a6d4faff582?ref=blog.threshold.network)to two of the wallets behind tBTC.
+An unknown third party [sent BTC transactions](https://mempool.space/tx/afbd1e38fd6cf282b1d42973d7c0b52705b9b311c08ea49e50ba9a6d4faff582?ref=blog.threshold.network) to two of the wallets behind tBTC.
 
 Now, this happens all the time — tBTC is minted by depositing BTC, after all. But instead of a normal deposit transaction, these transactions were crafted manually in such a way that the tBTC signing clients thought the wallets were "busy" moving funds, and unable to service redemption requests. The approval maintainer waited for the wallets to no longer be "busy" — which never happened.
 
@@ -41,7 +47,7 @@ By then, we'd also come to understand that one of the blocked redemptions was as
 
 The second bug became apparent as we prepared the first patch.
 
-The Threshold DAO can delegate to multiple approver addresses in the`WalletCoordinator`contract.
+The Threshold DAO can delegate to multiple approver addresses in the `WalletCoordinator` contract.
 
 Unfortunately, as of today, there has only been one delegation to a single maintainer address — a single point of failure. Today, that address is controlled by a US-owned company, disallowed from approving the FTX-associated redemption.
 
@@ -74,4 +80,4 @@ The DAO and community have decisions to make.
 
 Whether the community decides to add another approver address, upgrade the contracts to an "optimistic redemption"-style mechanism, or research and consider other options, as a dev team, we're here to advise, and help build a more robust, secure, and neutral future of finance, together.
 
-*T﻿his blog was originally posted under the [Threshold Network website](https://blog.threshold.network/a-tale-of-two-bugs/).*
+*This blog was originally posted under the [Threshold Network website](https://blog.threshold.network/a-tale-of-two-bugs/).*

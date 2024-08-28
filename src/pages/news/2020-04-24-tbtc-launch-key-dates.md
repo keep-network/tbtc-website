@@ -1,7 +1,7 @@
 ---
 template: news-item
 title: 'tBTC Launch: Key Dates'
-description: tBTC launch week key dates rollout plan
+description: Find out the key dates for tBTC launch week
 date: 2020-04-24T14:18:16.145Z
 ---
 tBTC will begin moving toward full mainnet launch over the coming weeks. Launch will occur over a series of milestones starting April 24th.

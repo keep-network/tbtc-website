@@ -98,7 +98,7 @@ export const HomePageTemplate = ({
                   >
                     <div className="date">{node.frontmatter.date}</div>
                     <h2>{node.frontmatter.title}</h2>
-                    <p>{node.excerpt}</p>
+                    <p>{node.frontmatter.description || node.excerpt}</p>
                     <Link
                       locale={node.fields.locale}
                       to={`${node.fields.slug}`}
@@ -195,6 +195,7 @@ const NodeType = PropTypes.shape({
     frontmatter: PropTypes.shape({
       date: PropTypes.string,
       title: PropTypes.string,
+      description: PropTypes.string,
     }),
     fields: PropTypes.shape({
       locale: PropTypes.string,
@@ -331,6 +332,7 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "YYYY-MM-DD")
+            description
           }
         }
       }

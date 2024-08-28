@@ -1,7 +1,7 @@
 ---
 template: news-item
 title: How to Use Metamask
-description: How to Use Metamask
+description: Learn more about a critical tool to help you hold, transfer, and deposit Ethereum’s ERC-20 tokens, including tBTC.
 date: 2020-08-03T14:49:45.894Z
 ---
 tBTC lets Bitcoin holders access DeFi applications built on Ethereum. At launch, this will require BTC holders who may have limited experience with Ethereum to use tools that are unfamiliar to them.[ Metamask](https://metamask.io/) is one such tool.

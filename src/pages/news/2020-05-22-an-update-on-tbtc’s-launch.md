@@ -1,7 +1,7 @@
 ---
 template: news-item
 title: An Update on tBTC’s Launch
-description: An Update on tBTC’s Launch
+description: Find out more on tBTC's 10-day pause of deposits.
 date: 2020-05-22T18:19:06.656Z
 ---
 On Friday, May 15, the alpha version of tBTC -- release candidate zero (rc.0) -- went live. On the morning of May 18, [the 10-day emergency pause of deposits](https://etherscan.io/tx/0xc5c08e982cfdd9d11b01c32bcb16b1597aa792c0bdf0f65d0a21386dd1edc846#eventlog) allowed by the [tBTCSystem contract](http://etherscan.io/address/0x41A1b40c1280883eA14C6a71e23bb66b83B3fB59) was triggered. This occurred after a significant issue in the redemption flow of deposit contracts was identified that put signer bonds at risk in certain situations.

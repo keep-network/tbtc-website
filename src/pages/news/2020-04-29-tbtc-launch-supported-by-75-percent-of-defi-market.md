@@ -3,8 +3,6 @@ template: news-item
 title: tBTC Launch Supported by 75 Percent of DeFi Market
 description: tBTC Launch Supported by 75 Percent of DeFi Market
 date: 2020-04-29T15:18:31.976Z
-tags:
-  - featured
 ---
 The launch of [tBTC](https://tbtc.network/), the open-source project that allows people to use Bitcoin safely in Ethereum DeFi apps, began this week with the support of more than 40 companies including MakerDAO, Compound and Uniswap, which collectively represent [three quarters](https://defipulse.com/) of the total DeFi market.
 
