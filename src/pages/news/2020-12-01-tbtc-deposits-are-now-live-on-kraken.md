@@ -1,7 +1,7 @@
 ---
 template: news-item
 title: tBTC Deposits Are Now Live on Kraken
-description: "Users can now deposit tBTC one of the largest cryptocurrency exchanges: Kraken, Kraken Pro, and OTC."
+description: "Users can now deposit tBTC on one of the largest cryptocurrency exchanges: Kraken, Kraken Pro, and OTC."
 date: 2020-12-01T20:05:25.351Z
 ---
 tBTC can now be deposited on [Kraken](https://blog.kraken.com/about/), one of the largest cryptocurrency exchanges. Users can deposit tBTC on Kraken, Kraken Pro, and OTC.
