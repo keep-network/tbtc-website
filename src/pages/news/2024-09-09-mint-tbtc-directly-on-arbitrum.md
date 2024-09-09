@@ -1,0 +1,40 @@
+---
+template: news-item
+title: "Mint tBTC Directly On Arbitrum"
+description: >-
+  "Announcing the launch of the native Arbitrum minting portal. Bring your tBTC to Arbitrum's low-cost DeFi ecosystem without an Ethereum L1 transaction."
+
+date: 2024-09-09T11:09:46.661Z
+tags:
+  - featured
+  - tBTC
+  - Bitcoin
+  - Ethereum
+  - DeFi
+  - Layer 2
+---
+Starting today, you can [mint tBTC on Arbitrum directly](https://arbitrum.threshold.network/home) with the new native minting portal.
+
+This launch from Threshold DAO gives tBTC users seamless access to the leading Ethereum L2. Now, Bitcoin holders can access Arbitrum's $2.5B DeFi ecosystem to earn yield, borrow against their BTC, or trade perps.
+
+![](static/img/native minting dashboard.png "Arbitrum Native Minting Portal")
+
+The minting portal should also improve the trading experience by bringing improved liquidity to the Arbitrum ecosystem for tBTC users.
+
+The launch includes a tBTC Native Minting Dapp built for Arbitrum users, a powerful off-chain relayer, a tBTC SDK extension for Arbitrum ecosystem builders, and a long-term tBTC on Arbitrum rewards program. More info can be found at the [Threshold Blog](https://blog.threshold.network/), and you can check out the [tBTC SDK documentation](https://docs.threshold.network/app-development/tbtc-v2/tbtc-sdk) for more information on how to start building.
+
+tBTC offers users a trust-minimized way to bring their Bitcoin holdings into the EVM and Solana ecosystems, effectively giving their Bitcoin wheels and making it a productive asset.
+
+The total count of tBTC holders has jumped significantly in recent months, signaling that the market is further embracing decentralized alternatives in the tokenized Bitcoin market.
+
+![](static/img/dune dashboard.png "tBTC Holders & Supply")
+
+Outstanding supply currently stands at [~3,400 tBTC](https://dune.com/threshold/tbtc), with a majority on Ethereum L1. Now, users can enjoy all the same benefits that tBTC offers directly on Arbitrum.
+
+The Threshold DAO also put together some incentive buckets thanks to the Arbitrum grants program:
+
+-   200k ARB for ongoing liquidity pool incentives
+-   20k ARB for tBTC lending protocol incentives
+-   50k ARB for long-term tBTC on Arbitrum holders
+
+Check out more info from [Threshold](https://threshold.network/) and start minting your tBTC on Arbitrum today.
