@@ -17,7 +17,7 @@ Starting today, you can [mint tBTC on Arbitrum directly](https://arbitrum.thresh
 
 This launch from Threshold DAO gives tBTC users seamless access to the leading Ethereum L2. Now, Bitcoin holders can access Arbitrum's $2.5B DeFi ecosystem to earn yield, borrow against their BTC, or trade perps.
 
-![](static/img/native minting dashboard.png "Arbitrum Native Minting Portal")
+![](/img/native-minting-dashboard.png "Arbitrum Native Minting Portal")
 
 The minting portal should also improve the trading experience by bringing improved liquidity to the Arbitrum ecosystem for tBTC users.
 
@@ -27,7 +27,7 @@ tBTC offers users a trust-minimized way to bring their Bitcoin holdings into the
 
 The total count of tBTC holders has jumped significantly in recent months, signaling that the market is further embracing decentralized alternatives in the tokenized Bitcoin market.
 
-![](static/img/dune dashboard.png "tBTC Holders & Supply")
+![](/img/dune-dashboard.png "tBTC Holders & Supply")
 
 Outstanding supply currently stands at [~3,400 tBTC](https://dune.com/threshold/tbtc), with a majority on Ethereum L1. Now, users can enjoy all the same benefits that tBTC offers directly on Arbitrum.
 
