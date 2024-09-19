@@ -7,7 +7,7 @@ description: Announcing the launch of the native Arbitrum minting portal. Bring
 canonicalUrl: tbtc-on-arbitrum
 date: 2024-09-09T15:27:26.860Z
 ---
-Starting today, you can mint tBTC on Arbitrum directly with the new native minting portal.
+Starting today, you can mint tBTC on Arbitrum directly with the new [native minting portal](https://arbitrum.threshold.network/home?ref=blog.threshold.network).
 
 This launch from Threshold DAO gives tBTC users seamless access to the leading Ethereum L2. Now, Bitcoin holders can access Arbitrum’s $2.5B DeFi ecosystem to earn yield, borrow against their BTC, or trade perps.
 
@@ -31,4 +31,4 @@ The Threshold DAO also put together some incentive buckets thanks to the Arbitru
 * 20k ARB for tBTC lending protocol incentives
 * 50k ARB for long-term tBTC on Arbitrum holders
 
-Check out more info from [Threshold](https://threshold.network/) and get started with minting your tBTC on Arbitrum today.
+Check out more info from [Threshold's blog](https://blog.threshold.network/tbtc-native-minting-on-arbitrum/) and get started with minting your [tBTC on Arbitrum](https://arbitrum.threshold.network/home?ref=blog.threshold.network) today.
