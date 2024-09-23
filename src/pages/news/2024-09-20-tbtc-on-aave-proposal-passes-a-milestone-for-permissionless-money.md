@@ -7,9 +7,7 @@ description: Aave’s liquidity pools are some of the most liquid and widely use
 canonicalUrl: tbtc-on-aave
 date: 2024-09-20T22:50:11.662Z
 ---
-We proudly announce that the [proposal](https://vote.onaave.com/proposal/?proposalId=168&ipfsHash=0xc6a9b3c0acd8996082cfea92cb8b8bd150f68425ad355909539311f710b8c40f) to onboard Threshold Network's tBTC to Aave v3 has been approved with **512.19K** votes in favor, exceeding the required **320.00K** votes and facing 0 votes against. 
-
-![tBTC on Aave](/img/tbtc.png "tBTC on Aave")
+We proudly announce that the [proposal](https://vote.onaave.com/proposal/?proposalId=168&ipfsHash=0xc6a9b3c0acd8996082cfea92cb8b8bd150f68425ad355909539311f710b8c40f) to onboard Threshold Network's tBTC to Aave v3 has been approved with **755.14K** votes in favor, exceeding the required **320.00K** votes and facing 0 votes against. 
 
 Aave, one of the largest and most trusted money markets in the Ethereum ecosystem, has long been a cornerstone of DeFi. Aave’s liquidity pools are some of the most liquid and widely used in the entire DeFi space, meaning that tBTC holders will now have access to an array of lending and borrowing opportunities previously unavailable. The ability to earn yield on Bitcoin while keeping the principles of decentralization intact is a significant win. 
 
@@ -29,10 +27,10 @@ The timing couldn't be better. As more institutional investors and DeFi particip
 \
 Links
 
-👾 Discord: <https://discord.com/invite/threshold>
+👾 Discord: <https://discord.threshold.network/>
 
-🕊 X: [](https://twitter.com/MezoNetwork?ref=blog.mezo.org) <https://x.com/TheTNetwork> 
+🕊 X: <https://x.com/TheTNetwork> 
 
-🏦 tBTC Mint Portal: [](https://mezo.org/hodl-with/curve) https://dashboard.threshold.network/tBTC/mint
+🏦 tBTC Mint Portal: https://dashboard.threshold.network/tBTC/mint
 
-ℹ️ Docs: [](https://info.mezo.org/?ref=blog.mezo.org) <https://docs.threshold.network/>
+ℹ️ Docs: <https://docs.threshold.network/>
