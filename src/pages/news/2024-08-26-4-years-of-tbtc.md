@@ -77,16 +77,12 @@ More recently, Threshold launched [thUSD](https://www.thresholdusd.org/en/), a
 stablecoin backed by Bitcoin based on tBTC, which is now being used by the
 Threshold DAO to [pay USD
 expenses](https://blog.threshold.network/borrowing-against-dao-treasury-assets-for-expenses-thresholds-move-to-thusd/).
-L2s from [BOB](https://www.gobob.xyz) to [Mezo](https://mezo.org) have been
+L2s such as [BOB](https://www.gobob.xyz) and [Mezo](https://mezo.org) have been
 relying on tBTC to provide more use cases and possibilities to the world of
-Bitcoin. And finally, tBTC is being bridged from Ethereum to landmark chains
-like
-[Base](https://blog.threshold.network/navigating-the-future-of-defi-tbtc-launches-on-base/)
-and
-[Polygon](https://blog.threshold.network/unleashing-bitcoin-tbtc-launches-on-polygon-powered-by-wormhole/)
-and being minted natively on high-throughput chains like
-[Solana](https://blog.threshold.network/tbtc-launches-on-solana/) and, soon,
-Arbitrum.
+Bitcoin. Mezo is the Bitcoin Bank offering [fixed rate Bitcoin loans](https://mezo.org/feature/borrow) so users can earn, spend, and use their BTC without having to sell.
+
+And finally, tBTC is being bridged from Ethereum to landmark chains like
+[Base](https://blog.threshold.network/navigating-the-future-of-defi-tbtc-launches-on-base/) and [Polygon](https://blog.threshold.network/unleashing-bitcoin-tbtc-launches-on-polygon-powered-by-wormhole/) and being minted natively on high-throughput chains like [Solana](https://blog.threshold.network/tbtc-launches-on-solana/) and, soon, Arbitrum.
 
 ## 4 years is just the beginning
 
