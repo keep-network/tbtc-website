@@ -4,7 +4,7 @@ title: How tBTC Lets People Use Bitcoin on Compound
 description: One of the first things people will be able to do with their tBTC is an integration with Compound, an Ethereum-based algorithmic money market protocol that lets users earn interest or borrow assets.
 date: 2020-05-11T18:40:17.656Z
 ---
-tBTC lets people use Bitcoin to act on the Ethereum blockchain. One of the first things people will be able to do with their tBTC is an integration with Compound, an Ethereum-based algorithmic money market protocol that lets users earn interest or borrow assets. Compound represents [over 12%](https://defipulse.com/) of the total defi market.
+tBTC lets people use Bitcoin to act on the Ethereum blockchain. One of the first things people will be able to do with their tBTC is an integration with Compound, an Ethereum-based algorithmic money market protocol that lets users earn interest or [borrow assets](https://mezo.org/feature/borrow). Compound represents [over 12%](https://defipulse.com/) of the total defi market.
 
 To use Compound with your BTC, you first need to mint tBTC. Read the guide for exchanging BTC for tBTC [here](https://tbtc.network/developers/how-to-use-the-tbtc-dapp/).
 
